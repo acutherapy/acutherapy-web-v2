@@ -224,16 +224,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       {isLandingPage ? (
         <nav className="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b-2 border-green-700/10 shadow-sm bg-gradient-to-b from-white to-green-50/50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <a href="/" className="flex items-center gap-3 decoration-transparent">
-              <div className="h-10 w-10 border border-amber-200 rounded-full flex items-center justify-center p-1">
-                 <div className="h-full w-full bg-gradient-to-br from-amber-50 to-amber-200 rounded-full flex items-center justify-center border border-amber-300">
-                    <Activity className="text-amber-700 h-5 w-5" />
-                 </div>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-xl font-extrabold tracking-tight text-slate-800 m-0">AcuTherapy Clinics</span>
-                <span className="text-[10.5px] text-green-700 font-bold tracking-widest uppercase m-0 leading-tight">SPRING WELLNESS</span>
-              </div>
+            <a href="/" className="flex items-center decoration-transparent">
+              <img src="/images/logo-landing.png" alt="AcuTherapy Clinics Spring Wellness" className="h-16 w-auto" />
             </a>
             <div className="text-right flex flex-col items-end">
               <div className="text-[15px] font-bold text-slate-800 mb-0.5">Honolulu & Aiea (Pearl Harbor)</div>
@@ -246,14 +238,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       ) : (
       <nav className="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-slate-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-          <a href="/" className="flex items-center gap-3 decoration-transparent">
-            <div className="h-10 w-10 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center shadow-inner">
-              <Activity className="text-white h-6 w-6" />
-            </div>
-            <div>
-              <h1 className="text-2xl font-bold tracking-tight text-slate-900 m-0">AcuTherapy<span className="text-blue-600">Clinics</span></h1>
-              <p className="text-[10px] text-slate-500 font-medium tracking-wider uppercase m-0 leading-tight">Honolulu Pain Center</p>
-            </div>
+          <a href="/" className="flex items-center decoration-transparent">
+            <img src="/images/logo-main.png" alt="AcuTherapy Clinics Honolulu Pain Center" className="h-12 w-auto" />
           </a>
           <div className="hidden lg:flex items-center gap-6 font-medium text-slate-600">
             <a href="/" className="hover:text-blue-600 transition-colors py-4">{navHome}</a>

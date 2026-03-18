@@ -85,32 +85,32 @@ export default function PatientReviewsPage() {
                 <div className="flex gap-1 text-amber-400 mb-4">
                   <span className="text-xl">★</span><span className="text-xl">★</span><span className="text-xl">★</span><span className="text-xl">★</span><span className="text-xl">★</span>
                 </div>
-                <p className="text-slate-700 italic mb-6 leading-relaxed">"I came in with severe sciatica that was radiating down my leg after a work injury. Dr. Cai's treatments provided massive relief after just two sessions. The staff is professional and the clinic is incredibly clean. I highly recommend AcuTherapy!"</p>
-                <div className="font-bold text-slate-900">— M.K., Honolulu</div>
+                <p className="text-slate-700 italic mb-6 leading-relaxed">"Treatment at Acutherapy is a reboot for my life. Stomach issues?! Gone. Sleep?! Much improved. Daily medication? Reduced. I feel really good and on the path to even better. Beyond acupuncture, Dr. Cai is a joy to be with and very generous sharing his meditation and healing expertise. I am deeply changed and forever grateful to him for helping me heal."</p>
+                <div className="font-bold text-slate-900">— Heather Henderson</div>
               </div>
 
               <div className="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 relative hover:shadow-xl transition-shadow">
                 <div className="flex gap-1 text-amber-400 mb-4">
                   <span className="text-xl">★</span><span className="text-xl">★</span><span className="text-xl">★</span><span className="text-xl">★</span><span className="text-xl">★</span>
                 </div>
-                <p className="text-slate-700 italic mb-6 leading-relaxed">"After my car accident, my neck was completely stiff and painful. AcuTherapy Clinics handled all the auto insurance billing seamlessly, and Dr. Cai's acupuncture completely restored my mobility without me needing surgery."</p>
-                <div className="font-bold text-slate-900">— Sarah L.</div>
+                <p className="text-slate-700 italic mb-6 leading-relaxed">"Incredible experience! I suffered a disc herniation which resulted in nerve damage in my left leg. Doctor David helped relieve this with acupuncture, physical therapy, and a lot of care. I finally was able to surf again with no pain! My muscle knot released a lot of tension and my sciatica calmed down. The price is reasonable and so worth it!"</p>
+                <div className="font-bold text-slate-900">— Rington Kunst</div>
               </div>
 
               <div className="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 relative hover:shadow-xl transition-shadow">
                 <div className="flex gap-1 text-amber-400 mb-4">
                   <span className="text-xl">★</span><span className="text-xl">★</span><span className="text-xl">★</span><span className="text-xl">★</span><span className="text-xl">★</span>
                 </div>
-                <p className="text-slate-700 italic mb-6 leading-relaxed">"I've suffered from chronic migraines for 5 years. Since starting treatments here, the frequency and intensity have plummeted. Dr. Cai is extremely knowledgeable and actually listens. Highly recommend for any chronic pain."</p>
-                <div className="font-bold text-slate-900">— J.T., Pearl City</div>
+                <p className="text-slate-700 italic mb-6 leading-relaxed">"After years of dealing with chronic back pain and trying various treatments, I finally found relief at Acutherapy. The combination of acupuncture and massage therapy has worked wonders for my mobility and overall well-being. Dr. Cai and his team are professional, caring, and truly experts in their field. I highly recommend them to anyone seeking holistic healing."</p>
+                <div className="font-bold text-slate-900">— Michael T.</div>
               </div>
 
               <div className="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 relative hover:shadow-xl transition-shadow">
                 <div className="flex gap-1 text-amber-400 mb-4">
                   <span className="text-xl">★</span><span className="text-xl">★</span><span className="text-xl">★</span><span className="text-xl">★</span><span className="text-xl">★</span>
                 </div>
-                <p className="text-slate-700 italic mb-6 leading-relaxed">"Dr. Cai is a true master of Traditional Chinese Medicine. He diagnosed the exact root cause of my frozen shoulder and used a combination of acupuncture and manual therapy to fix it within a few weeks. Best clinic in Hawaii."</p>
-                <div className="font-bold text-slate-900">— Robert H.</div>
+                <p className="text-slate-700 italic mb-6 leading-relaxed">"I had horrible back and knee pain. A combination of massage and acupuncture has greatly reduced my issues, so I am able to go about my life! All practitioners are very good and caring. They truly listen and tailor the treatment to your specific needs. The office is clean, comfortable, and the atmosphere is very healing."</p>
+                <div className="font-bold text-slate-900">— Leina'ala M.</div>
               </div>
             </div>
 
@@ -241,12 +241,12 @@ export default function PatientReviewsPage() {
 
             <div className="bg-blue-900 text-white p-8 rounded-2xl shadow-xl">
               <h4 className="text-xl font-bold mb-4 flex items-center gap-2">Patient Reviews</h4>
-              <p className="text-slate-300 italic text-sm leading-relaxed mb-4">"Dr. Cai completely resolved my shoulder pain after just 3 visits. I had been suffering for months. The clinic is pristine, professional, and very welcoming!"</p>
+              <p className="text-slate-300 italic text-sm leading-relaxed mb-4">"Treatment at Acutherapy is a reboot for my life. Stomach issues?! Gone. Sleep?! Much improved. I feel really good and on the path to even better. Forever grateful!"</p>
               <div className="flex items-center gap-4 mt-6">
-                <div className="h-10 w-10 bg-blue-800 rounded-full flex items-center justify-center font-bold text-white shadow-inner">ST</div>
+                <div className="h-10 w-10 bg-blue-800 rounded-full flex items-center justify-center font-bold text-white shadow-inner">HH</div>
                 <div>
-                  <p className="text-white font-semibold text-sm">Sarah T.</p>
-                  <p className="text-blue-400 text-xs">Honolulu Resident</p>
+                  <p className="text-white font-semibold text-sm">Heather H.</p>
+                  <p className="text-blue-400 text-xs">Patient via Google</p>
                 </div>
               </div>
             </div>

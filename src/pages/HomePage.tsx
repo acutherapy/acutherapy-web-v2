@@ -339,7 +339,7 @@ export default function HomePage() {
                   <Star className="text-yellow-400 h-6 w-6 fill-yellow-400" />
                 </div>
                 <p className="italic text-slate-300 leading-relaxed mb-4">
-                  "I was scheduled for back surgery. A friend forced me to see Dr. Cai first. Within 4 weeks, my sciatica was 90% gone. He literally gave me my life back."
+                  "After years of dealing with chronic back pain and trying various treatments, I finally found relief at Acutherapy. The combination of acupuncture and massage therapy has worked wonders for my mobility and overall well-being. Dr. Cai and his team are professional, caring, and truly experts in their field."
                 </p>
                 <p className="font-bold text-white">— Michael T., Honolulu</p>
               </div>

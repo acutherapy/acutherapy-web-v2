@@ -17,14 +17,11 @@ export default function InjuryRecoveryZhPage() {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ ...formData, reason: 'Chinese Injury Recovery Auto/Sports Claim' })
             });
-            if (res.ok || window.location.hostname === 'localhost') setIsSuccess(true);
+            if (res.ok) setIsSuccess(true);
             else alert('发送请求失败，请直接致电诊所。');
         } catch (err) {
             console.error(err);
-            if (window.location.hostname === 'localhost') {
-                setIsSuccess(true);
-            } else {
-                alert('服务器连接错误，请直接致电诊所。');
+            alert('服务器连接错误，请直接致电诊所。');
             }
         } finally {
             setIsSubmitting(false);

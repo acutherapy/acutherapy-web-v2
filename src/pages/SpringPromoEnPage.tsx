@@ -17,14 +17,13 @@ export default function SpringPromoEnPage() {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ ...formData, reason: 'Spring Promo 2026 Claim' })
             });
-            if (res.ok || window.location.hostname === 'localhost') setIsSuccess(true);
+            if (res.ok) setIsSuccess(true);
             else alert('Failed to send request. Please call us directly.');
         } catch (err) {
             console.error(err);
             if (window.location.hostname === 'localhost') {
                 setIsSuccess(true);
             } else {                alert('Error connecting to server. Please call us directly.');
-            }
         } finally {
             setIsSubmitting(false);
         }
