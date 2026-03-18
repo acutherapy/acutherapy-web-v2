@@ -5,10 +5,11 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Calendar, PhoneCall, MapPin, ShieldCheck, } from "lucide-react";
+import { Calendar, PhoneCall, MapPin, ShieldCheck, CheckCircle2 } from "lucide-react";
 
 export default function ContactHonoluluAcupuncturePage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -29,8 +30,7 @@ export default function ContactHonoluluAcupuncturePage() {
         body: JSON.stringify(data)
       });
       if (res.ok) {
-        alert('Your message has been sent successfully! We will contact you shortly.');
-        e.currentTarget.reset();
+        setIsSuccess(true);
       } else {
         alert('Failed to send. Please try again or call us.');
       }
@@ -156,9 +156,24 @@ export default function ContactHonoluluAcupuncturePage() {
             <h3 className="text-3xl font-extrabold text-slate-900 mt-16 mb-8 border-b pb-2">Book Your Appointment Live</h3>
             <div className="bg-white p-8 rounded-2xl shadow-xl border border-blue-50 relative mb-16">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-t-2xl"></div>
-              <form onSubmit={handleSubmit} className="space-y-6 mt-2">
+              
+              {isSuccess ? (
+                <div className="py-12 md:py-16 text-center animate-in fade-in zoom-in duration-500">
+                  <div className="w-20 h-20 md:w-24 md:h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6 shadow-inner ring-8 ring-green-50">
+                    <CheckCircle2 className="h-10 w-10 md:h-12 md:w-12 text-green-600" />
+                  </div>
+                  <h3 className="text-3xl font-extrabold text-slate-900 mb-4 tracking-tight">You're All Set!</h3>
+                  <p className="text-lg text-slate-600 mb-8 max-w-md mx-auto leading-relaxed">
+                    We've received your request. The AcuTherapy Clinics team will call you shortly to confirm your booking time.
+                  </p>
+                  <Button onClick={() => setIsSuccess(false)} variant="outline" className="border-2 border-slate-200 text-slate-600 hover:bg-slate-50 font-bold h-12 px-8 rounded-full transition-all hover:scale-105 active:scale-95">
+                    Submit Another Request
+                  </Button>
+                </div>
+              ) : (
+                <form onSubmit={handleSubmit} className="space-y-6 mt-2">
 
-                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label htmlFor="name" className="text-sm font-semibold text-slate-700">Full Name</label>
                     <input type="text" id="name" name="name" required className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all" placeholder="John Doe" />
@@ -202,10 +217,11 @@ export default function ContactHonoluluAcupuncturePage() {
                     "Submit Request"
                   )}
                 </Button>
-                <p className="text-xs text-slate-500 text-center mt-4">
-                  * By submitting this form, your request is sent directly to AcuTherapy Clinics. We will contact you shortly to confirm your booking time.
-                </p>
-              </form>
+                  <p className="text-xs text-slate-500 text-center mt-4">
+                    * By submitting this form, your request is sent directly to AcuTherapy Clinics. We will contact you shortly to confirm your booking time.
+                  </p>
+                </form>
+              )}
             </div>
 
             <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Explore Related Treatments & Information</h3>
