@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
-import { MapPin, Clock, PhoneCall, Calendar, ChevronDown, MessageSquare } from 'lucide-react';
+import { MapPin, Clock, PhoneCall, Calendar, ChevronDown } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 
 // Automatically imports all pages
@@ -380,19 +380,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         </div>
       </footer>
 
-      {/* Floating AI Chatbot Button */}
-      <div className="fixed bottom-6 right-6 z-50">
-        <button
-          className="bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition-transform hover:scale-110 border-4 border-white group relative"
-          onClick={() => alert("Our AI Wellness Assistant is currently in development. Please call us to book!")}
-        >
-          <div className="absolute -top-12 right-0 bg-blue-900 text-white text-xs font-bold px-3 py-1.5 rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all whitespace-nowrap shadow-xl">
-            Chat with AI Assistant
-            <div className="absolute -bottom-1 right-5 w-2 h-2 bg-blue-900 transform rotate-45"></div>
-          </div>
-          <MessageSquare className="h-6 w-6" />
-        </button>
-      </div>
+      {/* Real AI Chatbot */}
+      <AIChatbot />
     </div>
   );
 };
