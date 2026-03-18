@@ -21,6 +21,10 @@
         }
       ],
       "destination": "/vercel-robots.txt"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
