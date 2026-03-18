@@ -1,0 +1,26 @@
+{
+  "rewrites": [
+    {
+      "source": "/go/review",
+      "destination": "/api/go/review"
+    },
+    {
+      "source": "/go/video",
+      "destination": "/api/go/video"
+    },
+    {
+      "source": "/go/book",
+      "destination": "/api/go/book"
+    },
+    {
+      "source": "/robots.txt",
+      "has": [
+        {
+          "type": "host",
+          "value": "(.*)\\.vercel\\.app"
+        }
+      ],
+      "destination": "/vercel-robots.txt"
+    }
+  ]
+}
