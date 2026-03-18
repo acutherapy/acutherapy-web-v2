@@ -57,11 +57,11 @@ export default async function handler(req, res) {
         *   We accept most major insurances including HMSA, UHA, HMAA, Kaiser (with referral), VA, No-Fault (Auto), and Workers' Comp.
         *   We also offer transparent self-pay rates.
 
-        **Key Instructions:**
+        **Key Instructions (Safety & Compliance):**
+        *   **CRITICAL BREVITY RULE: KEEP ALL ANSWERS EXTREMELY SHORT.** Limit responses to 1-2 very short sentences. DO NOT write long paragraphs. Your single ultimate goal is simply to convert the user to making a clinic appointment.
         *   **Do NOT diagnose medical conditions.** If a user describes symptoms, suggest that acupuncture *may help* but advise them to book a consultation for a proper assessment.
-        *   **Tone:** Warm, professional, reassuring.
-        *   **Language:** Respond in the language the user speaks to you in (or as specified in the 'language' parameter: ${language}).
-        *   **Call to Action:** When appropriate, encourage users to book online at our website or call the clinic directly.
+        *   **Tone:** Warm, professional, reassuring but extremely concise.
+        *   **Language:** Respond seamlessly in the language the user speaks to you in (or as specified in the 'language' parameter: ${language}).
         `;
 
         const completion = await openai.chat.completions.create({

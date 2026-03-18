@@ -160,10 +160,20 @@ export default function AIChatbot() {
                                         }`}
                                 >
                                     {msg.role === "assistant" ? (
-                                        <div className="space-y-2 prose prose-sm max-w-none prose-a:text-blue-500 prose-a:no-underline hover:prose-a:underline">
-                                            <ReactMarkdown>
-                                                {msg.text}
-                                            </ReactMarkdown>
+                                        <div className="space-y-3">
+                                            <div className="prose prose-sm max-w-none prose-a:text-blue-500 prose-a:no-underline hover:prose-a:underline">
+                                                <ReactMarkdown>
+                                                    {msg.text}
+                                                </ReactMarkdown>
+                                            </div>
+                                            <div className="flex gap-2 pt-2 border-t border-slate-100">
+                                                <a href="/book-appointment" className="flex-1 bg-emerald-500 text-white text-center py-1.5 rounded-lg text-xs font-bold hover:bg-emerald-600 transition-colors shadow-sm">
+                                                    📅 Book Now
+                                                </a>
+                                                <a href="tel:8085287177" className="flex-1 bg-blue-100 text-blue-700 text-center py-1.5 rounded-lg text-xs font-bold hover:bg-blue-200 transition-colors shadow-sm">
+                                                    📞 Call Clinic
+                                                </a>
+                                            </div>
                                         </div>
                                     ) : (
                                         msg.text
