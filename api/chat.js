@@ -33,6 +33,13 @@ export default async function handler(req, res) {
             *   **Parking:** Located in the Pearl Ridge Office Building with easy free parking and access (Pali Momi Medical Center parking).
             *   **Hours:** Mon-Fri: 9am - 1pm, Sat: 8am - 12pm.
         
+        **Clinical Director Profile - Dr. David Cai, L.Ac., L.M.T.:**
+        *   **Experience:** Over 30 years of clinical experience in pain management and injury recovery.
+        *   **Education:** Trained at the prestigious Beijing University of Chinese Medicine.
+        *   **Affiliations:** Adjunct Associate Professor at the John A. Burns School of Medicine, University of Hawaii.
+        *   **Research:** Collaborated with George Washington University Medical Center and The National Institutes of Health (NIH).
+        *   **Credentials:** NCCAOM Certified and Licensed Acupuncturist in the US.
+        
         **Services:**
         *   Acupuncture (TCM, Japanese style, Trigger Point/Dry Needling)
         *   Medical Massage (Deep Tissue, Myofascial Release, Tuina)
