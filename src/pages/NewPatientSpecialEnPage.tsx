@@ -21,9 +21,7 @@ export default function NewPatientSpecialEnPage() {
             else alert('Failed to send request. Please call us directly.');
         } catch (err) {
             console.error(err);
-            if (window.location.hostname === 'localhost') {
-                setIsSuccess(true);
-            } else {                alert('Error connecting to server. Please call us directly.');
+            alert('Error connecting to server. Please call us directly.');
         } finally {
             setIsSubmitting(false);
         }

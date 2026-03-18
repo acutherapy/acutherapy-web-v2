@@ -18,11 +18,10 @@ export default function SpringPromoZhPage() {
                 body: JSON.stringify({ ...formData, reason: 'Chinese Spring Promo Claim' })
             });
             if (res.ok) setIsSuccess(true);
-            else alert('发送请求失败，请直接致电诊所。');
+            else alert('发送请求失败，请直接致电我们。');
         } catch (err) {
             console.error(err);
             alert('服务器连接错误，请直接致电诊所。');
-            }
         } finally {
             setIsSubmitting(false);
         }

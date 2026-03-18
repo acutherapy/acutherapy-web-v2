@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
-import { MapPin, Clock, PhoneCall, Activity, Calendar, ChevronDown, MessageSquare } from 'lucide-react';
+import { MapPin, Clock, PhoneCall, Calendar, ChevronDown, MessageSquare } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 
 // Automatically imports all pages

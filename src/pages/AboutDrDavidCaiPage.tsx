@@ -1,6 +1,5 @@
-import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Award, GraduationCap, Building2, BookOpen, HeartPulse, CheckCircle2, Newspaper, ShieldCheck, Stethoscope } from 'lucide-react';
+import { Award, GraduationCap, Building2, HeartPulse, CheckCircle2, Newspaper, ShieldCheck, Stethoscope } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 
