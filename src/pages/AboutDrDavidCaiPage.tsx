@@ -184,26 +184,51 @@ export default function AboutDrDavidCaiPage() {
                                 </ul>
                             </div>
 
-                            {/* Section 6 — Patient Care Philosophy */}
+                            {/* Section 6 — AcuTherapy Philosophy */}
                             <div className="bg-blue-900 text-white p-8 rounded-3xl shadow-xl relative overflow-hidden">
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-blue-500 rounded-full blur-3xl -mr-16 -mt-16"></div>
-                                <div className="flex items-center gap-3 mb-4">
+                                <div className="flex items-center gap-3 mb-6">
                                     <div className="p-2 bg-white/10 text-blue-300 rounded-lg"><HeartPulse size={24} /></div>
-                                    <h2 className="text-2xl font-bold text-white">Patient Care Philosophy</h2>
+                                    <h2 className="text-2xl font-bold text-white">AcuTherapy Philosophy</h2>
                                 </div>
-                                <p className="text-slate-300 leading-relaxed mb-4 text-lg">
+                                
+                                <p className="text-slate-300 leading-relaxed mb-6 text-lg">
                                     Dr. Cai believes that effective medicine should focus on treating the root cause of disease, not just the symptoms.
                                 </p>
-                                <p className="text-slate-400 mb-6 italic">
-                                    By restoring balance within the body, acupuncture and Traditional Chinese Medicine can support natural healing and long-term health.
-                                </p>
-                                <p className="text-blue-200 font-semibold mb-3">His mission is to help patients:</p>
-                                <ul className="grid grid-cols-2 gap-2 text-slate-200">
-                                    <li className="flex items-center gap-2"><CheckCircle2 className="text-teal-400" size={16} /> reduce pain</li>
-                                    <li className="flex items-center gap-2"><CheckCircle2 className="text-teal-400" size={16} /> recover from injuries</li>
-                                    <li className="flex items-center gap-2"><CheckCircle2 className="text-teal-400" size={16} /> improve physical function</li>
-                                    <li className="flex items-center gap-2"><CheckCircle2 className="text-teal-400" size={16} /> return to a healthy life</li>
-                                </ul>
+
+                                <div className="bg-blue-950/60 rounded-2xl p-6 mb-6 border border-blue-800/60">
+                                    <h3 className="text-blue-100 font-black text-xl mb-5 flex items-center gap-2 justify-between">
+                                        <span className="text-white">Treat</span> 
+                                        <span className="text-teal-400 text-sm">➔</span> 
+                                        <span className="text-white">Teach</span> 
+                                        <span className="text-teal-400 text-sm">➔</span> 
+                                        <span className="text-white">Transform</span>
+                                    </h3>
+                                    
+                                    <ul className="space-y-4 text-slate-300">
+                                        <li className="flex items-start gap-3">
+                                            <div className="bg-teal-500/20 text-teal-300 p-1.5 rounded-lg shrink-0 mt-0.5"><CheckCircle2 size={16} /></div>
+                                            <div>
+                                                <strong className="text-white block mb-0.5">Treat the body</strong>
+                                                <span className="text-sm">Restoring balance with precision acupuncture.</span>
+                                            </div>
+                                        </li>
+                                        <li className="flex items-start gap-3">
+                                            <div className="bg-teal-500/20 text-teal-300 p-1.5 rounded-lg shrink-0 mt-0.5"><CheckCircle2 size={16} /></div>
+                                            <div>
+                                                <strong className="text-white block mb-0.5">Teach the practice</strong>
+                                                <span className="text-sm">Empowering patients with Traditional Chinese Medicine wisdom.</span>
+                                            </div>
+                                        </li>
+                                        <li className="flex items-start gap-3">
+                                            <div className="bg-teal-500/20 text-teal-300 p-1.5 rounded-lg shrink-0 mt-0.5"><CheckCircle2 size={16} /></div>
+                                            <div>
+                                                <strong className="text-white block mb-0.5">Transform long-term health</strong>
+                                                <span className="text-sm">Supporting natural healing for a pain-free life.</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
 
