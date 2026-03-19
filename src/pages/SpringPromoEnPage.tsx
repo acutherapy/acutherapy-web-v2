@@ -28,7 +28,7 @@ export default function SpringPromoEnPage() {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-teal-50 to-blue-50 py-20 px-4">
+        <div className="min-h-screen bg-[#F0FDF4] py-20 px-4 relative overflow-hidden">
             <Helmet>
                 <title>Spring Special Promotion | AcuTherapy Clinics</title>
                 <meta name="description" content="Claim your spring acupuncture and pain relief promotion at AcuTherapy Honolulu." />
@@ -51,33 +51,39 @@ export default function SpringPromoEnPage() {
                     </ul>
                 </div>
                 
-                <div className="md:w-1/2 w-full max-w-md bg-white rounded-3xl p-10 shadow-2xl border border-white/40 ring-4 ring-teal-50/50 relative overflow-hidden">
+                <div className="md:w-1/2 w-full max-w-md bg-[#1e293b] rounded-[1.5rem] p-10 shadow-2xl relative border-none z-20">
+                    {/* Circular Red Promo Badge */}
+                    <div className="absolute -top-6 -right-6 w-[110px] h-[110px] bg-[#e11d48] text-white rounded-full flex flex-col items-center justify-center shadow-xl transform rotate-12 z-50 hover:scale-105 transition-transform">
+                        <span className="text-[11px] font-bold uppercase tracking-widest opacity-90 drop-shadow-sm">Ends On</span>
+                        <span className="text-[22px] font-extrabold leading-none my-0.5 drop-shadow-sm">Mar 30</span>
+                        <span className="text-[10px] font-bold opacity-75">12:00 PM</span>
+                    </div>
                     <div className="absolute top-0 inset-x-0 h-2 bg-gradient-to-r from-teal-400 to-emerald-500"></div>
                     {isSuccess ? (
                         <div className="text-center py-10 animate-in zoom-in duration-500">
                             <CheckCircle2 className="w-20 h-20 text-teal-500 mx-auto mb-6" />
-                            <h2 className="text-3xl font-bold text-slate-900 mb-4">You're All Set!</h2>
+                            <h2 className="text-3xl font-bold text-white mb-4">You're All Set!</h2>
                             <p className="text-slate-600 mb-8">We received your request. Our clinic staff will contact you shortly to confirm your specific appointment time.</p>
-                            <Button onClick={() => window.location.href='/'} className="w-full h-14 bg-teal-600 hover:bg-teal-700 text-lg">Back to Home</Button>
+                            <Button onClick={() => window.location.href='/'} className="w-full h-14 bg-emerald-600 hover:bg-emerald-700 text-lg">Back to Home</Button>
                         </div>
                     ) : (
                         <form onSubmit={submitForm} className="space-y-5 relative z-10">
-                            <h2 className="text-3xl font-extrabold text-slate-900 mb-2">Claim Your Offer</h2>
+                            <h2 className="text-3xl font-extrabold text-white mb-2">Claim Your Offer</h2>
                             <p className="text-slate-500 mb-8 text-sm">Fill out the quick form below and secure your spot.</p>
                             
                             <div>
-                                <label className="block text-sm font-bold text-slate-700 mb-2">Full Name</label>
-                                <input required type="text" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-teal-500 outline-none bg-slate-50 focus:bg-white transition-all" placeholder="John Doe" value={formData.name} onChange={e => setFormData({...formData, name: e.target.value})} />
+                                <label className="block text-sm font-bold text-slate-300 mb-2 text-xs uppercase tracking-wider">Full Name</label>
+                                <input required type="text" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-teal-500 outline-none bg-white text-slate-900 border-none placeholder-slate-400 transition-all" placeholder="John Doe" value={formData.name} onChange={e => setFormData({...formData, name: e.target.value})} />
                             </div>
                             <div>
-                                <label className="block text-sm font-bold text-slate-700 mb-2">Phone Number</label>
-                                <input required type="tel" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-teal-500 outline-none bg-slate-50 focus:bg-white transition-all" placeholder="(808) 555-0192" value={formData.phone} onChange={e => setFormData({...formData, phone: e.target.value})} />
+                                <label className="block text-sm font-bold text-slate-300 mb-2 text-xs uppercase tracking-wider">Phone Number</label>
+                                <input required type="tel" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-teal-500 outline-none bg-white text-slate-900 border-none placeholder-slate-400 transition-all" placeholder="(808) 555-0192" value={formData.phone} onChange={e => setFormData({...formData, phone: e.target.value})} />
                             </div>
                             <div>
-                                <label className="block text-sm font-bold text-slate-700 mb-2">Email Address</label>
-                                <input required type="email" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-teal-500 outline-none bg-slate-50 focus:bg-white transition-all" placeholder="name@example.com" value={formData.email} onChange={e => setFormData({...formData, email: e.target.value})} />
+                                <label className="block text-sm font-bold text-slate-300 mb-2 text-xs uppercase tracking-wider">Email Address</label>
+                                <input required type="email" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-teal-500 outline-none bg-white text-slate-900 border-none placeholder-slate-400 transition-all" placeholder="name@example.com" value={formData.email} onChange={e => setFormData({...formData, email: e.target.value})} />
                             </div>
-                            <Button type="submit" disabled={isSubmitting} className="w-full h-14 mt-4 text-lg bg-teal-600 hover:bg-teal-700 transition-colors">
+                            <Button type="submit" disabled={isSubmitting} className="w-full h-14 mt-4 text-lg bg-emerald-600 hover:bg-emerald-700 transition-colors">
                                 {isSubmitting ? 'Securing...' : <span className="flex items-center gap-2">Secure My Spot <ArrowRight className="w-5 h-5" /></span>}
                             </Button>
                             <p className="text-xs text-center text-slate-400 mt-4 leading-relaxed">By submitting, you agree to our privacy policy. No credit card required.</p>

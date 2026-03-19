@@ -55,25 +55,25 @@ export default function NewPatientSpecialEnPage() {
                     {isSuccess ? (
                         <div className="text-center py-10 animate-in zoom-in duration-500">
                             <CheckCircle2 className="w-20 h-20 text-indigo-500 mx-auto mb-6" />
-                            <h2 className="text-3xl font-bold text-slate-900 mb-4">Welcome Aboard!</h2>
+                            <h2 className="text-3xl font-bold text-white mb-4">Welcome Aboard!</h2>
                             <p className="text-slate-600 mb-8">We received your form. We are eager to help you heal and will call you soon to schedule your Visit.</p>
                             <Button onClick={() => window.location.href='/'} className="w-full h-14 bg-indigo-600 hover:bg-indigo-700 text-lg">Browse Website</Button>
                         </div>
                     ) : (
                         <form onSubmit={submitForm} className="space-y-5">
-                            <h2 className="text-3xl font-extrabold text-slate-900 mb-2">Reserve Your Spot</h2>
+                            <h2 className="text-3xl font-extrabold text-white mb-2">Reserve Your Spot</h2>
                             <p className="text-slate-500 mb-8 text-sm">Takes less than 30 seconds.</p>
                             
                             <div>
-                                <label className="block text-sm font-bold text-slate-700 mb-2">Full Name</label>
+                                <label className="block text-sm font-bold text-slate-300 mb-2 text-xs uppercase tracking-wider">Full Name</label>
                                 <input required type="text" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-indigo-500 outline-none transition-all" placeholder="John Doe" value={formData.name} onChange={e => setFormData({...formData, name: e.target.value})} />
                             </div>
                             <div>
-                                <label className="block text-sm font-bold text-slate-700 mb-2">Phone Number</label>
+                                <label className="block text-sm font-bold text-slate-300 mb-2 text-xs uppercase tracking-wider">Phone Number</label>
                                 <input required type="tel" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-indigo-500 outline-none transition-all" placeholder="(808) 555-0192" value={formData.phone} onChange={e => setFormData({...formData, phone: e.target.value})} />
                             </div>
                             <div>
-                                <label className="block text-sm font-bold text-slate-700 mb-2">Email Address</label>
+                                <label className="block text-sm font-bold text-slate-300 mb-2 text-xs uppercase tracking-wider">Email Address</label>
                                 <input required type="email" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-indigo-500 outline-none transition-all" placeholder="name@example.com" value={formData.email} onChange={e => setFormData({...formData, email: e.target.value})} />
                             </div>
                             <Button type="submit" disabled={isSubmitting} className="w-full h-14 mt-4 text-lg bg-indigo-600 hover:bg-indigo-700 transition-colors">
