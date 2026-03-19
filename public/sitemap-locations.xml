@@ -1,31 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- 首页 -->
+  <!-- ======================== -->
+  <!-- 📍 LOCATION PAGES (V2)   -->
+  <!-- ======================== -->
+
+  <!-- Core Pages -->
   <url>
     <loc>https://acutherapy.com/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://acutherapy.com/dr-david-cai-honolulu-acupuncturist</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://acutherapy.com/patient-reviews</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Honolulu Core Clinics -->
+  <url>
+    <loc>https://acutherapy.com/acupuncture-honolulu</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
 
-  <!-- Locations -->
   <url>
-    <loc>https://acutherapy.com/en/contact-us-honolulu</loc>
+    <loc>https://acutherapy.com/aiea-pearl-city-clinic</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://acutherapy.com/contact-honolulu-acupuncture</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
-  <!-- 未来建议扩展（你应该马上加） -->
+  <!-- Honolulu Rich Neighborhood Targeting -->
   <url>
-    <loc>https://acutherapy.com/honolulu-acupuncture</loc>
+    <loc>https://acutherapy.com/acupuncture-waikiki</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://acutherapy.com/waikiki-acupuncture</loc>
+    <loc>https://acutherapy.com/acupuncture-kahala</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://acutherapy.com/aiea-acupuncture</loc>
+    <loc>https://acutherapy.com/acupuncture-manoa</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://acutherapy.com/kahala-acupuncture</loc>
+    <loc>https://acutherapy.com/acupuncture-hawaii-kai</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://acutherapy.com/acupuncture-kaimuki</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://acutherapy.com/acupuncture-ala-moana</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://acutherapy.com/acupuncture-kapahulu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://acutherapy.com/acupuncture-moiliili</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
 </urlset>

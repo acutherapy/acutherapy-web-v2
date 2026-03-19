@@ -1,47 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Services 主页面 -->
+  <!-- ======================== -->
+  <!-- 🩺 SERVICES & CONDITIONS -->
+  <!-- ======================== -->
+
+  <!-- Top Tier Medical Treatments -->
   <url>
-    <loc>https://acutherapy.com/en/services</loc>
+    <loc>https://acutherapy.com/back-pain-acupuncture-honolulu</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://acutherapy.com/sciatica-acupuncture-honolulu</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://acutherapy.com/neck-pain-treatment-honolulu</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
 
-  <!-- 核心服务 -->
+  <!-- Core Body Pain Targeting -->
   <url>
-    <loc>https://acutherapy.com/en/services/acupuncture</loc>
+    <loc>https://acutherapy.com/shoulder-pain-acupuncture-honolulu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://acutherapy.com/knee-pain-acupuncture-honolulu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://acutherapy.com/headache-migraine-acupuncture-honolulu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://acutherapy.com/herniated-disc-acupuncture-honolulu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://acutherapy.com/arthritis-acupuncture-honolulu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://acutherapy.com/plantar-fasciitis-acupuncture-honolulu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://acutherapy.com/frozen-shoulder-acupuncture-honolulu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://acutherapy.com/tennis-elbow-acupuncture-honolulu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://acutherapy.com/hip-pain-acupuncture-honolulu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
+  <!-- Modalities & Services -->
   <url>
-    <loc>https://acutherapy.com/en/services/medical-massage</loc>
+    <loc>https://acutherapy.com/medical-massage-honolulu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://acutherapy.com/fire-cupping-therapy-honolulu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://acutherapy.com/pain-management-honolulu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
+  <!-- High-Conversion Insurance & Injury (Cash Cow Keywords) -->
   <url>
-    <loc>https://acutherapy.com/cupping-gua-sha-honolulu/</loc>
+    <loc>https://acutherapy.com/auto-accident-injury-honolulu</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://acutherapy.com/whiplash-treatment-honolulu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://acutherapy.com/sports-injury-acupuncture-honolulu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://acutherapy.com/workers-comp-acupuncture-honolulu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://acutherapy.com/veterans-care-acupuncture-honolulu</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
+  <!-- Blogs / Resources -->
   <url>
-    <loc>https://acutherapy.com/en/services/insurance-payment</loc>
+    <loc>https://acutherapy.com/does-acupuncture-help-sciatica</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
-
-  <!-- Conditions（超级重要，带转化） -->
-  <url>
-    <loc>https://acutherapy.com/back-neck-pain</loc>
-  </url>
-
-  <url>
-    <loc>https://acutherapy.com/stress-anxiety</loc>
-  </url>
-
-  <url>
-    <loc>https://acutherapy.com/auto-injury</loc>
-  </url>
-
-  <url>
-    <loc>https://acutherapy.com/workers-injury</loc>
-  </url>
-
-  <url>
-    <loc>https://acutherapy.com/veterans-care</loc>
-  </url>
-
+  
 </urlset>
