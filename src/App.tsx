@@ -364,6 +364,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           <div>
             <h4 className="text-lg font-bold text-white mb-4">{footerLocations}</h4>
             <ul className="space-y-2 text-sm">
+              <li><a href="/honolulu-clinic" className="font-semibold text-white hover:text-blue-300">{pathname.includes('/zh') ? '檀香山总院 (Liliha)' : 'Honolulu Clinic (Liliha)'}</a></li>
+              <li><a href="/aiea-pearl-city-clinic" className="font-semibold text-white hover:text-blue-300 pb-2 border-b border-blue-800/50 block mb-2">{pathname.includes('/zh') ? '阿伊亚分院 (Aiea)' : 'Aiea Clinic (Pearl City)'}</a></li>
               <li><a href="/acupuncture-waikiki" className="hover:text-blue-400">{linkWaikiki}</a></li>
               <li><a href="/acupuncture-kahala" className="hover:text-blue-400">{linkKahala}</a></li>
               <li><a href="/acupuncture-kaimuki" className="hover:text-blue-400">{linkKaimuki}</a></li>
