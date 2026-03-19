@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { CheckCircle2, ArrowRight, Shield } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import LandingPageShareBubble from '@/components/LandingPageShareBubble';
 
 export default function NewPatientSpecialEnPage() {
     const [formData, setFormData] = useState({ name: '', phone: '', email: '' });
@@ -81,16 +82,11 @@ export default function NewPatientSpecialEnPage() {
                             </Button>
                         </form>
                     )}
-
-                    {/* Share QR Code */}
-                    <div className="mt-8 pt-8 border-t border-slate-100 flex flex-col items-center text-center">
-                        <p className="text-xs font-semibold text-slate-400 mb-3 uppercase tracking-wider">${"Scan to open on mobile or share"}</p>
-                        <div className="bg-white p-2 rounded-xl shadow-sm border border-slate-100">
-                           <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://acutherapy.com${pathUrl}" alt="QR Code" className="w-24 h-24" />
-                        </div>
-                    </div>
                 </div>
             </div>
+        
+            {/* Floating Share Bubble */}
+            <LandingPageShareBubble urlPath="/en/landing/new-patient-special" isChinese={false} />
         </div>
     );
 }
