@@ -224,9 +224,14 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       {isLandingPage ? (
         <nav className="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b-2 border-green-700/10 shadow-sm bg-gradient-to-b from-white to-green-50/50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <a href="/" className="flex items-center decoration-transparent gap-2.5">
-              <img src="/images/logo-landing.png" alt="AcuTherapy Clinics" className="h-[4.5rem] w-auto drop-shadow-sm transition-transform hover:scale-105" />
-              <span className="text-3xl font-extrabold tracking-tighter text-slate-800 hidden sm:block">AcuTherapy</span>
+            <a href="/" className="flex items-center decoration-transparent gap-3">
+              <img src="/images/logo-landing.png" alt="AcuTherapy Clinics" className="h-12 md:h-14 w-auto drop-shadow-sm transition-transform hover:scale-105" />
+              <div className="flex flex-col justify-center">
+                <span className="text-2xl md:text-[1.65rem] leading-none font-black tracking-tight text-slate-800 font-sans">AcuTherapy</span>
+                <span className="text-[10px] md:text-xs font-bold tracking-[0.15em] md:tracking-[0.2em] text-emerald-700/80 mt-1 uppercase leading-none">
+                  {pathname.includes('spring') ? 'Spring Wellness' : pathname.includes('injury') ? 'Injury Recovery' : 'Patient Assessment'}
+                </span>
+              </div>
             </a>
             <div className="text-right flex flex-col items-end">
               <div className="text-[15px] font-bold text-slate-800 mb-0.5">Honolulu & Aiea (Pearl Harbor)</div>
