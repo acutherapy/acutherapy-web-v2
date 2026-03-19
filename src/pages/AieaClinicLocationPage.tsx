@@ -2,6 +2,7 @@ import { Helmet } from 'react-helmet-async';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Calendar, PhoneCall, MapPin, Printer, Mail, Clock } from "lucide-react";
+import LeaveReviewCTA from "@/components/LeaveReviewCTA";
 
 export default function AieaClinicLocationPage() {
     return (
@@ -174,6 +175,9 @@ export default function AieaClinicLocationPage() {
                     </div>
                 </div>
             </div>
+
+            {/* Leave Review Section */}
+            <LeaveReviewCTA location="aiea" />
         </>
     );
 }

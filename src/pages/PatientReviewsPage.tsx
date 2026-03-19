@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import LeaveReviewCTA from "@/components/LeaveReviewCTA";
 import { Calendar, PhoneCall, MapPin, ShieldCheck, } from "lucide-react";
 
 export default function PatientReviewsPage() {
@@ -144,6 +145,8 @@ export default function PatientReviewsPage() {
               </div>
             </div>
 
+
+            <LeaveReviewCTA location="both" />
 
             <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Explore Related Treatments & Information</h3>
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mb-12">
