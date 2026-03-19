@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- 首页 -->
+  <url>
+    <loc>https://acutherapy.com/</loc>
+  </url>
+
+  <!-- Locations -->
+  <url>
+    <loc>https://acutherapy.com/en/contact-us-honolulu</loc>
+  </url>
+
+  <!-- 未来建议扩展（你应该马上加） -->
+  <url>
+    <loc>https://acutherapy.com/honolulu-acupuncture</loc>
+  </url>
+
+  <url>
+    <loc>https://acutherapy.com/waikiki-acupuncture</loc>
+  </url>
+
+  <url>
+    <loc>https://acutherapy.com/aiea-acupuncture</loc>
+  </url>
+
+  <url>
+    <loc>https://acutherapy.com/kahala-acupuncture</loc>
+  </url>
+
+</urlset>

@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.join('')}
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <sitemap>
+    <loc>https://acutherapy.com/sitemap-locations.xml</loc>
+  </sitemap>
+
+  <sitemap>
+    <loc>https://acutherapy.com/sitemap-services.xml</loc>
+  </sitemap>
+
+</sitemapindex>

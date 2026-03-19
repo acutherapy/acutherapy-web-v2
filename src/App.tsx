@@ -469,6 +469,26 @@ export default function App() {
           <Route path="/en/landing/new-patient-special" element={<NewPatientSpecialEnPage />} />
           <Route path="/zh/landing/spring-promo" element={<SpringPromoZhPage />} />
           <Route path="/zh/landing/injury-recovery" element={<InjuryRecoveryZhPage />} />
+        
+          {/* SEO Legacy/Direct URL Aliases Requested by User Sitemap */}
+          <Route path="/en/contact-us-honolulu" element={<ContactHonoluluAcupuncturePage />} />
+          <Route path="/honolulu-acupuncture" element={<AcupunctureHonoluluPage />} />
+          <Route path="/waikiki-acupuncture" element={<AcupunctureWaikikiPage />} />
+          <Route path="/aiea-acupuncture" element={<AieaClinicLocationPage />} />
+          <Route path="/kahala-acupuncture" element={<AcupunctureKahalaPage />} />
+          
+          <Route path="/en/services" element={<TreatmentProcessPage />} />
+          <Route path="/en/services/acupuncture" element={<AcupunctureHonoluluPage />} />
+          <Route path="/en/services/medical-massage" element={<MedicalMassageHonoluluPage />} />
+          <Route path="/cupping-gua-sha-honolulu" element={<FireCuppingTherapyHonoluluPage />} />
+          <Route path="/en/services/insurance-payment" element={<InsuranceAcceptedPage />} />
+          
+          <Route path="/back-neck-pain" element={<BackPainAcupunctureHonoluluPage />} />
+          <Route path="/stress-anxiety" element={<ChronicPainTreatmentHonoluluPage />} />
+          <Route path="/auto-injury" element={<AutoAccidentInjuryTreatmentHonoluluPage />} />
+          <Route path="/workers-injury" element={<WorkersCompAcupunctureHonoluluPage />} />
+          <Route path="/veterans-care" element={<VeteransCareAcupunctureHonoluluPage />} />
+
         </Routes>
         <AIChatbot />
       </Layout>

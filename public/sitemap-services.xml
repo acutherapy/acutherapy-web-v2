@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Services 主页面 -->
+  <url>
+    <loc>https://acutherapy.com/en/services</loc>
+  </url>
+
+  <!-- 核心服务 -->
+  <url>
+    <loc>https://acutherapy.com/en/services/acupuncture</loc>
+  </url>
+
+  <url>
+    <loc>https://acutherapy.com/en/services/medical-massage</loc>
+  </url>
+
+  <url>
+    <loc>https://acutherapy.com/cupping-gua-sha-honolulu/</loc>
+  </url>
+
+  <url>
+    <loc>https://acutherapy.com/en/services/insurance-payment</loc>
+  </url>
+
+  <!-- Conditions（超级重要，带转化） -->
+  <url>
+    <loc>https://acutherapy.com/back-neck-pain</loc>
+  </url>
+
+  <url>
+    <loc>https://acutherapy.com/stress-anxiety</loc>
+  </url>
+
+  <url>
+    <loc>https://acutherapy.com/auto-injury</loc>
+  </url>
+
+  <url>
+    <loc>https://acutherapy.com/workers-injury</loc>
+  </url>
+
+  <url>
+    <loc>https://acutherapy.com/veterans-care</loc>
+  </url>
+
+</urlset>
