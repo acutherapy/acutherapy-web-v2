@@ -83,6 +83,14 @@ export default function SpringPromoEnPage() {
                             <p className="text-xs text-center text-slate-400 mt-4 leading-relaxed">By submitting, you agree to our privacy policy. No credit card required.</p>
                         </form>
                     )}
+
+                    {/* Share QR Code */}
+                    <div className="mt-8 pt-8 border-t border-slate-100 flex flex-col items-center text-center">
+                        <p className="text-xs font-semibold text-slate-400 mb-3 uppercase tracking-wider">${"Scan to open on mobile or share"}</p>
+                        <div className="bg-white p-2 rounded-xl shadow-sm border border-slate-100">
+                           <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://acutherapy.com${pathUrl}" alt="QR Code" className="w-24 h-24" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

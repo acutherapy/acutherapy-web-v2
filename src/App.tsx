@@ -224,8 +224,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       {isLandingPage ? (
         <nav className="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b-2 border-green-700/10 shadow-sm bg-gradient-to-b from-white to-green-50/50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <a href="/" className="flex items-center decoration-transparent">
-              <img src="/images/logo-landing.png" alt="AcuTherapy Clinics Spring Wellness" className="h-16 w-auto" />
+            <a href="/" className="flex items-center decoration-transparent gap-2.5">
+              <img src="/images/logo-landing.png" alt="AcuTherapy Clinics" className="h-[4.5rem] w-auto drop-shadow-sm transition-transform hover:scale-105" />
+              <span className="text-3xl font-extrabold tracking-tighter text-slate-800 hidden sm:block">AcuTherapy</span>
             </a>
             <div className="text-right flex flex-col items-end">
               <div className="text-[15px] font-bold text-slate-800 mb-0.5">Honolulu & Aiea (Pearl Harbor)</div>
@@ -238,8 +239,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       ) : (
       <nav className="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-slate-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-          <a href="/" className="flex items-center decoration-transparent">
-            <img src="/images/logo-main.png" alt="AcuTherapy Clinics Honolulu Pain Center" className="h-12 w-auto" />
+          <a href="/" className="flex items-center decoration-transparent gap-2.5">
+            <img src="/images/logo-main.png" alt="AcuTherapy Clinics" className="h-12 w-auto drop-shadow-sm transition-transform hover:scale-105" />
+            <span className="text-2xl font-extrabold tracking-tighter text-blue-900 hidden sm:block">AcuTherapy</span>
           </a>
           <div className="hidden lg:flex items-center gap-6 font-medium text-slate-600">
             <a href="/" className="hover:text-blue-600 transition-colors py-4">{navHome}</a>
