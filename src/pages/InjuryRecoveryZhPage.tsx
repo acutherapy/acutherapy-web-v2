@@ -38,13 +38,10 @@ export default function InjuryRecoveryZhPage() {
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16 relative z-10">
                 <div className="md:w-1/2 space-y-6">
                     <div className="inline-flex items-center gap-2 bg-blue-900/50 text-blue-200 font-bold px-4 py-2 rounded-full mb-4 border border-blue-500/30">
-                        <Activity className="w-4 h-4" /> 针对车祸与工伤患者的专业康复理疗机构
-                    </div>
-                    <div className="inline-flex items-center gap-2 bg-blue-900/50 text-blue-200 font-bold px-4 py-2 rounded-full mb-4 border border-blue-500/30">
                         <Activity className="w-4 h-4" /> 车祸保险，工伤保险，全额覆盖 0 压力
                     </div>
                     <h1 className="text-5xl md:text-6xl font-extrabold text-slate-900 leading-tight">
-                        快速康复，重返健康无痛的生活。
+                        车祸工伤，专业康复理疗机构
                     </h1>
                     <p className="text-xl text-slate-600 leading-relaxed">
                         您是否正在遭受车祸后遗症（如颈肩痛、背痛）或运动损伤的折磨？蔡医生专精于运用中医针灸和深层组织推拿，能够大幅加速伤病愈合并彻底消除痛症。
