@@ -37,7 +37,7 @@ export default function InjuryRecoveryZhPage() {
             </Helmet>
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16 relative z-10">
                 <div className="md:w-1/2 space-y-6">
-                    <div className="inline-flex items-center gap-2 bg-blue-900/50 text-blue-200 font-bold px-4 py-2 rounded-full mb-4 border border-blue-500/30">
+                    <div className="inline-flex items-center gap-2 bg-gradient-to-b from-white via-blue-50 to-blue-100 font-bold px-4 py-2 rounded-full mb-4 border border-blue-500/30">
                         <Activity className="w-4 h-4" /> 车祸保险，工伤保险，全额覆盖 0 压力
                     </div>
                     <h1 className="text-5xl md:text-6xl font-extrabold text-slate-900 leading-tight">
