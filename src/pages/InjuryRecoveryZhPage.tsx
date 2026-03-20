@@ -33,12 +33,15 @@ export default function InjuryRecoveryZhPage() {
             <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-600/20 rounded-full blur-3xl opacity-50 transform translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
             <Helmet>
                 <title>车祸与工伤疼痛理疗专家 | 檀香山针灸诊所</title>
-                <meta name="description" content="檀香山最高评价的华人中医针灸诊所，为车祸受伤及运动损伤患者提供绝佳康复方案。" />
+                <meta name="description" content="檀香山最高评价的中医针灸诊所，为车祸受伤及工作损伤患者提供绝佳康复方案。" />
             </Helmet>
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16 relative z-10">
                 <div className="md:w-1/2 space-y-6">
                     <div className="inline-flex items-center gap-2 bg-blue-900/50 text-blue-200 font-bold px-4 py-2 rounded-full mb-4 border border-blue-500/30">
-                        <Activity className="w-4 h-4" /> 车祸汽车保险 (PIP) 全额覆盖 0 压力
+                        <Activity className="w-4 h-4" /> 针对车祸与工伤患者的专业康复理疗机构
+                    </div>
+                    <div className="inline-flex items-center gap-2 bg-blue-900/50 text-blue-200 font-bold px-4 py-2 rounded-full mb-4 border border-blue-500/30">
+                        <Activity className="w-4 h-4" /> 车祸保险，工伤保险，全额覆盖 0 压力
                     </div>
                     <h1 className="text-5xl md:text-6xl font-extrabold text-slate-900 leading-tight">
                         快速康复，重返健康无痛的生活。
