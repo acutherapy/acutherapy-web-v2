@@ -1,5 +1,70 @@
 {
+  "redirects": [
+
+    {
+      "source": "/acupuncture-honolulu",
+      "destination": "/services/acupuncture",
+      "permanent": true
+    },
+    {
+      "source": "/medical-massage",
+      "destination": "/services/massage",
+      "permanent": true
+    },
+    {
+      "source": "/auto-injury",
+      "destination": "/conditions/auto-accident",
+      "permanent": true
+    },
+
+    {
+      "source": "/page-sitemap.xml",
+      "destination": "/sitemap.xml",
+      "permanent": true
+    },
+    {
+      "source": "/sitemap_index.xml",
+      "destination": "/sitemap.xml",
+      "permanent": true
+    },
+
+    {
+      "source": "/zh/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/cn/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+
+    {
+      "source": "/category/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/author/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+
+    {
+      "source": "/:year/:month/:slug",
+      "destination": "/",
+      "permanent": true
+    }
+
+  ],
+
   "rewrites": [
+
     {
       "source": "/go/review",
       "destination": "/api/go/review"
@@ -12,6 +77,7 @@
       "source": "/go/book",
       "destination": "/api/go/book"
     },
+
     {
       "source": "/robots.txt",
       "has": [
@@ -21,10 +87,7 @@
         }
       ],
       "destination": "/vercel-robots.txt"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
     }
+
   ]
 }
