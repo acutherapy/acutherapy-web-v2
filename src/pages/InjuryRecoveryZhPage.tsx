@@ -47,7 +47,7 @@ export default function InjuryRecoveryZhPage() {
                         您是否正在遭受车祸后遗症（如颈肩痛、背痛）或运动损伤的折磨？蔡医生专精于运用中医针灸和深层组织推拿，能够大幅加速伤病愈合并彻底消除痛症。
                     </p>
                     <ul className="space-y-4 text-slate-700 mt-8 font-medium text-lg font-medium">
-                        <li className="flex items-center gap-3"><CheckCircle2 className="text-blue-400 w-6 h-6" /> 车祸受伤理疗 100% 免费用（我们代办保险索赔）</li>
+                        <li className="flex items-center gap-3"><CheckCircle2 className="text-blue-400 w-6 h-6" /> 工伤，车祸受伤理疗 100% 免费（我们代办保险索赔）</li>
                         <li className="flex items-center gap-3"><CheckCircle2 className="text-blue-400 w-6 h-6" /> 专治颈肩背痛、长期顽固腰椎背痛专家</li>
                         <li className="flex items-center gap-3"><CheckCircle2 className="text-blue-400 w-6 h-6" /> 进阶电针疗法直接阻断深度炎症疼痛信号</li>
                     </ul>
