@@ -32,7 +32,7 @@ export default function InjuryRecoveryZhPage() {
         <div className="min-h-screen bg-[#F0FDF4] py-20 px-4 relative overflow-hidden">
             <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-600/20 rounded-full blur-3xl opacity-50 transform translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
             <Helmet>
-                <title>车祸与运动损伤理疗专家 | 檀香山针灸诊所</title>
+                <title>车祸与工伤疼痛理疗专家 | 檀香山针灸诊所</title>
                 <meta name="description" content="檀香山最高评价的华人中医针灸诊所，为车祸受伤及运动损伤患者提供绝佳康复方案。" />
             </Helmet>
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16 relative z-10">
@@ -44,11 +44,11 @@ export default function InjuryRecoveryZhPage() {
                         快速康复，重返健康无痛的生活。
                     </h1>
                     <p className="text-xl text-slate-600 leading-relaxed">
-                        您是否正在遭受车祸后遗症（如挥鞭伤、背痛）或运动损伤的折磨？蔡医生专精于运用中医针灸和深层组织推拿，能够大幅加速伤病愈合并彻底消除痛症。
+                        您是否正在遭受车祸后遗症（如颈肩痛、背痛）或运动损伤的折磨？蔡医生专精于运用中医针灸和深层组织推拿，能够大幅加速伤病愈合并彻底消除痛症。
                     </p>
                     <ul className="space-y-4 text-slate-700 mt-8 font-medium text-lg font-medium">
                         <li className="flex items-center gap-3"><CheckCircle2 className="text-blue-400 w-6 h-6" /> 车祸受伤理疗 100% 免费用（我们代办保险索赔）</li>
-                        <li className="flex items-center gap-3"><CheckCircle2 className="text-blue-400 w-6 h-6" /> 专治颈椎挥鞭伤、长期顽固腰椎背痛专家</li>
+                        <li className="flex items-center gap-3"><CheckCircle2 className="text-blue-400 w-6 h-6" /> 专治颈肩背痛、长期顽固腰椎背痛专家</li>
                         <li className="flex items-center gap-3"><CheckCircle2 className="text-blue-400 w-6 h-6" /> 进阶电针疗法直接阻断深度炎症疼痛信号</li>
                     </ul>
                 </div>
