@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Calendar, PhoneCall, MapPin, ShieldCheck, Activity, HelpCircle, ArrowRight } from "lucide-react";
+import { Calendar, PhoneCall, MapPin, ShieldCheck, Activity, HelpCircle } from "lucide-react";
 
 export default function FireCuppingTherapyHonoluluPage() {
   return (
