@@ -1,48 +1,16 @@
-
-
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import TreatmentInternalLinks from '@/components/TreatmentInternalLinks';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Calendar, PhoneCall, MapPin, ShieldCheck, Activity } from "lucide-react";
+import { Calendar, PhoneCall, MapPin, ShieldCheck, Activity, HelpCircle, ArrowRight } from "lucide-react";
 
 export default function AutoAccidentInjuryTreatmentHonoluluPage() {
   return (
     <>
       <Helmet>
-        <title>Auto Accident Injury Treatment Honolulu Treatment in Honolulu | AcuTherapy Clinics</title>
-        <meta name="description" content="Tired of Auto Accident Injury Treatment Honolulu? Dr. David Cai provides effective, non-surgical relief using advanced acupuncture and traditional Chinese medicine in Honolulu." />
-        <script type="application/ld+json">
-          {`
-          {
-            "@context": "https://schema.org",
-            "@type": "MedicalWebPage",
-            "name": "Auto Accident Injury Treatment Honolulu Treatment in Honolulu | AcuTherapy Clinics",
-            "headline": "Auto Accident Injury Treatment Honolulu",
-            "description": "Tired of Auto Accident Injury Treatment Honolulu? Dr. David Cai provides effective, non-surgical relief using advanced acupuncture and traditional Chinese medicine in Honolulu.",
-            "url": "https://acutherapy.com/auto-accident-injury-honolulu",
-            "provider": {
-              "@type": "MedicalBusiness",
-              "name": "AcuTherapy Clinics",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "1650 Liliha St, Suite 208",
-                "addressLocality": "Honolulu",
-                "addressRegion": "HI",
-                "postalCode": "96817",
-                "addressCountry": "US"
-              },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": 21.321289,
-                "longitude": -157.860155
-              },
-              "telephone": "+1-808-528-7177"
-            }
-          }
-          `}
-        </script>
+        <link rel="canonical" href="https://acutherapy.com/auto-accident-injury-honolulu" />
+        <title>Auto Accident Injury Treatment Honolulu | 100% PIP Coverage | AcuTherapy</title>
+        <meta name="description" content="Been in a car crash? Get expert auto accident injury treatment in Honolulu. 100% covered by Hawaii No-Fault PIP insurance. We treat whiplash, back pain, and concussions." />
       </Helmet>
 
       {/* Page Header */}
@@ -50,17 +18,17 @@ export default function AutoAccidentInjuryTreatmentHonoluluPage() {
         <div className="absolute inset-0 z-0 opacity-40">
           <img 
             src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2000" 
-            alt="Acupuncture therapy background" 
+            alt="Auto Accident Honolulu" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/80" />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm mb-6 backdrop-blur-sm">
-            <ShieldCheck size={16} /> <span>Trusted Honolulu Pain Clinic</span>
+            <ShieldCheck size={16} /> <span>100% No-Fault PIP Insurance Accepted</span>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Auto Accident Injury Treatment Honolulu</h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Medical-grade treatments customized for lasting relief and recovery in Honolulu.</p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Auto Accident Injury Treatment in Honolulu</h1>
+          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Recover safely from whiplash, neck pain, and back pain with zero out-of-pocket costs using your Hawaii auto insurance.</p>
         </div>
       </section>
 
@@ -69,83 +37,81 @@ export default function AutoAccidentInjuryTreatmentHonoluluPage() {
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-12 gap-12">
           
           <article className="md:col-span-8">
-            
-              <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
-                Suffering from <strong>Auto Accident Injury Treatment Honolulu</strong> can deeply disrupt your daily life, making basic movements agonizing and draining your energy. At AcuTherapy Clinics in Honolulu, Dr. David Cai applies over 30 years of medical acupuncture experience to resolve the root cause of auto accident injury treatment honolulu, offering a lasting alternative to surgery or heavy pharmaceuticals.
+            <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
+              A motor vehicle accident causes extreme physical trauma to the body, even at low speeds. The intense force throws your spine out of alignment, tears micro-fascia, and locks your muscles in a defensive spasm. At AcuTherapy Clinics, our specialized <strong>Auto Accident Injury Treatment in Honolulu</strong> is designed to rapidly reduce acute inflammation, stop chronic whiplash pain, and prevent scar tissue from permanently restricting your mobility. 
+            </p>
+
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Understanding Whiplash & Seatbelt Trauma</h2>
+            <p className="text-lg text-slate-700 leading-relaxed mb-6">
+              The most common consequence of a car crash is whiplash—a severe hyperextension of the complex neck ligaments. Symptoms like excruciating neck stiffness, radiating shoulder pain, massive tension headaches, and lower back contusions from seatbelt lockdown rarely show up fully on the first day. It often takes 48-72 hours for the severe neuro-inflammation to peak, leaving victims in immobilizing pain for weeks or months.
+            </p>
+
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Our Post-Crash Acupuncture Helps</h2>
+            <p className="text-lg text-slate-700 leading-relaxed mb-6">
+              When standard painkillers wear off, the muscular spasms remain. Post-collision medical acupuncture directly intercepts the body's trauma response. We target the heavily traumatized cervical spine and lumbar regions with specialized micro-needling. This forces the tense, knotted muscle fibers to release their vice-grip safely. It also floods the damaged ligament tissues with fresh, highly oxygenated blood necessary for cellular repair and hematoma (bruising) breakdown.
+            </p>
+
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect & Zero Out-Of-Pocket Costs</h2>
+            <p className="text-lg text-slate-700 leading-relaxed mb-6">
+              Because Hawaii operates under a "No-Fault" auto insurance law (PIP), your medical acupuncture and massage treatments are typically covered 100% by your car insurance—regardless of who caused the accident. Our front desk staff will handle all the tedious billing and paperwork with your adjuster, so you literally do not pay a dime out of pocket and can focus purely on your physical recovery.
+            </p>
+            <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg my-8">
+              <p className="text-lg text-slate-800 italic font-medium">
+                "Many crash victims arrive unable to turn their neck more than an inch. Due to the powerful anti-inflammatory effects of our treatments, most patients report feeling a significant breakthrough in mobility and pain reduction within the first two weeks."
               </p>
-              
-      <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/50 group mb-12 w-full max-w-3xl mx-auto">
-        <img src="/images/abdominal-acupuncture.jpg" alt="Auto Accident Injury Treatment Honolulu" className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
-        <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-8 pt-16 text-white text-lg font-medium">Advanced Acupuncture Treatments</figcaption>
-      </div>
-              <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">The Science of Treating Auto Accident Injury Treatment Honolulu with Acupuncture</h2>
-              <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                Auto Accident Injury Treatment Honolulu is often the result of trapped inflammation, peripheral nerve irritation, or deep myofascial tension that standard treatments fail to reach. Our specific needle protocols for auto accident injury treatment honolulu stimulate local vasodilation—massively increasing blood flow to oxygen-starved tissues.
-              </p>
-              <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                Furthermore, precise stimulation signals the central nervous system to release natural endorphins and opioid-like neuropeptides, dramatically downregulating the pain signals caused by auto accident injury treatment honolulu before they reach the brain.
-              </p>
-              <h3 className="text-2xl font-bold text-slate-900 mt-10 mb-6 border-b pb-2">Our Highly Effective Treatment Process</h3>
-              <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                We don't use a "one size fits all" approach. Your treatment for auto accident injury treatment honolulu may integrate multiple modalities for optimal effectiveness:
-              </p>
-              <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
-                <li><strong>Targeted Electro-Acupuncture:</strong> To relieve severe nerve pain or muscle spasms.</li>
-                <li><strong>Medical Massage (Tui-Na):</strong> To physically break down scar tissue and fascia adhesions compounding the structural issue.</li>
-                <li><strong>Fire Cupping Therapy:</strong> To pull stagnant blood and lactic acid out of deep muscle layers.</li>
-              </ul>
-        
-            
-      <div className="mt-16 mb-16 bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden">
-        <div className="grid md:grid-cols-5 gap-0">
-          <div className="md:col-span-2 bg-slate-100 relative">
-            <img 
-              src="/images/dr-david-cai-portrait.jpg" 
-              alt="Dr. David Cai, L.Ac., L.M.T." 
-              className="w-full h-full object-cover min-h-[400px]"
-              onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=800'; }}
-            />
-            <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-6 text-white text-center">
-               <span className="font-bold text-xl">Dr. David Cai</span>
-               <p className="text-blue-300 text-sm">L.Ac., L.M.T.</p>
             </div>
-          </div>
-          <div className="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
-            <h3 className="text-sm font-bold tracking-widest text-blue-600 uppercase mb-2">Clinical Director & Founder</h3>
-            <h4 className="text-3xl font-extrabold text-slate-900 mb-4">Leading Honolulu Pain Clinic</h4>
-            <p className="text-slate-600 mb-6 leading-relaxed" dangerouslySetInnerHTML={{ __html: 'With over 30 years of clinical experience, <strong>Dr. David Cai</strong> is a master of Traditional Chinese Medicine (TCM) and advanced acupuncture protocols. He specializes in severe pain management, sports injuries, and complex auto accident recoveries, bringing world-class holistic healthcare to the Honolulu community.' }}></p>
-            <div className="flex items-center gap-4 bg-slate-50 p-4 rounded-2xl border border-slate-100">
-               <img src="/images/acutherapy-medical-team.jpg" alt="AcuTherapy Clinics Medical Team" className="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md flex-shrink-0" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
-               <div>
-                 <h5 className="font-bold text-slate-900 mb-1">AcuTherapy Clinics Medical Team</h5>
-                 <p className="text-sm text-slate-500 italic leading-relaxed">"Our multidisciplinary medical team is highly trained and committed to finding the root cause of your condition, providing relief that lasts."</p>
-               </div>
+
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Crash Injuries Do We Treat?</h2>
+            <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
+              <li><strong>Severe Whiplash:</strong> Neck stiffness, upper back spasming, and loss of cervical mobility.</li>
+              <li><strong>Post-Concussion Headaches:</strong> Traumatic tension radiating from the skull base.</li>
+              <li><strong>Lower Back Sprains:</strong> Lumbar contusions and sciatic nerve pain from sheer seatbelt force.</li>
+              <li><strong>Shoulder / Rotator Cuff Trauma:</strong> Steering wheel impact injuries.</li>
+            </ul>
+
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Frequently Asked Questions</h2>
+            <div className="space-y-6 mb-12">
+              <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                <h3 className="text-xl font-bold text-slate-900 mb-2 flex items-center gap-2"><HelpCircle className="text-blue-500" size={20}/> Do I need a doctor's referral for PIP billing?</h3>
+                <p className="text-slate-600">Typically, yes. If you plan to use your Hawaii No-Fault PIP auto insurance, you usually need a simple prescription or referral from your primary care physician or urgent care doctor explicitly recommending "Acupuncture". If you need help obtaining one, just call our clinic and we will guide you.</p>
+              </div>
+              <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                <h3 className="text-xl font-bold text-slate-900 mb-2 flex items-center gap-2"><HelpCircle className="text-blue-500" size={20}/> The accident was my fault. Am I still covered?</h3>
+                <p className="text-slate-600">Yes! Hawaii is a No-Fault state. This legally means your personal auto insurance policy contains Personal Injury Protection (PIP) medical funds designed specifically for your recovery, meaning your treatments are covered regardless of who was at fault.</p>
+              </div>
+              <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                <h3 className="text-xl font-bold text-slate-900 mb-2 flex items-center gap-2"><HelpCircle className="text-blue-500" size={20}/> How soon after the accident should I start acupuncture?</h3>
+                <p className="text-slate-600">Immediately. The faster we can intercept the neurological inflammation and relax the defensive muscle spasms, the significantly less chance you have of developing permanent scar tissue and chronic lifetime pain.</p>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    
-            
-      <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Explore Related Treatments & Information</h3>
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mb-12">
-        
-        <Link to="/acupuncture-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold">
-          <ShieldCheck className="text-blue-500 mr-3 h-5 w-5" /> Acupuncture Honolulu
-        </Link>
-        <Link to="/contact-honolulu-acupuncture" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold">
-          <PhoneCall className="text-emerald-500 mr-3 h-5 w-5" /> Contact Our Clinic
-        </Link>
-        <Link to="/auto-accident-injury-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold">
-          <Activity className="text-blue-500 mr-3 h-5 w-5" /> Auto Accident PIP
-        </Link>
-    
-        <Link to="/medical-massage-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold">
-          <Activity className="text-blue-500 mr-3 h-5 w-5" /> Medical Massage
-        </Link>
-      </div>
-    
-          
-        <TreatmentInternalLinks currentPage="auto-accident" />
+
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Related Treatments</h2>
+            <div className="grid sm:grid-cols-2 gap-4 mb-12">
+              <Link to="/neck-pain-treatment-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all font-semibold text-slate-700">
+                <Activity className="text-blue-500 mr-3 h-5 w-5" /> Neck Pain & Whiplash Relief
+              </Link>
+              <Link to="/back-pain-acupuncture-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all font-semibold text-slate-700">
+                <Activity className="text-blue-500 mr-3 h-5 w-5" /> Lower Back Auto Trauma
+              </Link>
+              <Link to="/acupuncture-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all font-semibold text-slate-700">
+                <Activity className="text-blue-500 mr-3 h-5 w-5" /> General Medical Acupuncture
+              </Link>
+              <Link to="/medical-massage-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all font-semibold text-slate-700">
+                <Activity className="text-blue-500 mr-3 h-5 w-5" /> Injury Medical Massage
+              </Link>
+            </div>
+
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Serving Auto Accident Victims in Honolulu</h2>
+            <p className="text-lg text-slate-700 leading-relaxed mb-6">
+              Our clinics are perfectly positioned to provide post-accident relief across Oahu. We handle No-Fault claims rapidly for patients living in:
+            </p>
+            <div className="flex flex-wrap gap-3 mb-12">
+                <Link to="/acupuncture-honolulu" className="px-4 py-2 bg-slate-200 text-slate-700 rounded-lg hover:bg-blue-100 transition-colors font-medium">Honolulu</Link>
+                <Link to="/acupuncture-ala-moana" className="px-4 py-2 bg-slate-200 text-slate-700 rounded-lg hover:bg-blue-100 transition-colors font-medium">Ala Moana</Link>
+                <Link to="/acupuncture-pearl-city" className="px-4 py-2 bg-slate-200 text-slate-700 rounded-lg hover:bg-blue-100 transition-colors font-medium">Pearl City / Aiea</Link>
+                <Link to="/acupuncture-waipahu" className="px-4 py-2 bg-slate-200 text-slate-700 rounded-lg hover:bg-blue-100 transition-colors font-medium">Waipahu</Link>
+            </div>
+
           </article>
 
           {/* Sidebar */}
@@ -154,34 +120,12 @@ export default function AutoAccidentInjuryTreatmentHonoluluPage() {
               <div className="bg-blue-600 h-2 w-full"></div>
               <CardContent className="p-8 text-center">
                 <h3 className="text-2xl font-bold text-slate-900 mb-2">Book Your Visit</h3>
-                <p className="text-slate-600 mb-8 text-sm">Bridge the gap to a pain-free life today.</p>
+                <p className="text-slate-600 mb-8 text-sm">Don't wait for the pain to become chronic. Book an evaluation today.</p>
                 <div className="flex flex-col gap-4">
                   <Link to="/book-appointment">
-
-                    <Link to="/book-appointment">
-
-
-                      <Link to="/book-appointment">
-
-
-
-                        <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
-
-
-
-                          <Calendar className="mr-2" /> Schedule Online
-
-
-
-                        </Button>
-
-
-
-                      </Link>
-
-
-                    </Link>
-
+                    <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
+                      <Calendar className="mr-2" /> Schedule Online
+                    </Button>
                   </Link>
                   <Button variant="outline" className="w-full h-14 text-lg border-2 border-slate-200" onClick={() => window.location.href='tel:+18085287177'}>
                     <PhoneCall className="mr-2 h-5 w-5 text-blue-600" /> (808) 528-7177
@@ -196,7 +140,6 @@ export default function AutoAccidentInjuryTreatmentHonoluluPage() {
                       <p className="text-slate-600 text-sm leading-relaxed mb-1">
                         1650 Liliha St, Suite 208<br/>Honolulu, HI 96817
                       </p>
-                      <p className="text-slate-600 text-sm"><strong>Ph:</strong> (808) 528-7177 <span className="mx-1">|</span> <strong>Fax:</strong> (808) 212-9459</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -206,35 +149,24 @@ export default function AutoAccidentInjuryTreatmentHonoluluPage() {
                       <p className="text-slate-600 text-sm leading-relaxed mb-1">
                         98-211 Pali Momi St, Suite 604<br/>Aiea, HI 96701
                       </p>
-                      <p className="text-slate-600 text-sm"><strong>Ph:</strong> (808) 452-1900 <span className="mx-1">|</span> <strong>Fax:</strong> (808) 452-1521</p>
                     </div>
                   </div>
-                  <div className="mt-6 bg-slate-50 p-4 rounded-lg">
-                      <p className="font-bold text-slate-900 mb-1 text-sm">Hours of Operation</p>
-                      <p className="text-slate-600 text-sm">Mon-Fri: 9am - 1pm, Sat: 8am - 12pm</p>
+                  <div className="mt-6 bg-green-50 p-4 rounded-lg border border-green-200">
+                      <p className="font-bold text-green-900 mb-1 text-sm flex items-center gap-1"><ShieldCheck size={16} /> PIP Covered Approved</p>
+                      <p className="text-green-800 text-sm">You pay $0 for your treatments. We bill your auto insurance directly.</p>
                   </div>
-                </div>
-
-                <div className="mt-6 pt-6 border-t border-slate-100 text-left">
-                    <p className="font-bold text-slate-900 mb-3 text-sm">Also serving:</p>
-                    <div className="flex flex-wrap gap-2 text-xs">
-                        <Link to="/acupuncture-waikiki" className="px-2 py-1 bg-slate-100 text-slate-600 rounded-md hover:bg-blue-50">Waikiki</Link>
-                        <Link to="/acupuncture-kaimuki" className="px-2 py-1 bg-slate-100 text-slate-600 rounded-md hover:bg-blue-50">Kaimuki</Link>
-                        <Link to="/acupuncture-ala-moana" className="px-2 py-1 bg-slate-100 text-slate-600 rounded-md hover:bg-blue-50">Ala Moana</Link>
-                        <Link to="/acupuncture-kahala" className="px-2 py-1 bg-slate-100 text-slate-600 rounded-md hover:bg-blue-50">Kahala</Link>
-                    </div>
                 </div>
               </CardContent>
             </Card>
 
             <div className="bg-blue-900 text-white p-8 rounded-2xl shadow-xl">
               <h4 className="text-xl font-bold mb-4 flex items-center gap-2">Patient Reviews</h4>
-              <p className="text-slate-300 italic text-sm leading-relaxed mb-4">"Dr. Cai completely resolved my shoulder pain after just 3 visits. I had been suffering for months. The clinic is pristine, professional, and very welcoming!"</p>
+              <p className="text-slate-300 italic text-sm leading-relaxed mb-4">"I was rear-ended on the H-1 and suffered terrible whiplash. Dr. Cai's clinic handled all my Geico insurance paperwork seamlessly. The acupuncture treatments completely saved my neck and got me back to work within weeks."</p>
               <div className="flex items-center gap-4 mt-6">
-                 <div className="h-10 w-10 bg-blue-800 rounded-full flex items-center justify-center font-bold text-white shadow-inner">ST</div>
+                 <div className="h-10 w-10 bg-blue-800 rounded-full flex items-center justify-center font-bold text-white shadow-inner">DK</div>
                  <div>
-                    <p className="text-white font-semibold text-sm">Sarah T.</p>
-                    <p className="text-blue-400 text-xs">Honolulu Resident</p>
+                    <p className="text-white font-semibold text-sm">Daniel K.</p>
+                    <p className="text-blue-400 text-xs">Waipahu Resident</p>
                  </div>
               </div>
             </div>

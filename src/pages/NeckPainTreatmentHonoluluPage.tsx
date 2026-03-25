@@ -1,47 +1,16 @@
-
-
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Calendar, PhoneCall, MapPin, ShieldCheck, Activity } from "lucide-react";
+import { Calendar, PhoneCall, MapPin, ShieldCheck, Activity, HelpCircle, ArrowRight } from "lucide-react";
 
 export default function NeckPainTreatmentHonoluluPage() {
   return (
     <>
       <Helmet>
-        <title>Neck Pain Treatment Honolulu Treatment in Honolulu | AcuTherapy Clinics</title>
-        <meta name="description" content="Tired of Neck Pain Treatment Honolulu? Dr. David Cai provides effective, non-surgical relief using advanced acupuncture and traditional Chinese medicine in Honolulu." />
-        <script type="application/ld+json">
-          {`
-          {
-            "@context": "https://schema.org",
-            "@type": "MedicalWebPage",
-            "name": "Neck Pain Treatment Honolulu Treatment in Honolulu | AcuTherapy Clinics",
-            "headline": "Neck Pain Treatment Honolulu",
-            "description": "Tired of Neck Pain Treatment Honolulu? Dr. David Cai provides effective, non-surgical relief using advanced acupuncture and traditional Chinese medicine in Honolulu.",
-            "url": "https://acutherapy.com/neck-pain-treatment-honolulu",
-            "provider": {
-              "@type": "MedicalBusiness",
-              "name": "AcuTherapy Clinics",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "1650 Liliha St, Suite 208",
-                "addressLocality": "Honolulu",
-                "addressRegion": "HI",
-                "postalCode": "96817",
-                "addressCountry": "US"
-              },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": 21.321289,
-                "longitude": -157.860155
-              },
-              "telephone": "+1-808-528-7177"
-            }
-          }
-          `}
-        </script>
+        <link rel="canonical" href="https://acutherapy.com/neck-pain-treatment-honolulu" />
+        <title>Neck Pain Treatment Honolulu | Whiplash & Stiffness | AcuTherapy</title>
+        <meta name="description" content="Suffering from severe neck pain, whiplash, or tension headaches in Honolulu? Break the cycle of stiffness with our expert medical acupuncture treatments." />
       </Helmet>
 
       {/* Page Header */}
@@ -49,17 +18,17 @@ export default function NeckPainTreatmentHonoluluPage() {
         <div className="absolute inset-0 z-0 opacity-40">
           <img 
             src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2000" 
-            alt="Acupuncture therapy background" 
+            alt="Neck Pain Treatment Honolulu" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/80" />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm mb-6 backdrop-blur-sm">
-            <ShieldCheck size={16} /> <span>Trusted Honolulu Pain Clinic</span>
+            <ShieldCheck size={16} /> <span>Restoring Cervical Mobility Fast</span>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Neck Pain Treatment Honolulu</h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Medical-grade treatments customized for lasting relief and recovery in Honolulu.</p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Neck Pain Treatment in Honolulu</h1>
+          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Turn your head without wincing. Advanced medical acupuncture protocols to melt away neck tension and heal cervical injuries.</p>
         </div>
       </section>
 
@@ -68,87 +37,87 @@ export default function NeckPainTreatmentHonoluluPage() {
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-12 gap-12">
           
           <article className="md:col-span-8">
-            
-              <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
-                Suffering from <strong>Neck Pain Treatment Honolulu</strong> can deeply disrupt your daily life, making basic movements agonizing and draining your energy. At AcuTherapy Clinics in Honolulu, Dr. David Cai applies over 30 years of medical acupuncture experience to resolve the root cause of neck pain treatment honolulu, offering a lasting alternative to surgery or heavy pharmaceuticals.
+            <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
+              If your neck feels eternally locked up, making it painful to turn your head while driving or leaving you waking up with tension headaches every morning, you're not alone. Our specialized <strong>Neck Pain Treatment in Honolulu</strong> focuses on physically releasing the locked cervical fascia that standard painkillers simply cannot touch. Do not let chronic neck stiffness rob you of your daily energy.
+            </p>
+
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Causes Severe Neck Pain & Stiffness?</h2>
+            <p className="text-lg text-slate-700 leading-relaxed mb-6">
+              The human head weighs around 10 to 12 pounds. When this heavy structure is thrown off balance by poor posture—such as peering down at a phone ("Tech Neck") or slouching at a computer all day—the deeply situated muscles of the cervical spine are forced into a state of permanent contraction to keep your head up.
+            </p>
+            <p className="text-lg text-slate-700 leading-relaxed mb-6">
+              Additionally, acute injuries like auto accidents cause aggressive whiplash, tearing the delicate micro-fascia of the neck. When the body attempts to heal this trauma, it often creates disorganized, tough scar tissue that aggressively limits your range of motion long after the initial crash.
+            </p>
+
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Our Honolulu Acupuncture Provides Relief</h2>
+            <p className="text-lg text-slate-700 leading-relaxed mb-6">
+              Acupuncture directly targets the inflamed motor points of the trapezius, levator scapulae, and deep cervical stabilizing muscles. By strategically placing hair-thin needles into these exact trigger points, we initiate an immediate localized reflex: the muscle fibers finally stop spasming and let go. 
+            </p>
+            <p className="text-lg text-slate-700 leading-relaxed mb-6">
+              This physical release takes the pressure off of the pinched cervical nerves that cause radiating pain down your arms or up into your skull (migraines). Simultaneously, the treatment vastly dilates local blood flow, flushing out cellular waste and bringing highly oxygenated blood to accelerate the healing of your spine.
+            </p>
+
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect & Real Patient Results</h2>
+            <p className="text-lg text-slate-700 leading-relaxed mb-6">
+              Dr. David Cai utilizes over 30 years of clinical experience. Your treatment will begin with a thorough palpation of your neck and upper shoulders to locate the exact source of structural tension before the gentle needle insertion. Expect a quiet, deeply relaxing 30-minute session.
+            </p>
+            <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg my-8">
+              <p className="text-lg text-slate-800 italic font-medium">
+                "Many patients suffering from rigid 'tech neck' report an instant, profound sense of lightness. They often sit up after their first session and immediately realize they can turn their head completely to the left or right without the sharp, stabbing pain they’ve endured for months."
               </p>
-              
-      <div className="grid md:grid-cols-2 gap-8 mb-12">
-        <figure className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/50 group">
-          <img src="/images/acupressure-facial-massage.jpg" alt="Acupressure massage" className="w-full h-[350px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
-          <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-6 pt-12 text-white font-medium">Tension Release Massage</figcaption>
-        </figure>
-        <figure className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/50 group mt-8 md:mt-0">
-          <img src="/images/neck-shoulder-acupressure.jpg" alt="Neck shoulder massage" className="w-full h-[350px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
-          <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-6 pt-12 text-white font-medium">Trapezius Muscle Medical Massage</figcaption>
-        </figure>
-      </div>
-              <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">The Science of Treating Neck Pain Treatment Honolulu with Acupuncture</h2>
-              <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                Neck Pain Treatment Honolulu is often the result of trapped inflammation, peripheral nerve irritation, or deep myofascial tension that standard treatments fail to reach. Our specific needle protocols for neck pain treatment honolulu stimulate local vasodilation—massively increasing blood flow to oxygen-starved tissues.
-              </p>
-              <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                Furthermore, precise stimulation signals the central nervous system to release natural endorphins and opioid-like neuropeptides, dramatically downregulating the pain signals caused by neck pain treatment honolulu before they reach the brain.
-              </p>
-              <h3 className="text-2xl font-bold text-slate-900 mt-10 mb-6 border-b pb-2">Our Highly Effective Treatment Process</h3>
-              <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                We don't use a "one size fits all" approach. Your treatment for neck pain treatment honolulu may integrate multiple modalities for optimal effectiveness:
-              </p>
-              <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
-                <li><strong>Targeted Electro-Acupuncture:</strong> To relieve severe nerve pain or muscle spasms.</li>
-                <li><strong>Medical Massage (Tui-Na):</strong> To physically break down scar tissue and fascia adhesions compounding the structural issue.</li>
-                <li><strong>Fire Cupping Therapy:</strong> To pull stagnant blood and lactic acid out of deep muscle layers.</li>
-              </ul>
-        
-            
-      <div className="mt-16 mb-16 bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden">
-        <div className="grid md:grid-cols-5 gap-0">
-          <div className="md:col-span-2 bg-slate-100 relative">
-            <img 
-              src="/images/dr-david-cai-portrait.jpg" 
-              alt="Dr. David Cai, L.Ac., L.M.T." 
-              className="w-full h-full object-cover min-h-[400px]"
-              onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=800'; }}
-            />
-            <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-6 text-white text-center">
-               <span className="font-bold text-xl">Dr. David Cai</span>
-               <p className="text-blue-300 text-sm">L.Ac., L.M.T.</p>
             </div>
-          </div>
-          <div className="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
-            <h3 className="text-sm font-bold tracking-widest text-blue-600 uppercase mb-2">Clinical Director & Founder</h3>
-            <h4 className="text-3xl font-extrabold text-slate-900 mb-4">Leading Honolulu Pain Clinic</h4>
-            <p className="text-slate-600 mb-6 leading-relaxed" dangerouslySetInnerHTML={{ __html: 'With over 30 years of clinical experience, <strong>Dr. David Cai</strong> is a master of Traditional Chinese Medicine (TCM) and advanced acupuncture protocols. He specializes in severe pain management, sports injuries, and complex auto accident recoveries, bringing world-class holistic healthcare to the Honolulu community.' }}></p>
-            <div className="flex items-center gap-4 bg-slate-50 p-4 rounded-2xl border border-slate-100">
-               <img src="/images/acutherapy-medical-team.jpg" alt="AcuTherapy Clinics Medical Team" className="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md flex-shrink-0" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
-               <div>
-                 <h5 className="font-bold text-slate-900 mb-1">AcuTherapy Clinics Medical Team</h5>
-                 <p className="text-sm text-slate-500 italic leading-relaxed">"Our multidisciplinary medical team is highly trained and committed to finding the root cause of your condition, providing relief that lasts."</p>
-               </div>
+
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Who Is This For?</h2>
+            <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
+              <li><strong>Office Professionals:</strong> Releasing the "Tech Neck" posture and upper shoulder burning sensations.</li>
+              <li><strong>Auto Accident Survivors:</strong> Reversing extreme whiplash injuries (100% PIP Auto Insurance covered).</li>
+              <li><strong>Chronic Migraine Sufferers:</strong> Dissolving the tension headaches stemming from the base of the skull.</li>
+              <li><strong>Athletes:</strong> Speeds up recovery from sports-related neck impacts or awkward sleeping cricks.</li>
+            </ul>
+
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Frequently Asked Questions</h2>
+            <div className="space-y-6 mb-12">
+              <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                <h3 className="text-xl font-bold text-slate-900 mb-2 flex items-center gap-2"><HelpCircle className="text-blue-500" size={20}/> Can this help with pain radiating down my arm?</h3>
+                <p className="text-slate-600">Yes. Cervical radiculopathy (pinched nerves in the neck sending pain or numbness down the arm) responds exceptionally well to acupuncture. We target the specific spinal level where the nerve is being compressed to relieve the inflammation and open the nerve pathway.</p>
+              </div>
+              <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                <h3 className="text-xl font-bold text-slate-900 mb-2 flex items-center gap-2"><HelpCircle className="text-blue-500" size={20}/> How many sessions will I need?</h3>
+                <p className="text-slate-600">While acute stiffness (like waking up with a crick) might resolve in just 1-3 sessions, chronic poor posture or severe auto whiplash generally recommend a foundational course of 6-10 treatments to retrain the musculature fully.</p>
+              </div>
+              <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                <h3 className="text-xl font-bold text-slate-900 mb-2 flex items-center gap-2"><HelpCircle className="text-blue-500" size={20}/> Do you ever combine it with cupping?</h3>
+                <p className="text-slate-600">Absolutely. Medical cupping on the upper back and trapezius muscles is a fantastic complementary therapy that mechanically pulls stagnant blood and severely tight muscle fascia away from the neck base.</p>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    
-            
-      <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Explore Related Treatments & Information</h3>
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mb-12">
-        
-        <Link to="/acupuncture-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold">
-          <ShieldCheck className="text-blue-500 mr-3 h-5 w-5" /> Acupuncture Honolulu
-        </Link>
-        <Link to="/contact-honolulu-acupuncture" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold">
-          <PhoneCall className="text-emerald-500 mr-3 h-5 w-5" /> Contact Our Clinic
-        </Link>
-        <Link to="/auto-accident-injury-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold">
-          <Activity className="text-blue-500 mr-3 h-5 w-5" /> Auto Accident PIP
-        </Link>
-    
-        <Link to="/whiplash-treatment-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold">
-          <Activity className="text-blue-500 mr-3 h-5 w-5" /> Whiplash Therapy
-        </Link>
-      </div>
-    
+
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Related Treatments</h2>
+            <div className="grid sm:grid-cols-2 gap-4 mb-12">
+              <Link to="/shoulder-pain-acupuncture-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all font-semibold text-slate-700">
+                <Activity className="text-blue-500 mr-3 h-5 w-5" /> Shoulder Pain Relief
+              </Link>
+              <Link to="/headache-migraine-acupuncture-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all font-semibold text-slate-700">
+                <Activity className="text-blue-500 mr-3 h-5 w-5" /> Tension Headaches / TMJ
+              </Link>
+              <Link to="/auto-accident-injury-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all font-semibold text-slate-700">
+                <Activity className="text-blue-500 mr-3 h-5 w-5" /> Auto Accident Whiplash (PIP)
+              </Link>
+              <Link to="/fire-cupping-therapy-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all font-semibold text-slate-700">
+                <Activity className="text-blue-500 mr-3 h-5 w-5" /> Medical Cupping Therapy
+              </Link>
+            </div>
+
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Serving Honolulu & Surrounding Oahu</h2>
+            <p className="text-lg text-slate-700 leading-relaxed mb-6">
+              Our clinics situated in Honolulu and Pearl City (Aiea) allow us to conveniently serve patients suffering from chronic neck tension across the island:
+            </p>
+            <div className="flex flex-wrap gap-3 mb-12">
+                <Link to="/acupuncture-honolulu" className="px-4 py-2 bg-slate-200 text-slate-700 rounded-lg hover:bg-blue-100 transition-colors font-medium">Honolulu</Link>
+                <Link to="/acupuncture-waikiki" className="px-4 py-2 bg-slate-200 text-slate-700 rounded-lg hover:bg-blue-100 transition-colors font-medium">Waikiki</Link>
+                <Link to="/acupuncture-ala-moana" className="px-4 py-2 bg-slate-200 text-slate-700 rounded-lg hover:bg-blue-100 transition-colors font-medium">Ala Moana</Link>
+                <Link to="/acupuncture-pearl-city" className="px-4 py-2 bg-slate-200 text-slate-700 rounded-lg hover:bg-blue-100 transition-colors font-medium">Aiea / Pearl City</Link>
+            </div>
+
           </article>
 
           {/* Sidebar */}
@@ -157,34 +126,12 @@ export default function NeckPainTreatmentHonoluluPage() {
               <div className="bg-blue-600 h-2 w-full"></div>
               <CardContent className="p-8 text-center">
                 <h3 className="text-2xl font-bold text-slate-900 mb-2">Book Your Visit</h3>
-                <p className="text-slate-600 mb-8 text-sm">Bridge the gap to a pain-free life today.</p>
+                <p className="text-slate-600 mb-8 text-sm">Bridge the gap to a pain-free life today. Located in Honolulu.</p>
                 <div className="flex flex-col gap-4">
                   <Link to="/book-appointment">
-
-                    <Link to="/book-appointment">
-
-
-                      <Link to="/book-appointment">
-
-
-
-                        <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
-
-
-
-                          <Calendar className="mr-2" /> Schedule Online
-
-
-
-                        </Button>
-
-
-
-                      </Link>
-
-
-                    </Link>
-
+                    <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
+                      <Calendar className="mr-2" /> Schedule Online
+                    </Button>
                   </Link>
                   <Button variant="outline" className="w-full h-14 text-lg border-2 border-slate-200" onClick={() => window.location.href='tel:+18085287177'}>
                     <PhoneCall className="mr-2 h-5 w-5 text-blue-600" /> (808) 528-7177
@@ -199,7 +146,6 @@ export default function NeckPainTreatmentHonoluluPage() {
                       <p className="text-slate-600 text-sm leading-relaxed mb-1">
                         1650 Liliha St, Suite 208<br/>Honolulu, HI 96817
                       </p>
-                      <p className="text-slate-600 text-sm"><strong>Ph:</strong> (808) 528-7177 <span className="mx-1">|</span> <strong>Fax:</strong> (808) 212-9459</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -209,35 +155,24 @@ export default function NeckPainTreatmentHonoluluPage() {
                       <p className="text-slate-600 text-sm leading-relaxed mb-1">
                         98-211 Pali Momi St, Suite 604<br/>Aiea, HI 96701
                       </p>
-                      <p className="text-slate-600 text-sm"><strong>Ph:</strong> (808) 452-1900 <span className="mx-1">|</span> <strong>Fax:</strong> (808) 452-1521</p>
                     </div>
                   </div>
                   <div className="mt-6 bg-slate-50 p-4 rounded-lg">
-                      <p className="font-bold text-slate-900 mb-1 text-sm">Hours of Operation</p>
-                      <p className="text-slate-600 text-sm">Mon-Fri: 9am - 1pm, Sat: 8am - 12pm</p>
+                      <p className="font-bold text-slate-900 mb-1 text-sm">Insurance Support</p>
+                      <p className="text-slate-600 text-sm">100% Coverage for Auto No-Fault PIP & Workers Comp.</p>
                   </div>
-                </div>
-
-                <div className="mt-6 pt-6 border-t border-slate-100 text-left">
-                    <p className="font-bold text-slate-900 mb-3 text-sm">Also serving:</p>
-                    <div className="flex flex-wrap gap-2 text-xs">
-                        <Link to="/acupuncture-waikiki" className="px-2 py-1 bg-slate-100 text-slate-600 rounded-md hover:bg-blue-50">Waikiki</Link>
-                        <Link to="/acupuncture-kaimuki" className="px-2 py-1 bg-slate-100 text-slate-600 rounded-md hover:bg-blue-50">Kaimuki</Link>
-                        <Link to="/acupuncture-ala-moana" className="px-2 py-1 bg-slate-100 text-slate-600 rounded-md hover:bg-blue-50">Ala Moana</Link>
-                        <Link to="/acupuncture-kahala" className="px-2 py-1 bg-slate-100 text-slate-600 rounded-md hover:bg-blue-50">Kahala</Link>
-                    </div>
                 </div>
               </CardContent>
             </Card>
 
             <div className="bg-blue-900 text-white p-8 rounded-2xl shadow-xl">
               <h4 className="text-xl font-bold mb-4 flex items-center gap-2">Patient Reviews</h4>
-              <p className="text-slate-300 italic text-sm leading-relaxed mb-4">"Dr. Cai completely resolved my shoulder pain after just 3 visits. I had been suffering for months. The clinic is pristine, professional, and very welcoming!"</p>
+              <p className="text-slate-300 italic text-sm leading-relaxed mb-4">"I spent 10 years staring down at my laptop and developed a horribly painful stiff neck and daily tension headaches. Dr. Cai's acupuncture therapy released the knots in just three weeks. I feel like a new person."</p>
               <div className="flex items-center gap-4 mt-6">
-                 <div className="h-10 w-10 bg-blue-800 rounded-full flex items-center justify-center font-bold text-white shadow-inner">ST</div>
+                 <div className="h-10 w-10 bg-blue-800 rounded-full flex items-center justify-center font-bold text-white shadow-inner">AM</div>
                  <div>
-                    <p className="text-white font-semibold text-sm">Sarah T.</p>
-                    <p className="text-blue-400 text-xs">Honolulu Resident</p>
+                    <p className="text-white font-semibold text-sm">Anna M.</p>
+                    <p className="text-blue-400 text-xs">Manoa Resident</p>
                  </div>
               </div>
             </div>
