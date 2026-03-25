@@ -256,7 +256,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           <a href="/" className="flex items-center decoration-transparent gap-2.5">
             <img src="/images/logo-main.png" alt="AcuTherapy Clinics" className="h-12 w-auto drop-shadow-sm transition-transform hover:scale-105" />
           </a>
-          <div className="hidden lg:flex items-center gap-6 font-medium text-slate-600">
+          <div className="hidden lg:flex items-center gap-6 xl:gap-8 text-[14.5px] font-medium text-slate-600 tracking-wide">
             <a href="/" className="hover:text-blue-600 transition-colors py-4">{navHome}</a>
             <a href="/dr-david-cai-honolulu-acupuncturist" className="hover:text-blue-600 transition-colors py-4">{navAbout}</a>
 
