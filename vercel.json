@@ -1,1 +1,64 @@
-{ "rewrites": [ { "source": "/go/review", "destination": "/api/go/review" }, { "source": "/go/video", "destination": "/api/go/video" }, { "source": "/go/book", "destination": "/api/go/book" }, { "source": "/robots.txt", "has": [ { "type": "host", "value": "(.*)\\.vercel\\.app" } ], "destination": "/vercel-robots.txt" }, { "source": "/(.*)", "destination": "/index.html" } ] }
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "offer.acutherapy.com"
+        }
+      ],
+      "destination": "https://acutherapy.com/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "acutherapy-web.vercel.app"
+        }
+      ],
+      "destination": "https://acutherapy.com/$1",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/go/review",
+      "destination": "/api/go/review"
+    },
+    {
+      "source": "/go/video",
+      "destination": "/api/go/video"
+    },
+    {
+      "source": "/go/book",
+      "destination": "/api/go/book"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(?:en|zh)/landing/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "none"
+        }
+      ]
+    },
+    {
+      "source": "/go/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "none"
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
 
+# Prevent crawling of tracking links and ad landing pages
+Disallow: /go/
+Disallow: /en/landing/
+Disallow: /zh/landing/
+Disallow: /admin/
+
 Sitemap: https://acutherapy.com/sitemap.xml
