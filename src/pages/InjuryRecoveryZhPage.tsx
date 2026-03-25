@@ -34,6 +34,10 @@ export default function InjuryRecoveryZhPage() {
             <Helmet>
                 <title>车祸与工伤疼痛理疗专家 | 檀香山针灸诊所</title>
                 <meta name="description" content="檀香山最高评价的中医针灸诊所，为车祸受伤及工作损伤患者提供绝佳康复方案。" />
+                <meta property="og:title" content="车祸与工伤疼痛理疗专家 | 檀香山针灸诊所" />
+                <meta property="og:description" content="檀香山最高评价的中医针灸诊所，为车祸受伤及工作损伤患者提供绝佳康复方案。" />
+                <meta property="og:image" content="https://acutherapy.com/images/injury-recovery-og.png" />
+                <meta property="og:url" content="https://acutherapy.com/zh/landing/injury-recovery" />
             </Helmet>
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16 relative z-10">
                 <div className="md:w-1/2 space-y-6">

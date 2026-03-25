@@ -33,6 +33,10 @@ export default function NewPatientSpecialEnPage() {
             <Helmet>
                 <title>New Patient Special | AcuTherapy Clinics</title>
                 <meta name="description" content="Discover natural pain relief at AcuTherapy Clinics in Honolulu. Grab your new patient special today." />
+                <meta property="og:title" content="New Patient Special | AcuTherapy Clinics" />
+                <meta property="og:description" content="Discover natural pain relief at AcuTherapy Clinics in Honolulu. Grab your new patient special today." />
+                <meta property="og:image" content="https://acutherapy.com/images/new-patient-og.png" />
+                <meta property="og:url" content="https://acutherapy.com/en/landing/new-patient-special" />
             </Helmet>
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
                 <div className="md:w-1/2 space-y-6">

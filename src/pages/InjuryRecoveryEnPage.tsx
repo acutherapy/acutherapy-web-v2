@@ -34,6 +34,10 @@ export default function InjuryRecoveryEnPage() {
             <Helmet>
                 <title>Injury Recovery Specialists | AcuTherapy Clinics</title>
                 <meta name="description" content="Top-rated Honolulu clinic for auto accident and sports injury recovery." />
+                <meta property="og:title" content="Injury Recovery Specialists | AcuTherapy Clinics" />
+                <meta property="og:description" content="Top-rated Honolulu clinic for auto accident and sports injury recovery." />
+                <meta property="og:image" content="https://acutherapy.com/images/injury-recovery-og.png" />
+                <meta property="og:url" content="https://acutherapy.com/en/landing/injury-recovery" />
             </Helmet>
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16 relative z-10">
                 <div className="md:w-1/2 space-y-6">

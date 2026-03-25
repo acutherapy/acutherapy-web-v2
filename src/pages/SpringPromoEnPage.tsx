@@ -33,6 +33,10 @@ export default function SpringPromoEnPage() {
             <Helmet>
                 <title>Spring Special Promotion | AcuTherapy Clinics</title>
                 <meta name="description" content="Claim your spring acupuncture and pain relief promotion at AcuTherapy Honolulu." />
+                <meta property="og:title" content="Spring Special Promotion | AcuTherapy Clinics" />
+                <meta property="og:description" content="Claim your spring acupuncture and pain relief promotion at AcuTherapy Honolulu." />
+                <meta property="og:image" content="https://acutherapy.com/images/spring-promo-og.png" />
+                <meta property="og:url" content="https://acutherapy.com/en/landing/spring-promo" />
             </Helmet>
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
                 <div className="md:w-1/2 space-y-6">

@@ -33,6 +33,10 @@ export default function SpringPromoZhPage() {
             <Helmet>
                 <title>春季专享优惠活动 | 檀香山针灸诊所</title>
                 <meta name="description" content="在檀香山 AcuTherapy 诊所领取您的春季中医针灸疼痛理疗专享优惠。" />
+                <meta property="og:title" content="春季专享优惠活动 | 檀香山针灸诊所" />
+                <meta property="og:description" content="在檀香山 AcuTherapy 诊所领取您的春季中医针灸疼痛理疗专享优惠。" />
+                <meta property="og:image" content="https://acutherapy.com/images/spring-promo-og.png" />
+                <meta property="og:url" content="https://acutherapy.com/zh/landing/spring-promo" />
             </Helmet>
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
                 <div className="md:w-1/2 space-y-6">
