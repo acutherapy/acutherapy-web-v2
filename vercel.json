@@ -138,7 +138,16 @@
   ],
   "headers": [
     {
-      "source": "/(?:en|zh)/landing/(.*)",
+      "source": "/en/landing/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "none"
+        }
+      ]
+    },
+    {
+      "source": "/zh/landing/(.*)",
       "headers": [
         {
           "key": "X-Robots-Tag",
