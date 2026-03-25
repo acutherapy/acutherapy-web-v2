@@ -1,8 +1,8 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
-import { MapPin, Clock, PhoneCall, Calendar, ChevronDown } from 'lucide-react';
+import { MapPin, Clock, PhoneCall, Calendar, ChevronDown, Menu, X } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 
 // Automatically imports all pages
@@ -81,11 +81,13 @@ import SpringPromoZhPage from './pages/SpringPromoZhPage';
 import InjuryRecoveryZhPage from './pages/InjuryRecoveryZhPage';
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { pathname } = useLocation();
   const isLandingPage = pathname.includes('/landing/');
   
   useEffect(() => {
     window.scrollTo(0, 0);
+    setIsMobileMenuOpen(false);
   }, [pathname]);
 
   let navHome = 'Home';
@@ -246,7 +248,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
           <a href="/" className="flex items-center decoration-transparent gap-2.5">
             <img src="/images/logo-main.png" alt="AcuTherapy Clinics" className="h-12 w-auto drop-shadow-sm transition-transform hover:scale-105" />
-            <span className="text-2xl font-extrabold tracking-tighter text-blue-900 hidden sm:block">AcuTherapy</span>
           </a>
           <div className="hidden lg:flex items-center gap-6 font-medium text-slate-600">
             <a href="/" className="hover:text-blue-600 transition-colors py-4">{navHome}</a>
@@ -327,7 +328,30 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               <Calendar className="mr-2 h-4 w-4" /> {navBook}
             </Button></a>
           </div>
+
+          {/* Mobile Menu Toggle */}
+          <button className="lg:hidden text-slate-600 hover:text-blue-600 p-2" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+            {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
         </div>
+
+        {/* Mobile Dropdown Menu */}
+        {isMobileMenuOpen && (
+          <div className="lg:hidden bg-white border-t border-slate-200 shadow-2xl overflow-y-auto max-h-[75vh]">
+            <div className="flex flex-col py-4 px-6 space-y-4">
+              <a href="/" className="text-lg font-semibold text-slate-800 border-b border-slate-100 pb-4">{navHome}</a>
+              <a href="/acupuncture-honolulu" className="text-lg font-semibold text-slate-800 border-b border-slate-100 pb-4">{navTreatments}</a>
+              <a href="/back-pain-acupuncture-honolulu" className="text-lg font-semibold text-slate-800 border-b border-slate-100 pb-4">{navConditions}</a>
+              <a href="/patient-reviews" className="text-lg font-semibold text-slate-800 border-b border-slate-100 pb-4">{navReviews}</a>
+              <a href="/frequently-asked-questions" className="text-lg font-semibold text-slate-800 border-b border-slate-100 pb-4">{navTopics}</a>
+              <a href="/dr-david-cai-honolulu-acupuncturist" className="text-lg font-semibold text-slate-800 border-b border-slate-100 pb-4">{navAbout}</a>
+              <a href="/honolulu-clinic" className="text-lg font-semibold text-slate-800 border-b border-slate-100 pb-4">Locations</a>
+              <a href="/book-appointment" className="mt-4"><Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
+                <Calendar className="mr-2 h-5 w-5" /> {navBook}
+              </Button></a>
+            </div>
+          </div>
+        )}
       </nav>
       )}
 
