@@ -236,7 +236,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             <div className="flex items-center decoration-transparent gap-3 outline-none cursor-default">
               <img src="/images/logo-landing.png" alt="AcuTherapy Clinics" className="h-12 md:h-14 w-auto drop-shadow-sm transition-transform" />
               <div className="flex flex-col justify-center">
-                <span className="text-[10px] md:text-xs font-bold tracking-[0.15em] md:tracking-[0.2em] text-emerald-700/80 uppercase leading-none border-l-[3px] border-emerald-700/20 pl-2.5 h-6 flex items-center">
+                <span className="text-2xl md:text-[1.65rem] leading-none font-black tracking-tight text-slate-800 font-sans">AcuTherapy</span>
+                <span className="text-[10px] md:text-xs font-bold tracking-[0.15em] md:tracking-[0.2em] text-emerald-700/80 mt-1 uppercase leading-none">
                   {pathname.includes('spring') ? 'Spring Wellness' : pathname.includes('injury') ? 'Injury Recovery' : 'Patient Assessment'}
                 </span>
               </div>
