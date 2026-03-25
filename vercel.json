@@ -1,6 +1,101 @@
 {
   "redirects": [
     {
+      "source": "/en/contact-us-honolulu",
+      "destination": "/contact-honolulu-acupuncture",
+      "permanent": true
+    },
+    {
+      "source": "/honolulu-acupuncture",
+      "destination": "/acupuncture-honolulu",
+      "permanent": true
+    },
+    {
+      "source": "/waikiki-acupuncture",
+      "destination": "/acupuncture-waikiki",
+      "permanent": true
+    },
+    {
+      "source": "/aiea-acupuncture",
+      "destination": "/aiea-pearl-city-clinic",
+      "permanent": true
+    },
+    {
+      "source": "/kahala-acupuncture",
+      "destination": "/acupuncture-kahala",
+      "permanent": true
+    },
+    {
+      "source": "/en/services",
+      "destination": "/treatment-process",
+      "permanent": true
+    },
+    {
+      "source": "/en/services/acupuncture",
+      "destination": "/acupuncture-honolulu",
+      "permanent": true
+    },
+    {
+      "source": "/en/services/medical-massage",
+      "destination": "/medical-massage-honolulu",
+      "permanent": true
+    },
+    {
+      "source": "/cupping-gua-sha-honolulu",
+      "destination": "/fire-cupping-therapy-honolulu",
+      "permanent": true
+    },
+    {
+      "source": "/en/services/insurance-payment",
+      "destination": "/insurance-accepted",
+      "permanent": true
+    },
+    {
+      "source": "/back-neck-pain",
+      "destination": "/back-pain-acupuncture-honolulu",
+      "permanent": true
+    },
+    {
+      "source": "/stress-anxiety",
+      "destination": "/pain-management-honolulu",
+      "permanent": true
+    },
+    {
+      "source": "/auto-injury",
+      "destination": "/auto-accident-injury-honolulu",
+      "permanent": true
+    },
+    {
+      "source": "/workers-injury",
+      "destination": "/workers-comp-injury-honolulu",
+      "permanent": true
+    },
+    {
+      "source": "/veterans-care",
+      "destination": "/veterans-pain-relief-honolulu",
+      "permanent": true
+    },
+    {
+      "source": "/insurance-accepted-acupuncture-honolulu",
+      "destination": "/insurance-accepted",
+      "permanent": true
+    },
+    {
+      "source": "/workers-comp-acupuncture-honolulu",
+      "destination": "/workers-comp-injury-honolulu",
+      "permanent": true
+    },
+    {
+      "source": "/veterans-care-acupuncture-honolulu",
+      "destination": "/veterans-pain-relief-honolulu",
+      "permanent": true
+    },
+    {
+      "source": "/sciatica-acupuncture-honolulu",
+      "destination": "/sciatica-treatment-honolulu",
+      "permanent": true
+    },
+    {
       "source": "/(.*)",
       "has": [
         {
