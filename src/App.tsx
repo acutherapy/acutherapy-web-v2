@@ -82,12 +82,19 @@ import InjuryRecoveryZhPage from './pages/InjuryRecoveryZhPage';
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [openMobileDropdown, setOpenMobileDropdown] = useState<string | null>(null);
+
+  const toggleMobileDropdown = (menuName: string) => {
+    setOpenMobileDropdown(prev => prev === menuName ? null : menuName);
+  };
+
   const { pathname } = useLocation();
   const isLandingPage = pathname.includes('/landing/');
   
   useEffect(() => {
     window.scrollTo(0, 0);
     setIsMobileMenuOpen(false);
+    setOpenMobileDropdown(null);
   }, [pathname]);
 
   let navHome = 'Home';
@@ -338,15 +345,54 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         {/* Mobile Dropdown Menu */}
         {isMobileMenuOpen && (
           <div className="lg:hidden bg-white border-t border-slate-200 shadow-2xl overflow-y-auto max-h-[75vh]">
-            <div className="flex flex-col py-4 px-6 space-y-4">
-              <a href="/" className="text-lg font-semibold text-slate-800 border-b border-slate-100 pb-4">{navHome}</a>
-              <a href="/acupuncture-honolulu" className="text-lg font-semibold text-slate-800 border-b border-slate-100 pb-4">{navTreatments}</a>
-              <a href="/back-pain-acupuncture-honolulu" className="text-lg font-semibold text-slate-800 border-b border-slate-100 pb-4">{navConditions}</a>
-              <a href="/patient-reviews" className="text-lg font-semibold text-slate-800 border-b border-slate-100 pb-4">{navReviews}</a>
-              <a href="/frequently-asked-questions" className="text-lg font-semibold text-slate-800 border-b border-slate-100 pb-4">{navTopics}</a>
-              <a href="/dr-david-cai-honolulu-acupuncturist" className="text-lg font-semibold text-slate-800 border-b border-slate-100 pb-4">{navAbout}</a>
-              <a href="/honolulu-clinic" className="text-lg font-semibold text-slate-800 border-b border-slate-100 pb-4">Locations</a>
-              <a href="/book-appointment" className="mt-4"><Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
+            <div className="flex flex-col py-4 px-6 space-y-2">
+              <a href="/" className="text-lg font-semibold text-slate-800 border-b border-slate-100 py-3">{navHome}</a>
+              
+              <button onClick={() => toggleMobileDropdown('treatments')} className="flex items-center justify-between text-lg font-semibold text-slate-800 border-b border-slate-100 py-3">
+                {navTreatments} <ChevronDown className={`h-5 w-5 transition-transform ${openMobileDropdown === 'treatments' ? 'rotate-180' : ''}`} />
+              </button>
+              {openMobileDropdown === 'treatments' && (
+                <div className="pl-4 py-3 space-y-4 bg-slate-50 border-b border-slate-100 rounded-b-lg">
+                  <a href="/pain-management-honolulu" className="block text-slate-600 font-medium">Pain Management</a>
+                  <a href="/auto-accident-injury-honolulu" className="block text-slate-600 font-medium">Auto Accident Injury</a>
+                  <a href="/workers-comp-injury-honolulu" className="block text-slate-600 font-medium">Workers Comp Injury</a>
+                  <a href="/acupuncture-honolulu" className="block text-slate-600 font-medium">Acupuncture Honolulu</a>
+                  <a href="/medical-massage-honolulu" className="block text-slate-600 font-medium">Medical Massage</a>
+                  <a href="/fire-cupping-therapy-honolulu" className="block text-slate-600 font-medium">Fire Cupping</a>
+                </div>
+              )}
+
+              <button onClick={() => toggleMobileDropdown('conditions')} className="flex items-center justify-between text-lg font-semibold text-slate-800 border-b border-slate-100 py-3">
+                {navConditions} <ChevronDown className={`h-5 w-5 transition-transform ${openMobileDropdown === 'conditions' ? 'rotate-180' : ''}`} />
+              </button>
+              {openMobileDropdown === 'conditions' && (
+                <div className="pl-4 py-3 space-y-4 bg-slate-50 border-b border-slate-100 rounded-b-lg">
+                  <a href="/back-pain-acupuncture-honolulu" className="block text-slate-600 font-medium">Back Pain</a>
+                  <a href="/sciatica-treatment-honolulu" className="block text-slate-600 font-medium">Sciatica</a>
+                  <a href="/neck-pain-treatment-honolulu" className="block text-slate-600 font-medium">Neck Pain</a>
+                  <a href="/shoulder-pain-acupuncture-honolulu" className="block text-slate-600 font-medium">Shoulder Pain</a>
+                  <a href="/headache-migraine-acupuncture-honolulu" className="block text-slate-600 font-medium">Headache &amp; Migraine</a>
+                  <a href="/herniated-disc-acupuncture-honolulu" className="block text-slate-600 font-medium">Herniated Disc</a>
+                </div>
+              )}
+
+              <a href="/patient-reviews" className="text-lg font-semibold text-slate-800 border-b border-slate-100 py-3">{navReviews}</a>
+              <a href="/frequently-asked-questions" className="text-lg font-semibold text-slate-800 border-b border-slate-100 py-3">{navTopics}</a>
+              <a href="/dr-david-cai-honolulu-acupuncturist" className="text-lg font-semibold text-slate-800 border-b border-slate-100 py-3">{navAbout}</a>
+              
+              <button onClick={() => toggleMobileDropdown('locations')} className="flex items-center justify-between text-lg font-semibold text-slate-800 border-b border-slate-100 py-3">
+                Locations &amp; Contact <ChevronDown className={`h-5 w-5 transition-transform ${openMobileDropdown === 'locations' ? 'rotate-180' : ''}`} />
+              </button>
+              {openMobileDropdown === 'locations' && (
+                <div className="pl-4 py-3 space-y-4 bg-slate-50 border-b border-slate-100 rounded-b-lg">
+                  <a href="/honolulu-clinic" className="block text-slate-600 font-medium">Honolulu Clinic</a>
+                  <a href="/aiea-pearl-city-clinic" className="block text-slate-600 font-medium">Aiea / Pearl City</a>
+                  <a href="/contact-honolulu-acupuncture" className="block text-slate-600 font-medium">Contact Us</a>
+                  <a href="tel:+18085287177" className="block font-bold text-blue-600">(808) 528-7177</a>
+                </div>
+              )}
+
+              <a href="/book-appointment" className="mt-4 pb-4"><Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
                 <Calendar className="mr-2 h-5 w-5" /> {navBook}
               </Button></a>
             </div>
