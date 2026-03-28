@@ -265,6 +265,15 @@ export default function BookAppointmentPage() {
                                     className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-teal-500 focus:border-transparent outline-none transition-all"
                                     placeholder="(808) 555-0123"
                                 />
+                                 {/* 🔥 SMS CONSENT（关键） */}
+  <label className="flex items-start gap-2 text-xs text-gray-500 mt-2 leading-relaxed">
+    <input type="checkbox" required className="mt-1" />
+    <span>
+      I agree to receive SMS messages from AcuTherapy Clinics regarding appointments and customer care. 
+      Message frequency may vary. Message and data rates may apply. 
+      Reply STOP to unsubscribe. Reply HELP for help.
+    </span>
+  </label>
                             </div>
 
                             <div className="pt-6 grid grid-cols-2 gap-4">
