@@ -50,29 +50,77 @@ export default function ContactHonoluluAcupuncturePage() {
           {`
           {
             "@context": "https://schema.org",
-            "@type": "MedicalWebPage",
-            "name": "Contact Honolulu Acupuncture | Honolulu Acupuncture Guide",
-            "headline": "Contact Honolulu Acupuncture",
-            "description": "Learn more about Contact Honolulu Acupuncture. Dr. David Cai from AcuTherapy Clinics answers your questions about acupuncture efficacy and treatment processes.",
-            "url": "https://acutherapy.com/contact-honolulu-acupuncture",
-            "provider": {
-              "@type": "MedicalBusiness",
-              "name": "AcuTherapy Clinics",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "1650 Liliha St, Suite 208",
-                "addressLocality": "Honolulu",
-                "addressRegion": "HI",
-                "postalCode": "96817",
-                "addressCountry": "US"
+            "@type": "MedicalClinic",
+            "name": "AcuTherapy Clinics",
+            "logo": "https://acutherapy.com/logo.png",
+            "image": "https://acutherapy.com/images/dr-david-cai-portrait.jpg",
+            "url": "https://acutherapy.com",
+            "description": "Premier medical acupuncture and pain management clinics in Honolulu and Aiea, led by Dr. David Cai.",
+            "department": [
+              {
+                "@type": "MedicalClinic",
+                "name": "AcuTherapy Clinics - Honolulu (Liliha)",
+                "telephone": "+1-808-528-7177",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "1650 Liliha St, Suite 208",
+                  "addressLocality": "Honolulu",
+                  "addressRegion": "HI",
+                  "postalCode": "96817",
+                  "addressCountry": "US"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": 21.321289,
+                  "longitude": -157.860155
+                },
+                "openingHoursSpecification": [
+                  {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                    "opens": "09:00",
+                    "closes": "13:00"
+                  },
+                  {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "Saturday",
+                    "opens": "08:00",
+                    "closes": "12:00"
+                  }
+                ]
               },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": 21.321289,
-                "longitude": -157.860155
-              },
-              "telephone": "+1-808-528-7177"
-            }
+              {
+                "@type": "MedicalClinic",
+                "name": "AcuTherapy Clinics - Aiea / Pearl City",
+                "telephone": "+1-808-452-1900",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "98-211 Pali Momi St, Suite 604",
+                  "addressLocality": "Aiea",
+                  "addressRegion": "HI",
+                  "postalCode": "96701",
+                  "addressCountry": "US"
+                },
+                "openingHoursSpecification": [
+                  {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                    "opens": "09:00",
+                    "closes": "13:00"
+                  },
+                  {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "Saturday",
+                    "opens": "08:00",
+                    "closes": "12:00"
+                  }
+                ]
+              }
+            ],
+            "medicalSpecialty": [
+              "Acupuncture",
+              "PainManagement"
+            ]
           }
           `}
         </script>

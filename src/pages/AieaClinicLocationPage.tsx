@@ -11,45 +11,83 @@ export default function AieaClinicLocationPage() {
                 <title>Aiea & Pearl City Clinic | AcuTherapy Clinics</title>
                 <meta name="description" content="Visit our Aiea / Pearl City clinic on Pali Momi St. View our address, hours of operation, and get directions for your acupuncture and pain management care." />
                 <script type="application/ld+json">
-                    {`
-                    {
-                        "@context": "https://schema.org",
-                        "@type": "MedicalBusiness",
-                        "name": "AcuTherapy Clinics - Aiea / Pearl City Clinic",
-                        "image": "https://acutherapy.com/images/dr-david-cai-portrait.jpg",
-                        "@id": "https://acutherapy.com/aiea-pearl-city-clinic",
-                        "url": "https://acutherapy.com/aiea-pearl-city-clinic",
-                        "telephone": "+18084521900",
-                        "address": {
-                            "@type": "PostalAddress",
-                            "streetAddress": "98-211 Pali Momi St, Suite 604",
-                            "addressLocality": "Aiea",
-                            "addressRegion": "HI",
-                            "postalCode": "96701",
-                            "addressCountry": "US"
-                        },
-                        "geo": {
-                            "@type": "GeoCoordinates",
-                            "latitude": 21.38318,
-                            "longitude": -157.9400249
-                        },
-                        "openingHoursSpecification": [
-                            {
-                                "@type": "OpeningHoursSpecification",
-                                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                                "opens": "09:00",
-                                "closes": "13:00"
-                            },
-                            {
-                                "@type": "OpeningHoursSpecification",
-                                "dayOfWeek": "Saturday",
-                                "opens": "08:00",
-                                "closes": "12:00"
-                            }
-                        ]
-                    }
-                    `}
-                </script>
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "MedicalClinic",
+            "name": "AcuTherapy Clinics",
+            "logo": "https://acutherapy.com/logo.png",
+            "image": "https://acutherapy.com/images/dr-david-cai-portrait.jpg",
+            "url": "https://acutherapy.com",
+            "description": "Premier medical acupuncture and pain management clinics in Honolulu and Aiea, led by Dr. David Cai.",
+            "department": [
+              {
+                "@type": "MedicalClinic",
+                "name": "AcuTherapy Clinics - Honolulu (Liliha)",
+                "telephone": "+1-808-528-7177",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "1650 Liliha St, Suite 208",
+                  "addressLocality": "Honolulu",
+                  "addressRegion": "HI",
+                  "postalCode": "96817",
+                  "addressCountry": "US"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": 21.321289,
+                  "longitude": -157.860155
+                },
+                "openingHoursSpecification": [
+                  {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                    "opens": "09:00",
+                    "closes": "13:00"
+                  },
+                  {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "Saturday",
+                    "opens": "08:00",
+                    "closes": "12:00"
+                  }
+                ]
+              },
+              {
+                "@type": "MedicalClinic",
+                "name": "AcuTherapy Clinics - Aiea / Pearl City",
+                "telephone": "+1-808-452-1900",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "98-211 Pali Momi St, Suite 604",
+                  "addressLocality": "Aiea",
+                  "addressRegion": "HI",
+                  "postalCode": "96701",
+                  "addressCountry": "US"
+                },
+                "openingHoursSpecification": [
+                  {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                    "opens": "09:00",
+                    "closes": "13:00"
+                  },
+                  {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "Saturday",
+                    "opens": "08:00",
+                    "closes": "12:00"
+                  }
+                ]
+              }
+            ],
+            "medicalSpecialty": [
+              "Acupuncture",
+              "PainManagement"
+            ]
+          }
+          `}
+        </script>
             </Helmet>
 
             <div className="bg-slate-50 py-12 md:py-20 lg:py-24 min-h-[calc(100vh-80px)]">
