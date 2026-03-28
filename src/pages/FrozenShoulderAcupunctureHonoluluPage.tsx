@@ -149,7 +149,41 @@ export default function FrozenShoulderAcupunctureHonoluluPage() {
         </Link>
       </div>
     
-          </article>
+          
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Causes Frozen Shoulder?</h2>
+<p className="text-lg text-slate-700 leading-relaxed mb-6">Frozen Shoulder Also known as adhesive capsulitis, frozen shoulder occurs when the connective tissue capsule around the joint thickens and tightens, severely restricting movement.</p>
+
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Acupuncture Helps</h2>
+<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
+<li><strong>Pain Relief:</strong> Triggers the release of endorphins to block pain signals effectively.</li>
+<li><strong>Nervous System Regulation:</strong> Calms the central nervous system, reducing tension without relying on pharmaceuticals.</li>
+<li><strong>Improved Circulation:</strong> Enhances blood flow to the affected areas, accelerating the natural healing process.</li>
+</ul>
+
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect During Your Session</h2>
+<p className="text-lg text-slate-700 leading-relaxed mb-6">Dr. Cai uses advanced distal needling techniques—sometimes placing needles in the leg to treat the shoulder—allowing you to actively move and stretch the shoulder during the session for immediate range of motion gains.</p>
+
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Who Is This For?</h2>
+<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
+<li>Individuals suffering from chronic pain who have not found relief through conventional methods.</li>
+<li>High-stress professionals seeking natural nervous system regulation.</li>
+<li>Athletes or individuals recovering from an injury needing accelerated healing.</li>
+</ul>
+
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">FAQ</h2>
+<div className="space-y-6 mb-12">
+<div><h4 className="font-bold text-lg text-slate-900">Q1: How many sessions are needed for Frozen Shoulder?</h4><p className="text-slate-700">A: Frozen shoulder is notoriously slow to heal. However, acupuncture can accelerate the thawing phase dramatically, usually requiring 8-12 consistent sessions.</p></div>
+<div><h4 className="font-bold text-lg text-slate-900">Q2: Does the treatment hurt?</h4><p className="text-slate-700">A: You may feel some soreness when we stretch the capsule, but the needles themselves are virtually painless.</p></div>
+<div><h4 className="font-bold text-lg text-slate-900">Q3: Is it safe?</h4><p className="text-slate-700">A: Absolutely. Acupuncture is a highly safe, non-invasive alternative to surgery and heavy medications.</p></div>
+</div>
+
+<div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
+<h2 className="text-3xl font-bold text-blue-900 mb-4">Ready to find relief?</h2>
+<p className="text-lg text-blue-700 mb-8">Stop living in discomfort. Located right here in Honolulu, we are here to help you restore your well-being.</p>
+<Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Book Your Session Today</Button></Link>
+</div>
+
+</article>
 
           {/* Sidebar */}
           <aside className="md:col-span-4 space-y-8">

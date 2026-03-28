@@ -59,11 +59,12 @@ export default function NeckPainTreatmentHonoluluPage() {
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect & Real Patient Results</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
-              Dr. David Cai utilizes over 30 years of clinical experience. Your treatment will begin with a thorough palpation of your neck and upper shoulders to locate the exact source of structural tension before the gentle needle insertion. Expect a quiet, deeply relaxing 30-minute session.
+              Dr. David Cai utilizes over 30 years of clWe focus on key points at the base of the skull and upper back. Within 20 minutes, patients typically report a significant increase in their range of motion and a feeling of lightness in the head. Expect a quiet, deeply relaxing 30-minute session.
             </p>
             <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg my-8">
               <p className="text-lg text-slate-800 italic font-medium">
-                "Many patients suffering from rigid 'tech neck' report an instant, profound sense of lightness. They often sit up after their first session and immediately realize they can turn their head completely to the left or right without the sharp, stabbing pain they’ve endured for months."
+                "Many pat<li>Professionals staring at screens all day with tight shoulders.</li>
+<li>People waking up with a crick in their neck.</li>etely to the left or right without the sharp, stabbing pain they’ve endured for months."
               </p>
             </div>
 
@@ -79,7 +80,7 @@ export default function NeckPainTreatmentHonoluluPage() {
             <div className="space-y-6 mb-12">
               <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
                 <h3 className="text-xl font-bold text-slate-900 mb-2 flex items-center gap-2"><HelpCircle className="text-blue-500" size={20}/> Can this help with pain radiating down my arm?</h3>
-                <p className="text-slate-600">Yes. Cervical radiculopathy (pinched nerves in the neck sending pain or numbness down the arm) responds exceptionally well to acupuncture. We target the specific spinal level where the nerve is being compressed to relieve the inflammation and open the nerve pathway.</p>
+                <p className="text-slate-600">Yes. Cervical radiculopathy (pinched nerves in the neChronic tech neck, poor sleep posture, and stress lead to severe stiffening of the cervical spine, traps, and levator scapulae muscles.elieve the inflammation and open the nerve pathway.</p>
               </div>
               <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
                 <h3 className="text-xl font-bold text-slate-900 mb-2 flex items-center gap-2"><HelpCircle className="text-blue-500" size={20}/> How many sessions will I need?</h3>
@@ -118,7 +119,20 @@ export default function NeckPainTreatmentHonoluluPage() {
                 <Link to="/acupuncture-pearl-city" className="px-4 py-2 bg-slate-200 text-slate-700 rounded-lg hover:bg-blue-100 transition-colors font-medium">Aiea / Pearl City</Link>
             </div>
 
-          </article>
+          
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Acupuncture Helps</h2>
+<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
+<li><strong>Trap & Cervical Release:</strong> Directly releases tension nodules in the neck and shoulders.</li>
+<li><strong>Cervical Blood Flow:</strong> Increases oxygenation to tense muscle fibers around the upper spine.</li>
+</ul>
+
+<div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
+<h2 className="text-3xl font-bold text-blue-900 mb-4">Ready to find relief?</h2>
+<p className="text-lg text-blue-700 mb-8">Stop living in discomfort. Located right here in Honolulu, we are here to help you restore your well-being.</p>
+<Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Book Your Session Today</Button></Link>
+</div>
+
+</article>
 
           {/* Sidebar */}
           <aside className="md:col-span-4 space-y-8">

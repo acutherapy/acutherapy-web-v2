@@ -112,7 +112,17 @@ export default function SciaticaTreatmentHonoluluPage() {
                 <Link to="/acupuncture-ala-moana" className="px-4 py-2 bg-slate-200 text-slate-700 rounded-lg hover:bg-blue-100 transition-colors font-medium">Ala Moana</Link>
             </div>
 
-          </article>
+          
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Causes Sciatica?</h2>
+<p className="text-lg text-slate-700 leading-relaxed mb-6">Sciatica can be triggered by a variety of factors including chronic stress, poor posture, repetitive strain, or acute injuries. Over time, these factors create blockages in blood circulation and nerve function, leading to persistent discomfort.</p>
+
+<div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
+<h2 className="text-3xl font-bold text-blue-900 mb-4">Ready to find relief?</h2>
+<p className="text-lg text-blue-700 mb-8">Stop living in discomfort. Located right here in Honolulu, we are here to help you restore your well-being.</p>
+<Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Book Your Session Today</Button></Link>
+</div>
+
+</article>
 
           {/* Sidebar */}
           <aside className="md:col-span-4 space-y-8">

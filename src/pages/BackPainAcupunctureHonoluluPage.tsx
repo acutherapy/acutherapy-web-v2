@@ -43,7 +43,7 @@ export default function BackPainAcupunctureHonoluluPage() {
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Causes Severe Back Pain?</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
-              The lower back is a complex structure of interconnecting bones, joints, nerves, ligaments, and muscles. Back pain often originates from sudden injuries (like auto accidents or heavy lifting), continuous repetitive stress, poor occupational posture, or conditions such as herniated discs and spinal stenosis. Over time, these structural imbalances lead to intense muscle spasms and compressed nerve roots, locking your back in a cycle of worsening pain.
+              Low back pain often results from prolonged sitting, poor lifting biomechanics, herniated discs, or muscle spasms in the lumbar region. In TCM, this presents as structural stagnation that blocks the flow of Qi and blood.
             </p>
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Acupuncture Relieves Back Pain</h2>
@@ -53,7 +53,7 @@ export default function BackPainAcupunctureHonoluluPage() {
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect & Real Patient Results</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
-              Your back pain treatment begins with a direct orthopedic evaluation. We will identify the exact muscles and spinal segments causing you grief. You will then rest in a quiet, climate-controlled room as the needles do their work—typically for 20-30 minutes. 
+             Dr. Cai will identify exact trigger points along your lumbar spine. As fine needles are placed, you may feel a heavy or aching sensation—this is blockages clearing and muscles unwinding. Relief often starts immediately.
             </p>
             <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg my-8">
               <p className="text-lg text-slate-800 italic font-medium">
@@ -112,7 +112,22 @@ export default function BackPainAcupunctureHonoluluPage() {
                 <Link to="/acupuncture-pearl-city" className="px-4 py-2 bg-slate-200 text-slate-700 rounded-lg hover:bg-blue-100 transition-colors font-medium">Pearl City</Link>
             </div>
 
-          </article>
+          
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Acupuncture Helps</h2>
+<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
+<li><strong>Targeted Decompression:</strong> Releases deep tension in the multifidus and erector spinae muscles.</li>
+<li><strong>Disc Healing:</strong> Enhances blood circulation to the lumbosacral region, reducing nerve compression.</li>
+<li>Office workers with lower back stiffness from sitting.</li>
+<li>Individuals with a history of herniated discs or heavy lifting injuries.</li>
+</ul>
+
+<div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
+<h2 className="text-3xl font-bold text-blue-900 mb-4">Ready to find relief?</h2>
+<p className="text-lg text-blue-700 mb-8">Stop living in discomfort. Located right here in Honolulu, we are here to help you restore your well-being.</p>
+<Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Book Your Session Today</Button></Link>
+</div>
+
+</article>
 
           {/* Sidebar */}
           <aside className="md:col-span-4 space-y-8">

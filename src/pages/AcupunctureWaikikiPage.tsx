@@ -139,7 +139,41 @@ export default function AcupunctureWaikikiPage() {
     
       </div>
     
-          </article>
+          
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Causes Waikiki?</h2>
+<p className="text-lg text-slate-700 leading-relaxed mb-6">Waikiki Whether you are a local resident working long shifts in hospitality or a visitor who suffered a sudden strain while surfing or carrying heavy luggage, the active Waikiki lifestyle can take a toll on your musculoskeletal system.</p>
+
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Acupuncture Helps</h2>
+<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
+<li><strong>Pain Relief:</strong> Triggers the release of endorphins to block pain signals effectively.</li>
+<li><strong>Nervous System Regulation:</strong> Calms the central nervous system, reducing tension without relying on pharmaceuticals.</li>
+<li><strong>Improved Circulation:</strong> Enhances blood flow to the affected areas, accelerating the natural healing process.</li>
+</ul>
+
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect During Your Session</h2>
+<p className="text-lg text-slate-700 leading-relaxed mb-6">Dr. Cais clinic is just a short drive from the heart of Waikiki. During your initial session, we prioritize rapid pain relief so you can get back to your vacation or your demanding work week. Expect a relaxing environment that serves as an oasis from the bustling city.</p>
+
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Who Is This For?</h2>
+<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
+<li>Individuals suffering from chronic pain who have not found relief through conventional methods.</li>
+<li>High-stress professionals seeking natural nervous system regulation.</li>
+<li>Athletes or individuals recovering from an injury needing accelerated healing.</li>
+</ul>
+
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">FAQ</h2>
+<div className="space-y-6 mb-12">
+<div><h4 className="font-bold text-lg text-slate-900">Q1: How convenient is it to visit from Waikiki?</h4><p className="text-slate-700">A: We frequently accommodate urgent pain cases. We recommend calling us directly, as we are located conveniently in Honolulu just outside the heavy Waikiki traffic.</p></div>
+<div><h4 className="font-bold text-lg text-slate-900">Q2: Does the treatment hurt?</h4><p className="text-slate-700">A: No. We use ultra-fine needles. Most feel only a deep, relaxing sensation. Many even fall asleep!</p></div>
+<div><h4 className="font-bold text-lg text-slate-900">Q3: Is it safe?</h4><p className="text-slate-700">A: Absolutely. Acupuncture is a highly safe, non-invasive alternative to surgery and heavy medications.</p></div>
+</div>
+
+<div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
+<h2 className="text-3xl font-bold text-blue-900 mb-4">Ready to find relief?</h2>
+<p className="text-lg text-blue-700 mb-8">Stop living in discomfort. Located right here in Honolulu, we are here to help you restore your well-being.</p>
+<Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Book Your Session Today</Button></Link>
+</div>
+
+</article>
 
           {/* Sidebar */}
           <aside className="md:col-span-4 space-y-8">

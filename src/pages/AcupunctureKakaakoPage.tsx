@@ -92,7 +92,51 @@ export default function AcupunctureKakaakoPage() {
                                 <PhoneCall className="text-emerald-500 mr-3 h-5 w-5" /> Contact Clinic
                             </Link>
                         </div>
-                    </article>
+                    
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Causes Kakaako?</h2>
+<p className="text-lg text-slate-700 leading-relaxed mb-6">Kakaako Living or working near Kakaako often means dealing with the tension of retail work, office sitting, or pushing through intense urban workouts. These repetitive lifestyle factors easily translate into chronic back, neck, and joint pain.</p>
+
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Acupuncture Helps</h2>
+<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
+<li><strong>Pain Relief:</strong> Triggers the release of endorphins to block pain signals effectively.</li>
+<li><strong>Nervous System Regulation:</strong> Calms the central nervous system, reducing tension without relying on pharmaceuticals.</li>
+<li><strong>Improved Circulation:</strong> Enhances blood flow to the affected areas, accelerating the natural healing process.</li>
+</ul>
+
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect During Your Session</h2>
+<p className="text-lg text-slate-700 leading-relaxed mb-6">Our Honolulu clinic is incredibly accessible from the Kakaako area. You can expect a professional, seamless medical assessment by Dr. Cai. After a 30-minute deeply restorative acupuncture session, you will leave feeling lighter and recharged for your busy day.</p>
+
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Who Is This For?</h2>
+<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
+<li>Individuals suffering from chronic pain who have not found relief through conventional methods.</li>
+<li>High-stress professionals seeking natural nervous system regulation.</li>
+<li>Athletes or individuals recovering from an injury needing accelerated healing.</li>
+</ul>
+
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Related Treatments</h2>
+<div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mb-12">
+<Link to="/back-pain-acupuncture-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 font-semibold text-blue-800 hover:text-blue-600">Acupuncture for Lower Back Pain</Link>
+<Link to="/medical-massage-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 font-semibold text-blue-800 hover:text-blue-600">Medical Massage Therapy</Link>
+<Link to="/fire-cupping-therapy-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 font-semibold text-blue-800 hover:text-blue-600">Cupping Therapy</Link>
+</div>
+
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Serving Honolulu & Nearby Areas</h2>
+<p className="text-lg text-slate-700 leading-relaxed mb-6">Conveniently located in Honolulu, we proudly serve patients from Ala Moana, Waikiki, Kaimuki, Kahala, and across Oahu. Whether you are a local resident or visiting Hawaii, we provide top-tier care accessible to your area.</p>
+
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">FAQ</h2>
+<div className="space-y-6 mb-12">
+<div><h4 className="font-bold text-lg text-slate-900">Q1: How convenient is it to visit from Kakaako?</h4><p className="text-slate-700">A: Yes, our Liliha clinic provides convenient parking, allowing you to bypass typical Kakaako congestion for a stress-free visit.</p></div>
+<div><h4 className="font-bold text-lg text-slate-900">Q2: Does the treatment hurt?</h4><p className="text-slate-700">A: No. We use ultra-fine needles. Most feel only a deep, relaxing sensation. Many even fall asleep!</p></div>
+<div><h4 className="font-bold text-lg text-slate-900">Q3: Is it safe?</h4><p className="text-slate-700">A: Absolutely. Acupuncture is a highly safe, non-invasive alternative to surgery and heavy medications.</p></div>
+</div>
+
+<div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
+<h2 className="text-3xl font-bold text-blue-900 mb-4">Ready to find relief?</h2>
+<p className="text-lg text-blue-700 mb-8">Stop living in discomfort. Located right here in Honolulu, we are here to help you restore your well-being.</p>
+<Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Book Your Session Today</Button></Link>
+</div>
+
+</article>
 
                     {/* Sidebar */}
                     <aside className="md:col-span-4 space-y-8">
