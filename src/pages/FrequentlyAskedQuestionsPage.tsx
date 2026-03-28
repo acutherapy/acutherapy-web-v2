@@ -90,6 +90,42 @@ export default function FrequentlyAskedQuestionsPage() {
           }
           `}
         </script>
+      
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Does acupuncture hurt?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Most patients feel minimal to no pain during acupuncture. The needles are hair-thin, and while you may feel a slight tingling or heaviness, the treatment is generally very relaxing."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How many acupuncture sessions will I need?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The number of sessions depends on your specific condition. Acute issues may resolve in 3-5 sessions, while chronic pain may require 10 or more sessions for lasting relief."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you accept health or auto insurance?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, we accept various health insurance plans, as well as Workers Compensation and Auto Accident (PIP) insurance with zero out-of-pocket costs for qualified patients."
+                }
+              }
+            ]
+          }
+          `}
+        </script>
+
       </Helmet>
 
       {/* Page Header */}

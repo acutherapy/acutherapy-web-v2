@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
-import { HelmetProvider } from 'react-helmet-async';
+import { HelmetProvider, Helmet } from "react-helmet-async";
 import { MapPin, Clock, PhoneCall, Calendar, ChevronDown, Menu, X } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 
@@ -208,6 +208,22 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <div className="min-h-screen font-sans bg-slate-50 flex flex-col">
+      <Helmet>
+        {/* Anti-Duplicate Canonical Tag (P0) */}
+        <link rel="canonical" href={`https://acutherapy.com${pathname === "/" ? "" : pathname}`} />
+        
+        {/* Multilingual Hreflang Tags (P1) */}
+        {(pathname === "/acupuncture-honolulu" || pathname.includes("chinese") || pathname.includes("japanese") || pathname.includes("korean")) && (
+          <>
+            <link rel="alternate" hrefLang="en" href="https://acutherapy.com/acupuncture-honolulu" />
+            <link rel="alternate" hrefLang="zh" href="https://acutherapy.com/acupuncture-honolulu-chinese" />
+            <link rel="alternate" hrefLang="ja" href="https://acutherapy.com/acupuncture-honolulu-japanese" />
+            <link rel="alternate" hrefLang="ko" href="https://acutherapy.com/acupuncture-honolulu-korean" />
+            <link rel="alternate" hrefLang="x-default" href="https://acutherapy.com/acupuncture-honolulu" />
+          </>
+        )}
+      </Helmet>
+
       {/* Top Notification Bar */}
       {!isLandingPage && (
       <div className="bg-blue-600 text-white py-2 px-4 text-sm font-medium">
