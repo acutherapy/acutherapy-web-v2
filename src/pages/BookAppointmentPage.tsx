@@ -97,6 +97,42 @@ export default function BookAppointmentPage() {
 
                 {/* Step 1: Patient Type */}
                 {step === 1 && (
+            <div className="mt-4">
+  <label className="flex items-start gap-3 text-sm text-gray-600 leading-relaxed">
+
+    <input
+      type="checkbox"
+      required
+      className="mt-1 w-4 h-4"
+    />
+
+    <span>
+      By checking this box, you agree to receive SMS messages from
+      <strong> AcuTherapy Clinics</strong> related to appointments and customer care.
+      <br /><br />
+
+      Message frequency may vary. Message and data rates may apply.
+      <br />
+
+      You can reply <strong>STOP</strong> to opt out at any time.
+      For assistance, reply <strong>HELP</strong> or visit{" "}
+      <a href="https://acutherapy.com" className="text-blue-600 underline">
+        https://acutherapy.com
+      </a>.
+      <br /><br />
+
+      View our{" "}
+      <a href="https://acutherapy.com/privacy-policy" className="text-blue-600 underline">
+        Privacy Policy
+      </a>{" "}
+      and{" "}
+      <a href="https://acutherapy.com/terms-of-service" className="text-blue-600 underline">
+        Terms of Service
+      </a>.
+    </span>
+
+  </label>
+</div>
                     <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
                         {/* New Patient Card */}
                         <button
