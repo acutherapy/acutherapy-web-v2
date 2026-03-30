@@ -100,31 +100,43 @@ export default function BookAppointmentPage() {
 
 {/* 🔥 SMS CONSENT（关键） */}
 
-<div className="mt-6 text-xs text-gray-500 leading-relaxed">
- <span className="mt-1">
-  By checking this box, you agree to receive SMS messages from{" "}
-  <strong>AcuTherapy Clinics</strong> related to appointments and customer care.
-  <br /><br />
+{step === 1 && (
+  <>
+    {/* 🔥 SMS */}
+    <label className="flex items-start gap-2 text-xs text-gray-500 mt-2 leading-relaxed">
+      <input type="checkbox" required className="mt-1" />
 
-  Message frequency may vary. Message and data rates may apply.
-  <br />
+      <span className="mt-1">
+        By checking this box, you agree to receive SMS messages from{" "}
+        <strong>AcuTherapy Clinics</strong> related to appointments and customer care.
+        <br /><br />
 
-  You can reply <strong>STOP</strong> to opt out at any time.
-  For assistance, reply <strong>HELP</strong> or visit{" "}
-  <a href="https://acutherapy.com" className="text-blue-600 underline">
-    https://acutherapy.com
-  </a>.
-  <br /><br />
+        Message frequency may vary. Message and data rates may apply.
+        <br />
 
-  <a href="https://acutherapy.com/privacy-policy" className="text-blue-600 underline">
-    Privacy Policy
-  </a>{" "}
-  |{" "}
-  <a href="https://acutherapy.com/terms-of-service" className="text-blue-600 underline">
-    Terms of Service
-  </a>
-</span>
-</div>
+        You can reply <strong>STOP</strong> to opt out at any time.
+        For assistance, reply <strong>HELP</strong> or visit{" "}
+        <a href="https://acutherapy.com" className="text-blue-600 underline">
+          https://acutherapy.com
+        </a>.
+        <br /><br />
+
+        <a href="https://acutherapy.com/privacy-policy" className="text-blue-600 underline">
+          Privacy Policy
+        </a>{" "}
+        |{" "}
+        <a href="https://acutherapy.com/terms-of-service" className="text-blue-600 underline">
+          Terms of Service
+        </a>
+      </span>
+    </label>
+
+    {/* 👇 你的原有内容 */}
+    <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+      ...
+    </div>
+  </>
+)}
             
                     <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
                         {/* New Patient Card */}
