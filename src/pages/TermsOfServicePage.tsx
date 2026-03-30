@@ -74,67 +74,68 @@ export default function TermsOfServicePage() {
                     {/* ======================= */}
                     {/* 🚨 SMS COMPLIANCE SECTION */}
                     {/* ======================= */}
-                    <section class="max-w-4xl mx-auto px-4 py-16 text-gray-700 leading-relaxed">
+                    <section className="max-w-4xl mx-auto px-4 py-16 text-gray-700 leading-relaxed">
   
-  <h1 class="text-3xl font-bold text-blue-900 mb-6">
+  <h2 className="text-3xl font-bold text-blue-900 mb-6">
     SMS Terms and Conditions
-  </h1>
+  </h2>
 
-  <ol class="space-y-6 list-decimal pl-5">
+  <ol className="space-y-6 list-decimal pl-5">
 
     <li>
-      <strong>SMS for Consent Communication</strong><br>
+      <strong>SMS for Consent Communication</strong><br />
       We do not share mobile information with third parties or affiliates for any purpose. This includes SMS opt-in data, consent, and phone numbers.
     </li>
 
     <li>
-      <strong>Types of SMS Communications</strong><br>
+      <strong>Types of SMS Communications</strong><br />
       If you opt in to receive messages from AcuTherapy Clinics, you may receive text messages related to appointment reminders, scheduling, follow-ups, and customer care.
     </li>
 
     <li>
-      <strong>Message Frequency</strong><br>
+      <strong>Message Frequency</strong><br />
       Message frequency may vary depending on your interaction with our services.
     </li>
 
     <li>
-      <strong>Carrier Charges</strong><br>
+      <strong>Carrier Charges</strong><br />
       Message and data rates may apply based on your mobile carrier and location.
     </li>
 
     <li>
-      <strong>Opt-In Methods</strong><br>
-      You may opt in to receive SMS messages by submitting an online form at 
-      <a href="https://acutherapy.com/book-appointment" class="text-blue-600 underline">
+      <strong>Opt-In Methods</strong><br />
+      You may opt in via an online form at{" "}
+      <a href="https://acutherapy.com/book-appointment" className="text-blue-600 underline">
         https://acutherapy.com/book-appointment
       </a>.
     </li>
 
     <li>
-      <strong>Opt-Out Instructions</strong><br>
-      You may opt out at any time by replying <strong>STOP</strong> to any message. To resume receiving messages, reply <strong>START</strong>.
+      <strong>Opt-Out Instructions</strong><br />
+      You may opt out at any time by replying <strong>STOP</strong>. To resume, reply <strong>START</strong>.
     </li>
 
     <li>
-      <strong>Help</strong><br>
-      If you need assistance, reply <strong>HELP</strong> or visit 
-      <a href="https://acutherapy.com" class="text-blue-600 underline">
+      <strong>Help</strong><br />
+      Reply <strong>HELP</strong> or visit{" "}
+      <a href="https://acutherapy.com" className="text-blue-600 underline">
         https://acutherapy.com
       </a>.
     </li>
 
     <li>
-      <strong>Disclosures</strong><br>
-      Message frequency may vary.<br>
-      Message and data rates may apply.<br>
-      Reply <strong>STOP</strong> to cancel.<br>
-      Reply <strong>HELP</strong> for assistance.<br><br>
+      <strong>Disclosures</strong><br />
+      Message frequency may vary.<br />
+      Message and data rates may apply.<br />
+      Reply STOP to cancel.<br />
+      Reply HELP for assistance.<br /><br />
 
-      For more information, please visit our 
-      <a href="https://acutherapy.com/privacy-policy" class="text-blue-600 underline">
+      View our{" "}
+      <a href="https://acutherapy.com/privacy-policy" className="text-blue-600 underline">
         Privacy Policy
-      </a> and 
-      <a href="https://acutherapy.com/terms-of-service" class="text-blue-600 underline">
+      </a>{" "}
+      and{" "}
+      <a href="https://acutherapy.com/terms-of-service" className="text-blue-600 underline">
         Terms of Service
       </a>.
     </li>
