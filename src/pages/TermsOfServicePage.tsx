@@ -79,7 +79,8 @@ export default function TermsOfServicePage() {
                     </h2>
 
                     <p>
-                        By providing your mobile number and opting into SMS communications from AcuTherapy Clinics®, you agree to receive text messages related to appointments, scheduling, follow-ups, and customer care services.
+                        1. <h2 className="text-2xl font-bold text-blue-900 mt-8 mb-4">SMS for Consent Communication</h2>
+We will not share your phone number with any third parties for marketing purposes.
                     </p>
 
                     <p>
