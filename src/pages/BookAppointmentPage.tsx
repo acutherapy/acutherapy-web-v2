@@ -269,9 +269,9 @@ export default function BookAppointmentPage() {
  <label className="flex items-start gap-2 text-xs text-gray-500 mt-2 leading-relaxed">
   <input type="checkbox" required className="mt-1" />
   <span>
-    Yes, I agree to receive SMS messages from AcuTherapy Clinics regarding appointments and customer care. Messaging frequency may vary. Message and data rates may apply. You can opt out any time by texting STOP.
-For assistance, text HELP or visit https://acutherapy.com.
-Visit https://acutherapy.com/privacy-policy for Privacy Policy and https://acutherapy.com/terms-of-service for Terms of Service.
+    By checking this box, you agree to receive SMS messages from AcuTherapy Clinics related to conversational text messages. 
+      You may reply STOP to opt-out at any time. Reply to HELP to (808) 528-7177 for assistance. Messages and data rates may apply. 
+      Message frequency will vary. Learn more on our privacy policy at https://acutherapy.com/privacy-policy and Term & Conditions at https://acutherapy.com/terms-of-service.
   </span>
 </label>
                             </div>
