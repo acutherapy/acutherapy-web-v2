@@ -271,21 +271,9 @@ export default function BookAppointmentPage() {
   <input type="checkbox" required className="mt-1" />
 
   <span className="mt-1">
-    By checking this box, you agree to receive SMS messages from 
-    <strong>AcuTherapy Clinics</strong> related to appointments and customer care.
-    <br /><br />
-
-    Message frequency may vary. Message and data rates may apply.
-    <br />
-
-    You can reply <strong>STOP</strong> to opt out at any time.
-    For assistance, reply <strong>HELP</strong> or visit{" "}
-    <a href="https://acutherapy.com" className="text-blue-600 underline">
-      https://acutherapy.com
-    </a>.
-    <br /><br />
-
-    View our{" "}
+    By checking this box, you agree to receive SMS messages from <strong>AcuTherapy Clinics</strong> related to conversational text messages. You may reply STOP to opt-out at any time. Reply to HELP to (808) 528-7177 for assistance. Messages and data rates may apply. Message frequency will vary. 
+    
+    Learn more on our website at{" "}
     <a href="https://acutherapy.com/privacy-policy" className="text-blue-600 underline">
       Privacy Policy
     </a>{" "}
