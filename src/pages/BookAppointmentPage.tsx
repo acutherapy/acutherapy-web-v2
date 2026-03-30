@@ -268,43 +268,43 @@ export default function BookAppointmentPage() {
                                  {/* 🔥 SMS CONSENT（关键） */}
  <label className="flex items-start gap-2 text-xs text-gray-500 mt-2 leading-relaxed">
   <input type="checkbox" required className="mt-1" />
-  <div class="mt-4">
-  <label class="flex items-start gap-3 text-sm text-gray-600 leading-relaxed">
+  <div className="mt-4">
+  <label className="flex items-start gap-3 text-sm text-gray-600 leading-relaxed">
     
     <input 
       type="checkbox" 
       required 
-      class="mt-1 w-4 h-4"
+      className="mt-1 w-4 h-4"
     />
 
     <span>
       By checking this box, you agree to receive SMS messages from 
-      <strong>AcuTherapy Clinics</strong> related to appointments and customer care.
-      <br><br>
+      <strong> AcuTherapy Clinics</strong> related to appointments and customer care.
+      <br /><br />
 
       Message frequency may vary. Message and data rates may apply.
-      <br>
+      <br />
 
       You can reply <strong>STOP</strong> to opt out at any time.
-      For assistance, reply <strong>HELP</strong> or visit 
-      <a href="https://acutherapy.com" class="text-blue-600 underline">
+      For assistance, reply <strong>HELP</strong> or visit{" "}
+      <a href="https://acutherapy.com" className="text-blue-600 underline">
         https://acutherapy.com
       </a>.
-      <br><br>
+      <br /><br />
 
-      View our 
-      <a href="https://acutherapy.com/privacy-policy" class="text-blue-600 underline">
+      View our{" "}
+      <a href="https://acutherapy.com/privacy-policy" className="text-blue-600 underline">
         Privacy Policy
-      </a> and 
-      <a href="https://acutherapy.com/terms-of-service" class="text-blue-600 underline">
+      </a>{" "}
+      and{" "}
+      <a href="https://acutherapy.com/terms-of-service" className="text-blue-600 underline">
         Terms of Service
       </a>.
     </span>
 
   </label>
 </div>
-</label>
-                            </div>
+
 
                             <div className="pt-6 grid grid-cols-2 gap-4">
                                 <Button
