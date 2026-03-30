@@ -75,7 +75,7 @@ export default function PrivacyPolicyPage() {
 
                     {/* 🚨 CR6002 关键句（必须存在） */}
                     <p className="font-semibold text-blue-900">
-                        No mobile information will be shared with third parties or affiliates for marketing or promotional purposes.
+                        We do not share or sell mobile information with third parties or affiliates for any purpose. This includes SMS opt-in data, consent, and phone numbers.
                     </p>
 
                     {/* Data Protection */}
