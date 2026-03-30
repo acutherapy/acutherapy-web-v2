@@ -98,36 +98,78 @@ export default function BookAppointmentPage() {
                 {/* Step 1: Patient Type */}
                 {step === 1 && (
   <>
-    <label className="flex items-start gap-2 text-xs text-gray-500 mt-2 leading-relaxed">
-      <input type="checkbox" required className="mt-1" />
+    {/* 🔥 SMS CONSENT */}
+    <div className="mt-4">
+      <label className="flex items-start gap-2 text-xs text-gray-500 leading-relaxed">
+        <input type="checkbox" required className="mt-1" />
 
-      <span className="mt-1">
-        By checking this box, you agree to receive SMS messages from{" "}
-        <strong>AcuTherapy Clinics</strong> related to appointments and customer care.
-        <br /><br />
+        <span>
+          By checking this box, you agree to receive SMS messages from{" "}
+          <strong>AcuTherapy Clinics</strong> related to appointments and customer care.
+          <br /><br />
 
-        Message frequency may vary. Message and data rates may apply.
-        <br />
+          Message frequency may vary. Message and data rates may apply.
+          <br />
 
-        You can reply <strong>STOP</strong> to opt out at any time.
-        For assistance, reply <strong>HELP</strong> or visit{" "}
-        <a href="https://acutherapy.com" className="text-blue-600 underline">
-          https://acutherapy.com
-        </a>.
-        <br /><br />
+          You can reply <strong>STOP</strong> to opt out at any time.
+          <br />
 
-        <a href="https://acutherapy.com/privacy-policy" className="text-blue-600 underline">
-          Privacy Policy
-        </a>{" "}
-        |{" "}
-        <a href="https://acutherapy.com/terms-of-service" className="text-blue-600 underline">
-          Terms of Service
-        </a>
-      </span>
-    </label>
+          For assistance, reply <strong>HELP</strong> or visit{" "}
+          <a
+            href="https://acutherapy.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline"
+          >
+            acutherapy.com
+          </a>.
+          <br /><br />
 
+          View our{" "}
+          <a
+            href="https://acutherapy.com/privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline"
+          >
+            Privacy Policy
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://acutherapy.com/terms-of-service"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline"
+          >
+            Terms of Service
+          </a>.
+        </span>
+      </label>
+    </div>
+
+    {/* 👇 原来的 UI */}
     <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-      {/* your original cards */}
+      {/* New Patient */}
+      <button
+        onClick={() => {
+          updateForm('patientType', 'new');
+          nextStep();
+        }}
+        className="p-6 rounded-xl border hover:shadow-md"
+      >
+        New Patient
+      </button>
+
+      {/* Returning Patient */}
+      <button
+        onClick={() => {
+          updateForm('patientType', 'returning');
+          nextStep();
+        }}
+        className="p-6 rounded-xl border hover:shadow-md"
+      >
+        Returning Patient
+      </button>
     </div>
   </>
 )}
