@@ -268,17 +268,18 @@ export default function BookAppointmentPage() {
                                  {/* 🔥 SMS CONSENT（关键） */}
  <label className="flex items-start gap-2 text-xs text-gray-500 mt-2 leading-relaxed">
   <input type="checkbox" required className="mt-1" />
-  <div className="mt-4">
+{/* 🔥 SMS CONSENT（修复版） */}
+<div className="mt-4">
   <label className="flex items-start gap-3 text-sm text-gray-600 leading-relaxed">
-    
-    <input 
-      type="checkbox" 
-      required 
+
+    <input
+      type="checkbox"
+      required
       className="mt-1 w-4 h-4"
     />
 
     <span>
-      By checking this box, you agree to receive SMS messages from 
+      By checking this box, you agree to receive SMS messages from
       <strong> AcuTherapy Clinics</strong> related to appointments and customer care.
       <br /><br />
 
