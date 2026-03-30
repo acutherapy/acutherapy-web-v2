@@ -97,9 +97,7 @@ export default function BookAppointmentPage() {
 
                 {/* Step 1: Patient Type */}
                 {step === 1 && (
-
   <>
-   
     <label className="flex items-start gap-2 text-xs text-gray-500 mt-2 leading-relaxed">
       <input type="checkbox" required className="mt-1" />
 
@@ -128,9 +126,8 @@ export default function BookAppointmentPage() {
       </span>
     </label>
 
-    
     <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-      ...
+      {/* your original cards */}
     </div>
   </>
 )}
