@@ -266,36 +266,36 @@ export default function BookAppointmentPage() {
                                     placeholder="(808) 555-0123"
                                 />
                                  {/* 🔥 SMS CONSENT（关键） */}
- <label className="flex items-start gap-2 text-xs text-gray-500 mt-2 leading-relaxed">
+<label className="flex items-start gap-2 text-xs text-gray-500 mt-2 leading-relaxed">
+  
   <input type="checkbox" required className="mt-1" />
-  <div className="mt-4">
-   <span>
-      By checking this box, you agree to receive SMS messages from 
-      <strong> AcuTherapy Clinics</strong> related to appointments and customer care.
-      <br /><br />
 
-      Message frequency may vary. Message and data rates may apply.
-      <br />
+  <span className="mt-1">
+    By checking this box, you agree to receive SMS messages from 
+    <strong>AcuTherapy Clinics</strong> related to appointments and customer care.
+    <br /><br />
 
-      You can reply <strong>STOP</strong> to opt out at any time.
-      For assistance, reply <strong>HELP</strong> or visit{" "}
-      <a href="https://acutherapy.com" className="text-blue-600 underline">
-        https://acutherapy.com
-      </a>.
-      <br /><br />
+    Message frequency may vary. Message and data rates may apply.
+    <br />
 
-      View our{" "}
-      <a href="https://acutherapy.com/privacy-policy" className="text-blue-600 underline">
-        Privacy Policy
-      </a>{" "}
-      and{" "}
-      <a href="https://acutherapy.com/terms-of-service" className="text-blue-600 underline">
-        Terms of Service
-      </a>.
-    </span>
+    You can reply <strong>STOP</strong> to opt out at any time.
+    For assistance, reply <strong>HELP</strong> or visit{" "}
+    <a href="https://acutherapy.com" className="text-blue-600 underline">
+      https://acutherapy.com
+    </a>.
+    <br /><br />
 
-  </label>
-</div>
+    View our{" "}
+    <a href="https://acutherapy.com/privacy-policy" className="text-blue-600 underline">
+      Privacy Policy
+    </a>{" "}
+    and{" "}
+    <a href="https://acutherapy.com/terms-of-service" className="text-blue-600 underline">
+      Terms of Service
+    </a>.
+  </span>
+
+</label>
 
 
                             <div className="pt-6 grid grid-cols-2 gap-4">
