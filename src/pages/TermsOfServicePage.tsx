@@ -74,42 +74,74 @@ export default function TermsOfServicePage() {
                     {/* ======================= */}
                     {/* 🚨 SMS COMPLIANCE SECTION */}
                     {/* ======================= */}
-                    <h2 className="text-2xl font-bold text-blue-900 mt-8 mb-4">
-                        SMS Terms & Conditions
-                    </h2>
+                    <section class="max-w-4xl mx-auto px-4 py-16 text-gray-700 leading-relaxed">
+  
+  <h1 class="text-3xl font-bold text-blue-900 mb-6">
+    SMS Terms and Conditions
+  </h1>
 
-                        1. <h2 className="text-2xl font-bold text-blue-900 mt-8 mb-4">SMS for Consent Communication</h2>
-                        <p>
-We will not share your phone number with any third parties for marketing purposes.
-                    </p>
+  <ol class="space-y-6 list-decimal pl-5">
 
-                    <p>
-                        Message frequency may vary depending on your interaction with our services.
-                    </p>
+    <li>
+      <strong>SMS for Consent Communication</strong><br>
+      We do not share mobile information with third parties or affiliates for any purpose. This includes SMS opt-in data, consent, and phone numbers.
+    </li>
 
-                    <p>
-                        Message and data rates may apply.
-                    </p>
+    <li>
+      <strong>Types of SMS Communications</strong><br>
+      If you opt in to receive messages from AcuTherapy Clinics, you may receive text messages related to appointment reminders, scheduling, follow-ups, and customer care.
+    </li>
 
-                    <p>
-                        You can opt out at any time by replying <strong>STOP</strong> to any message.
-                        For assistance, reply <strong>HELP</strong>.
-                    </p>
+    <li>
+      <strong>Message Frequency</strong><br>
+      Message frequency may vary depending on your interaction with our services.
+    </li>
 
-                    <p>
-                        Your mobile information will not be shared with third parties or affiliates for marketing or promotional purposes.
-                    </p>
+    <li>
+      <strong>Carrier Charges</strong><br>
+      Message and data rates may apply based on your mobile carrier and location.
+    </li>
 
-                    <p>
-                        For more details, please review our Privacy Policy:
-                        <br />
-                        <a
-                            href="https://acutherapy.com/privacy-policy"
-                            className="text-blue-600 underline"
-                        >
-                            https://acutherapy.com/privacy-policy
-                        </a>
-                    </p>
+    <li>
+      <strong>Opt-In Methods</strong><br>
+      You may opt in to receive SMS messages by submitting an online form at 
+      <a href="https://acutherapy.com/book-appointment" class="text-blue-600 underline">
+        https://acutherapy.com/book-appointment
+      </a>.
+    </li>
+
+    <li>
+      <strong>Opt-Out Instructions</strong><br>
+      You may opt out at any time by replying <strong>STOP</strong> to any message. To resume receiving messages, reply <strong>START</strong>.
+    </li>
+
+    <li>
+      <strong>Help</strong><br>
+      If you need assistance, reply <strong>HELP</strong> or visit 
+      <a href="https://acutherapy.com" class="text-blue-600 underline">
+        https://acutherapy.com
+      </a>.
+    </li>
+
+    <li>
+      <strong>Disclosures</strong><br>
+      Message frequency may vary.<br>
+      Message and data rates may apply.<br>
+      Reply <strong>STOP</strong> to cancel.<br>
+      Reply <strong>HELP</strong> for assistance.<br><br>
+
+      For more information, please visit our 
+      <a href="https://acutherapy.com/privacy-policy" class="text-blue-600 underline">
+        Privacy Policy
+      </a> and 
+      <a href="https://acutherapy.com/terms-of-service" class="text-blue-600 underline">
+        Terms of Service
+      </a>.
+    </li>
+
+  </ol>
+
+</section>
 
                     {/* Contact */}
                     <h2 className="text-2xl font-bold text-blue-900 mt-8 mb-4">
