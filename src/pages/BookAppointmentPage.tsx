@@ -97,6 +97,27 @@ export default function BookAppointmentPage() {
 
                 {/* Step 1: Patient Type */}
                 {step === 1 && (
+
+{/* 🔥 SMS CONSENT（关键） */}
+<label className="flex items-start gap-2 text-xs text-gray-500 mt-2 leading-relaxed">
+  
+  <input type="checkbox" required className="mt-1" />
+
+  <span className="mt-1">
+    By checking this box, you agree to receive SMS messages from <strong>AcuTherapy Clinics</strong> related to conversational text messages. You may reply STOP to opt-out at any time. Reply to HELP to (808) 452-1521 for assistance. Messages and data rates may apply. Message frequency will vary. 
+    
+    Learn more on our website at{" "}
+    <a href="https://acutherapy.com/privacy-policy" className="text-blue-600 underline">
+      Privacy Policy
+    </a>{" "}
+    and{" "}
+    <a href="https://acutherapy.com/terms-of-service" className="text-blue-600 underline">
+      Terms of Service
+    </a>.
+  </span>
+
+</label>
+            
                     <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
                         {/* New Patient Card */}
                         <button
