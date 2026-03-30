@@ -297,7 +297,7 @@ export default function BookAppointmentPage() {
 
 </label>
 
-
+ </div>
                             <div className="pt-6 grid grid-cols-2 gap-4">
                                 <Button
                                     type="button"
