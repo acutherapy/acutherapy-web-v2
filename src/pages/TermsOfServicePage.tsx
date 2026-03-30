@@ -78,8 +78,8 @@ export default function TermsOfServicePage() {
                         SMS Terms & Conditions
                     </h2>
 
-                    <p>
                         1. <h2 className="text-2xl font-bold text-blue-900 mt-8 mb-4">SMS for Consent Communication</h2>
+                        <p>
 We will not share your phone number with any third parties for marketing purposes.
                     </p>
 
