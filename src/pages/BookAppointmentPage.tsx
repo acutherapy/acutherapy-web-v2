@@ -97,6 +97,7 @@ export default function BookAppointmentPage() {
 
                 {/* Step 1: Patient Type */}
                 {step === 1 && (
+             <>
    <div className="mt-8 max-w-2xl mx-auto border rounded-lg p-4 bg-gray-50">
   <label className="flex items-start gap-3 text-sm text-gray-600 leading-relaxed">
     
