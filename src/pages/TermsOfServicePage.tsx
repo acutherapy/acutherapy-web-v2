@@ -84,17 +84,17 @@ export default function TermsOfServicePage() {
 
     <li>
       <strong>SMS for Consent Communication</strong><br />
-      We do not share mobile information with third parties or affiliates for any purpose. This includes SMS opt-in data, consent, and phone numbers.
+      We will not share your phone number with any third parties for marketing purposes or affiliates for any purpose. This includes SMS opt-in data, consent, and phone numbers.
     </li>
 
     <li>
       <strong>Types of SMS Communications</strong><br />
-      If you opt in to receive messages from AcuTherapy Clinics, you may receive text messages related to appointment reminders, scheduling, follow-ups, and customer care.
+      If you opt in to receive messages from AcuTherapy Clinics, you may receive texts about appointment reminders, scheduling, and setting up calls. Standard message rates may apply.
     </li>
 
     <li>
       <strong>Message Frequency</strong><br />
-      Message frequency may vary depending on your interaction with our services.
+      Message frequency may vary depending on your interaction with our services, approximately less than 10 SMS messages per week.
     </li>
 
     <li>
@@ -104,7 +104,7 @@ export default function TermsOfServicePage() {
 
     <li>
       <strong>Opt-In Methods</strong><br />
-      You may opt in via an online form at{" "}
+      You can opt in via the following methods:  by submitting an online form at{" "}
       <a href="https://acutherapy.com/book-appointment" className="text-blue-600 underline">
         https://acutherapy.com/book-appointment
       </a>.
