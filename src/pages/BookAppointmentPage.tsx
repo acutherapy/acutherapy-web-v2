@@ -97,59 +97,7 @@ export default function BookAppointmentPage() {
 
 {/* Step 1: Patient Type */}
 {step === 1 && (
-  <>
-    {/* ✅ SMS Consent */}
-    <div className="mt-8 max-w-2xl mx-auto border rounded-lg p-4 bg-gray-50">
-  <label className="flex items-start gap-3 text-sm text-gray-600 leading-relaxed">
-    
-    <input type="checkbox" required className="mt-1 w-4 h-4" />
 
-    <span>
-      By checking this box, you agree to receive SMS messages from{" "}
-      <strong>AcuTherapy Clinics</strong> related to appointments and customer care.
-      <br /><br />
-
-      Message frequency may vary. Message and data rates may apply.
-      <br />
-
-      You can opt out at any time by texting <strong>STOP</strong>.
-      <br />
-
-      For assistance, text <strong>HELP</strong> or call (808) 528-7177 or visit{" "}
-      <a
-        href="https://acutherapy.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-600 underline"
-      >
-        acutherapy.com
-      </a>.
-      <br /><br />
-
-      We do not share or sell SMS opt-in or phone numbers for the purpose of SMS.
-      <br /><br />
-
-      View our{" "}
-      <a
-        href="https://acutherapy.com/privacy-policy"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-600 underline"
-      >
-        Privacy Policy
-      </a>{" "}
-      and{" "}
-      <a
-        href="https://acutherapy.com/terms-of-service"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-600 underline"
-      >
-        Terms of Service
-      </a>.
-    </span>
-  </label>
-</div>
 
     {/* ✅ Patient Cards */}
     <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
