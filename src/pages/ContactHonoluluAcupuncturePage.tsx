@@ -267,7 +267,7 @@ export default function ContactHonoluluAcupuncturePage() {
                   )}
                 </Button>
                   <p className="text-xs text-slate-500 text-center mt-4">
-                    * By submitting this form, your request is sent directly to AcuTherapy Clinics. We will contact you shortly to confirm your booking time.
+                    * by submitting this form, your request is sent directly to AcuTherapy Clinics. We will contact you shortly to confirm your booking time.
                   </p>
                 </form>
               )}
