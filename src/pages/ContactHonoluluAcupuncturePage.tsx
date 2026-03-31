@@ -265,7 +265,7 @@ export default function ContactHonoluluAcupuncturePage() {
                     "Submit Request"
                   )}
                 </Button>
-                  <p class="text-sm text-gray-600 leading-relaxed">
+                  <p className="text-sm text-gray-600 leading-relaxed">
   By checking this box, you agree to receive SMS messages from 
   <strong>AcuTherapy Clinics</strong> related to conversational text messages. 
   You may reply <strong>STOP</strong> to opt out at any time. 
