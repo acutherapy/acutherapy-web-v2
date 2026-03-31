@@ -269,7 +269,7 @@ export default function ContactHonoluluAcupuncturePage() {
   By checking Submit Request, you agree to receive SMS messages from 
   <strong>AcuTherapy Clinics</strong> related to conversational text messages. 
   You may reply <strong>STOP</strong> to opt out at any time. 
-  For assistance, reply <strong>HELP</strong> or call 808-528-7177. 
+  For assistance, reply <strong>HELP</strong> or call 808-452-1521. 
   Messages and data rates may apply. Message frequency may vary. 
   Learn more on our 
   <a href="https://acutherapy.com/privacy-policy" className="text-blue-600 underline">
