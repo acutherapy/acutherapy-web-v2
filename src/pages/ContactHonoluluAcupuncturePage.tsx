@@ -272,11 +272,11 @@ export default function ContactHonoluluAcupuncturePage() {
   For assistance, reply <strong>HELP</strong> or call 808-528-7177. 
   Messages and data rates may apply. Message frequency may vary. 
   Learn more on our 
-  <a href="https://acutherapy.com/privacy-policy" target="_blank" class="text-blue-600 underline">
+  <a href="https://acutherapy.com/privacy-policy" className="text-blue-600 underline">
     Privacy Policy
   </a> 
   and 
-  <a href="https://acutherapy.com/terms-of-service" target="_blank" class="text-blue-600 underline">
+  <a href="https://acutherapy.com/terms-of-service" className="text-blue-600 underline">
     Terms &amp; Conditions
   </a>.
 </p>
