@@ -266,7 +266,7 @@ export default function ContactHonoluluAcupuncturePage() {
                   )}
                 </Button>
                   <p className="text-sm text-gray-600 leading-relaxed">
-  By checking Submit Request, you agree to receive SMS messages from 
+  By checking this box, you agree to receive SMS messages from 
   <strong>AcuTherapy Clinics</strong> related to conversational text messages. 
   You may reply <strong>STOP</strong> to opt out at any time. 
   For assistance, reply <strong>HELP</strong> or call 808-452-1521. 
