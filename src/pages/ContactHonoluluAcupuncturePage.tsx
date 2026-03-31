@@ -237,6 +237,7 @@ export default function ContactHonoluluAcupuncturePage() {
                     <label htmlFor="phone" className="text-sm font-semibold text-slate-700">Phone Number</label>
                     <input type="tel" id="phone" name="phone" required className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all" placeholder="(808) 555-0123" />
                   </div>
+                  
                   <div className="space-y-2">
                     <label htmlFor="service" className="text-sm font-semibold text-slate-700">Primary Reason for Visit</label>
                     <select id="service" name="service" required className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all bg-white">
