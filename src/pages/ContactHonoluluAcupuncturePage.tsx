@@ -221,140 +221,77 @@ export default function ContactHonoluluAcupuncturePage() {
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6 mt-2">
 
-  {/* Name + Email */}
-  <div className="grid md:grid-cols-2 gap-6">
-    <div className="space-y-2">
-      <label htmlFor="name" className="text-sm font-semibold text-slate-700">
-        Full Name
-      </label>
-      <input
-        type="text"
-        id="name"
-        name="name"
-        required
-        className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-600 outline-none"
-        placeholder="John Doe"
-      />
-    </div>
+                  <div className="grid md:grid-cols-2 gap-6">
+                  <div className="space-y-2">
+                    <label htmlFor="name" className="text-sm font-semibold text-slate-700">Full Name</label>
+                    <input type="text" id="name" name="name" required className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all" placeholder="John Doe" />
+                  </div>
+                  <div className="space-y-2">
+                    <label htmlFor="email" className="text-sm font-semibold text-slate-700">Email Address</label>
+                    <input type="email" id="email" name="email" required className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all" placeholder="john@example.com" />
+                  </div>
+                </div>
 
-    <div className="space-y-2">
-      <label htmlFor="email" className="text-sm font-semibold text-slate-700">
-        Email Address
-      </label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        required
-        className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-600 outline-none"
-        placeholder="john@example.com"
-      />
-    </div>
-  </div>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="space-y-2">
+                    <label htmlFor="phone" className="text-sm font-semibold text-slate-700">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all" placeholder="(808) 555-0123" />
 
-  {/* Phone + Service */}
-  <div className="grid md:grid-cols-2 gap-6">
-    <div className="space-y-2">
-      <label htmlFor="phone" className="text-sm font-semibold text-slate-700">
-        Phone Number
-      </label>
-      <input
-        type="tel"
-        id="phone"
-        name="phone"
-        required
-        className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-600 outline-none"
-        placeholder="(808) 555-0123"
-      />
-    </div>
+                    {/* 🔥 SMS CONSENT（关键） */}
+<label className="flex items-start gap-2 text-xs text-gray-500 mt-2 leading-relaxed">
+  
+  <input type="checkbox" required className="mt-1" />
 
-    <div className="space-y-2">
-      <label htmlFor="service" className="text-sm font-semibold text-slate-700">
-        Primary Reason
-      </label>
-      <select
-        id="service"
-        name="service"
-        required
-        className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-600 bg-white"
-      >
-        <option value="">Select an option...</option>
-        <option value="auto-injury">Auto Accident PIP</option>
-        <option value="workers-comp">Workers' Comp</option>
-        <option value="veterans">Veterans VA Care</option>
-        <option value="general-pain">Pain / Sciatica</option>
-        <option value="other">Other</option>
-      </select>
-    </div>
-  </div>
+  <span className="mt-1">
+    By checking this box, you agree to receive SMS messages from <strong>AcuTherapy Clinics</strong> related to conversational text messages. You may reply STOP to opt-out at any time. Reply to HELP to (808) 452-1521 for assistance. Messages and data rates may apply. Message frequency will vary. 
+    
+    Learn more on our website at{" "}
+    <a href="https://acutherapy.com/privacy-policy" className="text-blue-600 underline">
+      Privacy Policy
+    </a>{" "}
+    and{" "}
+    <a href="https://acutherapy.com/terms-of-service" className="text-blue-600 underline">
+      Terms of Service
+    </a>.
+  </span>
 
-  {/* Message */}
-  <div className="space-y-2">
-    <label htmlFor="message" className="text-sm font-semibold text-slate-700">
-      Message (Optional)
-    </label>
-    <textarea
-      id="message"
-      name="message"
-      rows={4}
-      className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-600 resize-none"
-      placeholder="Tell us about your condition..."
-    />
-  </div>
+</label>
 
-  {/* 🔥 SMS Consent（关键） */}
-  <label className="flex items-start gap-3 text-xs text-gray-600 leading-relaxed bg-gray-50 p-4 rounded-lg border">
-    <input
-      type="checkbox"
-      name="smsConsent"
-      required
-      className="mt-1 w-4 h-4"
-    />
+ </div>
+                  
+                  </div>
+                  <div className="space-y-2">
+                    <label htmlFor="service" className="text-sm font-semibold text-slate-700">Primary Reason for Visit</label>
+                    <select id="service" name="service" required className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all bg-white">
+                      <option value="">Select an option...</option>
+                      <option value="auto-injury">Auto Accident PIP</option>
+                      <option value="workers-comp">Workers' Comp</option>
+                      <option value="veterans">Veterans VA Care</option>
+                      <option value="general-pain">General Pain / Sciatica</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                </div>
 
-    <span>
-      By checking this box, you agree to receive SMS messages from{" "}
-      <strong>AcuTherapy Clinics</strong> related to appointments, reminders, and customer care.
-      <br /><br />
+                <div className="space-y-2">
+                  <label htmlFor="message" className="text-sm font-semibold text-slate-700">Message or Details (Optional)</label>
+                  <textarea id="message" name="message" rows={4} className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all resize-none" placeholder="Please provide any additional details about your condition..."></textarea>
+                </div>
 
-      Message frequency may vary. Message and data rates may apply.
-      <br />
-
-      You can reply <strong>STOP</strong> to opt out at any time.
-      <br />
-
-      Reply <strong>HELP</strong> for assistance or call (808) 452-1521.
-      <br /><br />
-
-      <a
-        href="https://acutherapy.com/privacy-policy"
-        className="text-blue-600 underline"
-      >
-        Privacy Policy
-      </a>{" "}
-      |{" "}
-      <a
-        href="https://acutherapy.com/terms-of-service"
-        className="text-blue-600 underline"
-      >
-        Terms of Service
-      </a>
-    </span>
-  </label>
-
-  {/* Submit */}
-  <Button
-    disabled={isSubmitting}
-    type="submit"
-    className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg font-bold"
-  >
-    {isSubmitting ? "Sending..." : "Book My Appointment"}
-  </Button>
-
-  <p className="text-xs text-slate-500 text-center">
-    We will contact you shortly to confirm your appointment.
-  </p>
-
-</form>
+                <Button disabled={isSubmitting} type="submit" className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg font-bold shadow-lg shadow-blue-900/20 flex items-center justify-center">
+                  {isSubmitting ? (
+                    <span className="flex items-center gap-2">
+                      <div className="h-5 w-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                      Sending...
+                    </span>
+                  ) : (
+                    "Submit Request"
+                  )}
+                </Button>
+                  <p className="text-xs text-slate-500 text-center mt-4">
+                    * By submitting this form, your request is sent directly to AcuTherapy Clinics. We will contact you shortly to confirm your booking time.
+                  </p>
+                </form>
               )}
             </div>
 
@@ -382,32 +319,10 @@ export default function ContactHonoluluAcupuncturePage() {
                 <p className="text-slate-600 mb-8 text-sm">Bridge the gap to a pain-free life today.</p>
                 <div className="flex flex-col gap-4">
                   <Link to="/book-appointment">
-
-                    <Link to="/book-appointment">
-
-
-                      <Link to="/book-appointment">
-
-
-
-                        <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
-
-
-
-                          <Calendar className="mr-2" /> Schedule Online
-
-
-
-                        </Button>
-
-
-
-                      </Link>
-
-
-                    </Link>
-
-                  </Link>
+  <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
+    <Calendar className="mr-2" /> Schedule Online
+  </Button>
+</Link>
                   <Button variant="outline" className="w-full h-14 text-lg border-2 border-slate-200" onClick={() => window.location.href = 'tel:+18085287177'}>
                     <PhoneCall className="mr-2 h-5 w-5 text-blue-600" /> (808) 528-7177
                   </Button>
