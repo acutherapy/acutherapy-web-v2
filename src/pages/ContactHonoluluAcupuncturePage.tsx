@@ -268,14 +268,16 @@ export default function ContactHonoluluAcupuncturePage() {
   />
 
   <label htmlFor="smsConsent" className="text-sm text-gray-600 leading-relaxed">
-    By checking this box, you agree to receive SMS messages from{" "}
-    <strong>AcuTherapy Clinics</strong>.
-    Reply STOP to opt out. HELP for help. Msg rates may apply.
-    <a href="https://acutherapy.com/privacy-policy" className="text-blue-600 underline ml-1">
+    By checking this box, you agree to receive SMS messages from 
+  <strong>AcuTherapy Clinics</strong> related to conversational text messages. 
+  You may reply <strong>STOP</strong> to opt out at any time. 
+  For assistance, reply <strong>HELP</strong> or call 808-452-1521. 
+  Messages and data rates may apply. Message frequency may vary. 
+    Learn more on our <a href="https://acutherapy.com/privacy-policy" className="text-blue-600 underline ml-1">
       Privacy Policy
     </a>{" "}
     <a href="https://acutherapy.com/terms-of-service" className="text-blue-600 underline">
-      Terms
+      Terms &amp; Conditions
     </a>
   </label>
 </div>
