@@ -75,7 +75,7 @@ export default function PrivacyPolicyPage() {
 
                     {/* 🚨 CR6002 关键句（必须存在） */}
                     <p className="font-semibold text-blue-900">
-                        We do not share or sell mobile information with third parties or affiliates for any purpose. This includes SMS opt-in data, consent, and phone numbers.
+                        Mobile Opt in, SMS Consent,  and phone numbers collected for SMS communication purposes will not be shared with any third party or affiliates for marketing purposes.
                     </p>
 
                     {/* Data Protection */}
