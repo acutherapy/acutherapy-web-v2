@@ -90,8 +90,8 @@ export default function TermsOfServicePage() {
     <li>
       <strong>Types of SMS Communications</strong><br />
       If you have consented to receive text messages from AcuTherapy Clinics, you may receive messages related to the following, Example: "Hello, this is a friendly reminder of your upcoming appointment with Dr. David Cai at AcuTherapy Clinics on [Date] at [Time]. You can reply STOP to opt out of SMS messaging from AcuTherapy Clinics at any time."
-Conversation external
-Conversation between employees
+Conversation external, 
+Conversation between employees.
     </li>
 
     <li>
