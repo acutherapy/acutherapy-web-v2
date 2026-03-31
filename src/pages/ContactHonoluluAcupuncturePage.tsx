@@ -265,9 +265,21 @@ export default function ContactHonoluluAcupuncturePage() {
                     "Submit Request"
                   )}
                 </Button>
-                  <p className="text-xs text-slate-500 text-center mt-4">
-                    * By submitting this form, your request is sent directly to AcuTherapy Clinics. We will contact you shortly to confirm your booking time.
-                  </p>
+                  <p class="text-sm text-gray-600 leading-relaxed">
+  By checking this box, you agree to receive SMS messages from 
+  <strong>AcuTherapy Clinics</strong> related to conversational text messages. 
+  You may reply <strong>STOP</strong> to opt out at any time. 
+  For assistance, reply <strong>HELP</strong> or call 808-528-7177. 
+  Messages and data rates may apply. Message frequency may vary. 
+  Learn more on our 
+  <a href="https://acutherapy.com/privacy-policy" target="_blank" class="text-blue-600 underline">
+    Privacy Policy
+  </a> 
+  and 
+  <a href="https://acutherapy.com/terms-of-service" target="_blank" class="text-blue-600 underline">
+    Terms &amp; Conditions
+  </a>.
+</p>
                 </form>
               )}
             </div>
