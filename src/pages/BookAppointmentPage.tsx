@@ -95,67 +95,102 @@ export default function BookAppointmentPage() {
                     </div>
                 )}
 
-                {/* Step 1: Patient Type */}
-                {step === 1 && (
-             <>
-   <div className="mt-8 max-w-2xl mx-auto border rounded-lg p-4 bg-gray-50">
-  <label className="flex items-start gap-3 text-sm text-gray-600 leading-relaxed">
-    
-    <input
-      type="checkbox"
-      required
-      className="mt-1 w-4 h-4"
-    />
+{/* Step 1: Patient Type */}
+{step === 1 && (
+  <>
+    {/* ✅ SMS Consent */}
+    <div className="mt-8 max-w-2xl mx-auto border rounded-lg p-4 bg-gray-50">
+      <label className="flex items-start gap-3 text-sm text-gray-600 leading-relaxed">
+        
+        <input
+          type="checkbox"
+          required
+          className="mt-1 w-4 h-4"
+        />
 
-    <span>
-      By checking this box, you agree to receive SMS messages from{" "}
-      <strong>AcuTherapy Clinics</strong> related to appointments and customer care.
-      <br /><br />
+        <span>
+          By checking this box, you agree to receive SMS messages from{" "}
+          <strong>AcuTherapy Clinics</strong> related to appointments and customer care.
+          <br /><br />
 
-      Message frequency may vary. Message and data rates may apply.
-      <br />
+          Message frequency may vary. Message and data rates may apply.
+          <br />
 
-      You can reply <strong>STOP</strong> to opt out at any time.
-      <br />
+          You can opt out at any time by texting <strong>STOP</strong>.
+          <br />
 
-      For assistance, reply <strong>HELP</strong> or call 808-528-7177 or visit{" "}
-      <a
-        href="https://acutherapy.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-600 underline"
+          For assistance, text <strong>HELP</strong> or call (808) 528-7177 or visit{" "}
+          <a
+            href="https://acutherapy.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline"
+          >
+            acutherapy.com
+          </a>.
+          <br /><br />
+
+          We do not share or sell SMS opt-in or phone numbers for the purpose of SMS.
+          <br /><br />
+
+          View our{" "}
+          <a
+            href="https://acutherapy.com/privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline"
+          >
+            Privacy Policy
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://acutherapy.com/terms-of-service"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline"
+          >
+            Terms of Service
+          </a>.
+        </span>
+      </label>
+    </div>
+
+    {/* ✅ Patient Cards */}
+    <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+      
+      {/* New Patient Card */}
+      <button
+        type="button"
+        onClick={() => {
+          updateForm('patientType', 'new');
+          nextStep();
+        }}
+        className="p-6 border rounded-lg hover:shadow-lg transition"
       >
-        acutherapy.com
-      </a>.
-      <br /><br />
+        <div className="text-lg font-semibold mb-2">New Patient</div>
+        <div className="text-gray-500 text-sm">
+          I am visiting AcuTherapy for the first time.
+        </div>
+      </button>
 
-      We do not share or sell SMS opt-in or phone numbers for the purpose of SMS.
-      <br /><br />
+      {/* Returning Patient Card */}
+      <button
+        type="button"
+        onClick={() => {
+          updateForm('patientType', 'returning');
+          nextStep();
+        }}
+        className="p-6 border rounded-lg hover:shadow-lg transition"
+      >
+        <div className="text-lg font-semibold mb-2">Returning Patient</div>
+        <div className="text-gray-500 text-sm">
+          I have been here before.
+        </div>
+      </button>
 
-      View our{" "}
-      <a
-        href="https://acutherapy.com/privacy-policy"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-600 underline"
-      >
-        Privacy Policy
-      </a>{" "}
-      and{" "}
-      <a
-        href="https://acutherapy.com/terms-of-service"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-600 underline"
-      >
-        Terms of Service
-      </a>.
-    </span>
-  </label>
-</div>
-                    <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-                        {/* New Patient Card */}
-                        <button
+    </div>
+  </>
+)}
                             onClick={() => {
                                 updateForm('patientType', 'new');
                                 nextStep();
