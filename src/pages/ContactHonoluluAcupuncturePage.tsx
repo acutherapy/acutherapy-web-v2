@@ -1,286 +1,397 @@
+
+
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { Calendar, User, Check, Building2, MessageSquare, Phone, Mail, ArrowRight } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Calendar, PhoneCall, MapPin, ShieldCheck, CheckCircle2 } from "lucide-react";
 
-export default function BookAppointmentPage() {
-    const [step, setStep] = useState(1);
-    const [formData, setFormData] = useState({
-        patientType: '',
-        location: '',
-        reason: '',
-        name: '',
-        contactMethod: 'Phone',
-        email: '',
-        phone: '',
-    });
+export default function ContactHonoluluAcupuncturePage() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
 
-    const updateForm = (key: string, value: string) => {
-        setFormData(prev => ({ ...prev, [key]: value }));
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      phone: formData.get('phone'),
+      reason: formData.get('service') + ' - ' + formData.get('message'),
+      location: 'Honolulu Contact Page Form' // Default info
     };
 
-    const nextStep = () => {
-        setStep(prev => prev + 1);
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
+    try {
+      const res = await fetch('/api/send', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      if (res.ok) {
+        setIsSuccess(true);
+      } else {
+        alert('Failed to send. Please try again or call us.');
+      }
+    } catch (err) {
+      console.error(err);
+      alert('Failed to send. Please try again or call us.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+  return (
+    <>
+      <Helmet>
+        <title>Contact Honolulu Acupuncture | Honolulu Acupuncture Guide</title>
+        <meta name="description" content="Learn more about Contact Honolulu Acupuncture. Dr. David Cai from AcuTherapy Clinics answers your questions about acupuncture efficacy and treatment processes." />
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "MedicalClinic",
+            "name": "AcuTherapy Clinics",
+            "logo": "https://acutherapy.com/logo.png",
+            "image": "https://acutherapy.com/images/dr-david-cai-portrait.jpg",
+            "url": "https://acutherapy.com",
+            "description": "Premier medical acupuncture and pain management clinics in Honolulu and Aiea, led by Dr. David Cai.",
+            "department": [
+              {
+                "@type": "MedicalClinic",
+                "name": "AcuTherapy Clinics - Honolulu (Liliha)",
+                "telephone": "+1-808-528-7177",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "1650 Liliha St, Suite 208",
+                  "addressLocality": "Honolulu",
+                  "addressRegion": "HI",
+                  "postalCode": "96817",
+                  "addressCountry": "US"
+                },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": 21.321289,
+                  "longitude": -157.860155
+                },
+                "openingHoursSpecification": [
+                  {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                    "opens": "09:00",
+                    "closes": "13:00"
+                  },
+                  {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "Saturday",
+                    "opens": "08:00",
+                    "closes": "12:00"
+                  }
+                ]
+              },
+              {
+                "@type": "MedicalClinic",
+                "name": "AcuTherapy Clinics - Aiea / Pearl City",
+                "telephone": "+1-808-452-1900",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "98-211 Pali Momi St, Suite 604",
+                  "addressLocality": "Aiea",
+                  "addressRegion": "HI",
+                  "postalCode": "96701",
+                  "addressCountry": "US"
+                },
+                "openingHoursSpecification": [
+                  {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                    "opens": "09:00",
+                    "closes": "13:00"
+                  },
+                  {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "Saturday",
+                    "opens": "08:00",
+                    "closes": "12:00"
+                  }
+                ]
+              }
+            ],
+            "medicalSpecialty": [
+              "Acupuncture",
+              "PainManagement"
+            ]
+          }
+          `}
+        </script>
+      </Helmet>
 
-    const prevStep = () => {
-        setStep(prev => prev - 1);
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
+      {/* Page Header */}
+      <section className="bg-blue-900 text-white relative py-20 lg:py-32 overflow-hidden">
+        <div className="absolute inset-0 z-0 opacity-40">
+          <img
+            src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2000"
+            alt="Acupuncture therapy background"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/80" />
+        </div>
+        <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm mb-6 backdrop-blur-sm">
+            <ShieldCheck size={16} /> <span>Trusted Honolulu Pain Clinic</span>
+          </div>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Contact Honolulu Acupuncture</h1>
+          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Medical-grade treatments customized for lasting relief and recovery in Honolulu.</p>
+        </div>
+      </section>
 
-    const [isSubmitting, setIsSubmitting] = useState(false);
+      {/* Main Content */}
+      <section className="py-16 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-12 gap-12">
 
-    const submitForm = async (e: React.FormEvent) => {
-        e.preventDefault();
-        setIsSubmitting(true);
-        try {
-            const res = await fetch('/api/send', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(formData)
-            });
-            if (res.ok) {
-                setStep(4);
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            } else {
-                alert('There was an error sending your request. Please call us directly.');
-            }
-        } catch (err) {
-            console.error(err);
-            alert('There was an error sending your request. Please call us directly.');
-        } finally {
-            setIsSubmitting(false);
-        }
-    };
+          <article className="md:col-span-8">
 
-    return (
-        <div className="min-h-screen bg-slate-50 py-12 px-4 sm:px-6 lg:px-8">
-            <Helmet>
-                <title>Book Your Appointment | AcuTherapy Clinics</title>
-                <meta name="description" content="Schedule your acupuncture or pain management appointment at AcuTherapy Clinics." />
-            </Helmet>
+            <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
+              At AcuTherapy Clinics, we believe that informed patients heal faster. If you are exploring options and wondering about <strong>contact honolulu acupuncture</strong>, Dr. David Cai and our clinical team have compiled the following medical insights based on decades of practice in Honolulu.
+            </p>
 
-            <div className="max-w-3xl mx-auto">
-                <div className="text-center mb-10">
-                    <h1 className="text-4xl font-extrabold text-slate-900 mb-4">Book Your Appointment</h1>
-                    <p className="text-lg text-slate-600">Complete our Smart Intake form to get matched with the best care plan.</p>
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/50 group mb-12 w-full max-w-3xl mx-auto">
+              <img src="/images/traditional-chinese-herbs.jpg" alt="Traditional Chinese Herbs" className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=800'; }} />
+              <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-8 pt-16 text-white text-lg font-medium">Holistic Healing Methods inside AcuTherapy</figcaption>
+            </div>
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Understanding Contact Honolulu Acupuncture</h2>
+            <p className="text-lg text-slate-700 leading-relaxed mb-6">
+              When discussing contact honolulu acupuncture, it's important to differentiate between western symptom-masking and the holistic root-cause methodology we practice here. Traditional Chinese Medicine (TCM) views the body as a systemic interconnected network. Any symptom you experience is a localized manifestation of a deeper structural or energetic imbalance.
+            </p>
+            <div className="bg-slate-50 p-8 rounded-xl border border-slate-200 my-8 shadow-sm">
+              <h3 className="text-xl font-bold text-slate-900 mb-4">Patient FAQ: The Core Answer</h3>
+              <p className="text-lg text-slate-700">
+                If you are asking yourself about contact honolulu acupuncture, the short answer is that <strong>yes, professional acupuncture is statistically proven to be highly efficacious</strong> for these types of clinical inquiries. The treatment works by modulating the nervous system, reducing chronic inflammation, and resetting muscular firing patterns. However, every patient's body responds differently—which is why day-one diagnostic evaluations are critical.
+              </p>
+            </div>
+
+
+            <div className="mt-16 mb-16 bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden">
+              <div className="grid md:grid-cols-5 gap-0">
+                <div className="md:col-span-2 bg-slate-100 relative">
+                  <img
+                    src="/images/dr-david-cai-portrait.jpg"
+                    alt="Dr. David Cai, L.Ac., L.M.T."
+                    className="w-full h-full object-cover min-h-[400px]"
+                    onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=800'; }}
+                  />
+                  <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-6 text-white text-center">
+                    <span className="font-bold text-xl">Dr. David Cai</span>
+                    <p className="text-blue-300 text-sm">L.Ac., L.M.T.</p>
+                  </div>
+                </div>
+                <div className="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
+                  <h3 className="text-sm font-bold tracking-widest text-blue-600 uppercase mb-2">Clinical Director & Founder</h3>
+                  <h4 className="text-3xl font-extrabold text-slate-900 mb-4">Leading Honolulu Pain Clinic</h4>
+                  <p className="text-slate-600 mb-6 leading-relaxed" dangerouslySetInnerHTML={{ __html: 'With over 30 years of clinical experience, <strong>Dr. David Cai</strong> is a master of Traditional Chinese Medicine (TCM) and advanced acupuncture protocols. He specializes in severe pain management, sports injuries, and complex auto accident recoveries, bringing world-class holistic healthcare to the Honolulu community.' }}></p>
+                  <div className="flex items-center gap-4 bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                    <img src="/images/acutherapy-medical-team.jpg" alt="AcuTherapy Clinics Medical Team" className="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md flex-shrink-0" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                    <div>
+                      <h5 className="font-bold text-slate-900 mb-1">AcuTherapy Clinics Medical Team</h5>
+                      <p className="text-sm text-slate-500 italic leading-relaxed">"Our multidisciplinary medical team is highly trained and committed to finding the root cause of your condition, providing relief that lasts."</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <h3 className="text-3xl font-extrabold text-slate-900 mt-16 mb-8 border-b pb-2">Book Your Appointment Live</h3>
+            <div className="bg-white p-8 rounded-2xl shadow-xl border border-blue-50 relative mb-16">
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-t-2xl"></div>
+              
+              {isSuccess ? (
+                <div className="py-12 md:py-16 text-center animate-in fade-in zoom-in duration-500">
+                  <div className="w-20 h-20 md:w-24 md:h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6 shadow-inner ring-8 ring-green-50">
+                    <CheckCircle2 className="h-10 w-10 md:h-12 md:w-12 text-green-600" />
+                  </div>
+                  <h3 className="text-3xl font-extrabold text-slate-900 mb-4 tracking-tight">You're All Set!</h3>
+                  <p className="text-lg text-slate-600 mb-8 max-w-md mx-auto leading-relaxed">
+                    We've received your request. The AcuTherapy Clinics team will call you shortly to confirm your booking time.
+                  </p>
+                  <Button onClick={() => setIsSuccess(false)} variant="outline" className="border-2 border-slate-200 text-slate-600 hover:bg-slate-50 font-bold h-12 px-8 rounded-full transition-all hover:scale-105 active:scale-95">
+                    Submit Another Request
+                  </Button>
+                </div>
+              ) : (
+                <form onSubmit={handleSubmit} className="space-y-6 mt-2">
+
+                  <div className="grid md:grid-cols-2 gap-6">
+                  <div className="space-y-2">
+                    <label htmlFor="name" className="text-sm font-semibold text-slate-700">Full Name</label>
+                    <input type="text" id="name" name="name" required className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all" placeholder="John Doe" />
+                  </div>
+                  <div className="space-y-2">
+                    <label htmlFor="email" className="text-sm font-semibold text-slate-700">Email Address</label>
+                    <input type="email" id="email" name="email" required className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all" placeholder="john@example.com" />
+                  </div>
                 </div>
 
-                {/* Stepper */}
-                {step > 1 && step < 4 && (
-                    <div className="flex items-center justify-center mb-12 max-w-lg mx-auto relative px-4">
-                        <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-full h-0.5 bg-slate-200 z-0"></div>
-                        <div className="relative z-10 flex justify-between w-full">
-                            <div className={`h-12 w-12 rounded-full flex items-center justify-center border-2 ${step >= 2 ? 'border-teal-500 bg-teal-50 text-teal-600' : 'border-slate-200 bg-white text-slate-400'}`}>
-                                <Calendar className="h-5 w-5" />
-                            </div>
-                            <div className={`h-12 w-12 rounded-full flex items-center justify-center border-2 ${step >= 3 ? 'border-teal-500 bg-teal-50 text-teal-600' : step === 2 ? 'border-slate-300 bg-white text-slate-500' : 'border-slate-200 bg-white text-slate-400'}`}>
-                                <User className="h-5 w-5" />
-                            </div>
-                            <div className={`h-12 w-12 rounded-full flex items-center justify-center border-2 ${step === 4 ? 'border-teal-500 bg-teal-50 text-teal-600' : 'border-slate-200 bg-white text-slate-400'}`}>
-                                <Check className="h-5 w-5" />
-                            </div>
-                        </div>
-                        <div className={`absolute left-8 top-1/2 transform -translate-y-1/2 h-0.5 bg-teal-500 z-0 transition-all duration-500 ${step >= 3 ? 'w-[calc(100%-4rem)]' : step === 2 ? 'w-[calc(50%-2rem)]' : 'w-0'}`}></div>
-                    </div>
-                )}
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="space-y-2">
+                    <label htmlFor="phone" className="text-sm font-semibold text-slate-700">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all" placeholder="(808) 555-0123" />
+                  </div>
+                  <div className="space-y-2">
+                    <label htmlFor="service" className="text-sm font-semibold text-slate-700">Primary Reason for Visit</label>
+                    <select id="service" name="service" required className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all bg-white">
+                      <option value="">Select an option...</option>
+                      <option value="auto-injury">Auto Accident PIP</option>
+                      <option value="workers-comp">Workers' Comp</option>
+                      <option value="veterans">Veterans VA Care</option>
+                      <option value="general-pain">General Pain / Sciatica</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                </div>
 
-                {/* Step 1: Patient Type */}
-                {step === 1 && (
-                    <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-500">
-                        {/* New Patient Card */}
-                        <button
-                            type="button"
-                            onClick={() => {
-                                updateForm('patientType', 'new');
-                                nextStep();
-                            }}
-                            className="bg-white rounded-2xl p-10 text-center shadow-sm border border-slate-200 hover:shadow-md hover:border-teal-200 transition-all flex flex-col items-center group focus:outline-none focus:ring-2 focus:ring-teal-500"
-                        >
-                            <div className="h-16 w-16 bg-teal-50 text-teal-600 rounded-full flex items-center justify-center mb-6 group-hover:bg-teal-100 transition-colors">
-                                <User className="h-8 w-8" />
-                            </div>
-                            <h3 className="text-2xl font-bold text-slate-900 mb-3">New Patient</h3>
-                            <p className="text-slate-500">I am visiting AcuTherapy for the first time.</p>
-                        </button>
+                <div className="space-y-2">
+                  <label htmlFor="message" className="text-sm font-semibold text-slate-700">Message or Details (Optional)</label>
+                  <textarea id="message" name="message" rows={4} className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all resize-none" placeholder="Please provide any additional details about your condition..."></textarea>
+                </div>
 
-                        {/* Returning Patient Card */}
-                        <div className="bg-white rounded-2xl p-10 text-center shadow-sm border border-slate-200 hover:shadow-md hover:border-blue-200 transition-all flex flex-col items-center">
-                            <div className="h-16 w-16 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mb-6">
-                                <Calendar className="h-8 w-8" />
-                            </div>
-                            <h3 className="text-2xl font-bold text-slate-900 mb-3">Returning Patient</h3>
-                            <p className="text-slate-500 mb-6">I have been here before.</p>
-                            <a
-                                href="https://acutherapy.janeapp.com/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="w-full bg-blue-600 hover:bg-blue-700 h-12 text-md font-semibold rounded-full flex items-center justify-center text-white"
-                            >
-                                <Calendar className="mr-2 h-4 w-4" /> Book on Jane App
-                            </a>
-                        </div>
-                    </div>
-                )}
-
-                {/* Step 2: Symptoms & Location */}
-                {step === 2 && (
-                    <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 animate-in fade-in slide-in-from-bottom-4 duration-500">
-                        <h2 className="text-2xl font-bold text-slate-900 mb-8">Symptoms & Location</h2>
-                        <div className="space-y-6">
-                            <div className="space-y-2">
-                                <label htmlFor="location" className="text-sm font-semibold text-slate-900 flex items-center gap-2">
-                                    <Building2 className="h-4 w-4 text-slate-500" /> Preferred Clinic Location
-                                </label>
-                                <select
-                                    id="location"
-                                    value={formData.location}
-                                    onChange={(e) => updateForm('location', e.target.value)}
-                                    className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-teal-500 outline-none bg-white"
-                                >
-                                    <option value="">Select Location</option>
-                                    <option value="honolulu">Honolulu Clinic (Liliha)</option>
-                                    <option value="aiea">Aiea / Pearl City Clinic</option>
-                                    <option value="no-preference">No Preference / First Available</option>
-                                </select>
-                            </div>
-
-                            <div className="space-y-2">
-                                <label htmlFor="reason" className="text-sm font-semibold text-slate-900 flex items-center gap-2">
-                                    <MessageSquare className="h-4 w-4 text-slate-500" /> Primary Check-in Reason
-                                </label>
-                                <textarea
-                                    id="reason"
-                                    rows={5}
-                                    value={formData.reason}
-                                    onChange={(e) => updateForm('reason', e.target.value)}
-                                    className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-teal-500 outline-none resize-none"
-                                    placeholder="e.g., Lower back pain for 2 weeks..."
-                                ></textarea>
-                            </div>
-
-                            <div className="pt-6 grid grid-cols-2 gap-4">
-                                <Button type="button" variant="outline" onClick={prevStep} className="h-14 text-lg border-2 border-slate-200">
-                                    Back
-                                </Button>
-                                <Button
-                                    onClick={() => {
-                                        if (!formData.location || !formData.reason) {
-                                            alert("Please provide location and reason.");
-                                            return;
-                                        }
-                                        nextStep();
-                                    }}
-                                    className="h-14 text-lg bg-teal-600 hover:bg-teal-700 text-white font-semibold"
-                                >
-                                    Next Step <ArrowRight className="ml-2 h-5 w-5" />
-                                </Button>
-                            </div>
-                        </div>
-                    </div>
-                )}
-
-                {/* Step 3: Personal Details */}
-                {step === 3 && (
-                    <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 animate-in fade-in slide-in-from-bottom-4 duration-500">
-                        <h2 className="text-2xl font-bold text-slate-900 mb-8">Personal Details</h2>
-                        <form onSubmit={submitForm} className="space-y-6">
-                            <div className="space-y-2">
-                                <label htmlFor="name" className="text-sm font-semibold text-slate-900">Full Name</label>
-                                <input
-                                    type="text"
-                                    id="name"
-                                    required
-                                    value={formData.name}
-                                    onChange={(e) => updateForm('name', e.target.value)}
-                                    className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-teal-500 outline-none"
-                                    placeholder="John Doe"
-                                />
-                            </div>
-
-                            <div className="space-y-3">
-                                <label className="text-sm font-semibold text-slate-900">Preferred Contact Method</label>
-                                <div className="grid grid-cols-3 gap-3">
-                                    {['Phone', 'Text', 'Email'].map((method) => (
-                                        <button
-                                            key={method}
-                                            type="button"
-                                            onClick={() => updateForm('contactMethod', method)}
-                                            className={`py-3 px-2 rounded-lg flex items-center justify-center gap-2 border transition-all text-xs sm:text-sm font-medium ${formData.contactMethod === method ? 'bg-teal-50 border-teal-500 text-teal-700' : 'bg-white border-slate-200 text-slate-600'}`}
-                                        >
-                                            {method === 'Phone' && <Phone className="h-4 w-4" />}
-                                            {method === 'Text' && <MessageSquare className="h-4 w-4" />}
-                                            {method === 'Email' && <Mail className="h-4 w-4" />}
-                                            {method}
-                                        </button>
-                                    ))}
-                                </div>
-                            </div>
-
-                            <div className="space-y-2">
-                                <label htmlFor="email" className="text-sm font-semibold text-slate-900">Email</label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    required
-                                    value={formData.email}
-                                    onChange={(e) => updateForm('email', e.target.value)}
-                                    className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-teal-500 outline-none"
-                                />
-                            </div>
-
-                            <div className="space-y-2">
-                                <label htmlFor="phone" className="text-sm font-semibold text-slate-900">Phone</label>
-                                <input
-                                    type="tel"
-                                    id="phone"
-                                    required
-                                    value={formData.phone}
-                                    onChange={(e) => updateForm('phone', e.target.value)}
-                                    className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-teal-500 outline-none"
-                                />
-                                
-                                <label className="flex items-start gap-2 text-[10px] sm:text-xs text-gray-500 mt-4 leading-relaxed">
-                                    <input type="checkbox" required className="mt-1 flex-shrink-0" />
-                                    <span>
-                                        By checking this box, you agree to receive SMS messages from <strong>AcuTherapy Clinics</strong> related to your appointment. You may reply STOP to opt-out. 
-                                        Learn more: <a href="/privacy-policy" className="text-blue-600 underline">Privacy Policy</a>.
-                                    </span>
-                                </label>
-                            </div>
-
-                            <div className="pt-6 grid grid-cols-2 gap-4">
-                                <Button type="button" variant="outline" onClick={prevStep} className="h-14 text-lg border-2 border-slate-200">
-                                    Back
-                                </Button>
-                                <Button type="submit" disabled={isSubmitting} className="h-14 text-lg bg-teal-600 hover:bg-teal-700 text-white">
-                                    {isSubmitting ? "Sending..." : "Request Appointment"}
-                                </Button>
-                            </div>
-                        </form>
-                    </div>
-                )}
-
-                {/* Step 4: Success Message */}
-                {step === 4 && (
-                    <div className="bg-white rounded-2xl p-12 shadow-sm border border-slate-200 text-center animate-in zoom-in-95 duration-500">
-                        <div className="h-20 w-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-8">
-                            <Check className="h-10 w-10 text-green-600" strokeWidth={3} />
-                        </div>
-                        <h2 className="text-3xl font-extrabold text-slate-900 mb-4">Request Received!</h2>
-                        <p className="text-lg text-slate-600 mb-10 max-w-lg mx-auto">
-                            Thank you, {formData.name}. Our team will contact you at <span className="font-semibold text-slate-800">{formData.phone}</span> shortly to confirm.
-                        </p>
-                        <Link to="/">
-                            <Button variant="ghost" className="text-teal-600 font-semibold px-6 py-6 text-lg">
-                                Back to Home
-                            </Button>
-                        </Link>
-                    </div>
-                )}
+                <Button disabled={isSubmitting} type="submit" className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg font-bold shadow-lg shadow-blue-900/20 flex items-center justify-center">
+                  {isSubmitting ? (
+                    <span className="flex items-center gap-2">
+                      <div className="h-5 w-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                      Sending...
+                    </span>
+                  ) : (
+                    "Submit Request"
+                  )}
+                </Button>
+                  <p className="text-sm text-gray-600 leading-relaxed">
+  By checking this box, you agree to receive SMS messages from 
+  <strong>AcuTherapy Clinics</strong> related to conversational text messages. 
+  You may reply <strong>STOP</strong> to opt out at any time. 
+  For assistance, reply <strong>HELP</strong> or call 808-452-1521. 
+  Messages and data rates may apply. Message frequency may vary. 
+  Learn more on our 
+  <a href="https://acutherapy.com/privacy-policy" className="text-blue-600 underline">
+    Privacy Policy
+  </a> 
+  and 
+  <a href="https://acutherapy.com/terms-of-service" className="text-blue-600 underline">
+    Terms &amp; Conditions
+  </a>.
+</p>
+                </form>
+              )}
             </div>
+
+            <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Explore Related Treatments & Information</h3>
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mb-12">
+
+
+              <Link to="/acupuncture-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold">
+                <ShieldCheck className="text-blue-500 mr-3 h-5 w-5" /> Acupuncture Honolulu
+              </Link>
+              <Link to="/contact-honolulu-acupuncture" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold">
+                <PhoneCall className="text-emerald-500 mr-3 h-5 w-5" /> Contact Us
+              </Link>
+
+            </div>
+
+          </article>
+
+          {/* Sidebar */}
+          <aside className="md:col-span-4 space-y-8">
+            <Card className="bg-white border-blue-100 shadow-xl lg:sticky lg:top-24 rounded-2xl overflow-hidden">
+              <div className="bg-blue-600 h-2 w-full"></div>
+              <CardContent className="p-8 text-center">
+                <h3 className="text-2xl font-bold text-slate-900 mb-2">Book Your Visit</h3>
+                <p className="text-slate-600 mb-8 text-sm">Bridge the gap to a pain-free life today.</p>
+                <div className="flex flex-col gap-4">
+                  <Link to="/book-appointment">
+
+                    <Link to="/book-appointment">
+
+
+                      <Link to="/book-appointment">
+
+
+
+                        <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
+
+
+
+                          <Calendar className="mr-2" /> Schedule Online
+
+
+
+                        </Button>
+
+
+
+                      </Link>
+
+
+                    </Link>
+
+                  </Link>
+                  <Button variant="outline" className="w-full h-14 text-lg border-2 border-slate-200" onClick={() => window.location.href = 'tel:+18085287177'}>
+                    <PhoneCall className="mr-2 h-5 w-5 text-blue-600" /> (808) 528-7177
+                  </Button>
+                </div>
+
+                <div className="mt-8 pt-6 border-t border-slate-100 text-left">
+                  <div className="flex items-start gap-3 mb-6">
+                    <MapPin className="text-slate-400 mt-1 flex-shrink-0" />
+                    <div>
+                      <p className="font-bold text-slate-900 mb-1">Honolulu Clinic (Liliha)</p>
+                      <p className="text-slate-600 text-sm leading-relaxed mb-1">
+                        1650 Liliha St, Suite 208<br />Honolulu, HI 96817
+                      </p>
+                      <p className="text-slate-600 text-sm"><strong>Ph:</strong> (808) 528-7177 <span className="mx-1">|</span> <strong>Fax:</strong> (808) 212-9459</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <MapPin className="text-slate-400 mt-1 flex-shrink-0" />
+                    <div>
+                      <p className="font-bold text-slate-900 mb-1">Aiea / Pearl City Clinic</p>
+                      <p className="text-slate-600 text-sm leading-relaxed mb-1">
+                        98-211 Pali Momi St, Suite 604<br />Aiea, HI 96701
+                      </p>
+                      <p className="text-slate-600 text-sm"><strong>Ph:</strong> (808) 452-1900 <span className="mx-1">|</span> <strong>Fax:</strong> (808) 452-1521</p>
+                    </div>
+                  </div>
+                  <div className="mt-6 bg-slate-50 p-4 rounded-lg">
+                    <p className="font-bold text-slate-900 mb-1 text-sm">Hours of Operation</p>
+                    <p className="text-slate-600 text-sm">Mon-Fri: 9am - 1pm, Sat: 8am - 12pm</p>
+                  </div>
+                </div>
+
+                <div className="mt-6 pt-6 border-t border-slate-100 text-left">
+                  <p className="font-bold text-slate-900 mb-3 text-sm">Also serving:</p>
+                  <div className="flex flex-wrap gap-2 text-xs">
+                    <Link to="/acupuncture-waikiki" className="px-2 py-1 bg-slate-100 text-slate-600 rounded-md hover:bg-blue-50">Waikiki</Link>
+                    <Link to="/acupuncture-kaimuki" className="px-2 py-1 bg-slate-100 text-slate-600 rounded-md hover:bg-blue-50">Kaimuki</Link>
+                    <Link to="/acupuncture-ala-moana" className="px-2 py-1 bg-slate-100 text-slate-600 rounded-md hover:bg-blue-50">Ala Moana</Link>
+                    <Link to="/acupuncture-kahala" className="px-2 py-1 bg-slate-100 text-slate-600 rounded-md hover:bg-blue-50">Kahala</Link>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <div className="bg-blue-900 text-white p-8 rounded-2xl shadow-xl">
+              <h4 className="text-xl font-bold mb-4 flex items-center gap-2">Patient Reviews</h4>
+              <p className="text-slate-300 italic text-sm leading-relaxed mb-4">"Dr. Cai completely resolved my shoulder pain after just 3 visits. I had been suffering for months. The clinic is pristine, professional, and very welcoming!"</p>
+              <div className="flex items-center gap-4 mt-6">
+                <div className="h-10 w-10 bg-blue-800 rounded-full flex items-center justify-center font-bold text-white shadow-inner">ST</div>
+                <div>
+                  <p className="text-white font-semibold text-sm">Sarah T.</p>
+                  <p className="text-blue-400 text-xs">Honolulu Resident</p>
+                </div>
+              </div>
+            </div>
+          </aside>
         </div>
-    );
+      </section>
+    </>
+  );
 }
