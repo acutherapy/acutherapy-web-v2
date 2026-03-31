@@ -31,6 +31,7 @@ export default function BookAppointmentPage() {
     };
 
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [smsChecked, setSmsChecked] = useState(false);
 
     const submitForm = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -243,7 +244,13 @@ export default function BookAppointmentPage() {
                                 />
                                 
                                 <label className="flex items-start gap-2 text-[10px] sm:text-xs text-gray-500 mt-4 leading-relaxed">
-                                    <input type="checkbox" required className="mt-1 flex-shrink-0" />
+                                    <input
+  type="checkbox"
+  required
+  checked={smsChecked}
+  onChange={(e) => setSmsChecked(e.target.checked)}
+  className="mt-1 flex-shrink-0"
+/>
                                     <span>
                                         By checking this box, you agree to receive SMS messages from AcuTherapy Clinics related to conversational text messages. You may reply STOP to opt-out at any time. Reply to HELP to (808) 452-1521 for assistance. Messages and data rates may apply. Message frequency will vary.  
                                         Learn more on our: <a href="/privacy-policy" className="text-blue-600 underline">Privacy Policy</a> and <a href="https://acutherapy.com/terms-of-service" className="text-blue-600 underline">Terms &amp; Conditions</a>.
@@ -255,7 +262,7 @@ export default function BookAppointmentPage() {
                                 <Button type="button" variant="outline" onClick={prevStep} className="h-14 text-lg border-2 border-slate-200">
                                     Back
                                 </Button>
-                                <Button type="submit" disabled={isSubmitting} className="h-14 text-lg bg-teal-600 hover:bg-teal-700 text-white">
+                                <Button type="submit" disabled={isSubmitting || !smsChecked} className="h-14 text-lg bg-teal-600 hover:bg-teal-700 text-white">
                                     {isSubmitting ? "Sending..." : "Request Appointment"}
                                 </Button>
                             </div>
