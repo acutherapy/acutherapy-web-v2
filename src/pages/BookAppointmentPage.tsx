@@ -72,69 +72,27 @@ export default function BookAppointmentPage() {
                 {step > 1 && step < 4 && (
                     <div className="flex items-center justify-center mb-12 max-w-lg mx-auto relative px-4">
                         <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-full h-0.5 bg-slate-200 z-0"></div>
-
                         <div className="relative z-10 flex justify-between w-full">
-                            {/* Step 1 Indicator */}
                             <div className={`h-12 w-12 rounded-full flex items-center justify-center border-2 ${step >= 2 ? 'border-teal-500 bg-teal-50 text-teal-600' : 'border-slate-200 bg-white text-slate-400'}`}>
                                 <Calendar className="h-5 w-5" />
                             </div>
-
-                            {/* Step 2 Indicator */}
                             <div className={`h-12 w-12 rounded-full flex items-center justify-center border-2 ${step >= 3 ? 'border-teal-500 bg-teal-50 text-teal-600' : step === 2 ? 'border-slate-300 bg-white text-slate-500' : 'border-slate-200 bg-white text-slate-400'}`}>
                                 <User className="h-5 w-5" />
                             </div>
-
-                            {/* Step 3 Indicator */}
                             <div className={`h-12 w-12 rounded-full flex items-center justify-center border-2 ${step === 4 ? 'border-teal-500 bg-teal-50 text-teal-600' : 'border-slate-200 bg-white text-slate-400'}`}>
                                 <Check className="h-5 w-5" />
                             </div>
                         </div>
-
-                        {/* Active Line Overlays */}
                         <div className={`absolute left-8 top-1/2 transform -translate-y-1/2 h-0.5 bg-teal-500 z-0 transition-all duration-500 ${step >= 3 ? 'w-[calc(100%-4rem)]' : step === 2 ? 'w-[calc(50%-2rem)]' : 'w-0'}`}></div>
                     </div>
                 )}
 
-{/* Step 1: Patient Type */}
-{step === 1 && (
-
-
-    {/* ✅ Patient Cards */}
-    <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-      
-      {/* New Patient Card */}
-      <button
-        type="button"
-        onClick={() => {
-          updateForm('patientType', 'new');
-          nextStep();
-        }}
-        className="p-6 border rounded-lg hover:shadow-lg transition"
-      >
-        <div className="text-lg font-semibold mb-2">New Patient</div>
-        <div className="text-gray-500 text-sm">
-          I am visiting AcuTherapy for the first time.
-        </div>
-      </button>
-
-      {/* Returning Patient Card */}
-      <button
-        type="button"
-        onClick={() => {
-          updateForm('patientType', 'returning');
-          nextStep();
-        }}
-        className="p-6 border rounded-lg hover:shadow-lg transition"
-      >
-        <div className="text-lg font-semibold mb-2">Returning Patient</div>
-        <div className="text-gray-500 text-sm">
-          I have been here before.
-        </div>
-      </button>
-
-    </div>
-  </>
-)}
+                {/* Step 1: Patient Type */}
+                {step === 1 && (
+                    <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-500">
+                        {/* New Patient Card */}
+                        <button
+                            type="button"
                             onClick={() => {
                                 updateForm('patientType', 'new');
                                 nextStep();
@@ -171,7 +129,6 @@ export default function BookAppointmentPage() {
                 {step === 2 && (
                     <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 animate-in fade-in slide-in-from-bottom-4 duration-500">
                         <h2 className="text-2xl font-bold text-slate-900 mb-8">Symptoms & Location</h2>
-
                         <div className="space-y-6">
                             <div className="space-y-2">
                                 <label htmlFor="location" className="text-sm font-semibold text-slate-900 flex items-center gap-2">
@@ -181,7 +138,7 @@ export default function BookAppointmentPage() {
                                     id="location"
                                     value={formData.location}
                                     onChange={(e) => updateForm('location', e.target.value)}
-                                    className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-teal-500 focus:border-transparent outline-none transition-all bg-white"
+                                    className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-teal-500 outline-none bg-white"
                                 >
                                     <option value="">Select Location</option>
                                     <option value="honolulu">Honolulu Clinic (Liliha)</option>
@@ -199,18 +156,13 @@ export default function BookAppointmentPage() {
                                     rows={5}
                                     value={formData.reason}
                                     onChange={(e) => updateForm('reason', e.target.value)}
-                                    className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-teal-500 focus:border-transparent outline-none transition-all resize-none"
-                                    placeholder="e.g., Lower back pain for 2 weeks, getting worse when sitting."
+                                    className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-teal-500 outline-none resize-none"
+                                    placeholder="e.g., Lower back pain for 2 weeks..."
                                 ></textarea>
                             </div>
 
                             <div className="pt-6 grid grid-cols-2 gap-4">
-                                <Button
-                                    type="button"
-                                    variant="outline"
-                                    onClick={prevStep}
-                                    className="h-14 text-lg border-2 border-slate-200 text-slate-700 hover:bg-slate-50"
-                                >
+                                <Button type="button" variant="outline" onClick={prevStep} className="h-14 text-lg border-2 border-slate-200">
                                     Back
                                 </Button>
                                 <Button
@@ -221,9 +173,9 @@ export default function BookAppointmentPage() {
                                         }
                                         nextStep();
                                     }}
-                                    className="h-14 text-lg bg-teal-600 hover:bg-teal-700 text-white font-semibold flex items-center justify-center gap-2"
+                                    className="h-14 text-lg bg-teal-600 hover:bg-teal-700 text-white font-semibold"
                                 >
-                                    Next Step <ArrowRight className="h-5 w-5" />
+                                    Next Step <ArrowRight className="ml-2 h-5 w-5" />
                                 </Button>
                             </div>
                         </div>
@@ -234,7 +186,6 @@ export default function BookAppointmentPage() {
                 {step === 3 && (
                     <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 animate-in fade-in slide-in-from-bottom-4 duration-500">
                         <h2 className="text-2xl font-bold text-slate-900 mb-8">Personal Details</h2>
-
                         <form onSubmit={submitForm} className="space-y-6">
                             <div className="space-y-2">
                                 <label htmlFor="name" className="text-sm font-semibold text-slate-900">Full Name</label>
@@ -244,7 +195,7 @@ export default function BookAppointmentPage() {
                                     required
                                     value={formData.name}
                                     onChange={(e) => updateForm('name', e.target.value)}
-                                    className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-teal-500 focus:border-transparent outline-none transition-all"
+                                    className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-teal-500 outline-none"
                                     placeholder="John Doe"
                                 />
                             </div>
@@ -252,27 +203,19 @@ export default function BookAppointmentPage() {
                             <div className="space-y-3">
                                 <label className="text-sm font-semibold text-slate-900">Preferred Contact Method</label>
                                 <div className="grid grid-cols-3 gap-3">
-                                    <button
-                                        type="button"
-                                        onClick={() => updateForm('contactMethod', 'Phone')}
-                                        className={`py-3 px-4 rounded-lg flex items-center justify-center gap-2 border transition-all text-sm font-medium ${formData.contactMethod === 'Phone' ? 'bg-teal-50 border-teal-500 text-teal-700' : 'bg-white border-slate-200 text-slate-600 hover:border-slate-300'}`}
-                                    >
-                                        <Phone className="h-4 w-4" /> Phone
-                                    </button>
-                                    <button
-                                        type="button"
-                                        onClick={() => updateForm('contactMethod', 'Text')}
-                                        className={`py-3 px-4 rounded-lg flex items-center justify-center gap-2 border transition-all text-sm font-medium ${formData.contactMethod === 'Text' ? 'bg-teal-50 border-teal-500 text-teal-700' : 'bg-white border-slate-200 text-slate-600 hover:border-slate-300'}`}
-                                    >
-                                        <MessageSquare className="h-4 w-4" /> Text
-                                    </button>
-                                    <button
-                                        type="button"
-                                        onClick={() => updateForm('contactMethod', 'Email')}
-                                        className={`py-3 px-4 rounded-lg flex items-center justify-center gap-2 border transition-all text-sm font-medium ${formData.contactMethod === 'Email' ? 'bg-teal-50 border-teal-500 text-teal-700' : 'bg-white border-slate-200 text-slate-600 hover:border-slate-300'}`}
-                                    >
-                                        <Mail className="h-4 w-4" /> Email
-                                    </button>
+                                    {['Phone', 'Text', 'Email'].map((method) => (
+                                        <button
+                                            key={method}
+                                            type="button"
+                                            onClick={() => updateForm('contactMethod', method)}
+                                            className={`py-3 px-2 rounded-lg flex items-center justify-center gap-2 border transition-all text-xs sm:text-sm font-medium ${formData.contactMethod === method ? 'bg-teal-50 border-teal-500 text-teal-700' : 'bg-white border-slate-200 text-slate-600'}`}
+                                        >
+                                            {method === 'Phone' && <Phone className="h-4 w-4" />}
+                                            {method === 'Text' && <MessageSquare className="h-4 w-4" />}
+                                            {method === 'Email' && <Mail className="h-4 w-4" />}
+                                            {method}
+                                        </button>
+                                    ))}
                                 </div>
                             </div>
 
@@ -284,8 +227,7 @@ export default function BookAppointmentPage() {
                                     required
                                     value={formData.email}
                                     onChange={(e) => updateForm('email', e.target.value)}
-                                    className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-teal-500 focus:border-transparent outline-none transition-all"
-                                    placeholder="john@example.com"
+                                    className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-teal-500 outline-none"
                                 />
                             </div>
 
@@ -297,52 +239,24 @@ export default function BookAppointmentPage() {
                                     required
                                     value={formData.phone}
                                     onChange={(e) => updateForm('phone', e.target.value)}
-                                    className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-teal-500 focus:border-transparent outline-none transition-all"
-                                    placeholder="(808) 555-0123"
+                                    className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-teal-500 outline-none"
                                 />
-                                 {/* 🔥 SMS CONSENT（关键） */}
-<label className="flex items-start gap-2 text-xs text-gray-500 mt-2 leading-relaxed">
-  
-  <input type="checkbox" required className="mt-1" />
+                                
+                                <label className="flex items-start gap-2 text-[10px] sm:text-xs text-gray-500 mt-4 leading-relaxed">
+                                    <input type="checkbox" required className="mt-1 flex-shrink-0" />
+                                    <span>
+                                        By checking this box, you agree to receive SMS messages from <strong>AcuTherapy Clinics</strong> related to your appointment. You may reply STOP to opt-out. 
+                                        Learn more: <a href="/privacy-policy" className="text-blue-600 underline">Privacy Policy</a>.
+                                    </span>
+                                </label>
+                            </div>
 
-  <span className="mt-1">
-    By checking this box, you agree to receive SMS messages from <strong>AcuTherapy Clinics</strong> related to conversational text messages. You may reply STOP to opt-out at any time. Reply to HELP to (808) 452-1521 for assistance. Messages and data rates may apply. Message frequency will vary. 
-    
-    Learn more on our website at{" "}
-    <a href="https://acutherapy.com/privacy-policy" className="text-blue-600 underline">
-      Privacy Policy
-    </a>{" "}
-    and{" "}
-    <a href="https://acutherapy.com/terms-of-service" className="text-blue-600 underline">
-      Terms of Service
-    </a>.
-  </span>
-
-</label>
-
- </div>
                             <div className="pt-6 grid grid-cols-2 gap-4">
-                                <Button
-                                    type="button"
-                                    variant="outline"
-                                    onClick={prevStep}
-                                    className="h-14 text-lg border-2 border-slate-200 text-slate-700 hover:bg-slate-50"
-                                >
+                                <Button type="button" variant="outline" onClick={prevStep} className="h-14 text-lg border-2 border-slate-200">
                                     Back
                                 </Button>
-                                <Button
-                                    type="submit"
-                                    className="h-14 text-lg bg-teal-600 hover:bg-teal-700 text-white font-semibold flex items-center justify-center"
-                                    disabled={isSubmitting}
-                                >
-                                    {isSubmitting ? (
-                                        <span className="flex items-center gap-2">
-                                            <div className="h-5 w-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                                            Sending...
-                                        </span>
-                                    ) : (
-                                        "Request Appointment"
-                                    )}
+                                <Button type="submit" disabled={isSubmitting} className="h-14 text-lg bg-teal-600 hover:bg-teal-700 text-white">
+                                    {isSubmitting ? "Sending..." : "Request Appointment"}
                                 </Button>
                             </div>
                         </form>
@@ -356,17 +270,16 @@ export default function BookAppointmentPage() {
                             <Check className="h-10 w-10 text-green-600" strokeWidth={3} />
                         </div>
                         <h2 className="text-3xl font-extrabold text-slate-900 mb-4">Request Received!</h2>
-                        <p className="text-lg text-slate-600 mb-10 max-w-lg mx-auto leading-relaxed">
-                            Thank you, {formData.name || 'David Cai'}. Our team will review your symptoms and contact you at <span className="font-semibold text-slate-800">{formData.phone || '8088888888'}</span> shortly to confirm your appointment.
+                        <p className="text-lg text-slate-600 mb-10 max-w-lg mx-auto">
+                            Thank you, {formData.name}. Our team will contact you at <span className="font-semibold text-slate-800">{formData.phone}</span> shortly to confirm.
                         </p>
                         <Link to="/">
-                            <Button variant="ghost" className="text-teal-600 hover:text-teal-700 hover:bg-teal-50 font-semibold px-6 py-6 text-lg">
+                            <Button variant="ghost" className="text-teal-600 font-semibold px-6 py-6 text-lg">
                                 Back to Home
                             </Button>
                         </Link>
                     </div>
                 )}
-
             </div>
         </div>
     );
