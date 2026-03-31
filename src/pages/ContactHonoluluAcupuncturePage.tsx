@@ -10,18 +10,20 @@ import { Calendar, PhoneCall, MapPin, ShieldCheck, CheckCircle2 } from "lucide-r
 export default function ContactHonoluluAcupuncturePage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [smsChecked, setSmsChecked] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
     const formData = new FormData(e.currentTarget);
     const data = {
-      name: formData.get('name'),
-      email: formData.get('email'),
-      phone: formData.get('phone'),
-      reason: formData.get('service') + ' - ' + formData.get('message'),
-      location: 'Honolulu Contact Page Form' // Default info
-    };
+  name: formData.get('name'),
+  email: formData.get('email'),
+  phone: formData.get('phone'),
+  reason: formData.get('service') + ' - ' + formData.get('message'),
+  smsConsent: formData.get('smsConsent') === 'on',
+  location: 'Honolulu Contact Page Form'
+};
 
     try {
       const res = await fetch('/api/send', {
@@ -254,8 +256,30 @@ export default function ContactHonoluluAcupuncturePage() {
                   <label htmlFor="message" className="text-sm font-semibold text-slate-700">Message or Details (Optional)</label>
                   <textarea id="message" name="message" rows={4} className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all resize-none" placeholder="Please provide any additional details about your condition..."></textarea>
                 </div>
+<div className="flex items-start gap-3 mt-4">
+  <input
+    type="checkbox"
+    id="smsConsent"
+    name="smsConsent"
+    checked={smsChecked}
+    onChange={(e) => setSmsChecked(e.target.checked)}
+    required
+    className="mt-1 h-5 w-5 rounded border-gray-300 text-blue-600"
+  />
 
-                <Button disabled={isSubmitting} type="submit" className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg font-bold shadow-lg shadow-blue-900/20 flex items-center justify-center">
+  <label htmlFor="smsConsent" className="text-sm text-gray-600 leading-relaxed">
+    By checking this box, you agree to receive SMS messages from{" "}
+    <strong>AcuTherapy Clinics</strong>.
+    Reply STOP to opt out. HELP for help. Msg rates may apply.
+    <a href="https://acutherapy.com/privacy-policy" className="text-blue-600 underline ml-1">
+      Privacy Policy
+    </a>{" "}
+    <a href="https://acutherapy.com/terms-of-service" className="text-blue-600 underline">
+      Terms
+    </a>
+  </label>
+</div>
+                <Button disabled={isSubmitting || !smsChecked} type="submit" className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg font-bold shadow-lg shadow-blue-900/20 flex items-center justify-center">
                   {isSubmitting ? (
                     <span className="flex items-center gap-2">
                       <div className="h-5 w-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
@@ -265,21 +289,7 @@ export default function ContactHonoluluAcupuncturePage() {
                     "Submit Request"
                   )}
                 </Button>
-                  <p className="text-sm text-gray-600 leading-relaxed">
-  By checking this box, you agree to receive SMS messages from 
-  <strong>AcuTherapy Clinics</strong> related to conversational text messages. 
-  You may reply <strong>STOP</strong> to opt out at any time. 
-  For assistance, reply <strong>HELP</strong> or call 808-452-1521. 
-  Messages and data rates may apply. Message frequency may vary. 
-  Learn more on our 
-  <a href="https://acutherapy.com/privacy-policy" className="text-blue-600 underline">
-    Privacy Policy
-  </a> 
-  and 
-  <a href="https://acutherapy.com/terms-of-service" className="text-blue-600 underline">
-    Terms &amp; Conditions
-  </a>.
-</p>
+                 
                 </form>
               )}
             </div>
