@@ -236,29 +236,7 @@ export default function ContactHonoluluAcupuncturePage() {
                   <div className="space-y-2">
                     <label htmlFor="phone" className="text-sm font-semibold text-slate-700">Phone Number</label>
                     <input type="tel" id="phone" name="phone" required className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all" placeholder="(808) 555-0123" />
-
-                    {/* 🔥 SMS CONSENT（关键） */}
-<label className="flex items-start gap-2 text-xs text-gray-500 mt-2 leading-relaxed">
-  
-  <input type="checkbox" required className="mt-1" />
-
-  <span className="mt-1">
-    By checking this box, you agree to receive SMS messages from <strong>AcuTherapy Clinics</strong> related to conversational text messages. You may reply STOP to opt-out at any time. Reply to HELP to (808) 452-1521 for assistance. Messages and data rates may apply. Message frequency will vary. 
-    
-    Learn more on our website at{" "}
-    <a href="https://acutherapy.com/privacy-policy" className="text-blue-600 underline">
-      Privacy Policy
-    </a>{" "}
-    and{" "}
-    <a href="https://acutherapy.com/terms-of-service" className="text-blue-600 underline">
-      Terms of Service
-    </a>.
-  </span>
-
-</label>
-
- </div>
-                  
+             
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="service" className="text-sm font-semibold text-slate-700">Primary Reason for Visit</label>
