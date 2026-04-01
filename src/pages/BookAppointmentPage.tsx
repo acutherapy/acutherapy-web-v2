@@ -251,22 +251,10 @@ export default function BookAppointmentPage() {
   onChange={(e) => setSmsChecked(e.target.checked)}
   className="mt-1 flex-shrink-0"
 />
-                                    <span className="text-xs text-gray-500 leading-relaxed">
-  By checking this box, you agree to receive SMS messages from AcuTherapy Clinics related to conversational text messages. 
-  You may reply STOP to opt-out at any time. Reply to HELP to (808) 452-1521 for assistance. 
-  Messages and data rates may apply. Message frequency will vary.
-</span>
-
-<span className="block mt-2 text-xs text-gray-500">
-  Learn more on our: 
-  <a href="/privacy-policy" className="text-blue-600 underline ml-1">
-    Privacy Policy
-  </a>
-  {" "}and{" "}
-  <a href="https://acutherapy.com/terms-of-service" className="text-blue-600 underline ml-1">
-    Terms & Conditions
-  </a>
-</span>
+                                   <span>
+                                        By checking this box, you agree to receive SMS messages from AcuTherapy Clinics related to conversational text messages. You may reply STOP to opt-out at any time. Reply to HELP to (808) 452-1521 for assistance. Messages and data rates may apply. Message frequency will vary.  
+                                        Learn more on our: <a href="/privacy-policy" className="text-blue-500 underline">Privacy Policy</a> and <a href="https://acutherapy.com/terms-of-service" className="text-blue-500 underline">Terms &amp; Conditions</a>.
+                                    </span>
                                 </label>
                             </div>
 
