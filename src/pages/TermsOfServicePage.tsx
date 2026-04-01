@@ -84,7 +84,7 @@ export default function TermsOfServicePage() {
 
     <li>
       <strong>SMS for Consent Communication</strong><br />
-      We will not share your phone number with any third parties for marketing purposes or affiliates for any purpose. This includes SMS opt-in data, consent, and phone numbers.
+      The information (Phone Numbers) obtained as part of the SMS consent process will not be shared with third parties for marketing purposes. 
     </li>
 
     <li>
