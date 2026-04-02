@@ -5,7 +5,7 @@ import { Calendar, User, Check, Building2, MessageSquare, Phone, Mail, ArrowRigh
 import { Button } from '@/components/ui/button';
 
 export default function BookAppointmentPage() {
-    const [step, setStep] = useState(1);
+    const [step, setStep] = useState(3);
     const [formData, setFormData] = useState({
         patientType: '',
         location: '',
@@ -70,7 +70,7 @@ export default function BookAppointmentPage() {
                 </div>
 
                 {/* Stepper */}
-                {step > 1 && step < 4 && (
+                false && (
                     <div className="flex items-center justify-center mb-12 max-w-lg mx-auto relative px-4">
                         <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-full h-0.5 bg-slate-200 z-0"></div>
                         <div className="relative z-10 flex justify-between w-full">
@@ -258,9 +258,7 @@ export default function BookAppointmentPage() {
                             </div>
 
                             <div className="pt-6 grid grid-cols-2 gap-4">
-                                <Button type="button" variant="outline" onClick={prevStep} className="h-14 text-lg border-2 border-slate-200">
-                                    Back
-                                </Button>
+                                <div />
                                 <Button type="submit" disabled={isSubmitting} className="h-14 text-lg bg-teal-600 hover:bg-teal-700 text-white">
                                     {isSubmitting ? "Sending..." : "Request Appointment"}
                                 </Button>
