@@ -70,7 +70,9 @@ export default function BookAppointmentPage() {
                 </div>
 
                 {/* Stepper */}
-                false && (
+                {false && (
+    <div>...</div>
+)}
                     <div className="flex items-center justify-center mb-12 max-w-lg mx-auto relative px-4">
                         <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-full h-0.5 bg-slate-200 z-0"></div>
                         <div className="relative z-10 flex justify-between w-full">
