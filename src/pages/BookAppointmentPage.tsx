@@ -271,7 +271,6 @@ export default function BookAppointmentPage() {
                             </Button>
                         </Link>
                     </div>
-                )}
             </div>
         </div>
     );
