@@ -263,7 +263,6 @@ export default function ContactHonoluluAcupuncturePage() {
     name="smsConsent"
     checked={smsChecked}
     onChange={(e) => setSmsChecked(e.target.checked)}
-    required
     className="mt-1 h-5 w-5 rounded border-gray-300 text-blue-600"
   />
 
