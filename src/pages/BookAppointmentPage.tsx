@@ -73,22 +73,6 @@ export default function BookAppointmentPage() {
     <div>...</div>
 )}
 
-<div className="flex items-center ...">
-    ...
-</div>
-                    <div className="flex items-center justify-center mb-12 max-w-lg mx-auto relative px-4">
-                        <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-full h-0.5 bg-slate-200 z-0"></div>
-                        <div className="relative z-10 flex justify-between w-full">
-                            <div className={`h-12 w-12 rounded-full flex items-center justify-center border-2 ${step >= 2 ? 'border-teal-500 bg-teal-50 text-teal-600' : 'border-slate-200 bg-white text-slate-400'}`}>
-                                <Calendar className="h-5 w-5" />
-                            </div>
-                            <div className={`h-12 w-12 rounded-full flex items-center justify-center border-2 ${step >= 3 ? 'border-teal-500 bg-teal-50 text-teal-600' : step === 2 ? 'border-slate-300 bg-white text-slate-500' : 'border-slate-200 bg-white text-slate-400'}`}>
-                                <User className="h-5 w-5" />
-                            </div>
-                            <div className={`h-12 w-12 rounded-full flex items-center justify-center border-2 ${step === 4 ? 'border-teal-500 bg-teal-50 text-teal-600' : 'border-slate-200 bg-white text-slate-400'}`}>
-                                <Check className="h-5 w-5" />
-                            </div>
-                        </div>
                         <div className={`absolute left-8 top-1/2 transform -translate-y-1/2 h-0.5 bg-teal-500 z-0 transition-all duration-500 ${step >= 3 ? 'w-[calc(100%-4rem)]' : step === 2 ? 'w-[calc(50%-2rem)]' : 'w-0'}`}></div>
                     </div>
 
