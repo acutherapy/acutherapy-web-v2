@@ -261,7 +261,7 @@ export default function BookAppointmentPage() {
                                 <Button type="button" variant="outline" onClick={prevStep} className="h-14 text-lg border-2 border-slate-200">
                                     Back
                                 </Button>
-                                <Button type="submit" disabled={isSubmitting || !smsChecked} className="h-14 text-lg bg-teal-600 hover:bg-teal-700 text-white">
+                                <Button type="submit" disabled={isSubmitting} className="h-14 text-lg bg-teal-600 hover:bg-teal-700 text-white">
                                     {isSubmitting ? "Sending..." : "Request Appointment"}
                                 </Button>
                             </div>
