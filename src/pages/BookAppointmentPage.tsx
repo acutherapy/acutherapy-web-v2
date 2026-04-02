@@ -128,7 +128,7 @@ export default function BookAppointmentPage() {
                                     value={formData.location}
                                     onChange={(e) => updateForm('location', e.target.value)}
                                     className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-teal-500 outline-none bg-white"
-                                >
+                                      >
                                     <option value="">Select Location</option>
                                     <option value="honolulu">Honolulu Clinic (Liliha)</option>
                                     <option value="aiea">Aiea / Pearl City Clinic</option>
@@ -233,11 +233,11 @@ export default function BookAppointmentPage() {
                                 
                                 <label className="flex items-start gap-2 text-[10px] sm:text-xs text-gray-500 mt-4 leading-relaxed">
                                     <input
-  type="checkbox"
-  checked={smsChecked}
-  onChange={(e) => setSmsChecked(e.target.checked)}
-  className="mt-1 flex-shrink-0"
-/>
+                                          type="checkbox"
+                                          checked={smsChecked}
+                                          onChange={(e) => setSmsChecked(e.target.checked)}
+                                         className="mt-1 flex-shrink-0"
+                                            />
                                    <span>
                                         By checking this box, you agree to receive SMS messages from AcuTherapy Clinics related to conversational text messages. You may reply STOP to opt-out at any time. Reply to HELP to (808) 452-1521 for assistance. Messages and data rates may apply. Message frequency will vary.  
                                         Learn more on our: <a href="/privacy-policy" className="text-blue-500 underline">Privacy Policy</a> and <a href="https://acutherapy.com/terms-of-service" className="text-blue-500 underline">Terms &amp; Conditions</a>.
@@ -271,6 +271,7 @@ export default function BookAppointmentPage() {
                             </Button>
                         </Link>
                     </div>
+                )}    
             </div>
         </div>
     );
