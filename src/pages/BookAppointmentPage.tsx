@@ -91,7 +91,6 @@ export default function BookAppointmentPage() {
                         </div>
                         <div className={`absolute left-8 top-1/2 transform -translate-y-1/2 h-0.5 bg-teal-500 z-0 transition-all duration-500 ${step >= 3 ? 'w-[calc(100%-4rem)]' : step === 2 ? 'w-[calc(50%-2rem)]' : 'w-0'}`}></div>
                     </div>
-                )}
 
                 {/* Step 1: Patient Type */}
                 {step === 1 && (
