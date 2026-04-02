@@ -280,7 +280,7 @@ export default function ContactHonoluluAcupuncturePage() {
     </a>
   </label>
 </div>
-                <Button disabled={isSubmitting || !smsChecked} type="submit" className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg font-bold shadow-lg shadow-blue-900/20 flex items-center justify-center">
+                <Button disabled={isSubmitting} type="submit" className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg font-bold shadow-lg shadow-blue-900/20 flex items-center justify-center">
                   {isSubmitting ? (
                     <span className="flex items-center gap-2">
                       <div className="h-5 w-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
