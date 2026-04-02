@@ -246,7 +246,6 @@ export default function BookAppointmentPage() {
                                 <label className="flex items-start gap-2 text-[10px] sm:text-xs text-gray-500 mt-4 leading-relaxed">
                                     <input
   type="checkbox"
-  required
   checked={smsChecked}
   onChange={(e) => setSmsChecked(e.target.checked)}
   className="mt-1 flex-shrink-0"
