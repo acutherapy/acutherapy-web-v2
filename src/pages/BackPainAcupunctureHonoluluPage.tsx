@@ -155,6 +155,9 @@ export default function BackPainAcupunctureHonoluluPage() {
                       <p className="text-slate-600 text-sm leading-relaxed mb-1">
                         1650 Liliha St, Suite 208<br/>Honolulu, HI 96817
                       </p>
+                                                    <a href="https://www.google.com/maps/search/?api=1&query=1650+Liliha+St,+Suite+208,+Honolulu,+HI+96817" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-sm text-blue-600 font-bold hover:underline mt-1">
+                                                        Find us on Google Maps
+                                                    </a>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -164,6 +167,9 @@ export default function BackPainAcupunctureHonoluluPage() {
                       <p className="text-slate-600 text-sm leading-relaxed mb-1">
                         98-211 Pali Momi St, Suite 604<br/>Aiea, HI 96701
                       </p>
+                                                    <a href="https://www.google.com/maps/search/?api=1&query=98-211+Pali+Momi+St,+Suite+604,+Aiea,+HI+96701" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-sm text-blue-600 font-bold hover:underline mt-1">
+                                                        Find us on Google Maps
+                                                    </a>
                     </div>
                   </div>
                   <div className="mt-6 bg-slate-50 p-4 rounded-lg">

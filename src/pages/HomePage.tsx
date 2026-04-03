@@ -184,6 +184,9 @@ export default function HomePage() {
                       <div>
                         <h4 className="font-bold text-slate-900 text-[15px] mb-1">Honolulu Clinic (Liliha)</h4>
                         <p className="text-sm text-slate-600 leading-relaxed mb-1">1650 Liliha St, Suite 208<br />Honolulu, HI 96817</p>
+                                                    <a href="https://www.google.com/maps/search/?api=1&query=1650+Liliha+St,+Suite+208,+Honolulu,+HI+96817" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-sm text-blue-600 font-bold hover:underline mt-1">
+                                                        Find us on Google Maps
+                                                    </a>
                         <p className="text-sm text-slate-700"><strong>Ph:</strong> (808) 528-7177 | <strong>Fax:</strong> (808) 212-9459</p>
                       </div>
                     </div>
@@ -199,6 +202,9 @@ export default function HomePage() {
                       <div>
                         <h4 className="font-bold text-slate-900 text-[15px] mb-1">Aiea / Pearl City Clinic</h4>
                         <p className="text-sm text-slate-600 leading-relaxed mb-1">98-211 Pali Momi St, Suite 604<br />Aiea, HI 96701</p>
+                                                    <a href="https://www.google.com/maps/search/?api=1&query=98-211+Pali+Momi+St,+Suite+604,+Aiea,+HI+96701" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-sm text-blue-600 font-bold hover:underline mt-1">
+                                                        Find us on Google Maps
+                                                    </a>
                         <p className="text-sm text-slate-700"><strong>Ph:</strong> (808) 452-1900 | <strong>Fax:</strong> (808) 452-1521</p>
                       </div>
                     </div>

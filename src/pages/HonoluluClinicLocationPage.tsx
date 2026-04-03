@@ -122,6 +122,9 @@ export default function HonoluluClinicLocationPage() {
                                                     1650 Liliha St, Suite 208<br />
                                                     Honolulu, HI 96817
                                                 </p>
+                                                    <a href="https://www.google.com/maps/search/?api=1&query=1650+Liliha+St,+Suite+208,+Honolulu,+HI+96817" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-sm text-blue-600 font-bold hover:underline mt-1">
+                                                        Find us on Google Maps
+                                                    </a>
                                             </div>
                                         </div>
 

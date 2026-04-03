@@ -299,6 +299,54 @@ export default function AboutDrDavidCaiPage() {
                 </div>
             </section>
 
+            {/* Section 7.5 — Booking & Locations */}
+            <section className="py-16 bg-white border-t border-slate-200">
+                <div className="max-w-4xl mx-auto px-4">
+                    <div className="bg-white border-blue-100 shadow-xl rounded-2xl overflow-hidden">
+                      <div className="bg-blue-600 h-2 w-full"></div>
+                      <div className="p-8 text-center">
+                        <h3 className="text-2xl font-bold text-slate-900 mb-2">Book Your Visit</h3>
+                        <p className="text-slate-600 mb-8 text-sm">Schedule your evaluation with Dr. Cai today.</p>
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto">
+                          <Link to="/book-appointment" className="flex-1">
+                            <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
+                              Schedule Online
+                            </Button>
+                          </Link>
+                          <Button variant="outline" className="flex-1 h-14 text-lg border-2 border-slate-200" onClick={() => window.location.href='tel:+18085287177'}>
+                            (808) 528-7177
+                          </Button>
+                        </div>
+                        
+                        <div className="mt-8 pt-6 border-t border-slate-100 text-left grid sm:grid-cols-2 gap-8">
+                          <div className="flex items-start gap-3">
+                            <div>
+                              <p className="font-bold text-slate-900 mb-1">Honolulu Clinic (Liliha)</p>
+                              <p className="text-slate-600 text-sm leading-relaxed mb-1">
+                                1650 Liliha St, Suite 208<br/>Honolulu, HI 96817
+                              </p>
+                              <a href="https://www.google.com/maps/search/?api=1&query=1650+Liliha+St,+Suite+208,+Honolulu,+HI+96817" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-sm text-blue-600 font-bold hover:underline mt-1">
+                                  Find us on Google Maps
+                              </a>
+                            </div>
+                          </div>
+                          <div className="flex items-start gap-3">
+                            <div>
+                              <p className="font-bold text-slate-900 mb-1">Aiea / Pearl City Clinic</p>
+                              <p className="text-slate-600 text-sm leading-relaxed mb-1">
+                                98-211 Pali Momi St, Suite 604<br/>Aiea, HI 96701
+                              </p>
+                              <a href="https://www.google.com/maps/search/?api=1&query=98-211+Pali+Momi+St,+Suite+604,+Aiea,+HI+96701" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-sm text-blue-600 font-bold hover:underline mt-1">
+                                  Find us on Google Maps
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </section>
+
             {/* Section 8 — AcuTherapy Clinics */}
             <section className="py-20 bg-slate-50 border-t border-slate-200">
                 <div className="text-center max-w-4xl mx-auto px-4">
