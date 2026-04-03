@@ -75,76 +75,75 @@ export default function TermsOfServicePage() {
                     {/* 🚨 SMS COMPLIANCE SECTION */}
                     {/* ======================= */}
                     <section className="max-w-4xl mx-auto px-4 py-16 text-gray-700 leading-relaxed">
-  
-  <h2 className="text-3xl font-bold text-blue-900 mb-6">
-    SMS Terms and Conditions
-  </h2>
+                        <h2 className="text-3xl font-bold text-blue-900 mb-6">
+                            SMS Terms and Conditions
+                        </h2>
 
-  <ol className="space-y-6 list-decimal pl-5">
+                        <ol className="space-y-6 list-decimal pl-5">
 
-    <li>
-      <strong>SMS for Consent Communication</strong><br />
-      The information (Phone Numbers) obtained as part of the SMS consent process will not be shared with third parties for marketing purposes. 
-    </li>
+                            <li>
+                                <strong>SMS for Consent Communication</strong><br />
+                                The information (Phone Numbers) obtained as part of the SMS consent process will not be shared with third parties for marketing purposes.
+                            </li>
 
-    <li>
-      <strong>Types of SMS Communications</strong><br />
-      If you have consented to receive text messages from AcuTherapy Clinics, you may receive messages related to the following, Example: "Hello, this is a friendly reminder of your upcoming appointment with Dr. David Cai at AcuTherapy Clinics on [Date] at [Time]. You can reply STOP to opt out of SMS messaging from AcuTherapy Clinics at any time."
-Conversation external, 
-Conversation between employees.
-    </li>
+                            <li>
+                                <strong>Types of SMS Communications</strong><br />
+                                If you have consented to receive text messages from AcuTherapy Clinics, you may receive messages related to the following, Example: "Hello, this is a friendly reminder of your upcoming appointment with Dr. David Cai at AcuTherapy Clinics on [Date] at [Time]. You can reply STOP to opt out of SMS messaging from AcuTherapy Clinics at any time."
+                                Conversation external,
+                                Conversation between employees.
+                            </li>
 
-    <li>
-      <strong>Message Frequency</strong><br />
-      Message frequency may vary depending on your interaction with our services, approximately less than 10 SMS messages per week.
-    </li>
+                            <li>
+                                <strong>Message Frequency</strong><br />
+                                Message frequency may vary depending on your interaction with our services, approximately less than 10 SMS messages per week.
+                            </li>
 
-    <li>
-      <strong>Carrier Charges</strong><br />
-      Message and data rates may apply based on your mobile carrier and location.
-    </li>
+                            <li>
+                                <strong>Carrier Charges</strong><br />
+                                Message and data rates may apply based on your mobile carrier and location.
+                            </li>
 
-    <li>
-      <strong>Opt-In Methods</strong><br />
-      You can opt in via the following methods:  by submitting an online form at{" "}
-      <a href="https://acutherapy.com/book-appointment" className="text-blue-600 underline">
-        https://acutherapy.com/book-appointment
-      </a>.
-    </li>
+                            <li>
+                                <strong>Opt-In Methods</strong><br />
+                                You can opt in via the following methods:  by submitting an online form at{" "}
+                                <a href="https://acutherapy.com/book-appointment" className="text-blue-600 underline">
+                                    https://acutherapy.com/book-appointment
+                                </a>.
+                            </li>
 
-    <li>
-      <strong>Opt-Out Instructions</strong><br />
-      You may opt out at any time by replying <strong>STOP</strong>. To resume, reply <strong>START</strong>.
-    </li>
+                            <li>
+                                <strong>Opt-Out Instructions</strong><br />
+                                You may opt out at any time by replying <strong>STOP</strong>. To resume, reply <strong>START</strong>.
+                            </li>
 
-    <li>
-      <strong>Help</strong><br />
-      Reply <strong>HELP</strong> or visit{" "}
-      <a href="https://acutherapy.com" className="text-blue-600 underline">
-        https://acutherapy.com
-      </a>.
-    </li>
+                            <li>
+                                <strong>Help</strong><br />
+                                Reply <strong>HELP</strong> or visit{" "}
+                                <a href="https://acutherapy.com" className="text-blue-600 underline">
+                                    https://acutherapy.com
+                                </a>.
+                            </li>
 
-    <li>
-      <strong>Disclosures</strong><br />
-      Message frequency may vary.<br />
-      Message and data rates may apply.<br />
-      Reply STOP to cancel.<br />
-      Reply HELP for assistance.<br /><br />
+                            <li>
+                                <strong>Disclosures</strong><br />
+                                Message frequency may vary.<br />
+                                Message and data rates may apply.<br />
+                                Reply STOP to cancel.<br />
+                                Reply HELP for assistance.<br /><br />
 
-      View our{" "}
-      <a href="https://acutherapy.com/privacy-policy" className="text-blue-600 underline">
-        Privacy Policy
-      </a>{" "}
-      and{" "}
-      <a href="https://acutherapy.com/terms-of-service" className="text-blue-600 underline">
-        Terms of Service
-      </a>.
-    </li>
+                                View our{" "}
+                                <a href="https://acutherapy.com/privacy-policy" className="text-blue-600 underline">
+                                    Privacy Policy
+                                </a>{" "}
+                                and{" "}
+                                <a href="https://acutherapy.com/terms-of-service" className="text-blue-600 underline">
+                                    Terms of Service
+                                </a>.
+                            </li>
 
-  </ol>
+                        </ol>
 
-</section>
+                    </section>
 
                     {/* Contact */}
                     <h2 className="text-2xl font-bold text-blue-900 mt-8 mb-4">

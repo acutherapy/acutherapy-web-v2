@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
@@ -17,13 +15,13 @@ export default function ContactHonoluluAcupuncturePage() {
     setIsSubmitting(true);
     const formData = new FormData(e.currentTarget);
     const data = {
-  name: formData.get('name'),
-  email: formData.get('email'),
-  phone: formData.get('phone'),
-  reason: formData.get('service') + ' - ' + formData.get('message'),
-  smsConsent: formData.get('smsConsent') === 'on',
-  location: 'Honolulu Contact Page Form'
-};
+      name: formData.get('name'),
+      email: formData.get('email'),
+      phone: formData.get('phone'),
+      reason: formData.get('service') + ' - ' + formData.get('message'),
+      smsConsent: formData.get('smsConsent') === 'on',
+      location: 'Honolulu Contact Page Form'
+    };
 
     try {
       const res = await fetch('/api/send', {
@@ -206,7 +204,7 @@ export default function ContactHonoluluAcupuncturePage() {
             <h3 className="text-3xl font-extrabold text-slate-900 mt-16 mb-8 border-b pb-2">Book Your Appointment Live</h3>
             <div className="bg-white p-8 rounded-2xl shadow-xl border border-blue-50 relative mb-16">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-t-2xl"></div>
-              
+
               {isSuccess ? (
                 <div className="py-12 md:py-16 text-center animate-in fade-in zoom-in duration-500">
                   <div className="w-20 h-20 md:w-24 md:h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6 shadow-inner ring-8 ring-green-50">
@@ -224,73 +222,72 @@ export default function ContactHonoluluAcupuncturePage() {
                 <form onSubmit={handleSubmit} className="space-y-6 mt-2">
 
                   <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <label htmlFor="name" className="text-sm font-semibold text-slate-700">Full Name</label>
-                    <input type="text" id="name" name="name" required className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all" placeholder="John Doe" />
+                    <div className="space-y-2">
+                      <label htmlFor="name" className="text-sm font-semibold text-slate-700">Full Name</label>
+                      <input type="text" id="name" name="name" required className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all" placeholder="John Doe" />
+                    </div>
+                    <div className="space-y-2">
+                      <label htmlFor="email" className="text-sm font-semibold text-slate-700">Email Address</label>
+                      <input type="email" id="email" name="email" required className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all" placeholder="john@example.com" />
+                    </div>
                   </div>
-                  <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-semibold text-slate-700">Email Address</label>
-                    <input type="email" id="email" name="email" required className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all" placeholder="john@example.com" />
-                  </div>
-                </div>
 
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <label htmlFor="phone" className="text-sm font-semibold text-slate-700">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" required className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all" placeholder="(808) 555-0123" />
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="space-y-2">
+                      <label htmlFor="phone" className="text-sm font-semibold text-slate-700">Phone Number</label>
+                      <input type="tel" id="phone" name="phone" required className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all" placeholder="(808) 555-0123" />
+                    </div>
+                    <div className="space-y-2">
+                      <label htmlFor="service" className="text-sm font-semibold text-slate-700">Primary Reason for Visit</label>
+                      <select id="service" name="service" required className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all bg-white">
+                        <option value="">Select an option...</option>
+                        <option value="auto-injury">Auto Accident PIP</option>
+                        <option value="workers-comp">Workers' Comp</option>
+                        <option value="veterans">Veterans VA Care</option>
+                        <option value="general-pain">General Pain / Sciatica</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
                   </div>
+
                   <div className="space-y-2">
-                    <label htmlFor="service" className="text-sm font-semibold text-slate-700">Primary Reason for Visit</label>
-                    <select id="service" name="service" required className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all bg-white">
-                      <option value="">Select an option...</option>
-                      <option value="auto-injury">Auto Accident PIP</option>
-                      <option value="workers-comp">Workers' Comp</option>
-                      <option value="veterans">Veterans VA Care</option>
-                      <option value="general-pain">General Pain / Sciatica</option>
-                      <option value="other">Other</option>
-                    </select>
+                    <label htmlFor="message" className="text-sm font-semibold text-slate-700">Message or Details (Optional)</label>
+                    <textarea id="message" name="message" rows={4} className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all resize-none" placeholder="Please provide any additional details about your condition..."></textarea>
                   </div>
-                </div>
+                  <div className="flex items-start gap-3 mt-4">
+                    <input
+                      type="checkbox"
+                      id="smsConsent"
+                      name="smsConsent"
+                      checked={smsChecked}
+                      onChange={(e) => setSmsChecked(e.target.checked)}
+                      className="mt-1 h-5 w-5 rounded border-gray-300 text-blue-600"
+                    />
 
-                <div className="space-y-2">
-                  <label htmlFor="message" className="text-sm font-semibold text-slate-700">Message or Details (Optional)</label>
-                  <textarea id="message" name="message" rows={4} className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all resize-none" placeholder="Please provide any additional details about your condition..."></textarea>
-                </div>
-<div className="flex items-start gap-3 mt-4">
-  <input
-    type="checkbox"
-    id="smsConsent"
-    name="smsConsent"
-    checked={smsChecked}
-    onChange={(e) => setSmsChecked(e.target.checked)}
-    className="mt-1 h-5 w-5 rounded border-gray-300 text-blue-600"
-  />
-
-  <label htmlFor="smsConsent" className="text-sm text-gray-600 leading-relaxed">
-    By checking this box, you agree to receive SMS messages from 
-  <strong>AcuTherapy Clinics</strong> related to conversational text messages. 
-  You may reply <strong>STOP</strong> to opt out at any time. 
-  For assistance, reply <strong>HELP</strong> or call 808-452-1521. 
-  Messages and data rates may apply. Message frequency may vary. 
-    Learn more on our <a href="https://acutherapy.com/privacy-policy" className="text-blue-600 underline ml-1">
-      Privacy Policy
-    </a>{" "}
-    <a href="https://acutherapy.com/terms-of-service" className="text-blue-600 underline">
-      Terms &amp; Conditions
-    </a>
-  </label>
-</div>
-                <Button disabled={isSubmitting} type="submit" className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg font-bold shadow-lg shadow-blue-900/20 flex items-center justify-center">
-                  {isSubmitting ? (
-                    <span className="flex items-center gap-2">
-                      <div className="h-5 w-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                      Sending...
-                    </span>
-                  ) : (
-                    "Submit Request"
-                  )}
-                </Button>
-                 
+                    <label htmlFor="smsConsent" className="text-sm text-gray-600 leading-relaxed">
+                      By checking this box, you agree to receive SMS messages from 
+                      <strong>AcuTherapy Clinics</strong> related to conversational text messages. 
+                      You may reply <strong>STOP</strong> to opt out at any time. 
+                      For assistance, reply <strong>HELP</strong> or call 808-452-1521. 
+                      Messages and data rates may apply. Message frequency may vary. 
+                      Learn more on our <a href="https://acutherapy.com/privacy-policy" className="text-blue-600 underline ml-1">
+                        Privacy Policy
+                      </a>{" "}
+                      <a href="https://acutherapy.com/terms-of-service" className="text-blue-600 underline">
+                        Terms &amp; Conditions
+                      </a>
+                    </label>
+                  </div>
+                  <Button disabled={isSubmitting} type="submit" className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg font-bold shadow-lg shadow-blue-900/20 flex items-center justify-center">
+                    {isSubmitting ? (
+                      <span className="flex items-center gap-2">
+                        <div className="h-5 w-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                        Sending...
+                      </span>
+                    ) : (
+                      "Submit Request"
+                    )}
+                  </Button>
                 </form>
               )}
             </div>
@@ -406,3 +403,4 @@ export default function ContactHonoluluAcupuncturePage() {
     </>
   );
 }
+
