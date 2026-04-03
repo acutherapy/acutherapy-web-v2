@@ -120,7 +120,7 @@ export default function AcupunctureWaipahuPage() {
                         </p>
 
                         <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/50 group mb-12 w-full max-w-3xl mx-auto">
-                            <img src="/images/abdominal-acupuncture.jpg" alt="Acupuncture Waipahu" className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
+                            <img loading="lazy" src="/images/abdominal-acupuncture.jpg" alt="Acupuncture Waipahu" className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
                             <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-8 pt-16 text-white text-lg font-medium">Advanced Treatments For Our Waipahu Patients</figcaption>
                         </div>
 

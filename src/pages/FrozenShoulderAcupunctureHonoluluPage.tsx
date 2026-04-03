@@ -123,11 +123,11 @@ export default function FrozenShoulderAcupunctureHonoluluPage() {
               
       <div className="grid md:grid-cols-2 gap-8 mb-12">
         <figure className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/50 group">
-          <img src="/images/acupressure-facial-massage.jpg" alt="Acupressure massage" className="w-full h-[350px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
+          <img loading="lazy" src="/images/acupressure-facial-massage.jpg" alt="Acupressure massage" className="w-full h-[350px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
           <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-6 pt-12 text-white font-medium">Tension Release Massage</figcaption>
         </figure>
         <figure className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/50 group mt-8 md:mt-0">
-          <img src="/images/neck-shoulder-acupressure.jpg" alt="Neck shoulder massage" className="w-full h-[350px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
+          <img loading="lazy" src="/images/neck-shoulder-acupressure.jpg" alt="Neck shoulder massage" className="w-full h-[350px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
           <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-6 pt-12 text-white font-medium">Trapezius Muscle Medical Massage</figcaption>
         </figure>
       </div>
@@ -152,7 +152,7 @@ export default function FrozenShoulderAcupunctureHonoluluPage() {
       <div className="mt-16 mb-16 bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden">
         <div className="grid md:grid-cols-5 gap-0">
           <div className="md:col-span-2 bg-slate-100 relative">
-            <img 
+            <img loading="lazy" 
               src="/images/dr-david-cai-portrait.jpg" 
               alt="Dr. David Cai, L.Ac., L.M.T." 
               className="w-full h-full object-cover min-h-[400px]"
@@ -168,7 +168,7 @@ export default function FrozenShoulderAcupunctureHonoluluPage() {
             <h4 className="text-3xl font-extrabold text-slate-900 mb-4">Leading Honolulu Pain Clinic</h4>
             <p className="text-slate-600 mb-6 leading-relaxed" dangerouslySetInnerHTML={{ __html: 'With over 30 years of clinical experience, <strong>Dr. David Cai</strong> is a master of Traditional Chinese Medicine (TCM) and advanced acupuncture protocols. He specializes in severe pain management, sports injuries, and complex auto accident recoveries, bringing world-class holistic healthcare to the Honolulu community.' }}></p>
             <div className="flex items-center gap-4 bg-slate-50 p-4 rounded-2xl border border-slate-100">
-               <img src="/images/acutherapy-medical-team.jpg" alt="AcuTherapy Clinics Medical Team" className="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md flex-shrink-0" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+               <img loading="lazy" src="/images/acutherapy-medical-team.jpg" alt="AcuTherapy Clinics Medical Team" className="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md flex-shrink-0" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
                <div>
                  <h5 className="font-bold text-slate-900 mb-1">AcuTherapy Clinics Medical Team</h5>
                  <p className="text-sm text-slate-500 italic leading-relaxed">"Our multidisciplinary medical team is highly trained and committed to finding the root cause of your condition, providing relief that lasts."</p>

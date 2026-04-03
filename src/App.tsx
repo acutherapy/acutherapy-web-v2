@@ -79,6 +79,7 @@ import InjuryRecoveryEnPage from './pages/InjuryRecoveryEnPage';
 import NewPatientSpecialEnPage from './pages/NewPatientSpecialEnPage';
 import SpringPromoZhPage from './pages/SpringPromoZhPage';
 import InjuryRecoveryZhPage from './pages/InjuryRecoveryZhPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -578,7 +579,7 @@ export default function App() {
           <Route path="/auto-injury" element={<AutoAccidentInjuryTreatmentHonoluluPage />} />
           <Route path="/workers-injury" element={<WorkersCompAcupunctureHonoluluPage />} />
           <Route path="/veterans-care" element={<VeteransCareAcupunctureHonoluluPage />} />
-
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
         <AIChatbot />
       </Layout>

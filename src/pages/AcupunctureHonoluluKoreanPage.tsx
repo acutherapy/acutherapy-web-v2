@@ -124,7 +124,7 @@ export default function AcupunctureHonoluluKoreanPage() {
               </p>
               
       <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/50 group mb-12 w-full max-w-3xl mx-auto">
-        <img src="/images/abdominal-acupuncture.jpg" alt="Acupuncture Honolulu Korean" className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
+        <img loading="lazy" src="/images/abdominal-acupuncture.jpg" alt="Acupuncture Honolulu Korean" className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
         <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-8 pt-16 text-white text-lg font-medium">Advanced Acupuncture Treatments</figcaption>
       </div>
               <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">전문 치료 분야</h3>
@@ -136,7 +136,7 @@ export default function AcupunctureHonoluluKoreanPage() {
       <div className="mt-16 mb-16 bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden">
         <div className="grid md:grid-cols-5 gap-0">
           <div className="md:col-span-2 bg-slate-100 relative">
-            <img 
+            <img loading="lazy" 
               src="/images/dr-david-cai-portrait.jpg" 
               alt="Dr. David Cai, L.Ac., L.M.T." 
               className="w-full h-full object-cover min-h-[400px]"
@@ -152,7 +152,7 @@ export default function AcupunctureHonoluluKoreanPage() {
             <h4 className="text-3xl font-extrabold text-slate-900 mb-4">호놀룰루 최고의 통증 클리닉</h4>
             <p className="text-slate-600 mb-6 leading-relaxed" dangerouslySetInnerHTML={{ __html: '30년 이상의 임상 경험을 가진 <strong>Dr. David Cai</strong>는 전통 중의학(TCM) 및 고급 침술 치료의 대가입니다. 그는 심각한 통증 관리, 스포츠 부상 및 복잡한 교통사고 회복을 전문으로 하여 호놀룰루 지역 사회에 최고 수준의 진료를 제공합니다.' }}></p>
             <div className="flex items-center gap-4 bg-slate-50 p-4 rounded-2xl border border-slate-100">
-               <img src="/images/acutherapy-medical-team.jpg" alt="AcuTherapy Clinics Medical Team" className="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md flex-shrink-0" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+               <img loading="lazy" src="/images/acutherapy-medical-team.jpg" alt="AcuTherapy Clinics Medical Team" className="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md flex-shrink-0" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
                <div>
                  <h5 className="font-bold text-slate-900 mb-1">AcuTherapy 의료진</h5>
                  <p className="text-sm text-slate-500 italic leading-relaxed">"우리의 다학제 의료팀은 체계적인 훈련을 받았으며 환자의 근본적인 원인을 파악하여 지속적인 완화를 제공하는 데 전념하고 있습니다."</p>

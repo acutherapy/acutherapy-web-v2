@@ -124,7 +124,7 @@ export default function AcupunctureHonoluluChinesePage() {
             </p>
 
             <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/50 group mb-12 w-full max-w-3xl mx-auto">
-              <img src="/images/abdominal-acupuncture.jpg" alt="Acupuncture Honolulu Chinese" className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
+              <img loading="lazy" src="/images/abdominal-acupuncture.jpg" alt="Acupuncture Honolulu Chinese" className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
               <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-8 pt-16 text-white text-lg font-medium">Advanced Acupuncture Treatments</figcaption>
             </div>
             <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">我们的核心治疗项目</h3>
@@ -156,7 +156,7 @@ export default function AcupunctureHonoluluChinesePage() {
                   <h4 className="text-3xl font-extrabold text-slate-900 mb-4">夏威夷顶尖疼痛与康复中心</h4>
                   <p className="text-slate-600 mb-6 leading-relaxed" dangerouslySetInnerHTML={{ __html: '<strong>蔡大卫医生 (Dr. David Cai)</strong> 拥有超过30年的临床经验，是传统中医（TCM）与现代针灸疗法的大师。他专精于严重痛症管理、运动损伤修复以及复杂的车祸后遗症康复，为檀香山社区提供世界级的全方位医疗服务。' }}></p>
                   <div className="flex items-center gap-4 bg-slate-50 p-4 rounded-2xl border border-slate-100">
-                    <img src="/images/acutherapy-medical-team.jpg" alt="AcuTherapy Clinics Medical Team" className="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md flex-shrink-0" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                    <img loading="lazy" src="/images/acutherapy-medical-team.jpg" alt="AcuTherapy Clinics Medical Team" className="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md flex-shrink-0" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
                     <div>
                       <h5 className="font-bold text-slate-900 mb-1">AcuTherapy 医疗团队</h5>
                       <p className="text-sm text-slate-500 italic leading-relaxed">“我们的多学科医疗团队经过严格培训，致力于找到您病痛的根本原因，提供持久的有效缓解。”</p>

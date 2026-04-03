@@ -124,7 +124,7 @@ export default function AcupunctureHonoluluJapanesePage() {
               </p>
               
       <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/50 group mb-12 w-full max-w-3xl mx-auto">
-        <img src="/images/abdominal-acupuncture.jpg" alt="Acupuncture Honolulu Japanese" className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
+        <img loading="lazy" src="/images/abdominal-acupuncture.jpg" alt="Acupuncture Honolulu Japanese" className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
         <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-8 pt-16 text-white text-lg font-medium">Advanced Acupuncture Treatments</figcaption>
       </div>
               <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">主な治療内容</h3>
@@ -140,7 +140,7 @@ export default function AcupunctureHonoluluJapanesePage() {
       <div className="mt-16 mb-16 bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden">
         <div className="grid md:grid-cols-5 gap-0">
           <div className="md:col-span-2 bg-slate-100 relative">
-            <img 
+            <img loading="lazy" 
               src="/images/dr-david-cai-portrait.jpg" 
               alt="Dr. David Cai, L.Ac., L.M.T." 
               className="w-full h-full object-cover min-h-[400px]"
@@ -156,7 +156,7 @@ export default function AcupunctureHonoluluJapanesePage() {
             <h4 className="text-3xl font-extrabold text-slate-900 mb-4">ホノルルを代表するペインクリニック</h4>
             <p className="text-slate-600 mb-6 leading-relaxed" dangerouslySetInnerHTML={{ __html: '30年以上の臨床経験を持つ <strong>Dr. David Cai</strong> は、伝統中国医学 (TCM) と高度な鍼灸プロトコルのマスターです。重度の痛みの管理、スポーツ障害、複雑な交通事故後の回復を専門とし、ホノルルのコミュニティに世界最高水準のホリスティック医療を提供しています。' }}></p>
             <div className="flex items-center gap-4 bg-slate-50 p-4 rounded-2xl border border-slate-100">
-               <img src="/images/acutherapy-medical-team.jpg" alt="AcuTherapy Clinics Medical Team" className="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md flex-shrink-0" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+               <img loading="lazy" src="/images/acutherapy-medical-team.jpg" alt="AcuTherapy Clinics Medical Team" className="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md flex-shrink-0" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
                <div>
                  <h5 className="font-bold text-slate-900 mb-1">AcuTherapy 医療チーム</h5>
                  <p className="text-sm text-slate-500 italic leading-relaxed">「私たちの学際的な医療チームは高度な訓練を受けており、あなたの症状の根本原因を見つけ、持続的な痛みの緩和を提供することに専念しています。」</p>

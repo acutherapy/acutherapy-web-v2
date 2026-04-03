@@ -251,7 +251,7 @@ export default function AboutDrDavidCaiPage() {
                         {/* Team Member 1 */}
                         <div className="bg-slate-50 rounded-3xl p-6 border border-slate-100 hover:shadow-lg transition duration-300">
                             <div className="h-28 w-28 mx-auto mb-6 relative rounded-full overflow-hidden border-4 border-blue-100 shadow-sm flex items-center justify-center">
-                                <img src="/images/dr-choon-kia-yeo.png" alt="Dr. Choon Kia Yeo" className="object-cover h-full w-full" />
+                                <img loading="lazy" src="/images/dr-choon-kia-yeo.png" alt="Dr. Choon Kia Yeo" className="object-cover h-full w-full" />
                             </div>
                             <h3 className="text-xl font-bold text-slate-900 text-center mb-1">Dr. Choon Kia Yeo</h3>
                             <p className="text-sm font-semibold text-blue-600 text-center mb-4">M.D.</p>
@@ -263,7 +263,7 @@ export default function AboutDrDavidCaiPage() {
                         {/* Team Member 2 */}
                         <div className="bg-slate-50 rounded-3xl p-6 border border-slate-100 hover:shadow-lg transition duration-300">
                             <div className="h-28 w-28 mx-auto mb-6 relative rounded-full overflow-hidden border-4 border-indigo-100 shadow-sm flex items-center justify-center">
-                                <img src="/images/doctor-lisa.png" alt="Lisa Long" className="object-cover h-full w-full scale-110" />
+                                <img loading="lazy" src="/images/doctor-lisa.png" alt="Lisa Long" className="object-cover h-full w-full scale-110" />
                             </div>
                             <h3 className="text-xl font-bold text-slate-900 text-center mb-1">Lisa Long</h3>
                             <p className="text-sm font-semibold text-indigo-600 text-center mb-4">O.M.D., L.M.T.</p>
@@ -275,7 +275,7 @@ export default function AboutDrDavidCaiPage() {
                         {/* Team Member 3 */}
                         <div className="bg-slate-50 rounded-3xl p-6 border border-slate-100 hover:shadow-lg transition duration-300">
                             <div className="h-28 w-28 mx-auto mb-6 relative rounded-full overflow-hidden border-4 border-emerald-100 shadow-sm flex items-center justify-center">
-                                <img src="/images/shu-kai-tsao.png" alt="Shu-Kai Tsao" className="object-cover h-full w-full scale-110" />
+                                <img loading="lazy" src="/images/shu-kai-tsao.png" alt="Shu-Kai Tsao" className="object-cover h-full w-full scale-110" />
                             </div>
                             <h3 className="text-xl font-bold text-slate-900 text-center mb-1">Shu-Kai Tsao</h3>
                             <p className="text-sm font-semibold text-emerald-600 text-center mb-4">Rehabilitation Specialist / O.M.D., L.Ac.</p>
@@ -287,7 +287,7 @@ export default function AboutDrDavidCaiPage() {
                         {/* Team Member 4 */}
                         <div className="bg-slate-50 rounded-3xl p-6 border border-slate-100 hover:shadow-lg transition duration-300">
                             <div className="h-28 w-28 mx-auto mb-6 relative rounded-full overflow-hidden border-4 border-amber-100 shadow-sm flex items-center justify-center">
-                                <img src="/images/staff-anne.png" alt="Anne Alenton" className="object-cover h-full w-full scale-110" />
+                                <img loading="lazy" src="/images/staff-anne.png" alt="Anne Alenton" className="object-cover h-full w-full scale-110" />
                             </div>
                             <h3 className="text-xl font-bold text-slate-900 text-center mb-1">Anne Alenton</h3>
                             <p className="text-sm font-semibold text-amber-600 text-center mb-4">O.T., Patient Care Manager</p>

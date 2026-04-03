@@ -123,7 +123,7 @@ export default function ChronicPainTreatmentHonoluluPage() {
               </p>
               
       <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/50 group mb-12 w-full max-w-3xl mx-auto">
-        <img src="/images/abdominal-acupuncture.jpg" alt="Chronic Pain Treatment Honolulu" className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
+        <img loading="lazy" src="/images/abdominal-acupuncture.jpg" alt="Chronic Pain Treatment Honolulu" className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
         <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-8 pt-16 text-white text-lg font-medium">Advanced Acupuncture Treatments</figcaption>
       </div>
               <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">The Science of Treating Chronic Pain Treatment Honolulu with Acupuncture</h2>
@@ -147,7 +147,7 @@ export default function ChronicPainTreatmentHonoluluPage() {
       <div className="mt-16 mb-16 bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden">
         <div className="grid md:grid-cols-5 gap-0">
           <div className="md:col-span-2 bg-slate-100 relative">
-            <img 
+            <img loading="lazy" 
               src="/images/dr-david-cai-portrait.jpg" 
               alt="Dr. David Cai, L.Ac., L.M.T." 
               className="w-full h-full object-cover min-h-[400px]"
@@ -163,7 +163,7 @@ export default function ChronicPainTreatmentHonoluluPage() {
             <h4 className="text-3xl font-extrabold text-slate-900 mb-4">Leading Honolulu Pain Clinic</h4>
             <p className="text-slate-600 mb-6 leading-relaxed" dangerouslySetInnerHTML={{ __html: 'With over 30 years of clinical experience, <strong>Dr. David Cai</strong> is a master of Traditional Chinese Medicine (TCM) and advanced acupuncture protocols. He specializes in severe pain management, sports injuries, and complex auto accident recoveries, bringing world-class holistic healthcare to the Honolulu community.' }}></p>
             <div className="flex items-center gap-4 bg-slate-50 p-4 rounded-2xl border border-slate-100">
-               <img src="/images/acutherapy-medical-team.jpg" alt="AcuTherapy Clinics Medical Team" className="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md flex-shrink-0" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+               <img loading="lazy" src="/images/acutherapy-medical-team.jpg" alt="AcuTherapy Clinics Medical Team" className="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md flex-shrink-0" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
                <div>
                  <h5 className="font-bold text-slate-900 mb-1">AcuTherapy Clinics Medical Team</h5>
                  <p className="text-sm text-slate-500 italic leading-relaxed">"Our multidisciplinary medical team is highly trained and committed to finding the root cause of your condition, providing relief that lasts."</p>
@@ -278,6 +278,9 @@ export default function ChronicPainTreatmentHonoluluPage() {
                       <p className="text-slate-600 text-sm leading-relaxed mb-1">
                         1650 Liliha St, Suite 208<br/>Honolulu, HI 96817
                       </p>
+                      <a href="https://maps.app.goo.gl/search/AcuTherapy+Clinics+Honolulu" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-sm text-blue-600 font-bold hover:underline mt-1">
+                        Find us on Google Maps
+                      </a>
                       <p className="text-slate-600 text-sm"><strong>Ph:</strong> (808) 528-7177 <span className="mx-1">|</span> <strong>Fax:</strong> (808) 212-9459</p>
                     </div>
                   </div>
@@ -288,6 +291,9 @@ export default function ChronicPainTreatmentHonoluluPage() {
                       <p className="text-slate-600 text-sm leading-relaxed mb-1">
                         98-211 Pali Momi St, Suite 604<br/>Aiea, HI 96701
                       </p>
+                      <a href="https://maps.app.goo.gl/search/AcuTherapy+Clinics+Aiea" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-sm text-blue-600 font-bold hover:underline mt-1">
+                        Find us on Google Maps
+                      </a>
                       <p className="text-slate-600 text-sm"><strong>Ph:</strong> (808) 452-1900 <span className="mx-1">|</span> <strong>Fax:</strong> (808) 452-1521</p>
                     </div>
                   </div>
