@@ -1,3 +1,5 @@
+src/pages/BookAppointmentPage.tsx
+
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
@@ -5,10 +7,7 @@ import { Calendar, User, Check, Building2, MessageSquare, Phone, Mail, ArrowRigh
 import { Button } from '@/components/ui/button';
 
 export default function BookAppointmentPage() {
-    // 【修改点 1】：这里的默认初始值设为 3，让页面一加载就直接进入留下审核所需信息的步骤。
-    // 等审核通过后，只需要将这里的 3 改回 1 即可恢复正常流程。
-    const [step, setStep] = useState(3);
-    
+    const [step, setStep] = useState(1);
     const [formData, setFormData] = useState({
         patientType: '',
         location: '',
@@ -72,14 +71,22 @@ export default function BookAppointmentPage() {
                     <p className="text-lg text-slate-600">Complete our Smart Intake form to get matched with the best care plan.</p>
                 </div>
 
-                {/* 【修改点 2】：利用 {false && ( )} 将整个进度条组件完美隐藏。等审核通过后，把头尾的这部分删掉即可恢复展示。 */}
-                {false && (
-                    <div className="relative mb-8 h-4">
-                        <div className="absolute left-0 top-1/2 transform -translate-y-1/2 h-0.5 bg-slate-200 w-full z-0"></div>
-                        <div
-                            className="absolute left-0 top-1/2 transform -translate-y-1/2 h-0.5 bg-teal-500 z-0 transition-all duration-500"
-                            style={{ width: step >= 3 ? '100%' : step === 2 ? '50%' : '0%' }}
-                        ></div>
+                {/* Stepper */}
+                {step > 1 && step < 4 && (
+                    <div className="flex items-center justify-center mb-12 max-w-lg mx-auto relative px-4">
+                        <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-full h-0.5 bg-slate-200 z-0"></div>
+                        <div className="relative z-10 flex justify-between w-full">
+                            <div className={`h-12 w-12 rounded-full flex items-center justify-center border-2 ${step >= 2 ? 'border-teal-500 bg-teal-50 text-teal-600' : 'border-slate-200 bg-white text-slate-400'}`}>
+                                <Calendar className="h-5 w-5" />
+                            </div>
+                            <div className={`h-12 w-12 rounded-full flex items-center justify-center border-2 ${step >= 3 ? 'border-teal-500 bg-teal-50 text-teal-600' : step === 2 ? 'border-slate-300 bg-white text-slate-500' : 'border-slate-200 bg-white text-slate-400'}`}>
+                                <User className="h-5 w-5" />
+                            </div>
+                            <div className={`h-12 w-12 rounded-full flex items-center justify-center border-2 ${step === 4 ? 'border-teal-500 bg-teal-50 text-teal-600' : 'border-slate-200 bg-white text-slate-400'}`}>
+                                <Check className="h-5 w-5" />
+                            </div>
+                        </div>
+                        <div className={`absolute left-8 top-1/2 transform -translate-y-1/2 h-0.5 bg-teal-500 z-0 transition-all duration-500 ${step >= 3 ? 'w-[calc(100%-4rem)]' : step === 2 ? 'w-[calc(50%-2rem)]' : 'w-0'}`}></div>
                     </div>
                 )}
 
@@ -154,7 +161,7 @@ export default function BookAppointmentPage() {
                                     onChange={(e) => updateForm('reason', e.target.value)}
                                     className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-teal-500 outline-none resize-none"
                                     placeholder="e.g., Lower back pain for 2 weeks..."
-                                />
+                                ></textarea>
                             </div>
 
                             <div className="pt-6 grid grid-cols-2 gap-4">
@@ -240,20 +247,22 @@ export default function BookAppointmentPage() {
                                 
                                 <label className="flex items-start gap-2 text-[10px] sm:text-xs text-gray-500 mt-4 leading-relaxed">
                                     <input
-                                        type="checkbox"
-                                        checked={smsChecked}
-                                        onChange={(e) => setSmsChecked(e.target.checked)}
-                                        className="mt-1 flex-shrink-0"
-                                    />
-                                    <span>
-                                        By checking this box, you agree to receive SMS text messages from AcuTherapy Clinics. You may reply STOP to opt-out at any time, or reply HELP to (808) 452-1521 for assistance. Message and data rates may apply. Message frequency may vary.
-                                        Learn more in our <a href="/privacy-policy" className="text-blue-500 underline">Privacy Policy</a> and <a href="https://acutherapy.com/terms-of-service" className="text-blue-500 underline">Terms &amp; Conditions</a>.
+  type="checkbox"
+  checked={smsChecked}
+  onChange={(e) => setSmsChecked(e.target.checked)}
+  className="mt-1 flex-shrink-0"
+/>
+                                   <span>
+                                        By checking this box, you agree to receive SMS messages from AcuTherapy Clinics related to conversational text messages. You may reply STOP to opt-out at any time. Reply to HELP to (808) 452-1521 for assistance. Messages and data rates may apply. Message frequency will vary.  
+                                        Learn more on our: <a href="/privacy-policy" className="text-blue-500 underline">Privacy Policy</a> and <a href="https://acutherapy.com/terms-of-service" className="text-blue-500 underline">Terms &amp; Conditions</a>.
                                     </span>
                                 </label>
                             </div>
 
                             <div className="pt-6 grid grid-cols-2 gap-4">
-                                <div />
+                                <Button type="button" variant="outline" onClick={prevStep} className="h-14 text-lg border-2 border-slate-200">
+                                    Back
+                                </Button>
                                 <Button type="submit" disabled={isSubmitting} className="h-14 text-lg bg-teal-600 hover:bg-teal-700 text-white">
                                     {isSubmitting ? "Sending..." : "Request Appointment"}
                                 </Button>
@@ -278,7 +287,7 @@ export default function BookAppointmentPage() {
                             </Button>
                         </Link>
                     </div>
-                )}    
+                )}
             </div>
         </div>
     );
