@@ -1,6 +1,27 @@
 {
   "redirects": [
     {
+      "source": "/about-us(/?|/)",
+      "destination": "/dr-david-cai-honolulu-acupuncturist",
+      "permanent": true
+    },
+    {
+      "source": "/cupping-gua-sha(/?|/)",
+      "destination": "/fire-cupping-therapy-honolulu",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "p"
+        }
+      ],
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/en/contact-us-honolulu",
       "destination": "/contact-honolulu-acupuncture",
       "permanent": true
