@@ -36,6 +36,11 @@
       "permanent": true
     },
     {
+      "source": "/what-does-acupuncture-feel-like(/?|/)",
+      "destination": "/how-acupuncture-treats-back-pain",
+      "permanent": true
+    },
+    {
       "source": "/exploring-acupuncture(/?|/)",
       "destination": "/treatment-process",
       "permanent": true
