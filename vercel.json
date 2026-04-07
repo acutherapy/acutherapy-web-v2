@@ -16,6 +16,41 @@
       "permanent": true
     },
     {
+      "source": "/contact-us(/?|/)",
+      "destination": "/contact-honolulu-acupuncture",
+      "permanent": true
+    },
+    {
+      "source": "/david-cai(/?|/)",
+      "destination": "/dr-david-cai-honolulu-acupuncturist",
+      "permanent": true
+    },
+    {
+      "source": "/exploring-acupuncture(/?|/)",
+      "destination": "/treatment-process",
+      "permanent": true
+    },
+    {
+      "source": "/wp-(.*)",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)/feed(/?|/)",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/reviews(/?|/)",
+      "destination": "/patient-reviews",
+      "permanent": true
+    },
+    {
+      "source": "/2239-2(/?|/)",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/about-us(/?|/)",
       "destination": "/dr-david-cai-honolulu-acupuncturist",
       "permanent": true
