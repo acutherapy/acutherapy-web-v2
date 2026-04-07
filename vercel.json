@@ -51,6 +51,11 @@
       "permanent": true
     },
     {
+      "source": "/ko/success-stories(/?|/)",
+      "destination": "/patient-reviews",
+      "permanent": true
+    },
+    {
       "source": "/exploring-acupuncture(/?|/)",
       "destination": "/treatment-process",
       "permanent": true
