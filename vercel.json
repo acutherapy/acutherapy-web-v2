@@ -41,6 +41,11 @@
       "permanent": true
     },
     {
+      "source": "/why-some-patients-feel-drained-after-acupuncture(/?|/)",
+      "destination": "/what-to-expect-first-acupuncture-visit",
+      "permanent": true
+    },
+    {
       "source": "/exploring-acupuncture(/?|/)",
       "destination": "/treatment-process",
       "permanent": true
