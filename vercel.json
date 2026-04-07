@@ -66,6 +66,11 @@
       "permanent": true
     },
     {
+      "source": "/why-different-acupuncture-treatments-same-problem(/?|/)",
+      "destination": "/about-traditional-chinese-medicine",
+      "permanent": true
+    },
+    {
       "source": "/exploring-acupuncture(/?|/)",
       "destination": "/treatment-process",
       "permanent": true
