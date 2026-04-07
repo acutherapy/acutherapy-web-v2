@@ -56,6 +56,11 @@
       "permanent": true
     },
     {
+      "source": "/en/services/cupping(/?|/)",
+      "destination": "/fire-cupping-therapy-honolulu",
+      "permanent": true
+    },
+    {
       "source": "/exploring-acupuncture(/?|/)",
       "destination": "/treatment-process",
       "permanent": true
