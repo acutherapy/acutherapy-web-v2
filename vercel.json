@@ -31,6 +31,11 @@
       "permanent": true
     },
     {
+      "source": "/honolulu-acupuncture-pain-relief(/?|/)",
+      "destination": "/pain-management-honolulu",
+      "permanent": true
+    },
+    {
       "source": "/exploring-acupuncture(/?|/)",
       "destination": "/treatment-process",
       "permanent": true
