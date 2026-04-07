@@ -1,6 +1,21 @@
 {
   "redirects": [
     {
+      "source": "/tag/(.*)",
+      "destination": "/treatment-process",
+      "permanent": true
+    },
+    {
+      "source": "/category/(.*)",
+      "destination": "/treatment-process",
+      "permanent": true
+    },
+    {
+      "source": "/author/(.*)",
+      "destination": "/dr-david-cai-honolulu-acupuncturist",
+      "permanent": true
+    },
+    {
       "source": "/about-us(/?|/)",
       "destination": "/dr-david-cai-honolulu-acupuncturist",
       "permanent": true
