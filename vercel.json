@@ -61,6 +61,11 @@
       "permanent": true
     },
     {
+      "source": "/en/book(/?|/)",
+      "destination": "/book-appointment",
+      "permanent": true
+    },
+    {
       "source": "/exploring-acupuncture(/?|/)",
       "destination": "/treatment-process",
       "permanent": true
