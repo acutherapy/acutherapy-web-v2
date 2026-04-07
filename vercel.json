@@ -46,6 +46,11 @@
       "permanent": true
     },
     {
+      "source": "/contact-us-honolulu(/?|/)",
+      "destination": "/honolulu-clinic",
+      "permanent": true
+    },
+    {
       "source": "/exploring-acupuncture(/?|/)",
       "destination": "/treatment-process",
       "permanent": true
