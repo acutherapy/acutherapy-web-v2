@@ -71,6 +71,11 @@
       "permanent": true
     },
     {
+      "source": "/yin-and-yang-explained(/?|/)",
+      "destination": "/can-acupuncture-help-neck-pain",
+      "permanent": true
+    },
+    {
       "source": "/exploring-acupuncture(/?|/)",
       "destination": "/treatment-process",
       "permanent": true
