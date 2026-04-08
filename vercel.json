@@ -6,8 +6,13 @@
       "permanent": true
     },
     {
+      "source": "/cupping/(.*)",
+      "destination": "/fire-cupping-therapy-honolulu",
+      "permanent": true
+    },
+    {
       "source": "/ko/(.*)",
-      "destination": "/honolulu-clinic",
+      "destination": "/acupuncture-honolulu-korean",
       "permanent": true
     },
     {
