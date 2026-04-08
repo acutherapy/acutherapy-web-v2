@@ -16,6 +16,11 @@
       "permanent": true
     },
     {
+      "source": "/privacy-policies-acupuncture(/?|/)",
+      "destination": "/privacy-policy",
+      "permanent": true
+    },
+    {
       "source": "/ko(/?|/)",
       "destination": "/acupuncture-honolulu-korean",
       "permanent": true
