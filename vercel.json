@@ -11,6 +11,11 @@
       "permanent": true
     },
     {
+      "source": "/how-to-start-meditating-today(/?|/)",
+      "destination": "/how-fast-does-acupuncture-work",
+      "permanent": true
+    },
+    {
       "source": "/en(/?|/)",
       "destination": "/dr-david-cai-honolulu-acupuncturist",
       "permanent": true
