@@ -21,6 +21,11 @@
       "permanent": true
     },
     {
+      "source": "/medical-massage-therapy(/?|/)",
+      "destination": "/medical-massage-honolulu",
+      "permanent": true
+    },
+    {
       "source": "/ko(/?|/)",
       "destination": "/acupuncture-honolulu-korean",
       "permanent": true
