@@ -81,6 +81,11 @@
       "permanent": true
     },
     {
+      "source": "/es(/?|/)",
+      "destination": "/aiea-pearl-city-clinic",
+      "permanent": true
+    },
+    {
       "source": "/wp-(.*)",
       "destination": "/",
       "permanent": true
