@@ -21,7 +21,7 @@
       "permanent": true
     },
     {
-      "source": "/honolulu-1-pain-acupuncture-clinic/“http:/acutherapy.com/shop/(/?|/)",
+      "source": "/honolulu-1-pain-acupuncture-clinic/“http:/acutherapy.com/shop(/?|/)",
       "destination": "/pain-management-honolulu",
       "permanent": true
     },
