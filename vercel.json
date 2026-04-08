@@ -6,6 +6,11 @@
       "permanent": true
     },
     {
+      "source": "/ko/(.*)",
+      "destination": "/honolulu-clinic",
+      "permanent": true
+    },
+    {
       "source": "/category/(.*)",
       "destination": "/treatment-process",
       "permanent": true
