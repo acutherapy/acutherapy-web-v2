@@ -1,6 +1,11 @@
 {
   "redirects": [
     {
+      "source": "/honolulu-1-pain-acupuncture-clinic",
+      "destination": "/pain-management-honolulu",
+      "permanent": true
+    },
+    {
       "source": "/honolulu-1-pain-acupuncture-clinic/:path*",
       "destination": "/pain-management-honolulu",
       "permanent": true
