@@ -16,6 +16,11 @@
       "permanent": true
     },
     {
+      "source": "/schedule902094406846(/?|/)",
+      "destination": "/book-appointment",
+      "permanent": true
+    },
+    {
       "source": "/privacy-policies-acupuncture(/?|/)",
       "destination": "/privacy-policy",
       "permanent": true
