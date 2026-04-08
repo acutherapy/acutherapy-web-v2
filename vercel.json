@@ -6,6 +6,11 @@
       "permanent": true
     },
     {
+      "source": "/en(/?|/)",
+      "destination": "/dr-david-cai-honolulu-acupuncturist",
+      "permanent": true
+    },
+    {
       "source": "/zh/services/cupping(/?|/)",
       "destination": "/fire-cupping-therapy-honolulu",
       "permanent": true
