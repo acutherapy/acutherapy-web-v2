@@ -11,6 +11,11 @@
       "permanent": true
     },
     {
+      "source": "/sitemap_index.xml(/?|/)",
+      "destination": "/sitemap",
+      "permanent": true
+    },
+    {
       "source": "/how-to-start-meditating-today(/?|/)",
       "destination": "/how-fast-does-acupuncture-work",
       "permanent": true
