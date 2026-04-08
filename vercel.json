@@ -7,7 +7,7 @@
     },
     {
       "source": "/page-sitemap.xml(/?|/)",
-      "destination": "/sitemap.xml",
+      "destination": "/sitemap",
       "permanent": true
     },
     {
