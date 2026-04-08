@@ -16,6 +16,11 @@
       "permanent": true
     },
     {
+      "source": "/honolulu-1-pain-acupuncture-clinic/“http:/acutherapy.com/shop/(/?|/)",
+      "destination": "/pain-management-honolulu",
+      "permanent": true
+    },
+    {
       "source": "/en(/?|/)",
       "destination": "/dr-david-cai-honolulu-acupuncturist",
       "permanent": true
