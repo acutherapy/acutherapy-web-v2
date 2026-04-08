@@ -6,7 +6,7 @@
       "permanent": true
     },
     {
-      "source": "/cupping(/?|/)",
+      "source": "/zh/services/cupping(/?|/)",
       "destination": "/fire-cupping-therapy-honolulu",
       "permanent": true
     },
