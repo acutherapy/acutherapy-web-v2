@@ -11,7 +11,7 @@
       "permanent": true
     },
     {
-    "source": "/sitemap_index\\.xml/?",
+    "source": "/sitemap_index/?",
     "destination": "/sitemap",
     "permanent": true
   },
