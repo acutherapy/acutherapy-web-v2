@@ -11,6 +11,11 @@
       "permanent": true
     },
     {
+      "source": "/zh/insurance-payment(/?|/)",
+      "destination": "/is-acupuncture-covered-by-insurance-hawaii",
+      "permanent": true
+    },
+    {
       "source": "/ko(/?|/)",
       "destination": "/acupuncture-honolulu-korean",
       "permanent": true
