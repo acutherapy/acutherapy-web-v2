@@ -11,20 +11,25 @@
       "permanent": true
     },
     {
-      "source": "/sitemap_index.xml(/?|/)",
-      "destination": "/sitemap",
-      "permanent": true
-    },
-    {
-      "source": "/how-to-start-meditating-today(/?|/)",
-      "destination": "/how-fast-does-acupuncture-work",
-      "permanent": true
-    },
-    {
-      "source": "/honolulu-1-pain-acupuncture-clinic/“http:/acutherapy.com/shop(/?|/)",
-      "destination": "/pain-management-honolulu",
-      "permanent": true
-    },
+    "source": "/sitemap_index\\.xml/?",
+    "destination": "/sitemap",
+    "permanent": true
+  },
+  {
+    "source": "/how-to-start-meditating-today/?",
+    "destination": "/how-fast-does-acupuncture-work",
+    "permanent": true
+  },
+  {
+    "source": "/honolulu-1-pain-acupuncture-clinic/?",
+    "destination": "/pain-management-honolulu",
+    "permanent": true
+  },
+  {
+    "source": "/shop/?",
+    "destination": "/pain-management-honolulu",
+    "permanent": true
+  }
     {
       "source": "/en(/?|/)",
       "destination": "/dr-david-cai-honolulu-acupuncturist",
