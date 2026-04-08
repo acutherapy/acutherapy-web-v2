@@ -6,6 +6,11 @@
       "permanent": true
     },
     {
+      "source": "/page-sitemap.xml(/?|/)",
+      "destination": "/sitemap.xml",
+      "permanent": true
+    },
+    {
       "source": "/en(/?|/)",
       "destination": "/dr-david-cai-honolulu-acupuncturist",
       "permanent": true
