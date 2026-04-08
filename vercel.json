@@ -11,22 +11,22 @@
       "permanent": true
     },
     {
-    "source": "/sitemap_index/?",
+    "source": "/sitemap_index(/?|/)",
     "destination": "/sitemap",
     "permanent": true
   },
   {
-    "source": "/how-to-start-meditating-today/?",
+    "source": "/how-to-start-meditating-today(/?|/)",
     "destination": "/how-fast-does-acupuncture-work",
     "permanent": true
   },
   {
-    "source": "/honolulu-1-pain-acupuncture-clinic/?",
+    "source": "/honolulu-1-pain-acupuncture-clinic(/?|/)",
     "destination": "/pain-management-honolulu",
     "permanent": true
   },
   {
-    "source": "/shop/?",
+    "source": "/shop(/?|/)",
     "destination": "/pain-management-honolulu",
     "permanent": true
   }
