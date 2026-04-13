@@ -111,8 +111,8 @@ export default function KneePainAcupunctureHonoluluPage() {
               Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
             </div>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Knee Pain Treatment in Honolulu</h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Stop the bone-on-bone grinding and sharp meniscus pain naturally.</p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Knee Joint & Meniscus Treatment in Honolulu</h1>
+          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Stop the bone-on-bone grinding of Knee Osteoarthritis and the sharp catching pain of a Meniscus Tear naturally.</p>
         </div>
       </section>
 
@@ -123,22 +123,22 @@ export default function KneePainAcupunctureHonoluluPage() {
           <article className="md:col-span-8">
             
               <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
-                If walking up stairs has become a daily struggle or your knee feels like it might "give out" beneath you, you are dealing with critical joint instability. At AcuTherapy Clinics in Honolulu, we treat severe knee osteoarthritis, meniscus tears, and patellar tendonitis by aggressively targeting the inflammation and restoring structural balance—providing lasting relief without endless cortisone shots.
+                If walking down stairs causes sharp stabs on the side of your kneecap, or your knee feels like it might "give out" beneath you, you are dealing with critical joint instability. At AcuTherapy Clinics, we treat severe <strong>Knee Osteoarthritis</strong>, <strong>Meniscus Tears</strong>, and <strong>Patellofemoral Pain Syndrome (Runner's Knee)</strong> by aggressively targeting the inflammation inside the joint capsule and restoring <i>synovial fluid</i> production—providing lasting relief without endless cortisone shots.
               </p>
               
       <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/50 group mb-12 w-full max-w-3xl mx-auto">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1579975096649-e773152b1efa?q=80&w=2000" alt="Knee Pain Treatment Honolulu" className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
-        <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-8 pt-16 text-white text-lg font-medium">Advanced Joint Rehabilitation</figcaption>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1579975096649-e773152b1efa?q=80&w=2000" alt="Meniscus Tear Treatment Honolulu" className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
+        <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-8 pt-16 text-white text-lg font-medium">Advanced Articular Cartilage Rehabilitation</figcaption>
       </div>
 
               <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Our Three Core Pillars for Knee Rehabilitation</h2>
               <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                Most standard treatments only look at the knee itself. We use our three clinical modalities to attack the knee pain holistically, releasing the mechanical strain pulling on the joint from the hips, IT band, and calves:
+                Most standard orthopedic treatments only look at the knee cavity itself. We attack the knee pain holistically, releasing the mechanical strain pulling on the patella from your hips, IT band, and calves:
               </p>
               <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
-                <li><strong>Acupuncture:</strong> By inserting micro-needles precisely into the "eyes of the knee" and surrounding inflamed bursa sacs, we radically downregulate nerve sensitivity and induce intensive vasodilation to bring oxygenated blood directly to the starved cartilage.</li>
-                <li><strong>Medical Massage:</strong> We physically break down the hardened fascial adhesions locking up your IT band, quadriceps, and hamstrings—the heavy muscles that are actually crushing your knee joint together.</li>
-                <li><strong>Fire Cupping Therapy:</strong> Applied around the thigh and calf, negative pressure physically pulls chronic inflammatory fluid and swelling away from the knee capsule, creating immediate movement freedom.</li>
+                <li><strong>Electroacupuncture for Cartilage Repair:</strong> By inserting micro-needles precisely into the "eyes of the knee" (the structural indentations below the kneecap) and sending micro-currents through the joint capsule, we radically downregulate nerve sensitivity and induce intensive vasodilation. This brings oxygenated blood and natural synovial fluid directly to the starved, grinding cartilage.</li>
+                <li><strong>Medical Massage (Tui-Na):</strong> A tight IT Band or hyper-contracted quadriceps will physically pull your kneecap off its tracking groove, causing Patellofemoral Pain. We precisely break down the hardened fascial adhesions locking up your thigh muscles, instantly reducing the "crushing" pressure on your knee joint.</li>
+                <li><strong>Fire Cupping Therapy:</strong> Often, severe knee arthritis leads to trapped fluid build-up behind the knee (such as a <strong>Popliteal / Baker's Cyst</strong>). Applied around the thigh and calf, extreme negative pressure physically pulls this chronic inflammatory fluid and swelling away from the knee capsule, restoring your ability to fully bend your leg.</li>
               </ul>
         
             
@@ -266,7 +266,7 @@ export default function KneePainAcupunctureHonoluluPage() {
 
             <div className="bg-blue-900 text-white p-8 rounded-2xl shadow-xl">
               <h4 className="text-xl font-bold mb-4 flex items-center gap-2">Patient Reviews</h4>
-              <p className="text-slate-300 italic text-sm leading-relaxed mb-4">"Dr. Cai completely resolved my shoulder pain after just 3 visits. I had been suffering for months. The clinic is pristine, professional, and very welcoming!"</p>
+              <p className="text-slate-300 italic text-sm leading-relaxed mb-4">"I was diagnosed with bone-on-bone osteoarthritis and a torn meniscus. Cortisone didn't help anymore. Dr. Cai's electro-acupuncture brought life back into my knee. The swelling behind my knee disappeared, and I'm walking up stairs without wincing for the first time in years!"</p>
               <div className="flex items-center gap-4 mt-6">
                  <div className="h-10 w-10 bg-blue-800 rounded-full flex items-center justify-center font-bold text-white shadow-inner">ST</div>
                  <div>

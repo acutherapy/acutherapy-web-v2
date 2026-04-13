@@ -111,8 +111,8 @@ export default function SciaticaAcupunctureHonoluluPage() {
               Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
             </div>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Sciatica Acupuncture Honolulu</h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Medical-grade treatments customized for lasting relief and recovery in Honolulu.</p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Sciatica & Lumbar Nerve Treatment in Honolulu</h1>
+          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Stop the shooting electric pain down your leg. Expert care for Lumbar Radiculopathy, Spinal Stenosis, and Piriformis Syndrome.</p>
         </div>
       </section>
 
@@ -123,28 +123,22 @@ export default function SciaticaAcupunctureHonoluluPage() {
           <article className="md:col-span-8">
             
               <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
-                Suffering from <strong>severe sciatic nerve pain</strong> can deeply disrupt your daily life, making basic movements agonizing and draining your energy. At AcuTherapy Clinics in Honolulu, Dr. David Cai applies over 30 years of medical experience to resolve the root cause of sciatica and Piriformis syndrome, offering a lasting alternative to spinal surgery or heavy pharmaceuticals.
+                Suffering from <strong>severe sciatic nerve pain</strong> can deeply disrupt your daily life, making driving, sitting, and even standing agonizing. Whether your pain originates from a true spine issue like an <strong>L4-L5 or L5-S1 disc herniation</strong> (Lumbar Radiculopathy) or from deep gluteal compression known as <strong>Piriformis Syndrome</strong>, our goal is rapid nerve decompression. At AcuTherapy Clinics, we offer a specialized clinical alternative to epidural injections or spinal fusion surgery.
               </p>
               
       <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/50 group mb-12 w-full max-w-3xl mx-auto">
-        <img loading="lazy" src="/images/fire-cupping-therapy.jpg" alt="Fire cupping therapy" className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
-        <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-8 pt-16 text-white text-lg font-medium">Traditional Fire Cupping Therapy for Deep Tissue Detox</figcaption>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2000" alt="Sciatica Treatment Honolulu" className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
+        <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-8 pt-16 text-white text-lg font-medium">Advanced Lumbar & Gluteal Rehabilitation</figcaption>
       </div>
-              <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">The Science of Treating Sciatica</h2>
+
+              <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Our Three Core Pillars for Sciatica Relief</h2>
               <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                Sciatica is often the result of trapped lumbar inflammation, spinal stenosis, or deep myofascial tension (such as a locked piriformis muscle) that standard treatments fail to reach. This creates agonizing, radiating leg pain. Our specific treatments stimulate local vasodilation—massively increasing blood flow to oxygen-starved sciatic nerves.
-              </p>
-              <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                Furthermore, precise stimulation signals the central nervous system to release natural endorphins, dramatically downregulating the sharp, shooting pain signals before they reach the brain.
-              </p>
-              <h3 className="text-2xl font-bold text-slate-900 mt-10 mb-6 border-b pb-2">Our Three Core Pillars for Sciatica Relief</h3>
-              <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                We combine our three structural modalities to attack sciatica from every angle:
+                Sciatica is a mechanical compression issue. Painkillers only mask the siren; we must remove the rock crushing the nerve. We combine our structural modalities to attack the <strong>Sciatic Nerve Root</strong> from every angle:
               </p>
               <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
-                <li><strong>Acupuncture:</strong> Using targeted electro-stimulation along the gallbladder and bladder meridians to act as a circuit breaker, immediately relieving severe nerve pain and halting gluteal spasms.</li>
-                <li><strong>Medical Massage:</strong> Physically breaking down the deep scar tissue and fascial adhesions specifically within the piriformis and lumbar muscles that are crushing the sciatic nerve.</li>
-                <li><strong>Fire Cupping Therapy:</strong> Pulling stagnant blood and chronic inflammation out of the deep gluteal layers, creating rapid decompression for the trapped nerve.</li>
+                <li><strong>Electroacupuncture (Nerve Block & Repair):</strong> We place ultra-fine needles along the compressed lumbar segments and down the path of the sciatic nerve (the <i>Gallbladder</i> and <i>Bladder</i> meridians). By applying targeted micro-current frequencies, we interrupt the sharp, electrical pain signals reaching the brain and stimulate cellular repair of the inflamed myelin sheath surrounding the nerve.</li>
+                <li><strong>Medical Massage (Tui-Na):</strong> "Pseudo-sciatica" is often caused by a hyper-contracted Piriformis muscle physically strangling the nerve in your buttocks. We use deep-tissue medical massage to forcibly melt these trigger points and tear down fibrotic adhesions, instantly lifting the vice-grip off the nerve.</li>
+                <li><strong>Fire Cupping Therapy:</strong> Chronic nerve inflammation creates a toxic, stagnant environment deep in the lower back and pelvis. Vacuum cupping aggressively sucks this stagnant blood and inflammatory debris outward, flooding the lumbar spine with fresh, oxygenated blood to accelerate healing.</li>
               </ul>
         
             
@@ -196,31 +190,7 @@ export default function SciaticaAcupunctureHonoluluPage() {
         </Link>
       </div>
     
-          
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Causes Sciatica?</h2>
-<p className="text-lg text-slate-700 leading-relaxed mb-6">Sciatica Sciatica is caused by compression or irritation of the sciatic nerve, frequently triggered by a herniated disc, spinal stenosis, or a tight piriformis muscle deep in the buttocks.</p>
 
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Acupuncture Helps</h2>
-<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li><strong>Nerve Decompression:</strong> Relaxes the piriformis and surrounding gluteal muscles to lift pressure off the sciatic nerve.</li>
-<li><strong>Inflammation Reduction:</strong> Triggers the body to flush out inflammatory markers around the nerve root.</li>
-</ul>
-
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect During Your Session</h2>
-<p className="text-lg text-slate-700 leading-relaxed mb-6">The treatment targets specific motor points in the hips and lower back. Patients frequently experience a warm, radiating sensation down the leg, substituting the sharp, electrical pain with deep relief.</p>
-
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Who Is This For?</h2>
-<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li>Those experiencing shooting pain, numbness, or tingling down one leg.</li>
-<li>Patients wishing to avoid spinal surgery or heavy painkillers.</li>
-</ul>
-
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">FAQ</h2>
-<div className="space-y-6 mb-12">
-<div><h4 className="font-bold text-lg text-slate-900">Q1: How many sessions are needed for Sciatica?</h4><p className="text-slate-700">A: Most patients notice significant relief within 3 to 5 sessions, though chronic conditions may require a longer treatment plan to address the root cause and ensure lasting results.</p></div>
-<div><h4 className="font-bold text-lg text-slate-900">Q2: Does the treatment hurt?</h4><p className="text-slate-700">A: No. We use ultra-fine needles. Most feel only a deep, relaxing sensation. Many even fall asleep!</p></div>
-<div><h4 className="font-bold text-lg text-slate-900">Q3: Is it safe?</h4><p className="text-slate-700">A: Absolutely. Acupuncture is a highly safe, non-invasive alternative to surgery and heavy medications.</p></div>
-</div>
 
 <div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
 <h2 className="text-3xl font-bold text-blue-900 mb-4">Ready to find relief?</h2>
@@ -239,31 +209,9 @@ export default function SciaticaAcupunctureHonoluluPage() {
                 <p className="text-slate-600 mb-8 text-sm">Bridge the gap to a pain-free life today.</p>
                 <div className="flex flex-col gap-4">
                   <Link to="/book-appointment">
-
-                    <Link to="/book-appointment">
-
-
-                      <Link to="/book-appointment">
-
-
-
-                        <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
-
-
-
-                          <Calendar className="mr-2" /> Schedule Online
-
-
-
-                        </Button>
-
-
-
-                      </Link>
-
-
-                    </Link>
-
+                    <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
+                      <Calendar className="mr-2" /> Schedule Online
+                    </Button>
                   </Link>
                   <Button variant="outline" className="w-full h-14 text-lg border-2 border-slate-200" onClick={() => window.location.href='tel:+18085287177'}>
                     <PhoneCall className="mr-2 h-5 w-5 text-blue-600" /> (808) 528-7177
@@ -321,7 +269,7 @@ export default function SciaticaAcupunctureHonoluluPage() {
 
             <div className="bg-blue-900 text-white p-8 rounded-2xl shadow-xl">
               <h4 className="text-xl font-bold mb-4 flex items-center gap-2">Patient Reviews</h4>
-              <p className="text-slate-300 italic text-sm leading-relaxed mb-4">"Dr. Cai completely resolved my shoulder pain after just 3 visits. I had been suffering for months. The clinic is pristine, professional, and very welcoming!"</p>
+              <p className="text-slate-300 italic text-sm leading-relaxed mb-4">"I had excruciating shooting pain down my right leg from an L5-S1 disc issue. I couldn't drive or sleep. After just a few sessions of electro-acupuncture and cupping with Dr. Cai, the sharp electrical shocks stopped completely. I avoided surgery entirely!"</p>
               <div className="flex items-center gap-4 mt-6">
                  <div className="h-10 w-10 bg-blue-800 rounded-full flex items-center justify-center font-bold text-white shadow-inner">ST</div>
                  <div>

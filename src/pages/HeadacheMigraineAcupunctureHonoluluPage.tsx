@@ -43,15 +43,20 @@ export default function HeadacheMigraineAcupunctureHonoluluPage() {
           
           <article className="md:col-span-8">
             <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
-              Living with chronic migraines, intense tension headaches, or jaw pain (TMJ) leaves you drained and completely unable to focus on work or family. If you have tried countless medications without success, our <strong>Headache & Migraine Acupuncture Treatment in Honolulu</strong> offers a profoundly effective, drug-free pathway to intercept neurological pain signals and release the cervical tension causing your head pain.
+              Living with chronic migraines, intense tension headaches, or severe jaw pain (TMJ) leaves you drained and completely unable to function. If you have tried countless medications (like triptans or muscle relaxers) without success, our <strong>Headache & Migraine Acupuncture Treatment in Honolulu</strong> offers a profoundly effective, drug-free pathway to intercept neurological pain signals. We specialize in resolving referred pain, treating complex conditions like <strong>Cervicogenic Headaches</strong> and <strong>Occipital Neuralgia</strong> at their root.
             </p>
+
+      <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/50 group mb-12 w-full max-w-3xl mx-auto">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1512438248247-f0f2a5a8b7f0?q=80&w=2000" alt="Migraine and Headache Treatment Honolulu" className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
+        <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-8 pt-16 text-white text-lg font-medium">Targeted Neurological & Cranial Decompression</figcaption>
+      </div>
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Is Triggering Your Headaches?</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
-              Unlike a simple muscle strain, headaches are highly complex neurological events. However, the vast majority of chronic daily headaches—including tension headaches and TMJ (Temporomandibular Joint disorders)—originate from severe muscular tension at the base of the skull (the sub-occipital triangle) and the jaw.
+              Unlike a simple muscle strain, headaches are highly complex neurological events. The vast majority of chronic daily headaches—including tension headaches, <strong>Trigeminal Neuralgia</strong>, and TMJ (Temporomandibular Joint disorders)—originate from severe muscular tension at the base of the skull (the sub-occipital triangle) and the jaw.
             </p>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
-              When stress, teeth grinding, or poor "Tech Neck" posture chronically tightens the cervical muscles, they mechanically compress the fragile nerves running up the back of your head. Meanwhile, true migraines are often tied to intense vasodilation (blood vessel swelling) within the brain triggered by systemic nervous system imbalances.
+              When stress, teeth grinding, or poor "Tech Neck" posture chronically tightens the cervical muscles, they mechanically crush the fragile greater occipital nerves running up the back of your head. Meanwhile, true migraines are tied to intense vasodilation (blood vessel swelling) within the brain triggered by massive sympathetic nervous system imbalances.
             </p>
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Our Three Core Pillars for Head Pain</h2>
@@ -73,6 +78,35 @@ export default function HeadacheMigraineAcupunctureHonoluluPage() {
                 "Patients who arrive with a pounding, active migraine often report that the 'throbbing pressure' inside their skull begins to physically drain away within 10 to 15 minutes of the needles being placed. They wake up from the session with a clear head."
               </p>
             </div>
+
+      <div className="mt-16 mb-16 bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden">
+        <div className="grid md:grid-cols-5 gap-0">
+          <div className="md:col-span-2 bg-slate-100 relative">
+            <img loading="lazy" 
+              src="/images/dr-david-cai-portrait.jpg" 
+              alt="Dr. David Cai, L.Ac., L.M.T." 
+              className="w-full h-full object-cover min-h-[400px]"
+              onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=800'; }}
+            />
+            <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-6 text-white text-center">
+               <span className="font-bold text-xl">Dr. David Cai</span>
+               <p className="text-blue-300 text-sm">L.Ac., L.M.T.</p>
+            </div>
+          </div>
+          <div className="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
+            <h3 className="text-sm font-bold tracking-widest text-blue-600 uppercase mb-2">Clinical Director & Founder</h3>
+            <h4 className="text-3xl font-extrabold text-slate-900 mb-4">Leading Honolulu Pain Clinic</h4>
+            <p className="text-slate-600 mb-6 leading-relaxed" dangerouslySetInnerHTML={{ __html: 'With over 30 years of clinical experience, <strong>Dr. David Cai</strong> is a master of Traditional Chinese Medicine (TCM) and advanced neurological acupuncture protocols. He specializes in severe pain management, intractable migraines, and complex nervous system disorders, bringing world-class holistic healthcare to the Honolulu community.' }}></p>
+            <div className="flex items-center gap-4 bg-slate-50 p-4 rounded-2xl border border-slate-100">
+               <img loading="lazy" src="/images/acutherapy-medical-team.jpg" alt="AcuTherapy Clinics Medical Team" className="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md flex-shrink-0" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+               <div>
+                 <h5 className="font-bold text-slate-900 mb-1">AcuTherapy Clinics Medical Team</h5>
+                 <p className="text-sm text-slate-500 italic leading-relaxed">"Our multidisciplinary medical team is highly trained and committed to finding the root cause of your headaches, providing lasting relief without dependence on medications."</p>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Frequently Asked Questions</h2>
             <div className="space-y-6 mb-12">
