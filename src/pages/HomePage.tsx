@@ -106,10 +106,10 @@ export default function HomePage() {
             <div className="max-w-3xl">
               <div className="inline-flex flex-wrap gap-2 mb-6">
                 <span className="px-3 py-1 bg-blue-500/20 text-blue-300 text-sm font-semibold rounded-full border border-blue-500/30">
-                  #1 Pain Clinic in Honolulu
+                  Voted Best Acupuncturist in Honolulu
                 </span>
                 <span className="px-3 py-1 bg-emerald-500/20 text-emerald-300 text-sm font-semibold rounded-full border border-emerald-500/30">
-                  Accepts Most Insurance & Auto PIP
+                  Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
                 </span>
               </div>
 
@@ -265,17 +265,17 @@ export default function HomePage() {
                 Hawaii's Most Trusted Expert in Pain & Injury Rehabilitation.
               </h2>
               <p className="text-lg text-slate-600 leading-relaxed mb-6">
-                With over <strong>30 years of clinical experience</strong> across integrated medical systems, Dr. David Cai is a master practitioner of Traditional Chinese Medicine (TCM) and advanced acupuncture neuro-modulation.
+                With over <strong>30 years of clinical experience</strong> across integrated medical systems, Dr. David Cai is a master practitioner of Traditional Chinese Medicine (TCM). He utilizes a comprehensive range of modalities—including advanced electroacupuncture, moxibustion therapy, dry needling techniques, and custom Chinese herbal medicine—to deliver profound results.
               </p>
               <p className="text-lg text-slate-600 leading-relaxed mb-8">
-                He built AcuTherapy Clinics on the principle that the human body intends to heal itself. Rather than masking your symptoms with temporary painkillers or risking invasive surgeries, Dr. Cai identifies the exact structural or inflammatory root cause of your pain and resolves it using time-tested natural sciences.
+                He built AcuTherapy Clinics on the principle that the body is intended to heal itself. Rather than masking symptoms with temporary painkillers, Dr. Cai identifies the exact structural, hormonal, or inflammatory root cause. If you're searching for reliable "acupuncture near me," our clinic provides unmatched, long-lasting relief.
               </p>
 
               <div className="space-y-4">
                 {[
-                  "Pioneer in advanced neurological acupuncture.",
+                  "Pioneer in advanced neurological and electroacupuncture.",
                   "Has successfully treated tens of thousands of complex pain patients.",
-                  "Master of non-invasive Sciatica and Herniated Disc healing.",
+                  "Comprehensive expert in chronic anxiety, fertility, and insomnia.",
                   "Specialized protocol for traumatic Auto Accident/Whiplash recovery."
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3">
@@ -373,6 +373,45 @@ export default function HomePage() {
                 <h3 className="text-xl font-bold text-slate-900 mb-2">Joints & Sports</h3>
                 <p className="text-slate-600 mb-4 h-20 text-sm">Accelerate recovery for knee pain, tennis elbow, and athletic ligament tears.</p>
                 <Link to="/sports-injury-acupuncture-honolulu" className="text-blue-600 font-semibold text-sm hover:text-blue-700 flex items-center gap-1 group">
+                  Learn more <ArrowRight className="h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow border-purple-200">
+              <CardContent className="p-8">
+                <div className="h-12 w-12 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center mb-6">
+                  <HeartPulse className="h-6 w-6" />
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">Anxiety & Insomnia</h3>
+                <p className="text-slate-600 mb-4 h-20 text-sm">Balance your nervous system naturally to relieve chronic stress, anxiety, and sleepless nights.</p>
+                <Link to="/treatment-process" className="text-blue-600 font-semibold text-sm hover:text-blue-700 flex items-center gap-1 group">
+                  Learn more <ArrowRight className="h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow border-pink-200">
+              <CardContent className="p-8">
+                <div className="h-12 w-12 bg-pink-100 text-pink-600 rounded-xl flex items-center justify-center mb-6">
+                  <Activity className="h-6 w-6" />
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">Women's Health</h3>
+                <p className="text-slate-600 mb-4 h-20 text-sm">Comprehensive holistic support for fertility, menstrual irregularities, weight loss, and hormone balance.</p>
+                <Link to="/treatment-process" className="text-blue-600 font-semibold text-sm hover:text-blue-700 flex items-center gap-1 group">
+                  Learn more <ArrowRight className="h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow border-slate-200">
+              <CardContent className="p-8">
+                <div className="h-12 w-12 bg-teal-100 text-teal-600 rounded-xl flex items-center justify-center mb-6">
+                  <Stethoscope className="h-6 w-6" />
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">Advanced Therapies</h3>
+                <p className="text-slate-600 mb-4 h-20 text-sm">We provide moxibustion, customized Chinese herbal medicine, and dry needling for complete healing.</p>
+                <Link to="/treatment-process" className="text-blue-600 font-semibold text-sm hover:text-blue-700 flex items-center gap-1 group">
                   Learn more <ArrowRight className="h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
                 </Link>
               </CardContent>

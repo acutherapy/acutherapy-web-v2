@@ -103,11 +103,16 @@ export default function PlantarFasciitisAcupunctureHonoluluPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/80" />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm mb-6 backdrop-blur-sm">
-            <ShieldCheck size={16} /> <span>Trusted Honolulu Pain Clinic</span>
+          <div className="flex flex-wrap justify-center gap-3 mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm backdrop-blur-sm">
+              <ShieldCheck size={16} /> <span>Restoring Foot Mobility & Arch Support</span>
+            </div>
+            <div className="inline-flex items-center px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-200 border border-emerald-500/30 font-medium text-sm backdrop-blur-sm">
+              Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
+            </div>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Plantar Fasciitis Acupuncture Honolulu</h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Medical-grade treatments customized for lasting relief and recovery in Honolulu.</p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Plantar Fasciitis Treatment in Honolulu</h1>
+          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Stop the sharp, stabbing heel pain with every morning step. Heal your fascia dynamically without cortisone injections.</p>
         </div>
       </section>
 
@@ -118,28 +123,22 @@ export default function PlantarFasciitisAcupunctureHonoluluPage() {
           <article className="md:col-span-8">
             
               <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
-                Suffering from <strong>Plantar Fasciitis Acupuncture Honolulu</strong> can deeply disrupt your daily life, making basic movements agonizing and draining your energy. At AcuTherapy Clinics in Honolulu, Dr. David Cai applies over 30 years of medical acupuncture experience to resolve the root cause of plantar fasciitis acupuncture honolulu, offering a lasting alternative to surgery or heavy pharmaceuticals.
+                If the first few steps out of bed in the morning feel like you are walking on shards of glass, you are likely suffering from severe Plantar Fasciitis. Cortisone shots only offer temporary numbing, and heavy boots are cumbersome. At AcuTherapy Clinics, we treat heel and foot pain by addressing the mechanical chain of tension that pulls on the foot's arch—rehabilitating the extremely tough plantar fascia from the inside out.
               </p>
               
       <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/50 group mb-12 w-full max-w-3xl mx-auto">
-        <img loading="lazy" src="/images/abdominal-acupuncture.jpg" alt="Plantar Fasciitis Acupuncture Honolulu" className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
-        <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-8 pt-16 text-white text-lg font-medium">Advanced Acupuncture Treatments</figcaption>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1596464716127-f2a82984de31?q=80&w=2000" alt="Plantar Fasciitis Treatment Honolulu" className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
+        <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-8 pt-16 text-white text-lg font-medium">Advanced Foot & Heel Rehabilitation</figcaption>
       </div>
-              <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">The Science of Treating Plantar Fasciitis Acupuncture Honolulu with Acupuncture</h2>
+
+              <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Our Three Core Pillars for Plantar Relief</h2>
               <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                Plantar Fasciitis Acupuncture Honolulu is often the result of trapped inflammation, peripheral nerve irritation, or deep myofascial tension that standard treatments fail to reach. Our specific needle protocols for plantar fasciitis acupuncture honolulu stimulate local vasodilation—massively increasing blood flow to oxygen-starved tissues.
-              </p>
-              <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                Furthermore, precise stimulation signals the central nervous system to release natural endorphins and opioid-like neuropeptides, dramatically downregulating the pain signals caused by plantar fasciitis acupuncture honolulu before they reach the brain.
-              </p>
-              <h3 className="text-2xl font-bold text-slate-900 mt-10 mb-6 border-b pb-2">Our Highly Effective Treatment Process</h3>
-              <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                We don't use a "one size fits all" approach. Your treatment for plantar fasciitis acupuncture honolulu may integrate multiple modalities for optimal effectiveness:
+                Most standard treatments only look at the bottom of the foot. We use our three clinical modalities to attack the heel pain holistically, releasing the mechanical strain pulling on the foot from the deeply locked calf muscles (gastrocnemius and soleus):
               </p>
               <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
-                <li><strong>Targeted Electro-Acupuncture:</strong> To relieve severe nerve pain or muscle spasms.</li>
-                <li><strong>Medical Massage (Tui-Na):</strong> To physically break down scar tissue and fascia adhesions compounding the structural issue.</li>
-                <li><strong>Fire Cupping Therapy:</strong> To pull stagnant blood and lactic acid out of deep muscle layers.</li>
+                <li><strong>Acupuncture:</strong> By inserting micro-needles precisely into the origin of the plantar fascia and key points spanning up the Achilles tendon, we forcefully downregulate the hyper-inflamed nerve endings and prompt massive blood flow to the micro-tears in the arch.</li>
+                <li><strong>Medical Massage:</strong> We physically break apart the "rock hard" knots and fascial adhesions inside your calf muscles that are acting like an overly tight rubber band, constantly ripping at the heel bone.</li>
+                <li><strong>Fire Cupping Therapy:</strong> Applied aggressively along the back of the legs, the extreme negative pressure physically separates the glued fascial layers, taking mechanical tension off the foot immediately.</li>
               </ul>
         
             
@@ -192,32 +191,7 @@ export default function PlantarFasciitisAcupunctureHonoluluPage() {
       </div>
     
           
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Causes Plantar Fasciitis?</h2>
-<p className="text-lg text-slate-700 leading-relaxed mb-6">Plantar Fasciitis Plantar fasciitis is an inflammation of the thick band of tissue spanning the bottom of your foot. It is often caused by flat feet, high arches, sudden weight gain, or standing for excessive periods.</p>
 
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Acupuncture Helps</h2>
-<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li><strong>Pain Relief:</strong> Triggers the release of endorphins to block pain signals effectively.</li>
-<li><strong>Nervous System Regulation:</strong> Calms the central nervous system, reducing tension without relying on pharmaceuticals.</li>
-<li><strong>Improved Circulation:</strong> Enhances blood flow to the affected areas, accelerating the natural healing process.</li>
-</ul>
-
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect During Your Session</h2>
-<p className="text-lg text-slate-700 leading-relaxed mb-6">While treating the foot can be sensitive, Dr. Cai expertly places needles along the calf and specific points on the foot architecture to rapidly decrease the sharp stabbing pain felt, especially during morning steps.</p>
-
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Who Is This For?</h2>
-<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li>Individuals suffering from chronic pain who have not found relief through conventional methods.</li>
-<li>High-stress professionals seeking natural nervous system regulation.</li>
-<li>Athletes or individuals recovering from an injury needing accelerated healing.</li>
-</ul>
-
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">FAQ</h2>
-<div className="space-y-6 mb-12">
-<div><h4 className="font-bold text-lg text-slate-900">Q1: How many sessions are needed for Plantar Fasciitis?</h4><p className="text-slate-700">A: Since the foot constantly bears weight, treatment requires consistency. 6-10 sessions provide excellent results.</p></div>
-<div><h4 className="font-bold text-lg text-slate-900">Q2: Does the treatment hurt?</h4><p className="text-slate-700">A: Foot points can be slightly sharp initially, but the sensation rapidly subsides into a warm relief.</p></div>
-<div><h4 className="font-bold text-lg text-slate-900">Q3: Is it safe?</h4><p className="text-slate-700">A: Absolutely. Acupuncture is a highly safe, non-invasive alternative to surgery and heavy medications.</p></div>
-</div>
 
 <div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
 <h2 className="text-3xl font-bold text-blue-900 mb-4">Ready to find relief?</h2>
@@ -236,31 +210,9 @@ export default function PlantarFasciitisAcupunctureHonoluluPage() {
                 <p className="text-slate-600 mb-8 text-sm">Bridge the gap to a pain-free life today.</p>
                 <div className="flex flex-col gap-4">
                   <Link to="/book-appointment">
-
-                    <Link to="/book-appointment">
-
-
-                      <Link to="/book-appointment">
-
-
-
-                        <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
-
-
-
-                          <Calendar className="mr-2" /> Schedule Online
-
-
-
-                        </Button>
-
-
-
-                      </Link>
-
-
-                    </Link>
-
+                    <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
+                      <Calendar className="mr-2" /> Schedule Online
+                    </Button>
                   </Link>
                   <Button variant="outline" className="w-full h-14 text-lg border-2 border-slate-200" onClick={() => window.location.href='tel:+18085287177'}>
                     <PhoneCall className="mr-2 h-5 w-5 text-blue-600" /> (808) 528-7177
@@ -294,9 +246,9 @@ export default function PlantarFasciitisAcupunctureHonoluluPage() {
                       <p className="text-slate-600 text-sm"><strong>Ph:</strong> (808) 452-1900 <span className="mx-1">|</span> <strong>Fax:</strong> (808) 452-1521</p>
                     </div>
                   </div>
-                  <div className="mt-6 bg-slate-50 p-4 rounded-lg">
-                      <p className="font-bold text-slate-900 mb-1 text-sm">Hours of Operation</p>
-                      <p className="text-slate-600 text-sm">Mon-Fri: 9am - 1pm, Sat: 8am - 12pm</p>
+                  <div className="mt-6 bg-slate-50 p-4 rounded-lg border border-slate-100">
+                      <p className="font-bold text-slate-900 mb-1 text-sm">Insurance Information</p>
+                      <p className="text-slate-600 text-sm"><strong>Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA.</strong></p>
                   </div>
                 </div>
 
@@ -314,7 +266,7 @@ export default function PlantarFasciitisAcupunctureHonoluluPage() {
 
             <div className="bg-blue-900 text-white p-8 rounded-2xl shadow-xl">
               <h4 className="text-xl font-bold mb-4 flex items-center gap-2">Patient Reviews</h4>
-              <p className="text-slate-300 italic text-sm leading-relaxed mb-4">"Dr. Cai completely resolved my shoulder pain after just 3 visits. I had been suffering for months. The clinic is pristine, professional, and very welcoming!"</p>
+              <p className="text-slate-300 italic text-sm leading-relaxed mb-4">"I couldn't even walk to the bathroom in the morning because the stabbing pain in my heel was so bad. Dr. Cai's needle technique significantly relaxed my calves and completely resolved my plantar fasciitis in a month."</p>
               <div className="flex items-center gap-4 mt-6">
                  <div className="h-10 w-10 bg-blue-800 rounded-full flex items-center justify-center font-bold text-white shadow-inner">ST</div>
                  <div>

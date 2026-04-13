@@ -24,8 +24,13 @@ export default function ShoulderPainAcupunctureHonoluluPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/80" />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm mb-6 backdrop-blur-sm">
-            <ShieldCheck size={16} /> <span>Restoring Proper Joint Mobility</span>
+          <div className="flex flex-wrap justify-center gap-3 mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm backdrop-blur-sm">
+              <ShieldCheck size={16} /> <span>Restoring Proper Joint Mobility</span>
+            </div>
+            <div className="inline-flex items-center px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-200 border border-emerald-500/30 font-medium text-sm backdrop-blur-sm">
+              Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
+            </div>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Shoulder Pain Treatment in Honolulu</h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Reach higher without wincing. Effective, non-surgical pain relief for rotator cuff tears, frozen shoulder, and chronic tension.</p>
@@ -38,7 +43,7 @@ export default function ShoulderPainAcupunctureHonoluluPage() {
           
           <article className="md:col-span-8">
             <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
-              Whether you are suffering from a sharp, agonizing pinch when you lift your arm, or a deep nighttime ache that makes sleeping impossible, chronic shoulder issues rapidly deteriorate your quality of life. At AcuTherapy Clinics, our highly specialized <strong>Shoulder Pain Acupuncture in Honolulu</strong> targets the intricate network of ligaments and tendons around the joint to relieve inflammation, unlock frozen shoulders, and restore your full range of motion naturally.
+              Whether you are suffering from a sharp, agonizing pinch when you lift your arm, or a deep nighttime ache that makes sleeping impossible, chronic shoulder issues rapidly deteriorate your quality of life. At AcuTherapy Clinics, our highly specialized <strong>Shoulder Pain Treatment in Honolulu</strong> targets the intricate network of ligaments and tendons around the joint to relieve subacromial impingement, unlock severe frozen shoulder (adhesive capsulitis), and heal rotator cuff tendinopathy naturally.
             </p>
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Causes Intensive Shoulder Pain?</h2>
@@ -52,13 +57,15 @@ export default function ShoulderPainAcupunctureHonoluluPage() {
               <li><strong>Referred Neck Tension:</strong> Intense upper trap tightness "pulling" down on the shoulder machinery.</li>
             </ul>
 
-            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Shoulder Acupuncture Helps Heal the Joint</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Our Three Core Pillars for Shoulder Rehabilitation</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
-              Unlike temporary cortisone injections that can weaken tendons over time, acupuncture fundamentally rehabilitates the joint from the inside out. We use specific trigger-point needling along the scapula, deltoid, and chest to manually "disengage" the protective muscle spasms fighting against the joint.
+              Unlike temporary cortisone injections that can weaken tendons over time, our core treatments fundamentally rehabilitate the joint from the inside out:
             </p>
-            <p className="text-lg text-slate-700 leading-relaxed mb-6">
-              By introducing micro-trauma via sterile needles directly near the compromised rotator cuff or inflamed bursa sac, the body immediately rushes fresh, highly oxygenated blood cells and profound natural pain-killing endorphins to the specific capsule. This rapidly melts the "frozen" scar tissue binding the joint together.
-            </p>
+            <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
+              <li><strong>Acupuncture:</strong> Using specific trigger-point needling along the scapula, deltoid, and rotator cuff to manually "disengage" the protective muscle spasms and rapidly downregulate nerve inflammation.</li>
+              <li><strong>Medical Massage:</strong> Physically breaking down the dense, restrictive scar tissue that binds the joint together in conditions like Adhesive Capsulitis (Frozen Shoulder).</li>
+              <li><strong>Fire Cupping Therapy:</strong> Creating aggressive decompression over the shoulder capsule to forcefully lift stagnant fascia off the joint and flood the compromised bursa sac with highly oxygenated healing blood.</li>
+            </ul>
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect & Real Patient Results</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
@@ -173,9 +180,9 @@ export default function ShoulderPainAcupunctureHonoluluPage() {
                                                     </a>
                     </div>
                   </div>
-                  <div className="mt-6 bg-slate-50 p-4 rounded-lg">
-                      <p className="font-bold text-slate-900 mb-1 text-sm">Insurance Support</p>
-                      <p className="text-slate-600 text-sm">Most major Hawaii health insurance providers accepted, including Kaiser, HMSA, and HMAA.</p>
+                  <div className="mt-6 bg-slate-50 p-4 rounded-lg border border-slate-100">
+                      <p className="font-bold text-slate-900 mb-1 text-sm">Insurance Information</p>
+                      <p className="text-slate-600 text-sm"><strong>Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA.</strong></p>
                   </div>
                 </div>
               </CardContent>

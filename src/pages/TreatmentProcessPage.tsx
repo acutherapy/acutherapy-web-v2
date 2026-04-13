@@ -103,8 +103,13 @@ export default function TreatmentProcessPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/80" />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm mb-6 backdrop-blur-sm">
-            <ShieldCheck size={16} /> <span>Trusted Honolulu Pain Clinic</span>
+          <div className="flex flex-wrap justify-center gap-3 mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm backdrop-blur-sm">
+              <ShieldCheck size={16} /> <span>Trusted Honolulu Pain Clinic</span>
+            </div>
+            <div className="inline-flex items-center px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-200 border border-emerald-500/30 font-medium text-sm backdrop-blur-sm">
+              Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
+            </div>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Treatment Process</h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Medical-grade treatments customized for lasting relief and recovery in Honolulu.</p>
@@ -181,25 +186,29 @@ export default function TreatmentProcessPage() {
       </div>
     
           
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Causes Treatment Process?</h2>
-<p className="text-lg text-slate-700 leading-relaxed mb-6">Treatment Process can be triggered by a variety of factors including chronic stress, poor posture, repetitive strain, or acute injuries. Over time, these factors create blockages in blood circulation and nerve function, leading to persistent discomfort.</p>
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Our Three Core Pillars of Healing</h2>
+<p className="text-lg text-slate-700 leading-relaxed mb-6">At AcuTherapy Clinics, we don't believe in a one-size-fits-all approach. However, all of our advanced holistic protocols revolve around three primary, highly effective treatments structurally designed to eliminate pain and correct internal functional imbalances.</p>
 
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Acupuncture Helps</h2>
-<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li><strong>Pain Relief:</strong> Triggers the release of endorphins to block pain signals effectively.</li>
-<li><strong>Nervous System Regulation:</strong> Calms the central nervous system, reducing tension without relying on pharmaceuticals.</li>
-<li><strong>Improved Circulation:</strong> Enhances blood flow to the affected areas, accelerating the natural healing process.</li>
-</ul>
+<div className="space-y-8 mb-8">
+  <div className="bg-white p-6 rounded-2xl border border-blue-100 shadow-sm border-l-4 border-l-blue-500 hover:shadow-md transition-shadow">
+     <h3 className="text-2xl font-bold text-slate-900 mb-3">1. Acupuncture</h3>
+     <p className="text-lg text-slate-700 leading-relaxed">The cornerstone of our practice. From deep electroacupuncture mapping for neuropathic pain to gentle meridian techniques for anxiety and fertility, our neuro-modulating acupuncture physically resets nerve pathways, releases endorphins, and dramatically increases local blood flow to damaged tissues.</p>
+  </div>
 
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect During Your Session</h2>
-<p className="text-lg text-slate-700 leading-relaxed mb-6">During your first experience, Dr. David Cai will conduct a thorough assessment to understand your unique condition. The treatment itself is deeply relaxing. Many patients notice a distinct change in symptoms, experiencing immediate lightness and reduced tension right after the needles are gently placed.</p>
+  <div className="bg-white p-6 rounded-2xl border border-emerald-100 shadow-sm border-l-4 border-l-emerald-500 hover:shadow-md transition-shadow">
+     <h3 className="text-2xl font-bold text-slate-900 mb-3">2. Medical Massage</h3>
+     <p className="text-lg text-slate-700 leading-relaxed">Unlike a spa massage, our medical massage explicitly targets torn fascia, whiplash scar tissue, and chronic musculoskeletal knots. It works synergistically with acupuncture to mechanically break down tension barriers, offering immediate mobility restoration.</p>
+  </div>
 
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Who Is This For?</h2>
-<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li>Individuals suffering from chronic pain who have not found relief through conventional methods.</li>
-<li>High-stress professionals seeking natural nervous system regulation.</li>
-<li>Athletes or individuals recovering from an injury needing accelerated healing.</li>
-</ul>
+  <div className="bg-white p-6 rounded-2xl border border-amber-100 shadow-sm border-l-4 border-l-amber-500 hover:shadow-md transition-shadow">
+     <h3 className="text-2xl font-bold text-slate-900 mb-3">3. Fire Cupping Therapy & Gua Sha</h3>
+     <p className="text-lg text-slate-700 leading-relaxed">A powerful decompressive technique. Traditional fire cupping lifts the connective tissues and floods the area with fresh, oxygenated blood while pulling out stagnant toxins. It is immensely popular for stubborn lower back pain, sports injuries, and muscular detox.</p>
+  </div>
+</div>
+
+<p className="text-lg text-slate-700 leading-relaxed mb-6 italic">
+  *Note: While these are our primary foundational treatments, Dr. Cai also offers supplementary regimens (such as prescribed custom Chinese Herbal Medicine or localized Dry Needling) when individually necessary to guarantee your optimal healing. All other specialized named conditions simply fall under these core therapeutic umbrellas.
+</p>
 
 <div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
 <h2 className="text-3xl font-bold text-blue-900 mb-4">Ready to find relief?</h2>
@@ -279,6 +288,10 @@ export default function TreatmentProcessPage() {
                   <div className="mt-6 bg-slate-50 p-4 rounded-lg">
                       <p className="font-bold text-slate-900 mb-1 text-sm">Hours of Operation</p>
                       <p className="text-slate-600 text-sm">Mon-Fri: 9am - 1pm, Sat: 8am - 12pm</p>
+                  </div>
+                  <div className="mt-6 bg-slate-50 p-4 rounded-lg border border-slate-100">
+                      <p className="font-bold text-slate-900 mb-1 text-sm">Insurance Information</p>
+                      <p className="text-slate-600 text-sm"><strong>Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA.</strong></p>
                   </div>
                 </div>
 

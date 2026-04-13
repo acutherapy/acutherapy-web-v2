@@ -24,8 +24,13 @@ export default function NeckPainTreatmentHonoluluPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/80" />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm mb-6 backdrop-blur-sm">
-            <ShieldCheck size={16} /> <span>Restoring Cervical Mobility Fast</span>
+          <div className="flex flex-wrap justify-center gap-3 mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm backdrop-blur-sm">
+              <ShieldCheck size={16} /> <span>Restoring Cervical Mobility Fast</span>
+            </div>
+            <div className="inline-flex items-center px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-200 border border-emerald-500/30 font-medium text-sm backdrop-blur-sm">
+              Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
+            </div>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Neck Pain Treatment in Honolulu</h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Turn your head without wincing. Advanced medical acupuncture protocols to melt away neck tension and heal cervical injuries.</p>
@@ -49,13 +54,15 @@ export default function NeckPainTreatmentHonoluluPage() {
               Additionally, acute injuries like auto accidents cause aggressive whiplash, tearing the delicate micro-fascia of the neck. When the body attempts to heal this trauma, it often creates disorganized, tough scar tissue that aggressively limits your range of motion long after the initial crash.
             </p>
 
-            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Our Honolulu Acupuncture Provides Relief</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Our Three Core Pillars Provide Relief</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
-              Acupuncture directly targets the inflamed motor points of the trapezius, levator scapulae, and deep cervical stabilizing muscles. By strategically placing hair-thin needles into these exact trigger points, we initiate an immediate localized reflex: the muscle fibers finally stop spasming and let go. 
+              We leverage our three structural modalities to attack chronic neck stiffness and cervical radiculopathy from every angle:
             </p>
-            <p className="text-lg text-slate-700 leading-relaxed mb-6">
-              This physical release takes the pressure off of the pinched cervical nerves that cause radiating pain down your arms or up into your skull (migraines). Simultaneously, the treatment vastly dilates local blood flow, flushing out cellular waste and bringing highly oxygenated blood to accelerate the healing of your spine.
-            </p>
+            <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
+              <li><strong>Acupuncture:</strong> Using targeted micro-stimulation, we directly target the inflamed motor points of the trapezius and deep cervical stabilizing muscles. This innate reflex stops muscle spasms and takes the pressure off pinched cervical nerves that cause radiating arm pain.</li>
+              <li><strong>Medical Massage:</strong> Unlike a basic rub, our clinical massage physically breaks down the tough, disorganized scar tissue and fascial adhesions resulting from chronic "Tech Neck" posture or auto whiplash injuries.</li>
+              <li><strong>Fire Cupping Therapy:</strong> Strategically applied to the upper back and shoulder blades to rapidly decompress the cervical spine, aggressively pulling stagnant cellular waste away from the injured joints.</li>
+            </ul>
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect & Real Patient Results</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
@@ -63,8 +70,7 @@ export default function NeckPainTreatmentHonoluluPage() {
             </p>
             <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg my-8">
               <p className="text-lg text-slate-800 italic font-medium">
-                "Many pat<li>Professionals staring at screens all day with tight shoulders.</li>
-<li>People waking up with a crick in their neck.</li>etely to the left or right without the sharp, stabbing pain they’ve endured for months."
+                "Many patients discover that they can turn their head completely to the left or right without the sharp, stabbing pain they’ve endured for months. Expect a profound feeling of lightness in the head following an upper cervical release."
               </p>
             </div>
 
@@ -80,7 +86,7 @@ export default function NeckPainTreatmentHonoluluPage() {
             <div className="space-y-6 mb-12">
               <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
                 <h3 className="text-xl font-bold text-slate-900 mb-2 flex items-center gap-2"><HelpCircle className="text-blue-500" size={20}/> Can this help with pain radiating down my arm?</h3>
-                <p className="text-slate-600">Yes. Cervical radiculopathy (pinched nerves in the neChronic tech neck, poor sleep posture, and stress lead to severe stiffening of the cervical spine, traps, and levator scapulae muscles.elieve the inflammation and open the nerve pathway.</p>
+                <p className="text-slate-600">Yes. Cervical radiculopathy (pinched nerves in the neck) causes severe symptoms shooting down the arm. By relaxing the extremely tight cervical musculature, we dramatically relieve the nerve compression causing these radiating symptoms.</p>
               </div>
               <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
                 <h3 className="text-xl font-bold text-slate-900 mb-2 flex items-center gap-2"><HelpCircle className="text-blue-500" size={20}/> How many sessions will I need?</h3>
@@ -177,9 +183,9 @@ export default function NeckPainTreatmentHonoluluPage() {
                                                     </a>
                     </div>
                   </div>
-                  <div className="mt-6 bg-slate-50 p-4 rounded-lg">
-                      <p className="font-bold text-slate-900 mb-1 text-sm">Insurance Support</p>
-                      <p className="text-slate-600 text-sm">100% Coverage for Auto No-Fault PIP & Workers Comp.</p>
+                  <div className="mt-6 bg-slate-50 p-4 rounded-lg border border-slate-100">
+                      <p className="font-bold text-slate-900 mb-1 text-sm">Insurance Information</p>
+                      <p className="text-slate-600 text-sm"><strong>Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA.</strong></p>
                   </div>
                 </div>
               </CardContent>

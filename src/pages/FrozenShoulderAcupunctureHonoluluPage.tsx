@@ -103,11 +103,16 @@ export default function FrozenShoulderAcupunctureHonoluluPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/80" />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm mb-6 backdrop-blur-sm">
-            <ShieldCheck size={16} /> <span>Trusted Honolulu Pain Clinic</span>
+          <div className="flex flex-wrap justify-center gap-3 mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm backdrop-blur-sm">
+              <ShieldCheck size={16} /> <span>Restoring Joint Mobility</span>
+            </div>
+            <div className="inline-flex items-center px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-200 border border-emerald-500/30 font-medium text-sm backdrop-blur-sm">
+              Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
+            </div>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Frozen Shoulder Acupuncture Honolulu</h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Medical-grade treatments customized for lasting relief and recovery in Honolulu.</p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Frozen Shoulder Treatment in Honolulu</h1>
+          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Break through the stubborn connective tissue capsule and regain your arm's full range of motion.</p>
         </div>
       </section>
 
@@ -118,34 +123,27 @@ export default function FrozenShoulderAcupunctureHonoluluPage() {
           <article className="md:col-span-8">
             
               <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
-                Suffering from <strong>Frozen Shoulder Acupuncture Honolulu</strong> can deeply disrupt your daily life, making basic movements agonizing and draining your energy. At AcuTherapy Clinics in Honolulu, Dr. David Cai applies over 30 years of medical acupuncture experience to resolve the root cause of frozen shoulder acupuncture honolulu, offering a lasting alternative to surgery or heavy pharmaceuticals.
+                If reaching for the top shelf or putting on a jacket has become excruciatingly painful and physically impossible, you are dealing with Adhesive Capsulitis—commonly known as Frozen Shoulder. At AcuTherapy Clinics, we recognize that this condition is notoriously resistant to standard physical therapy. We deploy intense, concentrated treatment protocols to forcibly unfreeze the joint capsule and strip away the severe restrictive adhesions binding your shoulder.
               </p>
               
       <div className="grid md:grid-cols-2 gap-8 mb-12">
         <figure className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/50 group">
-          <img loading="lazy" src="/images/acupressure-facial-massage.jpg" alt="Acupressure massage" className="w-full h-[350px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
-          <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-6 pt-12 text-white font-medium">Tension Release Massage</figcaption>
+          <img loading="lazy" src="/images/acupressure-facial-massage.jpg" alt="Acupuncture joint treatment" className="w-full h-[350px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
+          <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-6 pt-12 text-white font-medium">Restoring Joint Mobility</figcaption>
         </figure>
         <figure className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/50 group mt-8 md:mt-0">
           <img loading="lazy" src="/images/neck-shoulder-acupressure.jpg" alt="Neck shoulder massage" className="w-full h-[350px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
-          <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-6 pt-12 text-white font-medium">Trapezius Muscle Medical Massage</figcaption>
+          <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-6 pt-12 text-white font-medium">Scapula Stabilization Massage</figcaption>
         </figure>
       </div>
-              <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">The Science of Treating Frozen Shoulder Acupuncture Honolulu with Acupuncture</h2>
+              <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Our Three Core Pillars for Unfreezing the Shoulder</h2>
               <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                Frozen Shoulder Acupuncture Honolulu is often the result of trapped inflammation, peripheral nerve irritation, or deep myofascial tension that standard treatments fail to reach. Our specific needle protocols for frozen shoulder acupuncture honolulu stimulate local vasodilation—massively increasing blood flow to oxygen-starved tissues.
-              </p>
-              <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                Furthermore, precise stimulation signals the central nervous system to release natural endorphins and opioid-like neuropeptides, dramatically downregulating the pain signals caused by frozen shoulder acupuncture honolulu before they reach the brain.
-              </p>
-              <h3 className="text-2xl font-bold text-slate-900 mt-10 mb-6 border-b pb-2">Our Highly Effective Treatment Process</h3>
-              <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                We don't use a "one size fits all" approach. Your treatment for frozen shoulder acupuncture honolulu may integrate multiple modalities for optimal effectiveness:
+                Unlocking a frozen shoulder requires physically combating the hardened capsule. We integrate our three clinical modalities to attack the restriction simultaneously:
               </p>
               <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
-                <li><strong>Targeted Electro-Acupuncture:</strong> To relieve severe nerve pain or muscle spasms.</li>
-                <li><strong>Medical Massage (Tui-Na):</strong> To physically break down scar tissue and fascia adhesions compounding the structural issue.</li>
-                <li><strong>Fire Cupping Therapy:</strong> To pull stagnant blood and lactic acid out of deep muscle layers.</li>
+                <li><strong>Acupuncture:</strong> By applying needles both locally into the tightened glenohumeral joint capsule and distally into the lower legs (which powerfully mirrors the shoulder mechanics), we trigger significant endorphin release and safely expand the joint space to allow immediate stretching with reduced pain.</li>
+                <li><strong>Medical Massage:</strong> Frozen shoulder causes the entire scapula (shoulder blade) to heavily compensate. We physically break down the extreme fascial knots in your subscapularis, lats, and trapezius to unglue the shoulder blade from your ribs.</li>
+                <li><strong>Fire Cupping Therapy:</strong> By placing cups around the front and back of the joint, we use aggressive negative suction to forcefully lift the deep fascial layers apart, ripping the oxygen-starved adhesions that are trapping the joint.</li>
               </ul>
         
             
@@ -198,32 +196,7 @@ export default function FrozenShoulderAcupunctureHonoluluPage() {
       </div>
     
           
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Causes Frozen Shoulder?</h2>
-<p className="text-lg text-slate-700 leading-relaxed mb-6">Frozen Shoulder Also known as adhesive capsulitis, frozen shoulder occurs when the connective tissue capsule around the joint thickens and tightens, severely restricting movement.</p>
 
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Acupuncture Helps</h2>
-<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li><strong>Pain Relief:</strong> Triggers the release of endorphins to block pain signals effectively.</li>
-<li><strong>Nervous System Regulation:</strong> Calms the central nervous system, reducing tension without relying on pharmaceuticals.</li>
-<li><strong>Improved Circulation:</strong> Enhances blood flow to the affected areas, accelerating the natural healing process.</li>
-</ul>
-
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect During Your Session</h2>
-<p className="text-lg text-slate-700 leading-relaxed mb-6">Dr. Cai uses advanced distal needling techniques—sometimes placing needles in the leg to treat the shoulder—allowing you to actively move and stretch the shoulder during the session for immediate range of motion gains.</p>
-
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Who Is This For?</h2>
-<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li>Individuals suffering from chronic pain who have not found relief through conventional methods.</li>
-<li>High-stress professionals seeking natural nervous system regulation.</li>
-<li>Athletes or individuals recovering from an injury needing accelerated healing.</li>
-</ul>
-
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">FAQ</h2>
-<div className="space-y-6 mb-12">
-<div><h4 className="font-bold text-lg text-slate-900">Q1: How many sessions are needed for Frozen Shoulder?</h4><p className="text-slate-700">A: Frozen shoulder is notoriously slow to heal. However, acupuncture can accelerate the thawing phase dramatically, usually requiring 8-12 consistent sessions.</p></div>
-<div><h4 className="font-bold text-lg text-slate-900">Q2: Does the treatment hurt?</h4><p className="text-slate-700">A: You may feel some soreness when we stretch the capsule, but the needles themselves are virtually painless.</p></div>
-<div><h4 className="font-bold text-lg text-slate-900">Q3: Is it safe?</h4><p className="text-slate-700">A: Absolutely. Acupuncture is a highly safe, non-invasive alternative to surgery and heavy medications.</p></div>
-</div>
 
 <div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
 <h2 className="text-3xl font-bold text-blue-900 mb-4">Ready to find relief?</h2>
@@ -242,31 +215,9 @@ export default function FrozenShoulderAcupunctureHonoluluPage() {
                 <p className="text-slate-600 mb-8 text-sm">Bridge the gap to a pain-free life today.</p>
                 <div className="flex flex-col gap-4">
                   <Link to="/book-appointment">
-
-                    <Link to="/book-appointment">
-
-
-                      <Link to="/book-appointment">
-
-
-
-                        <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
-
-
-
-                          <Calendar className="mr-2" /> Schedule Online
-
-
-
-                        </Button>
-
-
-
-                      </Link>
-
-
-                    </Link>
-
+                    <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
+                      <Calendar className="mr-2" /> Schedule Online
+                    </Button>
                   </Link>
                   <Button variant="outline" className="w-full h-14 text-lg border-2 border-slate-200" onClick={() => window.location.href='tel:+18085287177'}>
                     <PhoneCall className="mr-2 h-5 w-5 text-blue-600" /> (808) 528-7177
@@ -300,9 +251,9 @@ export default function FrozenShoulderAcupunctureHonoluluPage() {
                       <p className="text-slate-600 text-sm"><strong>Ph:</strong> (808) 452-1900 <span className="mx-1">|</span> <strong>Fax:</strong> (808) 452-1521</p>
                     </div>
                   </div>
-                  <div className="mt-6 bg-slate-50 p-4 rounded-lg">
-                      <p className="font-bold text-slate-900 mb-1 text-sm">Hours of Operation</p>
-                      <p className="text-slate-600 text-sm">Mon-Fri: 9am - 1pm, Sat: 8am - 12pm</p>
+                  <div className="mt-6 bg-slate-50 p-4 rounded-lg border border-slate-100">
+                      <p className="font-bold text-slate-900 mb-1 text-sm">Insurance Information</p>
+                      <p className="text-slate-600 text-sm"><strong>Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA.</strong></p>
                   </div>
                 </div>
 

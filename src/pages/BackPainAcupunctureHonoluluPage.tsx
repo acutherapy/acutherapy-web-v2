@@ -24,8 +24,13 @@ export default function BackPainAcupunctureHonoluluPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/80" />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm mb-6 backdrop-blur-sm">
-            <ShieldCheck size={16} /> <span>#1 Back Pain Relief Clinic</span>
+          <div className="flex flex-wrap justify-center gap-3 mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm backdrop-blur-sm">
+              <ShieldCheck size={16} /> <span>#1 Back Pain Relief Clinic</span>
+            </div>
+            <div className="inline-flex items-center px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-200 border border-emerald-500/30 font-medium text-sm backdrop-blur-sm">
+              Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
+            </div>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Acupuncture for Back Pain in Honolulu</h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Avoid surgery and heavy medication. Clinically proven back pain treatments utilizing advanced meridian therapy.</p>
@@ -38,17 +43,17 @@ export default function BackPainAcupunctureHonoluluPage() {
           
           <article className="md:col-span-8">
             <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
-              If you are enduring daily lower back pain in Honolulu, you know how severely it can limit your life—from sitting at work to lifting groceries or sleeping through the night. Our targeted <strong>Back Pain Acupuncture in Honolulu</strong> focuses on restoring mobility, reducing deep spinal inflammation, and getting you back on your feet quickly without relying on pharmaceuticals.
+              If you are enduring daily lower back pain in Honolulu, you know how severely it can limit your life—from sitting at work to lifting groceries or sleeping through the night. Our targeted <strong>Back Pain Acupuncture in Honolulu</strong> focuses on restoring mobility, reducing deep spinal inflammation, and getting you back on your feet quickly without relying on pharmaceuticals, effectively treating conditions like sciatica, herniated discs, and spinal stenosis.
             </p>
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Causes Severe Back Pain?</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
-              Low back pain often results from prolonged sitting, poor lifting biomechanics, herniated discs, or muscle spasms in the lumbar region. In TCM, this presents as structural stagnation that blocks the flow of Qi and blood.
+              Low back pain often results from prolonged sitting, poor lifting biomechanics, herniated discs, spinal stenosis, or severe muscle spasms in the lumbar region. In TCM, this presents as structural stagnation that blocks the flow of Qi and blood.
             </p>
 
-            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Acupuncture Relieves Back Pain</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Our Core Treatments Relieve Back Pain</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
-              Acupuncture acts as a circuit breaker for back pain. By precisely inserting sterile needles into tight muscle bands and specific lumbar meridians, we compel the surrounding connective tissues to release their grip. The micro-stimulation heavily dilates local blood vessels, flushing out stagnant lactic acid and bathing the injured spinal discs in highly oxygenated blood. Simultaneously, it prompts the central nervous system to flood the body with potent neurochemicals to naturally kill the pain.
+              We leverage our core clinical foundations to combat lumbar issues. <strong>Acupuncture</strong> acts as a circuit breaker, utilizing sterile needles along lumbar meridians to dramatically reduce nerve inflammation, block sciatica pain signals, and release endorphins. We consistently layer this with <strong>Medical Massage</strong> to explicitly target torn fascia and muscle spasms, mechanically breaking down paraspinal tension. For stubborn stagnation, <strong>Fire Cupping Therapy</strong> provides powerful decompression, lifting connective tissues to flood the injured spinal discs with highly oxygenated blood.
             </p>
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect & Real Patient Results</h2>
@@ -172,9 +177,9 @@ export default function BackPainAcupunctureHonoluluPage() {
                                                     </a>
                     </div>
                   </div>
-                  <div className="mt-6 bg-slate-50 p-4 rounded-lg">
-                      <p className="font-bold text-slate-900 mb-1 text-sm">Insurance Support</p>
-                      <p className="text-slate-600 text-sm">100% Coverage for Auto No-Fault PIP & Workers Comp.</p>
+                  <div className="mt-6 bg-slate-50 p-4 rounded-lg border border-slate-100">
+                      <p className="font-bold text-slate-900 mb-1 text-sm">Insurance Information</p>
+                      <p className="text-slate-600 text-sm"><strong>Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA.</strong></p>
                   </div>
                 </div>
               </CardContent>

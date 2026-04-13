@@ -24,8 +24,13 @@ export default function SciaticaTreatmentHonoluluPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/80" />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm mb-6 backdrop-blur-sm">
-            <ShieldCheck size={16} /> <span>Specialized Nerve Pain Relief</span>
+          <div className="flex flex-wrap justify-center gap-3 mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm backdrop-blur-sm">
+              <ShieldCheck size={16} /> <span>Specialized Nerve Pain Relief</span>
+            </div>
+            <div className="inline-flex items-center px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-200 border border-emerald-500/30 font-medium text-sm backdrop-blur-sm">
+              Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
+            </div>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Sciatica Treatment in Honolulu</h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Stop the shooting, burning leg pain naturally. Advanced acupuncture protocols for sciatic nerve decompression.</p>
@@ -43,13 +48,18 @@ export default function SciaticaTreatmentHonoluluPage() {
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Exactly Causes Sciatica Nerve Pain?</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
-              Sciatica isn't a disease itself; it’s a symptom of underlying mechanical compression. The sciatic nerve is the longest and thickest nerve in the human body. When surrounding tissues—such as a herniated disc in the lower lumbar spine, or a severely tight piriformis muscle in the buttocks—pinch or irritate this massive nerve, it sends violent electrical pain signals all the way down the leg to the toes. 
+              Sciatica isn't a disease itself; it’s a symptom of underlying mechanical compression. The sciatic nerve is the longest and thickest nerve in the human body. When surrounding tissues—such as a herniated lumbar disc or a severely locked piriformis muscle (Piriformis syndrome) in the buttocks—pinch this massive nerve, it sends violent electrical pain signals down the leg.
             </p>
 
-            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Our Sciatica Acupuncture Helps</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Our Three Core Pillars for Sciatica Relief</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
-              Our clinical approach focuses on decompressive and anti-inflammatory therapy. By inserting micro-fine acupuncture needles directly into the deeply locked motor points of the glutes, lumbar paraspinals, and piriformis muscles, we force the muscle fibers to mechanically release. This physically takes the overwhelming pressure off the sciatic nerve. Simultaneously, the treatment heavily downregulates the localized nerve-end inflammation that makes sciatica feel like a "burning" sensation.
+              We leverage our three structural modalities to attack sciatica from every angle:
             </p>
+            <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
+              <li><strong>Acupuncture:</strong> Using targeted micro-stimulation along specific meridians to act as a circuit breaker, rapidly relieving severe nerve inflammation and halting gluteal spasms.</li>
+              <li><strong>Medical Massage:</strong> Physically breaking down the deep fascial adhesions within the piriformis and lumbar muscles that are crushing the sciatic nerve.</li>
+              <li><strong>Fire Cupping Therapy:</strong> Pulling stagnant blood and chronic inflammatory fluid out of the deep gluteal layers, creating rapid decompression for the trapped nerve.</li>
+            </ul>
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect & Real Patient Results</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
@@ -167,9 +177,9 @@ export default function SciaticaTreatmentHonoluluPage() {
                                                     </a>
                     </div>
                   </div>
-                  <div className="mt-6 bg-slate-50 p-4 rounded-lg">
-                      <p className="font-bold text-slate-900 mb-1 text-sm">Insurance Support</p>
-                      <p className="text-slate-600 text-sm">Most major Hawaii health insurance providers accepted, including No-Fault PIP.</p>
+                  <div className="mt-6 bg-slate-50 p-4 rounded-lg border border-slate-100">
+                      <p className="font-bold text-slate-900 mb-1 text-sm">Insurance Information</p>
+                      <p className="text-slate-600 text-sm"><strong>Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA.</strong></p>
                   </div>
                 </div>
               </CardContent>

@@ -24,8 +24,13 @@ export default function AutoAccidentInjuryTreatmentHonoluluPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/80" />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm mb-6 backdrop-blur-sm">
-            <ShieldCheck size={16} /> <span>100% No-Fault PIP Insurance Accepted</span>
+          <div className="flex flex-wrap justify-center gap-3 mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm backdrop-blur-sm">
+              <ShieldCheck size={16} /> <span>100% No-Fault PIP Insurance Accepted</span>
+            </div>
+            <div className="inline-flex items-center px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-200 border border-emerald-500/30 font-medium text-sm backdrop-blur-sm">
+              Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
+            </div>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Auto Accident Injury Treatment in Honolulu</h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Recover safely from whiplash, neck pain, and back pain with zero out-of-pocket costs using your Hawaii auto insurance.</p>
@@ -43,12 +48,12 @@ export default function AutoAccidentInjuryTreatmentHonoluluPage() {
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Understanding Whiplash & Seatbelt Trauma</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
-              The most common consequence of a car crash is whiplash—a severe hyperextension of the complex neck ligaments. Symptoms like excruciating neck stiffness, radiating shoulder pain, massive tension headaches, and lower back contusions from seatbelt lockdown rarely show up fully on the first day. It often takes 48-72 hours for the severe neuro-inflammation to peak, leaving victims in immobilizing pain for weeks or months.
+              The most common consequence of a rear-end collision or major car crash is whiplash—a severe hyperextension of the complex neck ligaments. Symptoms like excruciating neck stiffness, radiating shoulder pain, post-traumatic tension headaches, and lower back contusions from seatbelt lockdown rarely show up fully on the first day. It often takes 48-72 hours for the severe neuro-inflammation to peak, leaving victims in immobilizing pain for weeks or months.
             </p>
 
-            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Our Post-Crash Acupuncture Helps</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Our Three Core Treatments Help</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
-              When standard painkillers wear off, the muscular spasms remain. Post-collision medical acupuncture directly intercepts the body's trauma response. We target the heavily traumatized cervical spine and lumbar regions with specialized micro-needling. This forces the tense, knotted muscle fibers to release their vice-grip safely. It also floods the damaged ligament tissues with fresh, highly oxygenated blood necessary for cellular repair and hematoma (bruising) breakdown.
+              When standard painkillers wear off, the muscular spasms remain. We leverage our core modalities to directly intercept the body's trauma response. <strong>Acupuncture</strong> serves as a neuro-modulating circuit breaker, targeting the traumatized cervical spine and lumbar regions to force tense, knotted muscle fibers to release their vice-grip silently and safely. This is systematically paired with <strong>Medical Massage</strong> to manually break down accumulating scar tissue and whiplash fascial adhesions. Finally, <strong>Fire Cupping Therapy</strong> provides aggressive decompression, flooding the damaged ligament tissues with fresh, highly oxygenated blood crucial for cellular repair and hematoma (bruising) breakdown.
             </p>
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect & Zero Out-Of-Pocket Costs</h2>
@@ -176,9 +181,13 @@ export default function AutoAccidentInjuryTreatmentHonoluluPage() {
                       
                     </div>
                   </div>
-                  <div className="mt-6 bg-green-50 p-4 rounded-lg border border-green-200">
+                  <div className="mt-6 bg-green-50 p-4 rounded-lg border border-green-200 mb-4">
                       <p className="font-bold text-green-900 mb-1 text-sm flex items-center gap-1"><ShieldCheck size={16} /> PIP Covered Approved</p>
                       <p className="text-green-800 text-sm">You pay $0 for your treatments. We bill your auto insurance directly.</p>
+                  </div>
+                  <div className="bg-slate-50 p-4 rounded-lg border border-slate-100">
+                      <p className="font-bold text-slate-900 mb-1 text-sm">Standard Insurance Also Accepted</p>
+                      <p className="text-slate-600 text-sm"><strong>Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA.</strong></p>
                   </div>
                 </div>
               </CardContent>

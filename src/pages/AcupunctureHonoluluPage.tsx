@@ -24,8 +24,13 @@ export default function AcupunctureHonoluluPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/80" />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm mb-6 backdrop-blur-sm">
-            <ShieldCheck size={16} /> <span>Trusted Honolulu Acupuncture Clinic</span>
+          <div className="flex flex-wrap justify-center gap-3 mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm backdrop-blur-sm">
+              <ShieldCheck size={16} /> <span>Trusted Honolulu Acupuncture Clinic</span>
+            </div>
+            <div className="inline-flex items-center px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-200 border border-emerald-500/30 font-medium text-sm backdrop-blur-sm">
+              Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
+            </div>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Acupuncture in Honolulu</h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Medical-grade treatments customized for lasting pain relief, injury recovery, and optimal wellness.</p>
@@ -38,7 +43,7 @@ export default function AcupunctureHonoluluPage() {
           
           <article className="md:col-span-8">
             <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
-              If you are experiencing chronic pain, an unexpected auto injury, or stress-related health issues in Honolulu, acupuncture may help relieve your pain, restore natural balance, and improve your overall daily function. At AcuTherapy Clinics, Dr. David Cai utilizes over 30 years of clinical experience to provide the gold standard of <strong>Acupuncture in Honolulu</strong>.
+              If you are experiencing chronic pain, an unexpected auto injury, fertility challenges, or severe anxiety-related sleep issues in Honolulu, our integrated approach can restore natural balance and improve your overall daily function. Dr. David Cai utilizes over 30 years of clinical experience to provide the gold standard of <strong>Acupuncture in Honolulu</strong>, frequently recognized by patients as the best acupuncture care on the island.
             </p>
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Causes Chronic Pain & Imbalance?</h2>
@@ -46,9 +51,9 @@ export default function AcupunctureHonoluluPage() {
               Many patients struggling with chronic issues don't realize that standard lifestyle factors—such as poor posture, repetitive stress, high-pressure work environments, or old injuries—can severely disrupt the body's natural healing systems. When nerve pathways become inflamed or muscular fascia binds up, the result is localized pain that typical over-the-counter medications only mask temporarily.
             </p>
 
-            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Acupuncture Helps</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Our Holistic Approach Helps</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
-              Unlike treatments that simply dull sensory responses, professional acupuncture works at the physiological level. By placing ultra-fine, sterile needles at specific meridian points, we trigger the nervous system to release natural endorphins and anti-inflammatory neuropeptides. Furthermore, the micro-trauma from the needles heavily increases localized blood circulation, rushing oxygen and healing nutrients to the deeply damaged tissues that need them most.
+              Unlike treatments that simply dull sensory responses, professional acupuncture works at the physiological level. By placing ultra-fine needles at critical neurological points, we trigger the nervous system to release natural endorphins and anti-inflammatory neuropeptides. Depending on your diagnosis, Dr. Cai may also integrate <strong>electroacupuncture</strong> for deep nerve pain, localized <strong>dry needling</strong> for sports ligament tears, or custom <strong>Chinese herbal medicine</strong> to address internal imbalances responsibly.
             </p>
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect & Real Patient Results</h2>
@@ -64,9 +69,10 @@ export default function AcupunctureHonoluluPage() {
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Who Is This For?</h2>
             <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
               <li><strong>Chronic Pain Sufferers:</strong> Long-term back, neck, or joint pain that hasn't responded to other physical therapies.</li>
-              <li><strong>Auto Accident Victims:</strong> Rapid reduction of whiplash inflammation and soft tissue damage (100% covered under Hawaii PIP auto insurance).</li>
-              <li><strong>High-Stress Professionals:</strong> Seeking natural nervous system regulation, improved sleep, and anxiety relief.</li>
-              <li><strong>Sports Injuries:</strong> Athletes looking to speed up muscle recovery and resolve stubborn tendinitis.</li>
+              <li><strong>Migraine Sufferers:</strong> Targeting vascular and muscular tension to significantly reduce chronic therapy-resistant headaches.</li>
+              <li><strong>Women's Health & Wellness:</strong> Compassionate, specialized support for fertility acupuncture, menstrual imbalances, and safe weight loss management.</li>
+              <li><strong>Auto Accident Victims:</strong> Rapid reduction of whiplash inflammation (100% covered under Hawaii PIP auto insurance).</li>
+              <li><strong>High-Stress Professionals:</strong> Seeking naturally effective nervous system regulation, insomnia treatment, and robust anxiety relief.</li>
             </ul>
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Frequently Asked Questions</h2>
@@ -160,9 +166,9 @@ export default function AcupunctureHonoluluPage() {
                       
                     </div>
                   </div>
-                  <div className="mt-6 bg-slate-50 p-4 rounded-lg">
-                      <p className="font-bold text-slate-900 mb-1 text-sm">Insurance Support</p>
-                      <p className="text-slate-600 text-sm">100% Coverage for Auto No-Fault PIP & Workers Comp.</p>
+                  <div className="mt-6 bg-slate-50 p-4 rounded-lg border border-slate-100">
+                      <p className="font-bold text-slate-900 mb-1 text-sm">Insurance Information</p>
+                      <p className="text-slate-600 text-sm"><strong>Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA.</strong></p>
                   </div>
                 </div>
               </CardContent>

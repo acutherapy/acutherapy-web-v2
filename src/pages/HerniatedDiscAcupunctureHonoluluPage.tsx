@@ -24,8 +24,13 @@ export default function HerniatedDiscAcupunctureHonoluluPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/80" />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm mb-6 backdrop-blur-sm">
-            <ShieldCheck size={16} /> <span>Non-Surgical Disc Rehabilitation</span>
+          <div className="flex flex-wrap justify-center gap-3 mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm backdrop-blur-sm">
+              <ShieldCheck size={16} /> <span>Non-Surgical Disc Rehabilitation</span>
+            </div>
+            <div className="inline-flex items-center px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-200 border border-emerald-500/30 font-medium text-sm backdrop-blur-sm">
+              Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
+            </div>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Herniated Disc Treatment in Honolulu</h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Avoid lumbar spine surgery. Powerful medical acupuncture protocols for relieving severe bulging disc nerve compression.</p>
@@ -49,13 +54,15 @@ export default function HerniatedDiscAcupunctureHonoluluPage() {
               When this happens, the highly acidic inner jelly leaks out directly onto the sensitive spinal nerve root. This chemical burn, combined with the physical mechanical compression of the bulge, causes the intense, radiating pain and severe muscular spasms that lock you to the bed.
             </p>
 
-            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Acupuncture Relieves Deep Spinal Compression</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Our Three Core Pillars for Herniated Discs</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
-              While acupuncture does not literally physically reposition the spilled disc material inside your spine, it radically changes the environment surrounding the injury. A massive component of a herniated disc's pain comes from the resulting massive reactive muscle spasms in your lower back. Your body "locks up" to protect the weakened spine, creating a secondary layer of devastating pain.
+              A herniated disc isn't just a spine problem; it's a massive mechanical compression issue. We use our three clinical modalities to attack the pain holistically, releasing the mechanical strain crushing the disc:
             </p>
-            <p className="text-lg text-slate-700 leading-relaxed mb-6">
-              By using precise neuro-acupuncture along the local lumbar spine and bilateral meridian points, we force the deeply locked paraspinal muscles to completely relax. This physical release takes significant mechanical pressure off the affected disc. Furthermore, the needles heavily stimulate systemic anti-inflammatories, drastically cooling down the "chemical burn" on the nerve root. 
-            </p>
+            <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
+              <li><strong>Acupuncture:</strong> Using precise electro-acupuncture along the local lumbar spine (Hua Tuo Jia Ji points), we force the deeply locked paraspinal muscles to completely relax. This physical release takes significant mechanical pressure off the affected disc while drastically cooling down the "chemical burn" on the nerve root.</li>
+              <li><strong>Medical Massage:</strong> We physically break apart the hardened fascial adhesions locking up your hips and glutes—the heavy muscles that are actually pulling your pelvis out of alignment and exacerbating the disc compression.</li>
+              <li><strong>Fire Cupping Therapy:</strong> Applied aggressively along the lower back, extreme negative pressure physically separates the glued fascial layers, decompressing the lumbar spine immediately.</li>
+            </ul>
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect & Real Patient Results</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
@@ -111,19 +118,7 @@ export default function HerniatedDiscAcupunctureHonoluluPage() {
             </div>
 
           
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Acupuncture Helps</h2>
-<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li><strong>Pain Relief:</strong> Triggers the release of endorphins to block pain signals effectively.</li>
-<li><strong>Nervous System Regulation:</strong> Calms the central nervous system, reducing tension without relying on pharmaceuticals.</li>
-<li><strong>Improved Circulation:</strong> Enhances blood flow to the affected areas, accelerating the natural healing process.</li>
-</ul>
 
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Who Is This For?</h2>
-<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li>Individuals suffering from chronic pain who have not found relief through conventional methods.</li>
-<li>High-stress professionals seeking natural nervous system regulation.</li>
-<li>Athletes or individuals recovering from an injury needing accelerated healing.</li>
-</ul>
 
 <div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
 <h2 className="text-3xl font-bold text-blue-900 mb-4">Ready to find relief?</h2>
@@ -176,9 +171,9 @@ export default function HerniatedDiscAcupunctureHonoluluPage() {
                                                     </a>
                     </div>
                   </div>
-                  <div className="mt-6 bg-slate-50 p-4 rounded-lg">
-                      <p className="font-bold text-slate-900 mb-1 text-sm">Insurance Support</p>
-                      <p className="text-slate-600 text-sm">Most major Hawaii health insurance providers accepted. No-Fault PIP 100% Covered.</p>
+                  <div className="mt-6 bg-slate-50 p-4 rounded-lg border border-slate-100">
+                      <p className="font-bold text-slate-900 mb-1 text-sm">Insurance Information</p>
+                      <p className="text-slate-600 text-sm"><strong>Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA.</strong></p>
                   </div>
                 </div>
               </CardContent>

@@ -10,8 +10,8 @@ export default function SciaticaAcupunctureHonoluluPage() {
   return (
     <>
       <Helmet>
-        <title>Sciatica Acupuncture Honolulu Treatment in Honolulu | AcuTherapy Clinics</title>
-        <meta name="description" content="Tired of Sciatica Acupuncture Honolulu? Dr. David Cai provides effective, non-surgical relief using advanced acupuncture and traditional Chinese medicine in Honolulu." />
+        <title>Sciatica Treatment & Acupuncture in Honolulu | AcuTherapy Clinics</title>
+        <meta name="description" content="Tired of debilitating sciatica pain? Dr. David Cai provides effective, non-surgical relief using advanced acupuncture and medical massage in Honolulu." />
         <script type="application/ld+json">
           {`
           {
@@ -103,8 +103,13 @@ export default function SciaticaAcupunctureHonoluluPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/80" />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm mb-6 backdrop-blur-sm">
-            <ShieldCheck size={16} /> <span>Trusted Honolulu Pain Clinic</span>
+          <div className="flex flex-wrap justify-center gap-3 mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm backdrop-blur-sm">
+              <ShieldCheck size={16} /> <span>Trusted Honolulu Pain Clinic</span>
+            </div>
+            <div className="inline-flex items-center px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-200 border border-emerald-500/30 font-medium text-sm backdrop-blur-sm">
+              Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
+            </div>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Sciatica Acupuncture Honolulu</h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Medical-grade treatments customized for lasting relief and recovery in Honolulu.</p>
@@ -118,28 +123,28 @@ export default function SciaticaAcupunctureHonoluluPage() {
           <article className="md:col-span-8">
             
               <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
-                Suffering from <strong>Sciatica Acupuncture Honolulu</strong> can deeply disrupt your daily life, making basic movements agonizing and draining your energy. At AcuTherapy Clinics in Honolulu, Dr. David Cai applies over 30 years of medical acupuncture experience to resolve the root cause of sciatica acupuncture honolulu, offering a lasting alternative to surgery or heavy pharmaceuticals.
+                Suffering from <strong>severe sciatic nerve pain</strong> can deeply disrupt your daily life, making basic movements agonizing and draining your energy. At AcuTherapy Clinics in Honolulu, Dr. David Cai applies over 30 years of medical experience to resolve the root cause of sciatica and Piriformis syndrome, offering a lasting alternative to spinal surgery or heavy pharmaceuticals.
               </p>
               
       <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/50 group mb-12 w-full max-w-3xl mx-auto">
         <img loading="lazy" src="/images/fire-cupping-therapy.jpg" alt="Fire cupping therapy" className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
         <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-8 pt-16 text-white text-lg font-medium">Traditional Fire Cupping Therapy for Deep Tissue Detox</figcaption>
       </div>
-              <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">The Science of Treating Sciatica Acupuncture Honolulu with Acupuncture</h2>
+              <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">The Science of Treating Sciatica</h2>
               <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                Sciatica Acupuncture Honolulu is often the result of trapped inflammation, peripheral nerve irritation, or deep myofascial tension that standard treatments fail to reach. Our specific needle protocols for sciatica acupuncture honolulu stimulate local vasodilation—massively increasing blood flow to oxygen-starved tissues.
+                Sciatica is often the result of trapped lumbar inflammation, spinal stenosis, or deep myofascial tension (such as a locked piriformis muscle) that standard treatments fail to reach. This creates agonizing, radiating leg pain. Our specific treatments stimulate local vasodilation—massively increasing blood flow to oxygen-starved sciatic nerves.
               </p>
               <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                Furthermore, precise stimulation signals the central nervous system to release natural endorphins and opioid-like neuropeptides, dramatically downregulating the pain signals caused by sciatica acupuncture honolulu before they reach the brain.
+                Furthermore, precise stimulation signals the central nervous system to release natural endorphins, dramatically downregulating the sharp, shooting pain signals before they reach the brain.
               </p>
-              <h3 className="text-2xl font-bold text-slate-900 mt-10 mb-6 border-b pb-2">Our Highly Effective Treatment Process</h3>
+              <h3 className="text-2xl font-bold text-slate-900 mt-10 mb-6 border-b pb-2">Our Three Core Pillars for Sciatica Relief</h3>
               <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                We don't use a "one size fits all" approach. Your treatment for sciatica acupuncture honolulu may integrate multiple modalities for optimal effectiveness:
+                We combine our three structural modalities to attack sciatica from every angle:
               </p>
               <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
-                <li><strong>Targeted Electro-Acupuncture:</strong> To relieve severe nerve pain or muscle spasms.</li>
-                <li><strong>Medical Massage (Tui-Na):</strong> To physically break down scar tissue and fascia adhesions compounding the structural issue.</li>
-                <li><strong>Fire Cupping Therapy:</strong> To pull stagnant blood and lactic acid out of deep muscle layers.</li>
+                <li><strong>Acupuncture:</strong> Using targeted electro-stimulation along the gallbladder and bladder meridians to act as a circuit breaker, immediately relieving severe nerve pain and halting gluteal spasms.</li>
+                <li><strong>Medical Massage:</strong> Physically breaking down the deep scar tissue and fascial adhesions specifically within the piriformis and lumbar muscles that are crushing the sciatic nerve.</li>
+                <li><strong>Fire Cupping Therapy:</strong> Pulling stagnant blood and chronic inflammation out of the deep gluteal layers, creating rapid decompression for the trapped nerve.</li>
               </ul>
         
             
@@ -295,6 +300,10 @@ export default function SciaticaAcupunctureHonoluluPage() {
                   <div className="mt-6 bg-slate-50 p-4 rounded-lg">
                       <p className="font-bold text-slate-900 mb-1 text-sm">Hours of Operation</p>
                       <p className="text-slate-600 text-sm">Mon-Fri: 9am - 1pm, Sat: 8am - 12pm</p>
+                  </div>
+                  <div className="mt-6 bg-slate-50 p-4 rounded-lg border border-slate-100">
+                      <p className="font-bold text-slate-900 mb-1 text-sm">Insurance Information</p>
+                      <p className="text-slate-600 text-sm"><strong>Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA.</strong></p>
                   </div>
                 </div>
 
