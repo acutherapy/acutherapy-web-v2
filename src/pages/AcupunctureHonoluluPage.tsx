@@ -42,7 +42,22 @@ export default function AcupunctureHonoluluPage() {
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-12 gap-12">
           
           <article className="md:col-span-8">
-            <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
+                        {/* CRO Expectation Module */}
+            <div className="bg-slate-50 border-l-4 border-blue-600 p-6 rounded-r-xl mb-10 shadow-sm mt-8">
+              <p className="text-lg text-slate-900 font-semibold mb-1">Most patients see improvement in 3–5 visits.</p>
+              <p className="text-slate-600">Full recovery may take 4–10+ sessions.</p>
+              
+              <div className="mt-4 pt-4 border-t border-slate-200">
+                <p className="font-bold text-slate-900 mb-2">What to Expect:</p>
+                <ul className="space-y-1 text-slate-700 font-medium">
+                  <li><span className="text-blue-600 mr-2">→</span> <strong>Visit 1:</strong> Evaluation + Immediate treatment</li>
+                  <li><span className="text-blue-600 mr-2">→</span> <strong>Week 1–2:</strong> Massive pain reduction</li>
+                  <li><span className="text-blue-600 mr-2">→</span> <strong>Week 3+:</strong> Structural repair & function recovery</li>
+                </ul>
+              </div>
+            </div>
+
+<p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
               If you are experiencing chronic pain, an unexpected auto injury, fertility challenges, or severe anxiety-related sleep issues in Honolulu, our integrated approach can restore natural balance and improve your overall daily function. Dr. David Cai utilizes over 30 years of clinical experience to provide the gold standard of <strong>Acupuncture in Honolulu</strong>, frequently recognized by patients as the best acupuncture care on the island.
             </p>
 
@@ -75,7 +90,35 @@ export default function AcupunctureHonoluluPage() {
               <li><strong>High-Stress Professionals:</strong> Seeking naturally effective nervous system regulation, insomnia treatment, and robust anxiety relief.</li>
             </ul>
 
-            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Frequently Asked Questions</h2>
+            
+            {/* CRO Comparison Module */}
+            <div className="my-16">
+              <h2 className="text-3xl font-bold text-slate-900 mb-8 border-b pb-2 text-center">Why Most Treatments Don't Last</h2>
+              <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200">
+                <div className="grid grid-cols-2 bg-slate-50 border-b border-slate-200">
+                  <div className="p-6 text-center border-r border-slate-200">
+                    <h3 className="font-bold text-slate-500 text-lg">Standard Clinics</h3>
+                  </div>
+                  <div className="p-6 text-center bg-blue-600">
+                    <h3 className="font-bold text-white text-lg flex items-center justify-center gap-2">AcuTherapy Clinics</h3>
+                  </div>
+                </div>
+                <div className="grid grid-cols-2 border-b border-slate-100">
+                  <div className="p-6 text-center border-r border-slate-100 text-slate-600">15-minute quick visits</div>
+                  <div className="p-6 text-center font-semibold text-blue-900 bg-blue-50/50">Full 60-minute intensive sessions</div>
+                </div>
+                <div className="grid grid-cols-2 border-b border-slate-100">
+                  <div className="p-6 text-center border-r border-slate-100 text-slate-600">Treat just the symptoms</div>
+                  <div className="p-6 text-center font-semibold text-blue-900 bg-blue-50/50">Treat the mechanical root cause</div>
+                </div>
+                <div className="grid grid-cols-2">
+                  <div className="p-6 text-center border-r border-slate-100 text-slate-600">Temporary masking</div>
+                  <div className="p-6 text-center font-semibold text-blue-900 bg-blue-50/50">Permanent tissue repair</div>
+                </div>
+              </div>
+            </div>
+
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Frequently Asked Questions</h2>
             <div className="space-y-6 mb-12">
               <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
                 <h3 className="text-xl font-bold text-slate-900 mb-2 flex items-center gap-2"><HelpCircle className="text-blue-500" size={20}/> How many sessions are needed?</h3>

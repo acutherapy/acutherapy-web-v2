@@ -123,7 +123,22 @@ export default function TennisElbowAcupunctureHonoluluPage() {
           
           <article className="md:col-span-8">
             
-              <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
+                          {/* CRO Expectation Module */}
+            <div className="bg-slate-50 border-l-4 border-blue-600 p-6 rounded-r-xl mb-10 shadow-sm mt-8">
+              <p className="text-lg text-slate-900 font-semibold mb-1">Most patients see improvement in 3–5 visits.</p>
+              <p className="text-slate-600">Full recovery may take 4–10+ sessions.</p>
+              
+              <div className="mt-4 pt-4 border-t border-slate-200">
+                <p className="font-bold text-slate-900 mb-2">What to Expect:</p>
+                <ul className="space-y-1 text-slate-700 font-medium">
+                  <li><span className="text-blue-600 mr-2">→</span> <strong>Visit 1:</strong> Evaluation + Immediate treatment</li>
+                  <li><span className="text-blue-600 mr-2">→</span> <strong>Week 1–2:</strong> Massive pain reduction</li>
+                  <li><span className="text-blue-600 mr-2">→</span> <strong>Week 3+:</strong> Structural repair & function recovery</li>
+                </ul>
+              </div>
+            </div>
+
+<p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
                 Whether you suffer from intense outer elbow pain (<strong>Lateral Epicondylitis</strong> / Tennis Elbow) or burning inner elbow pain (<strong>Medial Epicondylitis</strong> / Golfer's Elbow), the root cause is the same: chronic micro-tearing and inflammation of the forearm tendons. At AcuTherapy Clinics, we avoid temporary cortisone masks. We use Traditional Acupuncture and myofascial release to physically stimulate the production of collagen and heal the <i>extensor carpi radialis brevis (ECRB)</i> muscle at the cellular level.
               </p>
               
@@ -196,7 +211,9 @@ export default function TennisElbowAcupunctureHonoluluPage() {
 <div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
 <h2 className="text-3xl font-bold text-blue-900 mb-4">Ready to find relief?</h2>
 <p className="text-lg text-blue-700 mb-8">Stop living in discomfort. Located right here in Honolulu, we are here to help you restore your well-being.</p>
-<Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Book Your Session Today</Button></Link>
+<Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Get Your Personalized Recovery Plan</Button></Link>
+<p className="text-blue-600 text-sm mt-3 opacity-80 font-medium tracking-wide">Takes less than 60 seconds</p>
+<p className="text-red-500 font-bold mt-4">The longer you wait, the harder it is to fix.</p>
 </div>
 
 </article>
