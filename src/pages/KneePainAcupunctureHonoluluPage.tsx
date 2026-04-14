@@ -136,7 +136,7 @@ export default function KneePainAcupunctureHonoluluPage() {
                 Most standard orthopedic treatments only look at the knee cavity itself. We attack the knee pain holistically, releasing the mechanical strain pulling on the patella from your hips, IT band, and calves:
               </p>
               <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
-                <li><strong>Electroacupuncture for Cartilage Repair:</strong> By inserting micro-needles precisely into the "eyes of the knee" (the structural indentations below the kneecap) and sending micro-currents through the joint capsule, we radically downregulate nerve sensitivity and induce intensive vasodilation. This brings oxygenated blood and natural synovial fluid directly to the starved, grinding cartilage.</li>
+                <li><strong>Traditional Acupuncture for Cartilage Repair:</strong> By inserting ultra-fine needles precisely into the "eyes of the knee" (the structural indentations below the kneecap), we radically downregulate nerve sensitivity and induce intensive vasodilation. This brings oxygenated blood and natural synovial fluid directly to the starved, grinding cartilage.</li>
                 <li><strong>Medical Massage (Tui-Na):</strong> A tight IT Band or hyper-contracted quadriceps will physically pull your kneecap off its tracking groove, causing Patellofemoral Pain. We precisely break down the hardened fascial adhesions locking up your thigh muscles, instantly reducing the "crushing" pressure on your knee joint.</li>
                 <li><strong>Fire Cupping Therapy:</strong> Often, severe knee arthritis leads to trapped fluid build-up behind the knee (such as a <strong>Popliteal / Baker's Cyst</strong>). Applied around the thigh and calf, extreme negative pressure physically pulls this chronic inflammatory fluid and swelling away from the knee capsule, restoring your ability to fully bend your leg.</li>
               </ul>
@@ -266,7 +266,7 @@ export default function KneePainAcupunctureHonoluluPage() {
 
             <div className="bg-blue-900 text-white p-8 rounded-2xl shadow-xl">
               <h4 className="text-xl font-bold mb-4 flex items-center gap-2">Patient Reviews</h4>
-              <p className="text-slate-300 italic text-sm leading-relaxed mb-4">"I was diagnosed with bone-on-bone osteoarthritis and a torn meniscus. Cortisone didn't help anymore. Dr. Cai's electro-acupuncture brought life back into my knee. The swelling behind my knee disappeared, and I'm walking up stairs without wincing for the first time in years!"</p>
+              <p className="text-slate-300 italic text-sm leading-relaxed mb-4">"I was diagnosed with bone-on-bone osteoarthritis and a torn meniscus. Cortisone didn't help anymore. Dr. Cai's Traditional Acupuncture brought life back into my knee. The swelling behind my knee disappeared, and I'm walking up stairs without wincing for the first time in years!"</p>
               <div className="flex items-center gap-4 mt-6">
                  <div className="h-10 w-10 bg-blue-800 rounded-full flex items-center justify-center font-bold text-white shadow-inner">ST</div>
                  <div>

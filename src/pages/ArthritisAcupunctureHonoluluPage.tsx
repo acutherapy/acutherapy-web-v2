@@ -103,11 +103,16 @@ export default function ArthritisAcupunctureHonoluluPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/80" />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm mb-6 backdrop-blur-sm">
-            <ShieldCheck size={16} /> <span>Trusted Honolulu Pain Clinic</span>
+          <div className="flex flex-wrap justify-center gap-3 mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm backdrop-blur-sm">
+              <ShieldCheck size={16} /> <span>Advanced Joint Inflammation Relief</span>
+            </div>
+            <div className="inline-flex items-center px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-200 border border-emerald-500/30 font-medium text-sm backdrop-blur-sm">
+              Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
+            </div>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Arthritis Acupuncture Honolulu</h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Medical-grade treatments customized for lasting relief and recovery in Honolulu.</p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Arthritis & Joint Pain Treatment in Honolulu</h1>
+          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Stop the bone-on-bone grinding and painful swelling associated with Osteoarthritis and Rheumatoid Arthritis.</p>
         </div>
       </section>
 
@@ -118,28 +123,22 @@ export default function ArthritisAcupunctureHonoluluPage() {
           <article className="md:col-span-8">
             
               <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
-                Suffering from <strong>Arthritis Acupuncture Honolulu</strong> can deeply disrupt your daily life, making basic movements agonizing and draining your energy. At AcuTherapy Clinics in Honolulu, Dr. David Cai applies over 30 years of medical acupuncture experience to resolve the root cause of arthritis acupuncture honolulu, offering a lasting alternative to surgery or heavy pharmaceuticals.
+                Living with severe joint pain from <strong>Osteoarthritis (OA)</strong> or autoimmune flare-ups from <strong>Rheumatoid Arthritis (RA)</strong> can make basic movements feel like moving through wet sand. While standard medicine relies heavily on cortisone shots to mask the pain, Dr. David Cai applies over 30 years of medical acupuncture experience to directly intervene in the inflammatory process, resolving swelling and restoring joint mobility without endless injections.
               </p>
               
       <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/50 group mb-12 w-full max-w-3xl mx-auto">
-        <img loading="lazy" src="/images/abdominal-acupuncture.jpg" alt="Arthritis Acupuncture Honolulu" className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
-        <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-8 pt-16 text-white text-lg font-medium">Advanced Acupuncture Treatments</figcaption>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2000" alt="Arthritis Treatment Honolulu" className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
+        <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-8 pt-16 text-white text-lg font-medium">Advanced Anti-Inflammatory Joint Therapy</figcaption>
       </div>
-              <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">The Science of Treating Arthritis Acupuncture Honolulu with Acupuncture</h2>
+
+              <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Our Three Core Pillars for Arthritis Relief</h2>
               <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                Arthritis Acupuncture Honolulu is often the result of trapped inflammation, peripheral nerve irritation, or deep myofascial tension that standard treatments fail to reach. Our specific needle protocols for arthritis acupuncture honolulu stimulate local vasodilation—massively increasing blood flow to oxygen-starved tissues.
-              </p>
-              <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                Furthermore, precise stimulation signals the central nervous system to release natural endorphins and opioid-like neuropeptides, dramatically downregulating the pain signals caused by arthritis acupuncture honolulu before they reach the brain.
-              </p>
-              <h3 className="text-2xl font-bold text-slate-900 mt-10 mb-6 border-b pb-2">Our Highly Effective Treatment Process</h3>
-              <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                We don't use a "one size fits all" approach. Your treatment for arthritis acupuncture honolulu may integrate multiple modalities for optimal effectiveness:
+                Arthritis is characterized by the degradation of <strong>Cartilage</strong> and a lack of highly lubricating <strong>Synovial Fluid</strong> within the joint capsule. We use our three clinical modalities to attack systemic inflammation and restore circulation to starved joints:
               </p>
               <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
-                <li><strong>Targeted Electro-Acupuncture:</strong> To relieve severe nerve pain or muscle spasms.</li>
-                <li><strong>Medical Massage (Tui-Na):</strong> To physically break down scar tissue and fascia adhesions compounding the structural issue.</li>
-                <li><strong>Fire Cupping Therapy:</strong> To pull stagnant blood and lactic acid out of deep muscle layers.</li>
+                <li><strong>Traditional Acupuncture for Cartilage Repair:</strong> We precisely insert sterile, ultra-fine needles around the inflamed joint capsule (often targeting the hands, knees, or hips). This targeted therapy actively reduces circulating inflammatory cytokines and induces massive vasodilation, bringing freshly oxygenated blood and signaling the body to produce natural synovial fluid.</li>
+                <li><strong>Medical Massage (Tui-Na):</strong> Arthritic joints often result in severe muscle guarding—where the surrounding muscles cramp up to protect the vulnerable joint. We use deep clinical Tui-Na massage to forcibly melt these secondary muscular spasms, restoring your range of motion.</li>
+                <li><strong>Fire Cupping Therapy:</strong> Particularly effective for larger joints like the shoulders and knees, extreme negative pressure physically pulls chronic inflammatory fluid and metabolic waste (like trapped lactic and uric acid) away from the degraded cartilage, creating immediate decompression.</li>
               </ul>
         
             
@@ -191,33 +190,7 @@ export default function ArthritisAcupunctureHonoluluPage() {
         </Link>
       </div>
     
-          
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Causes Arthritis?</h2>
-<p className="text-lg text-slate-700 leading-relaxed mb-6">Arthritis Arthritis (whether osteoarthritis or rheumatoid) involves the progressive breakdown of joint cartilage or autoimmune inflammation, leading to bone-on-bone friction and swelling.</p>
 
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Acupuncture Helps</h2>
-<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li><strong>Pain Relief:</strong> Triggers the release of endorphins to block pain signals effectively.</li>
-<li><strong>Nervous System Regulation:</strong> Calms the central nervous system, reducing tension without relying on pharmaceuticals.</li>
-<li><strong>Improved Circulation:</strong> Enhances blood flow to the affected areas, accelerating the natural healing process.</li>
-</ul>
-
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect During Your Session</h2>
-<p className="text-lg text-slate-700 leading-relaxed mb-6">The treatment is customized to the affected joints. You will likely feel a robust warming sensation enveloping the joint as circulation rushes in to soothe the cartilage and tissues.</p>
-
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Who Is This For?</h2>
-<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li>Individuals suffering from chronic pain who have not found relief through conventional methods.</li>
-<li>High-stress professionals seeking natural nervous system regulation.</li>
-<li>Athletes or individuals recovering from an injury needing accelerated healing.</li>
-</ul>
-
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">FAQ</h2>
-<div className="space-y-6 mb-12">
-<div><h4 className="font-bold text-lg text-slate-900">Q1: How many sessions are needed for Arthritis?</h4><p className="text-slate-700">A: Arthritis cannot be cured, but its symptoms can be managed exceptionally well. A series of 8-10 sessions establishes a pain-free baseline.</p></div>
-<div><h4 className="font-bold text-lg text-slate-900">Q2: Does the treatment hurt?</h4><p className="text-slate-700">A: It is nearly painless. The needles do not go into the joint itself, but into the surrounding muscular environment.</p></div>
-<div><h4 className="font-bold text-lg text-slate-900">Q3: Is it safe?</h4><p className="text-slate-700">A: Absolutely. Acupuncture is a highly safe, non-invasive alternative to surgery and heavy medications.</p></div>
-</div>
 
 <div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
 <h2 className="text-3xl font-bold text-blue-900 mb-4">Ready to find relief?</h2>
@@ -236,31 +209,9 @@ export default function ArthritisAcupunctureHonoluluPage() {
                 <p className="text-slate-600 mb-8 text-sm">Bridge the gap to a pain-free life today.</p>
                 <div className="flex flex-col gap-4">
                   <Link to="/book-appointment">
-
-                    <Link to="/book-appointment">
-
-
-                      <Link to="/book-appointment">
-
-
-
-                        <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
-
-
-
-                          <Calendar className="mr-2" /> Schedule Online
-
-
-
-                        </Button>
-
-
-
-                      </Link>
-
-
-                    </Link>
-
+                    <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
+                      <Calendar className="mr-2" /> Schedule Online
+                    </Button>
                   </Link>
                   <Button variant="outline" className="w-full h-14 text-lg border-2 border-slate-200" onClick={() => window.location.href='tel:+18085287177'}>
                     <PhoneCall className="mr-2 h-5 w-5 text-blue-600" /> (808) 528-7177
@@ -294,9 +245,9 @@ export default function ArthritisAcupunctureHonoluluPage() {
                       <p className="text-slate-600 text-sm"><strong>Ph:</strong> (808) 452-1900 <span className="mx-1">|</span> <strong>Fax:</strong> (808) 452-1521</p>
                     </div>
                   </div>
-                  <div className="mt-6 bg-slate-50 p-4 rounded-lg">
-                      <p className="font-bold text-slate-900 mb-1 text-sm">Hours of Operation</p>
-                      <p className="text-slate-600 text-sm">Mon-Fri: 9am - 1pm, Sat: 8am - 12pm</p>
+                  <div className="mt-6 bg-slate-50 p-4 rounded-lg border border-slate-100">
+                      <p className="font-bold text-slate-900 mb-1 text-sm">Insurance Information</p>
+                      <p className="text-slate-600 text-sm"><strong>Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA.</strong></p>
                   </div>
                 </div>
 
@@ -314,12 +265,12 @@ export default function ArthritisAcupunctureHonoluluPage() {
 
             <div className="bg-blue-900 text-white p-8 rounded-2xl shadow-xl">
               <h4 className="text-xl font-bold mb-4 flex items-center gap-2">Patient Reviews</h4>
-              <p className="text-slate-300 italic text-sm leading-relaxed mb-4">"Dr. Cai completely resolved my shoulder pain after just 3 visits. I had been suffering for months. The clinic is pristine, professional, and very welcoming!"</p>
+              <p className="text-slate-300 italic text-sm leading-relaxed mb-4">"I have suffered from crippling rheumatoid arthritis in my hands for years. Anti-inflammatories barely worked anymore. Dr. Cai's acupuncture dramatically reduced the visible swelling and stiffness. I can finally hold a pen and write without pain again."</p>
               <div className="flex items-center gap-4 mt-6">
-                 <div className="h-10 w-10 bg-blue-800 rounded-full flex items-center justify-center font-bold text-white shadow-inner">ST</div>
+                 <div className="h-10 w-10 bg-blue-800 rounded-full flex items-center justify-center font-bold text-white shadow-inner">ML</div>
                  <div>
-                    <p className="text-white font-semibold text-sm">Sarah T.</p>
-                    <p className="text-blue-400 text-xs">Honolulu Resident</p>
+                    <p className="text-white font-semibold text-sm">Mary L.</p>
+                    <p className="text-blue-400 text-xs">Aiea Resident</p>
                  </div>
               </div>
             </div>

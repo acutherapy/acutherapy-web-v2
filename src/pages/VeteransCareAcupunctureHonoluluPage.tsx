@@ -102,8 +102,13 @@ export default function VeteransCareAcupunctureHonoluluPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/80" />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm mb-6 backdrop-blur-sm">
-                        <ShieldCheck size={16} /> <span>Trusted VA Community Care Provider</span>
+                    <div className="flex flex-wrap justify-center gap-3 mb-6">
+                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm backdrop-blur-sm">
+                            <ShieldCheck size={16} /> <span>Trusted VA Community Care Provider</span>
+                        </div>
+                        <div className="inline-flex items-center px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-200 border border-emerald-500/30 font-medium text-sm backdrop-blur-sm">
+                            Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
+                        </div>
                     </div>
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Veterans Care Acupuncture in Hawaii</h1>
                     <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Medical-grade treatments customized for lasting relief and recovery for Veterans across all of Hawaii.</p>
@@ -131,14 +136,14 @@ export default function VeteransCareAcupunctureHonoluluPage() {
                         <p className="text-lg text-slate-700 leading-relaxed mb-6">
                             Furthermore, precise stimulation signals the central nervous system to release natural endorphins and opioid-like neuropeptides, dramatically downregulating pain signals before they reach the brain. We deliver this dedicated relief to Veterans anywhere in Hawaii.
                         </p>
-                        <h3 className="text-2xl font-bold text-slate-900 mt-10 mb-6 border-b pb-2">Our Highly Effective Treatment Process</h3>
+                        <h3 className="text-2xl font-bold text-slate-900 mt-10 mb-6 border-b pb-2">Our Three Core Treatment Pillars</h3>
                         <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                            We don't use a "one size fits all" approach. Your treatment as a Veteran may integrate multiple modalities for optimal effectiveness:
+                            We don't use a "one size fits all" approach. Your treatment as a Veteran integrates our three core clinical modalities to ensure multi-layered relief:
                         </p>
                         <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
-                            <li><strong>Targeted Electro-Acupuncture:</strong> To relieve severe nerve pain or muscle spasms from previous injuries.</li>
-                            <li><strong>Medical Massage (Tui-Na):</strong> To physically break down scar tissue and fascia adhesions compounding the structural issue.</li>
-                            <li><strong>Acupuncture for Stress & Sleep:</strong> To rebalance the autonomic nervous system and address PTSD symptoms effectively.</li>
+                            <li><strong>Targeted Traditional Acupuncture:</strong> To relieve severe nerve pain or muscle spasms from previous injuries, as well as powerfully rebalance the autonomic nervous system to address PTSD and insomnia.</li>
+                            <li><strong>Medical Massage (Tui-Na):</strong> To physically break down thick scar tissue and defensive fascial armor resulting from combat or intense physical training.</li>
+                            <li><strong>Fire Cupping Therapy:</strong> Powerful myofascial decompression. This draws out years of stagnant toxins and accelerates deep-tissue recovery by rebooting the local immune response.</li>
                         </ul>
 
 
@@ -193,25 +198,7 @@ export default function VeteransCareAcupunctureHonoluluPage() {
                     
         <TreatmentInternalLinks currentPage="veterans" />
           
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Causes Veterans Care?</h2>
-<p className="text-lg text-slate-700 leading-relaxed mb-6">Veterans Care can be triggered by a variety of factors including chronic stress, poor posture, repetitive strain, or acute injuries. Over time, these factors create blockages in blood circulation and nerve function, leading to persistent discomfort.</p>
 
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Acupuncture Helps</h2>
-<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li><strong>Pain Relief:</strong> Triggers the release of endorphins to block pain signals effectively.</li>
-<li><strong>Nervous System Regulation:</strong> Calms the central nervous system, reducing tension without relying on pharmaceuticals.</li>
-<li><strong>Improved Circulation:</strong> Enhances blood flow to the affected areas, accelerating the natural healing process.</li>
-</ul>
-
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect During Your Session</h2>
-<p className="text-lg text-slate-700 leading-relaxed mb-6">During your first experience, Dr. David Cai will conduct a thorough assessment to understand your unique condition. The treatment itself is deeply relaxing. Many patients notice a distinct change in symptoms, experiencing immediate lightness and reduced tension right after the needles are gently placed.</p>
-
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Who Is This For?</h2>
-<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li>Individuals suffering from chronic pain who have not found relief through conventional methods.</li>
-<li>High-stress professionals seeking natural nervous system regulation.</li>
-<li>Athletes or individuals recovering from an injury needing accelerated healing.</li>
-</ul>
 
 <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">FAQ</h2>
 <div className="space-y-6 mb-12">
@@ -237,34 +224,10 @@ export default function VeteransCareAcupunctureHonoluluPage() {
                                 <p className="text-slate-600 mb-8 text-sm">Bridge the gap to a pain-free life today.</p>
                                 <div className="flex flex-col gap-4">
                                     <Link to="/book-appointment">
-                    <Link to="/book-appointment">
-
-                      <Link to="/book-appointment">
-
-
-                        <Link to="/book-appointment">
-
-
-
-                          <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
-
-
-
-                            <Calendar className="mr-2" /> Schedule Online
-
-
-
-                          </Button>
-
-
-
-                        </Link>
-
-
-                      </Link>
-
-                    </Link>
-                  </Link>
+                                        <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
+                                            <Calendar className="mr-2" /> Schedule Online
+                                        </Button>
+                                    </Link>
                                     <Button variant="outline" className="w-full h-14 text-lg border-2 border-slate-200" onClick={() => window.location.href = 'tel:+18085287177'}>
                                         <PhoneCall className="mr-2 h-5 w-5 text-blue-600" /> (808) 528-7177
                                     </Button>
@@ -297,9 +260,9 @@ export default function VeteransCareAcupunctureHonoluluPage() {
                                             <p className="text-slate-600 text-sm"><strong>Ph:</strong> (808) 452-1900 <span className="mx-1">|</span> <strong>Fax:</strong> (808) 452-1521</p>
                                         </div>
                                     </div>
-                                    <div className="mt-6 bg-slate-50 p-4 rounded-lg">
-                                        <p className="font-bold text-slate-900 mb-1 text-sm">Hours of Operation</p>
-                                        <p className="text-slate-600 text-sm">Mon-Fri: 9am - 1pm, Sat: 8am - 12pm</p>
+                                    <div className="mt-6 bg-slate-50 p-4 rounded-lg border border-slate-100">
+                                        <p className="font-bold text-slate-900 mb-1 text-sm">Insurance Information</p>
+                                        <p className="text-slate-600 text-sm"><strong>Fully authorized VA Community Care Network provider. Also accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, & Workers' Comp.</strong></p>
                                     </div>
                                 </div>
 
@@ -317,12 +280,12 @@ export default function VeteransCareAcupunctureHonoluluPage() {
 
                         <div className="bg-blue-900 text-white p-8 rounded-2xl shadow-xl">
                             <h4 className="text-xl font-bold mb-4 flex items-center gap-2">Patient Reviews</h4>
-                            <p className="text-slate-300 italic text-sm leading-relaxed mb-4">"As a Veteran, finding providers that take Community Care can be tough. Dr. Cai made the process incredibly easy and his acupuncture therapy vastly improved my mobility. Highly recommended to all Vets in Hawaii!"</p>
+                            <p className="text-slate-300 italic text-sm leading-relaxed mb-4">"After returning from deployment, I was loaded up on painkillers for my combat injuries and severe PTSD. Navigating the VA system was a nightmare until I found Tripler's Community Care Network. Dr. Cai's clinic took care of all the authorization paperwork directly with the VA. The acupuncture has honestly saved my sleep and my sanity."</p>
                             <div className="flex items-center gap-4 mt-6">
-                                <div className="h-10 w-10 bg-blue-800 rounded-full flex items-center justify-center font-bold text-white shadow-inner">JD</div>
+                                <div className="h-10 w-10 bg-blue-800 rounded-full flex items-center justify-center font-bold text-white shadow-inner">RA</div>
                                 <div>
-                                    <p className="text-white font-semibold text-sm">James D.</p>
-                                    <p className="text-blue-400 text-xs">Hawaii Resident & Veteran</p>
+                                    <p className="text-white font-semibold text-sm">Robert A.</p>
+                                    <p className="text-blue-400 text-xs">U.S. Army Veteran (OEF/OIF)</p>
                                 </div>
                             </div>
                         </div>

@@ -138,7 +138,7 @@ export default function AcupunctureVsChiropracticBackPainPage() {
                 We don't use a "one size fits all" approach. Your treatment for acupuncture vs chiropractic back pain may integrate multiple modalities for optimal effectiveness:
               </p>
               <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
-                <li><strong>Targeted Electro-Acupuncture:</strong> To relieve severe nerve pain or muscle spasms.</li>
+                <li><strong>Targeted Traditional Acupuncture:</strong> To relieve severe nerve pain or muscle spasms.</li>
                 <li><strong>Medical Massage (Tui-Na):</strong> To physically break down scar tissue and fascia adhesions compounding the structural issue.</li>
                 <li><strong>Fire Cupping Therapy:</strong> To pull stagnant blood and lactic acid out of deep muscle layers.</li>
               </ul>

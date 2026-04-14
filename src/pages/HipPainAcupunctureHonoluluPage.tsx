@@ -135,7 +135,7 @@ export default function HipPainAcupunctureHonoluluPage() {
                 Treating hip pain effectively means treating the massive muscle groups (Gluteus Maximus, Medius, and IT Band) that govern its movement. We tackle both the joint space and the surrounding muscular armor:
               </p>
               <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
-                <li><strong>Electroacupuncture for Bursitis & Arthritis:</strong> We apply gentle micro-currents to needles inserted around the hip capsule. This neuro-stimulation overrides the pain signals (gate-control theory) and forces intense local blood flow into the joint space, flushing out the severe inflammation causing your bursitis or arthritis flare-up.</li>
+                <li><strong>Traditional Acupuncture for Bursitis & Arthritis:</strong> We precisely insert fine needles around the hip capsule. This natural stimulation overrides the pain signals and forces intense local blood flow into the joint space, flushing out the severe inflammation causing your bursitis or arthritis flare-up.</li>
                 <li><strong>Medical Massage for Piriformis Syndrome:</strong> If your hip pain shoots down your leg, your piriformis muscle is likely crushing your sciatic nerve. We use penetrating medical massage to tear down fibrotic scar tissue deep within the gluteus muscles and release the suffocating grip on the sciatic nerve root.</li>
                 <li><strong>Fire Cupping Therapy / Gua Sha:</strong> The Iliotibial (IT) Band often becomes glued to the underlying muscles, causing snapping or pulling at the hip. Cupping forcibly lifts this dense fascial sheet, breaking dangerous adhesions and instantly restoring a fluid, pain-free walking gait.</li>
               </ul>
@@ -265,7 +265,7 @@ export default function HipPainAcupunctureHonoluluPage() {
 
             <div className="bg-blue-900 text-white p-8 rounded-2xl shadow-xl">
               <h4 className="text-xl font-bold mb-4 flex items-center gap-2">Patient Reviews</h4>
-              <p className="text-slate-300 italic text-sm leading-relaxed mb-4">"I thought I would need a hip replacement due to constant bursitis pain and severe IT band snapping that hurt with every step. Dr. Cai's electro-acupuncture and cupping changed everything. I am walking pain-free for the first time in two years!"</p>
+              <p className="text-slate-300 italic text-sm leading-relaxed mb-4">"I thought I would need a hip replacement due to constant bursitis pain and severe IT band snapping that hurt with every step. Dr. Cai's Traditional Acupuncture and cupping changed everything. I am walking pain-free for the first time in two years!"</p>
               <div className="flex items-center gap-4 mt-6">
                  <div className="h-10 w-10 bg-blue-800 rounded-full flex items-center justify-center font-bold text-white shadow-inner">ST</div>
                  <div>

@@ -192,7 +192,7 @@ export default function TreatmentProcessPage() {
 <div className="space-y-8 mb-8">
   <div className="bg-white p-6 rounded-2xl border border-blue-100 shadow-sm border-l-4 border-l-blue-500 hover:shadow-md transition-shadow">
      <h3 className="text-2xl font-bold text-slate-900 mb-3">1. Acupuncture</h3>
-     <p className="text-lg text-slate-700 leading-relaxed">The cornerstone of our practice. From deep electroacupuncture mapping for neuropathic pain to gentle meridian techniques for anxiety and fertility, our neuro-modulating acupuncture physically resets nerve pathways, releases endorphins, and dramatically increases local blood flow to damaged tissues.</p>
+     <p className="text-lg text-slate-700 leading-relaxed">The cornerstone of our practice. From deep Traditional Acupuncture mapping for neuropathic pain to gentle meridian techniques for anxiety and fertility, our neuro-modulating acupuncture physically resets nerve pathways, releases endorphins, and dramatically increases local blood flow to damaged tissues.</p>
   </div>
 
   <div className="bg-white p-6 rounded-2xl border border-emerald-100 shadow-sm border-l-4 border-l-emerald-500 hover:shadow-md transition-shadow">

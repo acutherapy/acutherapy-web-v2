@@ -265,7 +265,7 @@ export default function HomePage() {
                 Hawaii's Most Trusted Expert in Pain & Injury Rehabilitation.
               </h2>
               <p className="text-lg text-slate-600 leading-relaxed mb-6">
-                With over <strong>30 years of clinical experience</strong> across integrated medical systems, Dr. David Cai is a master practitioner of Traditional Chinese Medicine (TCM). He utilizes a comprehensive range of modalities—including advanced electroacupuncture, moxibustion therapy, dry needling techniques, and custom Chinese herbal medicine—to deliver profound results.
+                With over <strong>30 years of clinical experience</strong> across integrated medical systems, Dr. David Cai is a master practitioner of Traditional Chinese Medicine (TCM). He utilizes a comprehensive range of modalities—including Traditional Acupuncture, moxibustion therapy, dry needling techniques, and custom Chinese herbal medicine—to deliver profound results.
               </p>
               <p className="text-lg text-slate-600 leading-relaxed mb-8">
                 He built AcuTherapy Clinics on the principle that the body is intended to heal itself. Rather than masking symptoms with temporary painkillers, Dr. Cai identifies the exact structural, hormonal, or inflammatory root cause. If you're searching for reliable "acupuncture near me," our clinic provides unmatched, long-lasting relief.
@@ -273,7 +273,7 @@ export default function HomePage() {
 
               <div className="space-y-4">
                 {[
-                  "Pioneer in advanced neurological and electroacupuncture.",
+                  "Pioneer in advanced neurological and Traditional Acupuncture.",
                   "Has successfully treated tens of thousands of complex pain patients.",
                   "Comprehensive expert in chronic anxiety, fertility, and insomnia.",
                   "Specialized protocol for traumatic Auto Accident/Whiplash recovery."

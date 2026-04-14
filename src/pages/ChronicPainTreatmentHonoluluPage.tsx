@@ -104,11 +104,16 @@ export default function ChronicPainTreatmentHonoluluPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/80" />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm mb-6 backdrop-blur-sm">
-            <ShieldCheck size={16} /> <span>Trusted Honolulu Pain Clinic</span>
+          <div className="flex flex-wrap justify-center gap-3 mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm backdrop-blur-sm">
+              <ShieldCheck size={16} /> <span>Complex Neurological Pain Center</span>
+            </div>
+            <div className="inline-flex items-center px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-200 border border-emerald-500/30 font-medium text-sm backdrop-blur-sm">
+              Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
+            </div>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Chronic Pain Treatment Honolulu</h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Medical-grade treatments customized for lasting relief and recovery in Honolulu.</p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Chronic Pain Management in Honolulu</h1>
+          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Break the cycle of Central Sensitization. Advanced interventions for Fibromyalgia, Neuropathy, and Complex Regional Pain Syndrome (CRPS).</p>
         </div>
       </section>
 
@@ -119,28 +124,27 @@ export default function ChronicPainTreatmentHonoluluPage() {
           <article className="md:col-span-8">
             
               <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
-                Suffering from <strong>Chronic Pain Treatment Honolulu</strong> can deeply disrupt your daily life, making basic movements agonizing and draining your energy. At AcuTherapy Clinics in Honolulu, Dr. David Cai applies over 30 years of medical acupuncture experience to resolve the root cause of chronic pain treatment honolulu, offering a lasting alternative to surgery or heavy pharmaceuticals.
+                When pain persists for more than three to six months, it ceases to be just a physical symptom and becomes a neurological disease known as <strong>Central Sensitization</strong>. If you are battling <strong>Fibromyalgia</strong>, peripheral <strong>Neuropathy</strong>, or widespread <strong>Chronic Pain</strong>, your nervous system is trapped in a permanent state of "high alert." At AcuTherapy Clinics in Honolulu, Dr. David Cai utilizes advanced Traditional Chinese Medicine to rewrite these faulty neurological loops, offering drug-free relief where pain clinics and heavy opioids have failed.
               </p>
               
       <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/50 group mb-12 w-full max-w-3xl mx-auto">
-        <img loading="lazy" src="/images/abdominal-acupuncture.jpg" alt="Chronic Pain Treatment Honolulu" className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
-        <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-8 pt-16 text-white text-lg font-medium">Advanced Acupuncture Treatments</figcaption>
+        <img loading="lazy" src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2000" alt="Chronic Pain Relief Honolulu" className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
+        <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-8 pt-16 text-white text-lg font-medium">Advanced Neurological Down-Regulation</figcaption>
       </div>
-              <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">The Science of Treating Chronic Pain Treatment Honolulu with Acupuncture</h2>
+
+              <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">The Science of Treating Pain Sensitization</h2>
               <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                Chronic Pain Treatment Honolulu is often the result of trapped inflammation, peripheral nerve irritation, or deep myofascial tension that standard treatments fail to reach. Our specific needle protocols for chronic pain treatment honolulu stimulate local vasodilation—massively increasing blood flow to oxygen-starved tissues.
+                Conventional chronic pain treatment often involves masking the symptom with gabapentin, muscle relaxers, or opioids. However, these do not fix the structural or nerve-level dysfunction. We use medical acupuncture protocols to stimulate the vagus nerve and initiate a massive parasympathetic (rest and digest) response, actively lowering systemic inflammation and <strong>cortisol levels</strong>.
               </p>
+
+              <h3 className="text-2xl font-bold text-slate-900 mt-10 mb-6 border-b pb-2">Our Highly Effective Treatment Pillars</h3>
               <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                Furthermore, precise stimulation signals the central nervous system to release natural endorphins and opioid-like neuropeptides, dramatically downregulating the pain signals caused by chronic pain treatment honolulu before they reach the brain.
-              </p>
-              <h3 className="text-2xl font-bold text-slate-900 mt-10 mb-6 border-b pb-2">Our Highly Effective Treatment Process</h3>
-              <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                We don't use a "one size fits all" approach. Your treatment for chronic pain treatment honolulu may integrate multiple modalities for optimal effectiveness:
+                Chronic conditions require a multifaceted assault. We don't use a "one size fits all" approach. Your custom treatment will integrate our core medical modalities:
               </p>
               <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
-                <li><strong>Targeted Electro-Acupuncture:</strong> To relieve severe nerve pain or muscle spasms.</li>
-                <li><strong>Medical Massage (Tui-Na):</strong> To physically break down scar tissue and fascia adhesions compounding the structural issue.</li>
-                <li><strong>Fire Cupping Therapy:</strong> To pull stagnant blood and lactic acid out of deep muscle layers.</li>
+                <li><strong>Traditional Acupuncture for Pain Management:</strong> We use precise needle placement to naturally block the brain's pain receptors. This promotes the release of dynorphins and enkephalins—the body's natural, heavy-duty painkillers—providing intense relief for conditions like neuropathy and CRPS.</li>
+                <li><strong>Medical Massage (Tui-Na):</strong> Chronic pain patients often suffer from widespread fascial armor—the body's attempt to immobilize itself. We use deep clinical push-pull techniques to untangle dense myofascial cross-links and permanently release trigger points.</li>
+                <li><strong>Fire Cupping Therapy:</strong> By creating extreme negative pressure across large surface areas (like the back or thighs), we forcibly draw centuries-old toxic metabolic waste and stagnant lymphatic fluid out of deep tissue, rebooting the local immune response.</li>
               </ul>
         
             
@@ -194,33 +198,7 @@ export default function ChronicPainTreatmentHonoluluPage() {
     
           
         <TreatmentInternalLinks currentPage="pain-management" />
-          
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Causes Chronic Pain?</h2>
-<p className="text-lg text-slate-700 leading-relaxed mb-6">Chronic Pain can be triggered by a variety of factors including chronic stress, poor posture, repetitive strain, or acute injuries. Over time, these factors create blockages in blood circulation and nerve function, leading to persistent discomfort.</p>
 
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Acupuncture Helps</h2>
-<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li><strong>Pain Relief:</strong> Triggers the release of endorphins to block pain signals effectively.</li>
-<li><strong>Nervous System Regulation:</strong> Calms the central nervous system, reducing tension without relying on pharmaceuticals.</li>
-<li><strong>Improved Circulation:</strong> Enhances blood flow to the affected areas, accelerating the natural healing process.</li>
-</ul>
-
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect During Your Session</h2>
-<p className="text-lg text-slate-700 leading-relaxed mb-6">During your first experience, Dr. David Cai will conduct a thorough assessment to understand your unique condition. The treatment itself is deeply relaxing. Many patients notice a distinct change in symptoms, experiencing immediate lightness and reduced tension right after the needles are gently placed.</p>
-
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Who Is This For?</h2>
-<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li>Individuals suffering from chronic pain who have not found relief through conventional methods.</li>
-<li>High-stress professionals seeking natural nervous system regulation.</li>
-<li>Athletes or individuals recovering from an injury needing accelerated healing.</li>
-</ul>
-
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">FAQ</h2>
-<div className="space-y-6 mb-12">
-<div><h4 className="font-bold text-lg text-slate-900">Q1: How many sessions are needed for Chronic Pain?</h4><p className="text-slate-700">A: Most patients notice significant relief within 3 to 5 sessions, though chronic conditions may require a longer treatment plan to address the root cause and ensure lasting results.</p></div>
-<div><h4 className="font-bold text-lg text-slate-900">Q2: Does the treatment hurt?</h4><p className="text-slate-700">A: No. We use ultra-fine needles. Most feel only a deep, relaxing sensation. Many even fall asleep!</p></div>
-<div><h4 className="font-bold text-lg text-slate-900">Q3: Is it safe?</h4><p className="text-slate-700">A: Absolutely. Acupuncture is a highly safe, non-invasive alternative to surgery and heavy medications.</p></div>
-</div>
 
 <div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
 <h2 className="text-3xl font-bold text-blue-900 mb-4">Ready to find relief?</h2>
@@ -239,31 +217,9 @@ export default function ChronicPainTreatmentHonoluluPage() {
                 <p className="text-slate-600 mb-8 text-sm">Bridge the gap to a pain-free life today.</p>
                 <div className="flex flex-col gap-4">
                   <Link to="/book-appointment">
-
-                    <Link to="/book-appointment">
-
-
-                      <Link to="/book-appointment">
-
-
-
-                        <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
-
-
-
-                          <Calendar className="mr-2" /> Schedule Online
-
-
-
-                        </Button>
-
-
-
-                      </Link>
-
-
-                    </Link>
-
+                    <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
+                      <Calendar className="mr-2" /> Schedule Online
+                    </Button>
                   </Link>
                   <Button variant="outline" className="w-full h-14 text-lg border-2 border-slate-200" onClick={() => window.location.href='tel:+18085287177'}>
                     <PhoneCall className="mr-2 h-5 w-5 text-blue-600" /> (808) 528-7177
@@ -299,9 +255,9 @@ export default function ChronicPainTreatmentHonoluluPage() {
                       <p className="text-slate-600 text-sm"><strong>Ph:</strong> (808) 452-1900 <span className="mx-1">|</span> <strong>Fax:</strong> (808) 452-1521</p>
                     </div>
                   </div>
-                  <div className="mt-6 bg-slate-50 p-4 rounded-lg">
-                      <p className="font-bold text-slate-900 mb-1 text-sm">Hours of Operation</p>
-                      <p className="text-slate-600 text-sm">Mon-Fri: 9am - 1pm, Sat: 8am - 12pm</p>
+                  <div className="mt-6 bg-slate-50 p-4 rounded-lg border border-slate-100">
+                      <p className="font-bold text-slate-900 mb-1 text-sm">Insurance Information</p>
+                      <p className="text-slate-600 text-sm"><strong>Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA.</strong></p>
                   </div>
                 </div>
 
@@ -319,11 +275,11 @@ export default function ChronicPainTreatmentHonoluluPage() {
 
             <div className="bg-blue-900 text-white p-8 rounded-2xl shadow-xl">
               <h4 className="text-xl font-bold mb-4 flex items-center gap-2">Patient Reviews</h4>
-              <p className="text-slate-300 italic text-sm leading-relaxed mb-4">"Dr. Cai completely resolved my shoulder pain after just 3 visits. I had been suffering for months. The clinic is pristine, professional, and very welcoming!"</p>
+              <p className="text-slate-300 italic text-sm leading-relaxed mb-4">"I have suffered from severe Fibromyalgia and peripheral neuropathy for 10 years and was told by countless doctors to 'just live with it.' Dr. Cai's Traditional Acupuncture is the only thing that turned off the electric-shock sensations in my legs. My quality of life has completely changed."</p>
               <div className="flex items-center gap-4 mt-6">
-                 <div className="h-10 w-10 bg-blue-800 rounded-full flex items-center justify-center font-bold text-white shadow-inner">ST</div>
+                 <div className="h-10 w-10 bg-blue-800 rounded-full flex items-center justify-center font-bold text-white shadow-inner">EJ</div>
                  <div>
-                    <p className="text-white font-semibold text-sm">Sarah T.</p>
+                    <p className="text-white font-semibold text-sm">Elizabeth J.</p>
                     <p className="text-blue-400 text-xs">Honolulu Resident</p>
                  </div>
               </div>

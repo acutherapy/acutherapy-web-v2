@@ -53,7 +53,7 @@ export default function InjuryRecoveryEnPage() {
                     <ul className="space-y-4 text-slate-700 mt-8 font-medium text-lg font-medium">
                         <li className="flex items-center gap-3"><CheckCircle2 className="text-blue-400 w-6 h-6" /> Zero Out-of-Pocket for Auto Accidents</li>
                         <li className="flex items-center gap-3"><CheckCircle2 className="text-blue-400 w-6 h-6" /> Severe Whiplash & Back Pain Experts</li>
-                        <li className="flex items-center gap-3"><CheckCircle2 className="text-blue-400 w-6 h-6" /> Advanced Electro-Acupuncture Therapy</li>
+                        <li className="flex items-center gap-3"><CheckCircle2 className="text-blue-400 w-6 h-6" /> Traditional Acupuncture Therapy</li>
                     </ul>
                 </div>
                 

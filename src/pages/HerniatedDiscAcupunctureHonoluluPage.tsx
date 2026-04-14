@@ -59,7 +59,7 @@ export default function HerniatedDiscAcupunctureHonoluluPage() {
               A herniated disc isn't just a spine problem; it's a massive mechanical compression issue. We use our three clinical modalities to attack the pain holistically, releasing the mechanical strain crushing the disc:
             </p>
             <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
-              <li><strong>Acupuncture:</strong> Using precise electro-acupuncture along the local lumbar spine (Hua Tuo Jia Ji points), we force the deeply locked paraspinal muscles to completely relax. This physical release takes significant mechanical pressure off the affected disc while drastically cooling down the "chemical burn" on the nerve root.</li>
+              <li><strong>Acupuncture:</strong> Using precise Traditional Acupuncture along the local lumbar spine (Hua Tuo Jia Ji points), we force the deeply locked paraspinal muscles to completely relax. This physical release takes significant mechanical pressure off the affected disc while drastically cooling down the "chemical burn" on the nerve root.</li>
               <li><strong>Medical Massage:</strong> We physically break apart the hardened fascial adhesions locking up your hips and glutes—the heavy muscles that are actually pulling your pelvis out of alignment and exacerbating the disc compression.</li>
               <li><strong>Fire Cupping Therapy:</strong> Applied aggressively along the lower back, extreme negative pressure physically separates the glued fascial layers, decompressing the lumbar spine immediately.</li>
             </ul>

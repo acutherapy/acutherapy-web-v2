@@ -124,7 +124,7 @@ export default function TennisElbowAcupunctureHonoluluPage() {
           <article className="md:col-span-8">
             
               <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
-                Whether you suffer from intense outer elbow pain (<strong>Lateral Epicondylitis</strong> / Tennis Elbow) or burning inner elbow pain (<strong>Medial Epicondylitis</strong> / Golfer's Elbow), the root cause is the same: chronic micro-tearing and inflammation of the forearm tendons. At AcuTherapy Clinics, we avoid temporary cortisone masks. We use advanced electroacupuncture and myofascial release to physically stimulate the production of collagen and heal the <i>extensor carpi radialis brevis (ECRB)</i> muscle at the cellular level.
+                Whether you suffer from intense outer elbow pain (<strong>Lateral Epicondylitis</strong> / Tennis Elbow) or burning inner elbow pain (<strong>Medial Epicondylitis</strong> / Golfer's Elbow), the root cause is the same: chronic micro-tearing and inflammation of the forearm tendons. At AcuTherapy Clinics, we avoid temporary cortisone masks. We use Traditional Acupuncture and myofascial release to physically stimulate the production of collagen and heal the <i>extensor carpi radialis brevis (ECRB)</i> muscle at the cellular level.
               </p>
               
       <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/50 group mb-12 w-full max-w-3xl mx-auto">
@@ -136,7 +136,7 @@ export default function TennisElbowAcupunctureHonoluluPage() {
                 Forearm tendons have notoriously poor blood supply, which is why "resting" rarely cures Tennis Elbow. We forcibly re-introduce blood flow and break down mechanical strain using three proven modalities:
               </p>
               <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
-                <li><strong>Electroacupuncture Honolulu:</strong> By attaching micro-currents to the needles inserted around the damaged epicondyle, we create an artificial "pump" that floods the oxygen-starved tendon tears with nutrient-rich blood, accelerating collagen repair and stopping nerve pain instantly.</li>
+                <li><strong>Traditional Acupuncture Honolulu:</strong> By placing fine needles around the damaged epicondyle, we naturally encourage the body to flood the oxygen-starved tendon tears with nutrient-rich blood, accelerating collagen repair and stopping nerve pain instantly.</li>
                 <li><strong>Myofascial Release (Medical Massage):</strong> Hand and wrist overuse creates stiff, hardened knots throughout the entire forearm belly. We use aggressive Myofascial Release to physically break down this scar tissue, taking the extreme pulling tension off your elbow joint.</li>
                 <li><strong>Fire Cupping Therapy / Gua Sha:</strong> Applied along the affected arm, these modalities pull stagnant, inflammatory metabolic waste out of the deep fascial layers, significantly reducing the "burning" sensation during grip strength tasks.</li>
               </ul>
@@ -266,7 +266,7 @@ export default function TennisElbowAcupunctureHonoluluPage() {
 
             <div className="bg-blue-900 text-white p-8 rounded-2xl shadow-xl">
               <h4 className="text-xl font-bold mb-4 flex items-center gap-2">Patient Reviews</h4>
-              <p className="text-slate-300 italic text-sm leading-relaxed mb-4">"I couldn't even grip my coffee mug or type on my keyboard without searing pain in my right elbow. Dr. Cai's electro-acupuncture released my tight forearm in ways physical therapy couldn't. Highly recommend!"</p>
+              <p className="text-slate-300 italic text-sm leading-relaxed mb-4">"I couldn't even grip my coffee mug or type on my keyboard without searing pain in my right elbow. Dr. Cai's Traditional Acupuncture released my tight forearm in ways physical therapy couldn't. Highly recommend!"</p>
               <div className="flex items-center gap-4 mt-6">
                  <div className="h-10 w-10 bg-blue-800 rounded-full flex items-center justify-center font-bold text-white shadow-inner">ST</div>
                  <div>

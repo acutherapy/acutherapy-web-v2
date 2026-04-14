@@ -136,7 +136,7 @@ export default function SciaticaAcupunctureHonoluluPage() {
                 Sciatica is a mechanical compression issue. Painkillers only mask the siren; we must remove the rock crushing the nerve. We combine our structural modalities to attack the <strong>Sciatic Nerve Root</strong> from every angle:
               </p>
               <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
-                <li><strong>Electroacupuncture (Nerve Block & Repair):</strong> We place ultra-fine needles along the compressed lumbar segments and down the path of the sciatic nerve (the <i>Gallbladder</i> and <i>Bladder</i> meridians). By applying targeted micro-current frequencies, we interrupt the sharp, electrical pain signals reaching the brain and stimulate cellular repair of the inflamed myelin sheath surrounding the nerve.</li>
+                <li><strong>Traditional Acupuncture (Nerve Block & Repair):</strong> We place ultra-fine needles along the compressed lumbar segments and down the path of the sciatic nerve (the <i>Gallbladder</i> and <i>Bladder</i> meridians). This targeted therapy interrupts the sharp pain signals reaching the brain and stimulates cellular repair of the inflamed myelin sheath surrounding the nerve.</li>
                 <li><strong>Medical Massage (Tui-Na):</strong> "Pseudo-sciatica" is often caused by a hyper-contracted Piriformis muscle physically strangling the nerve in your buttocks. We use deep-tissue medical massage to forcibly melt these trigger points and tear down fibrotic adhesions, instantly lifting the vice-grip off the nerve.</li>
                 <li><strong>Fire Cupping Therapy:</strong> Chronic nerve inflammation creates a toxic, stagnant environment deep in the lower back and pelvis. Vacuum cupping aggressively sucks this stagnant blood and inflammatory debris outward, flooding the lumbar spine with fresh, oxygenated blood to accelerate healing.</li>
               </ul>
@@ -269,7 +269,7 @@ export default function SciaticaAcupunctureHonoluluPage() {
 
             <div className="bg-blue-900 text-white p-8 rounded-2xl shadow-xl">
               <h4 className="text-xl font-bold mb-4 flex items-center gap-2">Patient Reviews</h4>
-              <p className="text-slate-300 italic text-sm leading-relaxed mb-4">"I had excruciating shooting pain down my right leg from an L5-S1 disc issue. I couldn't drive or sleep. After just a few sessions of electro-acupuncture and cupping with Dr. Cai, the sharp electrical shocks stopped completely. I avoided surgery entirely!"</p>
+              <p className="text-slate-300 italic text-sm leading-relaxed mb-4">"I had excruciating shooting pain down my right leg from an L5-S1 disc issue. I couldn't drive or sleep. After just a few sessions of Traditional Acupuncture and cupping with Dr. Cai, the sharp electrical shocks stopped completely. I avoided surgery entirely!"</p>
               <div className="flex items-center gap-4 mt-6">
                  <div className="h-10 w-10 bg-blue-800 rounded-full flex items-center justify-center font-bold text-white shadow-inner">ST</div>
                  <div>

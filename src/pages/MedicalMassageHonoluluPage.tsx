@@ -24,8 +24,13 @@ export default function MedicalMassageHonoluluPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/80" />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm mb-6 backdrop-blur-sm">
-            <ShieldCheck size={16} /> <span>Clinical Structural Release</span>
+          <div className="flex flex-wrap justify-center gap-3 mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm backdrop-blur-sm">
+              <ShieldCheck size={16} /> <span>Clinical Structural Release</span>
+            </div>
+            <div className="inline-flex items-center px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-200 border border-emerald-500/30 font-medium text-sm backdrop-blur-sm">
+              Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
+            </div>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Medical Massage in Honolulu</h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Not a spa treatment. This is highly targeted, clinical muscular rehabilitation designed to break down tough scar tissue and release extreme tension.</p>
@@ -49,14 +54,14 @@ export default function MedicalMassageHonoluluPage() {
               When trauma hits the body (such as a severe whiplash impact), your muscles defensively seize up. If not forcefully broken apart, these seized fibers lock into dense, painful scar tissue (myofascial adhesions) that permanently alter your skeleton's posture. Tui-Na utilizes dynamic friction, deep pressing, and joint mobilization techniques to physically break apart this stubborn, knotted scar tissue.
             </p>
 
-            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How It Accelerates Your Injury Recovery</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Our Three Core Treatment Pillars</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
-              AcuTherapy Clinics utilizes medical massage as a powerful complementary tool. While our acupuncture needles reboot the nervous system and decrease the chemical inflammation, our manual medical massage handles the heavy physical lifting:
+              AcuTherapy Clinics utilizes medical massage as part of a powerful 3-pillar clinical protocol. While standard spas only use massage, we force recovery via:
             </p>
             <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
-              <li><strong>Physical Decalcification:</strong> Breaking down crunchy, calcified knots around the shoulder blades and lumbar spine.</li>
-              <li><strong>Joint Mobilization:</strong> Safely opening restricted joint spaces to allow fresh synovial fluid back in, vital for Frozen Shoulder and Hip Pain.</li>
-              <li><strong>Lymphatic Pushing:</strong> Manually flushing trapped edema (swelling) and inflammatory toxins away from an injury site toward the lymph nodes.</li>
+              <li><strong>Traditional Acupuncture:</strong> Naturally rebalancing the body's pathways and rapidly downregulating muscular inflammation before hands-on work begins.</li>
+              <li><strong>Medical Massage (Tui-Na):</strong> The core physical lifting—breaking down crunchy, calcified knots around the spine, and safely opening restricted joint spaces (decalcification).</li>
+              <li><strong>Fire Cupping Therapy:</strong> Aggressive myofascial decompression. We manually flush trapped edema (swelling) and inflammatory toxins away from an injury site by pulling negative pressure.</li>
             </ul>
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect & Real Patient Results</h2>
@@ -112,22 +117,16 @@ export default function MedicalMassageHonoluluPage() {
                 <Link to="/acupuncture-pearl-city" className="px-4 py-2 bg-slate-200 text-slate-700 rounded-lg hover:bg-blue-100 transition-colors font-medium">Aiea / Pearl City</Link>
             </div>
 
-          
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Causes Medical Massage Honolulu?</h2>
-<p className="text-lg text-slate-700 leading-relaxed mb-6">Medical Massage Honolulu can be triggered by a variety of factors including chronic stress, poor posture, repetitive strain, or acute injuries. Over time, these factors create blockages in blood circulation and nerve function, leading to persistent discomfort.</p>
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Medical Massage vs. Standard PT & Spa Massage</h2>
+<p className="text-lg text-slate-700 leading-relaxed mb-6">Traditional Physical Therapy (PT) often relies heavily on standardized stretching exercises and elastic bands. While helpful for rehabilitation, these exercises cannot physically break down mature scar tissue. Conversely, standard spa massage is too superficial to effect change in the deep joint capsule.</p>
 
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Massage Helps</h2>
-<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li><strong>Pain Relief:</strong> Triggers the release of endorphins to block pain signals effectively.</li>
-<li><strong>Nervous System Regulation:</strong> Calms the central nervous system, reducing tension without relying on pharmaceuticals.</li>
-<li><strong>Improved Circulation:</strong> Enhances blood flow to the affected areas, accelerating the natural healing process.</li>
-</ul>
+<p className="text-lg text-slate-700 leading-relaxed mb-6">Our <strong>Medical Tui-Na Massage</strong> bridging this gap. We provide the aggressive, hands-on structural intervention necessary to forcefully unlock frozen joints (like Adhesive Capsulitis) and shatter deep fascial armor, paving the way for true rehabilitation.</p>
 
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Who Is This For?</h2>
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Ideal Candidates for Medical Massage</h2>
 <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li>Individuals suffering from chronic pain who have not found relief through conventional methods.</li>
-<li>High-stress professionals seeking natural nervous system regulation.</li>
-<li>Athletes or individuals recovering from an injury needing accelerated healing.</li>
+<li><strong>Auto Accident Victims:</strong> Suffering from severe whiplash, neck locking, and traumatic muscle guarding.</li>
+<li><strong>Post-Surgical Patients:</strong> Needing to break down stubborn, movement-restricting scar tissue.</li>
+<li><strong>Chronic Pain Sufferers:</strong> Individuals with intractable frozen shoulder, sciatica, or severe lumbar muscle spasms.</li>
 </ul>
 
 <div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
@@ -181,9 +180,9 @@ export default function MedicalMassageHonoluluPage() {
                                                     </a>
                     </div>
                   </div>
-                  <div className="mt-6 bg-slate-50 p-4 rounded-lg">
-                      <p className="font-bold text-slate-900 mb-1 text-sm">Insurance Support</p>
-                      <p className="text-slate-600 text-sm">Most major Hawaii health insurance providers accepted. No-Fault PIP 100% Covered.</p>
+                  <div className="mt-6 bg-slate-50 p-4 rounded-lg border border-slate-100">
+                      <p className="font-bold text-slate-900 mb-1 text-sm">Insurance Information</p>
+                      <p className="text-slate-600 text-sm"><strong>Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA.</strong></p>
                   </div>
                 </div>
               </CardContent>
