@@ -14,7 +14,7 @@
       "source": "/sitemap_index.xml",
       "destination": "/sitemap",
       "permanent": true
-    }
+    },
     {
       "source": "/tag/(.*)",
       "destination": "/treatment-process",
