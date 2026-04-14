@@ -100,7 +100,7 @@ export default function AboutDrDavidCaiPage() {
                                         <li className="col-span-2">• Advanced clinical diagnostics</li>
                                     </ul>
                                     <p className="text-slate-700 text-sm leading-relaxed mb-4">
-                                        In addition to his clinical work, Dr. Cai has participated in research programs related to acupuncture and Chinese medicine with the US National Institutes of Health (NIH) and George Washington University Medical Center.
+                                        In addition to his clinical work, Dr. Cai has participated in research programs related to acupuncture and Chinese medicine with the <strong>US National Institutes of Health (NIH) and George Washington University Medical Center</strong>.
                                     </p>
                                     <div className="p-4 bg-slate-50 border-l-4 border-blue-500 rounded-r-xl">
                                         <p className="font-bold text-slate-800 text-sm mb-1">Dr. Cai also serves as:</p>

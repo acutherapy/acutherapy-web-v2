@@ -42,6 +42,22 @@ export default function AutoAccidentInjuryTreatmentHonoluluPage() {
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-12 gap-12">
           
           <article className="md:col-span-8">
+
+            {/* CRO Expectation Module */}
+            <div className="bg-slate-50 border-l-4 border-blue-600 p-6 rounded-r-xl mb-10 shadow-sm">
+              <p className="text-lg text-slate-900 font-semibold mb-1">Most patients see improvement in 3–5 visits.</p>
+              <p className="text-slate-600">Full recovery from auto injuries may take 4–10+ sessions.</p>
+              
+              <div className="mt-4 pt-4 border-t border-slate-200">
+                <p className="font-bold text-slate-900 mb-2">What to Expect:</p>
+                <ul className="space-y-1 text-slate-700 font-medium">
+                  <li><span className="text-blue-600 mr-2">→</span> <strong>Visit 1:</strong> Evaluation + Immediate treatment</li>
+                  <li><span className="text-blue-600 mr-2">→</span> <strong>Week 1–2:</strong> Massive pain reduction</li>
+                  <li><span className="text-blue-600 mr-2">→</span> <strong>Week 3+:</strong> Structural repair & function recovery</li>
+                </ul>
+              </div>
+            </div>
+
             <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
               A motor vehicle accident causes extreme physical trauma to the body, even at low speeds. The intense force throws your spine out of alignment, tears micro-fascia, and locks your muscles in a defensive spasm. At AcuTherapy Clinics, our specialized <strong>Auto Accident Injury Treatment in Honolulu</strong> is designed to rapidly reduce acute inflammation, stop chronic whiplash pain, and prevent scar tissue from permanently restricting your mobility. 
             </p>
@@ -122,7 +138,9 @@ export default function AutoAccidentInjuryTreatmentHonoluluPage() {
 <div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
 <h2 className="text-3xl font-bold text-blue-900 mb-4">Ready to find relief?</h2>
 <p className="text-lg text-blue-700 mb-8">Stop living in discomfort. Located right here in Honolulu, we are here to help you restore your well-being.</p>
-<Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Book Your Session Today</Button></Link>
+<Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Get Your Personalized Recovery Plan</Button></Link>
+<p className="text-blue-600 text-sm mt-3 opacity-80 font-medium tracking-wide">Takes less than 60 seconds</p>
+<p className="text-red-500 font-bold mt-4">The longer you wait, the harder it is to fix.</p>
 </div>
 
 </article>
@@ -135,11 +153,14 @@ export default function AutoAccidentInjuryTreatmentHonoluluPage() {
                 <h3 className="text-2xl font-bold text-slate-900 mb-2">Book Your Visit</h3>
                 <p className="text-slate-600 mb-8 text-sm">Don't wait for the pain to become chronic. Book an evaluation today.</p>
                 <div className="flex flex-col gap-4">
-                  <Link to="/book-appointment">
-                    <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
-                      <Calendar className="mr-2" /> Schedule Online
-                    </Button>
-                  </Link>
+                  <div className="flex flex-col gap-1 items-center">
+                    <Link to="/book-appointment" className="w-full">
+                      <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
+                        Get My Recovery Plan
+                      </Button>
+                    </Link>
+                    <p className="text-slate-500 text-xs font-medium">Takes less than 60 seconds</p>
+                  </div>
                   <Button variant="outline" className="w-full h-14 text-lg border-2 border-slate-200" onClick={() => window.location.href='tel:+18085287177'}>
                     <PhoneCall className="mr-2 h-5 w-5 text-blue-600" /> (808) 528-7177
                   </Button>

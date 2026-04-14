@@ -104,7 +104,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   let navReviews = 'Reviews';
   let navTopics = 'Q&A';
   let navAbout = 'About Us';
-  let navBook = 'Book Appointment';
+  let navBook = 'Get My Recovery Plan';
 
   let footerDesc = "Honolulu's premier clinic for natural pain relief, acupuncture, and traditional Chinese medicine, led by Dr. David Cai.";
   let footerTreatments = 'Services';

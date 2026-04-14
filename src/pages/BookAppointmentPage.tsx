@@ -69,6 +69,16 @@ export default function BookAppointmentPage() {
                     <p className="text-lg text-slate-600">Complete our Smart Intake form to get matched with the best care plan.</p>
                 </div>
 
+                <div className="bg-blue-50 border border-blue-100 rounded-xl p-6 mb-8 max-w-2xl mx-auto shadow-sm">
+                    <h3 className="font-bold text-blue-900 text-lg mb-3">Before You Book</h3>
+                    <ul className="text-blue-800 space-y-2 font-medium">
+                        <li className="flex items-center gap-2"><Check className="h-4 w-4 text-blue-600 flex-shrink-0" /> Most patients need 4–10 sessions</li>
+                        <li className="flex items-center gap-2"><Check className="h-4 w-4 text-blue-600 flex-shrink-0" /> We'll create your personalized plan on your first visit</li>
+                        <li className="flex items-center gap-2"><Check className="h-4 w-4 text-blue-600 flex-shrink-0" /> Injury Claims Accepted (Auto PIP, Workers' Comp & VA Care)</li>
+                        <li className="flex items-center gap-2"><Check className="h-4 w-4 text-blue-600 flex-shrink-0" /> Medical Insurance Accepted (HMSA, Kaiser, UHA, HMAA & Medicare UHC)</li>
+                    </ul>
+                </div>
+
                 {/* Stepper */}
                 {step > 1 && step < 4 && (
                     <div className="flex items-center justify-center mb-12 max-w-lg mx-auto relative px-4">

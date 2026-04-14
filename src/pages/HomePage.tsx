@@ -114,26 +114,26 @@ export default function HomePage() {
               </div>
 
               <h1 className="text-4xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
-                Natural, Fast-Acting <br />
+                Start Your Recovery. <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-300">
-                  Pain & Injury Relief
+                  Not Just Temporary Relief.
                 </span>
               </h1>
 
               <p className="text-lg lg:text-xl text-slate-300 font-light leading-relaxed mb-8 max-w-2xl">
-                We resolve what others can't. Specializing in chronic pain, sciatica, and auto accident recovery. By treating the root cause, not just symptoms, we get you back to living pain-free fast.
+                Auto Injury &middot; Workers' Comp &middot; Chronic Pain &middot; VA Care<br/><br/>
+                Get a personalized recovery plan on your first visit.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/book-appointment">
+                <div className="flex flex-col items-start gap-1">
                   <Link to="/book-appointment">
-                  <Link to="/book-appointment">
-                  <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white h-14 px-8 text-lg font-semibold shadow-lg shadow-blue-900/40">
-                    <Calendar className="mr-2 h-5 w-5" /> Schedule Your Visit
-                  </Button>
-                </Link>
-                </Link>
-                </Link>
+                    <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white h-14 px-8 text-lg font-semibold shadow-lg shadow-blue-900/40">
+                      Get My Recovery Plan
+                    </Button>
+                  </Link>
+                  <p className="text-slate-300 text-sm mt-1 opacity-80 px-2 font-medium">Takes less than 60 seconds</p>
+                </div>
                 <Button size="lg" variant="outline" className="text-slate-900 border-white hover:bg-slate-100 h-14 px-8 text-lg font-semibold bg-white lg:hidden">
                   <PhoneCall className="mr-2 h-5 w-5" /> (808) 528-7177
                 </Button>
@@ -162,15 +162,14 @@ export default function HomePage() {
                   </div>
 
                   <div className="space-y-4 mb-8">
-                    <Link to="/book-appointment">
-                      <Link to="/book-appointment">
-                      <Link to="/book-appointment">
-                      <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white h-14 text-lg font-bold rounded-xl shadow-md">
-                        <Calendar className="mr-2 h-5 w-5" /> Schedule Online
-                      </Button>
-                    </Link>
-                    </Link>
-                    </Link>
+                    <div className="flex flex-col items-center gap-1">
+                      <Link to="/book-appointment" className="w-full">
+                        <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white h-14 text-lg font-bold rounded-xl shadow-md">
+                          Get My Recovery Plan
+                        </Button>
+                      </Link>
+                      <p className="text-slate-500 text-xs mt-1 font-medium">Takes less than 60 seconds</p>
+                    </div>
                     <Button variant="outline" className="w-full text-slate-900 border-slate-200 hover:bg-slate-50 h-14 text-lg font-bold rounded-xl shadow-sm bg-white">
                       <PhoneCall className="mr-2 h-5 w-5 text-blue-600" /> (808) 528-7177
                     </Button>
@@ -231,8 +230,73 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* CRO Module 1: Situation Grid */}
+      <section className="py-16 bg-slate-50 text-center border-b border-slate-200">
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="text-3xl font-extrabold text-slate-900 mb-8">What's Your Situation?</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <Link to="/auto-accident-injury-honolulu" className="bg-white hover:bg-blue-600 hover:text-white text-slate-800 font-bold py-4 px-6 rounded-full border-2 border-slate-200 hover:border-blue-600 transition-all shadow-sm">
+              🚗 Auto Accident
+            </Link>
+            <Link to="/pain-management-honolulu" className="bg-white hover:bg-blue-600 hover:text-white text-slate-800 font-bold py-4 px-6 rounded-full border-2 border-slate-200 hover:border-blue-600 transition-all shadow-sm">
+              😖 Chronic Pain
+            </Link>
+            <Link to="/workers-comp-acupuncture-honolulu" className="bg-white hover:bg-blue-600 hover:text-white text-slate-800 font-bold py-4 px-6 rounded-full border-2 border-slate-200 hover:border-blue-600 transition-all shadow-sm">
+              👷 Workers' Comp
+            </Link>
+            <Link to="/veterans-pain-relief-honolulu" className="bg-white hover:bg-blue-600 hover:text-white text-slate-800 font-bold py-4 px-6 rounded-full border-2 border-slate-200 hover:border-blue-600 transition-all shadow-sm">
+              🪖 VA / Veterans
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* CRO Module 2: Comparison */}
+      <section className="py-20 bg-white border-b border-slate-100">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl lg:text-4xl font-extrabold text-slate-900 mb-10 text-center tracking-tight">Why Most Treatments Don't Last</h2>
+          <div className="bg-slate-50 rounded-3xl p-8 border border-slate-200 shadow-md">
+            <div className="grid grid-cols-2 gap-4 pb-4 border-b-2 border-slate-200 mb-4 font-bold text-lg text-center">
+              <div className="text-slate-500">Typical Clinics</div>
+              <div className="text-blue-700">AcuTherapy Clinics</div>
+            </div>
+            <div className="space-y-4">
+              <div className="grid grid-cols-2 gap-4 items-center text-center">
+                <div className="text-slate-600 bg-white p-4 rounded-xl border border-slate-100 shadow-sm text-sm sm:text-base">One-time relief</div>
+                <div className="text-slate-900 font-semibold bg-blue-50 p-4 rounded-xl border border-blue-100 shadow-sm flex items-center justify-center gap-2 text-sm sm:text-base"><CheckCircle2 className="text-blue-600 h-5 w-5 flex-shrink-0"/> Structured recovery plan</div>
+              </div>
+              <div className="grid grid-cols-2 gap-4 items-center text-center">
+                <div className="text-slate-600 bg-white p-4 rounded-xl border border-slate-100 shadow-sm text-sm sm:text-base">Focus on symptoms</div>
+                <div className="text-slate-900 font-semibold bg-blue-50 p-4 rounded-xl border border-blue-100 shadow-sm flex items-center justify-center gap-2 text-sm sm:text-base"><CheckCircle2 className="text-blue-600 h-5 w-5 flex-shrink-0"/> Root cause approach</div>
+              </div>
+              <div className="grid grid-cols-2 gap-4 items-center text-center">
+                <div className="text-slate-600 bg-white p-4 rounded-xl border border-slate-100 shadow-sm text-sm sm:text-base">No clear timeline</div>
+                <div className="text-slate-900 font-semibold bg-blue-50 p-4 rounded-xl border border-blue-100 shadow-sm flex items-center justify-center gap-2 text-sm sm:text-base"><CheckCircle2 className="text-blue-600 h-5 w-5 flex-shrink-0"/> Step-by-step recovery</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CRO Module 3: Real Results */}
+      <section className="py-16 bg-blue-900 text-white">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-10 text-blue-100">Real Results</h2>
+          <div className="grid md:grid-cols-2 gap-8 text-left">
+            <Link to="/patient-reviews" className="bg-blue-800/50 p-6 rounded-2xl border border-blue-700/50 flex flex-col justify-center hover:bg-blue-800 transition-colors group">
+              <span className="text-blue-300 font-semibold text-sm tracking-wider uppercase mb-2 block group-hover:text-white transition-colors">Case 1</span>
+              <p className="text-xl font-medium leading-relaxed group-hover:text-white transition-colors">Auto accident <span className="opacity-60 text-lg mx-2">→</span> <span className="text-emerald-400 group-hover:text-emerald-300">neck pain gone in 4 weeks</span></p>
+            </Link>
+            <Link to="/patient-reviews" className="bg-blue-800/50 p-6 rounded-2xl border border-blue-700/50 flex flex-col justify-center hover:bg-blue-800 transition-colors group">
+              <span className="text-blue-300 font-semibold text-sm tracking-wider uppercase mb-2 block group-hover:text-white transition-colors">Case 2</span>
+              <p className="text-xl font-medium leading-relaxed group-hover:text-white transition-colors">Chronic back pain <span className="opacity-60 text-lg mx-2">→</span> <span className="text-emerald-400 group-hover:text-emerald-300">70% better after 6 visits</span></p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Meet The Doctor */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
 
