@@ -134,8 +134,18 @@ export default function DoesAcupunctureHelpSciaticaPage() {
               <strong>Acupuncture for sciatica in Honolulu may help reduce nerve-related pain, ease muscle tension, and improve mobility. Many patients experience gradual relief from lower back pain and leg discomfort when acupuncture is used as part of a broader treatment plan.</strong>
             </p>
 
+            <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-6">
+              Sciatica can make even simple movements uncomfortable—standing, walking, or sitting too long. In Honolulu, many patients turn to acupuncture as a supportive option for managing lower back pain and nerve-related symptoms. At Acutherapy Clinics, Dr. David Cai works with individuals experiencing sciatica by focusing on muscle tension, circulation, and nerve sensitivity.
+            </p>
+
+            <div className="bg-blue-50 border-l-4 border-blue-600 p-6 mb-10 rounded-r-xl">
+               <p className="text-[16px] md:text-[18px] text-slate-800 font-medium italic">
+                 "Research suggests acupuncture may help reduce pain and improve function in patients with sciatica when used as part of conservative care."
+               </p>
+            </div>
+
             <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10">
-              Sciatica can make even simple movements uncomfortable—standing, walking, or sitting too long. In Honolulu, many patients turn to acupuncture as a supportive option for managing lower back pain and nerve-related symptoms. At Acutherapy Clinics, Dr. David Cai works with individuals experiencing sciatica by focusing on muscle tension, circulation, and nerve sensitivity. While acupuncture is not a standalone cure, it may help support recovery and improve daily function when combined with other appropriate care.
+              While acupuncture is not a standalone cure, it may help support recovery and improve daily function when combined with other appropriate care, such as <Link to="/medical-massage-honolulu" className="text-blue-600 font-medium hover:underline">medical massage</Link>. If your symptoms began after a collision, our <Link to="/auto-accident-injury-treatment-honolulu" className="text-blue-600 font-medium hover:underline">auto injury acupuncture</Link> treatments are specially designed for trauma recovery. Additionally, those dealing with general spinal discomfort can learn more about our approach to <Link to="/back-pain-acupuncture-honolulu" className="text-blue-600 font-medium hover:underline">acupuncture for back pain</Link>.
             </p>
 
             <h2 className="text-[24px] font-bold text-slate-900 mb-4">
@@ -144,7 +154,7 @@ export default function DoesAcupunctureHelpSciaticaPage() {
             <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
               <p>Sciatica doesn't always feel the same for everyone.</p>
               <p>For some people in Honolulu, it's a sharp pain shooting down the leg.<br />For others, it's more of a dull ache, tingling, or tightness that just won't go away.</p>
-              <p>Acupuncture doesn't "push the nerve back into place."<br />What it may do instead is help the surrounding muscles relax and reduce the tension that's putting pressure on the nerve.</p>
+              <p>Acupuncture doesn't "push the nerve back into place."<br />What it may do instead is help the surrounding muscles relax and reduce the tension that's putting pressure on the nerve. <strong>Acupuncture may help by reducing muscle tension, improving circulation, and supporting the body's response to nerve-related irritation (nerve modulation).</strong></p>
               <p>Many patients report that after a few sessions:</p>
               <ul className="list-disc pl-6 space-y-2">
                 <li>Movement feels easier</li>
@@ -222,20 +232,20 @@ export default function DoesAcupunctureHelpSciaticaPage() {
             </h2>
             <div className="space-y-8 mb-10">
               <div>
-                <h3 className="text-[20px] font-bold text-slate-900 mb-2">Can acupuncture really help sciatica pain?</h3>
-                <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">Acupuncture may help reduce muscle tension and support the body's response to nerve-related pain, which can improve comfort and mobility over time.</p>
+                <h3 className="text-[20px] font-bold text-slate-900 mb-2">Can acupuncture fix a pinched nerve?</h3>
+                <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">While acupuncture cannot physically "un-pinch" a nerve or alter structural issues like a herniated disc, it may help reduce the surrounding muscle spasms and local inflammation that compress the nerve, thereby supporting the body’s natural healing process and reducing pain.</p>
               </div>
               <div>
-                <h3 className="text-[20px] font-bold text-slate-900 mb-2">How many sessions does it take to see results?</h3>
-                <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">This varies depending on the severity of the condition. Some patients notice changes within a few sessions, while others may need ongoing care.</p>
+                <h3 className="text-[20px] font-bold text-slate-900 mb-2">How long does acupuncture take to work for sciatica?</h3>
+                <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">This varies depending on the severity and chronicity of the condition. Some patients notice an immediate shift or relief after just one or two sessions, while more persistent sciatica often requires a focused treatment plan ranging from 4 to 12 sessions for lasting results.</p>
               </div>
               <div>
                 <h3 className="text-[20px] font-bold text-slate-900 mb-2">Is acupuncture safe for sciatica?</h3>
-                <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">When performed by a licensed practitioner, acupuncture is generally considered safe and is commonly used as a supportive therapy.</p>
+                <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">When performed by a licensed practitioner, acupuncture is generally considered very safe. It is commonly used as a natural, non-pharmaceutical supportive therapy with minimal side effects.</p>
               </div>
               <div>
-                <h3 className="text-[20px] font-bold text-slate-900 mb-2">Does acupuncture replace physical therapy or other treatments?</h3>
-                <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">Acupuncture is often used alongside other forms of care. It may complement physical therapy or medical treatment rather than replace them.</p>
+                <h3 className="text-[20px] font-bold text-slate-900 mb-2">Is acupuncture better than physical therapy for sciatica?</h3>
+                <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">They are complementary rather than competitive. Acupuncture excels at providing acute pain relief, reducing muscle guarding, and lowering inflammation—which often makes subsequent physical therapy exercises much easier, less painful, and more effective.</p>
               </div>
             </div>
 
@@ -257,11 +267,8 @@ export default function DoesAcupunctureHelpSciaticaPage() {
 
             <div className="bg-slate-100 rounded-2xl p-8 border border-slate-200">
               <h2 className="text-[28px] font-bold text-slate-900 mb-4">Ready to Find Relief from Sciatica?</h2>
-              <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-4">
-                If lower back pain or nerve discomfort has been slowing you down, it may be time to explore your options.
-              </p>
               <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-8">
-                Acupuncture may help support your recovery and improve how your body feels day to day.
+                If sciatica pain is affecting your daily movement, a personalized evaluation can help determine whether acupuncture may support your recovery.
               </p>
               
               <ul className="space-y-3 mb-8 text-slate-800 font-medium">
