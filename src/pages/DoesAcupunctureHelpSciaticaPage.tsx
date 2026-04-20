@@ -1,17 +1,15 @@
-
-
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Calendar, PhoneCall, MapPin, ShieldCheck, Activity } from "lucide-react";
+import { Calendar, PhoneCall, MapPin, ShieldCheck, Activity, CheckCircle2 } from "lucide-react";
 
 export default function DoesAcupunctureHelpSciaticaPage() {
   return (
     <>
       <Helmet>
-        <title>Does Acupuncture Help Sciatica | Honolulu Acupuncture Guide</title>
-        <meta name="description" content="Learn more about Does Acupuncture Help Sciatica. Dr. David Cai from AcuTherapy Clinics answers your questions about acupuncture efficacy and treatment processes." />
+        <title>Does Acupuncture Help Sciatica? | Honolulu Acupuncture</title>
+        <meta name="description" content="Acupuncture for sciatica in Honolulu may help reduce nerve-related pain and ease muscle tension. Learn how Acutherapy Clinics supports your recovery." />
         <script type="application/ld+json">
           {`
           {
@@ -106,8 +104,8 @@ export default function DoesAcupunctureHelpSciaticaPage() {
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm mb-6 backdrop-blur-sm">
             <ShieldCheck size={16} /> <span>Trusted Honolulu Pain Clinic</span>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Does Acupuncture Help Sciatica</h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Medical-grade treatments customized for lasting relief and recovery in Honolulu.</p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Does Acupuncture Help Sciatica?</h1>
+          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">What Patients in Honolulu Should Know about nerve-related pain and acupuncture.</p>
         </div>
       </section>
 
@@ -116,98 +114,181 @@ export default function DoesAcupunctureHelpSciaticaPage() {
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-12 gap-12">
           
           <article className="md:col-span-8">
-            
-              <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
-                At AcuTherapy Clinics, we believe that informed patients heal faster. If you are exploring options and wondering about <strong>does acupuncture help sciatica</strong>, Dr. David Cai and our clinical team have compiled the following medical insights based on decades of practice in Honolulu.
+            <h1 className="text-[32px] md:text-[40px] font-bold text-slate-900 mb-6 leading-tight">
+              Does Acupuncture Help Sciatica? What Patients in Honolulu Should Know
+            </h1>
+
+            <figure className="mb-8">
+              <img 
+                src="/images/acupuncture-sciatica-honolulu-dr-david-cai.jpg" 
+                alt="Dr. David Cai performing acupuncture for sciatica pain relief in Honolulu Hawaii" 
+                className="w-full h-auto rounded-2xl object-cover shadow-lg"
+                onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=800'; }}
+              />
+              <figcaption className="text-sm text-slate-500 mt-3 italic">
+                A clinical acupuncture session in Honolulu targeting lower back and leg pain associated with sciatica, performed by Dr. David Cai.
+              </figcaption>
+            </figure>
+
+            <p className="text-[18px] font-semibold text-slate-800 mb-6 leading-relaxed">
+              <strong>Acupuncture for sciatica in Honolulu may help reduce nerve-related pain, ease muscle tension, and improve mobility. Many patients experience gradual relief from lower back pain and leg discomfort when acupuncture is used as part of a broader treatment plan.</strong>
+            </p>
+
+            <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10">
+              Sciatica can make even simple movements uncomfortable—standing, walking, or sitting too long. In Honolulu, many patients turn to acupuncture as a supportive option for managing lower back pain and nerve-related symptoms. At Acutherapy Clinics, Dr. David Cai works with individuals experiencing sciatica by focusing on muscle tension, circulation, and nerve sensitivity. While acupuncture is not a standalone cure, it may help support recovery and improve daily function when combined with other appropriate care.
+            </p>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              A Realistic Answer: Can Acupuncture Actually Help Sciatica?
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>Sciatica doesn't always feel the same for everyone.</p>
+              <p>For some people in Honolulu, it's a sharp pain shooting down the leg.<br />For others, it's more of a dull ache, tingling, or tightness that just won't go away.</p>
+              <p>Acupuncture doesn't "push the nerve back into place."<br />What it may do instead is help the surrounding muscles relax and reduce the tension that's putting pressure on the nerve.</p>
+              <p>Many patients report that after a few sessions:</p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Movement feels easier</li>
+                <li>The intensity of the pain decreases</li>
+                <li>Sitting or standing becomes more manageable</li>
+              </ul>
+              <p>It's not instant, but it often helps the body shift in the right direction.</p>
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              What Does Acupuncture Feel Like for Sciatica?
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>During treatment, the focus is usually on the lower back, hips, and sometimes along the leg.</p>
+              <p>Patients often describe:</p>
+              <ul className="list-disc pl-6 space-y-2 mb-4">
+                <li>A mild tingling sensation</li>
+                <li>A sense of heaviness in tight areas</li>
+                <li>Warmth spreading through the muscles</li>
+              </ul>
+              <p>For many people, the biggest surprise is how relaxing it feels.</p>
+              <p>Many patients in Honolulu who were unsure at first say it felt much easier than they expected.</p>
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              How Acupuncture Differs from Just Stretching or Waiting It Out
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>A lot of people try to manage sciatica on their own first:</p>
+              <ul className="list-disc pl-6 space-y-2 mb-4">
+                <li>Stretching</li>
+                <li>Resting</li>
+                <li>Avoiding certain movements</li>
+              </ul>
+              <p>These can help—but sometimes the underlying tension pattern doesn't fully release.</p>
+              <p>Acupuncture may help support:</p>
+              <ul className="list-disc pl-6 space-y-2 mb-4">
+                <li>Better circulation to the affected area</li>
+                <li>Reduced muscle guarding</li>
+                <li>Improved mobility over time</li>
+              </ul>
+              <p>At Acutherapy Clinics in Honolulu, treatment is adjusted based on how your body responds—not a fixed routine.</p>
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              When People in Honolulu Consider Acupuncture for Sciatica
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>You might consider acupuncture if you're experiencing:</p>
+              <ul className="list-disc pl-6 space-y-2 bg-slate-50 p-6 rounded-xl border border-slate-100">
+                <li>Pain radiating from the lower back into the leg</li>
+                <li>Tightness in the hip or glute area</li>
+                <li>Tingling or numbness down the leg</li>
+                <li>Discomfort when sitting for long periods</li>
+                <li>Ongoing stiffness that doesn't improve</li>
+              </ul>
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              Local Acupuncture Care for Sciatica in Honolulu
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>Acutherapy Clinics is conveniently located near Ala Moana, making it easy to access from:</p>
+              <ul className="list-disc pl-6 space-y-2 mb-4">
+                <li>Waikiki</li>
+                <li>Kakaʻako</li>
+                <li>Downtown Honolulu</li>
+                <li>Greater Oahu</li>
+              </ul>
+              <p>For many patients, having a nearby clinic makes it easier to stay consistent with treatment, which can play an important role in recovery.</p>
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-6 border-b pb-2">
+              Q&A: Acupuncture for Sciatica
+            </h2>
+            <div className="space-y-8 mb-10">
+              <div>
+                <h3 className="text-[20px] font-bold text-slate-900 mb-2">Can acupuncture really help sciatica pain?</h3>
+                <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">Acupuncture may help reduce muscle tension and support the body's response to nerve-related pain, which can improve comfort and mobility over time.</p>
+              </div>
+              <div>
+                <h3 className="text-[20px] font-bold text-slate-900 mb-2">How many sessions does it take to see results?</h3>
+                <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">This varies depending on the severity of the condition. Some patients notice changes within a few sessions, while others may need ongoing care.</p>
+              </div>
+              <div>
+                <h3 className="text-[20px] font-bold text-slate-900 mb-2">Is acupuncture safe for sciatica?</h3>
+                <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">When performed by a licensed practitioner, acupuncture is generally considered safe and is commonly used as a supportive therapy.</p>
+              </div>
+              <div>
+                <h3 className="text-[20px] font-bold text-slate-900 mb-2">Does acupuncture replace physical therapy or other treatments?</h3>
+                <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">Acupuncture is often used alongside other forms of care. It may complement physical therapy or medical treatment rather than replace them.</p>
+              </div>
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              A Safe and Professional Approach
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-12">
+              <p className="mb-4">At Acutherapy Clinics in Honolulu, all acupuncture treatments are performed using sterile, single-use needles.</p>
+              <p className="mb-6">Care is provided by trained professionals following Hawaii healthcare standards, ensuring both safety and quality.</p>
+              <div className="flex flex-col sm:flex-row gap-4 mb-4">
+                 <div className="flex items-center gap-2 bg-emerald-50 text-emerald-800 px-4 py-3 rounded-lg border border-emerald-100 font-medium">
+                    <CheckCircle2 className="text-emerald-500 h-5 w-5" /> <span>Sterile Use Needles</span>
+                 </div>
+                 <div className="flex items-center gap-2 bg-blue-50 text-blue-800 px-4 py-3 rounded-lg border border-blue-100 font-medium">
+                    <CheckCircle2 className="text-blue-500 h-5 w-5" /> <span>Licensed Professionals</span>
+                 </div>
+              </div>
+            </div>
+
+            <div className="bg-slate-100 rounded-2xl p-8 border border-slate-200">
+              <h2 className="text-[28px] font-bold text-slate-900 mb-4">Ready to Find Relief from Sciatica?</h2>
+              <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-4">
+                If lower back pain or nerve discomfort has been slowing you down, it may be time to explore your options.
+              </p>
+              <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-8">
+                Acupuncture may help support your recovery and improve how your body feels day to day.
               </p>
               
-      <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/50 group mb-12 w-full max-w-3xl mx-auto">
-        <img loading="lazy" src="/images/fire-cupping-therapy.jpg" alt="Fire cupping therapy" className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
-        <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-8 pt-16 text-white text-lg font-medium">Traditional Fire Cupping Therapy for Deep Tissue Detox</figcaption>
-      </div>
-              <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Understanding Does Acupuncture Help Sciatica</h2>
-              <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                When discussing does acupuncture help sciatica, it's important to differentiate between western symptom-masking and the holistic root-cause methodology we practice here. Traditional Chinese Medicine (TCM) views the body as a systemic interconnected network. Any symptom you experience is a localized manifestation of a deeper structural or energetic imbalance.
-              </p>
-              <div className="bg-slate-50 p-8 rounded-xl border border-slate-200 my-8 shadow-sm">
-                 <h3 className="text-xl font-bold text-slate-900 mb-4">Patient FAQ: The Core Answer</h3>
-                 <p className="text-lg text-slate-700">
-                    If you are asking yourself about does acupuncture help sciatica, the short answer is that <strong>yes, professional acupuncture is statistically proven to be highly efficacious</strong> for these types of clinical inquiries. The treatment works by modulating the nervous system, reducing chronic inflammation, and resetting muscular firing patterns. However, every patient's body responds differently—which is why day-one diagnostic evaluations are critical.
-                 </p>
+              <ul className="space-y-3 mb-8 text-slate-800 font-medium">
+                <li className="flex items-center gap-3"><MapPin className="text-blue-600 h-5 w-5" /> Located near Ala Moana in Honolulu</li>
+                <li className="flex items-center gap-3"><Calendar className="text-blue-600 h-5 w-5" /> Same-day appointments available</li>
+                <li className="flex items-center gap-3"><PhoneCall className="text-blue-600 h-5 w-5" /> Call (808) 528-7177 to schedule your consultation</li>
+              </ul>
+
+              <Link to="/book-appointment" className="inline-block hover:opacity-90 transition-opacity" style={{ background: '#000', color: '#fff', padding: '12px 20px', borderRadius: '8px', fontWeight: 600, textDecoration: 'none' }}>
+                Get My Recovery Plan
+              </Link>
+            </div>
+            
+            <div className="mt-16">
+              <h3 className="text-2xl font-bold text-slate-900 mb-6 border-b pb-2">Explore Related Treatments</h3>
+              <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mb-4">
+                <Link to="/sciatica-acupuncture-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold"><Activity className="text-blue-500 mr-3 h-5 w-5" /> Sciatica Treatment Details</Link>
+                <Link to="/acupuncture-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold">
+                  <ShieldCheck className="text-blue-500 mr-3 h-5 w-5" /> Acupuncture Honolulu
+                </Link>
+                <Link to="/contact-honolulu-acupuncture" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold">
+                  <PhoneCall className="text-emerald-500 mr-3 h-5 w-5" /> Contact Us
+                </Link>
               </div>
-        
-            
-      <div className="mt-16 mb-16 bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden">
-        <div className="grid md:grid-cols-5 gap-0">
-          <div className="md:col-span-2 bg-slate-100 relative">
-            <img loading="lazy" 
-              src="/images/dr-david-cai-portrait.jpg" 
-              alt="Dr. David Cai, L.Ac., L.M.T." 
-              className="w-full h-full object-cover min-h-[400px]"
-              onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=800'; }}
-            />
-            <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-6 text-white text-center">
-               <span className="font-bold text-xl">Dr. David Cai</span>
-               <p className="text-blue-300 text-sm">L.Ac., L.M.T.</p>
             </div>
-          </div>
-          <div className="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
-            <h3 className="text-sm font-bold tracking-widest text-blue-600 uppercase mb-2">Clinical Director & Founder</h3>
-            <h4 className="text-3xl font-extrabold text-slate-900 mb-4">Leading Honolulu Pain Clinic</h4>
-            <p className="text-slate-600 mb-6 leading-relaxed" dangerouslySetInnerHTML={{ __html: 'With over 30 years of clinical experience, <strong>Dr. David Cai</strong> is a master of Traditional Chinese Medicine (TCM) and advanced acupuncture protocols. He specializes in severe pain management, sports injuries, and complex auto accident recoveries, bringing world-class holistic healthcare to the Honolulu community.' }}></p>
-            <div className="flex items-center gap-4 bg-slate-50 p-4 rounded-2xl border border-slate-100">
-               <img loading="lazy" src="/images/acutherapy-medical-team.jpg" alt="AcuTherapy Clinics Medical Team" className="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md flex-shrink-0" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
-               <div>
-                 <h5 className="font-bold text-slate-900 mb-1">AcuTherapy Clinics Medical Team</h5>
-                 <p className="text-sm text-slate-500 italic leading-relaxed">"Our multidisciplinary medical team is highly trained and committed to finding the root cause of your condition, providing relief that lasts."</p>
-               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-            
-      <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Explore Related Treatments & Information</h3>
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mb-12">
-        
-        <Link to="/sciatica-acupuncture-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold"><Activity className="text-blue-500 mr-3 h-5 w-5" /> Sciatica Acupuncture</Link>
-        <Link to="/acupuncture-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold">
-          <ShieldCheck className="text-blue-500 mr-3 h-5 w-5" /> Acupuncture Honolulu
-        </Link>
-        <Link to="/contact-honolulu-acupuncture" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold">
-          <PhoneCall className="text-emerald-500 mr-3 h-5 w-5" /> Contact Us
-        </Link>
-    
-      </div>
-    
-          
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Causes Does Help Sciatica?</h2>
-<p className="text-lg text-slate-700 leading-relaxed mb-6">Does Help Sciatica can be triggered by a variety of factors including chronic stress, poor posture, repetitive strain, or acute injuries. Over time, these factors create blockages in blood circulation and nerve function, leading to persistent discomfort.</p>
 
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Acupuncture Helps</h2>
-<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li><strong>Pain Relief:</strong> Triggers the release of endorphins to block pain signals effectively.</li>
-<li><strong>Nervous System Regulation:</strong> Calms the central nervous system, reducing tension without relying on pharmaceuticals.</li>
-<li><strong>Improved Circulation:</strong> Enhances blood flow to the affected areas, accelerating the natural healing process.</li>
-</ul>
-
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect During Your Session</h2>
-<p className="text-lg text-slate-700 leading-relaxed mb-6">During your first experience, Dr. David Cai will conduct a thorough assessment to understand your unique condition. The treatment itself is deeply relaxing. Many patients notice a distinct change in symptoms, experiencing immediate lightness and reduced tension right after the needles are gently placed.</p>
-
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Who Is This For?</h2>
-<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li>Individuals suffering from chronic pain who have not found relief through conventional methods.</li>
-<li>High-stress professionals seeking natural nervous system regulation.</li>
-<li>Athletes or individuals recovering from an injury needing accelerated healing.</li>
-</ul>
-
-<div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
-<h2 className="text-3xl font-bold text-blue-900 mb-4">Ready to find relief?</h2>
-<p className="text-lg text-blue-700 mb-8">Stop living in discomfort. Located right here in Honolulu, we are here to help you restore your well-being.</p>
-<Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Book Your Session Today</Button></Link>
-</div>
-
-</article>
+          </article>
 
           {/* Sidebar */}
           <aside className="md:col-span-4 space-y-8">
@@ -218,31 +299,9 @@ export default function DoesAcupunctureHelpSciaticaPage() {
                 <p className="text-slate-600 mb-8 text-sm">Bridge the gap to a pain-free life today.</p>
                 <div className="flex flex-col gap-4">
                   <Link to="/book-appointment">
-
-                    <Link to="/book-appointment">
-
-
-                      <Link to="/book-appointment">
-
-
-
-                        <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
-
-
-
-                          <Calendar className="mr-2" /> Schedule Online
-
-
-
-                        </Button>
-
-
-
-                      </Link>
-
-
-                    </Link>
-
+                    <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
+                      <Calendar className="mr-2" /> Schedule Online
+                    </Button>
                   </Link>
                   <Button variant="outline" className="w-full h-14 text-lg border-2 border-slate-200" onClick={() => window.location.href='tel:+18085287177'}>
                     <PhoneCall className="mr-2 h-5 w-5 text-blue-600" /> (808) 528-7177
@@ -257,10 +316,10 @@ export default function DoesAcupunctureHelpSciaticaPage() {
                       <p className="text-slate-600 text-sm leading-relaxed mb-1">
                         1650 Liliha St, Suite 208<br/>Honolulu, HI 96817
                       </p>
-                                                    <a href="https://www.google.com/maps/search/?api=1&query=1650+Liliha+St,+Suite+208,+Honolulu,+HI+96817" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-sm text-blue-600 font-bold hover:underline mt-1">
-                                                        Find us on Google Maps
-                                                    </a>
-                      <p className="text-slate-600 text-sm"><strong>Ph:</strong> (808) 528-7177 <span className="mx-1">|</span> <strong>Fax:</strong> (808) 212-9459</p>
+                      <a href="https://www.google.com/maps/search/?api=1&query=1650+Liliha+St,+Suite+208,+Honolulu,+HI+96817" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-sm text-blue-600 font-bold hover:underline mt-1">
+                          Find us on Google Maps
+                      </a>
+                      <p className="text-slate-600 text-sm mt-1"><strong>Ph:</strong> (808) 528-7177 <span className="mx-1">|</span> <strong>Fax:</strong> (808) 212-9459</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -270,10 +329,10 @@ export default function DoesAcupunctureHelpSciaticaPage() {
                       <p className="text-slate-600 text-sm leading-relaxed mb-1">
                         98-211 Pali Momi St, Suite 604<br/>Aiea, HI 96701
                       </p>
-                                                    <a href="https://www.google.com/maps/search/?api=1&query=98-211+Pali+Momi+St,+Suite+604,+Aiea,+HI+96701" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-sm text-blue-600 font-bold hover:underline mt-1">
-                                                        Find us on Google Maps
-                                                    </a>
-                      <p className="text-slate-600 text-sm"><strong>Ph:</strong> (808) 452-1900 <span className="mx-1">|</span> <strong>Fax:</strong> (808) 452-1521</p>
+                      <a href="https://www.google.com/maps/search/?api=1&query=98-211+Pali+Momi+St,+Suite+604,+Aiea,+HI+96701" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-sm text-blue-600 font-bold hover:underline mt-1">
+                          Find us on Google Maps
+                      </a>
+                      <p className="text-slate-600 text-sm mt-1"><strong>Ph:</strong> (808) 452-1900 <span className="mx-1">|</span> <strong>Fax:</strong> (808) 452-1521</p>
                     </div>
                   </div>
                   <div className="mt-6 bg-slate-50 p-4 rounded-lg">
