@@ -125,8 +125,8 @@ export default function ChronicPainTreatmentHonoluluPage() {
             
                           {/* CRO Expectation Module */}
             <div className="bg-slate-50 border-l-4 border-blue-600 p-6 rounded-r-xl mb-10 shadow-sm mt-8">
-              <p className="text-lg text-slate-900 font-semibold mb-1">Most patients see improvement in 3–5 visits.</p>
-              <p className="text-slate-600">Full recovery may take 4–10+ sessions.</p>
+              <p className="text-lg text-slate-900 font-semibold mb-1">Some patients notice early changes within a few sessions.</p>
+              <p className="text-slate-600">Others may require a longer course of care depending on the condition.</p>
               
               <div className="mt-4 pt-4 border-t border-slate-200">
                 <p className="font-bold text-slate-900 mb-2">What to Expect:</p>
@@ -138,9 +138,7 @@ export default function ChronicPainTreatmentHonoluluPage() {
               </div>
             </div>
 
-<p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
-                When pain persists for more than three to six months, it ceases to be just a physical symptom and becomes a neurological disease known as <strong>Central Sensitization</strong>. If you are battling <strong>Fibromyalgia</strong>, peripheral <strong>Neuropathy</strong>, or widespread <strong>Chronic Pain</strong>, your nervous system is trapped in a permanent state of "high alert." At AcuTherapy Clinics in Honolulu, Dr. David Cai utilizes advanced Traditional Chinese Medicine to rewrite these faulty neurological loops, offering drug-free relief where pain clinics and heavy opioids have failed.
-              </p>
+<p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">Pain management focuses on reducing discomfort and improving daily function. Treatment may include acupuncture, soft tissue therapy, and supportive care based on the individual condition.</p>
               
       <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/50 group mb-12 w-full max-w-3xl mx-auto">
         <img loading="lazy" src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2000" alt="Chronic Pain Relief Honolulu" className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />

@@ -45,7 +45,7 @@ export default function AutoAccidentInjuryTreatmentHonoluluPage() {
 
             {/* CRO Expectation Module */}
             <div className="bg-slate-50 border-l-4 border-blue-600 p-6 rounded-r-xl mb-10 shadow-sm">
-              <p className="text-lg text-slate-900 font-semibold mb-1">Most patients see improvement in 3–5 visits.</p>
+              <p className="text-lg text-slate-900 font-semibold mb-1">Some patients notice early changes within a few sessions.</p>
               <p className="text-slate-600">Full recovery from auto injuries may take 4–10+ sessions.</p>
               
               <div className="mt-4 pt-4 border-t border-slate-200">

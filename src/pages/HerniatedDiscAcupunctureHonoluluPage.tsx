@@ -44,8 +44,8 @@ export default function HerniatedDiscAcupunctureHonoluluPage() {
           <article className="md:col-span-8">
                         {/* CRO Expectation Module */}
             <div className="bg-slate-50 border-l-4 border-blue-600 p-6 rounded-r-xl mb-10 shadow-sm mt-8">
-              <p className="text-lg text-slate-900 font-semibold mb-1">Most patients see improvement in 3–5 visits.</p>
-              <p className="text-slate-600">Full recovery may take 4–10+ sessions.</p>
+              <p className="text-lg text-slate-900 font-semibold mb-1">Some patients notice early changes within a few sessions.</p>
+              <p className="text-slate-600">Others may require a longer course of care depending on the condition.</p>
               
               <div className="mt-4 pt-4 border-t border-slate-200">
                 <p className="font-bold text-slate-900 mb-2">What to Expect:</p>
@@ -57,9 +57,8 @@ export default function HerniatedDiscAcupunctureHonoluluPage() {
               </div>
             </div>
 
-<p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
-              A herniated or "slipped" disc is one of the most agonizing physiological conditions a person can experience. When the soft inner jelly of a spinal disc pushes out and compresses against a spinal nerve, it causes intense, debilitating lower back pain that often radiates terribly down your legs. Before committing to highly invasive neurological surgery, many local doctors and physical therapists recommend our specialized <strong>Herniated Disc Acupuncture in Honolulu</strong> for managing the severe pain and drastically reducing the inflammation.
-            </p>
+<p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">Acupuncture may help support pain relief and improve function in some patients with herniated disc-related symptoms. Results can vary depending on severity and individual response.</p>
+<p className="text-xl text-red-700 bg-red-50 border border-red-200 p-4 rounded-xl leading-relaxed font-medium mb-8">If symptoms do not improve after several sessions, treatment approach may need to be adjusted. See how recovery may progress: <Link to="/how-fast-does-acupuncture-work" className="text-blue-800 underline">treatment timeline</Link>.</p>
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Causes a Bulging or Herniated Disc?</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">

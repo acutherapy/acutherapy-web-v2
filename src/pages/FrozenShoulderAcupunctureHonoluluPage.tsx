@@ -124,8 +124,8 @@ export default function FrozenShoulderAcupunctureHonoluluPage() {
             
                           {/* CRO Expectation Module */}
             <div className="bg-slate-50 border-l-4 border-blue-600 p-6 rounded-r-xl mb-10 shadow-sm mt-8">
-              <p className="text-lg text-slate-900 font-semibold mb-1">Most patients see improvement in 3–5 visits.</p>
-              <p className="text-slate-600">Full recovery may take 4–10+ sessions.</p>
+              <p className="text-lg text-slate-900 font-semibold mb-1">Some patients notice early changes within a few sessions.</p>
+              <p className="text-slate-600">Others may require a longer course of care depending on the condition.</p>
               
               <div className="mt-4 pt-4 border-t border-slate-200">
                 <p className="font-bold text-slate-900 mb-2">What to Expect:</p>

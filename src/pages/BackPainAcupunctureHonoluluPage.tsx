@@ -121,8 +121,7 @@ export default function BackPainAcupunctureHonoluluPage() {
           <article className="md:col-span-8">
                         {/* CRO Expectation Module */}
             <div className="bg-slate-50 border-l-4 border-blue-600 p-6 rounded-r-xl mb-10 shadow-sm mt-8">
-              <p className="text-lg text-slate-900 font-semibold mb-1">Most patients see improvement in 3–5 visits.</p>
-              <p className="text-slate-600">Full recovery may take 4–10+ sessions.</p>
+              <p className="text-lg text-slate-900 font-semibold mb-1">Some patients notice early changes within a few sessions,</p><p className="text-slate-600">while others may require a longer course of care depending on the condition.</p>
               
               <div className="mt-4 pt-4 border-t border-slate-200">
                 <p className="font-bold text-slate-900 mb-2">What to Expect:</p>
@@ -135,8 +134,8 @@ export default function BackPainAcupunctureHonoluluPage() {
             </div>
 
 <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
-              If you are enduring daily lower back pain in Honolulu, you know how severely it can limit your life—from sitting at work to lifting groceries or sleeping through the night. Our targeted <strong>Back Pain Acupuncture in Honolulu</strong> focuses on restoring mobility, reducing deep spinal inflammation, and getting you back on your feet quickly without relying on pharmaceuticals, effectively treating conditions like sciatica, herniated discs, and spinal stenosis.
-            </p>
+If you are enduring daily lower back pain, it can severely limit your life. Back pain may come from muscle tension, joint restriction, or nerve irritation. Treatment approach may vary based on the underlying cause. If your pain involves nerve symptoms, see <Link to="/sciatica-treatment-honolulu" className="text-blue-600 hover:text-blue-800 underline decoration-blue-300 underline-offset-4">sciatica treatment</Link>. You can also review a <Link to="/case-chronic-back-pain-honolulu" className="text-blue-600 hover:text-blue-800 underline decoration-blue-300 underline-offset-4">real chronic back pain case</Link>.
+</p>
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Causes Severe Back Pain?</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">

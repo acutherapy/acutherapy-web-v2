@@ -173,7 +173,7 @@ export default function FrequentlyAskedQuestionsPage() {
               <div className="bg-slate-50 p-8 rounded-xl border border-slate-200 my-8 shadow-sm">
                  <h3 className="text-xl font-bold text-slate-900 mb-4">Patient FAQ: The Core Answer</h3>
                  <p className="text-lg text-slate-700">
-                    If you are asking yourself about frequently asked questions, the short answer is that <strong>yes, professional acupuncture is statistically proven to be highly efficacious</strong> for these types of clinical inquiries. The treatment works by modulating the nervous system, reducing chronic inflammation, and resetting muscular firing patterns. However, every patient's body responds differently—which is why day-one diagnostic evaluations are critical.
+                    Acupuncture results can vary. Some patients notice changes after the first session, while others experience gradual improvement over multiple visits depending on the condition.
                  </p>
               </div>
         
