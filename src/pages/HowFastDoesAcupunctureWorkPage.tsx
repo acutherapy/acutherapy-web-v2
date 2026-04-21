@@ -10,8 +10,8 @@ export default function HowFastDoesAcupunctureWorkPage() {
   return (
     <>
       <Helmet>
-        <title>How Fast Does Acupuncture Work | Honolulu Acupuncture Guide</title>
-        <meta name="description" content="Learn more about How Fast Does Acupuncture Work. Dr. David Cai from AcuTherapy Clinics answers your questions about acupuncture efficacy and treatment processes." />
+        <title>How Fast Does Acupuncture Work? | Honolulu Patient Guide</title>
+        <meta name="description" content="Wondering how fast acupuncture works? Learn about timeline expectations, immediate relief versus gradual improvement, and what to expect in Honolulu." />
         <script type="application/ld+json">
           {`
           {
@@ -106,8 +106,8 @@ export default function HowFastDoesAcupunctureWorkPage() {
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm mb-6 backdrop-blur-sm">
             <ShieldCheck size={16} /> <span>Trusted Honolulu Pain Clinic</span>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">How Fast Does Acupuncture Work</h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Medical-grade treatments customized for lasting relief and recovery in Honolulu.</p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">How Fast Does Acupuncture Work?</h1>
+          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Understanding timeline expectations, symptom relief, and healing stages.</p>
         </div>
       </section>
 
@@ -116,98 +116,214 @@ export default function HowFastDoesAcupunctureWorkPage() {
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-12 gap-12">
           
           <article className="md:col-span-8">
-            
-              <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
-                At AcuTherapy Clinics, we believe that informed patients heal faster. If you are exploring options and wondering about <strong>how fast does acupuncture work</strong>, Dr. David Cai and our clinical team have compiled the following medical insights based on decades of practice in Honolulu.
+            <h1 className="text-[32px] md:text-[40px] font-bold text-slate-900 mb-6 leading-tight">
+              How Fast Does Acupuncture Work? A Honolulu Patient Guide
+            </h1>
+
+            <p className="text-[18px] font-semibold text-slate-800 mb-6 leading-relaxed">
+              <strong>Acupuncture may begin to provide relief after the first session for some patients, while others may notice gradual improvement over several visits. The speed of results depends on the condition, severity, and individual response.</strong>
+            </p>
+
+            <figure className="mb-8">
+              <img 
+                src="/images/how-fast-acupuncture-works-honolulu.jpg" 
+                alt="Acupuncture treatment in Honolulu showing patient relaxation and gradual pain relief" 
+                className="w-full h-auto rounded-2xl object-cover shadow-lg"
+                onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=800'; }}
+              />
+              <figcaption className="text-sm text-slate-500 mt-3 italic">
+                A calm acupuncture session in Honolulu demonstrating how treatment supports gradual improvement and relaxation over time.
+              </figcaption>
+            </figure>
+
+            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 mb-10 shadow-sm">
+              <h2 className="text-[20px] font-bold text-slate-900 mb-3">Understanding Your Timeline</h2>
+              <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">
+                Many patients in <Link to="/contact-honolulu-acupuncture" className="text-blue-600 hover:underline">Honolulu</Link> wonder how quickly <Link to="/acupuncture-honolulu" className="text-blue-600 hover:underline">acupuncture</Link> works. The answer varies. At Acutherapy Clinics, Dr. David Cai explains that some people feel immediate changes, while others experience gradual improvement over time. Factors such as chronicity, muscle tension, and overall health can influence how quickly results appear. Acupuncture is often used as a series of treatments to support lasting improvement rather than a one-time solution.
               </p>
-              
-      <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/50 group mb-12 w-full max-w-3xl mx-auto">
-        <img loading="lazy" src="/images/traditional-chinese-herbs.jpg" alt="Traditional Chinese Herbs" className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=800'; }} />
-        <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-8 pt-16 text-white text-lg font-medium">Holistic Healing Methods inside AcuTherapy</figcaption>
-      </div>
-              <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Understanding How Fast Does Acupuncture Work</h2>
-              <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                When discussing how fast does acupuncture work, it's important to differentiate between western symptom-masking and the holistic root-cause methodology we practice here. Traditional Chinese Medicine (TCM) views the body as a systemic interconnected network. Any symptom you experience is a localized manifestation of a deeper structural or energetic imbalance.
-              </p>
-              <div className="bg-slate-50 p-8 rounded-xl border border-slate-200 my-8 shadow-sm">
-                 <h3 className="text-xl font-bold text-slate-900 mb-4">Patient FAQ: The Core Answer</h3>
-                 <p className="text-lg text-slate-700">
-                    If you are asking yourself about how fast does acupuncture work, the short answer is that <strong>yes, professional acupuncture is statistically proven to be highly efficacious</strong> for these types of clinical inquiries. The treatment works by modulating the nervous system, reducing chronic inflammation, and resetting muscular firing patterns. However, every patient's body responds differently—which is why day-one diagnostic evaluations are critical.
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              A Realistic Answer: How Quickly Can You Expect Results?
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>Some patients feel changes after their very <Link to="/what-to-expect-first-acupuncture-visit" className="text-blue-600 hover:underline">first acupuncture session</Link>.</p>
+              <p>Others may need several visits before noticing a difference.</p>
+              <p>In general:</p>
+              <ul className="list-disc pl-6 space-y-2 mb-4 bg-slate-50 p-6 rounded-xl border border-slate-100">
+                <li>Acute conditions may respond faster</li>
+                <li>Chronic conditions (like persistent <Link to="/back-pain-acupuncture-honolulu" className="text-blue-600 hover:underline">back pain</Link> or <Link to="/neck-pain-treatment-honolulu" className="text-blue-600 hover:underline">neck stiffness</Link>) often take longer</li>
+                <li>Consistency plays a key role</li>
+              </ul>
+              <p>Many patients in Honolulu describe the first improvement as:</p>
+              <div className="flex flex-wrap gap-2 mt-4">
+                <span className="bg-blue-50 text-blue-800 px-4 py-2 rounded-full font-medium">Reduced tightness</span>
+                <span className="bg-blue-50 text-blue-800 px-4 py-2 rounded-full font-medium">A sense of relaxation</span>
+                <span className="bg-blue-50 text-blue-800 px-4 py-2 rounded-full font-medium">Slight decrease in pain intensity</span>
+              </div>
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              What Typically Happens After the First Few Sessions?
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>Acupuncture is often a process rather than a one-time fix.</p>
+              <p>Patients may experience:</p>
+              <ul className="list-disc pl-6 space-y-2 mb-6">
+                <li><strong>Early sessions</strong> → relaxation and tension release</li>
+                <li><strong>Middle phase</strong> → improved movement and reduced discomfort</li>
+                <li><strong>Later phase</strong> → more stable and lasting improvement</li>
+              </ul>
+              <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-xl">
+                 <p className="text-[16px] md:text-[18px] text-slate-800 font-medium italic">
+                   Research suggests acupuncture may help reduce pain and improve function when used consistently as part of conservative care.
                  </p>
               </div>
-        
-            
-      <div className="mt-16 mb-16 bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden">
-        <div className="grid md:grid-cols-5 gap-0">
-          <div className="md:col-span-2 bg-slate-100 relative">
-            <img loading="lazy" 
-              src="/images/dr-david-cai-portrait.jpg" 
-              alt="Dr. David Cai, L.Ac., L.M.T." 
-              className="w-full h-full object-cover min-h-[400px]"
-              onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=800'; }}
-            />
-            <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-6 text-white text-center">
-               <span className="font-bold text-xl">Dr. David Cai</span>
-               <p className="text-blue-300 text-sm">L.Ac., L.M.T.</p>
             </div>
-          </div>
-          <div className="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
-            <h3 className="text-sm font-bold tracking-widest text-blue-600 uppercase mb-2">Clinical Director & Founder</h3>
-            <h4 className="text-3xl font-extrabold text-slate-900 mb-4">Leading Honolulu Pain Clinic</h4>
-            <p className="text-slate-600 mb-6 leading-relaxed" dangerouslySetInnerHTML={{ __html: 'With over 30 years of clinical experience, <strong>Dr. David Cai</strong> is a master of Traditional Chinese Medicine (TCM) and advanced acupuncture protocols. He specializes in severe pain management, sports injuries, and complex auto accident recoveries, bringing world-class holistic healthcare to the Honolulu community.' }}></p>
-            <div className="flex items-center gap-4 bg-slate-50 p-4 rounded-2xl border border-slate-100">
-               <img loading="lazy" src="/images/acutherapy-medical-team.jpg" alt="AcuTherapy Clinics Medical Team" className="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md flex-shrink-0" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
-               <div>
-                 <h5 className="font-bold text-slate-900 mb-1">AcuTherapy Clinics Medical Team</h5>
-                 <p className="text-sm text-slate-500 italic leading-relaxed">"Our multidisciplinary medical team is highly trained and committed to finding the root cause of your condition, providing relief that lasts."</p>
-               </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              What Affects How Fast Acupuncture Works?
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>Several factors can influence your response time:</p>
+              <ul className="list-disc pl-6 space-y-2 mb-4">
+                <li>How long you’ve had the condition</li>
+                <li>Severity of symptoms</li>
+                <li>Muscle tension and inflammation</li>
+                <li>Lifestyle and daily activity</li>
+              </ul>
             </div>
-          </div>
-        </div>
-      </div>
-    
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              Why Acupuncture Is Often Done in a Series
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>Unlike treatments that provide only temporary relief, acupuncture is often used over multiple sessions to support gradual improvement.</p>
+              <p>This may help:</p>
+              <ul className="list-disc pl-6 space-y-2 mb-4 bg-slate-50 p-6 rounded-xl border border-slate-100">
+                <li>Reinforce muscle relaxation</li>
+                <li>Improve circulation over time</li>
+                <li>Support the body’s natural recovery process</li>
+              </ul>
+              <p>For patients exploring comprehensive relief, some treatment plans also incorporate <Link to="/does-cupping-help-back-pain" className="text-blue-600 hover:underline">cupping therapy</Link>.</p>
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              What Patients in Honolulu Often Notice First
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>Many patients don’t notice a dramatic change right away—but instead feel:</p>
+              <ul className="list-disc pl-6 space-y-2 mb-4">
+                <li>Lighter movement</li>
+                <li>Less stiffness</li>
+                <li>Improved comfort during daily activities</li>
+              </ul>
+              <p>These small changes often build over time.</p>
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              Acupuncture Care in Honolulu
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>Acutherapy Clinics is located near Ala Moana, serving patients from:</p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="bg-slate-100 border border-slate-200 px-3 py-1 rounded-full text-sm font-medium">Waikiki</span>
+                <span className="bg-slate-100 border border-slate-200 px-3 py-1 rounded-full text-sm font-medium">Kakaʻako</span>
+                <span className="bg-slate-100 border border-slate-200 px-3 py-1 rounded-full text-sm font-medium">Downtown Honolulu</span>
+                <span className="bg-slate-100 border border-slate-200 px-3 py-1 rounded-full text-sm font-medium">Greater Oahu</span>
+              </div>
+              <p>Having a nearby clinic can make it easier to stay consistent with care.</p>
+              <p>We can also help verify your <Link to="/is-acupuncture-covered-by-insurance-hawaii" className="text-blue-600 hover:underline">insurance coverage</Link> to ensure a smooth treatment journey.</p>
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-6 border-b pb-2">
+              Q&A: How Fast Acupuncture Works
+            </h2>
+            <div className="space-y-8 mb-10">
+              <div>
+                <h3 className="text-[20px] font-bold text-slate-900 mb-2">How fast does acupuncture work for pain?</h3>
+                <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">Some patients feel relief after the first session, while others may notice gradual improvement over several visits.</p>
+              </div>
+              <div>
+                <h3 className="text-[20px] font-bold text-slate-900 mb-2">How many sessions before acupuncture works?</h3>
+                <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">Many patients begin to notice changes within 3–6 sessions, depending on the condition.</p>
+              </div>
+              <div>
+                <h3 className="text-[20px] font-bold text-slate-900 mb-2">Why didn’t acupuncture work immediately for me?</h3>
+                <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">Response time varies. Chronic conditions or deeper muscle patterns may take longer to improve.</p>
+              </div>
+              <div>
+                <h3 className="text-[20px] font-bold text-slate-900 mb-2">Does acupuncture work faster than medication?</h3>
+                <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">Acupuncture and medication work differently. Some people prefer acupuncture for gradual, long-term support.</p>
+              </div>
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              A Safe and Professional Approach
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-12">
+              <p>At Acutherapy Clinics in Honolulu, treatments are performed using sterile, single-use needles.</p>
+              <p>Care is provided by trained professionals following Hawaii healthcare standards to ensure a comfortable and effective experience.</p>
+            </div>
+
+            <div className="bg-slate-100 rounded-2xl p-8 border border-slate-200 mb-12">
+              <h2 className="text-[28px] font-bold text-slate-900 mb-4">Curious How Acupuncture May Work for You?</h2>
+              <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-8">
+                If you’re dealing with pain or discomfort and wondering how quickly acupuncture might help, a personalized evaluation can give you a clearer expectation.
+              </p>
+              
+              <ul className="space-y-3 mb-8 text-slate-800 font-medium">
+                <li className="flex items-center gap-3"><MapPin className="text-blue-600 h-5 w-5" /> Located near Ala Moana in Honolulu</li>
+                <li className="flex items-center gap-3"><Calendar className="text-blue-600 h-5 w-5" /> Same-week appointments available</li>
+                <li className="flex items-center gap-3"><PhoneCall className="text-blue-600 h-5 w-5" /> Call (808) 528-7177</li>
+              </ul>
+
+              <Link to="/contact-honolulu-acupuncture" className="inline-block hover:opacity-90 transition-opacity whitespace-nowrap" style={{ background: '#000', color: '#fff', padding: '12px 20px', borderRadius: '8px', fontWeight: 600, textDecoration: 'none' }}>
+                Schedule Your Consultation
+              </Link>
+            </div>
+
+            {/* Dr. David Cai Profile Module */}
+            <div className="mb-16 bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden">
+              <div className="grid md:grid-cols-5 gap-0">
+                <div className="md:col-span-2 bg-slate-100 relative">
+                  <img loading="lazy" 
+                    src="/images/dr-david-cai-portrait.jpg" 
+                    alt="Dr. David Cai, L.Ac., L.M.T." 
+                    className="w-full h-full object-cover min-h-[400px]"
+                    onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=800'; }}
+                  />
+                  <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-6 text-white text-center">
+                     <span className="font-bold text-xl">Dr. David Cai</span>
+                     <p className="text-blue-300 text-sm">L.Ac., L.M.T.</p>
+                  </div>
+                </div>
+                <div className="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
+                  <h3 className="text-sm font-bold tracking-widest text-blue-600 uppercase mb-2">Clinical Director & Founder</h3>
+                  <h4 className="text-3xl font-extrabold text-slate-900 mb-4">Leading Honolulu Pain Clinic</h4>
+                  <p className="text-slate-600 mb-6 leading-relaxed" dangerouslySetInnerHTML={{ __html: 'With over 30 years of clinical experience, <strong>Dr. David Cai</strong> is a master of Traditional Chinese Medicine (TCM) and advanced acupuncture protocols. He specializes in severe pain management, sports injuries, and complex auto accident recoveries, bringing world-class holistic healthcare to the Honolulu community.' }}></p>
+                  <div className="flex items-center gap-4 bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                     <img loading="lazy" src="/images/acutherapy-medical-team.jpg" alt="AcuTherapy Clinics Medical Team" className="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md flex-shrink-0" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                     <div>
+                       <h5 className="font-bold text-slate-900 mb-1">AcuTherapy Clinics Medical Team</h5>
+                       <p className="text-sm text-slate-500 italic leading-relaxed">"Our multidisciplinary medical team is highly trained and committed to finding the root cause of your condition, providing relief that lasts."</p>
+                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             
-      <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Explore Related Treatments & Information</h3>
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mb-12">
-        
-        
-        <Link to="/acupuncture-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold">
-          <ShieldCheck className="text-blue-500 mr-3 h-5 w-5" /> Acupuncture Honolulu
-        </Link>
-        <Link to="/contact-honolulu-acupuncture" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold">
-          <PhoneCall className="text-emerald-500 mr-3 h-5 w-5" /> Contact Us
-        </Link>
-    
-      </div>
-    
-          
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Causes How Fast Does Work?</h2>
-<p className="text-lg text-slate-700 leading-relaxed mb-6">How Fast Does Work can be triggered by a variety of factors including chronic stress, poor posture, repetitive strain, or acute injuries. Over time, these factors create blockages in blood circulation and nerve function, leading to persistent discomfort.</p>
+            <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Explore Related Treatments & Information</h3>
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mb-12">
+              <Link to="/acupuncture-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold">
+                <ShieldCheck className="text-blue-500 mr-3 h-5 w-5" /> Acupuncture Honolulu
+              </Link>
+              <Link to="/contact-honolulu-acupuncture" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold">
+                <PhoneCall className="text-emerald-500 mr-3 h-5 w-5" /> Contact Us
+              </Link>
+            </div>
 
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Acupuncture Helps</h2>
-<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li><strong>Pain Relief:</strong> Triggers the release of endorphins to block pain signals effectively.</li>
-<li><strong>Nervous System Regulation:</strong> Calms the central nervous system, reducing tension without relying on pharmaceuticals.</li>
-<li><strong>Improved Circulation:</strong> Enhances blood flow to the affected areas, accelerating the natural healing process.</li>
-</ul>
-
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect During Your Session</h2>
-<p className="text-lg text-slate-700 leading-relaxed mb-6">During your first experience, Dr. David Cai will conduct a thorough assessment to understand your unique condition. The treatment itself is deeply relaxing. Many patients notice a distinct change in symptoms, experiencing immediate lightness and reduced tension right after the needles are gently placed.</p>
-
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Who Is This For?</h2>
-<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li>Individuals suffering from chronic pain who have not found relief through conventional methods.</li>
-<li>High-stress professionals seeking natural nervous system regulation.</li>
-<li>Athletes or individuals recovering from an injury needing accelerated healing.</li>
-</ul>
-
-<div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
-<h2 className="text-3xl font-bold text-blue-900 mb-4">Ready to find relief?</h2>
-<p className="text-lg text-blue-700 mb-8">Stop living in discomfort. Located right here in Honolulu, we are here to help you restore your well-being.</p>
-<Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Book Your Session Today</Button></Link>
-</div>
-
-</article>
+          </article>
 
           {/* Sidebar */}
           <aside className="md:col-span-4 space-y-8">
@@ -218,31 +334,9 @@ export default function HowFastDoesAcupunctureWorkPage() {
                 <p className="text-slate-600 mb-8 text-sm">Bridge the gap to a pain-free life today.</p>
                 <div className="flex flex-col gap-4">
                   <Link to="/book-appointment">
-
-                    <Link to="/book-appointment">
-
-
-                      <Link to="/book-appointment">
-
-
-
-                        <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
-
-
-
-                          <Calendar className="mr-2" /> Schedule Online
-
-
-
-                        </Button>
-
-
-
-                      </Link>
-
-
-                    </Link>
-
+                    <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
+                      <Calendar className="mr-2" /> Schedule Online
+                    </Button>
                   </Link>
                   <Button variant="outline" className="w-full h-14 text-lg border-2 border-slate-200" onClick={() => window.location.href='tel:+18085287177'}>
                     <PhoneCall className="mr-2 h-5 w-5 text-blue-600" /> (808) 528-7177
