@@ -143,6 +143,14 @@ export default function IsAcupunctureCoveredByInsuranceHawaiiPage() {
 
             <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 mb-10 shadow-sm">
               <h2 className="text-[20px] font-bold text-slate-900 mb-3">Understanding Your Coverage Options</h2>
+
+<h2 className="text-[28px] font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Our Easy 3-Step Process</h2>
+<div className="grid sm:grid-cols-3 gap-6 mb-12">
+  <div className="bg-white border border-slate-200 p-6 rounded-xl shadow-sm"><div className="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold mb-4">1</div><h4 className="font-bold mb-2">Call</h4><p className="text-sm text-slate-600">Give us a call with your insurance card ready.</p></div>
+  <div className="bg-white border border-slate-200 p-6 rounded-xl shadow-sm"><div className="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold mb-4">2</div><h4 className="font-bold mb-2">Verify</h4><p className="text-sm text-slate-600">We verify your benefits for free.</p></div>
+  <div className="bg-white border border-slate-200 p-6 rounded-xl shadow-sm"><div className="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold mb-4">3</div><h4 className="font-bold mb-2">Visit</h4><p className="text-sm text-slate-600">Start your personalized recovery plan!</p></div>
+</div>
+
               <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">
                 Insurance coverage for <Link to="/acupuncture-honolulu" className="text-blue-600 hover:underline">acupuncture in Hawaii</Link> varies based on the type of plan and the reason for treatment. At Acutherapy Clinics in <Link to="/contact-honolulu-acupuncture" className="text-blue-600 hover:underline">Honolulu</Link>, Dr. David Cai and his team assist patients in understanding their coverage and verifying benefits before treatment begins. While some cases may be fully covered, others may involve co-pays or self-pay options. A clear understanding of your benefits helps avoid unexpected costs and ensures a smoother treatment experience.
               </p>

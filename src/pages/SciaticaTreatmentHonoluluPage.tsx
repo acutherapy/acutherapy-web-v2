@@ -32,7 +32,7 @@ export default function SciaticaTreatmentHonoluluPage() {
               Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
             </div>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Sciatica Treatment in Honolulu</h1>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Acupuncture for Sciatica Honolulu</h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Stop the shooting, burning leg pain naturally. Advanced acupuncture protocols for sciatic nerve decompression.</p>
         </div>
       </section>
@@ -58,13 +58,14 @@ export default function SciaticaTreatmentHonoluluPage() {
             </div>
 
 <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
-              If you are feeling a sudden, sharp, burning pain shooting from your lower back down through your buttocks and into your leg, you are likely suffering from sciatica. It can make sitting, walking, or even sleeping feel completely unbearable. At AcuTherapy Clinics, our specialized <strong>Sciatica Treatment in Honolulu</strong> effectively releases the muscular tension compressing your sciatic nerve, providing dramatic pain relief without endless painkillers or invasive surgery.
+              If you are feeling a sudden, sharp, burning pain shooting from your lower back down through your buttocks and into your leg, you are likely suffering from sciatica. It can make sitting, walking, or even sleeping feel completely unbearable. At AcuTherapy Clinics, our specialized <strong>Acupuncture for Sciatica Honolulu</strong> effectively releases the muscular tension compressing your sciatic nerve, providing dramatic pain relief without endless painkillers or invasive surgery.
             </p>
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Exactly Causes Sciatica Nerve Pain?</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
               Sciatica isn't a disease itself; it’s a symptom of underlying mechanical compression. The sciatic nerve is the longest and thickest nerve in the human body. When surrounding tissues—such as a herniated lumbar disc or a severely locked piriformis muscle (Piriformis syndrome) in the buttocks—pinch this massive nerve, it sends violent electrical pain signals down the leg.
             </p>
+<div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-xl mt-4 mb-6"><p className="text-sm font-medium text-blue-900">Research suggests acupuncture may help reduce severe nerve inflammation along the sciatic pathway.</p></div>
 <div className="bg-blue-50/50 border border-blue-100 border-l-4 border-l-blue-500 p-4 rounded-xl text-slate-800 font-medium my-6 shadow-sm">
   <p className="flex items-center gap-2">
     <span className="text-xl">👉</span>

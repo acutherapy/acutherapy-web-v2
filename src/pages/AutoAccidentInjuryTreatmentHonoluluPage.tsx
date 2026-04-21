@@ -63,6 +63,12 @@ export default function AutoAccidentInjuryTreatmentHonoluluPage() {
             </p>
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Understanding Whiplash & Seatbelt Trauma</h2>
+
+<div className="bg-amber-50 border border-amber-200 p-6 rounded-xl my-8">
+  <h3 className="font-bold text-amber-900 mb-2 text-xl">Hawaii No-Fault PIP Insurance</h3>
+  <p className="text-amber-800 font-bold">Auto accident treatments may be fully covered depending on your exact policy. We handle all the paperwork for you!</p>
+</div>
+
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
               The most common consequence of a rear-end collision or major car crash is whiplash—a severe hyperextension of the complex neck ligaments. Symptoms like excruciating neck stiffness, radiating shoulder pain, post-traumatic tension headaches, and lower back contusions from seatbelt lockdown rarely show up fully on the first day. It often takes 48-72 hours for the severe neuro-inflammation to peak, leaving victims in immobilizing pain for weeks or months.
             </p>

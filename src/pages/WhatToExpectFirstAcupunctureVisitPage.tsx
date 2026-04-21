@@ -144,6 +144,7 @@ export default function WhatToExpectFirstAcupunctureVisitPage() {
 
             <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 mb-10 shadow-sm">
               <h2 className="text-[20px] font-bold text-slate-900 mb-3">Understanding the Journey</h2>
+<p className="text-lg text-emerald-700 font-bold bg-emerald-50 p-4 rounded-xl mb-4">We exclusively use sterile, single-use, FDA-approved hair-thin needles.</p>
               <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">
                 For many first-time patients, uncertainty is the biggest barrier to trying <Link to="/acupuncture-honolulu" className="text-blue-600 hover:underline font-medium">acupuncture</Link>. At Acutherapy Clinics in Honolulu, the first visit focuses on understanding your condition, answering questions, and creating a personalized treatment approach. Dr. David Cai works with patients to ensure comfort at every step. While experiences vary, most patients find the process straightforward, gentle, and often more relaxing than expected.
               </p>

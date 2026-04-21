@@ -9,7 +9,7 @@ export default function BackPainAcupunctureHonoluluPage() {
     <>
       <Helmet>
         <link rel="canonical" href="https://acutherapy.com/back-pain-acupuncture-honolulu" />
-        <title>Back Pain Acupuncture Honolulu | Low Back Relief | AcuTherapy Clinics</title>
+        <title>acupuncture for back pain honolulu | lower back pain treatment hawaii | AcuTherapy Clinics</title>
         <meta name="description" content="Suffering from lower back pain in Honolulu? Discover how targeted medical acupuncture and traditional Chinese medicine can relieve your severe back pain today." />
       </Helmet>
 
@@ -32,7 +32,7 @@ export default function BackPainAcupunctureHonoluluPage() {
               Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
             </div>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Acupuncture for Back Pain in Honolulu</h1>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Acupuncture for Back Pain Honolulu</h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Avoid surgery and heavy medication. Clinically proven back pain treatments utilizing advanced meridian therapy.</p>
         </div>
       </section>
@@ -65,6 +65,7 @@ export default function BackPainAcupunctureHonoluluPage() {
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
               Low back pain often results from prolonged sitting, poor lifting biomechanics, herniated discs, spinal stenosis, or severe muscle spasms in the lumbar region. In TCM, this presents as structural stagnation that blocks the flow of Qi and blood.
             </p>
+<div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-xl mt-4 mb-6"><p className="text-sm font-medium text-blue-900"><strong>Research Citation:</strong> Research suggests acupuncture may help provide significant relief for chronic lower back pain, according to the National Center for Complementary and Integrative Health (NCCIH).</p></div>
 <div className="bg-blue-50/50 border border-blue-100 border-l-4 border-l-blue-500 p-4 rounded-xl text-slate-800 font-medium my-6 shadow-sm">
   <p className="flex items-center gap-2">
     <span className="text-xl">👉</span>
