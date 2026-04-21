@@ -90,6 +90,84 @@ export default function IsAcupunctureCoveredByInsuranceHawaiiPage() {
           }
           `}
         </script>
+      
+        <script type="application/ld+json">
+          {`{
+  "@context": "https://schema.org",
+  "@type": [
+    "MedicalBusiness",
+    "LocalBusiness"
+  ],
+  "name": "Acutherapy Clinics",
+  "image": "https://acutherapy.com/og-image.jpg",
+  "url": "https://acutherapy.com",
+  "telephone": "+1-808-528-7177",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Honolulu",
+    "addressRegion": "HI",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    "Honolulu",
+    "Waikiki",
+    "Kakaako",
+    "Oahu",
+    "Hawaii"
+  ],
+  "priceRange": "$$",
+  "medicalSpecialty": [
+    "Acupuncture",
+    "PainManagement"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Dr. David Cai"
+  },
+  "description": "Acutherapy Clinics in Honolulu provides acupuncture, medical massage, and supportive care for pain relief, injury recovery, and functional improvement.",
+  "sameAs": []
+}`}
+        </script>
+        <script type="application/ld+json">
+          {`{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is acupuncture covered by insurance in Hawaii?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Coverage may vary depending on the plan, the reason for treatment, and specific policy details."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is acupuncture covered after a car accident?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In some cases, acupuncture may be covered under no-fault auto insurance depending on the policy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Medicare cover acupuncture?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Medicare may cover acupuncture for certain conditions such as chronic low back pain, subject to eligibility and benefit limits."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to verify my benefits before my appointment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Verification of benefits is recommended before your first visit to help clarify coverage, visit limits, and out-of-pocket costs."
+      }
+    }
+  ]
+}`}
+        </script>
       </Helmet>
 
       {/* Page Header */}

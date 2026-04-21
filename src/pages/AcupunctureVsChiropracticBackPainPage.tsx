@@ -91,6 +91,76 @@ export default function AcupunctureVsChiropracticBackPainPage() {
           }
           `}
         </script>
+      
+        <script type="application/ld+json">
+          {`{
+  "@context": "https://schema.org",
+  "@type": [
+    "MedicalBusiness",
+    "LocalBusiness"
+  ],
+  "name": "Acutherapy Clinics",
+  "image": "https://acutherapy.com/og-image.jpg",
+  "url": "https://acutherapy.com",
+  "telephone": "+1-808-528-7177",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Honolulu",
+    "addressRegion": "HI",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    "Honolulu",
+    "Waikiki",
+    "Kakaako",
+    "Oahu",
+    "Hawaii"
+  ],
+  "priceRange": "$$",
+  "medicalSpecialty": [
+    "Acupuncture",
+    "PainManagement"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Dr. David Cai"
+  },
+  "description": "Acutherapy Clinics in Honolulu provides acupuncture, medical massage, and supportive care for pain relief, injury recovery, and functional improvement.",
+  "sameAs": []
+}`}
+        </script>
+        <script type="application/ld+json">
+          {`{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is acupuncture better than chiropractic for back pain?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The better option depends on the type of back pain. Acupuncture may help more with muscle tension and pain response, while chiropractic care may focus more on alignment and joint restriction."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can acupuncture and chiropractic be used together?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some patients use both approaches as part of a broader care plan, depending on the condition and provider guidance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which works faster for back pain?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some patients notice an immediate change with chiropractic care, while acupuncture may provide more gradual relief over time."
+      }
+    }
+  ]
+}`}
+        </script>
       </Helmet>
 
       {/* Page Header */}

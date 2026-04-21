@@ -20,6 +20,76 @@ export default function CaseChronicBackPainHonoluluPage() {
           }
           `}
         </script>
+      
+        <script type="application/ld+json">
+          {`{
+  "@context": "https://schema.org",
+  "@type": [
+    "MedicalBusiness",
+    "LocalBusiness"
+  ],
+  "name": "Acutherapy Clinics",
+  "image": "https://acutherapy.com/og-image.jpg",
+  "url": "https://acutherapy.com",
+  "telephone": "+1-808-528-7177",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Honolulu",
+    "addressRegion": "HI",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    "Honolulu",
+    "Waikiki",
+    "Kakaako",
+    "Oahu",
+    "Hawaii"
+  ],
+  "priceRange": "$$",
+  "medicalSpecialty": [
+    "Acupuncture",
+    "PainManagement"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Dr. David Cai"
+  },
+  "description": "Acutherapy Clinics in Honolulu provides acupuncture, medical massage, and supportive care for pain relief, injury recovery, and functional improvement.",
+  "sameAs": []
+}`}
+        </script>
+        <script type="application/ld+json">
+          {`{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can chronic back pain improve with acupuncture?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Acupuncture may help reduce pain, ease muscle tension, and improve function in some patients with chronic back pain."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to improve chronic back pain?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Improvement varies by individual. Some patients notice changes over several visits, while others may require a longer treatment course."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does chronic back pain always improve at the same speed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Recovery may depend on the severity of symptoms, duration of the condition, and consistency of care."
+      }
+    }
+  ]
+}`}
+        </script>
       </Helmet>
 
       {/* Page Header */}

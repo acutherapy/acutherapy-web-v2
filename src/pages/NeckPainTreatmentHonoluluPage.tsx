@@ -11,6 +11,76 @@ export default function NeckPainTreatmentHonoluluPage() {
         <link rel="canonical" href="https://acutherapy.com/neck-pain-treatment-honolulu" />
         <title>Neck Pain Treatment Honolulu | Whiplash & Stiffness | AcuTherapy</title>
         <meta name="description" content="Suffering from severe neck pain, whiplash, or tension headaches in Honolulu? Break the cycle of stiffness with our expert medical acupuncture treatments." />
+      
+        <script type="application/ld+json">
+          {`{
+  "@context": "https://schema.org",
+  "@type": [
+    "MedicalBusiness",
+    "LocalBusiness"
+  ],
+  "name": "Acutherapy Clinics",
+  "image": "https://acutherapy.com/og-image.jpg",
+  "url": "https://acutherapy.com",
+  "telephone": "+1-808-528-7177",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Honolulu",
+    "addressRegion": "HI",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    "Honolulu",
+    "Waikiki",
+    "Kakaako",
+    "Oahu",
+    "Hawaii"
+  ],
+  "priceRange": "$$",
+  "medicalSpecialty": [
+    "Acupuncture",
+    "PainManagement"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Dr. David Cai"
+  },
+  "description": "Acutherapy Clinics in Honolulu provides acupuncture, medical massage, and supportive care for pain relief, injury recovery, and functional improvement.",
+  "sameAs": []
+}`}
+        </script>
+        <script type="application/ld+json">
+          {`{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can acupuncture help neck pain?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Acupuncture may help reduce neck muscle tension, improve mobility, and support the body\u2019s natural pain response."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can acupuncture help tension headaches related to neck pain?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Acupuncture may help relieve muscle tightness and support the body\u2019s response to headache-related discomfort."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many acupuncture sessions are needed for neck pain?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some patients notice changes within a few visits, while others may benefit from a longer course of treatment."
+      }
+    }
+  ]
+}`}
+        </script>
       </Helmet>
 
       {/* Page Header */}

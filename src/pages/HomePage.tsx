@@ -117,7 +117,45 @@ export default function HomePage() {
           `}
         </script>
 
-</Helmet>
+
+        <script type="application/ld+json">
+          {`{
+  "@context": "https://schema.org",
+  "@type": [
+    "MedicalBusiness",
+    "LocalBusiness"
+  ],
+  "name": "Acutherapy Clinics",
+  "image": "https://acutherapy.com/og-image.jpg",
+  "url": "https://acutherapy.com",
+  "telephone": "+1-808-528-7177",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Honolulu",
+    "addressRegion": "HI",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    "Honolulu",
+    "Waikiki",
+    "Kakaako",
+    "Oahu",
+    "Hawaii"
+  ],
+  "priceRange": "$$",
+  "medicalSpecialty": [
+    "Acupuncture",
+    "PainManagement"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Dr. David Cai"
+  },
+  "description": "Acutherapy Clinics in Honolulu provides acupuncture, medical massage, and supportive care for pain relief, injury recovery, and functional improvement.",
+  "sameAs": []
+}`}
+        </script>
+      </Helmet>
 
       {/* Hero Section */}
       <section className="relative bg-blue-900 text-white overflow-hidden py-24 lg:py-32">

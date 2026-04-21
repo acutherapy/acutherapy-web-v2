@@ -91,6 +91,76 @@ export default function AcupunctureSafetyPage() {
           }
           `}
         </script>
+      
+        <script type="application/ld+json">
+          {`{
+  "@context": "https://schema.org",
+  "@type": [
+    "MedicalBusiness",
+    "LocalBusiness"
+  ],
+  "name": "Acutherapy Clinics",
+  "image": "https://acutherapy.com/og-image.jpg",
+  "url": "https://acutherapy.com",
+  "telephone": "+1-808-528-7177",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Honolulu",
+    "addressRegion": "HI",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    "Honolulu",
+    "Waikiki",
+    "Kakaako",
+    "Oahu",
+    "Hawaii"
+  ],
+  "priceRange": "$$",
+  "medicalSpecialty": [
+    "Acupuncture",
+    "PainManagement"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Dr. David Cai"
+  },
+  "description": "Acutherapy Clinics in Honolulu provides acupuncture, medical massage, and supportive care for pain relief, injury recovery, and functional improvement.",
+  "sameAs": []
+}`}
+        </script>
+        <script type="application/ld+json">
+          {`{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does acupuncture hurt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most patients describe acupuncture as a mild sensation rather than pain. Some feel a brief pinch, warmth, or tingling."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does acupuncture feel like?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Patients may feel heaviness, warmth, or mild tingling during treatment. Many find the overall experience relaxing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can acupuncture be adjusted for sensitive patients?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Treatment can be adjusted based on the patient\u2019s comfort level and sensitivity."
+      }
+    }
+  ]
+}`}
+        </script>
       </Helmet>
 
       {/* Page Header */}

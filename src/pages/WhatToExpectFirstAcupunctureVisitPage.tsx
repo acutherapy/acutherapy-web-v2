@@ -91,6 +91,84 @@ export default function WhatToExpectFirstAcupunctureVisitPage() {
           }
           `}
         </script>
+      
+        <script type="application/ld+json">
+          {`{
+  "@context": "https://schema.org",
+  "@type": [
+    "MedicalBusiness",
+    "LocalBusiness"
+  ],
+  "name": "Acutherapy Clinics",
+  "image": "https://acutherapy.com/og-image.jpg",
+  "url": "https://acutherapy.com",
+  "telephone": "+1-808-528-7177",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Honolulu",
+    "addressRegion": "HI",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    "Honolulu",
+    "Waikiki",
+    "Kakaako",
+    "Oahu",
+    "Hawaii"
+  ],
+  "priceRange": "$$",
+  "medicalSpecialty": [
+    "Acupuncture",
+    "PainManagement"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Dr. David Cai"
+  },
+  "description": "Acutherapy Clinics in Honolulu provides acupuncture, medical massage, and supportive care for pain relief, injury recovery, and functional improvement.",
+  "sameAs": []
+}`}
+        </script>
+        <script type="application/ld+json">
+          {`{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What happens at a first acupuncture visit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A first acupuncture visit typically includes a consultation, symptom review, assessment, and a treatment session if appropriate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I wear to my first acupuncture appointment?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Loose, comfortable clothing is generally recommended so treatment areas can be accessed more easily."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I eat before acupuncture?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A light meal before treatment is usually recommended rather than arriving on an empty stomach."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How will I feel after my first acupuncture session?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some patients feel relaxed or slightly tired, while others feel more energized. Responses vary."
+      }
+    }
+  ]
+}`}
+        </script>
       </Helmet>
 
       {/* Page Header */}

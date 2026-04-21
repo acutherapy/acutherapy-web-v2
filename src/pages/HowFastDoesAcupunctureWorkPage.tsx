@@ -90,6 +90,76 @@ export default function HowFastDoesAcupunctureWorkPage() {
           }
           `}
         </script>
+      
+        <script type="application/ld+json">
+          {`{
+  "@context": "https://schema.org",
+  "@type": [
+    "MedicalBusiness",
+    "LocalBusiness"
+  ],
+  "name": "Acutherapy Clinics",
+  "image": "https://acutherapy.com/og-image.jpg",
+  "url": "https://acutherapy.com",
+  "telephone": "+1-808-528-7177",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Honolulu",
+    "addressRegion": "HI",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    "Honolulu",
+    "Waikiki",
+    "Kakaako",
+    "Oahu",
+    "Hawaii"
+  ],
+  "priceRange": "$$",
+  "medicalSpecialty": [
+    "Acupuncture",
+    "PainManagement"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Dr. David Cai"
+  },
+  "description": "Acutherapy Clinics in Honolulu provides acupuncture, medical massage, and supportive care for pain relief, injury recovery, and functional improvement.",
+  "sameAs": []
+}`}
+        </script>
+        <script type="application/ld+json">
+          {`{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How fast does acupuncture work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some patients notice changes after the first session, while others experience more gradual improvement over multiple visits."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many sessions before acupuncture starts working?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Many patients begin to notice changes within three to six sessions, depending on the condition and individual response."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does acupuncture take multiple sessions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Acupuncture is often used in a series because gradual improvement may require repeated support for muscle relaxation, circulation, and recovery."
+      }
+    }
+  ]
+}`}
+        </script>
       </Helmet>
 
       {/* Page Header */}

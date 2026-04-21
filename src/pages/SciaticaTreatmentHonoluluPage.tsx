@@ -11,6 +11,76 @@ export default function SciaticaTreatmentHonoluluPage() {
         <link rel="canonical" href="https://acutherapy.com/sciatica-treatment-honolulu" />
         <title>Sciatica Treatment Honolulu | Fast Nerve Pain Relief | AcuTherapy Clinics</title>
         <meta name="description" content="Suffering from shooting leg pain and sciatica in Honolulu? Get fast, non-surgical relief using targeted medical acupuncture to decompress the sciatic nerve." />
+      
+        <script type="application/ld+json">
+          {`{
+  "@context": "https://schema.org",
+  "@type": [
+    "MedicalBusiness",
+    "LocalBusiness"
+  ],
+  "name": "Acutherapy Clinics",
+  "image": "https://acutherapy.com/og-image.jpg",
+  "url": "https://acutherapy.com",
+  "telephone": "+1-808-528-7177",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Honolulu",
+    "addressRegion": "HI",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    "Honolulu",
+    "Waikiki",
+    "Kakaako",
+    "Oahu",
+    "Hawaii"
+  ],
+  "priceRange": "$$",
+  "medicalSpecialty": [
+    "Acupuncture",
+    "PainManagement"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Dr. David Cai"
+  },
+  "description": "Acutherapy Clinics in Honolulu provides acupuncture, medical massage, and supportive care for pain relief, injury recovery, and functional improvement.",
+  "sameAs": []
+}`}
+        </script>
+        <script type="application/ld+json">
+          {`{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can acupuncture help sciatica?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Acupuncture may help reduce muscle tension and support the body\u2019s response to nerve-related pain associated with sciatica."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many acupuncture sessions are needed for sciatica?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Many patients begin to notice improvement within several sessions, but the number varies depending on symptom severity and duration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is acupuncture safe for sciatica?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When performed by a licensed professional using sterile, single-use needles, acupuncture is generally considered safe."
+      }
+    }
+  ]
+}`}
+        </script>
       </Helmet>
 
       {/* Page Header */}

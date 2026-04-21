@@ -11,6 +11,76 @@ export default function BackPainAcupunctureHonoluluPage() {
         <link rel="canonical" href="https://acutherapy.com/back-pain-acupuncture-honolulu" />
         <title>acupuncture for back pain honolulu | lower back pain treatment hawaii | AcuTherapy Clinics</title>
         <meta name="description" content="Suffering from lower back pain in Honolulu? Discover how targeted medical acupuncture and traditional Chinese medicine can relieve your severe back pain today." />
+      
+        <script type="application/ld+json">
+          {`{
+  "@context": "https://schema.org",
+  "@type": [
+    "MedicalBusiness",
+    "LocalBusiness"
+  ],
+  "name": "Acutherapy Clinics",
+  "image": "https://acutherapy.com/og-image.jpg",
+  "url": "https://acutherapy.com",
+  "telephone": "+1-808-528-7177",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Honolulu",
+    "addressRegion": "HI",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    "Honolulu",
+    "Waikiki",
+    "Kakaako",
+    "Oahu",
+    "Hawaii"
+  ],
+  "priceRange": "$$",
+  "medicalSpecialty": [
+    "Acupuncture",
+    "PainManagement"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Dr. David Cai"
+  },
+  "description": "Acutherapy Clinics in Honolulu provides acupuncture, medical massage, and supportive care for pain relief, injury recovery, and functional improvement.",
+  "sameAs": []
+}`}
+        </script>
+        <script type="application/ld+json">
+          {`{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does acupuncture help back pain?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Acupuncture may help reduce muscle tension, improve circulation, and support the body\u2019s natural response to back pain."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take for acupuncture to work for back pain?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some patients notice changes after the first few sessions, while others may need a longer course of care depending on the condition."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can acupuncture help chronic back pain?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Acupuncture may help support pain relief and improve daily function in some patients with chronic back pain."
+      }
+    }
+  ]
+}`}
+        </script>
       </Helmet>
 
       {/* Page Header */}

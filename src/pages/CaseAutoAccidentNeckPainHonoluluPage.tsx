@@ -20,6 +20,76 @@ export default function CaseAutoAccidentNeckPainHonoluluPage() {
           }
           `}
         </script>
+      
+        <script type="application/ld+json">
+          {`{
+  "@context": "https://schema.org",
+  "@type": [
+    "MedicalBusiness",
+    "LocalBusiness"
+  ],
+  "name": "Acutherapy Clinics",
+  "image": "https://acutherapy.com/og-image.jpg",
+  "url": "https://acutherapy.com",
+  "telephone": "+1-808-528-7177",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Honolulu",
+    "addressRegion": "HI",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    "Honolulu",
+    "Waikiki",
+    "Kakaako",
+    "Oahu",
+    "Hawaii"
+  ],
+  "priceRange": "$$",
+  "medicalSpecialty": [
+    "Acupuncture",
+    "PainManagement"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Dr. David Cai"
+  },
+  "description": "Acutherapy Clinics in Honolulu provides acupuncture, medical massage, and supportive care for pain relief, injury recovery, and functional improvement.",
+  "sameAs": []
+}`}
+        </script>
+        <script type="application/ld+json">
+          {`{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long can neck pain last after a car accident?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Recovery time varies. Some patients improve within weeks, while others may take longer depending on the severity of injury and treatment response."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can acupuncture help neck pain after a car accident?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Acupuncture may help reduce muscle tension and support the body\u2019s natural recovery process after an accident."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is treatment after an auto accident covered by insurance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In some cases, treatment may be covered through auto insurance depending on the policy and claim details."
+      }
+    }
+  ]
+}`}
+        </script>
       </Helmet>
 
       {/* Page Header */}
