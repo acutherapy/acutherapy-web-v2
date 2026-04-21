@@ -209,7 +209,7 @@ export default function HowFastDoesAcupunctureWorkPage() {
             </h1>
 
             <p className="text-[18px] font-semibold text-slate-800 mb-6 leading-relaxed">
-              <strong>Acupuncture may begin to provide relief after the first session for some patients, while others may notice gradual improvement over several visits. The speed of results depends on the condition, severity, and individual response.</strong>
+              <strong>Acupuncture may support symptom relief for some patients early in care, while others experience gradual improvement over multiple visits, while others may notice gradual improvement over several visits. The speed of results depends on the condition, severity, and individual response.</strong>
             </p>
 
             <div className="bg-blue-50 border-l-4 border-blue-600 p-5 mt-2 mb-8 text-blue-900 font-medium tracking-tight">
@@ -364,7 +364,7 @@ export default function HowFastDoesAcupunctureWorkPage() {
             <div className="bg-slate-100 rounded-2xl p-8 border border-slate-200 mb-12">
               <h2 className="text-[28px] font-bold text-slate-900 mb-4">Curious How Acupuncture May Work for You?</h2>
               <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-8">
-                If you’re dealing with pain or discomfort and wondering how quickly acupuncture might help, a personalized evaluation can give you a clearer expectation.
+                If you’re dealing with pain or discomfort, a personalized evaluation can help determine what approach may be appropriate for your condition and what timeline you might expect.
               </p>
               
               <ul className="space-y-3 mb-8 text-slate-800 font-medium">
