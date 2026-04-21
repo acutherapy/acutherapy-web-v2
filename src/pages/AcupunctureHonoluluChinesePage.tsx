@@ -238,9 +238,9 @@ export default function AcupunctureHonoluluChinesePage() {
               </p>
               
               <ul className="space-y-3 mb-8 text-slate-800 font-medium">
-                <li className="flex items-center gap-3"><MapPin className="text-blue-600 h-5 w-5" /> 檀香山诊所（距离 Ala Moana仅数分钟）</li>
-                <li className="flex items-center gap-3"><Calendar className="text-blue-600 h-5 w-5" /> 可预约当周时间 (Same-week appointments)</li>
-                <li className="flex items-center gap-3"><PhoneCall className="text-blue-600 h-5 w-5" /> 中文专线: (808) 528-7177</li>
+                <li className="flex items-center gap-3"><MapPin className="text-blue-600 h-5 w-5" /> 檀香山诊所（距离 中国城仅数分钟）</li>
+                <li className="flex items-center gap-3"><Calendar className="text-blue-600 h-5 w-5" /> 可预约当日时间 (Same-day appointments)</li>
+                <li className="flex items-center gap-3"><PhoneCall className="text-blue-600 h-5 w-5" /> 预约专线: (808) 528-7177</li>
               </ul>
 
               <Link to="/book-appointment" className="inline-block hover:opacity-90 transition-opacity whitespace-nowrap mb-4" style={{ background: '#000', color: '#fff', padding: '12px 20px', borderRadius: '8px', fontWeight: 600, textDecoration: 'none' }}>
