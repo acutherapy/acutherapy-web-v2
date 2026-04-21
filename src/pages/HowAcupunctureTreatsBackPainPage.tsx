@@ -135,7 +135,7 @@ export default function HowAcupunctureTreatsBackPainPage() {
             </p>
 
             <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10">
-              Back pain is one of the most common reasons people seek care. In Honolulu, many patients turn to acupuncture to help manage stiffness, tension, and chronic discomfort. At Acutherapy Clinics, Dr. David Cai works with patients experiencing back pain by focusing on muscle patterns, circulation, and nervous system response. While acupuncture is not a one-step solution, it may help support recovery and improve daily movement when combined with appropriate care.
+              Back pain is one of the most common reasons people seek care. In Honolulu, many patients turn to acupuncture to help manage stiffness, tension, and chronic discomfort. At Acutherapy Clinics, Dr. David Cai works with patients experiencing back pain by focusing on muscle patterns, circulation, and nervous system response. While acupuncture is not a one-step solution, it may help support recovery and improve daily movement when combined with appropriate care. For related conditions like radiating leg pain, neurological discomfort, or lingering trauma, we frequently treat patients with <Link to="/sciatica-acupuncture-honolulu" className="text-blue-600 font-medium hover:underline">acupuncture for sciatica</Link>, <Link to="/nerve-pain-acupuncture-honolulu" className="text-blue-600 font-medium hover:underline">nerve pain acupuncture</Link>, and <Link to="/auto-accident-injury-treatment-honolulu" className="text-blue-600 font-medium hover:underline">auto injury acupuncture</Link>.
             </p>
 
             <h2 className="text-[24px] font-bold text-slate-900 mb-4">
@@ -158,17 +158,13 @@ export default function HowAcupunctureTreatsBackPainPage() {
               What Happens in the Body During Acupuncture?
             </h2>
             <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-6 space-y-4">
-              <p>Acupuncture may help support several natural responses:</p>
-              <ul className="list-disc pl-6 space-y-2 mb-4">
-                <li>Muscle relaxation around tight or overworked areas</li>
-                <li>Improved circulation to affected tissues</li>
-                <li>A shift in how the nervous system processes pain signals</li>
-              </ul>
+              <p>When needles are placed strategically, they influence local physiological processes. <strong>Acupuncture may help regulate pain signals, improve circulation, and reduce muscle tension around the affected area.</strong></p>
+              <p>This creates a supportive environment that encourages the body's natural healing response.</p>
             </div>
             
             <div className="bg-blue-50 border-l-4 border-blue-600 p-6 mb-10 rounded-r-xl">
                <p className="text-[16px] md:text-[18px] text-slate-800 font-medium italic">
-                 "Research suggests acupuncture may help reduce pain and improve function in people with back pain when used as part of conservative care."
+                 "According to the National Institutes of Health, acupuncture may help reduce pain and improve physical function in patients with chronic low back pain."
                </p>
             </div>
 
@@ -275,8 +271,7 @@ export default function HowAcupunctureTreatsBackPainPage() {
             <div className="bg-slate-100 rounded-2xl p-8 border border-slate-200">
               <h2 className="text-[28px] font-bold text-slate-900 mb-4">Ready to Address Your Back Pain?</h2>
               <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-8">
-                If back pain has been limiting your movement or affecting your daily life, it may be time to explore your options.<br/><br/>
-                Acupuncture may help support your recovery and improve how your body feels over time.
+                If your back pain hasn't improved with rest or stretching, a personalized evaluation can help determine whether acupuncture may support your recovery.
               </p>
               
               <ul className="space-y-3 mb-8 text-slate-800 font-medium">
