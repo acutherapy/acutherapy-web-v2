@@ -138,17 +138,13 @@ export default function IsAcupunctureGoodForHerniatedDiscPage() {
             </h2>
             <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-6 space-y-4">
               <p>This is an important distinction.</p>
-              <p>Acupuncture is not meant to "correct" the disc itself. Instead, it may help support recovery by:</p>
-              <ul className="list-disc pl-6 space-y-2 mb-4">
-                <li>Reducing muscle guarding around the spine</li>
-                <li>Improving circulation to affected tissues</li>
-                <li>Supporting the body's response to nerve-related pain</li>
-              </ul>
+              <p>Acupuncture is not meant to "correct" the disc itself. Instead, <strong>acupuncture may help regulate pain signals, improve circulation, and reduce muscle tension around the affected area.</strong></p>
+              <p>By shifting how the nervous system processes pain, it creates a more supportive environment that encourages the body's natural healing response to nerve irritation.</p>
             </div>
             
             <div className="bg-blue-50 border-l-4 border-blue-600 p-6 mb-10 rounded-r-xl">
                <p className="text-[16px] md:text-[18px] text-slate-800 font-medium italic">
-                 "Clinical studies and research suggest acupuncture may help reduce pain and improve function in people with back-related conditions when used as part of conservative care."
+                 "Clinical research has shown that acupuncture can reduce pain and improve function in patients with herniated disc–related sciatica."
                </p>
             </div>
 
