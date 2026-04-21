@@ -124,6 +124,10 @@ export default function HowFastDoesAcupunctureWorkPage() {
               <strong>Acupuncture may begin to provide relief after the first session for some patients, while others may notice gradual improvement over several visits. The speed of results depends on the condition, severity, and individual response.</strong>
             </p>
 
+            <div className="bg-blue-50 border-l-4 border-blue-600 p-5 mt-2 mb-8 text-blue-900 font-medium tracking-tight">
+              "Research shows that acupuncture may produce measurable pain relief within minutes in some cases, while longer-term improvement often develops over multiple sessions."
+            </div>
+
             <figure className="mb-8">
               <img 
                 src="/images/how-fast-acupuncture-works-honolulu.jpg" 
@@ -147,14 +151,14 @@ export default function HowFastDoesAcupunctureWorkPage() {
               A Realistic Answer: How Quickly Can You Expect Results?
             </h2>
             <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
-              <p>Some patients feel changes after their very <Link to="/what-to-expect-first-acupuncture-visit" className="text-blue-600 hover:underline">first acupuncture session</Link>.</p>
-              <p>Others may need several visits before noticing a difference.</p>
-              <p>In general:</p>
-              <ul className="list-disc pl-6 space-y-2 mb-4 bg-slate-50 p-6 rounded-xl border border-slate-100">
-                <li>Acute conditions may respond faster</li>
-                <li>Chronic conditions (like persistent <Link to="/back-pain-acupuncture-honolulu" className="text-blue-600 hover:underline">back pain</Link> or <Link to="/neck-pain-treatment-honolulu" className="text-blue-600 hover:underline">neck stiffness</Link>) often take longer</li>
-                <li>Consistency plays a key role</li>
+              <p>The healing timeline typically falls into these expected intervals:</p>
+              <ul className="list-disc pl-6 space-y-2 mb-4 bg-slate-50 p-6 rounded-xl border border-slate-100 font-medium">
+                <li><span className="text-blue-700 font-bold">Immediate:</span> Some patients feel changes within minutes or after their <Link to="/what-to-expect-first-acupuncture-visit" className="text-blue-600 hover:underline">first visit</Link>.</li>
+                <li><span className="text-blue-700 font-bold">Short-term:</span> 1–3 sessions to establish momentum.</li>
+                <li><span className="text-blue-700 font-bold">Mid-term:</span> 3–6 <Link to="/acupuncture-honolulu" className="text-blue-600 hover:underline">sessions</Link> for sustained relief.</li>
+                <li><span className="text-blue-700 font-bold">Long-term:</span> Several weeks of consistent care for complex chronic issues.</li>
               </ul>
+              <p>While acute conditions respond faster, chronic issues like lingering <Link to="/back-pain-acupuncture-honolulu" className="text-blue-600 hover:underline">back pain</Link> or shooting <Link to="/sciatica-treatment-honolulu" className="text-blue-600 hover:underline">sciatica</Link> often require the mid-to-long-term pathways.</p>
               <p>Many patients in Honolulu describe the first improvement as:</p>
               <div className="flex flex-wrap gap-2 mt-4">
                 <span className="bg-blue-50 text-blue-800 px-4 py-2 rounded-full font-medium">Reduced tightness</span>
@@ -174,7 +178,10 @@ export default function HowFastDoesAcupunctureWorkPage() {
                 <li><strong>Middle phase</strong> → improved movement and reduced discomfort</li>
                 <li><strong>Later phase</strong> → more stable and lasting improvement</li>
               </ul>
-              <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-xl">
+              <p className="font-semibold text-slate-900">
+                 If you don’t notice improvement after several sessions, your treatment plan may need to be adjusted.
+              </p>
+              <div className="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-xl mt-4">
                  <p className="text-[16px] md:text-[18px] text-slate-800 font-medium italic">
                    Research suggests acupuncture may help reduce pain and improve function when used consistently as part of conservative care.
                  </p>
