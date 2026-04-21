@@ -287,7 +287,7 @@ export default function HomePage() {
               <span className="text-blue-300 font-semibold text-sm tracking-wider uppercase mb-2 block group-hover:text-white transition-colors">Case 1</span>
               <p className="text-xl font-medium leading-relaxed group-hover:text-white transition-colors">Auto accident <span className="opacity-60 text-lg mx-2">→</span> <span className="text-emerald-400 group-hover:text-emerald-300">neck pain gone in 4 weeks</span></p>
             </Link>
-            <Link to="/patient-reviews" className="bg-blue-800/50 p-6 rounded-2xl border border-blue-700/50 flex flex-col justify-center hover:bg-blue-800 transition-colors group">
+            <Link to="/case-chronic-back-pain-honolulu" className="bg-blue-800/50 p-6 rounded-2xl border border-blue-700/50 flex flex-col justify-center hover:bg-blue-800 transition-colors group">
               <span className="text-blue-300 font-semibold text-sm tracking-wider uppercase mb-2 block group-hover:text-white transition-colors">Case 2</span>
               <p className="text-xl font-medium leading-relaxed group-hover:text-white transition-colors">Chronic back pain <span className="opacity-60 text-lg mx-2">→</span> <span className="text-emerald-400 group-hover:text-emerald-300">70% better after 6 visits</span></p>
             </Link>
