@@ -51,6 +51,7 @@ import TreatmentProcessPage from './pages/TreatmentProcessPage';
 import InsuranceAcceptedPage from './pages/InsuranceAcceptedPage';
 import FrequentlyAskedQuestionsPage from './pages/FrequentlyAskedQuestionsPage';
 import CaseStudiesPage from './pages/CaseStudiesPage';
+import CaseAutoAccidentNeckPainHonoluluPage from './pages/CaseAutoAccidentNeckPainHonoluluPage';
 import NewPatientGuidePage from './pages/NewPatientGuidePage';
 import ClinicPoliciesPage from './pages/ClinicPoliciesPage';
 import AcupunctureSafetyPage from './pages/AcupunctureSafetyPage';
@@ -541,6 +542,7 @@ export default function App() {
           <Route path="/insurance-accepted" element={<InsuranceAcceptedPage />} />
           <Route path="/frequently-asked-questions" element={<FrequentlyAskedQuestionsPage />} />
           <Route path="/case-studies" element={<CaseStudiesPage />} />
+          <Route path="/case-auto-accident-neck-pain-honolulu" element={<CaseAutoAccidentNeckPainHonoluluPage />} />
           <Route path="/new-patient-guide" element={<NewPatientGuidePage />} />
           <Route path="/clinic-policies" element={<ClinicPoliciesPage />} />
           <Route path="/acupuncture-safety" element={<AcupunctureSafetyPage />} />

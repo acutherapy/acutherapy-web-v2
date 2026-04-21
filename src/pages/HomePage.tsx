@@ -283,7 +283,7 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-10 text-blue-100">Real Results</h2>
           <div className="grid md:grid-cols-2 gap-8 text-left">
-            <Link to="/patient-reviews" className="bg-blue-800/50 p-6 rounded-2xl border border-blue-700/50 flex flex-col justify-center hover:bg-blue-800 transition-colors group">
+            <Link to="/case-auto-accident-neck-pain-honolulu" className="bg-blue-800/50 p-6 rounded-2xl border border-blue-700/50 flex flex-col justify-center hover:bg-blue-800 transition-colors group">
               <span className="text-blue-300 font-semibold text-sm tracking-wider uppercase mb-2 block group-hover:text-white transition-colors">Case 1</span>
               <p className="text-xl font-medium leading-relaxed group-hover:text-white transition-colors">Auto accident <span className="opacity-60 text-lg mx-2">→</span> <span className="text-emerald-400 group-hover:text-emerald-300">neck pain gone in 4 weeks</span></p>
             </Link>
