@@ -94,7 +94,7 @@ export default function HowManyAcupunctureSessionsForSciaticaPage() {
             </p>
 
             <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10">
-              Sciatica can affect daily movement, from sitting to walking comfortably. In Honolulu, acupuncture is often used to support recovery by addressing muscle tension and nerve-related discomfort. At Acutherapy Clinics, Dr. David Cai works with patients using personalized treatment plans that may help improve mobility and reduce pain over time. The number of sessions varies, but consistency is often an important factor in achieving results. For related symptoms, patients frequently explore <Link to="/does-acupuncture-help-sciatica" className="text-blue-600 font-medium hover:underline">acupuncture for sciatica</Link> or our resources on <Link to="/back-pain-acupuncture-honolulu" className="text-blue-600 font-medium hover:underline">back pain acupuncture</Link>.
+              Sciatica can affect daily movement, from sitting to walking comfortably. In Honolulu, acupuncture is often used to support recovery by addressing muscle tension and nerve-related discomfort. At Acutherapy Clinics, Dr. David Cai works with patients using personalized treatment plans that may help improve mobility and reduce pain over time. The number of sessions varies, but consistency is often an important factor in achieving results. For comprehensive care, our patients also frequently explore <Link to="/sciatica-acupuncture-honolulu" className="text-blue-600 font-medium hover:underline">acupuncture for sciatica</Link>, <Link to="/nerve-pain-acupuncture-honolulu" className="text-blue-600 font-medium hover:underline">nerve pain acupuncture</Link>, and <Link to="/back-pain-acupuncture-honolulu" className="text-blue-600 font-medium hover:underline">back pain acupuncture</Link>.
             </p>
 
             <h2 className="text-[24px] font-bold text-slate-900 mb-4">
@@ -103,7 +103,7 @@ export default function HowManyAcupunctureSessionsForSciaticaPage() {
             <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
               <p>This is one of the most common questions patients ask.</p>
               <p>The honest answer is: it depends.</p>
-              <p>For many people in Honolulu, sciatica develops gradually—often from muscle tightness, posture, or past injuries. Because of that, recovery usually doesn't happen in a single visit.</p>
+              <p>For many people in Honolulu, sciatica develops gradually—often from muscle tightness, posture, or past injuries. Because of that, recovery usually doesn't happen in a single visit. <strong>Unlike temporary relief approaches, acupuncture is typically used as a series of treatments to support gradual improvement.</strong></p>
               <p>A general pattern many patients experience:</p>
               <ul className="list-disc pl-6 space-y-2 mb-4">
                 <li><strong>Early sessions</strong> focus on reducing tension and discomfort</li>
@@ -160,7 +160,7 @@ export default function HowManyAcupunctureSessionsForSciaticaPage() {
             
             <div className="bg-blue-50 border-l-4 border-blue-600 p-6 mb-10 rounded-r-xl">
                <p className="text-[16px] md:text-[18px] text-slate-800 font-medium italic">
-                 "According to the National Institutes of Health, research suggests acupuncture may help improve pain and function in patients with nerve-related conditions when used consistently as part of conservative care."
+                 "Clinical studies often use around 10 acupuncture sessions over several weeks to evaluate improvement in sciatica symptoms."
                </p>
             </div>
 
