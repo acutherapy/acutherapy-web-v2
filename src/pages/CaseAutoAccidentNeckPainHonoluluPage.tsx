@@ -75,6 +75,12 @@ export default function CaseAutoAccidentNeckPainHonoluluPage() {
             </h2>
             <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
               <p>The patient came in after a car accident with:</p>
+<div className="bg-blue-50/50 border border-blue-100 border-l-4 border-l-blue-500 p-4 rounded-xl text-slate-800 font-medium my-6 shadow-sm">
+  <p className="flex items-center gap-2">
+    <span className="text-xl">👉</span>
+    <span>This type of condition is often related to <Link to="/neck-pain-treatment-honolulu" className="text-blue-600 hover:text-blue-800 underline decoration-blue-300 underline-offset-4 font-bold">neck pain treatment</Link> after injury.</span>
+  </p>
+</div>
               <ul className="list-disc pl-6 space-y-2 mb-4 bg-slate-50 p-6 rounded-xl border border-slate-100">
                 <li><Link to="/neck-pain-treatment-honolulu" className="text-blue-600 hover:underline">Neck stiffness</Link></li>
                 <li>Pain when turning the head</li>
@@ -207,6 +213,12 @@ export default function CaseAutoAccidentNeckPainHonoluluPage() {
               </div>
             </div>
 
+<div className="bg-blue-50/50 border border-blue-100 border-l-4 border-l-blue-500 p-4 rounded-xl text-slate-800 font-medium my-6 shadow-sm">
+  <p className="flex items-center gap-2">
+    <span className="text-xl">👉</span>
+    <span>In many auto accident cases, treatment may be covered. Learn more about <Link to="/is-acupuncture-covered-by-insurance-hawaii" className="text-blue-600 hover:text-blue-800 underline decoration-blue-300 underline-offset-4 font-bold">insurance and payment options</Link>.</span>
+  </p>
+</div>
           </article>
 
           {/* Sidebar */}

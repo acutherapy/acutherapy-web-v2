@@ -359,6 +359,12 @@ export default function IsAcupunctureCoveredByInsuranceHawaiiPage() {
               </div>
             </div>
 
+<div className="bg-blue-50/50 border border-blue-100 border-l-4 border-l-blue-500 p-4 rounded-xl text-slate-800 font-medium my-6 shadow-sm">
+  <p className="flex items-center gap-2">
+    <span className="text-xl">👉</span>
+    <span>If you're new, you can read <Link to="/what-to-expect-first-acupuncture-visit" className="text-blue-600 hover:text-blue-800 underline decoration-blue-300 underline-offset-4 font-bold">what to expect at your first visit</Link>.</span>
+  </p>
+</div>
           </article>
 
           {/* Sidebar */}

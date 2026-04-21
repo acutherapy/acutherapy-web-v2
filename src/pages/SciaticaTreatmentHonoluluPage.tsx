@@ -65,6 +65,12 @@ export default function SciaticaTreatmentHonoluluPage() {
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
               Sciatica isn't a disease itself; it’s a symptom of underlying mechanical compression. The sciatic nerve is the longest and thickest nerve in the human body. When surrounding tissues—such as a herniated lumbar disc or a severely locked piriformis muscle (Piriformis syndrome) in the buttocks—pinch this massive nerve, it sends violent electrical pain signals down the leg.
             </p>
+<div className="bg-blue-50/50 border border-blue-100 border-l-4 border-l-blue-500 p-4 rounded-xl text-slate-800 font-medium my-6 shadow-sm">
+  <p className="flex items-center gap-2">
+    <span className="text-xl">👉</span>
+    <span>Sciatica often overlaps with <Link to="/back-pain-acupuncture-honolulu" className="text-blue-600 hover:text-blue-800 underline decoration-blue-300 underline-offset-4">lower back pain conditions</Link>.</span>
+  </p>
+</div>
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Our Three Core Pillars for Sciatica Relief</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
@@ -85,6 +91,12 @@ export default function SciaticaTreatmentHonoluluPage() {
                 "Many sciatica patients report that the sharp, shooting leg pain reduces into a dull ache within just a few treatments, eventually fading away completely as the surrounding core muscles stop spasming."
               </p>
             </div>
+<div className="bg-blue-50/50 border border-blue-100 border-l-4 border-l-blue-500 p-4 rounded-xl text-slate-800 font-medium my-6 shadow-sm">
+  <p className="flex items-center gap-2">
+    <span className="text-xl">👉</span>
+    <span>Some patients begin to notice changes after a few sessions—learn more about <Link to="/how-fast-does-acupuncture-work" className="text-blue-600 hover:text-blue-800 underline decoration-blue-300 underline-offset-4">how quickly acupuncture may work</Link>.</span>
+  </p>
+</div>
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Who Is This For?</h2>
             <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
@@ -168,6 +180,12 @@ export default function SciaticaTreatmentHonoluluPage() {
           
 <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Causes Sciatica?</h2>
 <p className="text-lg text-slate-700 leading-relaxed mb-6">Sciatica can be triggered by a variety of factors including chronic stress, poor posture, repetitive strain, or acute injuries. Over time, these factors create blockages in blood circulation and nerve function, leading to persistent discomfort.</p>
+<div className="bg-blue-50/50 border border-blue-100 border-l-4 border-l-blue-500 p-4 rounded-xl text-slate-800 font-medium my-6 shadow-sm">
+  <p className="flex items-center gap-2">
+    <span className="text-xl">👉</span>
+    <span>See how similar cases progressed in our <Link to="/case-chronic-back-pain-honolulu" className="text-blue-600 hover:text-blue-800 underline decoration-blue-300 underline-offset-4">chronic back pain case study</Link>.</span>
+  </p>
+</div>
 
 <div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
 <h2 className="text-3xl font-bold text-blue-900 mb-4">Ready to find relief?</h2>

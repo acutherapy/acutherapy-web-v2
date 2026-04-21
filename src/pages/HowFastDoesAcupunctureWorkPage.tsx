@@ -102,6 +102,12 @@ export default function HowFastDoesAcupunctureWorkPage() {
           />
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/80" />
         </div>
+<div className="bg-blue-50/50 border border-blue-100 border-l-4 border-l-blue-500 p-4 rounded-xl text-slate-800 font-medium my-6 shadow-sm">
+  <p className="flex items-center gap-2">
+    <span className="text-xl">👉</span>
+    <span>You can see an example timeline in this <Link to="/case-auto-accident-neck-pain-honolulu" className="text-blue-600 hover:text-blue-800 underline decoration-blue-300 underline-offset-4 font-bold">real case study</Link>.</span>
+  </p>
+</div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
           <div className="flex flex-wrap items-center justify-center gap-3 mb-6">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm backdrop-blur-sm">
@@ -335,6 +341,12 @@ export default function HowFastDoesAcupunctureWorkPage() {
               </Link>
             </div>
 
+<div className="bg-blue-50/50 border border-blue-100 border-l-4 border-l-blue-500 p-4 rounded-xl text-slate-800 font-medium my-6 shadow-sm">
+  <p className="flex items-center gap-2">
+    <span className="text-xl">👉</span>
+    <span>Many patients also check <Link to="/is-acupuncture-covered-by-insurance-hawaii" className="text-blue-600 hover:text-blue-800 underline decoration-blue-300 underline-offset-4 font-bold">insurance coverage options</Link> before starting care.</span>
+  </p>
+</div>
           </article>
 
           {/* Sidebar */}

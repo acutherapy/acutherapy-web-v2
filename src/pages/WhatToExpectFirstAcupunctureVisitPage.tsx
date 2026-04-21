@@ -370,6 +370,12 @@ export default function WhatToExpectFirstAcupunctureVisitPage() {
               </div>
             </div>
 
+<div className="bg-blue-50/50 border border-blue-100 border-l-4 border-l-blue-500 p-4 rounded-xl text-slate-800 font-medium my-6 shadow-sm">
+  <p className="flex items-center gap-2">
+    <span className="text-xl">👉</span>
+    <span>You can also review a <Link to="/case-auto-accident-neck-pain-honolulu" className="text-blue-600 hover:text-blue-800 underline decoration-blue-300 underline-offset-4 font-bold">real patient case</Link>.</span>
+  </p>
+</div>
           </article>
 
           {/* Sidebar */}

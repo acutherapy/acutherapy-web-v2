@@ -75,6 +75,12 @@ export default function CaseChronicBackPainHonoluluPage() {
             </h2>
             <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
               <p>The patient came in with long-term <Link to="/back-pain-acupuncture-honolulu" className="text-blue-600 hover:underline">lower back pain</Link>, including:</p>
+<div className="bg-blue-50/50 border border-blue-100 border-l-4 border-l-blue-500 p-4 rounded-xl text-slate-800 font-medium my-6 shadow-sm">
+  <p className="flex items-center gap-2">
+    <span className="text-xl">👉</span>
+    <span>Chronic conditions often relate to <Link to="/back-pain-acupuncture-honolulu" className="text-blue-600 hover:text-blue-800 underline decoration-blue-300 underline-offset-4 font-bold">long-term back pain patterns</Link>.</span>
+  </p>
+</div>
               <ul className="list-disc pl-6 space-y-2 mb-4 bg-slate-50 p-6 rounded-xl border border-slate-100">
                 <li>Persistent pain in the lower back</li>
                 <li>Stiffness with movement</li>
@@ -106,6 +112,12 @@ export default function CaseChronicBackPainHonoluluPage() {
                   <li>Tension began to ease</li>
                   <li>Slight reduction in discomfort</li>
                 </ul>
+<div className="bg-blue-50/50 border border-blue-100 border-l-4 border-l-blue-500 p-4 rounded-xl text-slate-800 font-medium my-6 shadow-sm">
+  <p className="flex items-center gap-2">
+    <span className="text-xl">👉</span>
+    <span>Progress may take several visits—see <Link to="/how-fast-does-acupuncture-work" className="text-blue-600 hover:text-blue-800 underline decoration-blue-300 underline-offset-4 font-bold">expected timelines</Link>.</span>
+  </p>
+</div>
               </div>
               <div>
                 <h3 className="font-bold text-blue-800 text-xl border-b border-blue-200 pb-2 mb-3">Visit 3–4</h3>
@@ -210,6 +222,12 @@ export default function CaseChronicBackPainHonoluluPage() {
               </div>
             </div>
 
+<div className="bg-blue-50/50 border border-blue-100 border-l-4 border-l-blue-500 p-4 rounded-xl text-slate-800 font-medium my-6 shadow-sm">
+  <p className="flex items-center gap-2">
+    <span className="text-xl">👉</span>
+    <span>Patients often ask about cost—see <Link to="/is-acupuncture-covered-by-insurance-hawaii" className="text-blue-600 hover:text-blue-800 underline decoration-blue-300 underline-offset-4 font-bold">insurance coverage details</Link>.</span>
+  </p>
+</div>
           </article>
 
           {/* Sidebar */}

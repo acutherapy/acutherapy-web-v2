@@ -207,6 +207,12 @@ export default function AcupunctureSafetyPage() {
 <li>Athletes or individuals recovering from an injury needing accelerated healing.</li>
 </ul>
 
+<div className="bg-blue-50/50 border border-blue-100 border-l-4 border-l-blue-500 p-4 rounded-xl text-slate-800 font-medium my-6 shadow-sm">
+  <p className="flex items-center gap-2">
+    <span className="text-xl">👉</span>
+    <span>If you're preparing for your first session, see <Link to="/what-to-expect-first-acupuncture-visit" className="text-blue-600 hover:text-blue-800 underline decoration-blue-300 underline-offset-4">what to expect</Link>.</span>
+  </p>
+</div>
 <div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
 <h2 className="text-3xl font-bold text-blue-900 mb-4">Ready to find relief?</h2>
 <p className="text-lg text-blue-700 mb-8">Stop living in discomfort. Located right here in Honolulu, we are here to help you restore your well-being.</p>

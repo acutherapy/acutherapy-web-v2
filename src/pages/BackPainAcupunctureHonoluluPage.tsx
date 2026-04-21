@@ -65,6 +65,12 @@ export default function BackPainAcupunctureHonoluluPage() {
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
               Low back pain often results from prolonged sitting, poor lifting biomechanics, herniated discs, spinal stenosis, or severe muscle spasms in the lumbar region. In TCM, this presents as structural stagnation that blocks the flow of Qi and blood.
             </p>
+<div className="bg-blue-50/50 border border-blue-100 border-l-4 border-l-blue-500 p-4 rounded-xl text-slate-800 font-medium my-6 shadow-sm">
+  <p className="flex items-center gap-2">
+    <span className="text-xl">👉</span>
+    <span>If your pain involves nerve irritation, you may also want to read about <Link to="/sciatica-treatment-honolulu" className="text-blue-600 hover:text-blue-800 underline decoration-blue-300 underline-offset-4">sciatica treatment options</Link>.</span>
+  </p>
+</div>
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Our Core Treatments Relieve Back Pain</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
@@ -123,6 +129,12 @@ export default function BackPainAcupunctureHonoluluPage() {
                 <h3 className="text-xl font-bold text-slate-900 mb-2 flex items-center gap-2"><HelpCircle className="text-blue-500" size={20}/> How many back pain sessions are needed?</h3>
                 <p className="text-slate-600">While acute strains might resolve in 2-4 visits, chronic back issues often recommend a foundation of 6-10 focused sessions. Dr. Cai will provide a precise medical timeframe after your first exam.</p>
               </div>
+<div className="bg-blue-50/50 border border-blue-100 border-l-4 border-l-blue-500 p-4 rounded-xl text-slate-800 font-medium my-6 shadow-sm">
+  <p className="flex items-center gap-2">
+    <span className="text-xl">👉</span>
+    <span>Many patients also ask <Link to="/how-fast-does-acupuncture-work" className="text-blue-600 hover:text-blue-800 underline decoration-blue-300 underline-offset-4">how fast acupuncture works</Link> and what to expect over time.</span>
+  </p>
+</div>
               <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
                 <h3 className="text-xl font-bold text-slate-900 mb-2 flex items-center gap-2"><HelpCircle className="text-blue-500" size={20}/> Can acupuncture help a herniated disc?</h3>
                 <p className="text-slate-600">Yes. While it does not physically push the disc back into place, acupuncture brilliantly decreases the surrounding nerve inflammation and stops the intense localized muscle spasms that make disc herniations so painful.</p>
@@ -169,6 +181,12 @@ export default function BackPainAcupunctureHonoluluPage() {
 <li>Individuals with a history of herniated discs or heavy lifting injuries.</li>
 </ul>
 
+<div className="bg-blue-50/50 border border-blue-100 border-l-4 border-l-blue-500 p-4 rounded-xl text-slate-800 font-medium my-6 shadow-sm">
+  <p className="flex items-center gap-2">
+    <span className="text-xl">👉</span>
+    <span>You can also see a <Link to="/case-auto-accident-neck-pain-honolulu" className="text-blue-600 hover:text-blue-800 underline decoration-blue-300 underline-offset-4">real recovery case</Link> to understand how symptoms may improve.</span>
+  </p>
+</div>
 <div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
 <h2 className="text-3xl font-bold text-blue-900 mb-4">Ready to find relief?</h2>
 <p className="text-lg text-blue-700 mb-8">Stop living in discomfort. Located right here in Honolulu, we are here to help you restore your well-being.</p>

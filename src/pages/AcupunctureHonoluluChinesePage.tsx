@@ -146,6 +146,12 @@ export default function AcupunctureHonoluluChinesePage() {
                 <li>压力、焦虑、睡眠问题</li>
                 <li>长期肌肉紧张</li>
               </ul>
+<div className="bg-blue-50/50 border border-blue-100 border-l-4 border-l-blue-500 p-4 rounded-xl text-slate-800 font-medium my-6 shadow-sm">
+  <p className="flex items-center gap-2">
+    <span className="text-xl">👉</span>
+    <span>如果你有背痛或坐骨神经痛，可以参考：<Link to="/back-pain-acupuncture-honolulu" className="text-blue-600 hover:text-blue-800 underline decoration-blue-300 underline-offset-4 text-sm font-bold">背痛治疗</Link> 或 <Link to="/sciatica-treatment-honolulu" className="text-blue-600 hover:text-blue-800 underline decoration-blue-300 underline-offset-4 text-sm font-bold">坐骨神经痛</Link></span>
+  </p>
+</div>
               
               <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
                  <p className="font-semibold text-blue-900 mb-2">🔬 权威说明</p>

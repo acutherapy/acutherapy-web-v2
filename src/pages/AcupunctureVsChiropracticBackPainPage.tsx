@@ -114,6 +114,13 @@ export default function AcupunctureVsChiropracticBackPainPage() {
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Acupuncture vs Chiropractic for Back Pain</h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Understanding the best approach for lasting relief and recovery in Honolulu.</p>
+<div className="bg-blue-50/50 border border-blue-100 border-l-4 border-l-blue-500 p-4 rounded-xl text-slate-800 font-medium my-6 shadow-sm">
+  <p className="flex items-center gap-2">
+    <span className="text-xl">👉</span>
+    <span>If you're dealing with chronic issues, see <Link to="/back-pain-acupuncture-honolulu" className="text-blue-600 hover:text-blue-800 underline decoration-blue-300 underline-offset-4">back pain treatment options</Link>.</span>
+  </p>
+</div>
+
         </div>
       </section>
 
@@ -362,6 +369,12 @@ export default function AcupunctureVsChiropracticBackPainPage() {
               </div>
             </div>
 
+<div className="bg-blue-50/50 border border-blue-100 border-l-4 border-l-blue-500 p-4 rounded-xl text-slate-800 font-medium my-6 shadow-sm">
+  <p className="flex items-center gap-2">
+    <span className="text-xl">👉</span>
+    <span>You can also review a <Link to="/case-chronic-back-pain-honolulu" className="text-blue-600 hover:text-blue-800 underline decoration-blue-300 underline-offset-4 font-bold">real recovery case</Link>.</span>
+  </p>
+</div>
           </article>
 
           {/* Sidebar */}
