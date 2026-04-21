@@ -12,7 +12,14 @@ export default function HowFastDoesAcupunctureWorkPage() {
       <Helmet>
         <title>How Fast Does Acupuncture Work? | Honolulu Patient Guide</title>
         <meta name="description" content="Wondering how fast acupuncture works? Learn about timeline expectations, immediate relief versus gradual improvement, and what to expect in Honolulu." />
-        <script type="application/ld+json">
+        
+        <meta property="og:title" content="How Fast Does Acupuncture Work? | Treatment Timeline | Honolulu" />
+        <meta property="og:description" content="Wondering how fast acupuncture takes to work? See our exact clinical recovery timelines for immediate relief, mid-term healing, and long-term repair." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://acutherapy.com/how-fast-does-acupuncture-work" />
+        <meta property="og:image" content="https://acutherapy.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
           {`
           {
             "@context": "https://schema.org",

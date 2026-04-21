@@ -11,7 +11,14 @@ export default function HomePage() {
       <Helmet>
         <title>Honolulu Pain & Injury Acupuncture Clinic | Dr. David Cai | AcuTherapy</title>
         <meta name="description" content="Top-rated Honolulu Pain & Injury Acupuncture Clinic. Dr. David Cai specializes in pain management, auto accident recovery, and traditional Chinese medicine with over 30 years of clinical experience." />
-        <script type="application/ld+json">
+        
+        <meta property="og:title" content="Honolulu Pain & Injury Acupuncture Clinic | Dr. David Cai | AcuTherapy" />
+        <meta property="og:description" content="Top-rated Honolulu Pain & Injury Acupuncture Clinic. Dr. David Cai specializes in pain management, auto accident recovery, and traditional Chinese medicine with over 30 years of clinical experience." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://acutherapy.com/" />
+        <meta property="og:image" content="https://acutherapy.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
           {`
           {
             "@context": "https://schema.org",

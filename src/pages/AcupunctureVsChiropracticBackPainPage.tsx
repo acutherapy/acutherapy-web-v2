@@ -13,7 +13,14 @@ export default function AcupunctureVsChiropracticBackPainPage() {
         <link rel="canonical" href="https://acutherapy.com/acupuncture-vs-chiropractic-back-pain" />
         <title>Acupuncture Vs Chiropractic Back Pain Treatment in Honolulu | AcuTherapy Clinics</title>
         <meta name="description" content="Tired of Acupuncture Vs Chiropractic Back Pain? Dr. David Cai provides effective, non-surgical relief using advanced acupuncture and traditional Chinese medicine in Honolulu." />
-        <script type="application/ld+json">
+        
+        <meta property="og:title" content="Acupuncture vs Chiropractic for Back Pain | Which is Better? | Honolulu" />
+        <meta property="og:description" content="Acupuncture vs Chiropractic care for back pain? Learn the difference and find out which treatment is best for your specific muscular or structural injury." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://acutherapy.com/acupuncture-vs-chiropractic-back-pain" />
+        <meta property="og:image" content="https://acutherapy.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
           {`
           {
             "@context": "https://schema.org",

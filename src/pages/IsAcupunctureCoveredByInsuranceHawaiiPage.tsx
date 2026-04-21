@@ -12,7 +12,14 @@ export default function IsAcupunctureCoveredByInsuranceHawaiiPage() {
       <Helmet>
         <title>Is Acupuncture Covered By Insurance in Hawaii? | Honolulu Guide</title>
         <meta name="description" content="Acupuncture in Hawaii may be covered by insurance depending on your plan. Learn about auto accident, workers' comp, Medicare, and private health options in Honolulu." />
-        <script type="application/ld+json">
+        
+        <meta property="og:title" content="Acupuncture Insurance Hawaii | Auto PIP & Medicare | AcuTherapy" />
+        <meta property="og:description" content="Is acupuncture covered by insurance in Hawaii? We accept HMSA, Kaiser, UHA, Medicare UHC, Auto PIP, Workers' Comp & VA. Learn about our verification process." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://acutherapy.com/is-acupuncture-covered-by-insurance-hawaii" />
+        <meta property="og:image" content="https://acutherapy.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
           {`
           {
             "@context": "https://schema.org",

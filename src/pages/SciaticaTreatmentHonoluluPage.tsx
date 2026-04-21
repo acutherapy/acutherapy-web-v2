@@ -12,7 +12,14 @@ export default function SciaticaTreatmentHonoluluPage() {
         <title>Sciatica Treatment Honolulu | Fast Nerve Pain Relief | AcuTherapy Clinics</title>
         <meta name="description" content="Suffering from shooting leg pain and sciatica in Honolulu? Get fast, non-surgical relief using targeted medical acupuncture to decompress the sciatic nerve." />
       
-        <script type="application/ld+json">
+        
+        <meta property="og:title" content="Sciatica Treatment Honolulu | Fast Nerve Pain Relief | AcuTherapy" />
+        <meta property="og:description" content="Suffering from shooting leg pain and sciatica in Honolulu? Get fast, non-surgical relief using targeted medical acupuncture to decompress the sciatic nerve." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://acutherapy.com/sciatica-treatment-honolulu" />
+        <meta property="og:image" content="https://acutherapy.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
           {`{
   "@context": "https://schema.org",
   "@type": [

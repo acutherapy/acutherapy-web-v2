@@ -12,7 +12,14 @@ export default function BackPainAcupunctureHonoluluPage() {
         <title>acupuncture for back pain honolulu | lower back pain treatment hawaii | AcuTherapy Clinics</title>
         <meta name="description" content="Suffering from lower back pain in Honolulu? Discover how targeted medical acupuncture and traditional Chinese medicine can relieve your severe back pain today." />
       
-        <script type="application/ld+json">
+        
+        <meta property="og:title" content="Acupuncture for Back Pain Honolulu | Lower Back Relief | AcuTherapy" />
+        <meta property="og:description" content="Suffering from lower back pain in Honolulu? Discover how targeted medical acupuncture and traditional Chinese medicine can relieve your severe back pain today." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://acutherapy.com/back-pain-acupuncture-honolulu" />
+        <meta property="og:image" content="https://acutherapy.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
           {`{
   "@context": "https://schema.org",
   "@type": [

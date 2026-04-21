@@ -10,7 +10,14 @@ export default function CaseChronicBackPainHonoluluPage() {
       <Helmet>
         <title>Chronic Back Pain Improvement Over 6 Visits | Honolulu Case Study</title>
         <meta name="description" content="Chronic back pain may improve gradually with consistent care. This Honolulu case shows how symptoms changed over 6 visits with a structured treatment approach." />
-        <script type="application/ld+json">
+        
+        <meta property="og:title" content="Chronic Back Pain Recovery | Case Study | AcuTherapy Honolulu" />
+        <meta property="og:description" content="Read our Honolulu case study on chronic back pain. See how we improved symptoms by 70% in 6 visits using acupuncture and medical massage." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://acutherapy.com/case-chronic-back-pain-honolulu" />
+        <meta property="og:image" content="https://acutherapy.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
           {`
           {
             "@context": "https://schema.org",

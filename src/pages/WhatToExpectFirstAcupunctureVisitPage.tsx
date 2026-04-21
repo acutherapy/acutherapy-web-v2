@@ -13,7 +13,14 @@ export default function WhatToExpectFirstAcupunctureVisitPage() {
         <link rel="canonical" href="https://acutherapy.com/what-to-expect-first-acupuncture-visit" />
         <title>What to Expect at Your First Acupuncture Visit in Honolulu</title>
         <meta name="description" content="Your first acupuncture visit in Honolulu typically includes a consultation, personalized assessment, and a gentle treatment session. Learn what happens step-by-step." />
-        <script type="application/ld+json">
+        
+        <meta property="og:title" content="What to Expect at Your First Acupuncture Visit | AcuTherapy Honolulu" />
+        <meta property="og:description" content="Preparing for your first acupuncture visit in Honolulu? Learn about our comfortable, sterile process, what to wear, and how you will feel post-treatment." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://acutherapy.com/what-to-expect-first-acupuncture-visit" />
+        <meta property="og:image" content="https://acutherapy.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
           {`
           {
             "@context": "https://schema.org",

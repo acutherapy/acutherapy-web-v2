@@ -10,7 +10,14 @@ export default function CaseAutoAccidentNeckPainHonoluluPage() {
       <Helmet>
         <title>Auto Accident Neck Pain Recovery in 4 Weeks | Honolulu Case Study</title>
         <meta name="description" content="After a car accident, neck pain may improve over several weeks with consistent care. This Honolulu case shows how symptoms changed over a 4-week period." />
-        <script type="application/ld+json">
+        
+        <meta property="og:title" content="Auto Accident Neck Pain Recovery | Case Study | AcuTherapy Honolulu" />
+        <meta property="og:description" content="Read our Honolulu case study on recovering from auto accident neck pain. See the 4-week timeline for reducing stiffness and achieving full pain-free mobility." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://acutherapy.com/case-auto-accident-neck-pain-honolulu" />
+        <meta property="og:image" content="https://acutherapy.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
           {`
           {
             "@context": "https://schema.org",

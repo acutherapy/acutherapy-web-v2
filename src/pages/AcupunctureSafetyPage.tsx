@@ -13,7 +13,14 @@ export default function AcupunctureSafetyPage() {
         <link rel="canonical" href="https://acutherapy.com/acupuncture-safety" />
         <title>Acupuncture Safety | Honolulu Acupuncture Guide</title>
         <meta name="description" content="Learn more about Acupuncture Safety. Dr. David Cai from AcuTherapy Clinics answers your questions about acupuncture efficacy and treatment processes." />
-        <script type="application/ld+json">
+        
+        <meta property="og:title" content="Does Acupuncture Hurt? | Safety & FDA Needles | Honolulu AcuTherapy" />
+        <meta property="og:description" content="Does acupuncture hurt? Learn how we use sterile, hair-thin FDA-approved needles to ensure a completely safe, practically painless healing experience." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://acutherapy.com/acupuncture-safety" />
+        <meta property="og:image" content="https://acutherapy.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
           {`
           {
             "@context": "https://schema.org",

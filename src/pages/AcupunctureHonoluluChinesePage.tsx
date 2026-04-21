@@ -11,7 +11,14 @@ export default function AcupunctureHonoluluChinesePage() {
         <link rel="canonical" href="https://acutherapy.com/acupuncture-honolulu-chinese" />
         <title>檀香山针灸诊所，中医痛症与工伤车祸理疗专家 | AcuTherapy Clinics</title>
         <meta name="description" content="Dr. David Cai (蔡医生) 在夏威夷檀香山拥有30年中医针灸临床经验，专精各类痛症、车祸后遗症、坐骨神经痛及运动损伤。接受各大医疗保险。" />
-        <script type="application/ld+json">
+        
+        <meta property="og:title" content="檀香山针灸 (Acupuncture Honolulu) | 夏威夷正宗中医诊所" />
+        <meta property="og:description" content="檀香山/夏威夷华人首选针灸中医诊所。Dr. David Cai 提供专业的背痛、坐骨神经痛及车祸理赔治疗。可预约当日看诊，接受大多数医疗保险。" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://acutherapy.com/acupuncture-honolulu-chinese" />
+        <meta property="og:image" content="https://acutherapy.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+<script type="application/ld+json">
           {`
           {
             "@context": "https://schema.org",
