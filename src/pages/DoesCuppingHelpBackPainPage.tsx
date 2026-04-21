@@ -147,8 +147,8 @@ export default function DoesCuppingHelpBackPainPage() {
             </h2>
             <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
               <p>Cupping therapy has been used for a long time, but many people in Honolulu still wonder if it really works.</p>
-              <p>The honest answer is that it may help—especially when back pain is related to muscle tension and tightness.</p>
-              <p>Cupping doesn’t “fix” the spine or underlying structural issues.<br/>Instead, it works more on the surface level of the body.</p>
+              <p>The honest answer is that it may help—especially when <Link to="/back-pain-acupuncture-honolulu" className="text-blue-600 hover:underline">back pain</Link> is related to muscle tension and <Link to="/medical-massage-honolulu" className="text-blue-600 hover:underline">muscle tightness</Link>.</p>
+              <p>Cupping doesn’t “fix” the spine or underlying <Link to="/sciatica-acupuncture-honolulu" className="text-blue-600 hover:underline">structural, nerve issues</Link>.<br/>Instead, it works more on the surface level of the body.</p>
               <p>Many patients report that after a session:</p>
               <ul className="list-disc pl-6 space-y-2 mb-4 bg-slate-50 p-6 rounded-xl border border-slate-100">
                 <li>The back feels looser</li>
@@ -156,6 +156,9 @@ export default function DoesCuppingHelpBackPainPage() {
                 <li>Movement feels easier</li>
               </ul>
               <p className="font-medium text-slate-800">The effect is often temporary, but it can be a helpful part of a larger treatment plan.</p>
+              <div className="mt-4 bg-blue-50/50 p-4 border-l-2 border-blue-500 rounded-r">
+                <p className="text-slate-800 font-medium">If your back pain feels more like muscle tightness or stiffness rather than sharp nerve pain, cupping may be a helpful <Link to="/contact-honolulu-acupuncture" className="text-blue-600 hover:underline">starting point</Link>.</p>
+              </div>
             </div>
 
             <h2 className="text-[24px] font-bold text-slate-900 mb-4">
@@ -172,7 +175,7 @@ export default function DoesCuppingHelpBackPainPage() {
               <p>Some patients also find that it helps reduce the “heavy” or stiff feeling in the back.</p>
               <div className="bg-blue-50 border-l-4 border-blue-600 p-6 mt-6 rounded-r-xl">
                  <p className="text-[16px] md:text-[18px] text-slate-800 font-medium italic">
-                   "Research suggests cupping may help reduce pain and improve function in people with musculoskeletal conditions when used as part of conservative care."
+                   "Research suggests cupping therapy may reduce pain and improve function in people with low back pain, although results can vary."
                  </p>
               </div>
             </div>
@@ -195,7 +198,7 @@ export default function DoesCuppingHelpBackPainPage() {
               How Long Do the Effects Last?
             </h2>
             <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
-              <p>The effects of cupping are often short-term.</p>
+              <p>The effects of cupping are often short-term. Cupping is often used as a complementary therapy rather than a standalone treatment for <Link to="/back-pain-acupuncture-honolulu" className="text-blue-600 hover:underline">long-term back pain</Link>.</p>
               <p>Some patients feel relief for:</p>
               <ul className="list-disc pl-6 space-y-2 mb-4">
                 <li>A few hours</li>
@@ -205,7 +208,7 @@ export default function DoesCuppingHelpBackPainPage() {
               <ul className="list-disc pl-6 space-y-2 mb-4 bg-emerald-50/50 p-6 rounded-xl border border-emerald-100">
                 <li><Link to="/acupuncture-honolulu" className="text-blue-600 font-bold hover:underline">Acupuncture</Link></li>
                 <li><Link to="/medical-massage-honolulu" className="text-blue-600 font-bold hover:underline">Medical massage</Link></li>
-                <li>Movement or stretching</li>
+                <li>Movement or <Link to="/neck-pain-treatment-honolulu" className="text-blue-600 hover:underline">stretching</Link></li>
               </ul>
             </div>
 
