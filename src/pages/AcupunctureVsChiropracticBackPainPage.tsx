@@ -107,8 +107,8 @@ export default function AcupunctureVsChiropracticBackPainPage() {
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm mb-6 backdrop-blur-sm">
             <ShieldCheck size={16} /> <span>Trusted Honolulu Pain Clinic</span>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Acupuncture Vs Chiropractic Back Pain</h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Medical-grade treatments customized for lasting relief and recovery in Honolulu.</p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Acupuncture vs Chiropractic for Back Pain</h1>
+          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Understanding the best approach for lasting relief and recovery in Honolulu.</p>
         </div>
       </section>
 
@@ -117,116 +117,247 @@ export default function AcupunctureVsChiropracticBackPainPage() {
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-12 gap-12">
           
           <article className="md:col-span-8">
+            <h1 className="text-[32px] md:text-[40px] font-bold text-slate-900 mb-6 leading-tight">
+              Acupuncture vs Chiropractic for Back Pain: Which Is Better in Honolulu?
+            </h1>
+
+            <p className="text-[18px] font-semibold text-slate-800 mb-6 leading-relaxed">
+              <strong>Both acupuncture and chiropractic care may help relieve back pain, but they work in different ways. In Honolulu, acupuncture often focuses on reducing muscle tension and supporting pain response, while chiropractic care focuses on spinal alignment and joint function. The right choice depends on your condition and how your body responds.</strong>
+            </p>
+
+            <figure className="mb-8">
+              <img 
+                src="/images/acupuncture-vs-chiropractic-back-pain-honolulu.jpg" 
+                alt="Comparison of acupuncture and chiropractic treatment for back pain in Honolulu Hawaii" 
+                className="w-full h-auto rounded-2xl object-cover shadow-lg"
+                onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=800'; }}
+              />
+              <figcaption className="text-sm text-slate-500 mt-3 italic">
+                A side-by-side comparison of acupuncture and chiropractic approaches for treating back pain, highlighting different methods used in Honolulu clinics.
+              </figcaption>
+            </figure>
+
+            <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10">
+              Back pain can come from multiple sources, including muscle tension, joint restriction, and nerve irritation. In Honolulu, both acupuncture and chiropractic care are commonly used to manage back pain. At Acutherapy Clinics, Dr. David Cai helps patients understand how acupuncture may support recovery by addressing muscle patterns and pain signaling. While chiropractic care focuses more on structural alignment, acupuncture may help relax tight muscles and improve overall comfort. Many patients benefit from choosing the approach that best fits their condition—or combining both when appropriate.
+            </p>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              A Simple Comparison: Acupuncture vs Chiropractic
+            </h2>
+            <div className="overflow-x-auto mb-10">
+              <table className="w-full text-left border-collapse bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+                <thead className="bg-slate-100 border-b border-slate-200 text-slate-800">
+                  <tr>
+                    <th className="p-4 font-bold">Approach</th>
+                    <th className="p-4 font-bold">Focus</th>
+                    <th className="p-4 font-bold">What It May Help</th>
+                  </tr>
+                </thead>
+                <tbody className="text-[16px] text-slate-700">
+                  <tr className="border-b border-slate-100 hover:bg-slate-50">
+                    <td className="p-4 font-semibold text-blue-900">Acupuncture</td>
+                    <td className="p-4">Muscle tension, circulation, nervous system</td>
+                    <td className="p-4">Pain relief, relaxation, mobility</td>
+                  </tr>
+                  <tr className="hover:bg-slate-50">
+                    <td className="p-4 font-semibold text-emerald-900">Chiropractic</td>
+                    <td className="p-4">Spine alignment, joint movement</td>
+                    <td className="p-4">Structural issues, posture, joint restriction</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              How Acupuncture May Help Back Pain
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-6 space-y-4">
+              <p>Acupuncture focuses less on structure and more on how the body feels and responds.</p>
+              <p>It may help by:</p>
+              <ul className="list-disc pl-6 space-y-2 mb-4 bg-slate-50 p-6 rounded-xl border border-slate-100">
+                <li>Reducing muscle tension</li>
+                <li>Improving circulation</li>
+                <li>Supporting the body’s response to pain</li>
+              </ul>
+              <p>Many patients in Honolulu report that acupuncture feels calming and helps reduce overall stiffness.</p>
+            </div>
             
-              <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
-                Suffering from <strong>Acupuncture Vs Chiropractic Back Pain</strong> can deeply disrupt your daily life, making basic movements agonizing and draining your energy. At AcuTherapy Clinics in Honolulu, Dr. David Cai applies over 30 years of medical acupuncture experience to resolve the root cause of acupuncture vs chiropractic back pain, offering a lasting alternative to surgery or heavy pharmaceuticals.
+            <div className="bg-blue-50 border-l-4 border-blue-600 p-6 mb-10 rounded-r-xl">
+               <p className="text-[16px] md:text-[18px] text-slate-800 font-medium italic">
+                 "Research suggests acupuncture may help reduce pain and improve function in people with back pain when used as part of conservative care."
+               </p>
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              How Chiropractic Care Approaches Back Pain
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>Chiropractic care typically focuses on spinal alignment and joint movement.</p>
+              <p>It may involve:</p>
+              <ul className="list-disc pl-6 space-y-2 mb-4 bg-emerald-50/50 p-6 rounded-xl border border-emerald-100">
+                <li>Spinal adjustments</li>
+                <li>Joint manipulation</li>
+                <li>Posture correction</li>
+              </ul>
+              <p>For some patients, especially those with joint restriction or alignment concerns, this approach may be helpful.</p>
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              Which One Is Better for You?
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>There isn’t a single answer that fits everyone.</p>
+              <p>In Honolulu, patients often choose based on:</p>
+              <ul className="list-disc pl-6 space-y-2 mb-4">
+                <li>Muscle tension vs structural restriction</li>
+                <li>Sensitivity to hands-on adjustments</li>
+                <li>Personal comfort with each approach</li>
+              </ul>
+              <p>In many cases:</p>
+              <ul className="list-disc pl-6 space-y-2 mb-4 box-border">
+                <li><strong>Acupuncture</strong> may be preferred for muscle tension and nerve-related discomfort</li>
+                <li><strong>Chiropractic care</strong> may be preferred for alignment and joint issues</li>
+              </ul>
+              <p className="font-semibold text-slate-800">Some patients choose to combine both approaches under professional guidance.</p>
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              What Patients Often Notice First
+            </h2>
+            <div className="grid md:grid-cols-2 gap-6 mb-10">
+              <div className="bg-blue-50 border border-blue-100 p-6 rounded-xl">
+                <h3 className="font-bold text-blue-900 mb-3 text-lg">With acupuncture:</h3>
+                <ul className="list-disc pl-5 space-y-2 text-slate-700">
+                  <li>Relaxation</li>
+                  <li>Reduced tension</li>
+                  <li>Gradual improvement</li>
+                </ul>
+              </div>
+              <div className="bg-emerald-50 border border-emerald-100 p-6 rounded-xl">
+                <h3 className="font-bold text-emerald-900 mb-3 text-lg">With chiropractic:</h3>
+                <ul className="list-disc pl-5 space-y-2 text-slate-700">
+                  <li>Immediate change in movement</li>
+                  <li>Joint release sensation</li>
+                  <li>Postural adjustments</li>
+                </ul>
+              </div>
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              Back Pain Treatment Options in Honolulu
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>Acutherapy Clinics is located near Ala Moana, serving patients across:</p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="bg-slate-100 border border-slate-200 px-3 py-1 rounded-full text-sm font-medium">Waikiki</span>
+                <span className="bg-slate-100 border border-slate-200 px-3 py-1 rounded-full text-sm font-medium">Kakaʻako</span>
+                <span className="bg-slate-100 border border-slate-200 px-3 py-1 rounded-full text-sm font-medium">Downtown Honolulu</span>
+                <span className="bg-slate-100 border border-slate-200 px-3 py-1 rounded-full text-sm font-medium">Greater Oahu</span>
+              </div>
+              <p>Having access to different care options allows patients to choose what works best for their situation.</p>
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-6 border-b pb-2">
+              Q&A: Acupuncture vs Chiropractic
+            </h2>
+            <div className="space-y-8 mb-10">
+              <div>
+                <h3 className="text-[20px] font-bold text-slate-900 mb-2">Is acupuncture better than chiropractic for back pain?</h3>
+                <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">It depends on the cause of the pain. Acupuncture may help with muscle tension, while chiropractic care may address structural issues.</p>
+              </div>
+              <div>
+                <h3 className="text-[20px] font-bold text-slate-900 mb-2">Can you do acupuncture and chiropractic together?</h3>
+                <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">Some patients choose to combine both approaches, depending on their condition and provider recommendations.</p>
+              </div>
+              <div>
+                <h3 className="text-[20px] font-bold text-slate-900 mb-2">Which works faster for back pain?</h3>
+                <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">Some people feel immediate changes with chiropractic care, while acupuncture may provide more gradual relief over time.</p>
+              </div>
+              <div>
+                <h3 className="text-[20px] font-bold text-slate-900 mb-2">Is acupuncture safer than chiropractic?</h3>
+                <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">Both are generally considered safe when performed by licensed professionals. The best choice depends on your comfort and condition.</p>
+              </div>
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              A Safe and Professional Approach
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-12">
+              <p className="mb-4">At Acutherapy Clinics in Honolulu, treatments are performed using sterile, single-use needles.</p>
+              <p className="mb-6">Care is provided by trained professionals following Hawaii healthcare standards.</p>
+              <div className="flex flex-col sm:flex-row gap-4 mb-4">
+                 <div className="flex items-center gap-2 bg-emerald-50 text-emerald-800 px-4 py-3 rounded-lg border border-emerald-100 font-medium">
+                    <ShieldCheck className="text-emerald-500 h-5 w-5" /> <span>Sterile Use Needles</span>
+                 </div>
+                 <div className="flex items-center gap-2 bg-blue-50 text-blue-800 px-4 py-3 rounded-lg border border-blue-100 font-medium">
+                    <ShieldCheck className="text-blue-500 h-5 w-5" /> <span>Licensed Professionals</span>
+                 </div>
+              </div>
+            </div>
+
+            <div className="bg-slate-100 rounded-2xl p-8 border border-slate-200">
+              <h2 className="text-[28px] font-bold text-slate-900 mb-4">Not Sure Which Option Is Right for You?</h2>
+              <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-8">
+                If you’re dealing with back pain and unsure whether acupuncture or chiropractic care is a better fit, a personalized evaluation can help guide your decision.
               </p>
               
-      <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/50 group mb-12 w-full max-w-3xl mx-auto">
-        <img loading="lazy" src="/images/fire-cupping-therapy.jpg" alt="Fire cupping therapy" className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
-        <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-8 pt-16 text-white text-lg font-medium">Traditional Fire Cupping Therapy for Deep Tissue Detox</figcaption>
-      </div>
-              <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">The Science of Treating Acupuncture Vs Chiropractic Back Pain with Acupuncture</h2>
-              <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                Acupuncture Vs Chiropractic Back Pain is often the result of trapped inflammation, peripheral nerve irritation, or deep myofascial tension that standard treatments fail to reach. Our specific needle protocols for acupuncture vs chiropractic back pain stimulate local vasodilation—massively increasing blood flow to oxygen-starved tissues.
-              </p>
-              <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                Furthermore, precise stimulation signals the central nervous system to release natural endorphins and opioid-like neuropeptides, dramatically downregulating the pain signals caused by acupuncture vs chiropractic back pain before they reach the brain.
-              </p>
-              <h3 className="text-2xl font-bold text-slate-900 mt-10 mb-6 border-b pb-2">Our Highly Effective Treatment Process</h3>
-              <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                We don't use a "one size fits all" approach. Your treatment for acupuncture vs chiropractic back pain may integrate multiple modalities for optimal effectiveness:
-              </p>
-              <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
-                <li><strong>Targeted Traditional Acupuncture:</strong> To relieve severe nerve pain or muscle spasms.</li>
-                <li><strong>Medical Massage (Tui-Na):</strong> To physically break down scar tissue and fascia adhesions compounding the structural issue.</li>
-                <li><strong>Fire Cupping Therapy:</strong> To pull stagnant blood and lactic acid out of deep muscle layers.</li>
+              <ul className="space-y-3 mb-8 text-slate-800 font-medium">
+                <li className="flex items-center gap-3"><MapPin className="text-blue-600 h-5 w-5" /> Located near Ala Moana in Honolulu</li>
+                <li className="flex items-center gap-3"><Calendar className="text-blue-600 h-5 w-5" /> Same-week appointments available.</li>
+                <li className="flex items-center gap-3"><PhoneCall className="text-blue-600 h-5 w-5" /> Call (808) 528-7177 to schedule your consultation</li>
               </ul>
-        
-            
-      <div className="mt-16 mb-16 bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden">
-        <div className="grid md:grid-cols-5 gap-0">
-          <div className="md:col-span-2 bg-slate-100 relative">
-            <img loading="lazy" 
-              src="/images/dr-david-cai-portrait.jpg" 
-              alt="Dr. David Cai, L.Ac., L.M.T." 
-              className="w-full h-full object-cover min-h-[400px]"
-              onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=800'; }}
-            />
-            <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-6 text-white text-center">
-               <span className="font-bold text-xl">Dr. David Cai</span>
-               <p className="text-blue-300 text-sm">L.Ac., L.M.T.</p>
+
+              <Link to="/book-appointment" className="inline-block hover:opacity-90 transition-opacity" style={{ background: '#000', color: '#fff', padding: '12px 20px', borderRadius: '8px', fontWeight: 600, textDecoration: 'none' }}>
+                Get My Recovery Plan
+              </Link>
             </div>
-          </div>
-          <div className="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
-            <h3 className="text-sm font-bold tracking-widest text-blue-600 uppercase mb-2">Clinical Director & Founder</h3>
-            <h4 className="text-3xl font-extrabold text-slate-900 mb-4">Leading Honolulu Pain Clinic</h4>
-            <p className="text-slate-600 mb-6 leading-relaxed" dangerouslySetInnerHTML={{ __html: 'With over 30 years of clinical experience, <strong>Dr. David Cai</strong> is a master of Traditional Chinese Medicine (TCM) and advanced acupuncture protocols. He specializes in severe pain management, sports injuries, and complex auto accident recoveries, bringing world-class holistic healthcare to the Honolulu community.' }}></p>
-            <div className="flex items-center gap-4 bg-slate-50 p-4 rounded-2xl border border-slate-100">
-               <img loading="lazy" src="/images/acutherapy-medical-team.jpg" alt="AcuTherapy Clinics Medical Team" className="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md flex-shrink-0" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
-               <div>
-                 <h5 className="font-bold text-slate-900 mb-1">AcuTherapy Clinics Medical Team</h5>
-                 <p className="text-sm text-slate-500 italic leading-relaxed">"Our multidisciplinary medical team is highly trained and committed to finding the root cause of your condition, providing relief that lasts."</p>
-               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    
             
-      <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Explore Related Treatments & Information</h3>
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mb-12">
-        
-        <Link to="/acupuncture-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold">
-          <ShieldCheck className="text-blue-500 mr-3 h-5 w-5" /> Acupuncture Honolulu
-        </Link>
-        <Link to="/contact-honolulu-acupuncture" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold">
-          <PhoneCall className="text-emerald-500 mr-3 h-5 w-5" /> Contact Our Clinic
-        </Link>
-        <Link to="/auto-accident-injury-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold">
-          <Activity className="text-blue-500 mr-3 h-5 w-5" /> Auto Accident PIP
-        </Link>
-    
-        <Link to="/medical-massage-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold">
-          <Activity className="text-blue-500 mr-3 h-5 w-5" /> Medical Massage
-        </Link>
-      </div>
-    
-          
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Causes Vs Chiropractic Back Pain?</h2>
-<p className="text-lg text-slate-700 leading-relaxed mb-6">Vs Chiropractic Back Pain can be triggered by a variety of factors including chronic stress, poor posture, repetitive strain, or acute injuries. Over time, these factors create blockages in blood circulation and nerve function, leading to persistent discomfort.</p>
+            {/* Dr. David Cai Profile Module */}
+            <div className="mt-16 mb-16 bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden">
+              <div className="grid md:grid-cols-5 gap-0">
+                <div className="md:col-span-2 bg-slate-100 relative">
+                  <img loading="lazy" 
+                    src="/images/dr-david-cai-portrait.jpg" 
+                    alt="Dr. David Cai, L.Ac., L.M.T." 
+                    className="w-full h-full object-cover min-h-[400px]"
+                    onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=800'; }}
+                  />
+                  <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-6 text-white text-center">
+                     <span className="font-bold text-xl">Dr. David Cai</span>
+                     <p className="text-blue-300 text-sm">L.Ac., L.M.T.</p>
+                  </div>
+                </div>
+                <div className="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
+                  <h3 className="text-sm font-bold tracking-widest text-blue-600 uppercase mb-2">Clinical Director & Founder</h3>
+                  <h4 className="text-3xl font-extrabold text-slate-900 mb-4">Leading Honolulu Pain Clinic</h4>
+                  <p className="text-slate-600 mb-6 leading-relaxed" dangerouslySetInnerHTML={{ __html: 'With over 30 years of clinical experience, <strong>Dr. David Cai</strong> is a master of Traditional Chinese Medicine (TCM) and advanced acupuncture protocols. He specializes in severe pain management, sports injuries, and complex auto accident recoveries, bringing world-class holistic healthcare to the Honolulu community.' }}></p>
+                  <div className="flex items-center gap-4 bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                     <img loading="lazy" src="/images/acutherapy-medical-team.jpg" alt="AcuTherapy Clinics Medical Team" className="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md flex-shrink-0" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                     <div>
+                       <h5 className="font-bold text-slate-900 mb-1">AcuTherapy Clinics Medical Team</h5>
+                       <p className="text-sm text-slate-500 italic leading-relaxed">"Our multidisciplinary medical team is highly trained and committed to finding the root cause of your condition, providing relief that lasts."</p>
+                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="mt-16">
+              <h3 className="text-2xl font-bold text-slate-900 mb-6 border-b pb-2">Explore Related Treatments</h3>
+              <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mb-4">
+                <Link to="/back-pain-acupuncture-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold">
+                  <Activity className="text-blue-500 mr-3 h-5 w-5" /> Back Pain Relief
+                </Link>
+                <Link to="/sciatica-acupuncture-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold">
+                  <ShieldCheck className="text-blue-500 mr-3 h-5 w-5" /> Sciatica Treatment
+                </Link>
+                <Link to="/contact-honolulu-acupuncture" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold">
+                  <PhoneCall className="text-emerald-500 mr-3 h-5 w-5" /> Contact Us
+                </Link>
+              </div>
+            </div>
 
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Acupuncture Helps</h2>
-<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li><strong>Pain Relief:</strong> Triggers the release of endorphins to block pain signals effectively.</li>
-<li><strong>Nervous System Regulation:</strong> Calms the central nervous system, reducing tension without relying on pharmaceuticals.</li>
-<li><strong>Improved Circulation:</strong> Enhances blood flow to the affected areas, accelerating the natural healing process.</li>
-</ul>
-
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect During Your Session</h2>
-<p className="text-lg text-slate-700 leading-relaxed mb-6">During your first experience, Dr. David Cai will conduct a thorough assessment to understand your unique condition. The treatment itself is deeply relaxing. Many patients notice a distinct change in symptoms, experiencing immediate lightness and reduced tension right after the needles are gently placed.</p>
-
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Who Is This For?</h2>
-<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li>Individuals suffering from chronic pain who have not found relief through conventional methods.</li>
-<li>High-stress professionals seeking natural nervous system regulation.</li>
-<li>Athletes or individuals recovering from an injury needing accelerated healing.</li>
-</ul>
-
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">FAQ</h2>
-<div className="space-y-6 mb-12">
-<div><h4 className="font-bold text-lg text-slate-900">Q1: How many sessions are needed for Vs Chiropractic Back Pain?</h4><p className="text-slate-700">A: Most patients notice significant relief within 3 to 5 sessions, though chronic conditions may require a longer treatment plan to address the root cause and ensure lasting results.</p></div>
-<div><h4 className="font-bold text-lg text-slate-900">Q2: Does the treatment hurt?</h4><p className="text-slate-700">A: No. We use ultra-fine needles. Most feel only a deep, relaxing sensation. Many even fall asleep!</p></div>
-<div><h4 className="font-bold text-lg text-slate-900">Q3: Is it safe?</h4><p className="text-slate-700">A: Absolutely. Acupuncture is a highly safe, non-invasive alternative to surgery and heavy medications.</p></div>
-</div>
-
-<div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
-<h2 className="text-3xl font-bold text-blue-900 mb-4">Ready to find relief?</h2>
-<p className="text-lg text-blue-700 mb-8">Stop living in discomfort. Located right here in Honolulu, we are here to help you restore your well-being.</p>
-<Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Book Your Session Today</Button></Link>
-</div>
-
-</article>
+          </article>
 
           {/* Sidebar */}
           <aside className="md:col-span-4 space-y-8">
@@ -237,31 +368,9 @@ export default function AcupunctureVsChiropracticBackPainPage() {
                 <p className="text-slate-600 mb-8 text-sm">Bridge the gap to a pain-free life today.</p>
                 <div className="flex flex-col gap-4">
                   <Link to="/book-appointment">
-
-                    <Link to="/book-appointment">
-
-
-                      <Link to="/book-appointment">
-
-
-
-                        <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
-
-
-
-                          <Calendar className="mr-2" /> Schedule Online
-
-
-
-                        </Button>
-
-
-
-                      </Link>
-
-
-                    </Link>
-
+                    <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
+                      <Calendar className="mr-2" /> Schedule Online
+                    </Button>
                   </Link>
                   <Button variant="outline" className="w-full h-14 text-lg border-2 border-slate-200" onClick={() => window.location.href='tel:+18085287177'}>
                     <PhoneCall className="mr-2 h-5 w-5 text-blue-600" /> (808) 528-7177
