@@ -106,8 +106,8 @@ export default function DoesCuppingHelpBackPainPage() {
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm mb-6 backdrop-blur-sm">
             <ShieldCheck size={16} /> <span>Trusted Honolulu Pain Clinic</span>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Does Cupping Help Back Pain</h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Medical-grade treatments customized for lasting relief and recovery in Honolulu.</p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Does Cupping Therapy Help Back Pain?</h1>
+          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">A Honolulu patient guide to understanding and resolving muscle tension.</p>
         </div>
       </section>
 
@@ -116,98 +116,227 @@ export default function DoesCuppingHelpBackPainPage() {
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-12 gap-12">
           
           <article className="md:col-span-8">
-            
-              <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
-                At AcuTherapy Clinics, we believe that informed patients heal faster. If you are exploring options and wondering about <strong>does cupping help back pain</strong>, Dr. David Cai and our clinical team have compiled the following medical insights based on decades of practice in Honolulu.
+            <h1 className="text-[32px] md:text-[40px] font-bold text-slate-900 mb-6 leading-tight">
+              Does Cupping Therapy Help Back Pain? A Honolulu Patient Guide
+            </h1>
+
+            <p className="text-[18px] font-semibold text-slate-800 mb-6 leading-relaxed">
+              <strong>Cupping therapy for back pain in Honolulu may help reduce muscle tension, improve circulation, and support recovery. Many patients experience temporary relief from stiffness and tightness when cupping is used as part of a broader treatment plan.</strong>
+            </p>
+
+            <figure className="mb-8">
+              <img 
+                src="/images/cupping-therapy-back-pain-honolulu.jpg" 
+                alt="Cupping therapy for back pain in Honolulu Hawaii showing suction cups on the back" 
+                className="w-full h-auto rounded-2xl object-cover shadow-lg"
+                onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }}
+              />
+              <figcaption className="text-sm text-slate-500 mt-3 italic">
+                A professional cupping therapy session in Honolulu targeting back pain and muscle tension, demonstrating the suction technique used for relief.
+              </figcaption>
+            </figure>
+
+            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 mb-10 shadow-sm">
+              <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">
+                <Link to="/back-pain-acupuncture-honolulu" className="text-blue-600 font-medium hover:underline">Back pain</Link> is often linked to muscle tightness, stress, or repetitive strain. In Honolulu, cupping therapy is commonly used to help relieve tension in the back and shoulders. At Acutherapy Clinics, cupping is often combined with <Link to="/acupuncture-honolulu" className="text-blue-600 font-medium hover:underline">acupuncture</Link> or <Link to="/medical-massage-honolulu" className="text-blue-600 font-medium hover:underline">medical massage</Link> to support overall recovery. While cupping does not address structural problems, it may help improve comfort and mobility when used appropriately.
               </p>
-              
-      <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/50 group mb-12 w-full max-w-3xl mx-auto">
-        <img loading="lazy" src="/images/fire-cupping-therapy.jpg" alt="Fire cupping therapy" className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
-        <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-8 pt-16 text-white text-lg font-medium">Traditional Fire Cupping Therapy for Deep Tissue Detox</figcaption>
-      </div>
-              <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Understanding Does Cupping Help Back Pain</h2>
-              <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                When discussing does cupping help back pain, it's important to differentiate between western symptom-masking and the holistic root-cause methodology we practice here. Traditional Chinese Medicine (TCM) views the body as a systemic interconnected network. Any symptom you experience is a localized manifestation of a deeper structural or energetic imbalance.
-              </p>
-              <div className="bg-slate-50 p-8 rounded-xl border border-slate-200 my-8 shadow-sm">
-                 <h3 className="text-xl font-bold text-slate-900 mb-4">Patient FAQ: The Core Answer</h3>
-                 <p className="text-lg text-slate-700">
-                    If you are asking yourself about does cupping help back pain, the short answer is that <strong>yes, professional acupuncture is statistically proven to be highly efficacious</strong> for these types of clinical inquiries. The treatment works by modulating the nervous system, reducing chronic inflammation, and resetting muscular firing patterns. However, every patient's body responds differently—which is why day-one diagnostic evaluations are critical.
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              A Realistic Answer: Does Cupping Actually Help Back Pain?
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>Cupping therapy has been used for a long time, but many people in Honolulu still wonder if it really works.</p>
+              <p>The honest answer is that it may help—especially when back pain is related to muscle tension and tightness.</p>
+              <p>Cupping doesn’t “fix” the spine or underlying structural issues.<br/>Instead, it works more on the surface level of the body.</p>
+              <p>Many patients report that after a session:</p>
+              <ul className="list-disc pl-6 space-y-2 mb-4 bg-slate-50 p-6 rounded-xl border border-slate-100">
+                <li>The back feels looser</li>
+                <li>Muscle tightness decreases</li>
+                <li>Movement feels easier</li>
+              </ul>
+              <p className="font-medium text-slate-800">The effect is often temporary, but it can be a helpful part of a larger treatment plan.</p>
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              How Cupping Therapy May Help Back Pain
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>Cupping therapy involves placing suction cups on the skin to create a pulling effect.</p>
+              <p>This may help:</p>
+              <ul className="list-disc pl-6 space-y-2 mb-4">
+                <li>Increase blood flow to tight areas</li>
+                <li>Reduce muscle tension</li>
+                <li>Promote relaxation</li>
+              </ul>
+              <p>Some patients also find that it helps reduce the “heavy” or stiff feeling in the back.</p>
+              <div className="bg-blue-50 border-l-4 border-blue-600 p-6 mt-6 rounded-r-xl">
+                 <p className="text-[16px] md:text-[18px] text-slate-800 font-medium italic">
+                   "Research suggests cupping may help reduce pain and improve function in people with musculoskeletal conditions when used as part of conservative care."
                  </p>
               </div>
-        
-            
-      <div className="mt-16 mb-16 bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden">
-        <div className="grid md:grid-cols-5 gap-0">
-          <div className="md:col-span-2 bg-slate-100 relative">
-            <img loading="lazy" 
-              src="/images/dr-david-cai-portrait.jpg" 
-              alt="Dr. David Cai, L.Ac., L.M.T." 
-              className="w-full h-full object-cover min-h-[400px]"
-              onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=800'; }}
-            />
-            <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-6 text-white text-center">
-               <span className="font-bold text-xl">Dr. David Cai</span>
-               <p className="text-blue-300 text-sm">L.Ac., L.M.T.</p>
             </div>
-          </div>
-          <div className="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
-            <h3 className="text-sm font-bold tracking-widest text-blue-600 uppercase mb-2">Clinical Director & Founder</h3>
-            <h4 className="text-3xl font-extrabold text-slate-900 mb-4">Leading Honolulu Pain Clinic</h4>
-            <p className="text-slate-600 mb-6 leading-relaxed" dangerouslySetInnerHTML={{ __html: 'With over 30 years of clinical experience, <strong>Dr. David Cai</strong> is a master of Traditional Chinese Medicine (TCM) and advanced acupuncture protocols. He specializes in severe pain management, sports injuries, and complex auto accident recoveries, bringing world-class holistic healthcare to the Honolulu community.' }}></p>
-            <div className="flex items-center gap-4 bg-slate-50 p-4 rounded-2xl border border-slate-100">
-               <img loading="lazy" src="/images/acutherapy-medical-team.jpg" alt="AcuTherapy Clinics Medical Team" className="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md flex-shrink-0" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
-               <div>
-                 <h5 className="font-bold text-slate-900 mb-1">AcuTherapy Clinics Medical Team</h5>
-                 <p className="text-sm text-slate-500 italic leading-relaxed">"Our multidisciplinary medical team is highly trained and committed to finding the root cause of your condition, providing relief that lasts."</p>
-               </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              What Does Cupping Feel Like?
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>Cupping does not feel like a deep massage or pressure.</p>
+              <p>Instead, patients often describe:</p>
+              <ul className="list-disc pl-6 space-y-2 mb-4">
+                <li>A pulling or suction sensation</li>
+                <li>Tightness under the cup</li>
+                <li>A feeling of release after the cups are removed</li>
+              </ul>
+              <p>It may feel unusual at first, but many people find it relaxing.</p>
             </div>
-          </div>
-        </div>
-      </div>
-    
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              How Long Do the Effects Last?
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>The effects of cupping are often short-term.</p>
+              <p>Some patients feel relief for:</p>
+              <ul className="list-disc pl-6 space-y-2 mb-4">
+                <li>A few hours</li>
+                <li>A few days</li>
+              </ul>
+              <p>For longer-lasting results, cupping is often combined with:</p>
+              <ul className="list-disc pl-6 space-y-2 mb-4 bg-emerald-50/50 p-6 rounded-xl border border-emerald-100">
+                <li><Link to="/acupuncture-honolulu" className="text-blue-600 font-bold hover:underline">Acupuncture</Link></li>
+                <li><Link to="/medical-massage-honolulu" className="text-blue-600 font-bold hover:underline">Medical massage</Link></li>
+                <li>Movement or stretching</li>
+              </ul>
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              When Patients in Honolulu Consider Cupping for Back Pain
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>You might consider cupping if you’re experiencing:</p>
+              <ul className="list-disc pl-6 space-y-2 mb-4 box-border">
+                <li>Muscle tightness in the upper or lower back</li>
+                <li>Stiffness from sitting or posture</li>
+                <li>Stress-related tension</li>
+                <li>General soreness or fatigue</li>
+              </ul>
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              Cupping Therapy in Honolulu
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>Acutherapy Clinics is located near Ala Moana, serving patients across:</p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="bg-slate-100 border border-slate-200 px-3 py-1 rounded-full text-sm font-medium">Waikiki</span>
+                <span className="bg-slate-100 border border-slate-200 px-3 py-1 rounded-full text-sm font-medium">Kakaʻako</span>
+                <span className="bg-slate-100 border border-slate-200 px-3 py-1 rounded-full text-sm font-medium">Downtown Honolulu</span>
+                <span className="bg-slate-100 border border-slate-200 px-3 py-1 rounded-full text-sm font-medium">Greater Oahu</span>
+              </div>
+              <p>Having access to local care makes it easier to include cupping as part of your overall wellness routine.</p>
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-6 border-b pb-2">
+              Q&A: Cupping for Back Pain
+            </h2>
+            <div className="space-y-8 mb-10">
+              <div>
+                <h3 className="text-[20px] font-bold text-slate-900 mb-2">Does cupping really help back pain?</h3>
+                <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">Cupping may help reduce muscle tension and improve circulation, which can temporarily relieve discomfort.</p>
+              </div>
+              <div>
+                <h3 className="text-[20px] font-bold text-slate-900 mb-2">Is cupping better than acupuncture?</h3>
+                <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">They work differently. Cupping focuses more on muscle tension, while <Link to="/acupuncture-honolulu" className="text-blue-600 hover:underline">acupuncture</Link> may address deeper pain patterns.</p>
+              </div>
+              <div>
+                <h3 className="text-[20px] font-bold text-slate-900 mb-2">How often should I do cupping therapy?</h3>
+                <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">This depends on your condition. Some patients use it occasionally, while others include it regularly as part of a treatment plan.</p>
+              </div>
+              <div>
+                <h3 className="text-[20px] font-bold text-slate-900 mb-2">Are cupping marks normal?</h3>
+                <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">Yes. The circular marks are a normal response to suction and typically fade within a few days.</p>
+              </div>
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              A Safe and Professional Approach
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-12">
+              <p className="mb-4">At Acutherapy Clinics in Honolulu, cupping therapy is performed by trained professionals using clean, professional equipment.</p>
+              <p className="mb-6">Safety and patient comfort are always prioritized.</p>
+              <div className="flex flex-col sm:flex-row gap-4 mb-4">
+                 <div className="flex items-center gap-2 bg-emerald-50 text-emerald-800 px-4 py-3 rounded-lg border border-emerald-100 font-medium">
+                    <ShieldCheck className="text-emerald-500 h-5 w-5" /> <span>Professional Equipment</span>
+                 </div>
+                 <div className="flex items-center gap-2 bg-blue-50 text-blue-800 px-4 py-3 rounded-lg border border-blue-100 font-medium">
+                    <ShieldCheck className="text-blue-500 h-5 w-5" /> <span>Trained Specialists</span>
+                 </div>
+              </div>
+            </div>
+
+            <div className="bg-slate-100 rounded-2xl p-8 border border-slate-200">
+              <h2 className="text-[28px] font-bold text-slate-900 mb-4">Interested in Trying Cupping for Back Pain?</h2>
+              <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-8">
+                If back tension or stiffness has been affecting your daily comfort, cupping therapy may be worth exploring as part of your <Link to="/back-pain-acupuncture-honolulu" className="text-blue-600 font-bold hover:underline">care plan</Link>.
+              </p>
+              
+              <ul className="space-y-3 mb-8 text-slate-800 font-medium">
+                <li className="flex items-center gap-3"><MapPin className="text-blue-600 h-5 w-5" /> Located near Ala Moana in Honolulu</li>
+                <li className="flex items-center gap-3"><Calendar className="text-blue-600 h-5 w-5" /> Same-week appointments available</li>
+                <li className="flex items-center gap-3"><PhoneCall className="text-blue-600 h-5 w-5" /> Call (808) 528-7177 to schedule your visit</li>
+              </ul>
+
+              <Link to="/book-appointment" className="inline-block hover:opacity-90 transition-opacity" style={{ background: '#000', color: '#fff', padding: '12px 20px', borderRadius: '8px', fontWeight: 600, textDecoration: 'none' }}>
+                Get My Recovery Plan
+              </Link>
+            </div>
             
-      <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Explore Related Treatments & Information</h3>
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mb-12">
-        
-        <Link to="/back-pain-acupuncture-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold"><Activity className="text-blue-500 mr-3 h-5 w-5" /> Back Pain Recovery</Link>
-        <Link to="/acupuncture-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold">
-          <ShieldCheck className="text-blue-500 mr-3 h-5 w-5" /> Acupuncture Honolulu
-        </Link>
-        <Link to="/contact-honolulu-acupuncture" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold">
-          <PhoneCall className="text-emerald-500 mr-3 h-5 w-5" /> Contact Us
-        </Link>
-    
-      </div>
-    
-          
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Causes Does Cupping Help Back Pain?</h2>
-<p className="text-lg text-slate-700 leading-relaxed mb-6">Does Cupping Help Back Pain can be triggered by a variety of factors including chronic stress, poor posture, repetitive strain, or acute injuries. Over time, these factors create blockages in blood circulation and nerve function, leading to persistent discomfort.</p>
+            {/* Dr. David Cai Profile Module */}
+            <div className="mt-16 mb-16 bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden">
+              <div className="grid md:grid-cols-5 gap-0">
+                <div className="md:col-span-2 bg-slate-100 relative">
+                  <img loading="lazy" 
+                    src="/images/dr-david-cai-portrait.jpg" 
+                    alt="Dr. David Cai, L.Ac., L.M.T." 
+                    className="w-full h-full object-cover min-h-[400px]"
+                    onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=800'; }}
+                  />
+                  <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-6 text-white text-center">
+                     <span className="font-bold text-xl">Dr. David Cai</span>
+                     <p className="text-blue-300 text-sm">L.Ac., L.M.T.</p>
+                  </div>
+                </div>
+                <div className="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
+                  <h3 className="text-sm font-bold tracking-widest text-blue-600 uppercase mb-2">Clinical Director & Founder</h3>
+                  <h4 className="text-3xl font-extrabold text-slate-900 mb-4">Leading Honolulu Pain Clinic</h4>
+                  <p className="text-slate-600 mb-6 leading-relaxed" dangerouslySetInnerHTML={{ __html: 'With over 30 years of clinical experience, <strong>Dr. David Cai</strong> is a master of Traditional Chinese Medicine (TCM) and advanced acupuncture protocols. He specializes in severe pain management, sports injuries, and complex auto accident recoveries, bringing world-class holistic healthcare to the Honolulu community.' }}></p>
+                  <div className="flex items-center gap-4 bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                     <img loading="lazy" src="/images/acutherapy-medical-team.jpg" alt="AcuTherapy Clinics Medical Team" className="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md flex-shrink-0" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                     <div>
+                       <h5 className="font-bold text-slate-900 mb-1">AcuTherapy Clinics Medical Team</h5>
+                       <p className="text-sm text-slate-500 italic leading-relaxed">"Our multidisciplinary medical team is highly trained and committed to finding the root cause of your condition, providing relief that lasts."</p>
+                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="mt-16">
+              <h3 className="text-2xl font-bold text-slate-900 mb-6 border-b pb-2">Explore Related Treatments</h3>
+              <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mb-4">
+                <Link to="/neck-pain-treatment-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold">
+                  <Activity className="text-blue-500 mr-3 h-5 w-5" /> Neck Pain Treatment
+                </Link>
+                <Link to="/acupuncture-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold">
+                  <ShieldCheck className="text-blue-500 mr-3 h-5 w-5" /> Learn About Acupuncture
+                </Link>
+                <Link to="/contact-honolulu-acupuncture" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold">
+                  <PhoneCall className="text-emerald-500 mr-3 h-5 w-5" /> Contact Our Clinic
+                </Link>
+              </div>
+            </div>
 
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Acupuncture Helps</h2>
-<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li><strong>Pain Relief:</strong> Triggers the release of endorphins to block pain signals effectively.</li>
-<li><strong>Nervous System Regulation:</strong> Calms the central nervous system, reducing tension without relying on pharmaceuticals.</li>
-<li><strong>Improved Circulation:</strong> Enhances blood flow to the affected areas, accelerating the natural healing process.</li>
-</ul>
-
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect During Your Session</h2>
-<p className="text-lg text-slate-700 leading-relaxed mb-6">During your first experience, Dr. David Cai will conduct a thorough assessment to understand your unique condition. The treatment itself is deeply relaxing. Many patients notice a distinct change in symptoms, experiencing immediate lightness and reduced tension right after the needles are gently placed.</p>
-
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Who Is This For?</h2>
-<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li>Individuals suffering from chronic pain who have not found relief through conventional methods.</li>
-<li>High-stress professionals seeking natural nervous system regulation.</li>
-<li>Athletes or individuals recovering from an injury needing accelerated healing.</li>
-</ul>
-
-<div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
-<h2 className="text-3xl font-bold text-blue-900 mb-4">Ready to find relief?</h2>
-<p className="text-lg text-blue-700 mb-8">Stop living in discomfort. Located right here in Honolulu, we are here to help you restore your well-being.</p>
-<Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Book Your Session Today</Button></Link>
-</div>
-
-</article>
+          </article>
 
           {/* Sidebar */}
           <aside className="md:col-span-4 space-y-8">
@@ -218,31 +347,9 @@ export default function DoesCuppingHelpBackPainPage() {
                 <p className="text-slate-600 mb-8 text-sm">Bridge the gap to a pain-free life today.</p>
                 <div className="flex flex-col gap-4">
                   <Link to="/book-appointment">
-
-                    <Link to="/book-appointment">
-
-
-                      <Link to="/book-appointment">
-
-
-
-                        <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
-
-
-
-                          <Calendar className="mr-2" /> Schedule Online
-
-
-
-                        </Button>
-
-
-
-                      </Link>
-
-
-                    </Link>
-
+                    <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
+                      <Calendar className="mr-2" /> Schedule Online
+                    </Button>
                   </Link>
                   <Button variant="outline" className="w-full h-14 text-lg border-2 border-slate-200" onClick={() => window.location.href='tel:+18085287177'}>
                     <PhoneCall className="mr-2 h-5 w-5 text-blue-600" /> (808) 528-7177
