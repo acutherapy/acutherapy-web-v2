@@ -138,7 +138,7 @@ export default function AcupunctureVsChiropracticBackPainPage() {
             </figure>
 
             <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10">
-              Back pain can come from multiple sources, including muscle tension, joint restriction, and nerve irritation. In Honolulu, both acupuncture and chiropractic care are commonly used to manage back pain. At Acutherapy Clinics, Dr. David Cai helps patients understand how acupuncture may support recovery by addressing muscle patterns and pain signaling. While chiropractic care focuses more on structural alignment, acupuncture may help relax tight muscles and improve overall comfort. Many patients benefit from choosing the approach that best fits their condition—or combining both when appropriate.
+              <Link to="/back-pain-acupuncture-honolulu" className="text-blue-600 font-medium hover:underline">Back pain</Link> can come from multiple sources, including muscle tension, joint restriction, and nerve irritation. In Honolulu, both <Link to="/acupuncture-honolulu" className="text-blue-600 font-medium hover:underline">acupuncture</Link> and chiropractic care are commonly used to manage this discomfort. At Acutherapy Clinics, Dr. David Cai helps patients understand how acupuncture may support recovery by addressing muscle patterns and pain signaling. While chiropractic care focuses more on structural alignment, combining treatments like acupuncture and <Link to="/medical-massage-honolulu" className="text-blue-600 font-medium hover:underline">medical massage</Link> may help relax tight muscles and improve overall comfort. Many patients benefit from choosing the approach that best fits their condition—or combining both when appropriate. For specific concerns like <Link to="/sciatica-acupuncture-honolulu" className="text-blue-600 font-medium hover:underline">sciatica</Link> or <Link to="/neck-pain-treatment-honolulu" className="text-blue-600 font-medium hover:underline">neck tension</Link>, targeted care is equally vital.
             </p>
 
             <h2 className="text-[24px] font-bold text-slate-900 mb-4">
@@ -184,7 +184,7 @@ export default function AcupunctureVsChiropracticBackPainPage() {
             
             <div className="bg-blue-50 border-l-4 border-blue-600 p-6 mb-10 rounded-r-xl">
                <p className="text-[16px] md:text-[18px] text-slate-800 font-medium italic">
-                 "Research suggests acupuncture may help reduce pain and improve function in people with back pain when used as part of conservative care."
+                 "Studies suggest both acupuncture and spinal manipulation may improve pain and function, though results vary depending on the condition and individual response."
                </p>
             </div>
 
@@ -215,8 +215,8 @@ export default function AcupunctureVsChiropracticBackPainPage() {
               </ul>
               <p>In many cases:</p>
               <ul className="list-disc pl-6 space-y-2 mb-4 box-border">
-                <li><strong>Acupuncture</strong> may be preferred for muscle tension and nerve-related discomfort</li>
-                <li><strong>Chiropractic care</strong> may be preferred for alignment and joint issues</li>
+                <li>If your pain feels more like tightness or tension, <strong><Link to="/acupuncture-honolulu" className="text-blue-600 font-medium hover:underline">acupuncture</Link></strong> may be a better starting point.</li>
+                <li>If it feels related to joint restriction or alignment, <strong>chiropractic care</strong> may be considered.</li>
               </ul>
               <p className="font-semibold text-slate-800">Some patients choose to combine both approaches under professional guidance.</p>
             </div>
