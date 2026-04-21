@@ -191,9 +191,9 @@ export default function IsAcupunctureCoveredByInsuranceHawaiiPage() {
               <p>Injured at work?</p>
               <p>We are authorized providers for Workers’ Compensation cases in Hawaii.</p>
               <ul className="list-disc pl-6 space-y-2 mb-4 bg-emerald-50/50 p-6 rounded-xl border border-emerald-100">
-                <li>Focus on return-to-work rehabilitation</li>
+                <li>Focus on return-to-work rehabilitation for <Link to="/back-pain-acupuncture-honolulu" className="text-blue-600 hover:underline">lower back injuries</Link> and <Link to="/neck-pain-treatment-honolulu" className="text-blue-600 hover:underline">neck strain</Link></li>
                 <li>Requires an active claim number</li>
-                <li>Typically requires physician referral</li>
+                <li>Typically requires physician referral for <Link to="/acupuncture-honolulu" className="text-blue-600 hover:underline">acupuncture therapy</Link></li>
               </ul>
             </div>
 
@@ -216,10 +216,13 @@ export default function IsAcupunctureCoveredByInsuranceHawaiiPage() {
             <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
               <p>As Hawaii’s population ages, chronic pain—especially lower back pain—can affect quality of life.</p>
               <p>To support our kupuna (elders), we are proud to accept Medicare for acupuncture services when coverage criteria are met.</p>
+              <div className="bg-amber-100 border-l-4 border-amber-600 p-4 mt-2 mb-4 text-amber-900 italic font-medium">
+                "Medicare currently covers acupuncture only for chronic low back pain, with limits on the number of sessions per year."
+              </div>
               <ul className="list-disc pl-6 space-y-2 mb-4 bg-amber-50/50 p-6 rounded-xl border border-amber-100">
                 <li>Medicare may cover <Link to="/back-pain-acupuncture-honolulu" className="text-blue-600 hover:underline">acupuncture for certain conditions</Link> such as chronic low back pain</li>
-                <li>Coverage limits and eligibility vary</li>
-                <li>Our team can help check your plan details and guide you through the process</li>
+                <li>Coverage limits and eligibility vary depending on diagnosis</li>
+                <li>Our team can help check your <Link to="/acupuncture-honolulu" className="text-blue-600 hover:underline">plan details</Link> and guide you through the process</li>
               </ul>
             </div>
 
@@ -228,10 +231,13 @@ export default function IsAcupunctureCoveredByInsuranceHawaiiPage() {
             </h2>
             <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
               <p>Not all plans include acupuncture benefits.</p>
+              <div className="bg-slate-100 border-l-4 border-slate-600 p-4 my-4 font-bold text-slate-800">
+                Many patients are surprised to find that their out-of-pocket cost for a <Link to="/what-to-expect-first-acupuncture-visit" className="text-blue-600 hover:underline">first visit</Link> or ongoing <Link to="/acupuncture-honolulu" className="text-blue-600 hover:underline">acupuncture sessions</Link> may be lower than expected, depending on their coverage.
+              </div>
               <p>For patients without coverage:</p>
               <ul className="list-disc pl-6 space-y-2 mb-4">
-                <li>Transparent self-pay pricing is available</li>
-                <li>Treatment plans can be adjusted based on your goals</li>
+                <li>Transparent self-pay pricing is available for <Link to="/neck-pain-treatment-honolulu" className="text-blue-600 hover:underline">neck pain</Link>, <Link to="/back-pain-acupuncture-honolulu" className="text-blue-600 hover:underline">back pain</Link>, and other conditions</li>
+                <li>Treatment plans (including <Link to="/does-cupping-help-back-pain" className="text-blue-600 hover:underline">cupping therapy</Link>) can be adjusted based on your specific goals</li>
                 <li>Many patients choose to combine insurance and self-pay options depending on their situation</li>
               </ul>
             </div>
