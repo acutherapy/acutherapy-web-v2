@@ -10,8 +10,8 @@ export default function IsAcupunctureCoveredByInsuranceHawaiiPage() {
   return (
     <>
       <Helmet>
-        <title>Is Acupuncture Covered By Insurance Hawaii | Honolulu Acupuncture Guide</title>
-        <meta name="description" content="Learn more about Is Acupuncture Covered By Insurance Hawaii. Dr. David Cai from AcuTherapy Clinics answers your questions about acupuncture efficacy and treatment processes." />
+        <title>Is Acupuncture Covered By Insurance in Hawaii? | Honolulu Guide</title>
+        <meta name="description" content="Acupuncture in Hawaii may be covered by insurance depending on your plan. Learn about auto accident, workers' comp, Medicare, and private health options in Honolulu." />
         <script type="application/ld+json">
           {`
           {
@@ -106,8 +106,8 @@ export default function IsAcupunctureCoveredByInsuranceHawaiiPage() {
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm mb-6 backdrop-blur-sm">
             <ShieldCheck size={16} /> <span>Trusted Honolulu Pain Clinic</span>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Is Acupuncture Covered By Insurance Hawaii</h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Medical-grade treatments customized for lasting relief and recovery in Honolulu.</p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Is Acupuncture Covered by Insurance in Hawaii? What Patients in Honolulu Should Know</h1>
+          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Verification of benefits, coverage details, and payment options explained clearly.</p>
         </div>
       </section>
 
@@ -116,75 +116,221 @@ export default function IsAcupunctureCoveredByInsuranceHawaiiPage() {
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-12 gap-12">
 
           <article className="md:col-span-8">
+            <h1 className="text-[32px] md:text-[40px] font-bold text-slate-900 mb-6 leading-tight">
+              Is Acupuncture Covered by Insurance in Hawaii? What Patients in Honolulu Should Know
+            </h1>
 
-            <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
-              At AcuTherapy Clinics, we believe quality care should be accessible. If you are exploring your options and wondering <strong>is acupuncture covered by insurance in Hawaii</strong>, Dr. David Cai and our administrative team are here to help you navigate your coverage so you can focus on healing.
+            <p className="text-[18px] font-semibold text-slate-800 mb-6 leading-relaxed">
+              <strong>Acupuncture in Hawaii may be covered by insurance depending on your plan. Many Honolulu patients have coverage through auto accident insurance, workers’ compensation, Medicare, or certain private health plans. Verification of benefits is required before your first visit.</strong>
             </p>
 
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/50 group mb-12 w-full max-w-3xl mx-auto">
-              <img loading="lazy" src="/images/traditional-chinese-herbs.jpg" alt="Traditional Chinese Herbs" className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=800'; }} />
-              <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-8 pt-16 text-white text-lg font-medium">Holistic Healing Methods inside AcuTherapy</figcaption>
-            </div>
+            <figure className="mb-8">
+              <img 
+                src="/images/acupuncture-insurance-hawaii-honolulu.jpg" 
+                alt="Acupuncture clinic in Honolulu helping patients with insurance verification and treatment" 
+                className="w-full h-auto rounded-2xl object-cover shadow-lg"
+                onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=800'; }}
+              />
+              <figcaption className="text-sm text-slate-500 mt-3 italic">
+                A professional acupuncture clinic in Honolulu assisting patients with insurance coverage and treatment planning for pain relief.
+              </figcaption>
+            </figure>
 
-            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Insurance & Payment Options in Hawaii</h2>
-            <p className="text-lg text-slate-700 leading-relaxed mb-6">
-              We accept most major insurance plans in Hawaii and offer transparent pricing for self-pay patients. Verification of benefits is required before your first appointment, so please be sure to bring your insurance card. Below is an overview of the specialized coverages we handle.
-            </p>
-
-            <div className="grid md:grid-cols-2 gap-6 my-8">
-              <div className="bg-slate-50 p-8 rounded-xl border border-slate-200 shadow-sm relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-2 h-full bg-blue-500"></div>
-                <h3 className="text-xl font-bold text-slate-900 mb-4">No-Fault (Auto Accidents)</h3>
-                <p className="text-lg text-slate-700 mb-4">
-                  If you were injured in a car accident, your acupuncture treatment may be <strong>100% covered by auto insurance</strong> with no out-of-pocket cost to you.
-                </p>
-                <ul className="list-disc pl-5 text-slate-700 space-y-2">
-                  <li>We handle all the billing paperwork.</li>
-                  <li>Comprehensive care for whiplash, back pain, and concussions.</li>
-                </ul>
-              </div>
-
-              <div className="bg-slate-50 p-8 rounded-xl border border-slate-200 shadow-sm relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-2 h-full bg-emerald-500"></div>
-                <h3 className="text-xl font-bold text-slate-900 mb-4">Workers' Compensation</h3>
-                <p className="text-lg text-slate-700 mb-4">
-                  Injured on the job? We are fully authorized providers for Workers' Comp cases in Hawaii.
-                </p>
-                <ul className="list-disc pl-5 text-slate-700 space-y-2">
-                  <li>Focus on return-to-work rehabilitation.</li>
-                  <li>Requires an open claim number and physician referral.</li>
-                </ul>
-              </div>
-            </div>
-
-            <p className="text-lg text-slate-700 leading-relaxed mt-8 bg-blue-50 p-6 rounded-xl border border-blue-100 mb-6">
-              <strong>Have Private Health Insurance?</strong> Many private plans (such as HMSA, Kaiser, HMAA, UHA, etc.) are increasingly expanding their coverage for acupuncture, especially for chronic pain management. Coverage varies heavily by your specific policy, so we encourage you to contact us to verify your exact benefits.
-            </p>
-
-            <div className="bg-amber-50 p-8 rounded-xl border border-amber-200 shadow-sm relative overflow-hidden mb-8">
-              <div className="absolute top-0 right-0 w-2 h-full bg-amber-500"></div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">Medicare Acceptance: Giving Back to Our Community</h3>
-              <p className="text-lg text-slate-700">
-                As our local Hawaii population ages, chronic pain such as lower back pain becomes a significant barrier to a fulfilling life. To support our kupuna (elders) and give back to the community that has supported us for decades, <strong>we are proud to accept Medicare for acupuncture services</strong> for patients whose plans include this benefit.
-              </p>
-              <p className="text-lg text-slate-700 mt-4">
-                Navigating Medicare can be confusing, but our dedicated staff is here to check your specific policy limits and ensure you receive the highest standard of care without unnecessary financial burden.
+            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 mb-10 shadow-sm">
+              <h2 className="text-[20px] font-bold text-slate-900 mb-3">Understanding Your Coverage Options</h2>
+              <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">
+                Insurance coverage for <Link to="/acupuncture-honolulu" className="text-blue-600 hover:underline">acupuncture in Hawaii</Link> varies based on the type of plan and the reason for treatment. At Acutherapy Clinics in <Link to="/contact-honolulu-acupuncture" className="text-blue-600 hover:underline">Honolulu</Link>, Dr. David Cai and his team assist patients in understanding their coverage and verifying benefits before treatment begins. While some cases may be fully covered, others may involve co-pays or self-pay options. A clear understanding of your benefits helps avoid unexpected costs and ensures a smoother treatment experience.
               </p>
             </div>
 
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              A Simple Answer: Is Acupuncture Covered in Hawaii?
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>The short answer is: sometimes.</p>
+              <p>In Hawaii, <Link to="/what-to-expect-first-acupuncture-visit" className="text-blue-600 hover:underline">acupuncture</Link> may be covered depending on:</p>
+              <ul className="list-disc pl-6 space-y-2 mb-4 bg-slate-50 p-6 rounded-xl border border-slate-100">
+                <li>The type of insurance you have</li>
+                <li>The reason for treatment</li>
+                <li>Your specific policy details</li>
+              </ul>
+              <p>Some patients have partial coverage, while others—especially those with accident-related injuries—may have full coverage.</p>
+              <div className="bg-blue-50 border-l-4 border-blue-600 p-6 mt-6 rounded-r-xl">
+                 <p className="text-[16px] md:text-[18px] text-slate-800 font-medium">
+                   The best way to know for sure is to verify your benefits before your first visit.
+                 </p>
+              </div>
+            </div>
 
-            <div className="mt-16 mb-16 bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden">
+            <h2 className="text-[28px] font-extrabold text-slate-900 mb-6 border-b pb-2">
+              Insurance & Payment Options in Hawaii
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>We accept most major insurance plans in Hawaii and offer transparent pricing for self-pay patients.</p>
+              <p className="font-bold text-slate-900">Before your first appointment, verification of benefits is required.</p>
+              <p>Please bring your insurance card so our team can help confirm your coverage.</p>
+              <p>Below is an overview of the specialized insurance cases we handle:</p>
+            </div>
+
+            <h3 className="text-[22px] font-bold text-slate-900 mb-4 text-blue-800 flex items-center gap-2">
+               No-Fault (Auto Accidents)
+            </h3>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>If you were injured in a car accident, your acupuncture treatment may be fully covered by auto insurance, depending on your policy.</p>
+              <ul className="list-disc pl-6 space-y-2 mb-4">
+                <li>We handle all billing paperwork</li>
+                <li>Care may include treatment for <Link to="/neck-pain-treatment-honolulu" className="text-blue-600 hover:underline">whiplash</Link>, <Link to="/back-pain-acupuncture-honolulu" className="text-blue-600 hover:underline">back pain</Link>, and concussion-related symptoms</li>
+                <li>In many cases, patients have little to no out-of-pocket cost</li>
+              </ul>
+            </div>
+
+            <h3 className="text-[22px] font-bold text-slate-900 mb-4 text-emerald-800 flex items-center gap-2">
+               Workers’ Compensation
+            </h3>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>Injured at work?</p>
+              <p>We are authorized providers for Workers’ Compensation cases in Hawaii.</p>
+              <ul className="list-disc pl-6 space-y-2 mb-4 bg-emerald-50/50 p-6 rounded-xl border border-emerald-100">
+                <li>Focus on return-to-work rehabilitation</li>
+                <li>Requires an active claim number</li>
+                <li>Typically requires physician referral</li>
+              </ul>
+            </div>
+
+            <h3 className="text-[22px] font-bold text-slate-900 mb-4 text-purple-800 flex items-center gap-2">
+               Private Health Insurance
+            </h3>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>Many private insurance plans in Hawaii (such as HMSA, Kaiser, HMAA, UHA, and others) are expanding coverage for acupuncture—especially for chronic pain.</p>
+              <p className="font-bold text-slate-900">However:</p>
+              <ul className="list-disc pl-6 space-y-2 mb-4">
+                <li>Coverage varies significantly by plan</li>
+                <li>Co-pays and visit limits may apply</li>
+              </ul>
+              <p>We recommend contacting our office so we can help verify your specific benefits.</p>
+            </div>
+
+            <h3 className="text-[22px] font-bold text-slate-900 mb-4 text-amber-800 flex items-center gap-2">
+               Medicare Acceptance: Supporting Our Kupuna
+            </h3>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>As Hawaii’s population ages, chronic pain—especially lower back pain—can affect quality of life.</p>
+              <p>To support our kupuna (elders), we are proud to accept Medicare for acupuncture services when coverage criteria are met.</p>
+              <ul className="list-disc pl-6 space-y-2 mb-4 bg-amber-50/50 p-6 rounded-xl border border-amber-100">
+                <li>Medicare may cover <Link to="/back-pain-acupuncture-honolulu" className="text-blue-600 hover:underline">acupuncture for certain conditions</Link> such as chronic low back pain</li>
+                <li>Coverage limits and eligibility vary</li>
+                <li>Our team can help check your plan details and guide you through the process</li>
+              </ul>
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              What If You Don’t Have Coverage?
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>Not all plans include acupuncture benefits.</p>
+              <p>For patients without coverage:</p>
+              <ul className="list-disc pl-6 space-y-2 mb-4">
+                <li>Transparent self-pay pricing is available</li>
+                <li>Treatment plans can be adjusted based on your goals</li>
+                <li>Many patients choose to combine insurance and self-pay options depending on their situation</li>
+              </ul>
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              Why Verification of Benefits Matters
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>Insurance plans can vary—even within the same provider.</p>
+              <p>Verification helps clarify:</p>
+              <ul className="list-disc pl-6 space-y-2 mb-4 bg-slate-50 p-6 rounded-xl border border-slate-100">
+                <li>Whether acupuncture is covered</li>
+                <li>How many visits are included</li>
+                <li>Whether a referral is required</li>
+                <li>Your estimated out-of-pocket cost</li>
+              </ul>
+              <p>This step helps avoid unexpected billing and ensures a smoother experience.</p>
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              Insurance-Friendly Acupuncture Care in Honolulu
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>Acutherapy Clinics is located near Ala Moana, serving patients across:</p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="bg-slate-100 border border-slate-200 px-3 py-1 rounded-full text-sm font-medium">Waikiki</span>
+                <span className="bg-slate-100 border border-slate-200 px-3 py-1 rounded-full text-sm font-medium">Kakaʻako</span>
+                <span className="bg-slate-100 border border-slate-200 px-3 py-1 rounded-full text-sm font-medium">Downtown Honolulu</span>
+                <span className="bg-slate-100 border border-slate-200 px-3 py-1 rounded-full text-sm font-medium">Greater Oahu</span>
+              </div>
+              <p>Our team is experienced in working with Hawaii insurance systems, helping simplify the process for patients.</p>
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-6 border-b pb-2">
+              Q&A: Acupuncture Insurance in Hawaii
+            </h2>
+            <div className="space-y-8 mb-10">
+              <div>
+                <h3 className="text-[20px] font-bold text-slate-900 mb-2">Is acupuncture covered by insurance in Hawaii?</h3>
+                <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">It may be covered depending on your plan, condition, and policy details.</p>
+              </div>
+              <div>
+                <h3 className="text-[20px] font-bold text-slate-900 mb-2">Is acupuncture free after a car accident?</h3>
+                <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">In some cases, treatment may be covered under no-fault auto insurance, depending on your policy.</p>
+              </div>
+              <div>
+                <h3 className="text-[20px] font-bold text-slate-900 mb-2">Does Medicare cover acupuncture?</h3>
+                <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">Medicare may cover acupuncture for certain conditions, such as chronic low back pain, if eligibility criteria are met.</p>
+              </div>
+              <div>
+                <h3 className="text-[20px] font-bold text-slate-900 mb-2">How do I know if I’m covered?</h3>
+                <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">The best way is to verify your benefits before your visit. Our team can assist with this process.</p>
+              </div>
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              A Clear and Supportive Process
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-12">
+              <p>At Acutherapy Clinics in Honolulu, we understand that insurance can be confusing.</p>
+              <p>Our team helps guide patients through:</p>
+              <ul className="list-disc pl-6 space-y-2 mb-4 bg-blue-50/50 p-6 rounded-xl border border-blue-100">
+                <li>Benefit verification</li>
+                <li>Coverage explanation</li>
+                <li>Billing coordination</li>
+              </ul>
+              <p>So you can focus on your recovery—not paperwork.</p>
+            </div>
+
+            <div className="bg-slate-100 rounded-2xl p-8 border border-slate-200 mb-12">
+              <h2 className="text-[28px] font-bold text-slate-900 mb-4">Have Questions About Your Coverage?</h2>
+              <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-8">
+                If you’re unsure whether your acupuncture treatment is covered, we can help. Contact us today to verify your benefits before your first visit.
+              </p>
+              
+              <ul className="space-y-3 mb-8 text-slate-800 font-medium">
+                <li className="flex items-center gap-3"><MapPin className="text-blue-600 h-5 w-5" /> Located near Ala Moana in Honolulu</li>
+                <li className="flex items-center gap-3"><Calendar className="text-blue-600 h-5 w-5" /> Same-week appointments available</li>
+                <li className="flex items-center gap-3"><PhoneCall className="text-blue-600 h-5 w-5" /> Call (808) 528-7177</li>
+              </ul>
+
+              <Link to="/contact-honolulu-acupuncture" className="inline-block hover:opacity-90 transition-opacity whitespace-nowrap" style={{ background: '#000', color: '#fff', padding: '12px 20px', borderRadius: '8px', fontWeight: 600, textDecoration: 'none' }}>
+                Verify Your Benefits
+              </Link>
+            </div>
+
+            {/* Dr. David Cai Profile Module */}
+            <div className="mb-16 bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden">
               <div className="grid md:grid-cols-5 gap-0">
                 <div className="md:col-span-2 bg-slate-100 relative">
-                  <img
-                    src="/images/dr-david-cai-portrait.jpg"
-                    alt="Dr. David Cai, L.Ac., L.M.T."
+                  <img loading="lazy" 
+                    src="/images/dr-david-cai-portrait.jpg" 
+                    alt="Dr. David Cai, L.Ac., L.M.T." 
                     className="w-full h-full object-cover min-h-[400px]"
                     onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=800'; }}
                   />
                   <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-6 text-white text-center">
-                    <span className="font-bold text-xl">Dr. David Cai</span>
-                    <p className="text-blue-300 text-sm">L.Ac., L.M.T.</p>
+                     <span className="font-bold text-xl">Dr. David Cai</span>
+                     <p className="text-blue-300 text-sm">L.Ac., L.M.T.</p>
                   </div>
                 </div>
                 <div className="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
@@ -192,58 +338,17 @@ export default function IsAcupunctureCoveredByInsuranceHawaiiPage() {
                   <h4 className="text-3xl font-extrabold text-slate-900 mb-4">Leading Honolulu Pain Clinic</h4>
                   <p className="text-slate-600 mb-6 leading-relaxed" dangerouslySetInnerHTML={{ __html: 'With over 30 years of clinical experience, <strong>Dr. David Cai</strong> is a master of Traditional Chinese Medicine (TCM) and advanced acupuncture protocols. He specializes in severe pain management, sports injuries, and complex auto accident recoveries, bringing world-class holistic healthcare to the Honolulu community.' }}></p>
                   <div className="flex items-center gap-4 bg-slate-50 p-4 rounded-2xl border border-slate-100">
-                    <img loading="lazy" src="/images/acutherapy-medical-team.jpg" alt="AcuTherapy Clinics Medical Team" className="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md flex-shrink-0" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
-                    <div>
-                      <h5 className="font-bold text-slate-900 mb-1">AcuTherapy Clinics Medical Team</h5>
-                      <p className="text-sm text-slate-500 italic leading-relaxed">"Our multidisciplinary medical team is highly trained and committed to finding the root cause of your condition, providing relief that lasts."</p>
-                    </div>
+                     <img loading="lazy" src="/images/acutherapy-medical-team.jpg" alt="AcuTherapy Clinics Medical Team" className="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md flex-shrink-0" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                     <div>
+                       <h5 className="font-bold text-slate-900 mb-1">AcuTherapy Clinics Medical Team</h5>
+                       <p className="text-sm text-slate-500 italic leading-relaxed">"Our multidisciplinary medical team is highly trained and committed to finding the root cause of your condition, providing relief that lasts."</p>
+                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-
-            <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Explore Related Treatments & Information</h3>
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mb-12">
-
-
-              <Link to="/acupuncture-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold">
-                <ShieldCheck className="text-blue-500 mr-3 h-5 w-5" /> Acupuncture Honolulu
-              </Link>
-              <Link to="/contact-honolulu-acupuncture" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold">
-                <PhoneCall className="text-emerald-500 mr-3 h-5 w-5" /> Contact Us
-              </Link>
-
-            </div>
-
-          
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Causes Is Covered By Insurance Hawaii?</h2>
-<p className="text-lg text-slate-700 leading-relaxed mb-6">Is Covered By Insurance Hawaii can be triggered by a variety of factors including chronic stress, poor posture, repetitive strain, or acute injuries. Over time, these factors create blockages in blood circulation and nerve function, leading to persistent discomfort.</p>
-
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect During Your Session</h2>
-<p className="text-lg text-slate-700 leading-relaxed mb-6">During your first experience, Dr. David Cai will conduct a thorough assessment to understand your unique condition. The treatment itself is deeply relaxing. Many patients notice a distinct change in symptoms, experiencing immediate lightness and reduced tension right after the needles are gently placed.</p>
-
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Who Is This For?</h2>
-<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li>Individuals suffering from chronic pain who have not found relief through conventional methods.</li>
-<li>High-stress professionals seeking natural nervous system regulation.</li>
-<li>Athletes or individuals recovering from an injury needing accelerated healing.</li>
-</ul>
-
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">FAQ</h2>
-<div className="space-y-6 mb-12">
-<div><h4 className="font-bold text-lg text-slate-900">Q1: How many sessions are needed for Is Covered By Insurance Hawaii?</h4><p className="text-slate-700">A: Most patients notice significant relief within 3 to 5 sessions, though chronic conditions may require a longer treatment plan to address the root cause and ensure lasting results.</p></div>
-<div><h4 className="font-bold text-lg text-slate-900">Q2: Does the treatment hurt?</h4><p className="text-slate-700">A: No. We use ultra-fine needles. Most feel only a deep, relaxing sensation. Many even fall asleep!</p></div>
-<div><h4 className="font-bold text-lg text-slate-900">Q3: Is it safe?</h4><p className="text-slate-700">A: Absolutely. Acupuncture is a highly safe, non-invasive alternative to surgery and heavy medications.</p></div>
-</div>
-
-<div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
-<h2 className="text-3xl font-bold text-blue-900 mb-4">Ready to find relief?</h2>
-<p className="text-lg text-blue-700 mb-8">Stop living in discomfort. Located right here in Honolulu, we are here to help you restore your well-being.</p>
-<Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Book Your Session Today</Button></Link>
-</div>
-
-</article>
+          </article>
 
           {/* Sidebar */}
           <aside className="md:col-span-4 space-y-8">
@@ -254,31 +359,9 @@ export default function IsAcupunctureCoveredByInsuranceHawaiiPage() {
                 <p className="text-slate-600 mb-8 text-sm">Bridge the gap to a pain-free life today.</p>
                 <div className="flex flex-col gap-4">
                   <Link to="/book-appointment">
-
-                    <Link to="/book-appointment">
-
-
-                      <Link to="/book-appointment">
-
-
-
-                        <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
-
-
-
-                          <Calendar className="mr-2" /> Schedule Online
-
-
-
-                        </Button>
-
-
-
-                      </Link>
-
-
-                    </Link>
-
+                    <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
+                      <Calendar className="mr-2" /> Schedule Online
+                    </Button>
                   </Link>
                   <Button variant="outline" className="w-full h-14 text-lg border-2 border-slate-200" onClick={() => window.location.href = 'tel:+18085287177'}>
                     <PhoneCall className="mr-2 h-5 w-5 text-blue-600" /> (808) 528-7177
