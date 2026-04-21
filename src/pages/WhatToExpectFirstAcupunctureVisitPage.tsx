@@ -11,8 +11,8 @@ export default function WhatToExpectFirstAcupunctureVisitPage() {
     <>
       <Helmet>
         <link rel="canonical" href="https://acutherapy.com/what-to-expect-first-acupuncture-visit" />
-        <title>What To Expect First Acupuncture Visit | Honolulu Acupuncture Guide</title>
-        <meta name="description" content="Learn more about What To Expect First Acupuncture Visit. Dr. David Cai from AcuTherapy Clinics answers your questions about acupuncture efficacy and treatment processes." />
+        <title>What to Expect at Your First Acupuncture Visit in Honolulu</title>
+        <meta name="description" content="Your first acupuncture visit in Honolulu typically includes a consultation, personalized assessment, and a gentle treatment session. Learn what happens step-by-step." />
         <script type="application/ld+json">
           {`
           {
@@ -107,8 +107,8 @@ export default function WhatToExpectFirstAcupunctureVisitPage() {
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm mb-6 backdrop-blur-sm">
             <ShieldCheck size={16} /> <span>Trusted Honolulu Pain Clinic</span>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">What To Expect First Acupuncture Visit</h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Medical-grade treatments customized for lasting relief and recovery in Honolulu.</p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">What to Expect at Your First Acupuncture Visit in Honolulu</h1>
+          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Understanding the process, answering your questions, and creating a personalized treatment approach.</p>
         </div>
       </section>
 
@@ -117,95 +117,205 @@ export default function WhatToExpectFirstAcupunctureVisitPage() {
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-12 gap-12">
           
           <article className="md:col-span-8">
-            
-              <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
-                At AcuTherapy Clinics, we believe that informed patients heal faster. If you are exploring options and wondering about <strong>what to expect first acupuncture visit</strong>, Dr. David Cai and our clinical team have compiled the following medical insights based on decades of practice in Honolulu.
+            <h1 className="text-[32px] md:text-[40px] font-bold text-slate-900 mb-6 leading-tight">
+              What to Expect at Your First Acupuncture Visit in Honolulu
+            </h1>
+
+            <p className="text-[18px] font-semibold text-slate-800 mb-6 leading-relaxed">
+              <strong>Your first acupuncture visit in Honolulu typically includes a consultation, personalized assessment, and a gentle treatment session. Most patients are surprised by how comfortable and relaxing the experience feels.</strong>
+            </p>
+
+            <figure className="mb-8">
+              <img 
+                src="/images/first-acupuncture-visit-honolulu-clinic.jpg" 
+                alt="First acupuncture visit in Honolulu showing a patient receiving treatment in a calm clinic" 
+                className="w-full h-auto rounded-2xl object-cover shadow-lg"
+                onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=800'; }}
+              />
+              <figcaption className="text-sm text-slate-500 mt-3 italic">
+                A welcoming acupuncture clinic environment in Honolulu where a first-time patient is receiving treatment, demonstrating a relaxed and professional setting.
+              </figcaption>
+            </figure>
+
+            <div className="bg-slate-50 p-6 rounded-xl border border-slate-200 mb-10 shadow-sm">
+              <h2 className="text-[20px] font-bold text-slate-900 mb-3">Understanding the Journey</h2>
+              <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">
+                For many first-time patients, uncertainty is the biggest barrier to trying <Link to="/acupuncture-honolulu" className="text-blue-600 hover:underline font-medium">acupuncture</Link>. At Acutherapy Clinics in Honolulu, the first visit focuses on understanding your condition, answering questions, and creating a personalized treatment approach. Dr. David Cai works with patients to ensure comfort at every step. While experiences vary, most patients find the process straightforward, gentle, and often more relaxing than expected.
               </p>
-              
-      <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/50 group mb-12 w-full max-w-3xl mx-auto">
-        <img loading="lazy" src="/images/traditional-chinese-herbs.jpg" alt="Traditional Chinese Herbs" className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=800'; }} />
-        <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-8 pt-16 text-white text-lg font-medium">Holistic Healing Methods inside AcuTherapy</figcaption>
-      </div>
-              <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Understanding What To Expect First Acupuncture Visit</h2>
-              <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                When discussing what to expect first acupuncture visit, it's important to differentiate between western symptom-masking and the holistic root-cause methodology we practice here. Traditional Chinese Medicine (TCM) views the body as a systemic interconnected network. Any symptom you experience is a localized manifestation of a deeper structural or energetic imbalance.
-              </p>
-              <div className="bg-slate-50 p-8 rounded-xl border border-slate-200 my-8 shadow-sm">
-                 <h3 className="text-xl font-bold text-slate-900 mb-4">Patient FAQ: The Core Answer</h3>
-                 <p className="text-lg text-slate-700">
-                    If you are asking yourself about what to expect first acupuncture visit, the short answer is that <strong>yes, professional acupuncture is statistically proven to be highly efficacious</strong> for these types of clinical inquiries. The treatment works by modulating the nervous system, reducing chronic inflammation, and resetting muscular firing patterns. However, every patient's body responds differently—which is why day-one diagnostic evaluations are critical.
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              A Simple Overview: What Happens During Your First Visit
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>Your first acupuncture visit is not just about treatment—it’s about understanding your body.</p>
+              <p>At Acutherapy Clinics in Honolulu, a typical visit includes:</p>
+              <ul className="list-disc pl-6 space-y-2 mb-4">
+                <li>A discussion of your symptoms and health history</li>
+                <li>A personalized assessment</li>
+                <li>A treatment session if appropriate</li>
+              </ul>
+              <p className="font-medium text-slate-800">The goal is to create a plan that fits your specific condition rather than applying a standard approach.</p>
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              Step 1: Consultation and Assessment
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>The visit usually begins with a conversation.</p>
+              <p>You may be asked about:</p>
+              <ul className="list-disc pl-6 space-y-2 mb-4 bg-slate-50 p-6 rounded-xl border border-slate-100">
+                <li>Your current symptoms</li>
+                <li>How long you’ve had them</li>
+                <li>Your daily activities and stress levels</li>
+              </ul>
+              <p>This helps determine what may be contributing to your condition.</p>
+              <p>In traditional Chinese medicine, this step may also include observing patterns such as tension, posture, and overall balance.</p>
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              Step 2: The Acupuncture Treatment
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>If treatment is appropriate, acupuncture may be performed during the first visit.</p>
+              <p>Most patients notice:</p>
+              <ul className="list-disc pl-6 space-y-2 mb-4">
+                <li>A very light sensation when needles are inserted</li>
+                <li>Minimal discomfort</li>
+                <li>A gradual feeling of relaxation</li>
+              </ul>
+              <p>The needles used are extremely thin—very different from those used for injections.</p>
+              <div className="bg-blue-50 border-l-4 border-blue-600 p-6 mt-6 rounded-r-xl">
+                 <p className="text-[16px] md:text-[18px] text-slate-800 font-medium">
+                   Many patients in Honolulu are surprised by how easy the experience feels.
                  </p>
               </div>
-        
-            
-      <div className="mt-16 mb-16 bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden">
-        <div className="grid md:grid-cols-5 gap-0">
-          <div className="md:col-span-2 bg-slate-100 relative">
-            <img loading="lazy" 
-              src="/images/dr-david-cai-portrait.jpg" 
-              alt="Dr. David Cai, L.Ac., L.M.T." 
-              className="w-full h-full object-cover min-h-[400px]"
-              onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=800'; }}
-            />
-            <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-6 text-white text-center">
-               <span className="font-bold text-xl">Dr. David Cai</span>
-               <p className="text-blue-300 text-sm">L.Ac., L.M.T.</p>
             </div>
-          </div>
-          <div className="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
-            <h3 className="text-sm font-bold tracking-widest text-blue-600 uppercase mb-2">Clinical Director & Founder</h3>
-            <h4 className="text-3xl font-extrabold text-slate-900 mb-4">Leading Honolulu Pain Clinic</h4>
-            <p className="text-slate-600 mb-6 leading-relaxed" dangerouslySetInnerHTML={{ __html: 'With over 30 years of clinical experience, <strong>Dr. David Cai</strong> is a master of Traditional Chinese Medicine (TCM) and advanced acupuncture protocols. He specializes in severe pain management, sports injuries, and complex auto accident recoveries, bringing world-class holistic healthcare to the Honolulu community.' }}></p>
-            <div className="flex items-center gap-4 bg-slate-50 p-4 rounded-2xl border border-slate-100">
-               <img loading="lazy" src="/images/acutherapy-medical-team.jpg" alt="AcuTherapy Clinics Medical Team" className="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md flex-shrink-0" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
-               <div>
-                 <h5 className="font-bold text-slate-900 mb-1">AcuTherapy Clinics Medical Team</h5>
-                 <p className="text-sm text-slate-500 italic leading-relaxed">"Our multidisciplinary medical team is highly trained and committed to finding the root cause of your condition, providing relief that lasts."</p>
-               </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              Step 3: Relaxation and Observation
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>Once the needles are in place, you’ll typically rest for a period of time.</p>
+              <p>During this phase, patients often experience:</p>
+              <ul className="list-disc pl-6 space-y-2 mb-4 bg-slate-50 p-6 rounded-xl border border-slate-100">
+                <li>A sense of calm</li>
+                <li>Reduced muscle tension</li>
+                <li>Sometimes even falling asleep</li>
+              </ul>
+              <p>This part of the visit allows the body to respond to the treatment.</p>
             </div>
-          </div>
-        </div>
-      </div>
-    
-            
-      <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Explore Related Treatments & Information</h3>
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mb-12">
-        
-        
-        <Link to="/acupuncture-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold">
-          <ShieldCheck className="text-blue-500 mr-3 h-5 w-5" /> Acupuncture Honolulu
-        </Link>
-        <Link to="/contact-honolulu-acupuncture" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all group text-sm font-semibold">
-          <PhoneCall className="text-emerald-500 mr-3 h-5 w-5" /> Contact Us
-        </Link>
-    
-      </div>
-    
-          
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Causes What To Expect First Visit?</h2>
-<p className="text-lg text-slate-700 leading-relaxed mb-6">What To Expect First Visit can be triggered by a variety of factors including chronic stress, poor posture, repetitive strain, or acute injuries. Over time, these factors create blockages in blood circulation and nerve function, leading to persistent discomfort.</p>
 
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Acupuncture Helps</h2>
-<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li><strong>Pain Relief:</strong> Triggers the release of endorphins to block pain signals effectively.</li>
-<li><strong>Nervous System Regulation:</strong> Calms the central nervous system, reducing tension without relying on pharmaceuticals.</li>
-<li><strong>Improved Circulation:</strong> Enhances blood flow to the affected areas, accelerating the natural healing process.</li>
-</ul>
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              Step 4: After the Session
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>After the session, your practitioner may discuss:</p>
+              <ul className="list-disc pl-6 space-y-2 mb-4">
+                <li>How your body responded</li>
+                <li>What to expect over the next few days</li>
+                <li>Whether follow-up sessions are recommended</li>
+              </ul>
+              <p>Some patients feel immediate relief, while others notice gradual changes over time.</p>
+            </div>
 
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Who Is This For?</h2>
-<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li>Individuals suffering from chronic pain who have not found relief through conventional methods.</li>
-<li>High-stress professionals seeking natural nervous system regulation.</li>
-<li>Athletes or individuals recovering from an injury needing accelerated healing.</li>
-</ul>
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              How Long Does the First Visit Take?
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>Most first visits in Honolulu take longer than follow-up sessions.</p>
+              <p>You can typically expect:</p>
+              <ul className="list-disc pl-6 space-y-2 mb-4 bg-emerald-50/50 p-6 rounded-xl border border-emerald-100">
+                <li>Around 45–75 minutes total</li>
+                <li>Time for both consultation and treatment</li>
+              </ul>
+              <p>This allows for a more thorough and personalized approach.</p>
+            </div>
 
-<div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
-<h2 className="text-3xl font-bold text-blue-900 mb-4">Ready to find relief?</h2>
-<p className="text-lg text-blue-700 mb-8">Stop living in discomfort. Located right here in Honolulu, we are here to help you restore your well-being.</p>
-<Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Book Your Session Today</Button></Link>
-</div>
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              Is the First Acupuncture Visit Painful?
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>This is one of the most common concerns.</p>
+              <p className="font-bold text-slate-900">In most cases, acupuncture is not painful.</p>
+              <p>Patients often describe:</p>
+              <ul className="list-disc pl-6 space-y-2 mb-4">
+                <li>A quick, mild sensation</li>
+                <li>Followed by warmth or tingling</li>
+              </ul>
+              <p>Many people actually find the session deeply relaxing.</p>
+            </div>
 
-</article>
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              Your First Visit at Acutherapy Clinics in Honolulu
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-10 space-y-4">
+              <p>Acutherapy Clinics is located near Ala Moana, making it convenient for patients from:</p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="bg-slate-100 border border-slate-200 px-3 py-1 rounded-full text-sm font-medium">Waikiki</span>
+                <span className="bg-slate-100 border border-slate-200 px-3 py-1 rounded-full text-sm font-medium">Kakaʻako</span>
+                <span className="bg-slate-100 border border-slate-200 px-3 py-1 rounded-full text-sm font-medium">Downtown Honolulu</span>
+                <span className="bg-slate-100 border border-slate-200 px-3 py-1 rounded-full text-sm font-medium">Across Oahu</span>
+              </div>
+              <p>The clinic environment is designed to be calm, professional, and comfortable for first-time visitors.</p>
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-6 border-b pb-2">
+              Q&A: First Acupuncture Visit
+            </h2>
+            <div className="space-y-8 mb-10">
+              <div>
+                <h3 className="text-[20px] font-bold text-slate-900 mb-2">What should I wear to my first acupuncture appointment?</h3>
+                <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">Loose, comfortable clothing is recommended so that areas like arms and legs can be easily accessed.</p>
+              </div>
+              <div>
+                <h3 className="text-[20px] font-bold text-slate-900 mb-2">Should I eat before my appointment?</h3>
+                <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">It’s generally recommended to eat a light meal beforehand rather than arriving on an empty stomach.</p>
+              </div>
+              <div>
+                <h3 className="text-[20px] font-bold text-slate-900 mb-2">How will I feel after my first session?</h3>
+                <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">Some patients feel relaxed or slightly tired, while others feel more energized. Responses vary.</p>
+              </div>
+              <div>
+                <h3 className="text-[20px] font-bold text-slate-900 mb-2">Do I need multiple visits?</h3>
+                <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8]">This depends on your condition. Some people benefit from a series of treatments rather than a single session. Dr. Cai will discuss your recommended <Link to="/book-appointment" className="text-blue-600 hover:underline">treatment plan</Link>.</p>
+              </div>
+            </div>
+
+            <h2 className="text-[24px] font-bold text-slate-900 mb-4">
+              A Safe and Professional Experience
+            </h2>
+            <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-12">
+              <p className="mb-4">At Acutherapy Clinics in Honolulu, all treatments are performed using sterile, single-use needles.</p>
+              <p className="mb-6">Care is provided by trained professionals following Hawaii healthcare standards, ensuring both safety and comfort.</p>
+              <div className="flex flex-col sm:flex-row gap-4 mb-4">
+                 <div className="flex items-center gap-2 bg-emerald-50 text-emerald-800 px-4 py-3 rounded-lg border border-emerald-100 font-medium">
+                    <ShieldCheck className="text-emerald-500 h-5 w-5" /> <span>Sterile Equipment</span>
+                 </div>
+                 <div className="flex items-center gap-2 bg-blue-50 text-blue-800 px-4 py-3 rounded-lg border border-blue-100 font-medium">
+                    <ShieldCheck className="text-blue-500 h-5 w-5" /> <span>Trained Professionals</span>
+                 </div>
+              </div>
+            </div>
+
+            <div className="bg-slate-100 rounded-2xl p-8 border border-slate-200">
+              <h2 className="text-[28px] font-bold text-slate-900 mb-4">Ready for Your First Visit?</h2>
+              <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-8">
+                If you’ve been considering acupuncture but weren’t sure what to expect, a personalized consultation can help you feel more confident about taking the next step towards genuine, lasting relief.
+              </p>
+              
+              <ul className="space-y-3 mb-8 text-slate-800 font-medium">
+                <li className="flex items-center gap-3"><MapPin className="text-blue-600 h-5 w-5" /> Located near Ala Moana in Honolulu</li>
+                <li className="flex items-center gap-3"><Calendar className="text-blue-600 h-5 w-5" /> Same-week appointments available</li>
+                <li className="flex items-center gap-3"><PhoneCall className="text-blue-600 h-5 w-5" /> Call (808) 528-7177 to schedule your first visit</li>
+              </ul>
+
+              <Link to="/book-appointment" className="inline-block hover:opacity-90 transition-opacity whitespace-nowrap" style={{ background: '#000', color: '#fff', padding: '12px 20px', borderRadius: '8px', fontWeight: 600, textDecoration: 'none' }}>
+                Schedule Your First Session
+              </Link>
+            </div>
+
+          </article>
 
           {/* Sidebar */}
           <aside className="md:col-span-4 space-y-8">
@@ -216,31 +326,9 @@ export default function WhatToExpectFirstAcupunctureVisitPage() {
                 <p className="text-slate-600 mb-8 text-sm">Bridge the gap to a pain-free life today.</p>
                 <div className="flex flex-col gap-4">
                   <Link to="/book-appointment">
-
-                    <Link to="/book-appointment">
-
-
-                      <Link to="/book-appointment">
-
-
-
-                        <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
-
-
-
-                          <Calendar className="mr-2" /> Schedule Online
-
-
-
-                        </Button>
-
-
-
-                      </Link>
-
-
-                    </Link>
-
+                    <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
+                      <Calendar className="mr-2" /> Schedule Online
+                    </Button>
                   </Link>
                   <Button variant="outline" className="w-full h-14 text-lg border-2 border-slate-200" onClick={() => window.location.href='tel:+18085287177'}>
                     <PhoneCall className="mr-2 h-5 w-5 text-blue-600" /> (808) 528-7177
