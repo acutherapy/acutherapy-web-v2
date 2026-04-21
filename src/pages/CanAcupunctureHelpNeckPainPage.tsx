@@ -132,18 +132,18 @@ export default function CanAcupunctureHelpNeckPainPage() {
               How Acupuncture May Help Neck Pain
             </h2>
             <div className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-6 space-y-4">
-              <p>Acupuncture may help regulate pain signals, improve circulation, and reduce muscle tension around the affected area.</p>
+              <p>Acupuncture may help regulate pain signals, improve circulation, and reduce muscle tension in the neck and shoulders.</p>
               <p>It may help support recovery by:</p>
               <ul className="list-disc pl-6 space-y-2 mb-4">
-                <li>Reducing muscle tension in the neck and shoulders</li>
-                <li>Improving circulation to affected tissues</li>
-                <li>Supporting the body's response to pain signals</li>
+                <li>Releasing deep tension in the cervical spine and trapezius muscles</li>
+                <li>Increasing blood flow to irritated tissues to promote natural healing</li>
+                <li>Influencing the nervous system to dial down the body's pain response</li>
               </ul>
             </div>
             
             <div className="bg-blue-50 border-l-4 border-blue-600 p-6 mb-10 rounded-r-xl">
                <p className="text-[16px] md:text-[18px] text-slate-800 font-medium italic">
-                 "Clinical research suggests acupuncture may help reduce pain and improve function in people with neck-related conditions when used as part of conservative care."
+                 "Research suggests acupuncture may improve neck pain and function, especially in the short term, when used as part of conservative care."
                </p>
             </div>
 
@@ -216,7 +216,7 @@ export default function CanAcupunctureHelpNeckPainPage() {
             <div className="bg-slate-100 rounded-2xl p-8 border border-slate-200">
               <h2 className="text-[28px] font-bold text-slate-900 mb-4">Ready to Reduce Neck Pain and Tension?</h2>
               <p className="text-[16px] md:text-[18px] text-slate-700 leading-[1.8] mb-8">
-                If neck pain or stiffness has been affecting your daily movement, a personalized evaluation can help determine whether acupuncture may support your recovery.
+                If your neck pain hasn’t improved with rest, stretching, or massage, a personalized evaluation can help determine whether acupuncture may support your recovery.
               </p>
               
               <ul className="space-y-3 mb-8 text-slate-800 font-medium">
