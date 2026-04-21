@@ -104,8 +104,13 @@ export default function WhatToExpectFirstAcupunctureVisitPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/80" />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm mb-6 backdrop-blur-sm">
-            <ShieldCheck size={16} /> <span>Trusted Honolulu Pain Clinic</span>
+          <div className="flex flex-wrap items-center justify-center gap-3 mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm backdrop-blur-sm">
+              <ShieldCheck size={16} /> <span>100% No-Fault PIP Insurance Accepted</span>
+            </div>
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/20 text-teal-200 border border-teal-500/30 font-medium text-sm backdrop-blur-sm">
+              <span>Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp &amp; VA</span>
+            </div>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">What to Expect at Your First Acupuncture Visit in Honolulu</h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Understanding the process, answering your questions, and creating a personalized treatment approach.</p>

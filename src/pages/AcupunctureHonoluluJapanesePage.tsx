@@ -104,11 +104,16 @@ export default function AcupunctureHonoluluJapanesePage() {
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/80" />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm mb-6 backdrop-blur-sm">
-            <ShieldCheck size={16} /> <span>Trusted Honolulu Pain Clinic</span>
+          <div className="flex flex-wrap items-center justify-center gap-3 mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm backdrop-blur-sm">
+              <ShieldCheck size={16} /> <span>100% No-Fault PIP Insurance Accepted</span>
+            </div>
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/20 text-teal-200 border border-teal-500/30 font-medium text-sm backdrop-blur-sm">
+              <span>Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp &amp; VA</span>
+            </div>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">ホノルルの鍼灸院 </h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Dr.</p>
+          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Dr. David Cai</p>
         </div>
       </section>
 
@@ -168,47 +173,47 @@ export default function AcupunctureHonoluluJapanesePage() {
     
             
           
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Causes Japanese?</h2>
-<p className="text-lg text-slate-700 leading-relaxed mb-6">Japanese can be triggered by a variety of factors including chronic stress, poor posture, repetitive strain, or acute injuries. Over time, these factors create blockages in blood circulation and nerve function, leading to persistent discomfort.</p>
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">痛みの原因とは？</h2>
+<p className="text-lg text-slate-700 leading-relaxed mb-6">慢性的な痛みは、慢性的なストレス、姿勢の悪さ、反復的な負担、または急性の怪我など、様々な要因によって引き起こされます。時間が経つにつれて、これらの要因が血液循環や神経機能に滞りを生じさせ、持続的な不快感につながります。</p>
 
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Acupuncture Helps</h2>
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">鍼治療の効果</h2>
 <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li><strong>Pain Relief:</strong> Triggers the release of endorphins to block pain signals effectively.</li>
-<li><strong>Nervous System Regulation:</strong> Calms the central nervous system, reducing tension without relying on pharmaceuticals.</li>
-<li><strong>Improved Circulation:</strong> Enhances blood flow to the affected areas, accelerating the natural healing process.</li>
+<li><strong>痛みの緩和：</strong>エンドルフィンの分泌を促し、痛みの信号を効果的にブロックします。</li>
+<li><strong>自律神経の調整：</strong>中枢神経系を落ち着かせ、薬に頼ることなく緊張を和らげます。</li>
+<li><strong>血流の改善：</strong>患部の血行を促進し、自然治癒プロセスを加速させます。</li>
 </ul>
 
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect During Your Session</h2>
-<p className="text-lg text-slate-700 leading-relaxed mb-6">During your first experience, Dr. David Cai will conduct a thorough assessment to understand your unique condition. The treatment itself is deeply relaxing. Many patients notice a distinct change in symptoms, experiencing immediate lightness and reduced tension right after the needles are gently placed.</p>
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">治療の流れ</h2>
+<p className="text-lg text-slate-700 leading-relaxed mb-6">初めてのご来院の際、Dr. David Caiがあなた独自の症状を理解するために徹底したカウンセリングと評価を行います。治療自体は非常にリラックスできるものです。多くの患者様が、鍼を優しく打った直後に、症状の明らかな変化や、即座の軽さ、緊張の緩和を実感されます。</p>
 
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Who Is This For?</h2>
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">このような方におすすめです</h2>
 <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li>Individuals suffering from chronic pain who have not found relief through conventional methods.</li>
-<li>High-stress professionals seeking natural nervous system regulation.</li>
-<li>Athletes or individuals recovering from an injury needing accelerated healing.</li>
+<li>従来の治療法では改善しなかった慢性的な痛みに苦しんでいる方。</li>
+<li>自然な自律神経の調整を求めている、ストレスの多い専門職の方。</li>
+<li>怪我からの早期回復を必要としているアスリートや個人の方。</li>
 </ul>
 
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Related Treatments</h2>
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">関連する治療</h2>
 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 mb-12">
-<Link to="/back-pain-acupuncture-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 font-semibold text-blue-800 hover:text-blue-600">Acupuncture for Lower Back Pain</Link>
-<Link to="/medical-massage-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 font-semibold text-blue-800 hover:text-blue-600">Medical Massage Therapy</Link>
-<Link to="/fire-cupping-therapy-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 font-semibold text-blue-800 hover:text-blue-600">Cupping Therapy</Link>
+<Link to="/back-pain-acupuncture-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 font-semibold text-blue-800 hover:text-blue-600">腰痛の鍼治療</Link>
+<Link to="/medical-massage-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 font-semibold text-blue-800 hover:text-blue-600">メディカルマッサージ</Link>
+<Link to="/fire-cupping-therapy-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 font-semibold text-blue-800 hover:text-blue-600">カッピング（吸い玉）療法</Link>
 </div>
 
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Serving Honolulu & Nearby Areas</h2>
-<p className="text-lg text-slate-700 leading-relaxed mb-6">Conveniently located in Honolulu, we proudly serve patients from Ala Moana, Waikiki, Kaimuki, Kahala, and across Oahu. Whether you are a local resident or visiting Hawaii, we provide top-tier care accessible to your area.</p>
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">ホノルルおよび近郊エリアからのアクセス</h2>
+<p className="text-lg text-slate-700 leading-relaxed mb-6">ホノルルに位置し、アラモアナ、ワイキキ、カイムキ、カハラ、そしてオアフ島全域から多くの患者様にご来院いただいています。地元にお住まいの方も、ハワイを訪れている方も、アクセスしやすい環境で最高水準のケアを提供いたします。</p>
 
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">FAQ</h2>
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">よくある質問</h2>
 <div className="space-y-6 mb-12">
-<div><h4 className="font-bold text-lg text-slate-900">Q1: How many sessions are needed for Japanese?</h4><p className="text-slate-700">A: Most patients notice significant relief within 3 to 5 sessions, though chronic conditions may require a longer treatment plan to address the root cause and ensure lasting results.</p></div>
-<div><h4 className="font-bold text-lg text-slate-900">Q2: Does the treatment hurt?</h4><p className="text-slate-700">A: No. We use ultra-fine needles. Most feel only a deep, relaxing sensation. Many even fall asleep!</p></div>
-<div><h4 className="font-bold text-lg text-slate-900">Q3: Is it safe?</h4><p className="text-slate-700">A: Absolutely. Acupuncture is a highly safe, non-invasive alternative to surgery and heavy medications.</p></div>
+<div><h4 className="font-bold text-lg text-slate-900">Q1: 何回の治療が必要ですか？</h4><p className="text-slate-700">A: 多くの患者様は3〜5回の治療で大きな改善を実感されますが、慢性的な症状の場合は、根本原因に取り組み持続的な効果を確実にするため、より長期的な治療計画が必要になることがあります。</p></div>
+<div><h4 className="font-bold text-lg text-slate-900">Q2: 治療は痛いですか？</h4><p className="text-slate-700">A: いいえ。極細の鍼を使用するため、ほとんどの方は深くリラックスできる感覚だけを覚えます。中には眠ってしまう方もいらっしゃるほどです！</p></div>
+<div><h4 className="font-bold text-lg text-slate-900">Q3: 安全ですか？</h4><p className="text-slate-700">A: もちろんです。鍼治療は、手術や強い薬に代わる非常に安全で非侵襲的な治療法です。</p></div>
 </div>
 
 <div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
-<h2 className="text-3xl font-bold text-blue-900 mb-4">Ready to find relief?</h2>
-<p className="text-lg text-blue-700 mb-8">Stop living in discomfort. Located right here in Honolulu, we are here to help you restore your well-being.</p>
-<Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Book Your Session Today</Button></Link>
+<h2 className="text-3xl font-bold text-blue-900 mb-4">痛みのない生活へ</h2>
+<p className="text-lg text-blue-700 mb-8">不快感を抱えたまま生活するのはもう終わりにしましょう。ホノルルにある当院が、あなたの健康を取り戻すお手伝いをいたします。</p>
+<Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">今すぐ予約する</Button></Link>
 </div>
 
 </article>
