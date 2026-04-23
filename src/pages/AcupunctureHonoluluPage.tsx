@@ -94,6 +94,14 @@ export default function AcupunctureHonoluluPage() {
                 "Many patients report feeling significantly lighter, deeply relaxed, and with a clearer range of motion after just a few initial sessions. The tension physically melts away."
               </p>
             </div>
+            <h2>Why Choose AcuTherapy Clinics?</h2>
+
+<ul>
+<li>30+ years clinical experience</li>
+<li>Licensed acupuncture specialists</li>
+<li>Accepts major insurance plans</li>
+<li>Personalized treatment plans</li>
+</ul>
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Who Is This For?</h2>
             <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
