@@ -164,115 +164,150 @@ export default function HomePage() {
         </script>
       </Helmet>
 
-      {/* Hero Section */}
-<section className="relative bg-blue-900 text-white overflow-hidden py-24 lg:py-32">
-  <div className="absolute inset-0 z-0 opacity-40">
-    <img
-      src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2000"
-      alt="Acupuncture therapy background"
-      className="w-full h-full object-cover"
-    />
-    <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/80" />
-  </div>
-
-  <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="grid lg:grid-cols-2 gap-12 items-center">
-
-      {/* LEFT SIDE */}
-      <div className="max-w-3xl">
-        <div className="inline-flex flex-wrap gap-2 mb-6">
-          <span className="px-3 py-1 bg-blue-500/20 text-blue-300 text-sm font-semibold rounded-full border border-blue-500/30">
-            Voted Best Acupuncturist in Honolulu
-          </span>
-          <span className="px-3 py-1 bg-emerald-500/20 text-emerald-300 text-sm font-semibold rounded-full border border-emerald-500/30">
-            Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
-          </span>
+         {/* Hero Section */}
+      <section className="relative bg-blue-900 text-white overflow-hidden py-24 lg:py-32">
+        <div className="absolute inset-0 z-0 opacity-40">
+          <img
+            src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=2000"
+            alt="Acupuncture therapy background"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/80" />
         </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="max-w-3xl">
+              <div className="inline-flex flex-wrap gap-2 mb-6">
+                <span className="px-3 py-1 bg-blue-500/20 text-blue-300 text-sm font-semibold rounded-full border border-blue-500/30">
+                  Voted Best Acupuncturist in Honolulu
+                </span>
+                <span className="px-3 py-1 bg-emerald-500/20 text-emerald-300 text-sm font-semibold rounded-full border border-emerald-500/30">
+                  Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
+                </span>
+              </div>
 
-        <h1 className="text-4xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
-          Pain Won’t Go Away? <br />
-          <span className="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-300">
-            Acupuncture Near You in Honolulu
-          </span>
-        </h1>
+              <h1 className="text-4xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                Pain Won’t Go Away? <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-300 text-3xl lg:text-5xl mt-2 block">
+              Try Acupuncture Near You in Honolulu 
+                </span>
+              </h1>
 
-        <p className="text-lg lg:text-xl text-slate-300 font-light leading-relaxed mb-8 max-w-2xl">
-          Back Pain • Sciatica • Neck Pain • Stress Relief<br /><br />
-          Still in pain and nothing works? Get fast, effective acupuncture near you in Honolulu — without drugs or surgery.
-        </p>
-
-        <div className="flex flex-col sm:flex-row gap-4">
-          <div className="flex flex-col items-start gap-1">
-            <Link to="/book-appointment">
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white h-14 px-8 text-lg font-semibold">
-                Book Appointment Today
-              </Button>
-            </Link>
-            <p className="text-slate-300 text-sm mt-1">
-              Takes less than 60 seconds • Insurance Accepted
-            </p>
-          </div>
-
-          <Button className="lg:hidden bg-white text-slate-900 h-14 px-8">
-            <PhoneCall className="mr-2 h-5 w-5" />
-            (808) 528-7177
-          </Button>
-        </div>
-
-        <div className="mt-12 flex items-center gap-6 text-sm text-slate-400">
-          <div className="flex items-center gap-2">
-            <ShieldCheck className="text-blue-400 h-5 w-5" />
-            <span>Same-day Appointments</span>
-          </div>
-
-          <div className="flex items-center gap-2">
-            <CheckCircle2 className="text-emerald-400 h-5 w-5" />
-            <span>30+ Years Experience</span>
-          </div>
-
-          <div className="flex items-center gap-2">
-            <CheckCircle2 className="text-emerald-400 h-5 w-5" />
-            <span>Insurance Accepted</span>
-          </div>
-        </div>
-      </div>
-
-      {/* RIGHT SIDE */}
-      <div className="hidden lg:block relative z-20">
-        <Card className="bg-white rounded-2xl shadow-2xl border-0 overflow-hidden text-slate-900">
-          <div className="bg-blue-600 h-2 w-full"></div>
-
-          <CardContent className="p-8">
-            <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold mb-2">Book Your Visit</h3>
-              <p className="text-sm text-slate-500">
-                ✔ Most Patients Feel Relief Within 1–3 Visits
+              <p className="text-lg lg:text-xl text-slate-300 font-light leading-relaxed mb-8 max-w-2xl">
+                Back Pain • Sciatica • Neck Pain • Stress Relief<br/><br/>
+               Still in pain and nothing works? Get fast, effective acupuncture near you in Honolulu — without drugs or surgery.
               </p>
-            </div>
 
-            <div className="space-y-4 mb-8">
-              <Link to="/book-appointment">
-                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white h-14 text-lg font-bold">
-                  Check Availability Now
+              <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex flex-col items-start gap-1">
+                  <Link to="/book-appointment">
+                    <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white h-14 px-8 text-lg font-semibold shadow-lg shadow-blue-900/40">
+                      Book Appointment Today
+                    </Button>
+                  </Link>
+                  <p className="text-slate-300 text-sm mt-1 opacity-80 px-2 font-medium">Takes less than 60 seconds • Insurance Accepted</p>
+                </div>
+                <Button size="lg" variant="outline" className="text-slate-900 border-white hover:bg-slate-100 h-14 px-8 text-lg font-semibold bg-white lg:hidden">
+                  <PhoneCall className="mr-2 h-5 w-5" /> (808) 528-7177
                 </Button>
-              </Link>
+              </div>
 
-              <p className="text-center text-sm text-slate-500">
-                Call Now for Same-Day Availability
-              </p>
-
-              <Button className="w-full bg-white border text-slate-900 h-14">
-                <PhoneCall className="mr-2 h-5 w-5 text-blue-600" />
-                (808) 528-7177
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
-      </div>
-
-    </div>
+              <div className="mt-12 flex items-center gap-6 text-sm text-slate-400">
+  <div className="flex items-center gap-2">
+    <ShieldCheck className="text-blue-400 h-5 w-5" />
+    <span>Same-day Appointments</span>
   </div>
-</section>
+
+  <div className="flex items-center gap-2">
+    <CheckCircle2 className="text-emerald-400 h-5 w-5" />
+    <span>30+ Years Experience</span>
+  </div>
+
+  <div className="flex items-center gap-2">
+    <CheckCircle2 className="text-emerald-400 h-5 w-5" />
+    <span>Insurance Accepted</span>
+  </div>
+</div>
+</div>  
+            {/* Action Card */}
+            <div className="hidden lg:block relative z-20">
+              <Card className="bg-white rounded-2xl shadow-2xl border-0 overflow-hidden text-slate-900">
+                <div className="bg-blue-600 h-2 w-full"></div>
+                <CardContent className="p-8">
+                  <div className="text-center mb-8">
+                    <h3 className="text-2xl font-bold text-slate-900 mb-2">Book Your Visit</h3>
+                    <p className="text-slate-500 text-sm">✔ Most Patients Feel Relief Within 1–3 Visits</p>
+                  </div>
+
+                  <div className="space-y-4 mb-8">
+                    <div className="flex flex-col items-center gap-1">
+                      <Link to="/book-appointment" className="w-full">
+                        <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white h-14 text-lg font-bold rounded-xl shadow-md">
+                         Check Availability Now
+                        </Button>
+                      </Link>
+                      <p className="text-slate-500 text-xs mt-1 font-medium">Call Now for Same-Day Availability</p>
+                    </div>
+                    <Button variant="outline" className="w-full text-slate-900 border-slate-200 hover:bg-slate-50 h-14 text-lg font-bold rounded-xl shadow-sm bg-white">
+                      <PhoneCall className="mr-2 h-5 w-5 text-blue-600" /> (808) 528-7177
+                    </Button>
+                  </div>
+
+                  <div className="border-t border-slate-100 pt-6 space-y-6 text-left">
+                    <div className="flex items-start gap-4">
+                      <div className="mt-1">
+                        <MapPin className="text-slate-400 h-5 w-5" />
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-slate-900 text-[15px] mb-1">Honolulu Clinic (Liliha)</h4>
+                        <p className="text-sm text-slate-600 leading-relaxed mb-1">1650 Liliha St, Suite 208<br />Honolulu, HI 96817</p>
+                                                    <a href="https://www.google.com/maps/search/?api=1&query=1650+Liliha+St,+Suite+208,+Honolulu,+HI+96817" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-sm text-blue-600 font-bold hover:underline mt-1">
+                                                        Find us on Google Maps
+                                                    </a>
+                        <p className="text-sm text-slate-700"><strong>Ph:</strong> (808) 528-7177 | <strong>Fax:</strong> (808) 212-9459</p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-4">
+                      <div className="mt-1 relative">
+                        <MapPin className="text-slate-400 h-5 w-5" />
+                        <span className="absolute -bottom-1 -right-1 flex h-3 w-3">
+                          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400"></span>
+                          <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500 border-2 border-white"></span>
+                        </span>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-slate-900 text-[15px] mb-1">Aiea / Pearl City Clinic</h4>
+                        <p className="text-sm text-slate-600 leading-relaxed mb-1">98-211 Pali Momi St, Suite 604<br />Aiea, HI 96701</p>
+                                                    <a href="https://www.google.com/maps/search/?api=1&query=98-211+Pali+Momi+St,+Suite+604,+Aiea,+HI+96701" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-sm text-blue-600 font-bold hover:underline mt-1">
+                                                        Find us on Google Maps
+                                                    </a>
+                        <p className="text-sm text-slate-700"><strong>Ph:</strong> (808) 452-1900 | <strong>Fax:</strong> (808) 452-1521</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="mt-6 bg-slate-50 rounded-xl p-4 text-left">
+                    <h4 className="font-bold text-slate-900 text-sm mb-1">Hours of Operation</h4>
+                    <p className="text-slate-600 text-sm">Mon-Fri: 9am - 1pm, Sat: 8am - 12pm</p>
+                  </div>
+
+                  <div className="mt-6 pt-6 border-t border-slate-100 text-left">
+                    <p className="font-bold text-slate-900 text-sm mb-3">Also serving:</p>
+                    <div className="flex flex-wrap gap-2 text-xs">
+                      <Link to="/acupuncture-waikiki" className="px-2 py-1 bg-slate-100 text-slate-600 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-colors">Waikiki</Link>
+                      <Link to="/acupuncture-kahala" className="px-2 py-1 bg-slate-100 text-slate-600 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-colors">Kahala</Link>
+                      <Link to="/acupuncture-ala-moana" className="px-2 py-1 bg-slate-100 text-slate-600 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-colors">Ala Moana</Link>
+                      <Link to="/acupuncture-kaimuki" className="px-2 py-1 bg-slate-100 text-slate-600 rounded-md hover:bg-blue-50 hover:text-blue-600 transition-colors">Kaimuki</Link>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* CRO Module 1: Situation Grid */}
       <section className="py-16 bg-slate-50 text-center border-b border-slate-200">
