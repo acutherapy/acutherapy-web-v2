@@ -213,20 +213,21 @@ export default function HomePage() {
               </div>
 
               <div className="mt-12 flex items-center gap-6 text-sm text-slate-400">
-                <div className="flex items-center gap-2">
-                  <ShieldCheck className="text-blue-400 h-5 w-5" />
-                  <span>Same-day Appointments</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle2 className="text-emerald-400 h-5 w-5" />
-                  <span>30+ Years Experience</span>
-                  </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle2 className="text-emerald-400 h-5 w-5" />
-                  <span>Insurance Accepted</span>
-                </div>
-              </div>
-            </div>
+  <div className="flex items-center gap-2">
+    <ShieldCheck className="text-blue-400 h-5 w-5" />
+    <span>Same-day Appointments</span>
+  </div>
+
+  <div className="flex items-center gap-2">
+    <CheckCircle2 className="text-emerald-400 h-5 w-5" />
+    <span>30+ Years Experience</span>
+  </div>
+
+  <div className="flex items-center gap-2">
+    <CheckCircle2 className="text-emerald-400 h-5 w-5" />
+    <span>Insurance Accepted</span>
+  </div>
+</div>
 
             {/* Action Card */}
             <div className="hidden lg:block relative z-20">
