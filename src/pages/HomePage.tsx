@@ -9,7 +9,7 @@ export default function HomePage() {
   return (
     <div className="bg-slate-50 min-h-screen">
       <Helmet>
-        <title>Honolulu Pain & Injury Acupuncture Clinic | Dr. David Cai | AcuTherapy</title>
+        <title>Looking for Acupuncture Near You in Honolulu? Pain Relief Starts Here</title>
         <meta name="description" content="Top-rated Honolulu Pain & Injury Acupuncture Clinic. Dr. David Cai specializes in pain management, auto accident recovery, and traditional Chinese medicine with over 30 years of clinical experience." />
         
         <meta property="og:title" content="Honolulu Pain & Injury Acupuncture Clinic | Dr. David Cai | AcuTherapy" />
@@ -187,15 +187,15 @@ export default function HomePage() {
               </div>
 
               <h1 className="text-4xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
-                Acupuncture for pain relief in Honolulu <br />
+                Pain Won’t Go Away? <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-300 text-3xl lg:text-5xl mt-2 block">
-                  (back pain, sciatica, neck pain)
+                  Try Acupuncture Near You in Honolulu
                 </span>
               </h1>
 
               <p className="text-lg lg:text-xl text-slate-300 font-light leading-relaxed mb-8 max-w-2xl">
-                Auto Injury &middot; Workers' Comp &middot; Chronic Pain &middot; VA Care<br/><br/>
-                Get a personalized recovery plan on your first visit.
+                Back Pain • Sciatica • Neck Pain • Stress Relief<br/><br/>
+                Still in pain and nothing works? Get fast, effective acupuncture near you in Honolulu — without drugs or surgery.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
@@ -205,7 +205,7 @@ export default function HomePage() {
                       Get My Recovery Plan
                     </Button>
                   </Link>
-                  <p className="text-slate-300 text-sm mt-1 opacity-80 px-2 font-medium">Takes less than 60 seconds</p>
+                  <p className="text-slate-300 text-sm mt-1 opacity-80 px-2 font-medium">Takes less than 60 seconds • Insurance Accepted</p>
                 </div>
                 <Button size="lg" variant="outline" className="text-slate-900 border-white hover:bg-slate-100 h-14 px-8 text-lg font-semibold bg-white lg:hidden">
                   <PhoneCall className="mr-2 h-5 w-5" /> (808) 528-7177
