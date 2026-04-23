@@ -63,10 +63,18 @@ export default function AcupunctureHonoluluPage() {
 Searching for acupuncture in Honolulu? Our clinic specializes in treating back pain, sciatica, stress, and auto injuries. Many patients experience noticeable relief within the first few visits.
 </p>
 
-            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Causes Chronic Pain & Imbalance?</h2>
-            <p className="text-lg text-slate-700 leading-relaxed mb-6">
-              Many patients struggling with chronic issues don't realize that standard lifestyle factors—such as poor posture, repetitive stress, high-pressure work environments, or old injuries—can severely disrupt the body's natural healing systems. When nerve pathways become inflamed or muscular fascia binds up, the result is localized pain that typical over-the-counter medications only mask temporarily.
-            </p>
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">
+Conditions We Treat with Acupuncture in Honolulu
+</h2>
+
+<ul className="list-disc pl-6 space-y-3 text-lg text-slate-700 mb-8">
+  <li>Back pain</li>
+  <li>Neck pain</li>
+  <li>Sciatica</li>
+  <li>Stress & anxiety</li>
+  <li>Auto accident injuries</li>
+  <li>Chronic pain</li>
+</ul>
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Our Holistic Approach Helps</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
