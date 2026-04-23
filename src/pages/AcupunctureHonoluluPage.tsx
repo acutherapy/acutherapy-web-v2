@@ -76,10 +76,15 @@ Conditions We Treat with Acupuncture in Honolulu
   <li>Chronic pain</li>
 </ul>
 
-            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Our Holistic Approach Helps</h2>
-            <p className="text-lg text-slate-700 leading-relaxed mb-6">
-              Unlike treatments that simply dull sensory responses, professional acupuncture works at the physiological level. By placing ultra-fine needles at critical neurological points, we trigger the nervous system to release natural endorphins and anti-inflammatory neuropeptides. Depending on your diagnosis, Dr. Cai may also integrate <strong>Traditional Acupuncture</strong> for deep nerve pain, localized <strong>dry needling</strong> for sports ligament tears, or custom <strong>Chinese herbal medicine</strong> to address internal imbalances responsibly.
-            </p>
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">
+Acupuncture Clinic in Honolulu
+</h2>
+
+<p className="text-lg text-slate-700 mb-6">
+Our acupuncture clinic is located in Honolulu at:
+<br/><br/>
+<strong>1650 Liliha St, Suite 208, Honolulu, HI 96817</strong>
+</p>
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect & Real Patient Results</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
