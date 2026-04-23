@@ -56,7 +56,7 @@ export default function FireCuppingTherapyHonoluluPage() {
             If you're searching for cupping near you in Honolulu, this treatment is designed to release deep muscle tension that massage alone cannot reach.              
 </p>
 
-            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Why Do Muscles Become "Stagnant"?</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Why Muscles Become Stagnant (And Why Cupping Therapy in Honolulu Works)</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
               When you overwork your muscles—whether from intense athletic training, recovering from a car accident, or simply sitting at a desk with poor posture for 8 hours a day—micro-tears occur. During the healing process, blood and cellular waste (like lactic acid) often become trapped within the tight, sticky layers of connective tissue (fascia) overlying your muscles.
             </p>
@@ -64,7 +64,7 @@ export default function FireCuppingTherapyHonoluluPage() {
               This creates thick, hardened knots that severely restrict your range of motion and cause dull, constant aching. Worse, this stagnant tissue actually chokes off the local capillary network, preventing fresh healing cells from reaching the injured area.
             </p>
 
-            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Fire Cupping Reverses This Process</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Fire Cupping Therapy in Honolulu Reverses This Process</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
               AcuTherapy Clinics specializes in traditional glass fire cupping. By briefly introducing a flame to glass cups to consume the oxygen, Dr. Cai creates a powerful vacuum seal when placed upon the skin. 
             </p>
@@ -182,9 +182,9 @@ export default function FireCuppingTherapyHonoluluPage() {
 </ul>
 
 <div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
-<h2 className="text-3xl font-bold text-blue-900 mb-4">Ready to find relief?</h2>
+<h2 className="text-3xl font-bold text-blue-900 mb-4">Still in pain? Get real relief today.</h2>
 <p className="text-lg text-blue-700 mb-8">Stop living in discomfort. Located right here in Honolulu, we are here to help you restore your well-being.</p>
-<Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Get Your Personalized Recovery Plan</Button></Link>
+<Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Book Your Cupping Session Now</Button></Link>
 <p className="text-blue-600 text-sm mt-3 opacity-80 font-medium tracking-wide">Takes less than 60 seconds</p>
 <p className="text-red-500 font-bold mt-4">The longer you wait, the harder it is to fix.</p>
 </div>
@@ -197,7 +197,9 @@ export default function FireCuppingTherapyHonoluluPage() {
               <div className="bg-blue-600 h-2 w-full"></div>
               <CardContent className="p-8 text-center">
                 <h3 className="text-2xl font-bold text-slate-900 mb-2">Book Your Visit</h3>
-                <p className="text-slate-600 mb-8 text-sm">Bridge the gap to a pain-free life today. Located in Honolulu.</p>
+                <p className="text-slate-600 mb-8 text-sm"><p className="text-lg text-slate-700 mb-6">
+Looking for cupping therapy near you? Our Honolulu clinic serves patients across Waikiki, Ala Moana, Kahala, Aiea, and surrounding areas.
+</p>
                 <div className="flex flex-col gap-4">
                   <Link to="/book-appointment">
                     <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
