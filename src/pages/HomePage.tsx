@@ -187,22 +187,22 @@ export default function HomePage() {
               </div>
 
               <h1 className="text-4xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
-                Acupuncture Near You in Honolulu for Pain, Stress & Injury <br />
+                Pain Won’t Go Away? Try Acupuncture Near You in Honolulu <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-300 text-3xl lg:text-5xl mt-2 block">
               
                 </span>
               </h1>
 
               <p className="text-lg lg:text-xl text-slate-300 font-light leading-relaxed mb-8 max-w-2xl">
-                Auto Injury &middot; Workers' Comp &middot; Chronic Pain &middot; VA Care<br/><br/>
-               If you're searching for acupuncture near me, our Honolulu clinic offers fast, effective treatment for pain, stress, and injury.
+                Back Pain • Sciatica • Neck Pain • Stress Relief<br/><br/>
+               Still in pain and nothing works? Get fast, effective acupuncture near you in Honolulu — without drugs or surgery.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <div className="flex flex-col items-start gap-1">
                   <Link to="/book-appointment">
                     <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white h-14 px-8 text-lg font-semibold shadow-lg shadow-blue-900/40">
-                      Get My Recovery Plan
+                      Book Appointment Today
                     </Button>
                   </Link>
                   <p className="text-slate-300 text-sm mt-1 opacity-80 px-2 font-medium">Takes less than 60 seconds</p>
@@ -215,11 +215,14 @@ export default function HomePage() {
               <div className="mt-12 flex items-center gap-6 text-sm text-slate-400">
                 <div className="flex items-center gap-2">
                   <ShieldCheck className="text-blue-400 h-5 w-5" />
-                  <span>Licensed Experts</span>
+                  <span>Same-day Appointments</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="text-emerald-400 h-5 w-5" />
                   <span>30+ Years Experience</span>
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="text-emerald-400 h-5 w-5" />
+                  <span>Insurance Accepted</span>
                 </div>
               </div>
             </div>
@@ -231,14 +234,14 @@ export default function HomePage() {
                 <CardContent className="p-8">
                   <div className="text-center mb-8">
                     <h3 className="text-2xl font-bold text-slate-900 mb-2">Book Your Visit</h3>
-                    <p className="text-slate-500 text-sm">Bridge the gap to a pain-free life today.</p>
+                    <p className="text-slate-500 text-sm">Call Now to Speak with Our Team</p>
                   </div>
 
                   <div className="space-y-4 mb-8">
                     <div className="flex flex-col items-center gap-1">
                       <Link to="/book-appointment" className="w-full">
                         <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white h-14 text-lg font-bold rounded-xl shadow-md">
-                          Get My Recovery Plan
+                          Book Appointment Now
                         </Button>
                       </Link>
                       <p className="text-slate-500 text-xs mt-1 font-medium">Takes less than 60 seconds</p>
