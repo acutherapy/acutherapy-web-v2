@@ -33,7 +33,7 @@ export default function AcupunctureHonoluluPage() {
             </div>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Acupuncture in Honolulu for Pain Relief, Stress & Injury</h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Looking for acupuncture in Honolulu? Get fast, effective treatment for pain, stress, and injury — without drugs or surgery.
+          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Looking for acupuncture in Honolulu? Get fast, effective treatment for pain, stress, and injury — without drugs or surgery！
 </p>
         </div>
       </section>
