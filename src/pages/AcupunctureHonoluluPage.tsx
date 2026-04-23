@@ -32,13 +32,26 @@ export default function AcupunctureHonoluluPage() {
               Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
             </div>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Acupuncture in Honolulu for Pain Relief, Stress & Injury</h1>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Acupuncture Honolulu – Fast Pain Relief for Back, Sciatica & Injury</h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Looking for acupuncture in Honolulu? Get fast, effective treatment for pain, stress, and injury — without drugs or surgery.
 </p>
         </div>
       </section>
 
       {/* Main Content */}
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Still in pain and nothing works?</h2>
+<p className="text-lg text-slate-900 font-semibold mb-1">If you're searching for acupuncture in Honolulu, you're probably dealing with:</p>
+      <ul className="list-disc pl-6 space-y-3 text-lg text-slate-700 mb-8">
+  <li>• Back pain that won’t go away</li>
+  <li>• Sciatica shooting down your leg</li>
+  <li>• Neck & shoulder tension</li>
+  <li>• Stress or sleep problems</li>
+  <li>Auto accident injuries</li>
+  <li>Work injury pain</li>
+</ul>
+
+<p className="text-lg text-slate-900 font-semibold mb-1">At AcuTherapy Clinics, many patients start feeling relief within the first few visits.</p>
+      
       <section className="py-16 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-12 gap-12">
           
