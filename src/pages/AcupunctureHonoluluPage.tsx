@@ -94,7 +94,7 @@ export default function AcupunctureHonoluluPage() {
                 "Many patients report feeling significantly lighter, deeply relaxed, and with a clearer range of motion after just a few initial sessions. The tension physically melts away."
               </p>
             </div>
-            <h2>Why Choose AcuTherapy Clinics?</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Why Choose AcuTherapy Clinics?</h2>
 
 <ul>
 <li>30+ years clinical experience</li>
@@ -191,8 +191,8 @@ export default function AcupunctureHonoluluPage() {
             <Card className="bg-white border-blue-100 shadow-xl lg:sticky lg:top-24 rounded-2xl overflow-hidden">
               <div className="bg-blue-600 h-2 w-full"></div>
               <CardContent className="p-8 text-center">
-                <h3 className="text-2xl font-bold text-slate-900 mb-2">Book Your Visit</h3>
-                <p className="text-slate-600 mb-8 text-sm">Bridge the gap to a pain-free life today. Located in Honolulu.</p>
+                <h3 className="text-2xl font-bold text-slate-900 mb-2">Book Your Acupuncture Appointment in Honolulu</h3>
+                <p className="text-slate-600 mb-8 text-sm">Ready to start feeling better? Book your appointment today or call us now.</p>
                 <div className="flex flex-col gap-4">
                   <Link to="/book-appointment">
                     <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
