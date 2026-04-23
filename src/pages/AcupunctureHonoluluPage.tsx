@@ -40,21 +40,7 @@ export default function AcupunctureHonoluluPage() {
 
       {/* Main Content */}
       <section className="py-16 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-12 gap-12">
-          <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Still in pain and nothing works?</h2>
-<p className="text-lg text-slate-900 font-semibold mb-1">If you're searching for acupuncture in Honolulu, you're probably dealing with:</p>
-      <ul className="list-disc pl-6 space-y-3 text-lg text-slate-700 mb-8">
-  <li>• Back pain that won’t go away</li>
-  <li>• Sciatica shooting down your leg</li>
-  <li>• Neck & shoulder tension</li>
-  <li>• Stress or sleep problems</li>
-  <li>Auto accident injuries</li>
-  <li>Work injury pain</li>
-</ul>
-
-<p className="text-lg text-slate-900 font-semibold mb-1">At AcuTherapy Clinics, many patients start feeling relief within the first few visits.</p>
-      
-          
+        <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-12 gap-12">    
           <article className="md:col-span-8">
                         {/* CRO Expectation Module */}
             <div className="bg-slate-50 border-l-4 border-blue-600 p-6 rounded-r-xl mb-10 shadow-sm mt-8">
