@@ -1,3 +1,4 @@
+
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { Card, CardContent } from "@/components/ui/card";
@@ -8,7 +9,7 @@ export default function HomePage() {
   return (
     <div className="bg-slate-50 min-h-screen">
       <Helmet>
-        <title>Looking for Acupuncture Near You in Honolulu? Pain Relief Starts Here</title>
+        <title>Honolulu Pain & Injury Acupuncture Clinic | Dr. David Cai | AcuTherapy</title>
         <meta name="description" content="Top-rated Honolulu Pain & Injury Acupuncture Clinic. Dr. David Cai specializes in pain management, auto accident recovery, and traditional Chinese medicine with over 30 years of clinical experience." />
         
         <meta property="og:title" content="Honolulu Pain & Injury Acupuncture Clinic | Dr. David Cai | AcuTherapy" />
@@ -186,25 +187,25 @@ export default function HomePage() {
               </div>
 
               <h1 className="text-4xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
-                Pain Won’t Go Away? <br />
+                Acupuncture for pain relief in Honolulu <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-300 text-3xl lg:text-5xl mt-2 block">
-              Try Acupuncture Near You in Honolulu 
+                  (back pain, sciatica, neck pain)
                 </span>
               </h1>
 
               <p className="text-lg lg:text-xl text-slate-300 font-light leading-relaxed mb-8 max-w-2xl">
-                Back Pain • Sciatica • Neck Pain • Stress Relief<br/><br/>
-               Still in pain and nothing works? Get fast, effective acupuncture near you in Honolulu — without drugs or surgery.
+                Auto Injury &middot; Workers' Comp &middot; Chronic Pain &middot; VA Care<br/><br/>
+                Get a personalized recovery plan on your first visit.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <div className="flex flex-col items-start gap-1">
                   <Link to="/book-appointment">
                     <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white h-14 px-8 text-lg font-semibold shadow-lg shadow-blue-900/40">
-                      Book Appointment Today
+                      Get My Recovery Plan
                     </Button>
                   </Link>
-                  <p className="text-slate-300 text-sm mt-1 opacity-80 px-2 font-medium">Takes less than 60 seconds • Insurance Accepted</p>
+                  <p className="text-slate-300 text-sm mt-1 opacity-80 px-2 font-medium">Takes less than 60 seconds</p>
                 </div>
                 <Button size="lg" variant="outline" className="text-slate-900 border-white hover:bg-slate-100 h-14 px-8 text-lg font-semibold bg-white lg:hidden">
                   <PhoneCall className="mr-2 h-5 w-5" /> (808) 528-7177
@@ -212,22 +213,17 @@ export default function HomePage() {
               </div>
 
               <div className="mt-12 flex items-center gap-6 text-sm text-slate-400">
-  <div className="flex items-center gap-2">
-    <ShieldCheck className="text-blue-400 h-5 w-5" />
-    <span>Same-day Appointments</span>
-  </div>
+                <div className="flex items-center gap-2">
+                  <ShieldCheck className="text-blue-400 h-5 w-5" />
+                  <span>Licensed Experts</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="text-emerald-400 h-5 w-5" />
+                  <span>30+ Years Experience</span>
+                </div>
+              </div>
+            </div>
 
-  <div className="flex items-center gap-2">
-    <CheckCircle2 className="text-emerald-400 h-5 w-5" />
-    <span>30+ Years Experience</span>
-  </div>
-
-  <div className="flex items-center gap-2">
-    <CheckCircle2 className="text-emerald-400 h-5 w-5" />
-    <span>Insurance Accepted</span>
-  </div>
-</div>
-</div>  
             {/* Action Card */}
             <div className="hidden lg:block relative z-20">
               <Card className="bg-white rounded-2xl shadow-2xl border-0 overflow-hidden text-slate-900">
@@ -235,17 +231,17 @@ export default function HomePage() {
                 <CardContent className="p-8">
                   <div className="text-center mb-8">
                     <h3 className="text-2xl font-bold text-slate-900 mb-2">Book Your Visit</h3>
-                    <p className="text-slate-500 text-sm">✔ Most Patients Feel Relief Within 1–3 Visits</p>
+                    <p className="text-slate-500 text-sm">Bridge the gap to a pain-free life today.</p>
                   </div>
 
                   <div className="space-y-4 mb-8">
                     <div className="flex flex-col items-center gap-1">
                       <Link to="/book-appointment" className="w-full">
                         <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white h-14 text-lg font-bold rounded-xl shadow-md">
-                         Check Availability Now
+                          Get My Recovery Plan
                         </Button>
                       </Link>
-                      <p className="text-slate-500 text-xs mt-1 font-medium">Call Now for Same-Day Availability</p>
+                      <p className="text-slate-500 text-xs mt-1 font-medium">Takes less than 60 seconds</p>
                     </div>
                     <Button variant="outline" className="w-full text-slate-900 border-slate-200 hover:bg-slate-50 h-14 text-lg font-bold rounded-xl shadow-sm bg-white">
                       <PhoneCall className="mr-2 h-5 w-5 text-blue-600" /> (808) 528-7177
@@ -302,7 +298,6 @@ export default function HomePage() {
                   </div>
                 </CardContent>
               </Card>
-              </div> 
             </div>
           </div>
         </div>
@@ -637,5 +632,4 @@ export default function HomePage() {
       </section>
     </div>
   );
-}
 }
