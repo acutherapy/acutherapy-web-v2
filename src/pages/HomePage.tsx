@@ -228,7 +228,7 @@ export default function HomePage() {
     <span>Insurance Accepted</span>
   </div>
 </div>
-
+</div>  
             {/* Action Card */}
             <div className="hidden lg:block relative z-20">
               <Card className="bg-white rounded-2xl shadow-2xl border-0 overflow-hidden text-slate-900">
