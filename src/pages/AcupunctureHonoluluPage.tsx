@@ -195,7 +195,7 @@ export default function AcupunctureHonoluluPage() {
                 <div className="flex flex-col gap-4">
                   <Link to="/book-appointment">
                     <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
-                      <Calendar className="mr-2" /> Book Appointment (Takes 60 seconds)
+                      <Calendar className="mr-2" /> Book Now (Takes 60 seconds)
                     </Button>
                   </Link>
                   <Button variant="outline" className="w-full h-14 text-lg border-2 border-slate-200" onClick={() => window.location.href='tel:+18085287177'}>
