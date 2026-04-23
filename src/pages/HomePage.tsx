@@ -236,7 +236,7 @@ export default function HomePage() {
                 <CardContent className="p-8">
                   <div className="text-center mb-8">
                     <h3 className="text-2xl font-bold text-slate-900 mb-2">Book Your Visit</h3>
-                    <p className="text-slate-500 text-sm"></p>
+                    <p className="text-slate-500 text-sm">Same-day Appointments Available</p>
                   </div>
 
                   <div className="space-y-4 mb-8">
