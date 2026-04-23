@@ -27,8 +27,8 @@ export default function FireCuppingTherapyHonoluluPage() {
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm mb-6 backdrop-blur-sm">
             <ShieldCheck size={16} /> <span>Deep Tissue Detoxification</span>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Fire Cupping Therapy in Honolulu</h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Instantly lift away heavy structural tension and flush cellular waste out of heavily cramped muscles.</p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Cupping Near Me in Honolulu – Instant Relief for Pain, Tight Muscles & Stress</h1>
+          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Feel immediate relief from tight, sore muscles and deep tension — often after just one session of fire cupping therapy.</p>
         </div>
       </section>
 
@@ -53,8 +53,8 @@ export default function FireCuppingTherapyHonoluluPage() {
             </div>
 
 <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
-              While massage pushes *down* into the muscles, our expert <strong>Fire Cupping Therapy in Honolulu</strong> pulls *up*. Used by elite Olympic athletes and chronic pain sufferers alike, traditional sliding fire cupping is a powerfully effective method for stripping stagnant lactic acid, aggressively lifting hardened fascial adhesions, and driving a massive wave of fresh blood flow into oxygen-starved tissue.
-            </p>
+            If you're searching for cupping near you in Honolulu, this treatment is designed to release deep muscle tension that massage alone cannot reach.              
+</p>
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Why Do Muscles Become "Stagnant"?</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
@@ -81,7 +81,17 @@ export default function FireCuppingTherapyHonoluluPage() {
                 "Patients who come in feeling like they have an iron armor of stiffness across their upper back report that immediately after cupping, their torso feels unimaginably light, warm, and freely mobile."
               </p>
             </div>
-
+            <div className="bg-white border border-slate-200 rounded-xl p-6 mb-10 shadow-sm">
+  <p className="font-bold text-slate-900 mb-3">Most patients come to us after trying:</p>
+  <ul className="text-slate-700 space-y-1">
+    <li>• Massage that didn’t last</li>
+    <li>• Stretching with no real change</li>
+    <li>• Pain that keeps coming back</li>
+  </ul>
+  <p className="mt-4 text-slate-800 font-medium">
+    Cupping works differently by pulling tension out instead of pushing into it.
+  </p>
+</div>
             
             {/* CRO Comparison Module */}
             <div className="my-16">
