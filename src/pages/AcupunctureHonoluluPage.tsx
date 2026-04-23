@@ -59,12 +59,11 @@ export default function AcupunctureHonoluluPage() {
             </div>
 
 <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
-              <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
-Searching for acupuncture in Honolulu? Our clinic specializes in treating back pain, sciatica, stress, and auto injuries. Many patients experience noticeable relief within the first few visits.
+  Searching for acupuncture in Honolulu? Our clinic specializes in treating back pain, sciatica, stress, and auto injuries. Many patients experience noticeable relief within the first few visits.
 </p>
 
-            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">
-Conditions We Treat with Acupuncture in Honolulu
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">
+  Conditions We Treat with Acupuncture in Honolulu
 </h2>
 
 <ul className="list-disc pl-6 space-y-3 text-lg text-slate-700 mb-8">
@@ -76,14 +75,14 @@ Conditions We Treat with Acupuncture in Honolulu
   <li>Chronic pain</li>
 </ul>
 
-            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">
-Acupuncture Clinic in Honolulu
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">
+  Acupuncture Clinic in Honolulu
 </h2>
 
 <p className="text-lg text-slate-700 mb-6">
-Our acupuncture clinic is located in Honolulu at:
-<br/><br/>
-<strong>1650 Liliha St, Suite 208, Honolulu, HI 96817</strong>
+  Our acupuncture clinic is located in Honolulu at:
+  <br /><br />
+  <strong>1650 Liliha St, Suite 208, Honolulu, HI 96817</strong>
 </p>
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect & Real Patient Results</h2>
