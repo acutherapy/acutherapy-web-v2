@@ -189,13 +189,13 @@ export default function HomePage() {
               <h1 className="text-4xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
                 Acupuncture Near You in Honolulu for Pain, Stress & Injury <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-300 text-3xl lg:text-5xl mt-2 block">
-              If you're searching for acupuncture near me, our Honolulu clinic offers fast, effective treatment for pain, stress, and injury.
+              
                 </span>
               </h1>
 
               <p className="text-lg lg:text-xl text-slate-300 font-light leading-relaxed mb-8 max-w-2xl">
                 Auto Injury &middot; Workers' Comp &middot; Chronic Pain &middot; VA Care<br/><br/>
-               
+               If you're searching for acupuncture near me, our Honolulu clinic offers fast, effective treatment for pain, stress, and injury.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
