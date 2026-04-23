@@ -220,6 +220,7 @@ export default function HomePage() {
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="text-emerald-400 h-5 w-5" />
                   <span>30+ Years Experience</span>
+                  </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="text-emerald-400 h-5 w-5" />
                   <span>Insurance Accepted</span>
