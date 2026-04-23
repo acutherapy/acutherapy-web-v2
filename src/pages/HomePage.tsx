@@ -1,9 +1,8 @@
-
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { PhoneCall, ArrowRightCircle, ShieldCheck, HeartPulse, Stethoscope, Award, Star, Activity, CheckCircle2, ArrowRight } from "lucide-react";
+import { PhoneCall, ArrowRightCircle, MapPin, ShieldCheck, HeartPulse, Stethoscope, Award, Star, Activity, CheckCircle2, ArrowRight } from "lucide-react";
 
 export default function HomePage() {
   return (
@@ -164,7 +163,7 @@ export default function HomePage() {
         </script>
       </Helmet>
 
-         {/* Hero Section */}
+      {/* Hero Section */}
       <section className="relative bg-blue-900 text-white overflow-hidden py-24 lg:py-32">
         <div className="absolute inset-0 z-0 opacity-40">
           <img
@@ -638,4 +637,5 @@ export default function HomePage() {
       </section>
     </div>
   );
+}
 }
