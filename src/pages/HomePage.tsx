@@ -187,9 +187,9 @@ export default function HomePage() {
               </div>
 
               <h1 className="text-4xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
-                Pain Won’t Go Away? Try Acupuncture Near You in Honolulu <br />
+                Pain Won’t Go Away? <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-300 text-3xl lg:text-5xl mt-2 block">
-              
+              Try Acupuncture Near You in Honolulu 
                 </span>
               </h1>
 
