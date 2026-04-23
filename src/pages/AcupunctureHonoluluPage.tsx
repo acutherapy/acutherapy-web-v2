@@ -59,8 +59,9 @@ export default function AcupunctureHonoluluPage() {
             </div>
 
 <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
-              If you are experiencing chronic pain, an unexpected auto injury, fertility challenges, or severe anxiety-related sleep issues in Honolulu, our integrated approach can restore natural balance and improve your overall daily function. Dr. David Cai utilizes over 30 years of clinical experience to provide the gold standard of <strong>Acupuncture in Honolulu</strong>, frequently recognized by patients as the best acupuncture care on the island.
-            </p>
+              <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
+Searching for acupuncture in Honolulu? Our clinic specializes in treating back pain, sciatica, stress, and auto injuries. Many patients experience noticeable relief within the first few visits.
+</p>
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Causes Chronic Pain & Imbalance?</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
