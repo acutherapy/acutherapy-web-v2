@@ -202,7 +202,7 @@ export default function HomePage() {
                 <div className="flex flex-col items-start gap-1">
                   <Link to="/book-appointment">
                     <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white h-14 px-8 text-lg font-semibold shadow-lg shadow-blue-900/40">
-                      Get My Recovery Plan
+                      Book Appointment Today
                     </Button>
                   </Link>
                   <p className="text-slate-300 text-sm mt-1 opacity-80 px-2 font-medium">Takes less than 60 seconds • Insurance Accepted</p>
@@ -215,7 +215,7 @@ export default function HomePage() {
               <div className="mt-12 flex items-center gap-6 text-sm text-slate-400">
                 <div className="flex items-center gap-2">
                   <ShieldCheck className="text-blue-400 h-5 w-5" />
-                  <span>Licensed Experts</span>
+                  <span>Insurance Accepted</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="text-emerald-400 h-5 w-5" />
@@ -231,17 +231,17 @@ export default function HomePage() {
                 <CardContent className="p-8">
                   <div className="text-center mb-8">
                     <h3 className="text-2xl font-bold text-slate-900 mb-2">Book Your Visit</h3>
-                    <p className="text-slate-500 text-sm">Bridge the gap to a pain-free life today.</p>
+                    <p className="text-slate-500 text-sm">✔ Most Patients Feel Relief Within 1–3 Visits</p>
                   </div>
 
                   <div className="space-y-4 mb-8">
                     <div className="flex flex-col items-center gap-1">
                       <Link to="/book-appointment" className="w-full">
                         <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white h-14 text-lg font-bold rounded-xl shadow-md">
-                          Get My Recovery Plan
+                          Check Availability Now
                         </Button>
                       </Link>
-                      <p className="text-slate-500 text-xs mt-1 font-medium">Takes less than 60 seconds</p>
+                      <p className="text-slate-500 text-xs mt-1 font-medium">Call Now for Same-Day Availability</p>
                     </div>
                     <Button variant="outline" className="w-full text-slate-900 border-slate-200 hover:bg-slate-50 h-14 text-lg font-bold rounded-xl shadow-sm bg-white">
                       <PhoneCall className="mr-2 h-5 w-5 text-blue-600" /> (808) 528-7177
