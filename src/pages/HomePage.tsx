@@ -9,7 +9,7 @@ export default function HomePage() {
   return (
     <div className="bg-slate-50 min-h-screen">
       <Helmet>
-        <title>Honolulu Pain & Injury Acupuncture Clinic | Dr. David Cai | AcuTherapy</title>
+        <title>Looking for Acupuncture Near You in Honolulu? Pain Relief Starts Here</title>
         <meta name="description" content="Top-rated Honolulu Pain & Injury Acupuncture Clinic. Dr. David Cai specializes in pain management, auto accident recovery, and traditional Chinese medicine with over 30 years of clinical experience." />
         
         <meta property="og:title" content="Honolulu Pain & Injury Acupuncture Clinic | Dr. David Cai | AcuTherapy" />
@@ -187,7 +187,7 @@ export default function HomePage() {
               </div>
 
               <h1 className="text-4xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
-                Acupuncture for pain relief in Honolulu <br />
+                Acupuncture Near You in Honolulu for Pain, Stress & Injury <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-300 text-3xl lg:text-5xl mt-2 block">
                   (back pain, sciatica, neck pain)
                 </span>
