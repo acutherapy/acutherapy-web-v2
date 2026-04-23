@@ -197,8 +197,7 @@ export default function FireCuppingTherapyHonoluluPage() {
               <div className="bg-blue-600 h-2 w-full"></div>
               <CardContent className="p-8 text-center">
                 <h3 className="text-2xl font-bold text-slate-900 mb-2">Book Your Visit</h3>
-                <p className="text-slate-600 mb-8 text-sm"><p className="text-lg text-slate-700 mb-6">
-Looking for cupping therapy near you? Our Honolulu clinic serves patients across Waikiki, Ala Moana, Kahala, Aiea, and surrounding areas.
+                <p className="text-slate-600 mb-8 text-sm">Looking for cupping therapy near you? Our Honolulu clinic serves patients across Waikiki, Ala Moana, Kahala, Aiea, and surrounding areas.
 </p>
                 <div className="flex flex-col gap-4">
                   <Link to="/book-appointment">
