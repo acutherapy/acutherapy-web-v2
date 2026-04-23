@@ -189,7 +189,7 @@ export default function HomePage() {
               <h1 className="text-4xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
                 Acupuncture Near You in Honolulu for Pain, Stress & Injury <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-300 text-3xl lg:text-5xl mt-2 block">
-                  (back pain, sciatica, neck pain)
+              
                 </span>
               </h1>
 
