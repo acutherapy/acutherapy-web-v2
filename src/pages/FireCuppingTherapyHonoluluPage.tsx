@@ -9,7 +9,7 @@ export default function FireCuppingTherapyHonoluluPage() {
     <>
       <Helmet>
         <link rel="canonical" href="https://acutherapy.com/fire-cupping-therapy-honolulu" />
-        <title>Fire Cupping Therapy Honolulu | Deep Fascia Lift | AcuTherapy</title>
+        <title>Fire Cupping Therapy Honolulu | Immediate Relief from Tight | AcuTherapy</title>
         <meta name="description" content="Experience traditional Fire Cupping Therapy in Honolulu. Detoxify muscles, improve massive blood flow, and relieve profound muscular tension." />
       </Helmet>
 
