@@ -29,7 +29,7 @@ export default function AutoAccidentInjuryTreatmentHonoluluPage() {
               <ShieldCheck size={16} /> <span>100% No-Fault PIP Insurance Accepted</span>
             </div>
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-200 border border-emerald-500/30 font-medium text-sm backdrop-blur-sm">
-              Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
+              Also Accepting HMSA, UHA, HMAA, Kaiser, Medicare UHC & More
             </div>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Auto Accident Injury Treatment in Honolulu – 100% Covered Care (No Out-of-Pocket)</h1>
