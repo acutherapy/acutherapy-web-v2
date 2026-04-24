@@ -327,7 +327,7 @@ If you have a workers’ compensation claim in Hawaii, your treatment is typical
                 </div>
 
                 <div className="mt-6 pt-6 border-t border-slate-100 text-left">
-                  <p className="font-bold text-slate-900 mb-3 text-sm">Also serving:</p>
+                  <p className="font-bold text-slate-900 mb-3 text-sm">We provide workers’ comp injury treatment in Honolulu, also serving:</p>
                   <div className="flex flex-wrap gap-2 text-xs">
                     <Link to="/acupuncture-waikiki" className="px-2 py-1 bg-slate-100 text-slate-600 rounded-md hover:bg-blue-50">Waikiki</Link>
                     <Link to="/acupuncture-kaimuki" className="px-2 py-1 bg-slate-100 text-slate-600 rounded-md hover:bg-blue-50">Kaimuki</Link>
