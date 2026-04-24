@@ -42,7 +42,7 @@ export default function AutoAccidentInjuryTreatmentHonoluluPage() {
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-12 gap-12">
           
           <article className="md:col-span-8">
-<p className="text-xl text-amber-100">
+<p className="text-xl text-slate-100">
 In Hawaii, your auto accident treatment is typically covered 100% under PIP insurance — including acupuncture and medical massage.
 </p>
             {/* CRO Expectation Module */}
@@ -59,7 +59,14 @@ In Hawaii, your auto accident treatment is typically covered 100% under PIP insu
                 </ul>
               </div>
             </div>
-
+<div className="bg-white border border-slate-200 rounded-xl p-6 my-8 shadow-sm">
+  <p className="font-bold text-slate-900 mb-2">Good News:</p>
+  <ul className="text-slate-700 space-y-1">
+    <li>✔ No out-of-pocket cost in most cases</li>
+    <li>✔ No referral needed to start treatment</li>
+    <li>✔ We handle insurance paperwork for you</li>
+  </ul>
+</div>
             <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
               A motor vehicle accident causes extreme physical trauma to the body, even at low speeds. The intense force throws your spine out of alignment, tears micro-fascia, and locks your muscles in a defensive spasm. At AcuTherapy Clinics, our specialized <strong>Auto Accident Injury Treatment in Honolulu</strong> is designed to rapidly reduce acute inflammation, stop chronic whiplash pain, and prevent scar tissue from permanently restricting your mobility. 
             </p>
