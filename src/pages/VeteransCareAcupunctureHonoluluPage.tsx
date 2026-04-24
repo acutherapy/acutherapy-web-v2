@@ -110,8 +110,8 @@ export default function VeteransCareAcupunctureHonoluluPage() {
                             Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
                         </div>
                     </div>
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Veterans Pain Relief in Honolulu – VA Community Care Acupuncture for Faster Recovery</h1>
-                    <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">We work with VA Community Care to provide acupuncture and therapy for veterans dealing with chronic pain, injury, and stress.</p>
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Veterans Pain Relief in Honolulu – VA Community Care Acupuncture</h1>
+                    <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Working with VA Community Care to provide coordinated treatment and faster recovery for veterans.</p>
                 </div>
             </section>
 
@@ -120,6 +120,14 @@ export default function VeteransCareAcupunctureHonoluluPage() {
                 <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-12 gap-12">
 
                     <article className="md:col-span-8">
+                        <div className="bg-white border border-slate-200 rounded-xl p-6 my-10 shadow-sm">
+  <h3 className="font-bold text-slate-900 mb-3">How VA Community Care Works</h3>
+  <ol className="list-decimal pl-5 space-y-2 text-slate-700">
+    <li>Get referral from your VA provider</li>
+    <li>We coordinate your care plan</li>
+    <li>Receive treatment covered through VA Community Care</li>
+  </ol>
+</div>
 
                                     {/* CRO Expectation Module */}
             <div className="bg-slate-50 border-l-4 border-blue-600 p-6 rounded-r-xl mb-10 shadow-sm mt-8">
@@ -225,8 +233,8 @@ export default function VeteransCareAcupunctureHonoluluPage() {
 <div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
 <h2 className="text-3xl font-bold text-blue-900 mb-4">Ready to find relief?</h2>
 <p className="text-lg text-blue-700 mb-8">Stop living in discomfort. Located right here in Honolulu, we are here to help you restore your well-being.</p>
-<Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Start Your VA Pain Relief Plan Today</Button></Link>
-<p className="text-blue-600 text-sm mt-3 opacity-80 font-medium tracking-wide">Takes less than 60 seconds</p>
+<Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Start Your VA Treatment Plan</Button></Link>
+<p className="text-blue-600 text-sm mt-3 opacity-80 font-medium tracking-wide">VA Community Care Referrals Accepted</p>
 <p className="text-red-500 font-bold mt-4">The longer you wait, the harder it is to fix.</p>
 </div>
 
@@ -238,11 +246,11 @@ export default function VeteransCareAcupunctureHonoluluPage() {
                             <div className="bg-blue-600 h-2 w-full"></div>
                             <CardContent className="p-8 text-center">
                                 <h3 className="text-2xl font-bold text-slate-900 mb-2">Book Your Visit</h3>
-                                <p className="text-slate-600 mb-8 text-sm">Many veterans live with chronic pain for years — but effective treatment is available through VA-supported care.</p>
+                                <p className="text-slate-600 mb-8 text-sm">We help coordinate your VA Community Care process — no confusion, no hassle.</p>
                                 <div className="flex flex-col gap-4">
                                     <Link to="/book-appointment">
                                         <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
-                                            <Calendar className="mr-2" /> Start Your Plan Now
+                                            <Calendar className="mr-2" /> Start Your VA Treatment Plan
                                         </Button>
                                     </Link>
                                     <Button variant="outline" className="w-full h-14 text-lg border-2 border-slate-200" onClick={() => window.location.href = 'tel:+18085287177'}>
