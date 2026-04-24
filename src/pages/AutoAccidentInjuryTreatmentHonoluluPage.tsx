@@ -71,10 +71,10 @@ In Hawaii, your auto accident treatment is typically covered 100% under PIP insu
               A motor vehicle accident causes extreme physical trauma to the body, even at low speeds. The intense force throws your spine out of alignment, tears micro-fascia, and locks your muscles in a defensive spasm. At AcuTherapy Clinics, our specialized <strong>Auto Accident Injury Treatment in Honolulu</strong> is designed to rapidly reduce acute inflammation, stop chronic whiplash pain, and prevent scar tissue from permanently restricting your mobility. 
             </p>
 
-            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Understanding Whiplash & Seatbelt Trauma</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Whiplash & Back Pain After Auto Accident</h2>
 
 <div className="bg-amber-50 border border-amber-200 p-6 rounded-xl my-8">
-  <h3 className="font-bold text-amber-900 mb-2 text-xl">Hawaii No-Fault PIP Insurance</h3>
+  <h2 className="font-bold text-amber-900 mb-2 text-xl">Insurance-Covered Treatment (PIP Hawaii)</h2>
   <p className="text-amber-800 font-bold">Auto accident treatments may be fully covered depending on your exact policy. We handle all the paperwork for you!</p>
 </div>
 
@@ -82,7 +82,7 @@ In Hawaii, your auto accident treatment is typically covered 100% under PIP insu
               The most common consequence of a rear-end collision or major car crash is whiplash—a severe hyperextension of the complex neck ligaments. Symptoms like excruciating neck stiffness, radiating shoulder pain, post-traumatic tension headaches, and lower back contusions from seatbelt lockdown rarely show up fully on the first day. It often takes 48-72 hours for the severe neuro-inflammation to peak, leaving victims in immobilizing pain for weeks or months.
             </p>
 
-            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Our Three Core Treatments Help</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Car Accident Injury Treatment in Honolulu, Our Three Core Treatments Help</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
               When standard painkillers wear off, the muscular spasms remain. We leverage our core modalities to directly intercept the body's trauma response. <strong>Acupuncture</strong> serves as a neuro-modulating circuit breaker, targeting the traumatized cervical spine and lumbar regions to force tense, knotted muscle fibers to release their vice-grip silently and safely. This is systematically paired with <strong>Medical Massage</strong> to manually break down accumulating scar tissue and whiplash fascial adhesions. Finally, <strong>Fire Cupping Therapy</strong> provides aggressive decompression, flooding the damaged ligament tissues with fresh, highly oxygenated blood crucial for cellular repair and hematoma (bruising) breakdown.
             </p>
