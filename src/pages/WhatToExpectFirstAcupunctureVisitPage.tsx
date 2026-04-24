@@ -207,10 +207,12 @@ export default function WhatToExpectFirstAcupunctureVisitPage() {
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-12 gap-12">
           
           <article className="md:col-span-8">
-            Nervous about your first acupuncture visit? Wondering if it will hurt or feel uncomfortable?
+             <p className="text-[18px] font-semibold text-slate-800 mb-6 leading-relaxed"> Nervous about your first acupuncture visit? Wondering if it will hurt or feel uncomfortable?
 
 You're not alone — most first-time patients feel the same way before their first session.
             Acupuncture needles are extremely thin — much thinner than injection needles — and most people feel little to no pain during treatment.
+            </p>
+               
             <h1 className="text-[32px] md:text-[40px] font-bold text-slate-900 mb-6 leading-tight">
               What to Expect at Your First Acupuncture Visit in Honolulu
             </h1>
