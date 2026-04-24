@@ -118,7 +118,9 @@ export default function WorkersCompAcupunctureHonoluluPage() {
       {/* Main Content */}
       <section className="py-16 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-12 gap-12">
-<p className="text-xl text-100">
+          
+          <article className="md:col-span-8">
+            <p className="text-xl text-100">
 If you have a workers’ compensation claim in Hawaii, your treatment is typically covered — including acupuncture and medical therapy.
 </p>
           <div className="bg-white border border-slate-200 rounded-xl p-6 my-8 shadow-sm">
@@ -129,8 +131,6 @@ If you have a workers’ compensation claim in Hawaii, your treatment is typical
     <li>✔ No need to deal with paperwork — we handle it</li>
   </ul>
 </div>
-          
-          <article className="md:col-span-8">
 
                         {/* CRO Expectation Module */}
             <div className="bg-slate-50 border-l-4 border-blue-600 p-6 rounded-r-xl mb-10 shadow-sm mt-8">
