@@ -107,7 +107,7 @@ export default function VeteransCareAcupunctureHonoluluPage() {
                             <ShieldCheck size={16} /> <span>Trusted VA Community Care Provider</span>
                         </div>
                         <div className="inline-flex items-center px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-200 border border-emerald-500/30 font-medium text-sm backdrop-blur-sm">
-                            Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
+                            Also Accepting HMSA, UHA, HMAA, Kaiser, Medicare UHC & More
                         </div>
                     </div>
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Veterans Pain Relief in Honolulu – VA Community Care Acupuncture</h1>
