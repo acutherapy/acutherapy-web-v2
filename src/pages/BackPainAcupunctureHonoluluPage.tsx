@@ -109,8 +109,8 @@ export default function BackPainAcupunctureHonoluluPage() {
               Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
             </div>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Acupuncture for Back Pain Honolulu</h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Avoid surgery and heavy medication. Clinically proven back pain treatments utilizing advanced meridian therapy.</p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Back Pain Acupuncture in Honolulu – Fast Relief for Sciatica, Disc & Chronic Pain</h1>
+          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Still dealing with back pain every day? Sitting hurts, standing hurts, and nothing seems to fix it.</p>
         </div>
       </section>
 
@@ -213,8 +213,8 @@ If you are enduring daily lower back pain, it can severely limit your life. Back
   </p>
 </div>
               <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
-                <h3 className="text-xl font-bold text-slate-900 mb-2 flex items-center gap-2"><HelpCircle className="text-blue-500" size={20}/> Can acupuncture help a herniated disc?</h3>
-                <p className="text-slate-600">Yes. While it does not physically push the disc back into place, acupuncture brilliantly decreases the surrounding nerve inflammation and stops the intense localized muscle spasms that make disc herniations so painful.</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-2 flex items-center gap-2"><HelpCircle className="text-blue-500" size={20}/> Why Patients Choose Acupuncture for Back Pain Relief</h3>
+                <p className="text-slate-600"> We are not a "spa" acupuncture clinic. We are a results-driven, clinical medical facility. When you step into our clinic, you are receiving the highest tier of diagnostic precision and treatment efficacy available in Hawaii.</p>
               </div>
               <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
                 <h3 className="text-xl font-bold text-slate-900 mb-2 flex items-center gap-2"><HelpCircle className="text-blue-500" size={20}/> Do you accept No-Fault auto insurance?</h3>
@@ -250,12 +250,17 @@ If you are enduring daily lower back pain, it can severely limit your life. Back
             </div>
 
           
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Acupuncture Helps</h2>
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What conditions can Acupuncture Helps?</h2>
 <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
 <li><strong>Targeted Decompression:</strong> Releases deep tension in the multifidus and erector spinae muscles.</li>
 <li><strong>Disc Healing:</strong> Enhances blood circulation to the lumbosacral region, reducing nerve compression.</li>
 <li>Office workers with lower back stiffness from sitting.</li>
 <li>Individuals with a history of herniated discs or heavy lifting injuries.</li>
+<li>Lower back pain</li>
+<li>Sciatica (radiating leg pain)</li>
+<li>Herniated disc</li>
+<li>Chronic stiffness</li>
+<li>Muscle spasms</li>
 </ul>
 
 <div className="bg-blue-50/50 border border-blue-100 border-l-4 border-l-blue-500 p-4 rounded-xl text-slate-800 font-medium my-6 shadow-sm">
@@ -265,7 +270,7 @@ If you are enduring daily lower back pain, it can severely limit your life. Back
   </p>
 </div>
 <div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
-<h2 className="text-3xl font-bold text-blue-900 mb-4">Ready to find relief?</h2>
+<h2 className="text-3xl font-bold text-blue-900 mb-4">Acupuncture for Back Pain in Honolulu</h2>
 <p className="text-lg text-blue-700 mb-8">Stop living in discomfort. Located right here in Honolulu, we are here to help you restore your well-being.</p>
 <Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Get Your Personalized Recovery Plan</Button></Link>
 <p className="text-blue-600 text-sm mt-3 opacity-80 font-medium tracking-wide">Takes less than 60 seconds</p>
@@ -280,7 +285,7 @@ If you are enduring daily lower back pain, it can severely limit your life. Back
               <div className="bg-blue-600 h-2 w-full"></div>
               <CardContent className="p-8 text-center">
                 <h3 className="text-2xl font-bold text-slate-900 mb-2">Book Your Visit</h3>
-                <p className="text-slate-600 mb-8 text-sm">Bridge the gap to a pain-free life today. Located in Honolulu.</p>
+                <p className="text-slate-600 mb-8 text-sm">Many patients experience noticeable pain reduction within the first few sessions.</p>
                 <div className="flex flex-col gap-4">
                   <Link to="/book-appointment">
                     <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
