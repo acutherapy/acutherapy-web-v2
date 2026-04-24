@@ -158,7 +158,7 @@ If you have a workers’ compensation claim in Hawaii, your treatment is typical
 
             <div className="bg-emerald-50 rounded-2xl p-8 mb-12 border border-emerald-100 shadow-sm relative overflow-hidden">
               <div className="absolute top-0 right-0 w-3 h-full bg-emerald-500"></div>
-              <h2 className="text-2xl font-extrabold text-slate-900 mb-6">Why Choose AcuTherapy for Your Recovery?</h2>
+              <h2 className="text-2xl font-extrabold text-slate-900 mb-6">Workers’ Compensation Injury Treatment in Honolulu</h2>
               <ul className="space-y-6">
                 <li className="flex items-start">
                   <ShieldCheck className="text-emerald-600 mr-4 h-7 w-7 flex-shrink-0 mt-0.5" />
@@ -187,14 +187,14 @@ If you have a workers’ compensation claim in Hawaii, your treatment is typical
               </ul>
             </div>
 
-            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">The Science of Treating Workers' Comp Injuries with Acupuncture</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Get Back to Work Faster with Acupuncture</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
               A workplace injury is often the result of trapped inflammation, peripheral nerve irritation, or deep myofascial tension that standard treatments fail to reach. Our specific needle protocols for workers' comp injury treatment stimulate local vasodilation—massively increasing blood flow to oxygen-starved tissues.
             </p>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
               Furthermore, precise stimulation signals the central nervous system to release natural endorphins and opioid-like neuropeptides, dramatically downregulating the pain signals before they reach the brain. We ensure high-quality care is accessible across Hawaii.
             </p>
-            <h3 className="text-2xl font-bold text-slate-900 mt-10 mb-6 border-b pb-2">Our Three Core Treatment Pillars</h3>
+            <h3 className="text-2xl font-bold text-slate-900 mt-10 mb-6 border-b pb-2">Our Three Core Treatment Pillars for Common Work Injuries</h3>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
               We don't use a "one size fits all" approach. Your treatment for a workers' comp injury integrates our three core modalities for optimal structural recovery:
             </p>
@@ -268,7 +268,7 @@ If you have a workers’ compensation claim in Hawaii, your treatment is typical
 <div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
 <h2 className="text-3xl font-bold text-blue-900 mb-4">Ready to find relief?</h2>
 <p className="text-lg text-blue-700 mb-8">Stop living in discomfort. Located right here in Honolulu, we are here to help you restore your well-being.</p>
-<Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Get Your Personalized Recovery Plan</Button></Link>
+<Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Start Your Workers’ Comp Recovery Today</Button></Link>
 <p className="text-blue-600 text-sm mt-3 opacity-80 font-medium tracking-wide">Takes less than 60 seconds</p>
 <p className="text-red-500 font-bold mt-4">The longer you wait, the harder it is to fix.</p>
 </div>
@@ -281,15 +281,15 @@ If you have a workers’ compensation claim in Hawaii, your treatment is typical
               <div className="bg-blue-600 h-2 w-full"></div>
               <CardContent className="p-8 text-center">
                 <h3 className="text-2xl font-bold text-slate-900 mb-2">Book Your Visit</h3>
-                <p className="text-slate-600 mb-8 text-sm">Bridge the gap to a pain-free life today.</p>
+                <p className="text-slate-600 mb-8 text-sm">Delaying treatment after a work injury can slow recovery and affect your return-to-work timeline.</p>
                 <div className="flex flex-col gap-4">
                   <Link to="/book-appointment">
                     <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
-                      <Calendar className="mr-2" /> Schedule Online
+                      <Calendar className="mr-2" /> Start Your Workers’ Comp Recovery Today
                     </Button>
                   </Link>
                   <Button variant="outline" className="w-full h-14 text-lg border-2 border-slate-200" onClick={() => window.location.href = 'tel:+18085287177'}>
-                    <PhoneCall className="mr-2 h-5 w-5 text-blue-600" /> (808) 528-7177
+                    <PhoneCall className="mr-2 h-5 w-5 text-blue-600" /> Call Now (808) 528-7177
                   </Button>
                 </div>
 
