@@ -111,7 +111,7 @@ export default function WorkersCompAcupunctureHonoluluPage() {
             </div>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Workers’ Comp Injury Treatment in Honolulu – Covered Care to Get You Back to Work Faster</h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Medical-grade treatments customized for lasting relief and recovery across all of Hawaii.</p>
+          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Working with Your Physician & Case Manager to Get You Back to Work Faster</p>
         </div>
       </section>
 
