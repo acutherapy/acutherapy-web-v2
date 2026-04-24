@@ -216,7 +216,7 @@ You're not alone — most first-time patients feel the same way before their fir
             </h1>
 
             <p className="text-[18px] font-semibold text-slate-800 mb-6 leading-relaxed">
-              <strong>Your first acupuncture visit in Honolulu typically includes a consultation, personalized assessment, and a gentle treatment session. Most patients are surprised by how comfortable and relaxing the experience feels.</strong>
+              <strong>Your first acupuncture visit in Honolulu typically includes a consultation, personalized assessment, and a gentle treatment session. Most patients describe the experience as relaxing, calming, and surprisingly comfortable. Your first visit usually takes about 60–90 minutes, with the actual treatment lasting around 15–30 minutes.</strong>
             </p>
 
             <figure className="mb-8">
@@ -478,11 +478,11 @@ You're not alone — most first-time patients feel the same way before their fir
               <div className="bg-blue-600 h-2 w-full"></div>
               <CardContent className="p-8 text-center">
                 <h3 className="text-2xl font-bold text-slate-900 mb-2">Book Your Visit</h3>
-                <p className="text-slate-600 mb-8 text-sm">Bridge the gap to a pain-free life today.</p>
+                <p className="text-slate-600 mb-8 text-sm">Ready to Try Acupuncture for the First Time? Our team will guide you step by step and make sure you feel comfortable from start to finish.</p>
                 <div className="flex flex-col gap-4">
                   <Link to="/book-appointment">
                     <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
-                      <Calendar className="mr-2" /> Schedule Online
+                      <Calendar className="mr-2" /> Book Your First Appointment
                     </Button>
                   </Link>
                   <Button variant="outline" className="w-full h-14 text-lg border-2 border-slate-200" onClick={() => window.location.href='tel:+18085287177'}>
