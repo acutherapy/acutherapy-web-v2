@@ -109,8 +109,8 @@ export default function SciaticaTreatmentHonoluluPage() {
               Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
             </div>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Acupuncture for Sciatica Honolulu</h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Stop the shooting, burning leg pain naturally. Advanced acupuncture protocols for sciatic nerve decompression.</p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Sciatica Treatment in Honolulu – Fast Relief for Leg Pain, Numbness & Nerve Pain</h1>
+          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Sharp pain down your leg? Numbness, tingling, or burning that won’t go away?</p>
         </div>
       </section>
 
@@ -119,6 +119,13 @@ export default function SciaticaTreatmentHonoluluPage() {
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-12 gap-12">
           
           <article className="md:col-span-8">
+            <ul>
+<li>Lower back pain radiating to leg</li>
+<li>Sharp shooting leg pain</li>
+<li>Numbness or tingling</li>
+<li>Burning sensation</li>
+<li>Weakness in leg or foot</li>
+</ul>
                         {/* CRO Expectation Module */}
             <div className="bg-slate-50 border-l-4 border-blue-600 p-6 rounded-r-xl mb-10 shadow-sm mt-8">
               <p className="text-lg text-slate-900 font-semibold mb-1">Some patients notice early changes within a few sessions.</p>
@@ -150,7 +157,7 @@ export default function SciaticaTreatmentHonoluluPage() {
   </p>
 </div>
 
-            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Our Three Core Pillars for Sciatica Relief</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Acupuncture Helps Sciatica?</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
               We leverage our three structural modalities to attack sciatica from every angle:
             </p>
@@ -160,7 +167,7 @@ export default function SciaticaTreatmentHonoluluPage() {
               <li><strong>Fire Cupping Therapy:</strong> Pulling stagnant blood and chronic inflammatory fluid out of the deep gluteal layers, creating rapid decompression for the trapped nerve.</li>
             </ul>
 
-            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect & Real Patient Results</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Sciatica Pain Relief in Honolulu, What to Expect & Real Patient Results</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
               Dr. Cai will evaluate your range of motion and locate the exact point of nerve impingement. Depending on your symptoms, we may also utilize highly effective Medical Cupping Therapy or Medical Massage to assist the acupuncture in breaking up deep fascial restrictions.
             </p>
@@ -176,7 +183,7 @@ export default function SciaticaTreatmentHonoluluPage() {
   </p>
 </div>
 
-            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Who Is This For?</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Who Is Nerve Pain & Pinched Nerve Treatment For?</h2>
             <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
               <li><strong>Severe Leg Radiculopathy:</strong> Pain, numbness, or tingling shooting down one leg.</li>
               <li><strong>Piriformis Syndrome sufferers:</strong> Intense pain deep in the buttock muscle.</li>
@@ -281,7 +288,7 @@ export default function SciaticaTreatmentHonoluluPage() {
               <div className="bg-blue-600 h-2 w-full"></div>
               <CardContent className="p-8 text-center">
                 <h3 className="text-2xl font-bold text-slate-900 mb-2">Book Your Visit</h3>
-                <p className="text-slate-600 mb-8 text-sm">Bridge the gap to a pain-free life today. Located in Honolulu.</p>
+                <p className="text-slate-600 mb-8 text-sm">Many patients experience reduced sciatic nerve pain within the first few treatments.</p>
                 <div className="flex flex-col gap-4">
                   <Link to="/book-appointment">
                     <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
