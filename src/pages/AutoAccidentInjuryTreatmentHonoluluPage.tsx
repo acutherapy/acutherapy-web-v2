@@ -9,7 +9,7 @@ export default function AutoAccidentInjuryTreatmentHonoluluPage() {
     <>
       <Helmet>
         <link rel="canonical" href="https://acutherapy.com/auto-accident-injury-honolulu" />
-        <title>Auto Accident Injury Treatment Honolulu | 100% PIP Coverage | AcuTherapy</title>
+        <title>Auto Accident Injury Treatment Honolulu | 100% PIP Coverage | AcuTherapy Clinics</title>
         <meta name="description" content="Been in a car crash? Get expert auto accident injury treatment in Honolulu. 100% covered by Hawaii No-Fault PIP insurance. We treat whiplash, back pain, and concussions." />
       </Helmet>
 
@@ -32,7 +32,7 @@ export default function AutoAccidentInjuryTreatmentHonoluluPage() {
               Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
             </div>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Auto Accident Injury Treatment in Honolulu</h1>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Auto Accident Injury Treatment in Honolulu – 100% Covered Care (No Out-of-Pocket)</h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Recover safely from whiplash, neck pain, and back pain with zero out-of-pocket costs using your Hawaii auto insurance.</p>
         </div>
       </section>
@@ -42,7 +42,9 @@ export default function AutoAccidentInjuryTreatmentHonoluluPage() {
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-12 gap-12">
           
           <article className="md:col-span-8">
-
+<p className="text-xl text-blue-100">
+In Hawaii, your auto accident treatment is typically covered 100% under PIP insurance — including acupuncture and medical massage.
+</p>
             {/* CRO Expectation Module */}
             <div className="bg-slate-50 border-l-4 border-blue-600 p-6 rounded-r-xl mb-10 shadow-sm">
               <p className="text-lg text-slate-900 font-semibold mb-1">Some patients notice early changes within a few sessions.</p>
