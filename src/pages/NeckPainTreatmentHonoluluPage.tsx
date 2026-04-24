@@ -9,7 +9,7 @@ export default function NeckPainTreatmentHonoluluPage() {
     <>
       <Helmet>
         <link rel="canonical" href="https://acutherapy.com/neck-pain-treatment-honolulu" />
-        <title>Neck Pain Treatment Honolulu | Whiplash & Stiffness | AcuTherapy</title>
+        <title>Neck Pain Treatment Honolulu | Whiplash & Stiffness | AcuTherapy Clinics</title>
         <meta name="description" content="Suffering from severe neck pain, whiplash, or tension headaches in Honolulu? Break the cycle of stiffness with our expert medical acupuncture treatments." />
       
         <script type="application/ld+json">
@@ -102,8 +102,8 @@ export default function NeckPainTreatmentHonoluluPage() {
               Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
             </div>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Neck Pain Treatment in Honolulu</h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Turn your head without wincing. Advanced medical acupuncture protocols to melt away neck tension and heal cervical injuries.</p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Neck Pain Treatment in Honolulu – Relief for Stiff Neck, Shoulder Tension & Pinched Nerves</h1>
+          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Neck stiffness from long hours at a desk? Pain when turning your head or looking down at your phone?</p>
         </div>
       </section>
 
@@ -112,6 +112,13 @@ export default function NeckPainTreatmentHonoluluPage() {
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-12 gap-12">
           
           <article className="md:col-span-8">
+            <ul>
+<li>Neck stiffness and limited movement</li>
+<li>Pain when turning your head</li>
+<li>Shoulder and upper back tension</li>
+<li>Headaches related to neck tightness</li>
+<li>Numbness or tingling in arms</li>
+</ul>
                         {/* CRO Expectation Module */}
             <div className="bg-slate-50 border-l-4 border-blue-600 p-6 rounded-r-xl mb-10 shadow-sm mt-8">
               <p className="text-lg text-slate-900 font-semibold mb-1">Some patients notice early changes within a few sessions.</p>
@@ -139,7 +146,7 @@ export default function NeckPainTreatmentHonoluluPage() {
               Additionally, acute injuries like auto accidents cause aggressive whiplash, tearing the delicate micro-fascia of the neck. When the body attempts to heal this trauma, it often creates disorganized, tough scar tissue that aggressively limits your range of motion long after the initial crash.
             </p>
 
-            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Our Three Core Pillars Provide Relief</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Neck Pain & Stiffness Relief in Honolulu, How Our Three Core Pillars Provide Relief</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
               We leverage our three structural modalities to attack chronic neck stiffness and cervical radiculopathy from every angle:
             </p>
@@ -151,7 +158,7 @@ export default function NeckPainTreatmentHonoluluPage() {
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect & Real Patient Results</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
-              Dr. David Cai utilizes over 30 years of clWe focus on key points at the base of the skull and upper back. Within 20 minutes, patients typically report a significant increase in their range of motion and a feeling of lightness in the head. Expect a quiet, deeply relaxing 30-minute session.
+              Dr. David Cai utilizes over 30 years of clWe focus on key points at the base of the skull and upper back. Within 20 minutes, patients typically report a significant increase in their range of motion and a feeling of lightness in the head. Expect a quiet, deeply relaxing 30-minute session. Please note: Massage may help temporarily — but neck pain often returns. Acupuncture works deeper by releasing muscle tension and improving nerve function.
             </p>
             <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg my-8">
               <p className="text-lg text-slate-800 italic font-medium">
@@ -247,8 +254,8 @@ export default function NeckPainTreatmentHonoluluPage() {
 
 <div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
 <h2 className="text-3xl font-bold text-blue-900 mb-4">Ready to find relief?</h2>
-<p className="text-lg text-blue-700 mb-8">Stop living in discomfort. Located right here in Honolulu, we are here to help you restore your well-being.</p>
-<Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Get Your Personalized Recovery Plan</Button></Link>
+<p className="text-lg text-blue-700 mb-8">Neck pain can worsen over time if left untreated — early care helps prevent chronic issues. Stop living in discomfort. Located right here in Honolulu, we are here to help you restore your well-being.</p>
+<Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Fix Your Neck Pain – Book Now</Button></Link>
 <p className="text-blue-600 text-sm mt-3 opacity-80 font-medium tracking-wide">Takes less than 60 seconds</p>
 <p className="text-red-500 font-bold mt-4">The longer you wait, the harder it is to fix.</p>
 </div>
@@ -261,11 +268,11 @@ export default function NeckPainTreatmentHonoluluPage() {
               <div className="bg-blue-600 h-2 w-full"></div>
               <CardContent className="p-8 text-center">
                 <h3 className="text-2xl font-bold text-slate-900 mb-2">Book Your Visit</h3>
-                <p className="text-slate-600 mb-8 text-sm">Bridge the gap to a pain-free life today. Located in Honolulu.</p>
+                <p className="text-slate-600 mb-8 text-sm">Many patients experience improved mobility and reduced neck tension within just a few sessions.</p>
                 <div className="flex flex-col gap-4">
                   <Link to="/book-appointment">
                     <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
-                      <Calendar className="mr-2" /> Schedule Online
+                      <Calendar className="mr-2" /> Fix Your Neck Pain – Book Now
                     </Button>
                   </Link>
                   <Button variant="outline" className="w-full h-14 text-lg border-2 border-slate-200" onClick={() => window.location.href='tel:+18085287177'}>
