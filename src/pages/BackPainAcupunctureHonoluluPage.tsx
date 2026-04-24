@@ -272,9 +272,9 @@ If you are enduring daily lower back pain, it can severely limit your life. Back
 <div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
 <h2 className="text-3xl font-bold text-blue-900 mb-4">Acupuncture for Back Pain in Honolulu</h2>
 <p className="text-lg text-blue-700 mb-8">Stop living in discomfort. Located right here in Honolulu, we are here to help you restore your well-being.</p>
-<Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Get Your Personalized Recovery Plan</Button></Link>
+<Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Get Relief from Back Pain – Book Now</Button></Link>
 <p className="text-blue-600 text-sm mt-3 opacity-80 font-medium tracking-wide">Takes less than 60 seconds</p>
-<p className="text-red-500 font-bold mt-4">The longer you wait, the harder it is to fix.</p>
+<p className="text-red-500 font-bold mt-4">Delaying treatment can make back pain worse and harder to treat over time.</p>
 </div>
 
 </article>
@@ -289,7 +289,7 @@ If you are enduring daily lower back pain, it can severely limit your life. Back
                 <div className="flex flex-col gap-4">
                   <Link to="/book-appointment">
                     <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
-                      <Calendar className="mr-2" /> Schedule Online
+                      <Calendar className="mr-2" /> Get Relief from Back Pain Now
                     </Button>
                   </Link>
                   <Button variant="outline" className="w-full h-14 text-lg border-2 border-slate-200" onClick={() => window.location.href='tel:+18085287177'}>
