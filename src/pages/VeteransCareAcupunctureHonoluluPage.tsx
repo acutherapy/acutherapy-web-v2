@@ -225,7 +225,7 @@ export default function VeteransCareAcupunctureHonoluluPage() {
 <div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
 <h2 className="text-3xl font-bold text-blue-900 mb-4">Ready to find relief?</h2>
 <p className="text-lg text-blue-700 mb-8">Stop living in discomfort. Located right here in Honolulu, we are here to help you restore your well-being.</p>
-<Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Get Your Personalized Recovery Plan</Button></Link>
+<Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Start Your VA Pain Relief Plan Today</Button></Link>
 <p className="text-blue-600 text-sm mt-3 opacity-80 font-medium tracking-wide">Takes less than 60 seconds</p>
 <p className="text-red-500 font-bold mt-4">The longer you wait, the harder it is to fix.</p>
 </div>
@@ -238,15 +238,15 @@ export default function VeteransCareAcupunctureHonoluluPage() {
                             <div className="bg-blue-600 h-2 w-full"></div>
                             <CardContent className="p-8 text-center">
                                 <h3 className="text-2xl font-bold text-slate-900 mb-2">Book Your Visit</h3>
-                                <p className="text-slate-600 mb-8 text-sm">Bridge the gap to a pain-free life today.</p>
+                                <p className="text-slate-600 mb-8 text-sm">Many veterans live with chronic pain for years — but effective treatment is available through VA-supported care.</p>
                                 <div className="flex flex-col gap-4">
                                     <Link to="/book-appointment">
                                         <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
-                                            <Calendar className="mr-2" /> Schedule Online
+                                            <Calendar className="mr-2" /> Start Your Plan Now
                                         </Button>
                                     </Link>
                                     <Button variant="outline" className="w-full h-14 text-lg border-2 border-slate-200" onClick={() => window.location.href = 'tel:+18085287177'}>
-                                        <PhoneCall className="mr-2 h-5 w-5 text-blue-600" /> (808) 528-7177
+                                        <PhoneCall className="mr-2 h-5 w-5 text-blue-600" /> Call Now (808) 528-7177
                                     </Button>
                                 </div>
 
