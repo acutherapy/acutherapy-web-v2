@@ -110,7 +110,7 @@ export default function WorkersCompAcupunctureHonoluluPage() {
               Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
             </div>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Workers' Comp Auto & Injury Treatment in Hawaii</h1>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Workers’ Comp Injury Treatment in Honolulu – Covered Care to Get You Back to Work Faster</h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Medical-grade treatments customized for lasting relief and recovery across all of Hawaii.</p>
         </div>
       </section>
@@ -118,7 +118,18 @@ export default function WorkersCompAcupunctureHonoluluPage() {
       {/* Main Content */}
       <section className="py-16 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-12 gap-12">
-
+<p className="text-xl text-100">
+If you have a workers’ compensation claim in Hawaii, your treatment is typically covered — including acupuncture and medical therapy.
+</p>
+          <div className="bg-white border border-slate-200 rounded-xl p-6 my-8 shadow-sm">
+  <p className="font-bold text-slate-900 mb-2">Good News for Injured Workers:</p>
+  <ul className="text-slate-700 space-y-1">
+    <li>✔ Treatment is often covered by workers’ compensation</li>
+    <li>✔ We provide documentation for your case manager</li>
+    <li>✔ No need to deal with paperwork — we handle it</li>
+  </ul>
+</div>
+          
           <article className="md:col-span-8">
 
                         {/* CRO Expectation Module */}
