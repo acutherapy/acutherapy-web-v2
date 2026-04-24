@@ -110,8 +110,8 @@ export default function VeteransCareAcupunctureHonoluluPage() {
                             Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
                         </div>
                     </div>
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Veterans Care Acupuncture in Hawaii</h1>
-                    <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Medical-grade treatments customized for lasting relief and recovery for Veterans across all of Hawaii.</p>
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Veterans Pain Relief in Honolulu – VA Community Care Acupuncture for Faster Recovery</h1>
+                    <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">We work with VA Community Care to provide acupuncture and therapy for veterans dealing with chronic pain, injury, and stress.</p>
                 </div>
             </section>
 
@@ -142,9 +142,9 @@ export default function VeteransCareAcupunctureHonoluluPage() {
 
                         <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/50 group mb-12 w-full max-w-3xl mx-auto">
                             <img loading="lazy" src="/images/abdominal-acupuncture.jpg" alt="Veterans Care Acupuncture Hawaii" className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
-                            <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-8 pt-16 text-white text-lg font-medium">Advanced Acupuncture Treatments for Veterans</figcaption>
+                            <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-8 pt-16 text-white text-lg font-medium">Acupuncture for Veterans in Honolulu</figcaption>
                         </div>
-                        <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">The Science of Treating Veterans with Acupuncture</h2>
+                        <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Common Conditions Treated for Veterans</h2>
                         <p className="text-lg text-slate-700 leading-relaxed mb-6">
                             Service-related pain is often the result of trapped inflammation, peripheral nerve irritation, or deep myofascial tension from combat or intense physical training. Our specific needle protocols stimulate local vasodilation—massively increasing blood flow to oxygen-starved tissues. It is also an excellent therapy for managing stress, insomnia, and PTSD.
                         </p>
