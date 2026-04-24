@@ -197,7 +197,7 @@ export default function WhatToExpectFirstAcupunctureVisitPage() {
               <span>Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp &amp; VA</span>
             </div>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">What to Expect at Your First Acupuncture Visit in Honolulu</h1>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">What to Expect at Your First Acupuncture Visit in Honolulu (Is It Painful?)</h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Understanding the process, answering your questions, and creating a personalized treatment approach.</p>
         </div>
       </section>
@@ -207,6 +207,10 @@ export default function WhatToExpectFirstAcupunctureVisitPage() {
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-12 gap-12">
           
           <article className="md:col-span-8">
+            Nervous about your first acupuncture visit? Wondering if it will hurt or feel uncomfortable?
+
+You're not alone — most first-time patients feel the same way before their first session.
+            Acupuncture needles are extremely thin — much thinner than injection needles — and most people feel little to no pain during treatment.
             <h1 className="text-[32px] md:text-[40px] font-bold text-slate-900 mb-6 leading-tight">
               What to Expect at Your First Acupuncture Visit in Honolulu
             </h1>
@@ -242,9 +246,13 @@ export default function WhatToExpectFirstAcupunctureVisitPage() {
               <p>Your first acupuncture visit is not just about treatment—it’s about understanding your body.</p>
               <p>At Acutherapy Clinics in Honolulu, a typical visit includes:</p>
               <ul className="list-disc pl-6 space-y-2 mb-4">
-                <li>A discussion of your symptoms and health history</li>
-                <li>A personalized assessment</li>
-                <li>A treatment session if appropriate</li>
+                Here’s exactly what will happen during your first visit:
+
+<li>1. We talk about your pain and health history</li>  
+<li>2. We create a personalized treatment plan</li>  
+<li>3. You relax comfortably while the treatment works</li>  
+<li>4. Most patients feel calm — many even fall asleep</li>  
+                
               </ul>
               <p className="font-medium text-slate-800">The goal is to create a plan that fits your specific condition rather than applying a standard approach.</p>
             </div>
