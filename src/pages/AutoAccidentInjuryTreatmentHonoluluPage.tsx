@@ -42,7 +42,7 @@ export default function AutoAccidentInjuryTreatmentHonoluluPage() {
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-12 gap-12">
           
           <article className="md:col-span-8">
-<p className="text-xl text-slate-100">
+<p className="text-xl text-100">
 In Hawaii, your auto accident treatment is typically covered 100% under PIP insurance — including acupuncture and medical massage.
 </p>
             {/* CRO Expectation Module */}
