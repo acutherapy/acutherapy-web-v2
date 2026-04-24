@@ -275,9 +275,11 @@ export default function SciaticaTreatmentHonoluluPage() {
 <div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
 <h2 className="text-3xl font-bold text-blue-900 mb-4">Ready to find relief?</h2>
 <p className="text-lg text-blue-700 mb-8">Stop living in discomfort. Located right here in Honolulu, we are here to help you restore your well-being.</p>
-<Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Get Your Personalized Recovery Plan</Button></Link>
+<Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Get Relief from Sciatica – Book Now</Button></Link>
 <p className="text-blue-600 text-sm mt-3 opacity-80 font-medium tracking-wide">Takes less than 60 seconds</p>
-<p className="text-red-500 font-bold mt-4">The longer you wait, the harder it is to fix.</p>
+<p className="text-red-500 font-bold mt-4"><div>
+Sciatica pain often worsens over time if left untreated — early treatment leads to faster recovery.
+</div></p>
 </div>
 
 </article>
@@ -292,7 +294,7 @@ export default function SciaticaTreatmentHonoluluPage() {
                 <div className="flex flex-col gap-4">
                   <Link to="/book-appointment">
                     <Button className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg">
-                      <Calendar className="mr-2" /> Schedule Online
+                      <Calendar className="mr-2" /> Get Relief from Sciatica – Book Now
                     </Button>
                   </Link>
                   <Button variant="outline" className="w-full h-14 text-lg border-2 border-slate-200" onClick={() => window.location.href='tel:+18085287177'}>
@@ -326,8 +328,8 @@ export default function SciaticaTreatmentHonoluluPage() {
                     </div>
                   </div>
                   <div className="mt-6 bg-slate-50 p-4 rounded-lg border border-slate-100">
-                      <p className="font-bold text-slate-900 mb-1 text-sm">Insurance Information</p>
-                      <p className="text-slate-600 text-sm"><strong>Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA.</strong></p>
+                      <p className="font-bold text-slate-900 mb-1 text-sm">Area we services:</p>
+                      <p className="text-slate-600 text-sm"><strong>Serving Honolulu, Waikiki, Kahala, Aiea, Pearl City, Hawaii Kai and more.</strong></p>
                   </div>
                 </div>
               </CardContent>
