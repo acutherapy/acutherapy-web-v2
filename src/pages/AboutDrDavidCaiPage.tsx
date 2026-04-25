@@ -56,6 +56,7 @@ export default function AboutDrDavidCaiPage() {
         
                                 <div className="w-full lg:w-2/3">
                                     <span className="text-blue-600 font-bold uppercase tracking-wider text-sm mb-2 block">Honolulu Acupuncture Specialist & Pain Management Expert</span>
+                                    <a href="/acupuncture-honolulu">Acupuncture Honolulu</a>
                                     <h2 className="text-4xl font-extrabold text-slate-900 mb-6 font-sans tracking-tight">Dr. David Cai</h2>
         
                                     <p className="text-lg text-slate-700 leading-relaxed mb-6 font-medium">
