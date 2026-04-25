@@ -27,8 +27,8 @@ export default function AboutDrDavidCaiPage() {
                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm mb-6 backdrop-blur-sm">
                         <ShieldCheck size={16} /> <span>Trusted Honolulu Pain Clinic</span>
                     </div>
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">About Us</h1>
-                    <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Meet Dr. David Cai and our dedicated medical team in Honolulu.</p>
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight"><h1>Dr. David Cai – Licensed Acupuncturist in Honolulu with 30+ Years Experience</h1></h1>
+                    <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">We work closely with physicians, insurance providers, and case managers to deliver coordinated care for injury recovery and long-term pain relief.</p>
                 </div>
             </section>
 
