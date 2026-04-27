@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Calendar, PhoneCall, MapPin, ShieldCheck, Activity, HelpCircle } from "lucide-react";
+import DoctorProfileCard from '@/components/DoctorProfileCard';
 
 export default function ShoulderPainAcupunctureHonoluluPage() {
   return (
@@ -180,6 +181,8 @@ export default function ShoulderPainAcupunctureHonoluluPage() {
 <p className="text-red-500 font-bold mt-4">The longer you wait, the harder it is to fix.</p>
 </div>
 
+
+<DoctorProfileCard />
 </article>
 
           {/* Sidebar */}

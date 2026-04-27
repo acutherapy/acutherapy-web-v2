@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Calendar, PhoneCall, MapPin, ShieldCheck, Activity, HelpCircle } from "lucide-react";
+import DoctorProfileCard from '@/components/DoctorProfileCard';
 
 export default function BackPainAcupunctureHonoluluPage() {
   return (
@@ -277,6 +278,8 @@ If you are enduring daily lower back pain, it can severely limit your life. Back
 <p className="text-red-500 font-bold mt-4">Delaying treatment can make back pain worse and harder to treat over time.</p>
 </div>
 
+
+<DoctorProfileCard />
 </article>
 
           {/* Sidebar */}

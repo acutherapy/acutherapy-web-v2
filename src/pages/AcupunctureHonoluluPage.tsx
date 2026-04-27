@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Calendar, PhoneCall, MapPin, ShieldCheck, Activity, HelpCircle } from "lucide-react";
+import DoctorProfileCard from '@/components/DoctorProfileCard';
 
 export default function AcupunctureHonoluluPage() {
   return (
@@ -183,7 +184,9 @@ export default function AcupunctureHonoluluPage() {
                 <Link to="/acupuncture-hawaii-kai" className="px-4 py-2 bg-slate-200 text-slate-700 rounded-lg hover:bg-blue-100 transition-colors font-medium">Hawaii Kai</Link>
             </div>
 
-          </article>
+          
+<DoctorProfileCard />
+</article>
 
           {/* Sidebar */}
           <aside className="md:col-span-4 space-y-8">

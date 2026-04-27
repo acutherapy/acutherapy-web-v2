@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Calendar, PhoneCall, MapPin, ShieldCheck, Activity, HelpCircle } from "lucide-react";
+import DoctorProfileCard from '@/components/DoctorProfileCard';
 
 export default function SciaticaTreatmentHonoluluPage() {
   return (
@@ -282,6 +283,8 @@ Sciatica pain often worsens over time if left untreated — early treatment lead
 </div></p>
 </div>
 
+
+<DoctorProfileCard />
 </article>
 
           {/* Sidebar */}
