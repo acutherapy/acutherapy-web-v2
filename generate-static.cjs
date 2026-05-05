@@ -363,7 +363,7 @@ function generateHtml(template, route) {
 
   // Replace <div id="root">...</div> (including any existing content, possibly multiline)
   const rootContent = buildRootContent(route, meta);
-  html = html.replace(/<div id="root">[\s\S]*?<\/div>/, rootContent);
+  html = html.replace(/<div id="root">[\s\S]*?<\/div>(\s*<noscript>[\s\S]*?<\/noscript>)?/, rootContent);
 
   return html;
 }
