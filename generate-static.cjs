@@ -345,9 +345,10 @@ function buildHeadTags(route, meta) {
 }
 
 function buildRootContent(route, meta) {
-  const navLinks = buildNavLinks(route);
-  return `<div id="root"><h1>${meta.h1}</h1><p>${escapeAttr(meta.description)}</p><nav>\n      ${navLinks}\n    </nav></div>`;
-}
+    const navLinks = buildNavLinks(route);
+    return `<div id="root"></div><noscript><h1>${meta.h1}</h1><p>${escapeAttr(meta.description)}</p><nav>\n      ${navLinks}\n
+  </nav></noscript>`;                                                                                                                       
+  }
 
 function generateHtml(template, route) {
   const meta = getPageMeta(route);
