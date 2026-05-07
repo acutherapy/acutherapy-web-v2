@@ -320,6 +320,13 @@ function buildJsonLd(route, description) {
       image: OG_IMAGE,
       priceRange: '$$',
       openingHoursSpecification: hours,
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: '4.9',
+        reviewCount: '59',
+        bestRating: '5',
+        worstRating: '1',
+      },
     },
     {
       '@context': 'https://schema.org',
@@ -341,6 +348,13 @@ function buildJsonLd(route, description) {
       image: OG_IMAGE,
       priceRange: '$$',
       openingHoursSpecification: hours,
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: '4.9',
+        reviewCount: '15',
+        bestRating: '5',
+        worstRating: '1',
+      },
     },
   ];
   return `<script type="application/ld+json">\n${JSON.stringify(schemas, null, 2)}\n</script>`;
