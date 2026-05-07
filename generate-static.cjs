@@ -285,25 +285,65 @@ function escapeAttr(str) {
 }
 
 function buildJsonLd(route, description) {
-  const schema = {
-    '@context': 'https://schema.org',
-    '@type': 'MedicalBusiness',
-    name: 'AcuTherapy Clinics',
-    url: `${BASE_URL}${route}`,
-    description: description,
-    medicalSpecialty: 'Acupuncture',
-    address: {
-      '@type': 'PostalAddress',
-      addressLocality: 'Honolulu',
-      addressRegion: 'HI',
-      postalCode: '96814',
-      addressCountry: 'US',
+  const hours = [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '09:00',
+      closes: '13:00',
     },
-    telephone: '+18082741360',
-    image: OG_IMAGE,
-    priceRange: '$$',
-  };
-  return `<script type="application/ld+json">\n${JSON.stringify(schema, null, 2)}\n</script>`;
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: 'Saturday',
+      opens: '08:00',
+      closes: '12:00',
+    },
+  ];
+  const schemas = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'MedicalBusiness',
+      '@id': `${BASE_URL}/#liliha`,
+      name: 'AcuTherapy Clinics – Liliha (Honolulu)',
+      url: `${BASE_URL}/`,
+      description: description,
+      medicalSpecialty: 'Acupuncture',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '1650 Liliha St, Suite 208',
+        addressLocality: 'Honolulu',
+        addressRegion: 'HI',
+        postalCode: '96817',
+        addressCountry: 'US',
+      },
+      telephone: '+18085287177',
+      image: OG_IMAGE,
+      priceRange: '$$',
+      openingHoursSpecification: hours,
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'MedicalBusiness',
+      '@id': `${BASE_URL}/#aiea`,
+      name: 'AcuTherapy Clinics – Aiea (Pearl City)',
+      url: `${BASE_URL}/aiea-clinic`,
+      description: description,
+      medicalSpecialty: 'Acupuncture',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '98-211 Pali Momi St, Suite 604',
+        addressLocality: 'Aiea',
+        addressRegion: 'HI',
+        postalCode: '96701',
+        addressCountry: 'US',
+      },
+      telephone: '+18084521900',
+      image: OG_IMAGE,
+      priceRange: '$$',
+      openingHoursSpecification: hours,
+    },
+  ];
+  return `<script type="application/ld+json">\n${JSON.stringify(schemas, null, 2)}\n</script>`;
 }
 
 function buildNavLinks(currentRoute) {
