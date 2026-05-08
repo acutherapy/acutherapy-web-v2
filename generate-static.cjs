@@ -8,6 +8,7 @@ const OG_IMAGE = 'https://acutherapy.com/acutherapy-clinic-honolulu.png';
 
 const ALL_ROUTES = [
   '/',
+  '/about',
   '/acupuncture-honolulu',
   '/back-pain-acupuncture-honolulu',
   '/sciatica-acupuncture-honolulu',
@@ -96,6 +97,12 @@ const PAGE_DATA = {
     description:
       'Licensed acupuncture and Traditional Chinese Medicine clinics in Honolulu. Expert treatment for back pain, sciatica, neck pain, sports injuries. Multiple Oahu locations. New patient specials.',
     h1: "AcuTherapy Clinics – Honolulu’s Trusted Acupuncture Provider",
+  },
+  '/about': {
+    title: "About AcuTherapy Clinics | Honolulu's Acupuncture & TCM Practice",
+    description:
+      "Founded in 2014 in Honolulu by Dr. David Cai, AcuTherapy Clinics offers acupuncture, Traditional Chinese Medicine, and the signature CenterGy method across two Oahu locations. Multilingual care, broad insurance accepted.",
+    h1: 'About AcuTherapy Clinics',
   },
   '/acupuncture-honolulu': {
     title: 'Acupuncture in Honolulu, Hawaii | AcuTherapy Clinics',
@@ -284,6 +291,87 @@ function escapeAttr(str) {
     .replace(/>/g, '&gt;');
 }
 
+const PERSON_SCHEMAS = {
+  davidCai: {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    '@id': `${BASE_URL}/#dr-david-cai`,
+    name: 'Dr. David Cai',
+    honorificPrefix: 'Dr.',
+    honorificSuffix: 'O.M.D., L.Ac., L.M.T.',
+    jobTitle: 'Licensed Acupuncturist & Founder',
+    description:
+      "Founder of AcuTherapy Clinics with over 30 years of clinical experience. Graduate of Beijing University of Chinese Medicine (1991). Former research consultant on NIH-funded acupuncture trial at George Washington University Medical Center. Co-developer of the CenterGy (Synergies) precision diagnostic and energy-therapy method. Specializes in pain after injuries, stress, sleep, and women's health.",
+    image: `${BASE_URL}/images/dr-david-cai-portrait.jpg`,
+    url: `${BASE_URL}/dr-david-cai-honolulu-acupuncturist`,
+    worksFor: { '@id': `${BASE_URL}/#liliha` },
+    hasCredential: [
+      { '@type': 'EducationalOccupationalCredential', credentialCategory: 'license', name: 'Hawaii Licensed Massage Therapist', identifier: '7543' },
+      { '@type': 'EducationalOccupationalCredential', credentialCategory: 'license', name: 'Hawaii Licensed Acupuncturist', identifier: 'ACU-1125' },
+      { '@type': 'EducationalOccupationalCredential', credentialCategory: 'certification', name: 'NCCAOM Diplomate of Acupuncture', identifier: '962-1001-522' },
+    ],
+    alumniOf: [
+      { '@type': 'EducationalOrganization', name: 'Beijing University of Chinese Medicine', address: 'Beijing, China' },
+    ],
+    knowsLanguage: ['English', 'Mandarin Chinese'],
+    memberOf: [
+      { '@type': 'Organization', name: 'American Association of Acupuncture and Oriental Medicine' },
+      { '@type': 'Organization', name: 'AcuPlan Hawaii' },
+    ],
+    knowsAbout: [
+      'Acupuncture', 'Traditional Chinese Medicine', 'Pain Management', 'Sports Injuries',
+      'Auto Accident Recovery', "Workers' Compensation Injuries", 'Veterans Care',
+      'Tuina (Therapeutic Massage)', 'Chinese Herbal Medicine', 'CenterGy (Synergies)',
+    ],
+  },
+  lisaLong: {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    '@id': `${BASE_URL}/#lisa-long`,
+    name: 'Lisa Long',
+    honorificSuffix: 'O.M.D., L.M.T.',
+    jobTitle: 'Senior Licensed Massage Therapist',
+    description:
+      'Senior licensed massage therapist at AcuTherapy Clinics with 30+ years of clinical experience in acupuncture and therapeutic massage. Graduate of Jin Hua College of Beijing University of Chinese Medicine. Co-developer of CenterGy (Synergies). Specializes in pain relief, rehabilitation, holistic wellness, weight loss, and facial rejuvenation.',
+    image: `${BASE_URL}/images/doctor-lisa.png`,
+    worksFor: [
+      { '@id': `${BASE_URL}/#liliha` },
+      { '@id': `${BASE_URL}/#aiea` },
+    ],
+    hasCredential: [
+      { '@type': 'EducationalOccupationalCredential', credentialCategory: 'license', name: 'Hawaii Licensed Massage Therapist', identifier: 'MAT-17832' },
+    ],
+    alumniOf: { '@type': 'EducationalOrganization', name: 'Jin Hua College of Beijing University of Chinese Medicine', address: 'Beijing, China' },
+    knowsLanguage: ['English', 'Mandarin Chinese'],
+    knowsAbout: [
+      'Therapeutic Massage', 'Pain Management', 'Rehabilitation', 'Holistic Wellness',
+      'Weight Loss', 'Facial Rejuvenation', 'Tuina', 'CenterGy (Synergies)',
+    ],
+  },
+};
+
+const ABOUT_NOSCRIPT_BODY = `<h1>About AcuTherapy Clinics</h1>
+<h2>Our Mission</h2>
+<p>To relieve pain, restore function, and support whole-person wellness through evidence-based acupuncture, Traditional Chinese Medicine, and our signature CenterGy method &mdash; making expert care accessible to patients across Oahu.</p>
+<h2>Our Story</h2>
+<p>AcuTherapy Clinics was founded in 2014 in Honolulu by Dr. David Cai, an O.M.D., L.Ac., and L.M.T. with more than 30 years of clinical experience. After training at Beijing University of Chinese Medicine and serving as a lecturer at its affiliated hospital, conducting NIH-funded acupuncture research at George Washington University Medical Center, and building practices in Beijing and the Washington DC metropolitan area, Dr. Cai relocated to Hawaii to bring this combined Eastern and Western expertise to Oahu patients.</p>
+<p>Together with Dr. Lisa Long &mdash; a senior licensed massage therapist with over 30 years of training under renowned Chinese medicine physicians &mdash; Dr. Cai developed CenterGy (Synergies), a precision diagnostic and energy-therapy method now central to the clinic&rsquo;s approach. Today AcuTherapy Clinics operates two convenient Oahu locations &mdash; Honolulu (Liliha) and Aiea (Pearl City) &mdash; supported by a multilingual team (English and Mandarin Chinese) accepting a wide range of insurance plans, including Workers&rsquo; Compensation, Auto Accident PIP, Veterans Community Care, UHA, HMAA, AARP, Humana, AshLink, and more.</p>
+<h2>What Sets Us Apart</h2>
+<ul>
+<li><strong>30+ years of clinical expertise</strong> at the founder level, with senior practitioners contributing additional decades of TCM, rehabilitation, and sports-medicine experience.</li>
+<li><strong>Signature CenterGy (Synergies) method</strong> &mdash; a precision diagnostic and energy-therapy system that can be administered with or without needles, accessible to patients with needle anxiety.</li>
+<li><strong>Research-grounded practice</strong> &mdash; founder Dr. David Cai served as a research consultant at George Washington University Medical Center on an NIH-sponsored acupuncture trial.</li>
+<li><strong>Two Oahu locations</strong> &mdash; Honolulu (Liliha) and Aiea (Pearl City) &mdash; with consistent hours and direct phone lines.</li>
+<li><strong>Broad insurance acceptance</strong> &mdash; Workers&rsquo; Compensation, Auto Accident PIP, Veterans Community Care, UHA, HMAA, Medicare Supplement, AARP, Humana, AshLink, and more. Many patients pay $0 out of pocket.</li>
+</ul>
+<h2>Our Locations</h2>
+<ul>
+<li><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</li>
+<li><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</li>
+</ul>
+<h2>Hours</h2>
+<p>Monday&ndash;Friday 9:00 AM &ndash; 1:00 PM | Saturday 9:00 AM &ndash; 12:00 PM | Sunday closed</p>`;
+
 function buildJsonLd(route, description) {
   const hours = [
     {
@@ -357,7 +445,17 @@ function buildJsonLd(route, description) {
       },
     },
   ];
-  return `<script type="application/ld+json">\n${JSON.stringify(schemas, null, 2)}\n</script>`;
+
+  // Append Person schemas based on route
+  const personSchemas = [];
+  if (route === '/dr-david-cai-honolulu-acupuncturist') {
+    personSchemas.push(PERSON_SCHEMAS.davidCai);
+  } else if (route === '/about') {
+    personSchemas.push(PERSON_SCHEMAS.davidCai, PERSON_SCHEMAS.lisaLong);
+  }
+
+  const allSchemas = [...schemas, ...personSchemas];
+  return `<script type="application/ld+json">\n${JSON.stringify(allSchemas, null, 2)}\n</script>`;
 }
 
 function buildNavLinks(currentRoute) {
@@ -400,8 +498,15 @@ function buildHeadTags(route, meta) {
 
 function buildRootContent(route, meta) {
     const navLinks = buildNavLinks(route);
-    return `<div id="root"></div><noscript><h1>${meta.h1}</h1><p>${escapeAttr(meta.description)}</p><nav>\n      ${navLinks}\n
-  </nav></noscript>`;                                                                                                                       
+    if (route === '/about') {
+      return `<div id="root"></div><noscript>${ABOUT_NOSCRIPT_BODY}<nav>
+      ${navLinks}
+  </nav></noscript>`;
+    }
+    return `<div id="root"></div><noscript><h1>${meta.h1}</h1><p>${escapeAttr(meta.description)}</p><nav>
+      ${navLinks}
+
+  </nav></noscript>`;
   }
 
 function generateHtml(template, route) {
