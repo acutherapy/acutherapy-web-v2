@@ -84,7 +84,7 @@ export default function ContactHonoluluAcupuncturePage() {
                   {
                     "@type": "OpeningHoursSpecification",
                     "dayOfWeek": "Saturday",
-                    "opens": "08:00",
+                    "opens": "09:00",
                     "closes": "12:00"
                   }
                 ]
@@ -111,7 +111,7 @@ export default function ContactHonoluluAcupuncturePage() {
                   {
                     "@type": "OpeningHoursSpecification",
                     "dayOfWeek": "Saturday",
-                    "opens": "08:00",
+                    "opens": "09:00",
                     "closes": "12:00"
                   }
                 ]
@@ -381,7 +381,7 @@ export default function ContactHonoluluAcupuncturePage() {
                   </div>
                   <div className="mt-6 bg-slate-50 p-4 rounded-lg">
                     <p className="font-bold text-slate-900 mb-1 text-sm">Hours of Operation</p>
-                    <p className="text-slate-600 text-sm">Mon-Fri: 9am - 1pm, Sat: 8am - 12pm</p>
+                    <p className="text-slate-600 text-sm">Mon-Fri: 9am - 1pm, Sat: 9am - 12pm</p>
                   </div>
                 </div>
 
