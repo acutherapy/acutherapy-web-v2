@@ -372,6 +372,48 @@ const ABOUT_NOSCRIPT_BODY = `<h1>About AcuTherapy Clinics</h1>
 <h2>Hours</h2>
 <p>Monday&ndash;Friday 9:00 AM &ndash; 1:00 PM | Saturday 9:00 AM &ndash; 12:00 PM | Sunday closed</p>`;
 
+const DAVID_NOSCRIPT_BODY = `<h1>Dr. David Cai, O.M.D., L.Ac., L.M.T.</h1>
+<p>Founder of AcuTherapy Clinics in Honolulu and Aiea, Hawaii. Licensed acupuncturist with over 30 years of clinical experience.</p>
+<h2>About Dr. Cai</h2>
+<p>Dr. David Cai graduated in 1991 from the Beijing University of Chinese Medicine with specialties in Chinese Medicine, Tuina (therapeutic massage), and herbal medicine. He later served as a distinguished lecturer and practitioner at the university and its affiliated hospital. Over more than three decades, Dr. Cai has built clinics across Beijing, the Washington DC metropolitan area, and Honolulu.</p>
+<p>From 1999 to 2002, he served as a research consultant at George Washington University Medical Center on an NIH-funded clinical trial of acupuncture for carpal tunnel syndrome (sponsored by NIAMS). He is co-editor of <em>An Illustrated Chinese Materia Medica</em> (Oxford University Press, 2005).</p>
+<h2>Credentials</h2>
+<ul>
+<li>Hawaii Licensed Acupuncturist (License #ACU-1125)</li>
+<li>Hawaii Licensed Massage Therapist (License #7543)</li>
+<li>NCCAOM Diplomate of Acupuncture (#962-1001-522)</li>
+<li>O.M.D. &mdash; Doctor of Oriental Medicine, Beijing University of Chinese Medicine, 1991</li>
+<li>Member, American Association of Acupuncture and Oriental Medicine (AAAOM)</li>
+<li>Member, AcuPlan Hawaii</li>
+</ul>
+<h2>The CenterGy (Synergies) Method</h2>
+<p>Together with Dr. Lisa Long, Dr. Cai co-developed <strong>CenterGy (Synergies)</strong> &mdash; the clinic&rsquo;s signature precision-diagnostic and energy-therapy approach. CenterGy combines precision diagnostics with energy techniques to define a comprehensive approach to healing the body, mind, and spirit.</p>
+<p>As an injury specialist, Dr. Cai has developed special techniques to localize meridian acupuncture points precisely. A defining feature of CenterGy: it can be administered <strong>with or without needles</strong>, making it accessible to patients who are uncomfortable with traditional acupuncture needles.</p>
+<h2>Conditions Treated</h2>
+<ul>
+<li>Back pain (acute and chronic)</li>
+<li>Sciatica and herniated disc</li>
+<li>Neck pain and whiplash</li>
+<li>Sports injuries</li>
+<li>Auto accident injuries</li>
+<li>Workers&rsquo; compensation injuries</li>
+<li>Veterans care</li>
+<li>Headaches and migraines</li>
+<li>Stress, anxiety, and sleep issues</li>
+<li>Women&rsquo;s health concerns</li>
+</ul>
+<h2>Languages</h2>
+<p>English, Mandarin Chinese</p>
+<h2>Locations</h2>
+<ul>
+<li><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</li>
+<li><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</li>
+</ul>
+<h2>Hours</h2>
+<p>Monday&ndash;Friday 9:00 AM &ndash; 1:00 PM | Saturday 9:00 AM &ndash; 12:00 PM | Sunday closed</p>
+<h2>Insurance Accepted</h2>
+<p>Workers&rsquo; Compensation, Auto Accident PIP (Hawaii No-Fault), Veterans Community Care, UHA, HMAA, Medicare Supplement, AARP, Humana, AshLink, and more.</p>`;
+
 function buildJsonLd(route, description) {
   const hours = [
     {
@@ -500,6 +542,11 @@ function buildRootContent(route, meta) {
     const navLinks = buildNavLinks(route);
     if (route === '/about') {
       return `<div id="root"></div><noscript>${ABOUT_NOSCRIPT_BODY}<nav>
+      ${navLinks}
+  </nav></noscript>`;
+    }
+    if (route === '/dr-david-cai-honolulu-acupuncturist') {
+      return `<div id="root"></div><noscript>${DAVID_NOSCRIPT_BODY}<nav>
       ${navLinks}
   </nav></noscript>`;
     }
