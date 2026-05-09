@@ -51,7 +51,7 @@ export default function NewPatientSpecialEnPage() {
                     </p>
                     <ul className="space-y-4 text-slate-700 mt-8 text-lg font-medium">
                         <li className="flex items-center gap-3"><CheckCircle2 className="text-indigo-500 w-6 h-6" /> Highly Rated by Honolulu Locals</li>
-                        <li className="flex items-center gap-3"><CheckCircle2 className="text-indigo-500 w-6 h-6" /> In-Network with HMSA, Kaiser, UHA</li>
+                        <li className="flex items-center gap-3"><CheckCircle2 className="text-indigo-500 w-6 h-6" /> In-Network with Auto PIP, Workers' Comp, VA</li>
                         <li className="flex items-center gap-3"><CheckCircle2 className="text-indigo-500 w-6 h-6" /> Over 30 Years of Medical Experience</li>
                     </ul>
                 </div>
