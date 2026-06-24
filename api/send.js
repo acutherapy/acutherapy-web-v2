@@ -1,4 +1,12 @@
 import { Resend } from 'resend';
+import { createClient } from '@supabase/supabase-js';
+
+// Initialize Supabase client
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseAnonKey = process.env.SUPABASE_ANON_KEY;
+const supabase = (supabaseUrl && supabaseAnonKey) 
+    ? createClient(supabaseUrl, supabaseAnonKey) 
+    : null;
 
 export default async function handler(req, res) {
     if (req.method !== 'POST') {
@@ -7,6 +15,30 @@ export default async function handler(req, res) {
 
     try {
         const { name, email, phone, reason, location, contactMethod = 'Phone' } = req.body;
+
+        // Insert lead into Supabase if client is initialized
+        if (supabase) {
+            try {
+                const { error: dbError } = await supabase
+                    .from('leads')
+                    .insert({
+                        name,
+                        phone,
+                        email,
+                        condition: reason,
+                        location,
+                        preferred_contact: contactMethod,
+                        status: 'NEW',
+                        source: 'WEBSITE'
+                    });
+                
+                if (dbError) {
+                    console.error('Supabase DB Insert Error:', dbError);
+                }
+            } catch (dbErr) {
+                console.error('Supabase Client Error:', dbErr);
+            }
+        }
 
         const apiKey = process.env.RESEND_API_KEY;
         if (!apiKey) {
