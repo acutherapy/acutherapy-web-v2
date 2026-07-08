@@ -11,6 +11,29 @@ export default function AboutDrDavidCaiPage() {
                 <link rel="canonical" href="https://acutherapy.com/about-dr-david-cai" />
                 <title>Dr. David Cai | Honolulu Acupuncture Specialist | Pain Management Expert</title>
                 <meta name="description" content="Dr. David Cai is a Doctor of Chinese Medicine and licensed acupuncturist with more than 30 years of clinical experience in pain management and injury recovery." />
+                <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Physician",
+            "@id": "https://acutherapy.com/#dr-david-cai",
+            "name": "Dr. David Cai",
+            "honorificPrefix": "Dr.",
+            "honorificSuffix": "O.M.D., L.Ac., L.M.T.",
+            "jobTitle": "Licensed Acupuncturist & Founder",
+            "description": "Founder of AcuTherapy Clinics with over 30 years of clinical experience. Graduate of Beijing University of Chinese Medicine (1991). Former research consultant on NIH-funded acupuncture trial at George Washington University Medical Center. Co-developer of the CenterGy (Synergies) precision diagnostic and energy-therapy method.",
+            "image": "https://acutherapy.com/images/dr-david-cai-portrait.jpg",
+            "url": "https://acutherapy.com/dr-david-cai-honolulu-acupuncturist",
+            "telephone": "+1-808-528-7177",
+            "medicalSpecialty": "Acupuncture",
+            "knowsLanguage": ["English", "Mandarin Chinese"],
+            "knowsAbout": [
+              "Acupuncture", "Traditional Chinese Medicine", "Pain Management", "Sports Injuries",
+              "Auto Accident Recovery", "Workers' Compensation Injuries", "Veterans Care"
+            ]
+          }
+          `}
+        </script>
             </Helmet>
 
             {/* Page Header */}

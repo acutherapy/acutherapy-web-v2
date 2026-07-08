@@ -16,93 +16,30 @@ export default function FrequentlyAskedQuestionsPage() {
           {`
           {
             "@context": "https://schema.org",
-            "@type": "MedicalClinic",
-            "name": "AcuTherapy Clinics",
-            "logo": "https://acutherapy.com/logo.png",
-            "image": "https://acutherapy.com/images/dr-david-cai-portrait.jpg",
-            "url": "https://acutherapy.com",
-            "description": "Premier medical acupuncture and pain management clinics in Honolulu and Aiea, led by Dr. David Cai.",
-            "department": [
-              {
-                "@type": "MedicalClinic",
-                "name": "AcuTherapy Clinics - Honolulu (Liliha)",
-                "telephone": "+1-808-528-7177",
-                "address": {
-                  "@type": "PostalAddress",
-                  "streetAddress": "1650 Liliha St, Suite 208",
-                  "addressLocality": "Honolulu",
-                  "addressRegion": "HI",
-                  "postalCode": "96817",
-                  "addressCountry": "US"
-                },
-                "geo": {
-                  "@type": "GeoCoordinates",
-                  "latitude": 21.321289,
-                  "longitude": -157.860155
-                },
-                "openingHoursSpecification": [
-                  {
-                    "@type": "OpeningHoursSpecification",
-                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                    "opens": "09:00",
-                    "closes": "13:00"
-                  },
-                  {
-                    "@type": "OpeningHoursSpecification",
-                    "dayOfWeek": "Saturday",
-                    "opens": "08:00",
-                    "closes": "12:00"
-                  }
-                ]
-              },
-              {
-                "@type": "MedicalClinic",
-                "name": "AcuTherapy Clinics - Aiea / Pearl City",
-                "telephone": "+1-808-452-1900",
-                "address": {
-                  "@type": "PostalAddress",
-                  "streetAddress": "98-211 Pali Momi St, Suite 604",
-                  "addressLocality": "Aiea",
-                  "addressRegion": "HI",
-                  "postalCode": "96701",
-                  "addressCountry": "US"
-                },
-                "openingHoursSpecification": [
-                  {
-                    "@type": "OpeningHoursSpecification",
-                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                    "opens": "09:00",
-                    "closes": "13:00"
-                  },
-                  {
-                    "@type": "OpeningHoursSpecification",
-                    "dayOfWeek": "Saturday",
-                    "opens": "08:00",
-                    "closes": "12:00"
-                  }
-                ]
-              }
-            ],
-            "medicalSpecialty": [
-              "Acupuncture",
-              "PainManagement"
-            ]
-          }
-          `}
-        </script>
-      
-        <script type="application/ld+json">
-          {`
-          {
-            "@context": "https://schema.org",
             "@type": "FAQPage",
             "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "I was in a car accident in Hawaii. Are my acupuncture treatments covered?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes! Hawaii Auto Accident (PIP) claims are typically covered at 100% with $0 out-of-pocket costs at AcuTherapy Clinics. We handle all direct billing and insurance paperwork for you so you can focus completely on your rehabilitation."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you accept HMSA or Kaiser insurance at your clinics?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, we accept major Hawaii health insurance including HMSA, Kaiser, UHA, HMAA, and Medicare. Acupuncture benefits vary by your specific plan tier, and our front desk will happily verify your coverage details for you."
+                }
+              },
               {
                 "@type": "Question",
                 "name": "Does acupuncture hurt?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Most patients feel minimal to no pain during acupuncture. The needles are hair-thin, and while you may feel a slight tingling or heaviness, the treatment is generally very relaxing."
+                  "text": "Most patients feel minimal to no pain. The needles are hair-thin, and the treatment is generally very relaxing. Many patients even fall asleep during their session."
                 }
               },
               {
@@ -112,20 +49,11 @@ export default function FrequentlyAskedQuestionsPage() {
                   "@type": "Answer",
                   "text": "The number of sessions depends on your specific condition. Acute issues may resolve in 3-5 sessions, while chronic pain may require 10 or more sessions for lasting relief."
                 }
-              },
-              {
-                "@type": "Question",
-                "name": "Do you accept health or auto insurance?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes, we accept various health insurance plans, as well as Workers Compensation and Auto Accident (PIP) insurance with zero out-of-pocket costs for qualified patients."
-                }
               }
             ]
           }
           `}
         </script>
-
       </Helmet>
 
       {/* Page Header */}

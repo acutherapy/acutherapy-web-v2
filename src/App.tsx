@@ -82,6 +82,9 @@ import NewPatientSpecialEnPage from './pages/NewPatientSpecialEnPage';
 import SpringPromoZhPage from './pages/SpringPromoZhPage';
 import InjuryRecoveryZhPage from './pages/InjuryRecoveryZhPage';
 import NotFoundPage from './pages/NotFoundPage';
+import HawaiiAutoAccidentAcupunctureGuidePage from './pages/HawaiiAutoAccidentAcupunctureGuidePage';
+import OahuWorkersCompAcupunctureApprovalPage from './pages/OahuWorkersCompAcupunctureApprovalPage';
+import VeteransAcupunctureHonoluluAieaPage from './pages/VeteransAcupunctureHonoluluAieaPage';
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -492,6 +495,9 @@ export default function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/hawaii-auto-accident-acupuncture-guide" element={<HawaiiAutoAccidentAcupunctureGuidePage />} />
+          <Route path="/oahu-workers-comp-acupuncture-approval" element={<OahuWorkersCompAcupunctureApprovalPage />} />
+          <Route path="/veterans-acupuncture-honolulu-aiea" element={<VeteransAcupunctureHonoluluAieaPage />} />
           <Route path="/acupuncture-honolulu" element={<AcupunctureHonoluluPage />} />
           <Route path="/back-pain-acupuncture-honolulu" element={<BackPainAcupunctureHonoluluPage />} />
           <Route path="/sciatica-acupuncture-honolulu" element={<SciaticaAcupunctureHonoluluPage />} />

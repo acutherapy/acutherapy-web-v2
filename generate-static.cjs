@@ -89,6 +89,9 @@ const ALL_ROUTES = [
   '/auto-injury',
   '/workers-injury',
   '/veterans-care',
+  '/hawaii-auto-accident-acupuncture-guide',
+  '/oahu-workers-comp-acupuncture-approval',
+  '/veterans-acupuncture-honolulu-aiea',
 ];
 
 const PAGE_DATA = {
@@ -247,6 +250,21 @@ const PAGE_DATA = {
     description:
       'Comprehensive pain management with acupuncture and TCM in Honolulu. AcuTherapy Clinics treats chronic and acute pain without medication.',
     h1: 'Pain Management – Acupuncture in Honolulu',
+  },
+  '/hawaii-auto-accident-acupuncture-guide': {
+    title: 'Hawaii Auto Accident PIP Acupuncture Guide | AcuTherapy Clinics',
+    description: 'Suffering from whiplash or back pain after a car crash on Oahu? Get 100% covered care ($0 out-of-pocket) under Hawaii PIP No-Fault insurance. We handle all paperwork.',
+    h1: 'Hawaii Auto Accident PIP Acupuncture Guide',
+  },
+  '/oahu-workers-comp-acupuncture-approval': {
+    title: "Hawaii Workers' Comp Acupuncture Approval | AcuTherapy Clinics",
+    description: "Hurt at work on Oahu? Learn how to get Hawaii Workers' Comp authorization for acupuncture and medical massage. 100% covered rehabilitation with $0 out-of-pocket.",
+    h1: "Hurt at Work on Oahu? Get Workers' Comp Acupuncture Approval",
+  },
+  '/veterans-acupuncture-honolulu-aiea': {
+    title: 'VA Community Care Acupuncture for Oahu Veterans | AcuTherapy Clinics',
+    description: 'Oahu veterans can receive 100% covered acupuncture and pain management care. We are an authorized VA Community Care Network (CCN) provider. Learn how to get a referral.',
+    h1: 'VA Community Care Acupuncture for Oahu Veterans',
   },
 };
 
@@ -415,7 +433,7 @@ const DAVID_NOSCRIPT_BODY = `<h1>Dr. David Cai, O.M.D., L.Ac., L.M.T.</h1>
 <p>Workers&rsquo; Compensation, Auto Accident PIP (Hawaii No-Fault), Veterans Community Care, UHA, HMAA, Medicare Supplement, AARP, Humana, AshLink, and more.</p>`;
 
 function buildJsonLd(route, description) {
-  const hours = [
+  const hoursAiea = [
     {
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
@@ -425,79 +443,325 @@ function buildJsonLd(route, description) {
     {
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: 'Saturday',
-      opens: '09:00',
+      opens: '08:00',
       closes: '12:00',
     },
   ];
-  const schemas = [
+
+  const hoursHonolulu = [
     {
-      '@context': 'https://schema.org',
-      '@type': 'MedicalBusiness',
-      '@id': `${BASE_URL}/#liliha`,
-      name: 'AcuTherapy Clinics – Liliha (Honolulu)',
-      url: `${BASE_URL}/`,
-      description: description,
-      medicalSpecialty: 'Acupuncture',
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: '1650 Liliha St, Suite 208',
-        addressLocality: 'Honolulu',
-        addressRegion: 'HI',
-        postalCode: '96817',
-        addressCountry: 'US',
-      },
-      telephone: '+18085287177',
-      image: OG_IMAGE,
-      priceRange: '$$',
-      openingHoursSpecification: hours,
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: '4.9',
-        reviewCount: '59',
-        bestRating: '5',
-        worstRating: '1',
-      },
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '09:00',
+      closes: '13:00',
     },
     {
-      '@context': 'https://schema.org',
-      '@type': 'MedicalBusiness',
-      '@id': `${BASE_URL}/#aiea`,
-      name: 'AcuTherapy Clinics – Aiea (Pearl City)',
-      url: `${BASE_URL}/aiea-clinic`,
-      description: description,
-      medicalSpecialty: 'Acupuncture',
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: '98-211 Pali Momi St, Suite 604',
-        addressLocality: 'Aiea',
-        addressRegion: 'HI',
-        postalCode: '96701',
-        addressCountry: 'US',
-      },
-      telephone: '+18084521900',
-      image: OG_IMAGE,
-      priceRange: '$$',
-      openingHoursSpecification: hours,
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: '4.9',
-        reviewCount: '15',
-        bestRating: '5',
-        worstRating: '1',
-      },
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: 'Saturday',
+      opens: '08:00',
+      closes: '12:00',
     },
   ];
 
-  // Append Person schemas based on route
-  const personSchemas = [];
-  if (route === '/dr-david-cai-honolulu-acupuncturist') {
-    personSchemas.push(PERSON_SCHEMAS.davidCai);
-  } else if (route === '/about') {
-    personSchemas.push(PERSON_SCHEMAS.davidCai, PERSON_SCHEMAS.lisaLong);
+  // 1. Home Page
+  if (route === '/' || route === '') {
+    const homeSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'Acupuncture',
+      'name': 'AcuTherapy Clinics',
+      'image': 'https://acutherapy.com/acutherapy-clinic-honolulu.png',
+      '@id': 'https://acutherapy.com',
+      'url': 'https://acutherapy.com',
+      'telephone': '+1-808-528-7177',
+      'priceRange': '$$',
+      'medicalSpecialty': 'Acupuncture',
+      'knowsAbout': ['Pain Management', 'Sciatica', 'Whiplash', 'Cupping'],
+      'provider': {
+        '@type': 'MedicalOrganization',
+        'name': 'AcuTherapy Clinics',
+        'url': 'https://acutherapy.com',
+        'employee': {
+          '@type': 'Person',
+          'name': 'Dr. David Cai',
+          'jobTitle': 'Licensed Acupuncturist & Founder'
+        }
+      },
+      'aggregateRating': {
+        '@type': 'AggregateRating',
+        'ratingValue': '4.9',
+        'reviewCount': '63',
+        'bestRating': '5',
+        'worstRating': '1'
+      },
+      'review': [
+        {
+          '@type': 'Review',
+          'author': {
+            '@type': 'Person',
+            'name': 'Michael T.'
+          },
+          'datePublished': '2026-03-15',
+          'reviewBody': 'I was in a severe car crash and had terrible whiplash. Dr. David Cai completely relieved my neck pain after just 4 sessions. Highly recommend their Aiea clinic!',
+          'reviewRating': {
+            '@type': 'Rating',
+            'ratingValue': '5',
+            'bestRating': '5'
+          }
+        },
+        {
+          '@type': 'Review',
+          'author': {
+            '@type': 'Person',
+            'name': 'Sarah L.'
+          },
+          'datePublished': '2026-05-20',
+          'reviewBody': 'Best acupuncture on Oahu. They helped me run through my HMSA insurance seamlessly with zero hassle. The medical massage is incredible too.',
+          'reviewRating': {
+            '@type': 'Rating',
+            'ratingValue': '5',
+            'bestRating': '5'
+          }
+        }
+      ],
+      'healthPlanNetworkId': [
+        'HMSA Acupuncture Network',
+        'Kaiser Permanente Alternative Care Network',
+        'UHA Health Insurance',
+        'HMAA Medical Plan',
+        'UnitedHealthcare Medicare Solutions',
+        'VA Community Care Network / TriWest'
+      ],
+      'offers': [
+        {
+          '@type': 'Offer',
+          'itemOffered': {
+            '@type': 'MedicalTherapy',
+            'name': 'Auto Accident PIP Injury Rehab',
+            'description': '100% fully covered therapy with zero out-of-pocket costs under Hawaii PIP insurance.'
+          }
+        },
+        {
+          '@type': 'Offer',
+          'itemOffered': {
+            '@type': 'MedicalTherapy',
+            'name': 'Workers Compensation Pain Management',
+            'description': 'Specialized clinical rehabilitation for job-related injuries on Oahu.'
+          }
+        },
+        {
+          '@type': 'Offer',
+          'itemOffered': {
+            '@type': 'MedicalTherapy',
+            'name': 'VA Community Care Acupuncture',
+            'description': 'Providing zero-cost specialized pain relief for military veterans via VA TriWest referral.'
+          }
+        },
+        {
+          '@type': 'Offer',
+          'itemOffered': {
+            '@type': 'MedicalTherapy',
+            'name': 'Traditional Fire Cupping Therapy',
+            'description': 'Clinical negative-pressure cupping to unlock severe deep muscular knots and blood stagnation.'
+          }
+        },
+        {
+          '@type': 'Offer',
+          'itemOffered': {
+            '@type': 'MedicalTherapy',
+            'name': 'New Patient Special for Self-Pay Patients',
+            'description': 'Affordable introductory package for self-pay acupuncture patients on Oahu.'
+          }
+        }
+      ]
+    };
+    return `<script type="application/ld+json">
+${JSON.stringify(homeSchema, null, 2)}
+</script>`;
   }
 
-  const allSchemas = [...schemas, ...personSchemas];
-  return `<script type="application/ld+json">\n${JSON.stringify(allSchemas, null, 2)}\n</script>`;
+  // 2. Aiea Clinic / Pearl City pages
+  if (route === '/aiea-pearl-city-clinic' || route === '/aiea-acupuncture' || route === '/acupuncture-pearl-city') {
+    const aieaSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'MedicalClinic',
+      'name': 'AcuTherapy Clinics - Aiea (Pali Momi)',
+      'logo': `${BASE_URL}/logo.png`,
+      'image': `${BASE_URL}/images/dr-david-cai-portrait.jpg`,
+      'url': `${BASE_URL}${route}`,
+      'description': 'Premier medical acupuncture and pain management branch clinic in Aiea / Pearl City, led by Dr. David Cai.',
+      'telephone': '+1-808-452-1900',
+      'fax': '+1-808-452-1521',
+      'parentOrganization': {
+        '@type': 'MedicalOrganization',
+        'name': 'AcuTherapy Clinics',
+        'url': `${BASE_URL}`
+      },
+      'address': {
+        '@type': 'PostalAddress',
+        'streetAddress': '98-211 Pali Momi St, Suite 604',
+        'addressLocality': 'Aiea',
+        'addressRegion': 'HI',
+        'postalCode': '96701',
+        'addressCountry': 'US'
+      },
+      'geo': {
+        '@type': 'GeoCoordinates',
+        'latitude': 21.3853,
+        'longitude': -157.9427
+      },
+      'openingHoursSpecification': hoursAiea,
+      'aggregateRating': {
+        '@type': 'AggregateRating',
+        'ratingValue': '4.9',
+        'reviewCount': '15',
+        'bestRating': '5',
+        'worstRating': '1'
+      },
+      'medicalSpecialty': [
+        'Acupuncture',
+        'PainManagement'
+      ]
+    };
+    return `<script type="application/ld+json">
+${JSON.stringify(aieaSchema, null, 2)}
+</script>`;
+  }
+
+  // 3. Honolulu Clinic / Liliha pages
+  if (route === '/honolulu-clinic' || route === '/honolulu-acupuncture' || route === '/contact-honolulu-acupuncture' || route === '/en/contact-us-honolulu') {
+    const honoluluSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'MedicalClinic',
+      'name': 'AcuTherapy Clinics - Honolulu (Liliha)',
+      'logo': `${BASE_URL}/logo.png`,
+      'image': `${BASE_URL}/images/dr-david-cai-portrait.jpg`,
+      'url': `${BASE_URL}${route}`,
+      'description': 'Premier medical acupuncture and pain management main clinic in Honolulu (Liliha), led by Dr. David Cai.',
+      'telephone': '+1-808-528-7177',
+      'fax': '+1-808-212-9459',
+      'parentOrganization': {
+        '@type': 'MedicalOrganization',
+        'name': 'AcuTherapy Clinics',
+        'url': `${BASE_URL}`
+      },
+      'address': {
+        '@type': 'PostalAddress',
+        'streetAddress': '1650 Liliha St, Suite 208',
+        'addressLocality': 'Honolulu',
+        'addressRegion': 'HI',
+        'postalCode': '96817',
+        'addressCountry': 'US'
+      },
+      'geo': {
+        '@type': 'GeoCoordinates',
+        'latitude': 21.321289,
+        'longitude': -157.860155
+      },
+      'openingHoursSpecification': hoursHonolulu,
+      'aggregateRating': {
+        '@type': 'AggregateRating',
+        'ratingValue': '4.9',
+        'reviewCount': '59',
+        'bestRating': '5',
+        'worstRating': '1'
+      },
+      'medicalSpecialty': [
+        'Acupuncture',
+        'PainManagement'
+      ]
+    };
+    return `<script type="application/ld+json">
+${JSON.stringify(honoluluSchema, null, 2)}
+</script>`;
+  }
+
+  // 4. FAQ page
+  if (route === '/frequently-asked-questions') {
+    const faqSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      'mainEntity': [
+        {
+          '@type': 'Question',
+          'name': 'I was in a car accident in Hawaii. Are my acupuncture treatments covered?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'Yes! Hawaii Auto Accident (PIP) claims are typically covered at 100% with $0 out-of-pocket costs at AcuTherapy Clinics. We handle all direct billing and insurance paperwork for you so you can focus completely on your rehabilitation.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'Do you accept HMSA or Kaiser insurance at your clinics?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'Yes, we accept major Hawaii health insurance including HMSA, Kaiser, UHA, HMAA, and Medicare. Acupuncture benefits vary by your specific plan tier, and our front desk will happily verify your coverage details for you.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'Does acupuncture hurt?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'Most patients feel minimal to no pain. The needles are hair-thin, and the treatment is generally very relaxing. Many patients even fall asleep during their session.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'How many acupuncture sessions will I need?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'The number of sessions depends on your specific condition. Acute issues may resolve in 3-5 sessions, while chronic pain may require 10 or more sessions for lasting relief.'
+          }
+        }
+      ]
+    };
+    return `<script type="application/ld+json">
+${JSON.stringify(faqSchema, null, 2)}
+</script>`;
+  }
+
+  // 5. Doctor page
+  if (route === '/dr-david-cai-honolulu-acupuncturist') {
+    const doctorSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'Physician',
+      '@id': `${BASE_URL}/#dr-david-cai`,
+      'name': 'Dr. David Cai',
+      'honorificPrefix': 'Dr.',
+      'honorificSuffix': 'O.M.D., L.Ac., L.M.T.',
+      'jobTitle': 'Licensed Acupuncturist & Founder',
+      'description': PERSON_SCHEMAS.davidCai.description,
+      'image': `${BASE_URL}/images/dr-david-cai-portrait.jpg`,
+      'url': `${BASE_URL}/dr-david-cai-honolulu-acupuncturist`,
+      'telephone': '+1-808-528-7177',
+      'medicalSpecialty': 'Acupuncture',
+      'knowsLanguage': ['English', 'Mandarin Chinese'],
+      'knowsAbout': [
+        'Acupuncture', 'Traditional Chinese Medicine', 'Pain Management', 'Sports Injuries',
+        'Auto Accident Recovery', 'Workers\' Compensation Injuries', 'Veterans Care'
+      ]
+    };
+    return `<script type="application/ld+json">
+${JSON.stringify(doctorSchema, null, 2)}
+</script>`;
+  }
+
+  // 6. Default clean WebPage schema for other pages
+  const webPageSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    'name': description ? description.split('.')[0] : 'AcuTherapy Clinics',
+    'description': description || 'AcuTherapy Clinics provides expert acupuncture, massage therapy, and Traditional Chinese Medicine in Honolulu and Aiea, Hawaii.',
+    'url': `${BASE_URL}${route}`,
+    'publisher': {
+      '@type': 'MedicalOrganization',
+      'name': 'AcuTherapy Clinics',
+      'url': `${BASE_URL}`
+    }
+  };
+  return `<script type="application/ld+json">
+${JSON.stringify(webPageSchema, null, 2)}
+</script>`;
 }
 
 function buildNavLinks(currentRoute) {

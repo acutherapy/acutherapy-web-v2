@@ -9,158 +9,126 @@ export default function HomePage() {
   return (
     <div className="bg-slate-50 min-h-screen">
       <Helmet>
-        <title>Looking for Acupuncture Near You in Honolulu? Pain Relief Starts Here</title>
+        <title>Honolulu Pain & Injury Acupuncture Clinic | Dr. David Cai | AcuTherapy</title>
         <meta name="description" content="Top-rated Honolulu Pain & Injury Acupuncture Clinic. Dr. David Cai specializes in pain management, auto accident recovery, and traditional Chinese medicine with over 30 years of clinical experience." />
-        
         <meta property="og:title" content="Honolulu Pain & Injury Acupuncture Clinic | Dr. David Cai | AcuTherapy" />
         <meta property="og:description" content="Top-rated Honolulu Pain & Injury Acupuncture Clinic. Dr. David Cai specializes in pain management, auto accident recovery, and traditional Chinese medicine with over 30 years of clinical experience." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://acutherapy.com/" />
         <meta property="og:image" content="https://acutherapy.com/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-<script type="application/ld+json">
+        <script type="application/ld+json">
           {`
           {
             "@context": "https://schema.org",
-            "@type": "MedicalClinic",
+            "@type": "Acupuncture",
             "name": "AcuTherapy Clinics",
-            "logo": "https://acutherapy.com/logo.png",
-            "image": "https://acutherapy.com/images/dr-david-cai-portrait.jpg",
+            "image": "https://acutherapy.com/acutherapy-clinic-honolulu.png",
+            "@id": "https://acutherapy.com",
             "url": "https://acutherapy.com",
-            "description": "Premier medical acupuncture and pain management clinics in Honolulu and Aiea, led by Dr. David Cai.",
-            "department": [
+            "telephone": "+1-808-528-7177",
+            "priceRange": "$$",
+            "medicalSpecialty": "Acupuncture",
+            "knowsAbout": ["Pain Management", "Sciatica", "Whiplash", "Cupping"],
+            "provider": {
+              "@type": "MedicalOrganization",
+              "name": "AcuTherapy Clinics",
+              "url": "https://acutherapy.com",
+              "employee": {
+                "@type": "Person",
+                "name": "Dr. David Cai",
+                "jobTitle": "Licensed Acupuncturist & Founder"
+              }
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "63",
+              "bestRating": "5",
+              "worstRating": "1"
+            },
+            "review": [
               {
-                "@type": "MedicalClinic",
-                "name": "AcuTherapy Clinics - Honolulu (Liliha)",
-                "telephone": "+1-808-528-7177",
-                "address": {
-                  "@type": "PostalAddress",
-                  "streetAddress": "1650 Liliha St, Suite 208",
-                  "addressLocality": "Honolulu",
-                  "addressRegion": "HI",
-                  "postalCode": "96817",
-                  "addressCountry": "US"
+                "@type": "Review",
+                "author": {
+                  "@type": "Person",
+                  "name": "Michael T."
                 },
-                "geo": {
-                  "@type": "GeoCoordinates",
-                  "latitude": 21.321289,
-                  "longitude": -157.860155
-                },
-                "openingHoursSpecification": [
-                  {
-                    "@type": "OpeningHoursSpecification",
-                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                    "opens": "09:00",
-                    "closes": "13:00"
-                  },
-                  {
-                    "@type": "OpeningHoursSpecification",
-                    "dayOfWeek": "Saturday",
-                    "opens": "08:00",
-                    "closes": "12:00"
-                  }
-                ]
+                "datePublished": "2026-03-15",
+                "reviewBody": "I was in a severe car crash and had terrible whiplash. Dr. David Cai completely relieved my neck pain after just 4 sessions. Highly recommend their Aiea clinic!",
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "5",
+                  "bestRating": "5"
+                }
               },
               {
-                "@type": "MedicalClinic",
-                "name": "AcuTherapy Clinics - Aiea / Pearl City",
-                "telephone": "+1-808-452-1900",
-                "address": {
-                  "@type": "PostalAddress",
-                  "streetAddress": "98-211 Pali Momi St, Suite 604",
-                  "addressLocality": "Aiea",
-                  "addressRegion": "HI",
-                  "postalCode": "96701",
-                  "addressCountry": "US"
+                "@type": "Review",
+                "author": {
+                  "@type": "Person",
+                  "name": "Sarah L."
                 },
-                "openingHoursSpecification": [
-                  {
-                    "@type": "OpeningHoursSpecification",
-                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                    "opens": "09:00",
-                    "closes": "13:00"
-                  },
-                  {
-                    "@type": "OpeningHoursSpecification",
-                    "dayOfWeek": "Saturday",
-                    "opens": "08:00",
-                    "closes": "12:00"
-                  }
-                ]
+                "datePublished": "2026-05-20",
+                "reviewBody": "Best acupuncture on Oahu. They helped me run through my HMSA insurance seamlessly with zero hassle. The medical massage is incredible too.",
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "5",
+                  "bestRating": "5"
+                }
               }
             ],
-            "medicalSpecialty": [
-              "Acupuncture",
-              "PainManagement"
-            ]
-          }
-          `}
-        </script>
-      
-        <script type="application/ld+json">
-          {`
-          {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
+            "healthPlanNetworkId": [
+              "HMSA Acupuncture Network",
+              "Kaiser Permanente Alternative Care Network",
+              "UHA Health Insurance",
+              "HMAA Medical Plan",
+              "UnitedHealthcare Medicare Solutions",
+              "VA Community Care Network / TriWest"
+            ],
+            "offers": [
               {
-                "@type": "Question",
-                "name": "Does acupuncture hurt?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Most patients feel it’s easier than expected and describe it as a relaxing experience using hair-thin needles."
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "MedicalTherapy",
+                  "name": "Auto Accident PIP Injury Rehab",
+                  "description": "100% fully covered therapy with zero out-of-pocket costs under Hawaii PIP insurance."
                 }
               },
               {
-                "@type": "Question",
-                "name": "How fast does acupuncture work?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Response time varies. Immediate relief is common for some, while chronic issues may take 3-6 sessions to see sustained improvement."
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "MedicalTherapy",
+                  "name": "Workers Compensation Pain Management",
+                  "description": "Specialized clinical rehabilitation for job-related injuries on Oahu."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "MedicalTherapy",
+                  "name": "VA Community Care Acupuncture",
+                  "description": "Providing zero-cost specialized pain relief for military veterans via VA TriWest referral."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "MedicalTherapy",
+                  "name": "Traditional Fire Cupping Therapy",
+                  "description": "Clinical negative-pressure cupping to unlock severe deep muscular knots and blood stagnation."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "MedicalTherapy",
+                  "name": "New Patient Special for Self-Pay Patients",
+                  "description": "Affordable introductory package for self-pay acupuncture patients on Oahu."
                 }
               }
             ]
           }
           `}
-        </script>
-
-
-        <script type="application/ld+json">
-          {`{
-  "@context": "https://schema.org",
-  "@type": [
-    "MedicalBusiness",
-    "LocalBusiness"
-  ],
-  "name": "Acutherapy Clinics",
-  "image": "https://acutherapy.com/og-image.jpg",
-  "url": "https://acutherapy.com",
-  "telephone": "+1-808-528-7177",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Honolulu",
-    "addressRegion": "HI",
-    "addressCountry": "US"
-  },
-  "areaServed": [
-    "Honolulu",
-    "Waikiki",
-    "Kakaako",
-    "Oahu",
-    "Hawaii"
-  ],
-  "priceRange": "$$",
-  "medicalSpecialty": [
-    "Acupuncture",
-    "PainManagement"
-  ],
-  "founder": {
-    "@type": "Person",
-    "name": "Dr. David Cai"
-  },
-  "description": "Acutherapy Clinics in Honolulu provides acupuncture, medical massage, and supportive care for pain relief, injury recovery, and functional improvement.",
-  "sameAs": []
-}`}
         </script>
       </Helmet>
 
