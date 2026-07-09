@@ -21,7 +21,7 @@ export default function HomePage() {
           {`
           {
             "@context": "https://schema.org",
-            "@type": "Acupuncture",
+            "@type": "MedicalClinic",
             "name": "AcuTherapy Clinics",
             "image": "https://acutherapy.com/acutherapy-clinic-honolulu.png",
             "@id": "https://acutherapy.com",
