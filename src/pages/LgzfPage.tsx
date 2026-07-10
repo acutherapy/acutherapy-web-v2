@@ -221,18 +221,18 @@ export default function LgzfPage() {
           </div>
 
           {/* Web App Card */}
-          <div className="bg-teal-950 text-slate-100 rounded-2xl shadow-2xl border border-teal-800 p-6 flex flex-col gap-4">
+          <div className="bg-white text-slate-800 rounded-2xl shadow-xl border border-slate-200 p-6 flex flex-col gap-4">
             
             {/* Mode Selector */}
-            <div className="flex bg-teal-900/50 p-1 rounded-lg border border-teal-800">
+            <div className="flex bg-slate-100 p-1 rounded-lg border border-slate-200">
               <button 
-                className={`flex-1 text-center py-2 rounded-md text-xs font-semibold transition-all ${mode === 'realtime' ? 'bg-emerald-600 text-white shadow-md' : 'text-teal-300'}`}
+                className={`flex-1 text-center py-2 rounded-md text-xs font-bold transition-all ${mode === 'realtime' ? 'bg-blue-600 text-white shadow-md' : 'text-slate-500 hover:text-slate-700'}`}
                 onClick={() => setMode('realtime')}
               >
                 实时开穴
               </button>
               <button 
-                className={`flex-1 text-center py-2 rounded-md text-xs font-semibold transition-all ${mode === 'query' ? 'bg-emerald-600 text-white shadow-md' : 'text-teal-300'}`}
+                className={`flex-1 text-center py-2 rounded-md text-xs font-bold transition-all ${mode === 'query' ? 'bg-blue-600 text-white shadow-md' : 'text-slate-500 hover:text-slate-700'}`}
                 onClick={() => setMode('query')}
               >
                 时辰推算
@@ -243,21 +243,21 @@ export default function LgzfPage() {
             {mode === 'query' && (
               <div className="grid grid-cols-2 gap-4">
                 <div className="flex flex-col gap-1">
-                  <span className="text-[11px] text-teal-300 font-semibold">查询日期</span>
+                  <span className="text-[11px] text-slate-500 font-bold">查询日期</span>
                   <input 
                     type="date" 
                     value={queryDate} 
                     onChange={(e) => setQueryDate(e.target.value)}
-                    className="bg-teal-900/40 border border-teal-800 rounded-md p-2 text-xs text-white outline-none"
+                    className="bg-white border border-slate-300 rounded-md p-2 text-xs text-slate-950 outline-none focus:border-blue-500"
                   />
                 </div>
                 <div className="flex flex-col gap-1">
-                  <span className="text-[11px] text-teal-300 font-semibold">查询时间</span>
+                  <span className="text-[11px] text-slate-500 font-bold">查询时间</span>
                   <input 
                     type="time" 
                     value={queryTime} 
                     onChange={(e) => setQueryTime(e.target.value)}
-                    className="bg-teal-900/40 border border-teal-800 rounded-md p-2 text-xs text-white outline-none"
+                    className="bg-white border border-slate-300 rounded-md p-2 text-xs text-slate-950 outline-none focus:border-blue-500"
                   />
                 </div>
               </div>
@@ -265,16 +265,16 @@ export default function LgzfPage() {
 
             {/* Gender Toggle */}
             <div className="flex flex-col gap-1">
-              <span className="text-[11px] text-teal-300 font-semibold">患者性别 (取穴余数5时有用)</span>
-              <div className="flex bg-teal-900/50 p-1 rounded-lg border border-teal-800">
+              <span className="text-[11px] text-slate-500 font-bold">患者性别 (取穴余数5时有用)</span>
+              <div className="flex bg-slate-100 p-1 rounded-lg border border-slate-200">
                 <button 
-                  className={`flex-1 text-center py-1.5 rounded-md text-xs font-semibold transition-all ${isMale ? 'bg-emerald-600 text-white' : 'text-teal-300'}`}
+                  className={`flex-1 text-center py-1.5 rounded-md text-xs font-bold transition-all ${isMale ? 'bg-blue-600 text-white shadow-sm' : 'text-slate-500'}`}
                   onClick={() => setIsMale(true)}
                 >
                   男 ♂
                 </button>
                 <button 
-                  className={`flex-1 text-center py-1.5 rounded-md text-xs font-semibold transition-all ${!isMale ? 'bg-emerald-600 text-white' : 'text-teal-300'}`}
+                  className={`flex-1 text-center py-1.5 rounded-md text-xs font-bold transition-all ${!isMale ? 'bg-blue-600 text-white shadow-sm' : 'text-slate-500'}`}
                   onClick={() => setIsMale(false)}
                 >
                   女 ♀
@@ -283,49 +283,49 @@ export default function LgzfPage() {
             </div>
 
             {/* Main Result Display */}
-            <div className="bg-teal-900/30 border border-teal-800 rounded-xl p-5 relative overflow-hidden">
-              <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-emerald-500 to-amber-400" />
+            <div className="bg-slate-50 border border-slate-200 rounded-xl p-5 relative overflow-hidden shadow-sm">
+              <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-blue-600 to-amber-500" />
               
               <div className="flex justify-center gap-4 mb-4">
-                <span className="bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 px-3 py-1 rounded-full text-xs font-bold">
+                <span className="bg-blue-50 border border-blue-200 text-blue-700 px-3 py-1 rounded-full text-xs font-bold shadow-sm">
                   {dayGanzhi.stem + dayGanzhi.branch}日
                 </span>
-                <span className="bg-emerald-500/20 border border-emerald-500/30 text-emerald-300 px-3 py-1 rounded-full text-xs font-bold">
+                <span className="bg-blue-50 border border-blue-200 text-blue-700 px-3 py-1 rounded-full text-xs font-bold shadow-sm">
                   {activeResult.hourGanZhi}时
                 </span>
               </div>
 
-              <div className="text-center text-[10px] text-teal-300 tracking-wider uppercase mb-1">今日开穴配对</div>
+              <div className="text-center text-[10px] text-slate-500 tracking-wider uppercase mb-1 font-semibold">今日开穴配对</div>
               
               <div className="flex items-center justify-center gap-4 my-2">
                 <div className="flex-1 text-center">
-                  <div className="text-3xl font-extrabold text-amber-400 drop-shadow-[0_0_10px_rgba(251,191,36,0.3)]">
+                  <div className="text-3xl font-black text-amber-600 drop-shadow-sm">
                     {activeResult.point.point}
                   </div>
-                  <div className="text-[10px] text-teal-300 mt-1">
-                    {activeResult.point.code} / {activeResult.point.channel}
+                  <div className="text-[10px] text-slate-500 mt-1">
+                    <span className="font-bold text-slate-800">{activeResult.point.code}</span> / {activeResult.point.channel}
                   </div>
                 </div>
-                <div className="text-xl text-teal-500 font-light">⇄</div>
+                <div className="text-xl text-slate-400 font-light">⇄</div>
                 <div className="flex-1 text-center">
-                  <div className="text-3xl font-extrabold text-emerald-400 drop-shadow-[0_0_10px_rgba(16,185,129,0.3)]">
+                  <div className="text-3xl font-black text-blue-600 drop-shadow-sm">
                     {activeResult.point.coupledPoint}
                   </div>
-                  <div className="text-[10px] text-teal-300 mt-1">
-                    {activeResult.point.coupledCode} / {activeResult.point.coupledChannel}
+                  <div className="text-[10px] text-slate-500 mt-1">
+                    <span className="font-bold text-slate-800">{activeResult.point.coupledCode}</span> / {activeResult.point.coupledChannel}
                   </div>
                 </div>
               </div>
 
-              <div className="mt-4 bg-teal-950/50 border border-teal-900/60 p-3 rounded-lg text-xs leading-relaxed">
-                <span className="text-amber-400 font-bold block mb-1">八脉合治主治：</span>
-                <span className="text-teal-100">{activeResult.point.indications}</span>
+              <div className="mt-4 bg-amber-50 border border-amber-100 p-3 rounded-lg text-xs leading-relaxed">
+                <span className="text-amber-800 font-bold block mb-1">八脉合治主治：</span>
+                <span className="text-slate-600">{activeResult.point.indications}</span>
               </div>
             </div>
 
             {/* Timeline */}
             <div>
-              <div className="text-xs font-bold text-teal-300 mb-2">
+              <div className="text-xs font-bold text-blue-600 mb-2">
                 {mode === 'realtime' ? '今日开穴一览表' : `${dayGanzhi.adjustedDate} 开穴一览表`}
               </div>
               <div className="flex flex-col gap-2 max-h-52 overflow-y-auto pr-1">
@@ -336,15 +336,17 @@ export default function LgzfPage() {
                   return (
                     <div 
                       key={i} 
-                      className={`flex items-center justify-between p-3 rounded-lg border text-xs transition-all ${isActive ? 'bg-emerald-500/10 border-emerald-500/40' : 'bg-teal-950/20 border-teal-900/40'}`}
+                      className={`flex items-center justify-between p-3 rounded-lg border text-xs transition-all ${isActive ? 'bg-blue-50/80 border-blue-300 shadow-sm' : 'bg-white border-slate-200'}`}
                     >
                       <div className="flex flex-col gap-1">
-                        <span className="font-bold text-white">{timeLabels[i]}</span>
-                        <span className="text-[10px] text-teal-400">配属：{organMap[branchChar]}</span>
+                        <span className="font-bold text-slate-900">{timeLabels[i]}</span>
+                        <span className="text-[10px] text-slate-500 font-medium">配属：{organMap[branchChar]}</span>
                       </div>
                       <div className="text-right">
-                        <span className="text-amber-400 font-bold">{slotResult.point.point}-{slotResult.point.coupledPoint}</span>
-                        <div className="text-[10px] text-teal-300">{slotResult.point.code}-{slotResult.point.coupledCode}</div>
+                        <span className="text-amber-600 font-bold">{slotResult.point.point}</span>
+                        <span className="text-slate-400 font-light mx-1">-</span>
+                        <span className="text-blue-600 font-bold">{slotResult.point.coupledPoint}</span>
+                        <div className="text-[10px] text-slate-500 font-semibold">{slotResult.point.code}-{slotResult.point.coupledCode}</div>
                       </div>
                     </div>
                   );
@@ -360,7 +362,7 @@ export default function LgzfPage() {
             {mode === 'realtime' && (
               <button 
                 onClick={() => setTimeText(new Date().toLocaleString())}
-                className="bg-slate-200 hover:bg-slate-300 text-slate-700 px-3 py-1.5 rounded-md text-[11px] font-bold transition-all shadow-sm"
+                className="bg-white hover:bg-slate-50 text-slate-700 px-3 py-1.5 rounded-md text-[11px] font-bold transition-all shadow-sm border border-slate-200"
               >
                 手动刷新
               </button>
