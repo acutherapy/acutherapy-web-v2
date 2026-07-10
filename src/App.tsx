@@ -489,6 +489,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
+import LgzfPage from './pages/LgzfPage';
+
 export default function App() {
   return (
     <HelmetProvider>
@@ -589,6 +591,7 @@ export default function App() {
           <Route path="/auto-injury" element={<AutoAccidentInjuryTreatmentHonoluluPage />} />
           <Route path="/workers-injury" element={<WorkersCompAcupunctureHonoluluPage />} />
           <Route path="/veterans-care" element={<VeteransCareAcupunctureHonoluluPage />} />
+                    <Route path="/lgzf" element={<LgzfPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
         <AIChatbot />

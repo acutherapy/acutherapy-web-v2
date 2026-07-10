@@ -92,9 +92,15 @@ const ALL_ROUTES = [
   '/hawaii-auto-accident-acupuncture-guide',
   '/oahu-workers-comp-acupuncture-approval',
   '/veterans-acupuncture-honolulu-aiea',
+  '/lgzf',
 ];
 
 const PAGE_DATA = {
+  '/lgzf': {
+    title: '灵龟八法开穴助手 | AcuTherapy Clinics Honolulu',
+    description: 'AcuTherapy Clinics 灵龟八法开穴推算助手。根据当前时间、天干地支及奇经八脉自动推算针灸按时开穴的主穴与配穴。',
+    h1: '灵龟八法按时开穴助手',
+  },
   '/': {
     title: 'AcuTherapy Clinics – Acupuncture & TCM in Honolulu, Hawaii',
     description:
