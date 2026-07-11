@@ -81,36 +81,75 @@ export default async function handler(req, res) {
             return res.status(400).json({ error: adminError.message });
         }
 
-        // 2. Send Confirmation to User
+        // 2. Send Confirmation to User (with self-healing fallback)
         if (email) {
-            await resend.emails.send({
-                from: 'AcuTherapy Clinics <onboarding@resend.dev>',
-                to: [email],
-                replyTo: 'leyzax@gmail.com',
-                subject: `We received your appointment request`,
-                html: `
-                    <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto;">
-                        <h2 style="color: #0d9488;">Appointment Request Received</h2>
-                        <p>Dear ${name},</p>
-                        <p>Thank you for choosing AcuTherapy Clinics. We have received your request for an appointment.</p>
-                        
-                        <div style="background: #f9fafb; padding: 20px; border-radius: 8px; margin: 20px 0;">
-                            <p style="margin: 0 0 10px 0;"><strong>Your Details:</strong></p>
-                            <ul style="margin: 0; padding-left: 20px;">
-                                <li><strong>Phone:</strong> ${phone}</li>
-                                <li><strong>Reason:</strong> ${reason || 'N/A'}</li>
-                                <li><strong>Preferred Contact:</strong> ${contactMethod}</li>
-                            </ul>
-                        </div>
+            try {
+                let userSendResult = await resend.emails.send({
+                    from: 'AcuTherapy Clinics <info@acutherapy.com>',
+                    to: [email],
+                    replyTo: 'leyzax@gmail.com',
+                    subject: `We received your appointment request`,
+                    html: `
+                        <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto;">
+                            <h2 style="color: #0d9488;">Appointment Request Received</h2>
+                            <p>Dear ${name},</p>
+                            <p>Thank you for choosing AcuTherapy Clinics. We have received your request for an appointment.</p>
+                            
+                            <div style="background: #f9fafb; padding: 20px; border-radius: 8px; margin: 20px 0;">
+                                <p style="margin: 0 0 10px 0;"><strong>Your Details:</strong></p>
+                                <ul style="margin: 0; padding-left: 20px;">
+                                    <li><strong>Phone:</strong> ${phone}</li>
+                                    <li><strong>Reason:</strong> ${reason || 'N/A'}</li>
+                                    <li><strong>Preferred Contact:</strong> ${contactMethod}</li>
+                                </ul>
+                            </div>
 
-                        <p>Our team will review your request and contact you shortly via <strong>${contactMethod}</strong> to schedule your specific time slot.</p>
-                        <br/>
-                        <p>Warm regards,</p>
-                        <p>The AcuTherapy Team</p>
-                        <p><a href="https://acutherapy.com" style="color: #0d9488;">acutherapy.com</a></p>
-                    </div>
-                `,
-            });
+                            <p>Our team will review your request and contact you shortly via <strong>${contactMethod}</strong> to schedule your specific time slot.</p>
+                            <br/>
+                            <p>Warm regards,</p>
+                            <p>The AcuTherapy Team</p>
+                            <p><a href="https://acutherapy.com" style="color: #0d9488;">acutherapy.com</a></p>
+                        </div>
+                    `,
+                });
+
+                // If domain not verified, fallback to onboarding@resend.dev and send to owner
+                if (userSendResult.error && (userSendResult.error.message.includes('not verified') || userSendResult.error.message.includes('verify a domain'))) {
+                    await resend.emails.send({
+                        from: 'AcuTherapy Clinics <onboarding@resend.dev>',
+                        to: ['leyzax@gmail.com'],
+                        replyTo: 'leyzax@gmail.com',
+                        subject: `[Sandbox Fallback] We received your appointment request`,
+                        html: `
+                            <div style="background-color: #FEF3C7; border: 1px solid #F59E0B; color: #92400E; padding: 12px; border-radius: 8px; margin-bottom: 20px; font-size: 12px;">
+                              ⚠️ <strong>Sandbox Mode Fallback:</strong> original recipient: <strong>${email}</strong>
+                            </div>
+                            <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto;">
+                                <h2 style="color: #0d9488;">Appointment Request Received</h2>
+                                <p>Dear ${name},</p>
+                                <p>Thank you for choosing AcuTherapy Clinics. We have received your request for an appointment.</p>
+                                
+                                <div style="background: #f9fafb; padding: 20px; border-radius: 8px; margin: 20px 0;">
+                                    <p style="margin: 0 0 10px 0;"><strong>Your Details:</strong></p>
+                                    <ul style="margin: 0; padding-left: 20px;">
+                                        <li><strong>Phone:</strong> ${phone}</li>
+                                        <li><strong>Reason:</strong> ${reason || 'N/A'}</li>
+                                        <li><strong>Preferred Contact:</strong> ${contactMethod}</li>
+                                    </ul>
+                                </div>
+
+                                <p>Our team will review your request and contact you shortly via <strong>${contactMethod}</strong> to schedule your specific time slot.</p>
+                                <br/>
+                                <p>Warm regards,</p>
+                                <p>The AcuTherapy Team</p>
+                                <p><a href="https://acutherapy.com" style="color: #0d9488;">acutherapy.com</a></p>
+                            </div>
+                        `,
+                    });
+                }
+            } catch (err) {
+                console.error('Resend fallback send error:', err);
+            }
         }
 
         return res.status(200).json({ success: true, data: adminData });

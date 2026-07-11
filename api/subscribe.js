@@ -124,44 +124,58 @@ export default async function handler(req, res) {
       </div>
     `;
 
-    const { data, error } = await resend.emails.send({
-      from: 'AcuTherapy Clinics <onboarding@resend.dev>',
-      to: [email],
-      replyTo: 'leyzax@gmail.com',
-      subject: text.subject,
-      html: htmlContent
-    });
+    // 🔮 Self-healing email sender logic
+    let sendResult = null;
+    let fallbackUsed = false;
 
-    if (error) {
-      console.error('Resend send error:', error);
-      return res.status(400).json({ error: error.message });
-    }
-
-    // Also send an admin notification email to the clinic owner
     try {
-      await resend.emails.send({
+      // 1. First attempt: Send from custom domain (info@acutherapy.com) to the user's input email
+      sendResult = await resend.emails.send({
+        from: 'AcuTherapy Clinics <info@acutherapy.com>',
+        to: [email],
+        replyTo: 'leyzax@gmail.com',
+        subject: text.subject,
+        html: htmlContent
+      });
+
+      // If it failed because domain is not verified, catch it and fallback
+      if (sendResult.error && (sendResult.error.message.includes('not verified') || sendResult.error.message.includes('verify a domain'))) {
+        fallbackUsed = true;
+        console.warn('Custom domain acutherapy.com is not verified on Resend. Falling back to onboarding@resend.dev');
+        
+        const warningHeader = `<div style="background-color: #FEF3C7; border: 1px solid #F59E0B; color: #92400E; padding: 12px; border-radius: 8px; margin-bottom: 20px; font-size: 12px;">
+          ⚠️ <strong>开发测试提示 / Sandbox Mode:</strong><br/>
+          由于您的 Resend 账户中尚未验证 <strong>acutherapy.com</strong> 域名，系统自动启用了沙盒模式，将原本发往 <strong>${email}</strong> 的邮件投递到了此所有者验证邮箱 <strong>leyzax@gmail.com</strong>。<br/>
+          <em>(要开启全球用户真实投递，请前往 resend.com/domains 验证您的 acutherapy.com 域名并配置 MX 记录。)</em>
+        </div>`;
+
+        sendResult = await resend.emails.send({
+          from: 'AcuTherapy Clinics <onboarding@resend.dev>',
+          to: ['leyzax@gmail.com'],
+          replyTo: 'leyzax@gmail.com',
+          subject: `[Test Sandbox] ${text.subject}`,
+          html: warningHeader + htmlContent
+        });
+      }
+    } catch (sendErr) {
+      // If code level exception occurred, perform last-resort fallback
+      fallbackUsed = true;
+      console.error('Initial send crashed. Triggering last-resort sandbox fallback:', sendErr);
+      sendResult = await resend.emails.send({
         from: 'AcuTherapy Clinics <onboarding@resend.dev>',
         to: ['leyzax@gmail.com'],
-        subject: `📧 [TCM Quiz] New Lead: ${name} (${dominant}/${deficient})`,
-        html: `
-          <h3>New Lead Registered from Five Elements Quiz</h3>
-          <ul>
-            <li><strong>Name:</strong> ${name}</li>
-            <li><strong>Email:</strong> ${email}</li>
-            <li><strong>Dominant Element:</strong> ${dominant}</li>
-            <li><strong>Deficient Element:</strong> ${deficient}</li>
-            <li><strong>DOB:</strong> ${dob}</li>
-            <li><strong>TOB:</strong> ${tob}</li>
-            <li><strong>Language:</strong> ${lang}</li>
-            <li><strong>Symptoms:</strong> ${Array.isArray(symptoms) ? symptoms.join(', ') : symptoms || 'None'}</li>
-          </ul>
-        `
+        replyTo: 'leyzax@gmail.com',
+        subject: `[Sandbox Fallback] ${text.subject}`,
+        html: `<p style="color:red;"><strong>Exception Fallback:</strong> ${sendErr.message}</p>` + htmlContent
       });
-    } catch (e) {
-      console.error('Admin notification email failed:', e);
     }
 
-    return res.status(200).json({ success: true, data });
+    if (sendResult.error) {
+      console.error('Resend final failure:', sendResult.error);
+      return res.status(400).json({ error: sendResult.error.message });
+    }
+
+    return res.status(200).json({ success: true, data: sendResult.data, fallbackUsed });
   } catch (err) {
     console.error('Subscription error:', err);
     return res.status(500).json({ error: err.message || 'Internal Server Error' });
