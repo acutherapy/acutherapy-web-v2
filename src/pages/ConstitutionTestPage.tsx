@@ -42,6 +42,14 @@ const elementNamesEn: Record<string, string> = {
   'Water': 'Water (Kidney)'
 };
 
+const elementNamesJa: Record<string, string> = {
+  'Wood': '木 (肝胆)',
+  'Fire': '火 (心神)',
+  'Earth': '土 (脾胃)',
+  'Metal': '金 (肺衛)',
+  'Water': '水 (腎骨)'
+};
+
 const getBeadBaseColor = (el: string) => {
   switch(el) {
     case 'Wood': return '#10B981'; // Emerald Green
@@ -101,6 +109,201 @@ const deficientTeasers: Record<string, string> = {
   'Earth': '您的不足能量为土元素。这代表您目前缺乏根基、稳定与滋养，可能感到焦虑、漂浮不定，没有一个能够让您安心落脚的安全土壤。',
   'Metal': '您的不足能量为金元素。这代表您目前缺乏界限感、清晰度与断舍离的能力，容易被混乱所包围，或抓着旧有的情绪垃圾不放。',
   'Water': '您的不足能量为水元素。这代表您目前缺乏休息、深层储备与内心的宁静，正处于透支状态，难以链接内心的深层智慧。'
+};
+
+const dict = {
+  zh: {
+    title: "中医体质与生命节律评估",
+    subtitle: "结合《黄帝内经·上古天真论》与先天五运六气禀赋的临床测评",
+    step1_title: "第一步：输入您的基本信息",
+    step1_desc: "用于计算您的先天五行局与生命节律段",
+    name_label: "您的尊称",
+    name_placeholder: "例如：张先生 / David",
+    gender_label: "生理性别 (生命成长节点男八女七)",
+    gender_male: "男 ♂",
+    gender_female: "女 ♀",
+    dob_label: "公历出生日期",
+    tob_label: "出生时辰 (可选)",
+    next_btn_step1: "下一步：勾选身体状况",
+    step2_title: "第二步：勾选您目前最主要的身体状况",
+    step2_desc: "临床中常见的5大健康痛点（可多选）",
+    next_btn_step2: "下一步：解锁报告",
+    back_btn: "返回上一步",
+    step3_title: "报告已就绪！",
+    step3_desc: "请输入您的电子邮箱，报告将立即生成，我们也会为您发送一份长期的节律养生指南。",
+    email_placeholder: "输入您的邮箱（例如：example@gmail.com）",
+    unlock_report_btn: "解锁体质报告 🔓",
+    results_title: "您的专属身心能量分析",
+    results_badge: "中医五行与生命节律报告",
+    timezone_label: "时区：檀香山 (Honolulu)",
+    book_btn: "预约门诊评估",
+    beads_desc: "外圈 8 颗先天珠（出生局）与 8 颗后天珠（当前时空）匀速运转，内核心为 4 颗身心主观能量鱼眼",
+    classic_title: "Classic Edition (免费版)",
+    classic_desc: "免费基础排印版 & 主导能量",
+    download_wallpaper: "下载您的五行护身符壁纸",
+    dna_title: "DNA Edition (解锁版)",
+    dna_desc: "深度能量图腾交织 & 临床调理建议",
+    price_label: "一次性解锁",
+    unlock_now_btn: "付费解锁完整报告",
+    unlocked_badge: "DNA 完整报告已解锁",
+    save_wallet_btn: "📥 保存至 Apple Wallet",
+    downloading_pass: "正在生成 Pass 包...",
+    birth_chart_title: "YOUR BIRTH CHART (先天出生局)",
+    current_chart_title: "CURRENT HONOLULU (当前时空局)",
+    dominant_energy_title: "Your Current Dominant Energy (先天与时空能量属性)",
+    dominant_title: "Dominant Archetype",
+    deficient_title: "Deficient Energy",
+    deficient_locked: "🔒 未解锁",
+    deficient_quote_locked: "“解锁 DNA 专属报告，查看您的不足能量五脏分析与断舍离指南”",
+    dominant_phys_title: "主导先天体质特征与理疗对策",
+    weak_phys_title: "先天缺失/偏弱体质调养",
+    neijing_title: "《黄帝内经》生命节律年龄段评估",
+    consult_title: "临床对症针灸方案建议 (Clinical Consultation)",
+    consult_desc: "Based on your selected symptoms, Dr. David Cai recommends the following targeted clinical acupuncture treatment plans:",
+    unlocked_booking_title: "已为您制定最佳调养建议！立即结合临床针灸进行治疗",
+    unlocked_booking_desc: "David Cai 医生将根据您的先天弱项五行与生命岁数，利用精细的脉诊定位您体内的失衡点，实施精准的按时针灸治疗。",
+    unlocked_booking_btn: "在线预约门诊治疗",
+    radar_title: "先天五脏气血平衡度",
+    radar_desc: "旁侧网状雷达图（Radar Chart）显示了您出生的五行气场。每个顶点对应中医五脏：越向外偏斜的代表气血偏旺，越往中心收敛的代表能量偏弱。",
+    pay_modal_title: "安全解锁高级体质报告",
+    pay_modal_subtitle: "一次性买断解锁，永久访问此报告",
+    pay_card_num: "信用卡号码",
+    pay_expiry: "有效期",
+    pay_cvc: "CVC 安全码",
+    pay_btn: "支付并解锁 $9.90",
+    paying_status: "正在安全验证...",
+    disclaimer: "* 提示：本测试为传统中医健康评估，基于天干地支数理与黄帝内经经典。测试报告提供建议与日常穴位理疗指导，不能代替专业医疗诊断与处方。如有严重疾病，请遵医嘱并预约医生面诊。"
+  },
+  en: {
+    title: "TCM Constitution & Life Cycle Assessment",
+    subtitle: "Clinical evaluation combining Huangdi Neijing (Internal Classic) cycles and innate BaZi elements",
+    step1_title: "Step 1: Enter Your Basic Information",
+    step1_desc: "Used to calculate your innate Five Elements and life cycle milestone.",
+    name_label: "Your Name",
+    name_placeholder: "e.g., David / Mr. Smith",
+    gender_label: "Biological Gender (Life cycle node: Male 8, Female 7 years)",
+    gender_male: "Male ♂",
+    gender_female: "Female ♀",
+    dob_label: "Date of Birth (Solar Calendar)",
+    tob_label: "Hour of Birth (Optional)",
+    next_btn_step1: "Next: Select Symptoms",
+    step2_title: "Step 2: Select Your Main Symptoms",
+    step2_desc: "5 common clinical health concerns (multiple choices allowed)",
+    next_btn_step2: "Next: Unlock Report",
+    back_btn: "Back",
+    step3_title: "Report Ready!",
+    step3_desc: "Enter your email address to immediately generate your report and receive a long-term rhythm wellness guide.",
+    email_placeholder: "Enter your email (e.g., example@gmail.com)",
+    unlock_report_btn: "Unlock Report 🔓",
+    results_title: "Your Body & Mind Energy Profile",
+    results_badge: "TCM Five Elements & Life Cycle Report",
+    timezone_label: "Timezone: Honolulu (UTC-10)",
+    book_btn: "Book Appointment",
+    beads_desc: "The outer circle contains 8 innate beads (birth chart) and 8 acquired beads (current Honolulu elements) rotating smoothly. The core has 4 subconscious beads.",
+    classic_title: "Classic Edition (Free)",
+    classic_desc: "Free sequential design & dominant energy details",
+    download_wallpaper: "Download Energy Talisman Wallpaper",
+    dna_title: "DNA Edition (Premium)",
+    dna_desc: "Deep energy intertwining & clinical recommendations",
+    price_label: "One-time purchase",
+    unlock_now_btn: "Unlock Premium Report",
+    unlocked_badge: "DNA Premium Report Unlocked",
+    save_wallet_btn: "📥 Save to Apple Wallet",
+    downloading_pass: "Compiling Pass File...",
+    birth_chart_title: "YOUR BIRTH CHART",
+    current_chart_title: "CURRENT HONOLULU",
+    dominant_energy_title: "Your Current Dominant Energy",
+    dominant_title: "Dominant Archetype",
+    deficient_title: "Deficient Energy",
+    deficient_locked: "🔒 Locked",
+    deficient_quote_locked: "“Unlock the DNA Edition to view your deficient organ analysis and daily guidelines.”",
+    dominant_phys_title: "Dominant Innate Constitution & Advice",
+    weak_phys_title: "Deficient / Weakened Constitution Advice",
+    neijing_title: "Huangdi Neijing Life Cycle Evaluation",
+    consult_title: "Clinical Treatment Plan (Acupuncture Options)",
+    consult_desc: "Based on your selected symptoms, Dr. David Cai recommends the following targeted clinical acupuncture treatment plans:",
+    unlocked_booking_title: "Tailored clinical recommendations are ready! Book your face-to-face appointment",
+    unlocked_booking_desc: "Dr. David Cai will use pulse diagnosis to locate blockages based on your deficient elements and current age cycle, applying target acupuncture treatments.",
+    unlocked_booking_btn: "Book Clinic Treatment Now",
+    radar_title: "Five Elements Qi & Blood Balance",
+    radar_desc: "The adjacent Radar Chart displays your innate elemental Qi field. Vertices correspond to TCM organs: further out means excess, closer to the center means deficiency.",
+    pay_modal_title: "Securely Unlock Advanced Report",
+    pay_modal_subtitle: "One-time buyout, permanent access to this report",
+    pay_card_num: "Credit Card Number",
+    pay_expiry: "Expiry Date",
+    pay_cvc: "CVC Code",
+    pay_btn: "Pay & Unlock $9.90",
+    paying_status: "Verifying secure payment...",
+    disclaimer: "* Disclaimer: This test is a traditional Chinese medicine health assessment based on dry stem/branch numbers and Huangdi Neijing classics. Recommendations and daily acupressure guidelines do not replace professional medical diagnosis."
+  },
+  ja: {
+    title: "東洋医学体質と生命リズムの評価",
+    subtitle: "『黄帝内経・上古天真論』の成長周期と先天的五運六気のエネルギーを組み合わせた臨床評価",
+    step1_title: "ステップ 1：基本情報の入力",
+    step1_desc: "先天的五行パターンと生命リズムの成長期を算出するために使用します。",
+    name_label: "お名前",
+    name_placeholder: "例：山田さん / David",
+    gender_label: "生理学的性別 (男性8年周期、女性7年周期)",
+    gender_male: "男性 ♂",
+    gender_female: "女性 ♀",
+    dob_label: "生年月日 (新暦)",
+    tob_label: "出生時間 (任意)",
+    next_btn_step1: "次へ：身体症状の選択",
+    step2_title: "ステップ 2：現在の主な身体症状",
+    step2_desc: "臨床でよく見られる5大健康課題 (複数選択可)",
+    next_btn_step2: "次へ：レポートを解析",
+    back_btn: "戻る",
+    step3_title: "レポートの準備ができました！",
+    step3_desc: "メールアドレスを入力すると、レポートが即座に生成され、長期的な養生ガイドもお届けします。",
+    email_placeholder: "メールアドレスを入力 (例：example@gmail.com)",
+    unlock_report_btn: "レポートをロック解除 🔓",
+    results_title: "あなたの心身エネルギー分析",
+    results_badge: "中医学五行＆生命リズム診断書",
+    timezone_label: "タイムゾーン：ホノルル (UTC-10)",
+    book_btn: "クリニック予約",
+    beads_desc: "外円の先天的エネルギービーズ8個と、ホノルルの現時宇宙エレメント8個がゆっくり回転し、中心の4個は深層心理を表します。",
+    classic_title: "Classic エディション (無料版)",
+    classic_desc: "無料基本設計図＆主导エネルギー解説",
+    download_wallpaper: "五行お守り壁紙をダウンロード",
+    dna_title: "DNA エディション (完全版)",
+    dna_desc: "深層エネルギー図騰＆鍼灸臨床アドバイス",
+    price_label: "一回のみ購入",
+    unlock_now_btn: "完全版レポートをアンロック",
+    unlocked_badge: "DNA 完全版のロック解除済み",
+    save_wallet_btn: "📥 Apple Wallet に追加",
+    downloading_pass: "Passファイルを生成中...",
+    birth_chart_title: "YOUR BIRTH CHART (出生命式局)",
+    current_chart_title: "CURRENT HONOLULU (ホノルル現時局)",
+    dominant_energy_title: "先天的＆現時のエネルギー属性",
+    dominant_title: "優位な属性",
+    deficient_title: "不足するエネルギー",
+    deficient_locked: "🔒 未解除",
+    deficient_quote_locked: "「DNA エディションを購入すると、不足するエネルギーの分析と養生法が表示されます」",
+    dominant_phys_title: "優位な体質的特徴と養生法",
+    weak_phys_title: "不足する体質の調律と鍼灸ケア",
+    neijing_title: "『黄帝内経』生命周期リズム評価",
+    consult_title: "臨床的鍼灸対策プラン (鍼灸アプローチ)",
+    consult_desc: "Based on your selected symptoms, Dr. David Cai recommends the following targeted clinical acupuncture treatment plans:",
+    unlocked_booking_title: "あなたに最適な養生プランが完成しました！今すぐ医師の対面面診を予約",
+    unlocked_booking_desc: "デビッド・ツァイ（David Cai）医師が、脈診により不足する経絡のブロックを特定し、あなたに最適なパーソナライズ鍼灸治療を行います。",
+    unlocked_booking_btn: "今すぐ鍼灸予約",
+    radar_title: "五臓気血のバランス度",
+    radar_desc: "隣のレーダーチャートは、あなたの先天的五行気場を示します。外側に向かうほどエネルギーが強く、中心に向かうほど不足しています。",
+    pay_modal_title: "完全版レポートのロック解除",
+    pay_modal_subtitle: "買い切り型、無期限アクセス可能",
+    pay_card_num: "クレジットカード番号",
+    pay_expiry: "有効期限",
+    pay_cvc: "セキュリティコード (CVC)",
+    pay_btn: "決済してロック解除 $9.90",
+    paying_status: "安全な決済を処理中...",
+    disclaimer: "* 注意：このテストは伝統中医学の評価であり、天干地支および黄帝内経に基づいています。診断書のアドバイスは医師の直接の診断に代わるものではありません。"
+  }
+};
+
+const elementLocales: Record<string, Record<string, string>> = {
+  zh: { Wood: '木', Fire: '火', Earth: '土', Metal: '金', Water: '水' },
+  ja: { Wood: '木', Fire: '火', Earth: '土', Metal: '金', Water: '水' },
+  en: { Wood: 'Wood', Fire: 'Fire', Earth: 'Earth', Metal: 'Metal', Water: 'Water' }
 };
 
 // BaZiCanvas Drawing Component from ManaReset
@@ -266,6 +469,26 @@ const BaZiCanvas = ({ beads, mode }: { beads: Bead[], mode: 'ring' | 'dna' }) =>
 };
 
 export default function ConstitutionTestPage() {
+  const [lang, setLang] = useState<'zh' | 'en' | 'ja'>('zh');
+
+  // Detect URL parameter or browser language on mount
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const urlLang = params.get('lang');
+      if (urlLang === 'en' || urlLang === 'zh' || urlLang === 'ja') {
+        setLang(urlLang);
+      } else {
+        const browserLang = navigator.language.toLowerCase();
+        if (browserLang.startsWith('ja')) setLang('ja');
+        else if (browserLang.startsWith('en')) setLang('en');
+        else setLang('zh');
+      }
+    }
+  }, []);
+
+  const t = dict[lang];
+
   const [step, setStep] = useState<number>(1);
   const [name, setName] = useState<string>('');
   const [gender, setGender] = useState<'male' | 'female'>('female');
@@ -281,10 +504,99 @@ export default function ConstitutionTestPage() {
   const [beads, setBeads] = useState<Bead[]>([]);
   
   // Checkout Form states
+  // 2. Parse age and determine Huangdi Neijing Cycle
+  function getNeijingCycle(birthDateStr: string, isFemale: boolean) {
+    if (!birthDateStr) return { label: '', quote: '', clinical: '' };
+    
+    const birthYear = parseInt(birthDateStr.split('-')[0]) || 2000;
+    const currentYear = new Date().getFullYear();
+    const age = currentYear - birthYear;
+
+    if (isFemale) {
+      if (age < 14) {
+        return {
+          label: '女子一七 (肾气渐盛阶段)',
+          quote: '女子七岁，肾气盛，齿更发长。',
+          clinical: '此时处于儿童生长发育期，肾气开始充盈，乳齿脱落换为恒齿，头发快速生长。应注重全面营养，保障充足睡眠，避免暴饮暴食。'
+        };
+      } else if (age < 21) {
+        return {
+          label: '女子二七 (天癸至/经期开端)',
+          quote: '二七而天癸至，任脉通，太冲脉盛，月事以时下，故有子。',
+          clinical: '此时女性生殖机能成熟，月经按时来潮，具备生育能力。此阶段情绪易波动，需注意经期保暖，避免剧烈运动与生冷饮食，理气调经是核心。'
+        };
+      } else if (age < 28) {
+        return {
+          label: '女子三七至四七 (身体鼎盛状态)',
+          quote: '三七肾气平均，真牙生而长极；四七筋骨坚，发长极，身体盛壮。',
+          clinical: '这是您一生的身体黄金期，肌肉满壮，筋骨最为强健。这是备孕的最佳窗口，也是保养元气、防止透支的关键时期。'
+        };
+      } else if (age < 42) {
+        return {
+          label: '女子五七 (阳明衰退/衰老起点)',
+          quote: '五七，阳明脉衰，面始焦，发始堕。',
+          clinical: '【临床警示】35岁起，手足阳明经（胃经与大肠经）的气血开始衰退。阳明经分布在面部，因此面部皮肤开始松弛干燥，头发开始脱落。调理核心在于“健脾胃、益气血”，通过针灸刺激足阳明经，可延缓衰老，保持皮肤红润。'
+        };
+      } else if (age < 49) {
+        return {
+          label: '女子六七 (三阳脉衰阶段)',
+          quote: '六七，三阳脉衰于上，面皆焦，发始白。',
+          clinical: '【临床警示】42岁起，太阳、阳明、少阳三阳经气血全面衰退，面部皱纹增多，头发开始变白。此阶段身体代谢减慢，容易出现慢性酸痛 and 情绪抑郁，针灸调理重点在于“疏通三阳，温通经络”。'
+        };
+      } else {
+        return {
+          label: '女子七七 (天癸竭/更年期阶段)',
+          quote: '七七，任脉虚，太冲脉衰少，天癸竭，地道不通，故形坏而无子也。',
+          clinical: '【临床关怀】49岁前后，任冲两脉血气衰少，天癸干涸，进入绝经期。此时身体激素水平剧烈波动，容易出现潮热盗汗、失眠焦虑、骨质疏松等更年期综合征。针灸可通过调理任督二脉、滋阴清热，安全无副作用地平稳度过更年期。'
+        };
+      }
+    } else {
+      // Male 8-year cycles
+      if (age < 16) {
+        return {
+          label: '丈夫一八 (肾气实阶段)',
+          quote: '丈夫八岁，肾气实，发长齿更。',
+          clinical: '处于儿童及少年发育期，肾气开始充实，骨骼牙齿快速发育。'
+        };
+      } else if (age < 24) {
+        return {
+          label: '丈夫二八 (天癸至阶段)',
+          quote: '二八，肾气盛，天癸至，精气溢写，阴阳和，故能有子。',
+          clinical: '男性生殖机能成熟，精力旺盛，骨骼生长进入爆发期。'
+        };
+      } else if (age < 32) {
+        return {
+          label: '丈夫三八至四八 (筋骨肌肉鼎盛期)',
+          quote: '三八，肾气平均，筋骨劲强；四八，筋骨隆盛，肌肉满壮。',
+          clinical: '24岁至32岁是男性身体机能的最高峰，筋骨强壮，肌肉发达。应维持良好的作息以稳固阳气。'
+        };
+      } else if (age < 48) {
+        return {
+          label: '丈夫五八至六八 (肾气与阳气衰退期)',
+          quote: '五八，肾气衰，发堕齿槁；六八，阳气衰竭于上，面焦，发鬓颁白。',
+          clinical: '【临床警示】40岁起肾气渐衰，开始出现脱发、牙齿松动；48岁起头部阳气衰退，额头面部出现疲态，两鬓变白。临床调理重点在于“补益肾气、维护骨骼关节”，预防腰椎间盘突出和慢性劳损。'
+        };
+      } else if (age < 64) {
+        return {
+          label: '丈夫七八 (肝肾亏虚阶段)',
+          quote: '七八，肝气衰，筋不能动，天癸竭，精少，肾藏衰，形体皆极。',
+          clinical: '【临床警示】56岁起，肝血渐虚，筋脉失去滋养，导致关节僵硬、运动不灵活；肾脏功能衰退，易感体力不支、精力减退。针灸可以强肝肾、通关节，缓解中老年骨性关节炎和全身酸痛。'
+        };
+      } else {
+        return {
+          label: '丈夫八八 (衰老养生期)',
+          quote: '八八，则齿发去……形体皆极。',
+          clinical: '【临床关怀】64岁之后，进入深度老龄养生阶段。人体脏腑精气以固守为主，防寒保暖、养阴护阳为要。通过温和的艾灸和温针灸，可有效培元固本，延年益寿。'
+        };
+      }
+    }
+  }
+
   const [cardNumber, setCardNumber] = useState<string>('');
   const [cardExpiry, setCardExpiry] = useState<string>('');
   const [cardCvc, setCardCvc] = useState<string>('');
   const [isPaying, setIsPaying] = useState<boolean>(false);
+  const [isDownloadingPass, setIsDownloadingPass] = useState<boolean>(false);
 
   // 1. Calculate Bazi elements count
   function getElementsCount(birthDateStr: string, birthTimeStr: string) {
@@ -348,96 +660,6 @@ export default function ConstitutionTestPage() {
     return counts;
   }
 
-
-
-  // 2. Parse age and determine Huangdi Neijing Cycle
-  function getNeijingCycle(birthDateStr: string, isFemale: boolean) {
-    if (!birthDateStr) return { label: '', quote: '', clinical: '' };
-    
-    const birthYear = parseInt(birthDateStr.split('-')[0]) || 2000;
-    const currentYear = new Date().getFullYear();
-    const age = currentYear - birthYear;
-
-    if (isFemale) {
-      if (age < 14) {
-        return {
-          label: '女子一七 (肾气渐盛阶段)',
-          quote: '女子七岁，肾气盛，齿更发长。',
-          clinical: '此时处于儿童生长发育期，肾气开始充盈，乳齿脱落换为恒齿，头发快速生长。应注重全面营养，保障充足睡眠，避免暴饮暴食。'
-        };
-      } else if (age < 21) {
-        return {
-          label: '女子二七 (天癸至/经期开端)',
-          quote: '二七而天癸至，任脉通，太冲脉盛，月事以时下，故有子。',
-          clinical: '此时女性生殖机能成熟，月经按时来潮，具备生育能力。此阶段情绪易波动，需注意经期保暖，避免剧烈运动与生冷饮食，理气调经是核心。'
-        };
-      } else if (age < 28) {
-        return {
-          label: '女子三七至四七 (身体鼎盛状态)',
-          quote: '三七肾气平均，真牙生而长极；四七筋骨坚，发长极，身体盛壮。',
-          clinical: '这是您一生的身体黄金期，肌肉满壮，筋骨最为强健。这是备孕的最佳窗口，也是保养元气、防止透支的关键时期。'
-        };
-      } else if (age < 42) {
-        return {
-          label: '女子五七 (阳明衰退/衰老起点)',
-          quote: '五七，阳明脉衰，面始焦，发始堕。',
-          clinical: '【临床警示】35岁起，手足阳明经（胃经与大肠经）的气血开始衰退。阳明经分布在面部，因此面部皮肤开始松弛干燥，头发开始脱落。调理核心在于“健脾胃、益气血”，通过针灸刺激足阳明经，可延缓衰老，保持皮肤红润。'
-        };
-      } else if (age < 49) {
-        return {
-          label: '女子六七 (三阳脉衰阶段)',
-          quote: '六七，三阳脉衰于上，面皆焦，发始白。',
-          clinical: '【临床警示】42岁起，太阳、阳明、少阳三阳经气血全面衰退，面部皱纹增多，头发开始变白。此阶段身体代谢减慢，容易出现慢性酸痛和情绪抑郁，针灸调理重点在于“疏通三阳，温通经络”。'
-        };
-      } else {
-        return {
-          label: '女子七七 (天癸竭/更年期阶段)',
-          quote: '七七，任脉虚，太冲脉衰少，天癸竭，地道不通，故形坏而无子也。',
-          clinical: '【临床关怀】49岁前后，任冲两脉血气衰少，天癸干涸，进入绝经期。此时身体激素水平剧烈波动，容易出现潮热盗汗、失眠焦虑、骨质疏松等更年期综合征。针灸可通过调理任督二脉、滋阴清热，安全无副作用地平稳度过更年期。'
-        };
-      }
-    } else {
-      // Male 8-year cycles
-      if (age < 16) {
-        return {
-          label: '丈夫一八 (肾气实阶段)',
-          quote: '丈夫八岁，肾气实，发长齿更。',
-          clinical: '处于儿童及少年发育期，肾气开始充实，骨骼牙齿快速发育。'
-        };
-      } else if (age < 24) {
-        return {
-          label: '丈夫二八 (天癸至阶段)',
-          quote: '二八，肾气盛，天癸至，精气溢写，阴阳和，故能有子。',
-          clinical: '男性生殖机能成熟，精力旺盛，骨骼生长进入爆发期。'
-        };
-      } else if (age < 32) {
-        return {
-          label: '丈夫三八至四八 (筋骨肌肉鼎盛期)',
-          quote: '三八，肾气平均，筋骨劲强；四八，筋骨隆盛，肌肉满壮。',
-          clinical: '24岁至32岁是男性身体机能的最高峰，筋骨强壮，肌肉发达。应维持良好的作息以稳固阳气。'
-        };
-      } else if (age < 48) {
-        return {
-          label: '丈夫五八至六八 (肾气与阳气衰退期)',
-          quote: '五八，肾气衰，发堕齿槁；六八，阳气衰竭于上，面焦，发鬓颁白。',
-          clinical: '【临床警示】40岁起肾气渐衰，开始出现脱发、牙齿松动；48岁起头部阳气衰退，额头面部出现疲态，两鬓变白。临床调理重点在于“补益肾气、维护骨骼关节”，预防腰椎间盘突出和慢性劳损。'
-        };
-      } else if (age < 64) {
-        return {
-          label: '丈夫七八 (肝肾亏虚阶段)',
-          quote: '七八，肝气衰，筋不能动，天癸竭，精少，肾藏衰，形体皆极。',
-          clinical: '【临床警示】56岁起，肝血渐虚，筋脉失去滋养，导致关节僵硬、运动不灵活；肾脏功能衰退，易感体力不支、精力减退。针灸可以强肝肾、通关节，缓解中老年骨性关节炎和全身酸痛。'
-        };
-      } else {
-        return {
-          label: '丈夫八八 (衰老养生期)',
-          quote: '八八，则齿发去……形体皆极。',
-          clinical: '【临床关怀】64岁之后，进入深度老龄养生阶段。人体脏腑精气以固守为主，防寒保暖、养阴护阳为要。通过温和的艾灸和温针灸，可有效培元固本，延年益寿。'
-        };
-      }
-    }
-  }
-
   // Symptom toggles
   function toggleSymptom(code: string) {
     if (selectedSymptoms.includes(code)) {
@@ -467,23 +689,23 @@ export default function ConstitutionTestPage() {
   function handleNextStep() {
     if (step === 1) {
       if (!name.trim()) {
-        alert("请输入您的姓名");
+        alert(lang === 'zh' ? "请输入您的姓名" : lang === 'ja' ? "お名前を入力してください" : "Please enter your name");
         return;
       }
       if (!dob) {
-        alert("请选择您的出生日期");
+        alert(lang === 'zh' ? "请选择您的出生日期" : lang === 'ja' ? "生年月日を選択してください" : "Please select your date of birth");
         return;
       }
       setStep(2);
     } else if (step === 2) {
       if (selectedSymptoms.length === 0) {
-        alert("请至少选择一项您关注的健康状况");
+        alert(lang === 'zh' ? "请至少选择一项您关注的健康状况" : lang === 'ja' ? "健康状態を少なくとも1つ選択してください" : "Please select at least one health concern");
         return;
       }
       setStep(3);
     } else if (step === 3) {
       if (!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
-        alert("请输入有效的电子邮箱地址");
+        alert(lang === 'zh' ? "请输入有效的电子邮箱地址" : lang === 'ja' ? "有効なメールアドレスを入力してください" : "Please enter a valid email address");
         return;
       }
 
@@ -554,7 +776,7 @@ export default function ConstitutionTestPage() {
   function handleMockPay(e: React.FormEvent) {
     e.preventDefault();
     if (!cardNumber.trim() || !cardExpiry.trim() || !cardCvc.trim()) {
-      alert("请填写完整的支付信息");
+      alert("Please fill in complete details.");
       return;
     }
     setIsPaying(true);
@@ -562,9 +784,62 @@ export default function ConstitutionTestPage() {
       setIsPaying(false);
       setIsUnlocked(true);
       setShowCheckout(false);
-      alert("🎉 恭喜！已成功升级至 DNA 专属完整版报告！");
+      alert(lang === 'zh' ? "🎉 恭喜！已成功升级至 DNA 专属完整版报告！" : 
+            lang === 'ja' ? "🎉 おめでとうございます！DNA完全版レポートが解除されました！" : 
+            "🎉 Congratulations! DNA Premium Report is unlocked!");
     }, 1500);
   }
+
+  // Dynamic Apple Wallet PKPass compiler trigger (Next/Vercel Serverless)
+  const handleDownloadWallet = async () => {
+    setIsDownloadingPass(true);
+    try {
+      const canvas = document.querySelector('canvas');
+      let thumbnail = null;
+      if (canvas) {
+        const tempCanvas = document.createElement('canvas');
+        tempCanvas.width = 1146; 
+        tempCanvas.height = 300;
+        const tCtx = tempCanvas.getContext('2d');
+        if (tCtx) {
+          tCtx.fillStyle = '#0B1120';
+          tCtx.fillRect(0, 0, 1146, 300);
+          const scale = 300 / canvas.height;
+          const drawWidth = canvas.width * scale;
+          tCtx.drawImage(canvas, (1146 - drawWidth) / 2, 0, drawWidth, 300);
+          thumbnail = tempCanvas.toDataURL('image/jpeg', 0.9).split(',')[1];
+        }
+      }
+
+      const res = await fetch('/api/wallet', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ 
+          element: dominant, 
+          thumbnail: thumbnail, 
+          lang: lang 
+        }),
+      });
+
+      if (!res.ok) throw new Error('Failed to generate wallet pass');
+      const blob = await res.blob();
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.style.display = 'none';
+      a.href = url;
+      a.download = `${dominant.toLowerCase()}_talisman.pkpass`;
+      document.body.appendChild(a);
+      a.click();
+      window.URL.revokeObjectURL(url);
+    } catch (err) {
+      console.error(err);
+      alert(lang === 'zh' ? "生成 Apple Wallet Pass 失败，请检查网络。" : 
+            lang === 'ja' ? "Apple Walletパスの生成に失敗しました。" : 
+            "Failed to generate Apple Wallet pass.");
+    } finally {
+      setIsDownloadingPass(false);
+    }
+  };
 
   // Run Calculations for Dominant and Deficient
   const counts = getElementsCount(dob, tob);
@@ -613,12 +888,15 @@ export default function ConstitutionTestPage() {
     const e1 = FIVE_ELEMENTS_MAP[stem as keyof typeof FIVE_ELEMENTS_MAP];
     const e2 = FIVE_ELEMENTS_MAP[branch as keyof typeof FIVE_ELEMENTS_MAP];
     
+    const e1_local = elementLocales[lang][e1] || e1;
+    const e2_local = elementLocales[lang][e2] || e2;
+
     return (
       <div className="flex flex-col items-center gap-0.5">
         <span className="text-[10px] uppercase font-bold tracking-tight opacity-50">{stem}</span>
-        <span className={`text-xs font-black ${isLight ? 'text-slate-800' : 'text-white'}`}>{e1}</span>
+        <span className={`text-xs font-black ${isLight ? 'text-slate-800' : 'text-white'}`}>{e1_local}</span>
         <span className="text-[10px] uppercase font-bold tracking-tight opacity-50 mt-1">{branch}</span>
-        <span className={`text-xs font-black ${isLight ? 'text-slate-500' : 'text-white/80'}`}>{e2}</span>
+        <span className={`text-xs font-black ${isLight ? 'text-slate-500' : 'text-white/80'}`}>{e2_local}</span>
       </div>
     );
   };
@@ -627,17 +905,48 @@ export default function ConstitutionTestPage() {
   const getBaziElementsString = (y: string, d: string) => {
     const eY = FIVE_ELEMENTS_MAP[y[0] as keyof typeof FIVE_ELEMENTS_MAP] || '';
     const eD = FIVE_ELEMENTS_MAP[d[0] as keyof typeof FIVE_ELEMENTS_MAP] || '';
-    return `${eY} / ${eD}`;
+    const eY_local = elementLocales[lang][eY] || eY;
+    const eD_local = elementLocales[lang][eD] || eD;
+    return `${eY_local} / ${eD_local}`;
+  };
+
+  const getElementNamesLocalized = (el: string) => {
+    if (lang === 'en') return elementNamesEn[el] || el;
+    if (lang === 'ja') return elementNamesJa[el] || el;
+    return elementNamesZh[el] || el;
   };
 
   return (
     <>
       <Helmet>
-        <title>中医体质与生命节律评估 | AcuTherapy Clinics</title>
-        <meta name="description" content="AcuTherapy Clinics 结合五运六气干支医学与黄帝内经上古天真论生命周期，为您提供深度中医体质分析。" />
+        <title>{t.title} | AcuTherapy Clinics</title>
+        <meta name="description" content="AcuTherapy Clinics 中医五行体质与生命节律深度临床评估。" />
       </Helmet>
-
       <section className="bg-slate-50 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+        {/* Floating Multi-Language selector */}
+        <div className="max-w-2xl mx-auto flex justify-end mb-4">
+          <div className="flex gap-1 bg-white p-1 rounded-xl shadow-sm border border-slate-100 text-[10px] font-bold">
+            <button 
+              onClick={() => setLang('zh')} 
+              className={`px-3 py-1.5 rounded-lg transition-all ${lang === 'zh' ? 'bg-blue-600 text-white' : 'text-slate-500 hover:bg-slate-50'}`}
+            >
+              中文
+            </button>
+            <button 
+              onClick={() => setLang('en')} 
+              className={`px-3 py-1.5 rounded-lg transition-all ${lang === 'en' ? 'bg-blue-600 text-white' : 'text-slate-500 hover:bg-slate-50'}`}
+            >
+              English
+            </button>
+            <button 
+              onClick={() => setLang('ja')} 
+              className={`px-3 py-1.5 rounded-lg transition-all ${lang === 'ja' ? 'bg-blue-600 text-white' : 'text-slate-500 hover:bg-slate-50'}`}
+            >
+              日本語
+            </button>
+          </div>
+        </div>
+
         <div className="max-w-2xl mx-auto">
           {/* Top Logo & Title */}
           <div className="text-center mb-8">
@@ -646,10 +955,10 @@ export default function ConstitutionTestPage() {
               AcuTherapy Clinics
             </div>
             <h1 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
-              中医体质与生命节律评估
+              {t.title}
             </h1>
             <p className="text-xs text-slate-500 mt-1">
-              结合《黄帝内经·上古天真论》与先天五运六气禀赋的临床测评
+              {t.subtitle}
             </p>
           </div>
 
@@ -670,15 +979,15 @@ export default function ConstitutionTestPage() {
             {step === 1 && (
               <div className="flex flex-col gap-6">
                 <div>
-                  <h2 className="text-lg font-bold text-slate-900">第一步：输入您的基本信息</h2>
-                  <p className="text-xs text-slate-400 mt-0.5">用于计算您的先天五行局与生命节律段</p>
+                  <h2 className="text-lg font-bold text-slate-900">{t.step1_title}</h2>
+                  <p className="text-xs text-slate-400 mt-0.5">{t.step1_desc}</p>
                 </div>
 
                 <div className="flex flex-col gap-1.5">
-                  <label className="text-xs font-bold text-slate-500">您的尊称</label>
+                  <label className="text-xs font-bold text-slate-500">{t.name_label}</label>
                   <input 
                     type="text" 
-                    placeholder="例如：张先生 / David" 
+                    placeholder={t.name_placeholder} 
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     className="bg-slate-50 border border-slate-200 rounded-xl p-3 text-sm text-slate-900 focus:border-blue-500 focus:bg-white outline-none transition-all"
@@ -686,26 +995,26 @@ export default function ConstitutionTestPage() {
                 </div>
 
                 <div className="flex flex-col gap-1.5">
-                  <label className="text-xs font-bold text-slate-500">生理性别 (生命成长节点男八女七)</label>
+                  <label className="text-xs font-bold text-slate-500">{t.gender_label}</label>
                   <div className="grid grid-cols-2 gap-4 bg-slate-100 p-1.5 rounded-xl border border-slate-200">
                     <button 
                       onClick={() => setGender('male')}
                       className={`py-2 text-xs font-bold rounded-lg transition-all ${gender === 'male' ? 'bg-blue-600 text-white shadow' : 'text-slate-500'}`}
                     >
-                      男 ♂
+                      {t.gender_male}
                     </button>
                     <button 
                       onClick={() => setGender('female')}
                       className={`py-2 text-xs font-bold rounded-lg transition-all ${gender === 'female' ? 'bg-blue-600 text-white shadow' : 'text-slate-500'}`}
                     >
-                      女 ♀
+                      {t.gender_female}
                     </button>
                   </div>
                 </div>
 
                 <div className="grid grid-cols-2 gap-4">
                   <div className="flex flex-col gap-1.5">
-                    <label className="text-xs font-bold text-slate-500">公历出生日期</label>
+                    <label className="text-xs font-bold text-slate-500">{t.dob_label}</label>
                     <input 
                       type="date" 
                       value={dob}
@@ -714,7 +1023,7 @@ export default function ConstitutionTestPage() {
                     />
                   </div>
                   <div className="flex flex-col gap-1.5">
-                    <label className="text-xs font-bold text-slate-500">出生时辰 (可选)</label>
+                    <label className="text-xs font-bold text-slate-500">{t.tob_label}</label>
                     <select 
                       value={tob}
                       onChange={(e) => setTob(e.target.value)}
@@ -740,7 +1049,7 @@ export default function ConstitutionTestPage() {
                   onClick={handleNextStep}
                   className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-xl shadow-lg shadow-blue-500/20 transition-all text-xs mt-3"
                 >
-                  下一步：勾选身体状况
+                  {t.next_btn_step1}
                 </button>
               </div>
             )}
@@ -749,8 +1058,8 @@ export default function ConstitutionTestPage() {
             {step === 2 && (
               <div className="flex flex-col gap-6">
                 <div>
-                  <h2 className="text-lg font-bold text-slate-900">第二步：勾选您目前最主要的身体状况</h2>
-                  <p className="text-xs text-slate-400 mt-0.5">临床中常见的5大健康痛点（可多选）</p>
+                  <h2 className="text-lg font-bold text-slate-900">{t.step2_title}</h2>
+                  <p className="text-xs text-slate-400 mt-0.5">{t.step2_desc}</p>
                 </div>
 
                 <div className="flex flex-col gap-3">
@@ -782,13 +1091,13 @@ export default function ConstitutionTestPage() {
                     onClick={() => setStep(1)}
                     className="border border-slate-200 hover:bg-slate-50 text-slate-600 font-bold py-3 rounded-xl text-xs"
                   >
-                    返回上一步
+                    {t.back_btn}
                   </button>
                   <button 
                     onClick={handleNextStep}
                     className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-xl shadow-lg shadow-blue-500/20 text-xs"
                   >
-                    下一步：解锁报告
+                    {t.next_btn_step2}
                   </button>
                 </div>
               </div>
@@ -801,16 +1110,16 @@ export default function ConstitutionTestPage() {
                   <div className="inline-flex w-14 h-14 rounded-full bg-blue-50 items-center justify-center text-blue-600 mb-3 animate-bounce">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
                   </div>
-                  <h2 className="text-xl font-black text-slate-900">报告已就绪！</h2>
+                  <h2 className="text-xl font-black text-slate-900">{t.step3_title}</h2>
                   <p className="text-xs text-slate-400 mt-1 px-4 leading-relaxed">
-                    请输入您的电子邮箱，报告将立即生成，同时我们也会为您发送一份长期的节律养生指南。
+                    {t.step3_desc}
                   </p>
                 </div>
 
                 <div className="flex flex-col gap-2">
                   <input 
                     type="email" 
-                    placeholder="输入您的邮箱（例如：example@gmail.com）" 
+                    placeholder={t.email_placeholder} 
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     className="bg-slate-50 border border-slate-200 rounded-xl p-3.5 text-xs text-slate-900 focus:border-blue-500 focus:bg-white outline-none transition-all text-center"
@@ -822,13 +1131,13 @@ export default function ConstitutionTestPage() {
                     onClick={() => setStep(2)}
                     className="border border-slate-200 hover:bg-slate-50 text-slate-600 font-bold py-3 rounded-xl text-xs"
                   >
-                    修改状况
+                    {t.back_btn}
                   </button>
                   <button 
                     onClick={handleNextStep}
                     className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-xl shadow-lg shadow-blue-500/20 text-xs"
                   >
-                    解锁体质报告 🔓
+                    {t.unlock_report_btn}
                   </button>
                 </div>
               </div>
@@ -842,20 +1151,20 @@ export default function ConstitutionTestPage() {
                 <div className="border-b border-slate-100 pb-5 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
                   <div>
                     <span className="text-[10px] bg-blue-100 text-blue-700 font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-                      中医五行与生命节律评估
+                      {t.results_badge}
                     </span>
-                    <h2 className="text-xl font-black text-slate-950 mt-2">您的专属身心能量分析</h2>
+                    <h2 className="text-xl font-black text-slate-950 mt-2">{t.results_title}</h2>
                     <div className="flex flex-wrap gap-x-4 gap-y-1 mt-1.5 text-xs text-slate-500 font-medium">
-                      <span>姓名：<strong className="text-slate-800">{name}</strong></span>
-                      <span>性别：<strong className="text-slate-800">{gender === 'female' ? '女' : '男'}</strong></span>
-                      <span>时区：<strong className="text-slate-800">檀香山 (Honolulu)</strong></span>
+                      <span>{t.name_label}：<strong className="text-slate-800">{name}</strong></span>
+                      <span>{lang === 'zh' ? '性别' : lang === 'ja' ? '性別' : 'Gender'}：<strong className="text-slate-800">{gender === 'female' ? (lang === 'zh' ? '女' : lang === 'ja' ? '女' : 'Female') : (lang === 'zh' ? '男' : lang === 'ja' ? '男' : 'Male')}</strong></span>
+                      <span>{t.timezone_label}</span>
                     </div>
                   </div>
                   <a 
                     href="/book-appointment"
                     className="bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow transition-all self-stretch sm:self-auto text-center"
                   >
-                    预约诊所针灸
+                    {t.book_btn}
                   </a>
                 </div>
 
@@ -888,7 +1197,7 @@ export default function ConstitutionTestPage() {
                   </div>
 
                   <span className="text-[9px] text-slate-500 text-center leading-relaxed max-w-sm z-10">
-                    外圈 {beads.filter(b => b.type === 'innate').length} 颗先天珠（出生局）与 {beads.filter(b => b.type === 'acquired').length} 颗后天珠（当前时空）匀速运转，内核心为 4 颗身心主观能量鱼眼
+                    {t.beads_desc}
                   </span>
                 </div>
 
@@ -898,22 +1207,22 @@ export default function ConstitutionTestPage() {
                   {/* Free Classic Card */}
                   <div className="bg-white rounded-3xl border border-slate-200 p-5 flex flex-col justify-between gap-4 shadow-sm hover:shadow-md transition-all">
                     <div className="flex flex-col gap-1">
-                      <h4 className="text-sm font-black text-slate-900">Classic Edition (免费版)</h4>
-                      <p className="text-[10px] text-slate-400 font-medium">Free sequential design & dominant energy</p>
+                      <h4 className="text-sm font-black text-slate-900">{t.classic_title}</h4>
+                      <p className="text-[10px] text-slate-400 font-medium">{t.classic_desc}</p>
                     </div>
                     <div className="border-t border-slate-100 pt-3 flex flex-col gap-2">
                       <a 
                         href="/book-appointment"
                         className="bg-[#1E293B] hover:bg-[#0F172A] text-white font-bold py-2.5 rounded-xl text-center text-xs shadow-sm transition-all"
                       >
-                        在线预约门诊评估
+                        {t.book_btn}
                       </a>
                       <a 
                         href={`/assets/${dominant.toLowerCase()}_talisman.png`}
                         download
                         className="text-[10px] text-blue-600 font-bold hover:underline flex items-center justify-center gap-1.5 mt-1"
                       >
-                        <Download size={12} /> 下载您的五行护身符壁纸
+                        <Download size={12} /> {t.download_wallpaper}
                       </a>
                     </div>
                   </div>
@@ -924,26 +1233,42 @@ export default function ConstitutionTestPage() {
                       Premium
                     </div>
                     <div className="flex flex-col gap-1">
-                      <h4 className="text-sm font-black text-slate-900">DNA Edition (解锁版)</h4>
-                      <p className="text-[10px] text-slate-400 font-medium">Deep energy intertwining & clinical recommendations</p>
+                      <h4 className="text-sm font-black text-slate-900">{t.dna_title}</h4>
+                      <p className="text-[10px] text-slate-400 font-medium">{t.dna_desc}</p>
                     </div>
                     <div className="border-t border-slate-100 pt-3 flex flex-col gap-2">
                       {!isUnlocked ? (
                         <>
                           <div className="flex justify-between items-baseline">
-                            <span className="text-[10px] text-slate-400 font-semibold">一次性解锁</span>
+                            <span className="text-[10px] text-slate-400 font-semibold">{t.price_label}</span>
                             <span className="text-base font-black text-slate-900">$9.90</span>
                           </div>
                           <button 
                             onClick={() => setShowCheckout(true)}
                             className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2.5 rounded-xl text-center text-xs shadow transition-all"
                           >
-                            付费解锁完整报告
+                            {t.unlock_now_btn}
                           </button>
                         </>
                       ) : (
-                        <div className="bg-emerald-50 border border-emerald-200 text-emerald-800 rounded-xl py-2 px-3 text-xs font-bold text-center flex items-center justify-center gap-1.5">
-                          <Check size={14} /> DNA 完整报告已解锁
+                        <div className="flex flex-col gap-2">
+                          <button 
+                            onClick={handleDownloadWallet}
+                            disabled={isDownloadingPass}
+                            className="bg-blue-600 hover:bg-blue-700 disabled:bg-blue-400 text-white font-bold py-2.5 rounded-xl text-center text-xs shadow transition-all flex items-center justify-center gap-2"
+                          >
+                            {isDownloadingPass ? (
+                              <>
+                                <svg className="animate-spin h-3.5 w-3.5 text-white" fill="none" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"/></svg>
+                                {t.downloading_pass}
+                              </>
+                            ) : (
+                              t.save_wallet_btn
+                            )}
+                          </button>
+                          <div className="text-[10px] text-emerald-600 font-bold text-center flex items-center justify-center gap-1">
+                            <Check size={12} /> {t.unlocked_badge}
+                          </div>
                         </div>
                       )}
                     </div>
@@ -957,7 +1282,7 @@ export default function ConstitutionTestPage() {
                     
                     {/* Left: Your Birth Chart */}
                     <div className="bg-white rounded-2xl border border-slate-200 p-5 text-center shadow-sm flex flex-col items-center gap-2">
-                      <p className="text-[9px] text-slate-400 uppercase tracking-widest font-black">YOUR BIRTH CHART</p>
+                      <p className="text-[9px] text-slate-400 uppercase tracking-widest font-black">{t.birth_chart_title.split(' ')[0]}</p>
                       <div className="text-xl text-slate-700">☯︎</div>
                       <div className="grid grid-cols-4 gap-3 w-full border-t border-slate-100 pt-3 mt-1">
                         {renderPillarColumn(Lunar.fromDate(new Date(year, month - 1, day, hour, 0)).getYearInGanZhi())}
@@ -969,13 +1294,13 @@ export default function ConstitutionTestPage() {
                         {getBaziElementsString(
                           Lunar.fromDate(new Date(year, month - 1, day, hour, 0)).getYearInGanZhi(),
                           Lunar.fromDate(new Date(year, month - 1, day, hour, 0)).getDayInGanZhi()
-                        )} Dominant
+                        )} {lang === 'zh' ? '最旺' : lang === 'ja' ? '最旺' : 'Dominant'}
                       </p>
                     </div>
 
                     {/* Right: Current Honolulu Chart */}
                     <div className="bg-[#0B1120] rounded-2xl border border-slate-800 p-5 text-center shadow-md flex flex-col items-center gap-2 text-white">
-                      <p className="text-[9px] text-blue-400/80 uppercase tracking-widest font-black">CURRENT HONOLULU</p>
+                      <p className="text-[9px] text-blue-400/80 uppercase tracking-widest font-black">{t.current_chart_title.split(' ')[0]}</p>
                       <div className="text-xl text-blue-400">☲</div>
                       <div className="grid grid-cols-4 gap-3 w-full border-t border-slate-800 pt-3 mt-1">
                         {renderPillarColumn(Lunar.fromDate(new Date(new Date().getTime() + new Date().getTimezoneOffset() * 60000 - 10 * 3600000)).getYearInGanZhi(), false)}
@@ -987,7 +1312,7 @@ export default function ConstitutionTestPage() {
                         {getBaziElementsString(
                           Lunar.fromDate(new Date(new Date().getTime() + new Date().getTimezoneOffset() * 60000 - 10 * 3600000)).getYearInGanZhi(),
                           Lunar.fromDate(new Date(new Date().getTime() + new Date().getTimezoneOffset() * 60000 - 10 * 3600000)).getDayInGanZhi()
-                        )} Dominant
+                        )} {lang === 'zh' ? '最旺' : lang === 'ja' ? '最旺' : 'Dominant'}
                       </p>
                     </div>
 
@@ -996,20 +1321,20 @@ export default function ConstitutionTestPage() {
 
                 {/* 🌟 4. CURRENT DOMINANT ENERGY CARDS (Screenshot 4 Style) */}
                 <div className="bg-slate-50 border border-slate-100 rounded-3xl p-6 flex flex-col items-center gap-5">
-                  <span className="text-[10px] text-slate-400 font-black uppercase tracking-widest">Your Current Dominant Energy</span>
+                  <span className="text-[10px] text-slate-400 font-black uppercase tracking-widest">{t.dominant_energy_title}</span>
                   
                   <div className="flex justify-center gap-4 w-full max-w-sm">
                     {/* Dominant Element Badge */}
                     <div className="flex-1 bg-rose-50 border border-rose-200 rounded-2xl py-3 px-4 text-center">
-                      <span className="text-[9px] text-slate-400 font-bold uppercase tracking-wider block">Dominant Archetype</span>
+                      <span className="text-[9px] text-slate-400 font-bold uppercase tracking-wider block">{t.dominant_title}</span>
                       <span className="text-xl font-black text-rose-700 mt-1 block font-serif">{dominant}</span>
                     </div>
 
                     {/* Deficient Element Badge */}
                     <div className="flex-1 bg-blue-50 border border-blue-200 rounded-2xl py-3 px-4 text-center">
-                      <span className="text-[9px] text-slate-400 font-bold uppercase tracking-wider block">Deficient Energy</span>
+                      <span className="text-[9px] text-slate-400 font-bold uppercase tracking-wider block">{t.deficient_title}</span>
                       <span className="text-xl font-black text-blue-700 mt-1 block font-serif">
-                        {isUnlocked ? deficient : '🔒 Locked'}
+                        {isUnlocked ? deficient : t.deficient_locked}
                       </span>
                     </div>
                   </div>
@@ -1027,7 +1352,7 @@ export default function ConstitutionTestPage() {
                     {isUnlocked ? (
                       deficientTeasers[deficient]
                     ) : (
-                      <span className="text-slate-400">“解锁 DNA 专属报告，查看您的不足能量五脏分析与断舍离指南”</span>
+                      <span className="text-slate-400">{t.deficient_quote_locked}</span>
                     )}
                   </div>
                 </div>
@@ -1035,16 +1360,16 @@ export default function ConstitutionTestPage() {
                 {/* 🌟 5. DOMINANT ELEMENT PHYSICAL ADVICE (FREE VERSION CONTENT) */}
                 <div className="flex flex-col gap-4 border border-slate-200 rounded-3xl p-6 bg-slate-50/20">
                   <h3 className="text-xs font-black text-slate-900 uppercase tracking-wider flex items-center gap-2 border-l-4 border-amber-500 pl-2">
-                    主导先天体质特征与理疗对策
+                    {t.dominant_phys_title}
                   </h3>
                   <span className="text-base font-black text-amber-700">
-                    {elementNamesZh[dominant]} / {elementNamesEn[dominant]}
+                    {getElementNamesLocalized(dominant)}
                   </span>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     {constitutionDescriptions[dominant]?.desc}
                   </p>
                   <div className="bg-amber-50 border border-amber-100 p-4 rounded-2xl text-xs leading-relaxed text-slate-700">
-                    <strong className="text-amber-800 block mb-1">💡 免费版·主导经络穴位理疗指导：</strong>
+                    <strong className="text-amber-800 block mb-1">💡 {lang === 'zh' ? '免费版·主导经络穴位理疗指导' : lang === 'ja' ? '無料版・主要な経穴のケアガイド' : 'Free Pass · Primary Meridian Acupressure Guidelines'}：</strong>
                     {constitutionDescriptions[dominant]?.advice}
                   </div>
                 </div>
@@ -1109,9 +1434,9 @@ export default function ConstitutionTestPage() {
                   </div>
 
                   <div className="flex flex-col gap-2">
-                    <h4 className="text-xs font-black text-slate-900 uppercase tracking-wider">先天五脏气血平衡度</h4>
+                    <h4 className="text-xs font-black text-slate-900 uppercase tracking-wider">{t.radar_title}</h4>
                     <p className="text-xs text-slate-500 leading-relaxed">
-                      旁侧网状雷达图（Radar Chart）显示了您出生的五行气场。每个顶点对应中医五脏：木主肝，火主心，土主脾，金主肺，水主肾。越向外偏斜的脏器代表气血偏旺，越往中心收敛的代表能量偏弱。
+                      {t.radar_desc}
                     </p>
                   </div>
                 </div>
@@ -1137,9 +1462,11 @@ export default function ConstitutionTestPage() {
                         <Lock size={18} />
                       </div>
                       <div>
-                        <h4 className="text-base font-black text-slate-900">升级至高级 DNA 报告解锁完整项目</h4>
+                        <h4 className="text-base font-black text-slate-900">{lang === 'zh' ? '升级至高级 DNA 报告解锁完整项目' : lang === 'ja' ? 'DNA完全版レポートにアップグレードして全て解除' : 'Upgrade to DNA Edition to Unlock Full Report'}</h4>
                         <p className="text-[10px] text-slate-500 max-w-sm mt-1 mx-auto leading-relaxed">
-                          升级后即可解锁：先天偏弱体质调理（弱项五行分析）、《黄帝内经》男女衰老退化节点提醒，以及 David Cai 医生亲自针对您的症状撰写的英文针灸处方建议。
+                          {lang === 'zh' ? '升级后即可解锁：先天偏弱体质调理（弱项五行分析）、《黄帝内经》男女衰老退化节点提醒，以及 David Cai 医生亲自针对您的症状撰写的英文针灸处方建议。' :
+                           lang === 'ja' ? 'アップグレードすると、不足する五行の分析、黄帝内経の加齢リスク警告、デビッド医師の鍼灸処方アプローチがすべて解除されます。' :
+                           'Upgrade to unlock: deficient element profile, Huangdi Neijing aging milestone warning, and Dr. David Cai\'s personalized clinical acupuncture treatments.'}
                         </p>
                       </div>
 
@@ -1147,7 +1474,7 @@ export default function ConstitutionTestPage() {
                         onClick={() => setShowCheckout(true)}
                         className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2.5 px-6 rounded-xl shadow transition-all text-xs"
                       >
-                        解锁高级评估报告 (仅需 $9.90)
+                        {t.unlock_now_btn} (仅需 $9.90)
                       </button>
                     </div>
                   </div>
@@ -1158,16 +1485,16 @@ export default function ConstitutionTestPage() {
                     {/* Deficient Element */}
                     <div className="flex flex-col gap-4 border border-slate-200 rounded-3xl p-6 bg-slate-50/20">
                       <h3 className="text-xs font-black text-slate-900 uppercase tracking-wider flex items-center gap-2 border-l-4 border-blue-600 pl-2">
-                        先天缺失/偏弱体质调养
+                        {t.weak_phys_title}
                       </h3>
                       <span className="text-base font-black text-blue-700">
-                        {elementNamesZh[deficient]} / {elementNamesEn[deficient]}
+                        {getElementNamesLocalized(deficient)}
                       </span>
                       <p className="text-xs text-slate-600 leading-relaxed">
                         {constitutionDescriptions[deficient]?.desc}
                       </p>
                       <div className="bg-blue-50 border border-blue-100 p-4 rounded-xl text-xs leading-relaxed text-slate-700">
-                        <strong className="text-blue-800 block mb-1">💡 弱项调养·日常穴位理疗指导：</strong>
+                        <strong className="text-blue-800 block mb-1">💡 {lang === 'zh' ? '弱项调养·日常穴位理疗指导' : lang === 'ja' ? '不足の調律・日常の経穴ケア' : 'Deficient Element · Acupressure Guidelines'}：</strong>
                         {constitutionDescriptions[deficient]?.advice}
                       </div>
                     </div>
@@ -1175,7 +1502,7 @@ export default function ConstitutionTestPage() {
                     {/* Huangdi Neijing Cycle */}
                     <div className="flex flex-col gap-4">
                       <h3 className="text-xs font-black text-slate-900 uppercase tracking-wider flex items-center gap-2 border-l-4 border-blue-600 pl-2">
-                        《黄帝内经》生命节律年龄段评估
+                        {t.neijing_title}
                       </h3>
                       <div className="bg-blue-50/50 border border-blue-100 rounded-2xl p-5">
                         <div className="flex justify-between items-center border-b border-blue-100 pb-2 mb-2">
@@ -1194,10 +1521,10 @@ export default function ConstitutionTestPage() {
                     {/* Clinical Recommendations */}
                     <div className="flex flex-col gap-4">
                       <h3 className="text-xs font-black text-slate-900 uppercase tracking-wider flex items-center gap-2 border-l-4 border-blue-600 pl-2">
-                        临床对症针灸方案建议 (Clinical Consultation)
+                        {t.consult_title}
                       </h3>
                       <p className="text-xs text-slate-500 leading-relaxed">
-                        Based on your selected symptoms, Dr. David Cai recommends the following targeted clinical acupuncture treatment plans:
+                        {t.consult_desc}
                       </p>
 
                       <div className="flex flex-col gap-4 mt-2">
@@ -1264,17 +1591,17 @@ export default function ConstitutionTestPage() {
                     {/* Unlocked Booking CTA */}
                     <div className="border-t border-slate-100 pt-6 mt-4 text-center flex flex-col gap-3">
                       <h4 className="text-sm font-black text-slate-950">
-                        已为您制定最佳调养建议！立即结合临床针灸进行治疗
+                        {t.unlocked_booking_title}
                       </h4>
                       <p className="text-xs text-slate-500 max-w-md mx-auto leading-relaxed">
-                        David Cai 医生将根据您的先天弱项五行与生命岁数，利用精细的脉诊定位您体内的失衡点，实施精准的按时针灸治疗。
+                        {t.unlocked_booking_desc}
                       </p>
                       
                       <a 
                         href="/book-appointment"
                         className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-xl shadow-lg shadow-blue-500/20 transition-all text-xs max-w-xs mx-auto"
                       >
-                        在线预约门诊治疗
+                        {t.unlocked_booking_btn}
                       </a>
                     </div>
 
@@ -1288,7 +1615,7 @@ export default function ConstitutionTestPage() {
 
           {/* Bottom disclaimer */}
           <div className="text-center mt-6 text-[10px] text-slate-400 px-4 leading-relaxed">
-            * 提示：本测试为传统中医健康评估，基于天干地支数理与黄帝内经经典。测试报告提供建议与日常穴位理疗指导，不能代替专业医疗诊断与处方。如有严重疾病，请遵医嘱并预约医生面诊。
+            {t.disclaimer}
           </div>
 
         </div>
@@ -1308,8 +1635,8 @@ export default function ConstitutionTestPage() {
 
             <div className="text-center">
               <span className="text-[10px] font-black text-blue-600 uppercase tracking-widest">AcuTherapy Clinics</span>
-              <h3 className="text-lg font-black text-slate-900 mt-1">安全解锁高级体质报告</h3>
-              <p className="text-xs text-slate-400 mt-0.5">一次性买断解锁，永久访问此报告</p>
+              <h3 className="text-lg font-black text-slate-900 mt-1">{t.pay_modal_title}</h3>
+              <p className="text-xs text-slate-400 mt-0.5">{t.pay_modal_subtitle}</p>
             </div>
 
             <div className="bg-slate-50 border border-slate-150 rounded-2xl p-4 flex justify-between items-center">
@@ -1323,7 +1650,7 @@ export default function ConstitutionTestPage() {
             {/* Checkout Form */}
             <form onSubmit={handleMockPay} className="flex flex-col gap-4">
               <div className="flex flex-col gap-1">
-                <label className="text-[9px] font-bold text-slate-500 uppercase tracking-wider">信用卡号码</label>
+                <label className="text-[9px] font-bold text-slate-500 uppercase tracking-wider">{t.pay_card_num}</label>
                 <input 
                   type="text" 
                   placeholder="4111 2222 3333 4444" 
@@ -1336,7 +1663,7 @@ export default function ConstitutionTestPage() {
 
               <div className="grid grid-cols-2 gap-4">
                 <div className="flex flex-col gap-1">
-                  <label className="text-[9px] font-bold text-slate-500 uppercase tracking-wider">有效期</label>
+                  <label className="text-[9px] font-bold text-slate-500 uppercase tracking-wider">{t.pay_expiry}</label>
                   <input 
                     type="text" 
                     placeholder="MM/YY" 
@@ -1347,7 +1674,7 @@ export default function ConstitutionTestPage() {
                   />
                 </div>
                 <div className="flex flex-col gap-1">
-                  <label className="text-[9px] font-bold text-slate-500 uppercase tracking-wider">CVC 安全码</label>
+                  <label className="text-[9px] font-bold text-slate-500 uppercase tracking-wider">{t.pay_cvc}</label>
                   <input 
                     type="text" 
                     placeholder="123" 
@@ -1367,10 +1694,10 @@ export default function ConstitutionTestPage() {
                 {isPaying ? (
                   <>
                     <svg className="animate-spin h-4 w-4 text-white" fill="none" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"/></svg>
-                    正在安全验证...
+                    {t.paying_status}
                   </>
                 ) : (
-                  `支付并解锁 $9.90`
+                  t.pay_btn
                 )}
               </button>
             </form>
