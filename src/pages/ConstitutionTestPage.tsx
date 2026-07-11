@@ -55,7 +55,7 @@ const getBeadBaseColor = (el: string) => {
     case 'Wood': return '#10B981'; // Emerald Green
     case 'Fire': return '#EF4444'; // Red
     case 'Earth': return '#F59E0B'; // Amber Gold
-    case 'Metal': return '#94A3B8'; // Slate/Silver
+    case 'Metal': return '#64748B'; // Slate/Silver
     case 'Water': return '#3B82F6'; // Blue
     default: return '#9CA3AF';
   }
@@ -67,48 +67,229 @@ const getGanZhiElement = (ganzhi: string) => {
   return FIVE_ELEMENTS_MAP[stem as keyof typeof FIVE_ELEMENTS_MAP] || 'Neutral';
 };
 
-const constitutionDescriptions: Record<string, { title: string; desc: string; advice: string }> = {
-  'Wood': {
-    title: '木型体质 (肝气偏旺/易郁型)',
-    desc: '您的先天格局中木元素偏强。中医认为，木气对应肝胆。木型体质者通常精力充沛、工作效率高，但在压力下极易“肝气郁结”或“肝阳上亢”，表现为长期慢性的肩膀颈椎酸痛、头痛或情绪波动。',
-    advice: '建议日常多饮玫瑰花茶以疏肝理气。多做拉伸运动以柔筋。按压太冲穴 (LR3) 每次3分钟，可显著缓解气血郁滞。'
+const constitutionDescriptions = {
+  zh: {
+    'Wood': {
+      title: '木型体质 (肝气偏旺/易郁型)',
+      desc: '您的先天格局中木元素偏强。中医认为，木气对应肝胆。木型体质者通常精力充沛、工作效率高，但在压力下极易“肝气郁结”或“肝阳上亢”，表现为长期慢性的肩膀颈椎酸痛、头痛或情绪波动。',
+      advice: '建议日常多饮玫瑰花茶以疏肝理气。多做拉伸运动以柔筋。按压太冲穴 (LR3) 每次3分钟，可显著缓解气血郁滞。'
+    },
+    'Fire': {
+      title: '火型体质 (心火偏旺/神浮型)',
+      desc: '您的先天格局中火元素偏强。火对应心神。火型体质的人充满热情、思维敏捷，但也容易“心火上炎”，在休息不足或压力大时容易出现心慌、失眠、焦虑或多梦易醒。',
+      advice: '建议下午或晚上避免饮用咖啡和浓茶。睡前用温水泡脚以引火下行。按压神门穴 (HT7) 或内关穴 (PC6) 以安神助眠。'
+    },
+    'Earth': {
+      title: '土型体质 (脾胃气虚/湿滞型)',
+      desc: '您的先天格局中土元素偏弱。土对应脾胃。脾胃为后天之本。如果土气不足，脾的运化水分和营养功能容易减退，临床表现为容易消化不良、饭后腹胀、全身困重、经常感到慢性疲劳，且容易伴随肌肉无力。',
+      advice: '建议坚持三餐规律，避免暴饮暴食和过量生冷食物。可多食山药、薏米以健脾祛湿。常按足三里穴 (ST36) 可增强脾胃之气。'
+    },
+    'Metal': {
+      title: '金型体质 (肺卫气虚/敏感型)',
+      desc: '您的先天格局中金元素偏弱。金对应肺与大肠。肺主皮毛，是身体防御外界风寒的防线。金气不足的人容易对花粉、冷空气过敏，免疫力偏低容易感冒，或经常皮肤干燥、肠道不调。',
+      advice: '建议多做深呼吸训练，增强肺活量。少吃辛辣刺激食物。多饮百合银耳汤润肺。按压合谷穴 (LI4) 和列缺穴 (LU7) 以固表御卫。'
+    },
+    'Water': {
+      title: '水型体质 (肾气偏弱/骨软型)',
+      desc: '您的先天格局中水元素偏弱。水对应肾脏。肾主骨生髓，是人的先天之本。水气偏弱者容易在疲劳时出现慢性的腰膝酸痛、四肢怕冷，或晚上频繁起夜，性功能或精力感到低下。',
+      advice: '注意腰部 and 足部的保暖，避免熬夜伤阴。可适量食用黑芝麻、黑豆等黑色食物以补肾。常灸或按摩太溪穴 (KI3) 和涌泉穴 (KI1) 以培元固本。'
+    }
   },
-  'Fire': {
-    title: '火型体质 (心火偏旺/神浮型)',
-    desc: '您的先天格局中火元素偏强。火对应心神。火型体质的人充满热情、思维敏捷，但也容易“心火上炎”，在休息不足或压力大时容易出现心慌、失眠、焦虑或多梦易醒。',
-    advice: '建议下午或晚上避免饮用咖啡和浓茶。睡前用温水泡脚以引火下行。按压神门穴 (HT7) 或内关穴 (PC6) 以安神助眠。'
+  en: {
+    'Wood': {
+      title: 'Wood Constitution (Liver Qi Excess / Stagnation Type)',
+      desc: "Your innate constitution has a strong Wood element. In TCM, Wood corresponds to the Liver and Gallbladder. Wood archetypes are energetic and highly efficient, but under stress, they are prone to Liver Qi stagnation or Liver Yang rising, manifesting as chronic shoulder and neck tension, headaches, or mood swings.",
+      advice: "We suggest drinking rose tea daily to soothe the Liver Qi. Incorporate stretching exercises to soften the tendons. Massage the Taichong point (LR3) for 3 minutes daily to relieve stagnation."
+    },
+    'Fire': {
+      title: 'Fire Constitution (Heart Fire Excess / Overactive Mind Type)',
+      desc: "Your innate constitution has a strong Fire element. Fire corresponds to the Heart and Shen (spirit). Fire archetypes are passionate, quick-thinking, and creative, but are prone to Heart Fire flaring up, manifesting as heart palpitations, insomnia, anxiety, or vivid dreams when sleep-deprived.",
+      advice: "Avoid caffeine or strong tea in the afternoon or evening. Soak your feet in warm water before sleep to draw heat downwards. Press Shenmen (HT7) or Neiguan (PC6) to calm the mind."
+    },
+    'Earth': {
+      title: 'Earth Constitution (Spleen Qi Deficiency / Damp Retention Type)',
+      desc: "Your innate constitution has a weaker Earth element. Earth corresponds to the Spleen and Stomach, which are the root of post-natal life. Weak Earth energy impairs digestion and fluid transport, manifesting as indigestion, bloating, body heaviness, chronic fatigue, and weak muscles.",
+      advice: "Maintain regular eating hours and avoid raw, cold, or overly greasy foods. Consume Chinese Yam or Job's Tears to strengthen the Spleen. Regularly press Zusanli (ST36) to boost Spleen Qi."
+    },
+    'Metal': {
+      title: 'Metal Constitution (Lung Qi Deficiency / Sensitive Skin & Lung Type)',
+      desc: "Your innate constitution has a weaker Metal element. Metal corresponds to the Lungs and Large Intestine. The Lung controls the skin and defensive Qi (Wei Qi) against external pathogons. Deficient Metal makes you susceptible to seasonal allergies, frequent colds, dry skin, and irregular bowel movements.",
+      advice: "Engage in deep breathing exercises to expand lung capacity. Avoid overly spicy foods. Drink lily bulb and snow fungus soup to moisten the lungs. Press Hegu (LI4) and Lieque (LU7) to boost immunity."
+    },
+    'Water': {
+      title: 'Water Constitution (Kidney Qi Deficiency / Vitality Depletion Type)',
+      desc: "Your innate constitution has a weaker Water element. Water corresponds to the Kidneys, the storehouse of prenatal essence (Jing). Weakened Kidney energy leads to chronic lower back pain, knee weakness, cold extremities, nocturia, and low vitality or libido under exhaustion.",
+      advice: "Keep your lower back and feet warm, and avoid staying up late. Eat black sesame or black beans to nourish Kidney Qi. Regularly massage Taixi (KI3) and Yongquan (KI1) to replenish your body's vital essence."
+    }
   },
-  'Earth': {
-    title: '土型体质 (脾胃气虚/湿滞型)',
-    desc: '您的先天格局中土元素偏弱。土对应脾胃。脾胃为后天之本。如果土气不足，脾的运化水分和营养功能容易减退，临床表现为容易消化不良、饭后腹胀、全身困重、经常感到慢性疲劳，且容易伴随肌肉无力。',
-    advice: '建议坚持三餐规律，避免暴饮暴食和过量生冷食物。可多食山药、薏米以健脾祛湿。常按足三里穴 (ST36) 可增强脾胃之气。'
-  },
-  'Metal': {
-    title: '金型体质 (肺卫气虚/敏感型)',
-    desc: '您的先天格局中金元素偏弱。金对应肺与大肠。肺主皮毛，是身体防御外界风寒的防线。金气不足的人容易对花粉、冷空气过敏，免疫力偏低容易感冒，或经常皮肤干燥、肠道不调。',
-    advice: '建议多做深呼吸训练，增强肺活量。少吃辛辣刺激食物。多饮百合银耳汤润肺。按压合谷穴 (LI4) 和列缺穴 (LU7) 以固表御卫。'
-  },
-  'Water': {
-    title: '水型体质 (肾气偏弱/骨软型)',
-    desc: '您的先天格局中水元素偏弱。水对应肾脏。肾主骨生髓，是人的先天之本。水气偏弱者容易在疲劳时出现慢性的腰膝酸痛、四肢怕冷，或晚上频繁起夜，性功能或精力感到低下。',
-    advice: '注意腰部和足部的保暖，避免熬夜伤阴。可适量食用黑芝麻、黑豆等黑色食物以补肾。常灸或按摩太溪穴 (KI3) 和涌泉穴 (KI1) 以培元固本。'
+  ja: {
+    'Wood': {
+      title: '木型体質（肝気鬱結・ストレス蓄積型）',
+      desc: 'あなたの生まれ持った五行パターンでは「木」のエネルギーが強く現れています。東洋医学において「木」は肝胆（肝臓・胆嚢）に対応します。木型体質の方はエネルギーに満ち、仕事の効率も高いですが、ストレスを受けると「肝気鬱結」を起こしやすく、肩こりや頭痛、情緒不安定になりやすい傾向があります。',
+      advice: '日常的にローズティーやマイカイ花茶を飲み、肝の気を巡らせることをお勧めします。ストレッチで筋をほぐし、太衝穴（LR3）を毎日3分間マッサージして気の滞りを解消しましょう。'
+    },
+    'Fire': {
+      title: '火型体質（心火旺盛・のぼせ型）',
+      desc: 'あなたの生まれ持った五行パターンでは「火」のエネルギーが強く現れています。東洋医学において「火」は心神（心臓・自律神経）に対応します。火型体質の方は情熱的で直感に優れますが、心火が燃え上がりやすく、睡眠不足や過労の際に動悸、不眠、焦燥感、多夢の症状が出やすくなります。',
+      advice: '午後以降のカフェインや濃いお茶の摂取は避けましょう。就寝前に温水で足湯を行い、頭部の熱を下げてください。神門穴（HT7）や内関穴（PC6）を揉むと、心を落ち着かせて睡眠をサポートできます。',
+    },
+    'Earth': {
+      title: '土型体質（脾胃虚弱・湿気停滞型）',
+      desc: 'あなたの生まれ持った五行パターンでは「土」のエネルギーが弱めです。東洋医学において「土」は脾胃（消化器系）に対応し、生きるエネルギーを生み出す根本です。脾胃が弱いと水分の代謝や栄養吸収が滞り、食後の胃もたれ、体が重だるい、慢性疲労、筋肉の低下が現れやすくなります。',
+      advice: '規則正しい食生活を心がけ、生冷ものや油っこいものを控えましょう。山芋やハトムギを食べると脾が潤います。足三里穴（ST36）を日々マッサージして胃腸の機能を高めてください。'
+    },
+    'Metal': {
+      title: '金型体質（肺気虚弱・バリア機能低下型）',
+      desc: 'あなたの生まれ持った五行パターンでは「金」的エネルギーが弱めです。東洋医学において「金」は肺・大腸に対応します。肺は皮膚を司り、風邪など外邪から体を守る役割（衛気）があります。金が不足すると、寒暖差やアレルギーに弱く、風邪を引きやすくなり、肌が乾燥しやすくなります。',
+      advice: '深呼吸の習慣をつけ、肺活量を高めましょう。辛い刺激物の摂りすぎを控え、ユリの根や白キクラゲのスープで肺を潤します。合谷穴（LI4）や列欠穴（LU7）を押すことで免疫力を補います。'
+    },
+    'Water': {
+      title: '水型体質（腎気不足・エネルギー消耗型）',
+      desc: 'あなたの生まれ持った五行パターンでは「水」のエネルギーが弱めです。東洋医学において「水」は腎臓（生命力の源）に対応します。腎は骨や生殖を司る先天の生命力の源です。水が不足すると、腰痛や膝の力不足、手足の冷え、夜間頻尿、極度の疲労感を感じやすくなります。',
+      advice: '腰元や足を冷やさないようにし、夜更かしを避けましょう。黒ゴマや黒豆などの黒い食材が腎の機能を補います。太渓穴（KI3）や湧泉穴（KI1）をお灸やマッサージで刺激して精気を補いましょう。'
+    }
   }
 };
 
-const quotes: Record<string, string> = {
-  'Wood': '万物生发，不破不立。您需要扎根大地的勇气，来对抗风雨中的焦虑。',
-  'Fire': '心火炽盛，向阳而生。与其在内耗中燃烧自己，不如将热情化作照亮前路的明灯。',
-  'Earth': '厚德载物，固本培元。放下那些不属于您的重担，给自己一片可以安静降落的土壤。',
-  'Metal': '百炼成钢，断舍离尘。斩断那些混乱的羁绊，在极简与秩序中找回内心的锋芒。',
-  'Water': '上善若水，顺流而下。不必时刻紧绷对抗，允许自己像水一样，在静默中积蓄千钧之力。'
+const quotes = {
+  zh: {
+    'Wood': '万物生发，不破不立。您需要扎根大地的勇气，来对抗风雨中的焦虑。',
+    'Fire': '心火炽盛，向阳而生。与其在内耗中燃烧自己，不如将热情化作照亮前路的明灯。',
+    'Earth': '厚德载物，固本培元。放下那些不属于您的重担，给自己一片可以安静降落的土壤。',
+    'Metal': '百炼成钢，断舍离尘。斩断那些混乱的羁绊，在极简与秩序中找回内心的锋芒。',
+    'Water': '上善若水，顺流而下。不必时刻紧绷对抗，允许自己像水一样，在静默中积蓄千钧之力。'
+  },
+  en: {
+    'Wood': 'All things grow; breakthrough requires destruction. You need the courage to root deep into the earth to withstand the winds of anxiety.',
+    'Fire': 'The heart fire burns bright, growing towards the light. Instead of burning out in self-sabotage, turn your passion into a beacon to light your path.',
+    'Earth': 'Great virtue carries all; nourish your roots. Lay down the burdens that do not belong to you, and give yourself a peaceful ground to land.',
+    'Metal': 'Tempered steel cuts through dust. Sever chaotic ties and find your inner sharp focus through simplicity and order.',
+    'Water': "The highest good is like water, flowing downwards. No need to fight constantly; allow yourself, like water, to accumulate strength in silence."
+  },
+  ja: {
+    'Wood': '万物は芽吹き、古い殻を破ることで生まれます。風雨の不安に立ち向かうには、大地に深く根を張る勇気が必要です。',
+    'Fire': '心火は燃え上がり、光に向かって生きています。葛藤の中で身を削るのではなく、その情熱で前路を照らし出しましょう。',
+    'Earth': '厚徳は万物を載せ、根本を養います。自分のものではない重荷を下ろし、心が静かに着地できる土壌を与えてください。',
+    'Metal': '百錬の鋼は塵を断ちます。混乱した絆を断ち切り、極限のシンプルさと秩序の中で内なる強さを見出しましょう。',
+    'Water': '上善は水のごとく、下流へと流れます。常に緊張して対抗する必要はありません。静寂の中で莫大な力を蓄えましょう。'
+  }
 };
 
-const deficientTeasers: Record<string, string> = {
-  'Wood': '您的不足能量为木元素。这代表您目前缺乏生长、活力与远见，可能感到缺乏动力、方向模糊，或是难以规划未来。',
-  'Fire': '您的不足能量为火元素。这代表您目前缺乏温热、喜悦与情绪的舒展，可能感到情绪平淡、内心寒冷，或失去了灵感的火花。',
-  'Earth': '您的不足能量为土元素。这代表您目前缺乏根基、稳定与滋养，可能感到焦虑、漂浮不定，没有一个能够让您安心落脚的安全土壤。',
-  'Metal': '您的不足能量为金元素。这代表您目前缺乏界限感、清晰度与断舍离的能力，容易被混乱所包围，或抓着旧有的情绪垃圾不放。',
-  'Water': '您的不足能量为水元素。这代表您目前缺乏休息、深层储备与内心的宁静，正处于透支状态，难以链接内心的深层智慧。'
+const deficientTeasers = {
+  zh: {
+    'Wood': '您的不足能量为木元素。这代表您目前缺乏生长、活力与远见，可能感到缺乏动力、方向模糊，或是难以规划未来。',
+    'Fire': '您的不足能量为火元素。这代表您目前缺乏温热、喜悦与情绪的舒展，可能感到情绪平淡、内心寒冷，或失去了灵感的火花。',
+    'Earth': '您的不足能量为土元素。这代表您目前缺乏根基、稳定与滋养，可能感到焦虑、漂浮不定，没有一个能够让您安心落脚的安全土壤。',
+    'Metal': '您的不足能量为金元素。这代表您目前缺乏界限感、清晰度与断舍离的能力，容易被混乱所包围，或抓着旧有的情绪垃圾不放。',
+    'Water': '您的不足能量为水元素。这代表您目前缺乏休息、深层储备与内心的宁静，正处于透支状态，难以链接内心的深层智慧。'
+  },
+  en: {
+    'Wood': 'Your deficient energy is Wood. This means you currently lack growth, vitality, and vision, potentially feeling unmotivated, aimless, or finding it hard to plan your future.',
+    'Fire': 'Your deficient energy is Fire. This means you currently lack warmth, joy, and emotional openness, potentially feeling emotionally flat, cold inside, or lacking creative inspiration.',
+    'Earth': 'Your deficient energy is Earth. This means you currently lack grounding, stability, and nourishment, potentially feeling anxious, unanchored, and without a safe soil to land.',
+    'Metal': 'Your deficient energy is Metal. This means you currently lack boundaries, clarity, and the ability to let go, potentially feeling overwhelmed by clutter or holding onto emotional baggage.',
+    'Water': 'Your deficient energy is Water. This means you currently lack rest, deep reserves, and inner tranquility, potentially feeling depleted and disconnected from your inner wisdom.'
+  },
+  ja: {
+    'Wood': 'あなたの不足するエネルギーは「木」です。これは現在、成長や活力、未来へのビジョンが欠けていることを意味し、やる気が出ない、方向性が見えない、将来の計画が立てにくいと感じている可能性があります。',
+    'Fire': 'あなたの不足するエネルギーは「火」です。これは現在、温かさや喜び、感情の広がりが欠けていることを意味し、感情が平坦で心が冷たく感じられたり、インスピレーションの火花を失っている可能性があります。',
+    'Earth': 'あなたの不足するエネルギーは「土」です。これは現在、根付きや安定、滋養が欠けていることを意味し、焦燥感や浮遊感があり、心が安らぐ安全な土壌がないと感じている可能性があります。',
+    'Metal': 'あなたの不足するエネルギーは「金」です。これは現在、境界線や明晰さ、断捨離する力が欠けていることを意味し、身の回りの混乱に巻き込まれやすく、過去の感情的なゴミを手放せない可能性があります。',
+    'Water': 'あなたの不足するエネルギーは「水」です。これは現在、休息や深い備え、内面の静寂が欠けていることを意味し、エネルギーを消耗し尽くしており、内なる深い知恵とつながりにくくなっている可能性があります。'
+  }
+};
+
+const symptomTexts = {
+  zh: [
+    { code: 'A', text: '紧张焦虑，思路过度' },
+    { code: 'B', text: '睡眠不好，休息不足' },
+    { code: 'C', text: '饮食不节，没有规律和控制饭量' },
+    { code: 'D', text: '疼痛，没有原因的痛' },
+    { code: 'E', text: '无力，疲惫，精力低下' }
+  ],
+  en: [
+    { code: 'A', text: 'Anxiety, stress, and overthinking' },
+    { code: 'B', text: 'Poor sleep quality and insomnia' },
+    { code: 'C', text: 'Irregular diet and indigestion' },
+    { code: 'D', text: 'Unexplained body aches and chronic pain' },
+    { code: 'E', text: 'Fatigue, low energy, and low libido' }
+  ],
+  ja: [
+    { code: 'A', text: '緊張や焦り、考えすぎ' },
+    { code: 'B', text: '睡眠の質が低い、不眠' },
+    { code: 'C', text: '食生活の乱れ、消化不良' },
+    { code: 'D', text: '原因不明の痛み、慢性痛' },
+    { code: 'E', text: '全身の倦怠感、無気力、精力減退' }
+  ]
+};
+
+const clinicalAcupuncturePlans = {
+  zh: {
+    A: {
+      title: "针灸疏肝解郁方案 (Acupuncture for Overthinking & Anxiety)",
+      desc: "针对紧张焦虑、脑力过度。针灸可通过调节神经递质，有效安定心神。长期的过度思虑会耗伤脾气与心血，导致消化不良与脑雾。我们针刺头皮及相关经络穴位，帮助松弛神经，缓解肩颈肌肉紧绷。"
+    },
+    B: {
+      title: "针灸交通心肾安神方案 (Acupuncture for Insomnia & Poor Sleep)",
+      desc: "针对睡眠质量差、易醒多梦。针灸有助于调节人体的昼夜节律。通过针刺神门、三阴交等要穴，调和阴阳、滋阴降火，帮助您缩短入睡时间，延长深睡眠，恢复精力。"
+    },
+    C: {
+      title: "针灸调理脾胃消滞方案 (Acupuncture for Digestive Discomfort)",
+      desc: "针对饮食不节、脾胃虚弱。针灸可通过兴奋迷走神经，促进胃肠蠕动和消化液分泌。我们选用中脘、足三里等中焦核心穴位，有效缓解饭后腹胀、反酸及慢性胃痛。"
+    },
+    D: {
+      title: "针灸通络止痛方案 (Acupuncture for Pain Relief)",
+      desc: "针对肌肉酸痛、游走性疼痛。中医认为“不通则痛”。针灸可刺激局部神经释放内源性内啡肽（天然镇痛剂），改善微循环。针对您的酸痛点，实施靶向透刺，快速缓解痛症、改善关节活动度。"
+    },
+    E: {
+      title: "针灸培元固本补虚方案 (Acupuncture for Fatigue & Libido)",
+      desc: "针对慢性疲劳、腰膝酸软、精力低下。这代表肾气亏虚、元气不足。针灸通过艾灸气海、关元，针刺太溪等强壮穴位，温补下元、温通经络，激发机体免疫力，重塑生机活力。"
+    }
+  },
+  en: {
+    A: {
+      title: "Acupuncture for Overthinking & Anxiety",
+      desc: "Targeting stress and mental fatigue. Acupuncture helps quiet the mind by regulating neurotransmitters. Chronic worry overtaxes the Spleen and Heart Qi, leading to indigestion and brain fog. We utilize specific cranial and meridian points to calm your nervous system and release muscle tension."
+    },
+    B: {
+      title: "Acupuncture for Insomnia & Poor Sleep",
+      desc: "Targeting poor sleep quality and insomnia. Acupuncture helps regulate your body's natural circadian rhythm. By targeting specific points like Shenmen (HT7) and Sanyinjiao (SP6), we balance Yin and Yang, reduce night sweat or dry throat, helping you fall asleep faster and experience deeper rest."
+    },
+    C: {
+      title: "Acupuncture for Digestive Discomfort",
+      desc: "Targeting irregular diet and indigestion. Acupuncture stimulates the vagus nerve to enhance gastric motility and improve enzyme secretion. By using central points like Zhongwan (CV12) and Zusanli (ST36), we effectively relieve post-meal bloating, acid reflux, and chronic discomfort."
+    },
+    D: {
+      title: "Acupuncture for Chronic Pain Relief",
+      desc: "Targeting body aches and localized tension. In TCM, pain arises when Qi and Blood are blocked. Acupuncture triggers the release of endorphins (natural painkillers) and improves local micro-circulation. We apply targeted treatment at your trigger points to quickly resolve pain and restore joint mobility."
+    },
+    E: {
+      title: "Acupuncture for Fatigue & Vitality",
+      desc: "Targeting chronic fatigue, lower back weakness, and low libido. This signals Kidney essence depletion. By applying warm moxibustion to Qihai (CV6) and Guanyuan (CV4), combined with acupuncture at Taixi (KI3), we warm the lower dantian, boost immunity, and restore physical stamina."
+    }
+  },
+  ja: {
+    A: {
+      title: "脳疲労と不安を和らげる鍼灸アプローチ",
+      desc: "過度な緊張や考えすぎを対象とします。鍼治療は神経伝達物質を調整することで、興奮した精神を穏やかにし脳を休ませます。長年の心配事は脾胃（消化器系）と心を損ない、消化不良やブレインフォグを起こします。頭部や手足の経穴を刺激し、神経と肩首のこりを優しく緩和します。"
+    },
+    B: {
+      title: "睡眠導入・心身安定鍼灸プラン",
+      desc: "睡眠の質の低下や不眠を対象とします。鍼治療は自律神経を整え、体内時計の正常なリズムを取り戻す手助けをします。神門や三陰交などの主要な経穴を刺激することで、陰陽のバランスを調和させ、深い睡眠時間を延ばします。"
+    },
+    C: {
+      title: "脾胃（胃腸）調整・消化促進プラン",
+      desc: "食生活の乱れや胃腸の弱りを対象とします。鍼刺激は迷走神経を活発にし、胃腸の蠕動運動と消化液の分泌を改善します。中脘や足三里といった腹部・足の経穴を使用し、食後のもたれや慢性的な胃痛を効果的に和らげます。"
+    },
+    D: {
+      title: "気血促進・慢性疼痛緩和プラン",
+      desc: "慢性的な筋肉痛や関節の張りを対象とします。東洋医学では「通じざればすなわち痛む（気血の滞りが痛みを起こす）」と考えます。鍼は痛みを抑える物質（エンドルフィン）の分泌を促し、局所の循環を高めて痛みを素早く和らげ、可動域を広げます。"
+    },
+    E: {
+      title: "生命力充填・疲労回復お灸ケア",
+      desc: "慢性的な疲労、精力減退、腰痛を対象とします。これは腎気や生命エネルギー（元気）が枯渇しているサインです。気海や関元へのお灸治療、太渓への鍼治療を通じて下腹部を温め、自己免疫力を高め、全身に活力をみなぎらせます。"
+    }
+  }
 };
 
 const dict = {
@@ -152,14 +333,16 @@ const dict = {
     current_chart_title: "CURRENT HONOLULU (当前时空局)",
     dominant_energy_title: "Your Current Dominant Energy (先天与时空能量属性)",
     dominant_title: "Dominant Archetype",
+    dominant_badge: "最强主导",
+    deficient_badge: "偏弱缺失",
     deficient_title: "Deficient Energy",
     deficient_locked: "🔒 未解锁",
     deficient_quote_locked: "“解锁 DNA 专属报告，查看您的不足能量五脏分析与断舍离指南”",
     dominant_phys_title: "主导先天体质特征与理疗对策",
     weak_phys_title: "先天缺失/偏弱体质调养",
     neijing_title: "《黄帝内经》生命节律年龄段评估",
-    consult_title: "临床对症针灸方案建议 (Clinical Consultation)",
-    consult_desc: "Based on your selected symptoms, Dr. David Cai recommends the following targeted clinical acupuncture treatment plans:",
+    consult_title: "临床对症针灸方案建议",
+    consult_desc: "基于您所选择的身体症状，David Cai 医生为您量身定制的临床针灸及调养计划如下：",
     unlocked_booking_title: "已为您制定最佳调养建议！立即结合临床针灸进行治疗",
     unlocked_booking_desc: "David Cai 医生将根据您的先天弱项五行与生命岁数，利用精细的脉诊定位您体内的失衡点，实施精准的按时针灸治疗。",
     unlocked_booking_btn: "在线预约门诊治疗",
@@ -214,6 +397,8 @@ const dict = {
     current_chart_title: "CURRENT HONOLULU",
     dominant_energy_title: "Your Current Dominant Energy",
     dominant_title: "Dominant Archetype",
+    dominant_badge: "Dominant",
+    deficient_badge: "Deficient",
     deficient_title: "Deficient Energy",
     deficient_locked: "🔒 Locked",
     deficient_quote_locked: "“Unlock the DNA Edition to view your deficient organ analysis and daily guidelines.”",
@@ -261,9 +446,9 @@ const dict = {
     results_badge: "中医学五行＆生命リズム診断書",
     timezone_label: "タイムゾーン：ホノルル (UTC-10)",
     book_btn: "クリニック予約",
-    beads_desc: "外円の先天的エネルギービーズ8個と、ホノルルの現時宇宙エレメント8個がゆっくり回転し、中心の4個は深層心理を表します。",
+    beads_desc: "外円の先天的エネルギービーズ8個と、ホノルルの現時宇宙エレメント8個がゆっくり回転し、中心の4個は静かに息づいています。",
     classic_title: "Classic エディション (無料版)",
-    classic_desc: "無料基本設計図＆主导エネルギー解説",
+    classic_desc: "無料基本設計図＆主導エネルギー解説",
     download_wallpaper: "五行お守り壁紙をダウンロード",
     dna_title: "DNA エディション (完全版)",
     dna_desc: "深層エネルギー図騰＆鍼灸臨床アドバイス",
@@ -276,6 +461,8 @@ const dict = {
     current_chart_title: "CURRENT HONOLULU (ホノルル現時局)",
     dominant_energy_title: "先天的＆現時のエネルギー属性",
     dominant_title: "優位な属性",
+    dominant_badge: "最も優位",
+    deficient_badge: "不足・偏り",
     deficient_title: "不足するエネルギー",
     deficient_locked: "🔒 未解除",
     deficient_quote_locked: "「DNA エディションを購入すると、不足するエネルギーの分析と養生法が表示されます」",
@@ -283,7 +470,7 @@ const dict = {
     weak_phys_title: "不足する体質の調律と鍼灸ケア",
     neijing_title: "『黄帝内経』生命周期リズム評価",
     consult_title: "臨床的鍼灸対策プラン (鍼灸アプローチ)",
-    consult_desc: "Based on your selected symptoms, Dr. David Cai recommends the following targeted clinical acupuncture treatment plans:",
+    consult_desc: "選択された身体症状に基づき、デビッド・ツァイ（David Cai）医師が提案するパーソナライズされた臨床鍼灸治療方針は以下の通りです：",
     unlocked_booking_title: "あなたに最適な養生プランが完成しました！今すぐ医師の対面面診を予約",
     unlocked_booking_desc: "デビッド・ツァイ（David Cai）医師が、脈診により不足する経絡のブロックを特定し、あなたに最適なパーソナライズ鍼灸治療を行います。",
     unlocked_booking_btn: "今すぐ鍼灸予約",
@@ -304,6 +491,18 @@ const elementLocales: Record<string, Record<string, string>> = {
   zh: { Wood: '木', Fire: '火', Earth: '土', Metal: '金', Water: '水' },
   ja: { Wood: '木', Fire: '火', Earth: '土', Metal: '金', Water: '水' },
   en: { Wood: 'Wood', Fire: 'Fire', Earth: 'Earth', Metal: 'Metal', Water: 'Water' }
+};
+
+const stemNames = {
+  zh: { '甲': '甲', '乙': '乙', '丙': '丙', '丁': '丁', '戊': '戊', '己': '己', '庚': '庚', '辛': '辛', '壬': '壬', '癸': '癸' },
+  ja: { '甲': '甲', '乙': '乙', '丙': '丙', '丁': '丁', '戊': '戊', '己': '己', '庚': '庚', '辛': '辛', '壬': '壬', '癸': '癸' },
+  en: { '甲': 'Jia', '乙': 'Yi', '丙': 'Bing', '丁': 'Ding', '戊': 'Wu', '己': 'Ji', '庚': 'Geng', '辛': 'Xin', '壬': 'Ren', '癸': 'Gui' }
+};
+
+const branchNames = {
+  zh: { '子': '子', '丑': '丑', '寅': '寅', '卯': '卯', '辰': '辰', '巳': '巳', '午': '午', '未': '未', '申': '申', '酉': '酉', '戌': '戌', '亥': '亥' },
+  ja: { '子': '子', '丑': '丑', '寅': '寅', '卯': '卯', '辰': '辰', '巳': '巳', '午': '午', '未': '未', '申': '申', '酉': '酉', '戌': '戌', '亥': '亥' },
+  en: { '子': 'Zi', '丑': 'Chou', '寅': 'Yin', '卯': 'Mao', '辰': 'Chen', '巳': 'Si', '午': 'Wu', '未': 'Wei', '申': 'Shen', '酉': 'You', '戌': 'Xu', '亥': 'Hai' }
 };
 
 // BaZiCanvas Drawing Component from ManaReset
@@ -504,99 +703,85 @@ export default function ConstitutionTestPage() {
   const [beads, setBeads] = useState<Bead[]>([]);
   
   // Checkout Form states
+  const [cardNumber, setCardNumber] = useState<string>('');
+  const [cardExpiry, setCardExpiry] = useState<string>('');
+  const [cardCvc, setCardCvc] = useState<string>('');
+  const [isPaying, setIsPaying] = useState<boolean>(false);
+  const [isDownloadingPass, setIsDownloadingPass] = useState<boolean>(false);
+
   // 2. Parse age and determine Huangdi Neijing Cycle
-  function getNeijingCycle(birthDateStr: string, isFemale: boolean) {
+  function getNeijingCycle(birthDateStr: string, isFemale: boolean, language: 'zh' | 'en' | 'ja') {
     if (!birthDateStr) return { label: '', quote: '', clinical: '' };
     
     const birthYear = parseInt(birthDateStr.split('-')[0]) || 2000;
     const currentYear = new Date().getFullYear();
     const age = currentYear - birthYear;
 
-    if (isFemale) {
-      if (age < 14) {
-        return {
-          label: '女子一七 (肾气渐盛阶段)',
-          quote: '女子七岁，肾气盛，齿更发长。',
-          clinical: '此时处于儿童生长发育期，肾气开始充盈，乳齿脱落换为恒齿，头发快速生长。应注重全面营养，保障充足睡眠，避免暴饮暴食。'
-        };
-      } else if (age < 21) {
-        return {
-          label: '女子二七 (天癸至/经期开端)',
-          quote: '二七而天癸至，任脉通，太冲脉盛，月事以时下，故有子。',
-          clinical: '此时女性生殖机能成熟，月经按时来潮，具备生育能力。此阶段情绪易波动，需注意经期保暖，避免剧烈运动与生冷饮食，理气调经是核心。'
-        };
-      } else if (age < 28) {
-        return {
-          label: '女子三七至四七 (身体鼎盛状态)',
-          quote: '三七肾气平均，真牙生而长极；四七筋骨坚，发长极，身体盛壮。',
-          clinical: '这是您一生的身体黄金期，肌肉满壮，筋骨最为强健。这是备孕的最佳窗口，也是保养元气、防止透支的关键时期。'
-        };
-      } else if (age < 42) {
-        return {
-          label: '女子五七 (阳明衰退/衰老起点)',
-          quote: '五七，阳明脉衰，面始焦，发始堕。',
-          clinical: '【临床警示】35岁起，手足阳明经（胃经与大肠经）的气血开始衰退。阳明经分布在面部，因此面部皮肤开始松弛干燥，头发开始脱落。调理核心在于“健脾胃、益气血”，通过针灸刺激足阳明经，可延缓衰老，保持皮肤红润。'
-        };
-      } else if (age < 49) {
-        return {
-          label: '女子六七 (三阳脉衰阶段)',
-          quote: '六七，三阳脉衰于上，面皆焦，发始白。',
-          clinical: '【临床警示】42岁起，太阳、阳明、少阳三阳经气血全面衰退，面部皱纹增多，头发开始变白。此阶段身体代谢减慢，容易出现慢性酸痛 and 情绪抑郁，针灸调理重点在于“疏通三阳，温通经络”。'
-        };
-      } else {
-        return {
-          label: '女子七七 (天癸竭/更年期阶段)',
-          quote: '七七，任脉虚，太冲脉衰少，天癸竭，地道不通，故形坏而无子也。',
-          clinical: '【临床关怀】49岁前后，任冲两脉血气衰少，天癸干涸，进入绝经期。此时身体激素水平剧烈波动，容易出现潮热盗汗、失眠焦虑、骨质疏松等更年期综合征。针灸可通过调理任督二脉、滋阴清热，安全无副作用地平稳度过更年期。'
-        };
+    const neijingData = {
+      zh: {
+        female: [
+          { limit: 14, label: '女子一七 (肾气渐盛阶段)', quote: '女子七岁，肾气盛，齿更发长。', clinical: '此时处于儿童生长发育期，肾气开始充盈，乳齿脱落换为恒齿，头发快速生长。应注重全面营养，保障充足睡眠，避免暴饮暴食。' },
+          { limit: 21, label: '女子二七 (天癸至/经期开端)', quote: '二七而天癸至，任脉通，太冲脉盛，月事以时下，故有子。', clinical: '此时女性生殖机能成熟，月经按时来潮，具备生育能力。此阶段情绪易波动，需注意经期保暖，避免剧烈运动与生冷饮食，理气调经是核心。' },
+          { limit: 35, label: '女子三七至四七 (身体鼎盛状态)', quote: '三七肾气平均，真牙生而长极；四七筋骨坚，发长极，身体盛壮。', clinical: '这是您一生的身体黄金期，肌肉满壮，筋骨最为强健。这是备孕的最佳窗口，也是保养元气、防止透支的关键时期。' },
+          { limit: 42, label: '女子五七 (阳明衰退/衰老起点)', quote: '五七，阳明脉衰，面始焦，发始堕。', clinical: '【临床警示】35岁起，手足阳明经（胃经与大肠经）的气血开始衰退。阳明经分布在面部，因此面部皮肤开始松弛干燥，头发开始脱落。调理核心在于“健脾胃、益气血”，通过针灸刺激足阳明经，可延缓衰老，保持皮肤红润。' },
+          { limit: 49, label: '女子六七 (三阳脉衰阶段)', quote: '六七，三阳脉衰于上，面皆焦，发始白。', clinical: '【临床警示】42岁起，太阳、阳明、少阳三阳经气血全面衰退，面部皱纹增多，头发开始变白。此阶段身体代谢减慢，容易出现慢性酸痛和情绪抑郁，针灸调理重点在于“疏通三阳，温通经络”。' },
+          { limit: 999, label: '女子七七 (天癸竭/更年期阶段)', quote: '七七，任脉虚，太冲脉衰少，天癸竭，地道不通，故形坏而无子也。', clinical: '【临床关怀】49岁前后，任冲两脉血气衰少，天癸干涸，进入绝经期。此时身体激素水平剧烈波动，容易出现潮热盗汗、失眠焦虑、骨质疏松等更年期综合征。针灸可通过调理任督二脉、滋阴清热，安全无副作用地平稳度过更年期。' }
+        ],
+        male: [
+          { limit: 16, label: '丈夫一八 (肾气实阶段)', quote: '丈夫八岁，肾气实，发长齿更。', clinical: '处于儿童及少年发育期，肾气开始充实，骨骼牙齿快速发育。' },
+          { limit: 24, label: '丈夫二八 (天癸至阶段)', quote: '二八，肾气盛，天癸至，精气溢写，阴阳和，故能有子。', clinical: '男性生殖机能成熟，精力旺盛，骨骼生长进入爆发期。' },
+          { limit: 48, label: '丈夫三八至四八 (筋骨肌肉鼎盛期)', quote: '丈夫八岁，肾气平均，筋骨劲强；四八，筋骨隆盛，肌肉满壮。', clinical: '24岁至32岁是男性身体机能的最高峰，筋骨强壮，肌肉发达。应维持良好的作息以稳固阳气。' },
+          { limit: 56, label: '丈夫五八至六八 (肾气与阳气衰退期)', quote: '五八，肾气衰，发堕齿槁；六八，阳气衰竭于上，面焦，发鬓颁白。', clinical: '【临床警示】40岁起肾气渐衰，开始出现脱发、牙齿松动；48岁起头部阳气衰退，额头面部出现疲态，两鬓变白。临床调理重点在于“补益肾气、维护骨骼关节”，预防腰椎间盘突出 and 慢性劳损。' },
+          { limit: 64, label: '丈夫七八 (肝肾亏虚阶段)', quote: '七八，肝气衰，筋不能动，天癸竭，精少，肾藏衰，形体皆极。', clinical: '【临床警示】56岁起，肝血渐虚，筋脉失去滋养，导致关节僵硬、运动不灵活；肾脏功能衰退，易感体力不支、精力减退。针灸可以强肝肾、通关节，缓解中老年骨性关节炎和全身酸痛。' },
+          { limit: 999, label: '丈夫八八 (衰老养生期)', quote: '八八，则齿发去……形体皆极。', clinical: '【临床关怀】64岁之后，进入深度老龄养生阶段。人体脏腑精气以固守为主，防寒保暖、养阴护阳为要。通过温和的艾灸和温针灸，可有效培元固本，延年益寿。' }
+        ]
+      },
+      en: {
+        female: [
+          { limit: 14, label: "Female Cycle 1 (Kidney Qi Rising)", quote: "At 7 years of age, a girl's Kidney Qi becomes abundant, her teeth change, and hair grows.", clinical: "During childhood development, Kidney Qi begins to fill, baby teeth fall out to be replaced by permanent teeth, and hair grows rapidly. Focus on balanced nutrition and adequate sleep." },
+          { limit: 21, label: "Female Cycle 2 (Tian Gui Arrives / Menarche)", quote: "At 14, the Tian Gui arrives, the Ren channel opens, the Taichong channel becomes abundant, menstruation occurs regularly, and she can conceive.", clinical: "Reproductive function matures, menstruation begins, and fertility is established. Emotions can fluctuate; keep warm during periods, avoid raw/cold foods, and focus on regulating Qi and blood." },
+          { limit: 35, label: "Female Cycles 3 & 4 (Peak Physical Abundance)", quote: "At 21, Kidney Qi is balanced, wisdom teeth grow. At 28, bones and tendons are firm, hair grows fully, and the body is at its peak strength.", clinical: "This is the absolute golden period of your life, with peak muscle mass and strong bones. Excellent window for conception, and critical for protecting your essence (Jing) from over-exhaustion." },
+          { limit: 42, label: "Female Cycle 5 (Yangming Decline / Aging Onset)", quote: "At 35, the Yangming channel begins to decline, the face starts to wither, and hair begins to fall out.", clinical: "[Clinical Warning] Starting at age 35, Qi and blood in the hand and foot Yangming channels (Stomach and Large Intestine) begin to decrease. Since these channels cover the face, skin starts losing elasticity and hair begins to thin. Therapy focuses on strengthening Spleen/Stomach and replenishing Qi/Blood. Acupuncture on the Yangming channel helps slow aging." },
+          { limit: 49, label: "Female Cycle 6 (Three Yang Channels Declining)", quote: "At 42, the three Yang channels decline above, the entire face is withered, and hair begins to turn white.", clinical: "[Clinical Warning] From age 42, the three Yang channels (Taiyang, Yangming, Shaoyang) decline, resulting in facial wrinkles and graying hair. Metabolism slows down, making you prone to chronic pain and mood swings. Acupuncture focuses on clearing the three Yang channels and warming the meridians." },
+          { limit: 999, label: "Female Cycle 7 (Tian Gui Exhausted / Menopause)", quote: "At 49, the Ren channel becomes empty, the Taichong channel declines, Tian Gui is exhausted, menstruation stops, and she can no longer bear children.", clinical: "[Clinical Care] Around age 49, the Ren and Chong channels decline, and essence dries up as she enters menopause. Hormonal fluctuations can cause hot flashes, night sweats, insomnia, and osteoporosis. Acupuncture regulates the Ren and Du channels, nourishing Yin and clearing heat for a smooth transition." }
+        ],
+        male: [
+          { limit: 16, label: "Male Cycle 1 (Kidney Qi Filling)", quote: "At 8, a boy's Kidney Qi is solid, his hair grows, and his teeth change.", clinical: "During childhood and adolescence, Kidney Qi begins to fill, promoting rapid bone and dental development." },
+          { limit: 24, label: "Male Cycle 2 (Tian Gui Arrives / Maturity)", quote: "At 16, Kidney Qi is abundant, Tian Gui arrives, essence overflows, Yin and Yang harmonize, and he can father children.", clinical: "Reproductive maturity is reached, energy is high, and bone growth enters a peak phase." },
+          { limit: 48, label: "Male Cycles 3 & 4 (Peak Strength & Vitality)", quote: "At 24, Kidney Qi is balanced, tendons and bones are strong. At 32, bones and tendons are at their peak, and muscles are full and strong.", clinical: "Ages 24 to 32 mark the peak of male physical function, with strong bones and developed muscles. Maintain healthy lifestyle habits to protect your vital Yang Qi." },
+          { limit: 56, label: "Male Cycles 5 & 6 (Kidney Qi & Yang Decline)", quote: "At 40, Kidney Qi declines, hair falls out, and teeth wither. At 48, Yang Qi declines above, the face is withered, and hair turns white.", clinical: "[Clinical Warning] Kidney Qi weakens from age 40, leading to thinning hair and dry teeth. By age 48, Yang Qi declines in the head, showing fatigue on the face and graying sideburns. Therapy focuses on tonifying Kidney Qi and protecting joints to prevent spinal herniation and chronic strain." },
+          { limit: 64, label: "Male Cycle 7 (Liver & Kidney Deficiencies)", quote: "At 56, Liver Qi declines, tendons cannot move freely, Tian Gui is exhausted, Kidney Qi declines, and the body reaches its limits.", clinical: "[Clinical Warning] Starting at age 56, Liver Blood diminishes, depriving tendons of nourishment and causing joint stiffness. Kidney decline leads to low energy and stamina. Acupuncture tonifies the Liver and Kidneys to alleviate osteoarthritis and chronic aches." },
+          { limit: 999, label: "Male Cycle 8 (Advanced Longevity Care)", quote: "At 64, teeth and hair are gone, and the body reaches its ultimate stage.", clinical: "[Clinical Care] Beyond age 64, enter a stage of deep longevity preservation. Focus on maintaining internal temperature, protecting Yin, and guarding Yang. Warm moxibustion and gentle acupuncture help fortify the Kidney essence and support overall longevity." }
+        ]
+      },
+      ja: {
+        female: [
+          { limit: 14, label: '女子一七（腎気旺盛期）', quote: '女子七歳、腎気盛んにして、歯更まり髪長ず。', clinical: '幼少期の成長発育期であり、腎気が充実し始め、乳歯が永久歯に生え変わり、髪が急速に伸びます。バランスの取れた栄養と十分な睡眠が大切です。' },
+          { limit: 21, label: '女子二七（天癸至る・月経開始）', quote: '二七にして天癸至り、任脈通じ、太衝脈盛んにして、月事時に下る。', clinical: '生殖機能が成熟し、月経が順調に始まり、妊娠が可能になります。情緒が不安定になりやすいため、生理期の保温を心がけ、生冷飲食を控えましょう。' },
+          { limit: 35, label: '女子三七〜四七（身体の最盛期）', quote: '三七にして腎気平均し、真牙生じて長極まる。四七にして筋骨堅く、髪長極まり、身体盛壮なり。', clinical: '人生における身体の黄金期であり、筋肉が満ち、筋骨が最も強健になります。元気を養い、過労によるエネルギー枯渇を防ぐ重要な時期です。' },
+          { limit: 42, label: '女子五七（陽明脈衰える・老化の始まり）', quote: '五七にして陽明脈衰え、顔始めて焦れ、髪始めて堕つ。', clinical: '【臨床的警告】35歳から、手足の陽明経（胃経・大腸経）の気血が衰え始めます。顔面を通る胃経の衰えにより、顔のハリが失われ、抜け毛が始まります。脾胃を健やかにし、気血を补う鍼治療が最適です。' },
+          { limit: 49, label: '女子六七（三陽脈衰える・加齢進行）', quote: '六七にして三陽脈上において衰え、顔皆焦れ、髪始めて白し。', clinical: '【臨床的警告】42歳から、太陽・陽明・少陽の三陽経が衰え、顔のシワが増え、白髪が目立ち始めます。代謝が低下し、関節痛や気分の落ち込みが現れやすくなります。温熱経絡鍼治療が効果的です。' },
+          { limit: 999, label: '女子七七（天癸尽きる・更年期前後）', quote: '七七にして任脈虚し、太衝脈衰少し、天癸竭き、地道通ぜず。', clinical: '【臨床的ケア】49歳前後で任脈と太衝脈が衰え、天癸（ホルモン）が尽きて閉経を迎えます。ほてり、寝汗、不眠、骨粗鬆症などの更年期症状が出やすくなります。鍼治療で経絡の陰陽を整え、穏やかに移行させます。' }
+        ],
+        male: [
+          { limit: 16, label: '丈夫一八（腎気充実期）', quote: '丈夫八歳、腎気実し、髪長じ歯更まる。', clinical: '児童・思春期の成長期であり、腎気が満ち始め、骨や歯が急速に成長します。' },
+          { limit: 24, label: '丈夫二八（天癸至る・成熟期）', quote: '二八にして腎気盛んにして天癸至り、精気溢写し、陰陽和す。', clinical: '生殖機能が成熟し、精力旺盛になり、骨格の成長がピークに達します。' },
+          { limit: 48, label: '丈夫三八〜四八（筋骨隆盛・最盛期）', quote: '三八にして腎気平均し、筋骨勁強なり。四八にして筋骨隆盛し、筋肉満壮なり。', clinical: '24歳から32歳頃は男性の身体機能の頂点であり、筋骨が最も発達します。陽気を浪費しないよう規則正しい生活を送りましょう。' },
+          { limit: 56, label: '丈夫五八〜六八（腎気・陽気減退期）', quote: '五八にして腎気衰え、髪堕ち歯槁る。六八にして陽気上に衰竭し、顔焦れ、発鬢斑白なり。', clinical: '【臨床的警告】40歳から腎気が衰え始め、抜け毛や歯の衰えが現れます。48歳からは頭部の陽気が衰え、顔のツヤが失われ白髪が混ざり始めます。腎気を補い関節を守る鍼治療が推奨されます。' },
+          { limit: 64, label: '丈夫七八（肝腎虚損期）', quote: '七八にして肝気衰え、筋動くこと能わず、天癸竭き、精少なく、腎臓衰え、形体皆極まる。', clinical: '【臨床的警告】56歳から肝血が不足し、関節が強ばり動きづらくなります。腎の衰えから体力の低下を実感しやすくなります。肝腎を強化し、慢性関節痛を和らげる治療を行います。' },
+          { limit: 999, label: '丈夫八八（養生老齢期）', quote: '八八にして、すなわち歯髪去り、形体皆極まる。', clinical: '【臨床的ケア】64歳以降は深い老後の養生期に入ります。冷えを防ぎ、体内エネルギーを温存することが大切です。温和な灸や鍼治療により元気を補い、長寿をサポートします。' }
+        ]
       }
-    } else {
-      // Male 8-year cycles
-      if (age < 16) {
-        return {
-          label: '丈夫一八 (肾气实阶段)',
-          quote: '丈夫八岁，肾气实，发长齿更。',
-          clinical: '处于儿童及少年发育期，肾气开始充实，骨骼牙齿快速发育。'
-        };
-      } else if (age < 24) {
-        return {
-          label: '丈夫二八 (天癸至阶段)',
-          quote: '二八，肾气盛，天癸至，精气溢写，阴阳和，故能有子。',
-          clinical: '男性生殖机能成熟，精力旺盛，骨骼生长进入爆发期。'
-        };
-      } else if (age < 32) {
-        return {
-          label: '丈夫三八至四八 (筋骨肌肉鼎盛期)',
-          quote: '三八，肾气平均，筋骨劲强；四八，筋骨隆盛，肌肉满壮。',
-          clinical: '24岁至32岁是男性身体机能的最高峰，筋骨强壮，肌肉发达。应维持良好的作息以稳固阳气。'
-        };
-      } else if (age < 48) {
-        return {
-          label: '丈夫五八至六八 (肾气与阳气衰退期)',
-          quote: '五八，肾气衰，发堕齿槁；六八，阳气衰竭于上，面焦，发鬓颁白。',
-          clinical: '【临床警示】40岁起肾气渐衰，开始出现脱发、牙齿松动；48岁起头部阳气衰退，额头面部出现疲态，两鬓变白。临床调理重点在于“补益肾气、维护骨骼关节”，预防腰椎间盘突出和慢性劳损。'
-        };
-      } else if (age < 64) {
-        return {
-          label: '丈夫七八 (肝肾亏虚阶段)',
-          quote: '七八，肝气衰，筋不能动，天癸竭，精少，肾藏衰，形体皆极。',
-          clinical: '【临床警示】56岁起，肝血渐虚，筋脉失去滋养，导致关节僵硬、运动不灵活；肾脏功能衰退，易感体力不支、精力减退。针灸可以强肝肾、通关节，缓解中老年骨性关节炎和全身酸痛。'
-        };
-      } else {
-        return {
-          label: '丈夫八八 (衰老养生期)',
-          quote: '八八，则齿发去……形体皆极。',
-          clinical: '【临床关怀】64岁之后，进入深度老龄养生阶段。人体脏腑精气以固守为主，防寒保暖、养阴护阳为要。通过温和的艾灸和温针灸，可有效培元固本，延年益寿。'
-        };
+    };
+
+    const list = isFemale ? neijingData[language].female : neijingData[language].male;
+    for (const item of list) {
+      if (age < item.limit) {
+        return item;
       }
     }
+    return list[list.length - 1];
   }
-
-  const [cardNumber, setCardNumber] = useState<string>('');
-  const [cardExpiry, setCardExpiry] = useState<string>('');
-  const [cardCvc, setCardCvc] = useState<string>('');
-  const [isPaying, setIsPaying] = useState<boolean>(false);
-  const [isDownloadingPass, setIsDownloadingPass] = useState<boolean>(false);
 
   // 1. Calculate Bazi elements count
   function getElementsCount(birthDateStr: string, birthTimeStr: string) {
@@ -683,7 +868,7 @@ export default function ConstitutionTestPage() {
   }
 
   // Get Neijing Phase
-  const neijing = getNeijingCycle(dob, gender === 'female');
+  const neijing = getNeijingCycle(dob, gender === 'female', lang);
 
   // Submit to Vercel production check
   function handleNextStep() {
@@ -709,7 +894,7 @@ export default function ConstitutionTestPage() {
         return;
       }
 
-      // 🔮 Initialize dynamic Bazi beads for BaZiCanvas on email submit
+      // 🔮 Initialize Bazi beads
       const birthDate = new Date(year, month - 1, day, hour, 0);
       const lunar = Lunar.fromDate(birthDate);
       const bY = lunar.getYearInGanZhi();
@@ -790,7 +975,7 @@ export default function ConstitutionTestPage() {
     }, 1500);
   }
 
-  // Dynamic Apple Wallet PKPass compiler trigger (Next/Vercel Serverless)
+  // Dynamic Apple Wallet PKPass compiler trigger
   const handleDownloadWallet = async () => {
     setIsDownloadingPass(true);
     try {
@@ -880,23 +1065,38 @@ export default function ConstitutionTestPage() {
 
   const gridCircles = [0.25, 0.5, 0.75, 1];
 
-  // Helper to draw vertical GanZhi columns (Screenshot 3 style)
+  // Helper to draw vertical GanZhi columns
   const renderPillarColumn = (pillar: string, isLight: boolean = true) => {
-    if (!pillar || pillar === '未知') return <div className="text-sm">未知</div>;
+    if (!pillar || pillar === '未知') return <div className="text-xs">未知</div>;
     const stem = pillar[0];
     const branch = pillar[1];
     const e1 = FIVE_ELEMENTS_MAP[stem as keyof typeof FIVE_ELEMENTS_MAP];
     const e2 = FIVE_ELEMENTS_MAP[branch as keyof typeof FIVE_ELEMENTS_MAP];
     
+    const stem_local = stemNames[lang][stem as keyof typeof stemNames['en']] || stem;
+    const branch_local = branchNames[lang][branch as keyof typeof branchNames['en']] || branch;
     const e1_local = elementLocales[lang][e1] || e1;
     const e2_local = elementLocales[lang][e2] || e2;
 
+    const baseColor1 = getBeadBaseColor(e1);
+    const baseColor2 = getBeadBaseColor(e2);
+
     return (
-      <div className="flex flex-col items-center gap-0.5">
-        <span className="text-[10px] uppercase font-bold tracking-tight opacity-50">{stem}</span>
-        <span className={`text-xs font-black ${isLight ? 'text-slate-800' : 'text-white'}`}>{e1_local}</span>
-        <span className="text-[10px] uppercase font-bold tracking-tight opacity-50 mt-1">{branch}</span>
-        <span className={`text-xs font-black ${isLight ? 'text-slate-500' : 'text-white/80'}`}>{e2_local}</span>
+      <div className="flex flex-col items-center gap-0.5 select-none">
+        <span className="text-[10px] font-bold tracking-tight opacity-50">{stem_local}</span>
+        <span 
+          style={{ color: isLight ? baseColor1 : '#ffffff' }}
+          className="text-[11px] font-black tracking-tight"
+        >
+          {e1_local}
+        </span>
+        <span className="text-[10px] font-bold tracking-tight opacity-50 mt-1">{branch_local}</span>
+        <span 
+          style={{ color: isLight ? baseColor2 : '#e2e8f0' }}
+          className="text-[11px] font-black tracking-tight"
+        >
+          {e2_local}
+        </span>
       </div>
     );
   };
@@ -923,6 +1123,7 @@ export default function ConstitutionTestPage() {
         <meta name="description" content="AcuTherapy Clinics 中医五行体质与生命节律深度临床评估。" />
       </Helmet>
       <section className="bg-slate-50 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+        
         {/* Floating Multi-Language selector */}
         <div className="max-w-2xl mx-auto flex justify-end mb-4">
           <div className="flex gap-1 bg-white p-1 rounded-xl shadow-sm border border-slate-100 text-[10px] font-bold">
@@ -948,6 +1149,7 @@ export default function ConstitutionTestPage() {
         </div>
 
         <div className="max-w-2xl mx-auto">
+          
           {/* Top Logo & Title */}
           <div className="text-center mb-8">
             <div className="inline-flex items-center gap-2 text-blue-600 font-extrabold text-sm uppercase tracking-wider mb-2">
@@ -1063,13 +1265,7 @@ export default function ConstitutionTestPage() {
                 </div>
 
                 <div className="flex flex-col gap-3">
-                  {[
-                    { code: 'A', text: '紧张焦虑，思路过度 (Anxiety & Overthinking)' },
-                    { code: 'B', text: '睡眠不好，休息不足 (Poor Sleeping)' },
-                    { code: 'C', text: '饮食不节，没有规律和控制饭量 (Stomach Upset)' },
-                    { code: 'D', text: '疼痛，没有原因的痛 (Body Aches & Pain)' },
-                    { code: 'E', text: '无力，疲惫，性功能低下 (Chronic Fatigue & Libido)' }
-                  ].map((item) => {
+                  {symptomTexts[lang].map((item) => {
                     const active = selectedSymptoms.includes(item.code);
                     return (
                       <div 
@@ -1276,13 +1472,13 @@ export default function ConstitutionTestPage() {
 
                 </div>
 
-                {/* 🌟 3. ASTROLOGICAL ALIGNMENT PILLARS CARDS (Screenshot 3 Style) */}
+                {/* 🌟 3. ASTROLOGICAL ALIGNMENT PILLARS CARDS - STACKED ON MOBILE */}
                 {beads.length > 0 && (
-                  <div className="grid grid-cols-2 gap-4 max-w-xl mx-auto w-full">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl mx-auto w-full">
                     
                     {/* Left: Your Birth Chart */}
                     <div className="bg-white rounded-2xl border border-slate-200 p-5 text-center shadow-sm flex flex-col items-center gap-2">
-                      <p className="text-[9px] text-slate-400 uppercase tracking-widest font-black">{t.birth_chart_title.split(' ')[0]}</p>
+                      <p className="text-[9px] text-slate-400 uppercase tracking-widest font-black">{t.birth_chart_title}</p>
                       <div className="text-xl text-slate-700">☯︎</div>
                       <div className="grid grid-cols-4 gap-3 w-full border-t border-slate-100 pt-3 mt-1">
                         {renderPillarColumn(Lunar.fromDate(new Date(year, month - 1, day, hour, 0)).getYearInGanZhi())}
@@ -1294,13 +1490,13 @@ export default function ConstitutionTestPage() {
                         {getBaziElementsString(
                           Lunar.fromDate(new Date(year, month - 1, day, hour, 0)).getYearInGanZhi(),
                           Lunar.fromDate(new Date(year, month - 1, day, hour, 0)).getDayInGanZhi()
-                        )} {lang === 'zh' ? '最旺' : lang === 'ja' ? '最旺' : 'Dominant'}
+                        )} {t.dominant_badge}
                       </p>
                     </div>
 
                     {/* Right: Current Honolulu Chart */}
                     <div className="bg-[#0B1120] rounded-2xl border border-slate-800 p-5 text-center shadow-md flex flex-col items-center gap-2 text-white">
-                      <p className="text-[9px] text-blue-400/80 uppercase tracking-widest font-black">{t.current_chart_title.split(' ')[0]}</p>
+                      <p className="text-[9px] text-blue-400/80 uppercase tracking-widest font-black">{t.current_chart_title}</p>
                       <div className="text-xl text-blue-400">☲</div>
                       <div className="grid grid-cols-4 gap-3 w-full border-t border-slate-800 pt-3 mt-1">
                         {renderPillarColumn(Lunar.fromDate(new Date(new Date().getTime() + new Date().getTimezoneOffset() * 60000 - 10 * 3600000)).getYearInGanZhi(), false)}
@@ -1312,7 +1508,7 @@ export default function ConstitutionTestPage() {
                         {getBaziElementsString(
                           Lunar.fromDate(new Date(new Date().getTime() + new Date().getTimezoneOffset() * 60000 - 10 * 3600000)).getYearInGanZhi(),
                           Lunar.fromDate(new Date(new Date().getTime() + new Date().getTimezoneOffset() * 60000 - 10 * 3600000)).getDayInGanZhi()
-                        )} {lang === 'zh' ? '最旺' : lang === 'ja' ? '最旺' : 'Dominant'}
+                        )} {t.dominant_badge}
                       </p>
                     </div>
 
@@ -1326,15 +1522,15 @@ export default function ConstitutionTestPage() {
                   <div className="flex justify-center gap-4 w-full max-w-sm">
                     {/* Dominant Element Badge */}
                     <div className="flex-1 bg-rose-50 border border-rose-200 rounded-2xl py-3 px-4 text-center">
-                      <span className="text-[9px] text-slate-400 font-bold uppercase tracking-wider block">{t.dominant_title}</span>
-                      <span className="text-xl font-black text-rose-700 mt-1 block font-serif">{dominant}</span>
+                      <span className="text-[9px] text-slate-400 font-bold uppercase tracking-wider block">{t.dominant_badge}</span>
+                      <span className="text-xl font-black text-rose-700 mt-1 block font-serif">{getElementNamesLocalized(dominant)}</span>
                     </div>
 
                     {/* Deficient Element Badge */}
                     <div className="flex-1 bg-blue-50 border border-blue-200 rounded-2xl py-3 px-4 text-center">
-                      <span className="text-[9px] text-slate-400 font-bold uppercase tracking-wider block">{t.deficient_title}</span>
+                      <span className="text-[9px] text-slate-400 font-bold uppercase tracking-wider block">{t.deficient_badge}</span>
                       <span className="text-xl font-black text-blue-700 mt-1 block font-serif">
-                        {isUnlocked ? deficient : t.deficient_locked}
+                        {isUnlocked ? getElementNamesLocalized(deficient) : t.deficient_locked}
                       </span>
                     </div>
                   </div>
@@ -1343,14 +1539,14 @@ export default function ConstitutionTestPage() {
                   <div className="relative border border-slate-150 rounded-2xl p-5 bg-white text-center shadow-sm w-full mt-1">
                     <span className="text-2xl text-slate-300 absolute -top-3 left-4 bg-white px-2">“</span>
                     <p className="text-xs text-slate-700 leading-relaxed italic px-2 font-medium">
-                      {quotes[dominant]}
+                      {quotes[lang][dominant]}
                     </p>
                   </div>
 
                   {/* Deficient Archetype Quote */}
                   <div className="text-center text-xs text-slate-500 leading-relaxed max-w-md px-4 italic mt-1">
                     {isUnlocked ? (
-                      deficientTeasers[deficient]
+                      deficientTeasers[lang][deficient]
                     ) : (
                       <span className="text-slate-400">{t.deficient_quote_locked}</span>
                     )}
@@ -1366,11 +1562,11 @@ export default function ConstitutionTestPage() {
                     {getElementNamesLocalized(dominant)}
                   </span>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    {constitutionDescriptions[dominant]?.desc}
+                    {constitutionDescriptions[lang][dominant]?.desc}
                   </p>
                   <div className="bg-amber-50 border border-amber-100 p-4 rounded-2xl text-xs leading-relaxed text-slate-700">
                     <strong className="text-amber-800 block mb-1">💡 {lang === 'zh' ? '免费版·主导经络穴位理疗指导' : lang === 'ja' ? '無料版・主要な経穴のケアガイド' : 'Free Pass · Primary Meridian Acupressure Guidelines'}：</strong>
-                    {constitutionDescriptions[dominant]?.advice}
+                    {constitutionDescriptions[lang][dominant]?.advice}
                   </div>
                 </div>
 
@@ -1466,7 +1662,7 @@ export default function ConstitutionTestPage() {
                         <p className="text-[10px] text-slate-500 max-w-sm mt-1 mx-auto leading-relaxed">
                           {lang === 'zh' ? '升级后即可解锁：先天偏弱体质调理（弱项五行分析）、《黄帝内经》男女衰老退化节点提醒，以及 David Cai 医生亲自针对您的症状撰写的英文针灸处方建议。' :
                            lang === 'ja' ? 'アップグレードすると、不足する五行の分析、黄帝内経の加齢リスク警告、デビッド医師の鍼灸処方アプローチがすべて解除されます。' :
-                           'Upgrade to unlock: deficient element profile, Huangdi Neijing aging milestone warning, and Dr. David Cai\'s personalized clinical acupuncture treatments.'}
+                           "Upgrade to unlock: deficient element profile, Huangdi Neijing aging milestone warning, and Dr. David Cai's personalized clinical acupuncture treatments."}
                         </p>
                       </div>
 
@@ -1491,11 +1687,11 @@ export default function ConstitutionTestPage() {
                         {getElementNamesLocalized(deficient)}
                       </span>
                       <p className="text-xs text-slate-600 leading-relaxed">
-                        {constitutionDescriptions[deficient]?.desc}
+                        {constitutionDescriptions[lang][deficient]?.desc}
                       </p>
                       <div className="bg-blue-50 border border-blue-100 p-4 rounded-xl text-xs leading-relaxed text-slate-700">
                         <strong className="text-blue-800 block mb-1">💡 {lang === 'zh' ? '弱项调养·日常穴位理疗指导' : lang === 'ja' ? '不足の調律・日常の経穴ケア' : 'Deficient Element · Acupressure Guidelines'}：</strong>
-                        {constitutionDescriptions[deficient]?.advice}
+                        {constitutionDescriptions[lang][deficient]?.advice}
                       </div>
                     </div>
 
@@ -1528,63 +1724,16 @@ export default function ConstitutionTestPage() {
                       </p>
 
                       <div className="flex flex-col gap-4 mt-2">
-                        {/* Anxiety */}
-                        {selectedSymptoms.includes('A') && (
-                          <div className="border border-slate-100 rounded-xl p-4 bg-slate-50/20">
-                            <strong className="text-xs text-slate-900 uppercase block mb-1">Acupuncture for Overthinking & Anxiety:</strong>
-                            <p className="text-xs text-slate-600 leading-relaxed">
-                              Acupuncture can help quiet the mind by regulating neurotransmitters. Chronic worry overtaxes the spleen and heart Qi, leading to digestive issues and brain fog. We utilize specific cranial and meridian points to calm your nervous system and release muscle tension.
-                            </p>
-                          </div>
-                        )}
-
-                        {/* Poor Sleeping */}
-                        {selectedSymptoms.includes('B') && (
-                          <div className="border border-slate-100 rounded-xl p-4 bg-slate-50/20">
-                            <strong className="text-xs text-slate-900 uppercase block mb-1">Acupuncture Treatment for Poor Sleeping:</strong>
-                            <p className="text-xs text-slate-600 leading-relaxed">
-                              Poor sleeping can lead to a host of health problems, including fatigue, depression, and anxiety. Acupuncture can help by regulating your body's natural sleep-wake cycle and promoting relaxation. By targeting specific points in your body, acupuncture can help you fall asleep faster, stay asleep longer, and wake up feeling refreshed.
-                            </p>
-                          </div>
-                        )}
-
-                        {/* Stomach Upset */}
-                        {selectedSymptoms.includes('C') && (
-                          <div className="border border-slate-100 rounded-xl p-4 bg-slate-50/20">
-                            <strong className="text-xs text-slate-900 uppercase block mb-1">Acupuncture Treatment for Stomach Upset:</strong>
-                            <p className="text-xs text-slate-600 leading-relaxed">
-                              Stomach upset can be caused by a variety of factors, including stress, diet, and medication. Acupuncture can help by improving your digestion and reducing inflammation in your stomach. By stimulating specific points in your body, acupuncture can help regulate the production of stomach acid and reduce the frequency and severity of stomach upset.
-                            </p>
-                          </div>
-                        )}
-
-                        {/* Body Aches */}
-                        {selectedSymptoms.includes('D') && (
-                          <div className="border border-slate-100 rounded-xl p-4 bg-slate-50/20">
-                            <strong className="text-xs text-slate-900 uppercase block mb-1">Acupuncture Treatment for Body Aches & Pain:</strong>
-                            <p className="text-xs text-slate-600 leading-relaxed">
-                              Body aches can be caused by a variety of factors, including injury, inflammation, and stress. Acupuncture can help by stimulating the production of endorphins, which are natural painkillers in your body. By targeting specific points in your body, acupuncture can help reduce pain and inflammation and improve your overall mobility.
-                            </p>
-                          </div>
-                        )}
-
-                        {/* Fatigue / Libido */}
-                        {selectedSymptoms.includes('E') && (
-                          <div className="border border-slate-100 rounded-xl p-4 bg-slate-50/20 flex flex-col gap-3">
-                            <div>
-                              <strong className="text-xs text-slate-900 uppercase block mb-1">Acupuncture Treatment for Chronic Fatigue:</strong>
-                              <p className="text-xs text-slate-600 leading-relaxed">
-                                Chronic fatigue is a debilitating condition that can significantly impact your quality of life. Acupuncture can help by stimulating specific points in your body that can improve your energy levels and reduce fatigue. By improving the flow of Qi or energy throughout your body, acupuncture can help you feel more energized and rejuvenated.
-                              </p>
+                        {selectedSymptoms.map((code) => {
+                          const plan = clinicalAcupuncturePlans[lang][code as keyof typeof clinicalAcupuncturePlans['en']];
+                          if (!plan) return null;
+                          return (
+                            <div key={code} className="border border-slate-100 rounded-xl p-4 bg-slate-50/20">
+                              <strong className="text-xs text-slate-900 uppercase block mb-1">{plan.title}</strong>
+                              <p className="text-xs text-slate-600 leading-relaxed">{plan.desc}</p>
                             </div>
-                            <div>
-                              <strong className="text-xs text-slate-900 uppercase block mb-1">Acupuncture Treatment for Libido & Vitality:</strong>
-                              <p className="text-xs text-slate-600 leading-relaxed">
-                                Low libido can be caused by a variety of factors, including stress, hormonal imbalances, and medication. Acupuncture can help by regulating your body's hormonal balance and improving blood flow to your reproductive organs. By targeting specific points in your body, acupuncture can help increase your sex drive and improve your sexual function.
-                              </p>
-                            </div>
-                          </div>
-                        )}
+                          );
+                        })}
                       </div>
                     </div>
 
@@ -1621,7 +1770,7 @@ export default function ConstitutionTestPage() {
         </div>
       </section>
 
-      {/* MOCK CHECKOUT MODAL (Screenshot 1 Style) */}
+      {/* MOCK CHECKOUT MODAL */}
       {showCheckout && (
         <div className="fixed inset-0 z-50 bg-[#0B1120]/75 backdrop-blur-sm flex items-center justify-center p-4">
           <div className="bg-white rounded-3xl shadow-2xl border border-slate-100 p-6 sm:p-8 max-w-md w-full relative flex flex-col gap-5 animate-in fade-in zoom-in-95 duration-200">
@@ -1714,6 +1863,7 @@ export default function ConstitutionTestPage() {
   );
 }
 
+// 2. Parse age and determine Huangdi Neijing Cycle
 const stems = ['甲', '乙', '丙', '丁', '戊', '己', '庚', '辛', '壬', '癸'];
 const branches = ['子', '丑', '寅', '卯', '辰', '巳', '午', '未', '申', '酉', '戌', '亥'];
 const elementsMap: Record<string, string> = {
