@@ -212,6 +212,14 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   }
 
 
+  if (pathname.includes('/constitution-')) {
+    return (
+      <div className="min-h-screen font-sans bg-slate-950 flex flex-col">
+        {children}
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen font-sans bg-slate-50 flex flex-col">
       <Helmet>
