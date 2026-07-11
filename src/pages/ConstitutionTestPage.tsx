@@ -310,6 +310,20 @@ const clinicalAcupuncturePlans = {
 const dict = {
   zh: {
     title: "中医体质与生命节律评估",
+    hours: [
+      { value: "00:00", label: "子时 (23:00-01:00)" },
+      { value: "02:00", label: "丑时 (01:00-03:00)" },
+      { value: "04:00", label: "寅时 (03:00-05:00)" },
+      { value: "06:00", label: "卯时 (05:00-07:00)" },
+      { value: "08:00", label: "辰时 (07:00-09:00)" },
+      { value: "10:00", label: "巳时 (09:00-11:00)" },
+      { value: "12:00", label: "午时 (11:00-13:00)" },
+      { value: "14:00", label: "未时 (13:00-15:00)" },
+      { value: "16:00", label: "申时 (15:00-17:00)" },
+      { value: "18:00", label: "酉时 (17:00-19:00)" },
+      { value: "20:00", label: "戌时 (19:00-21:00)" },
+      { value: "22:00", label: "亥时 (21:00-23:00)" }
+    ],
     subtitle: "结合《黄帝内经·上古天真论》与先天五运六气禀赋的临床测评",
     step1_title: "第一步：输入您的基本信息",
     step1_desc: "用于计算您的先天五行局与生命节律段",
@@ -374,6 +388,20 @@ const dict = {
   },
   en: {
     title: "TCM Constitution & Life Cycle Assessment",
+    hours: [
+      { value: "00:00", label: "Zi Hour (23:00-01:00)" },
+      { value: "02:00", label: "Chou Hour (01:00-03:00)" },
+      { value: "04:00", label: "Yin Hour (03:00-05:00)" },
+      { value: "06:00", label: "Mao Hour (05:00-07:00)" },
+      { value: "08:00", label: "Chen Hour (07:00-09:00)" },
+      { value: "10:00", label: "Si Hour (09:00-11:00)" },
+      { value: "12:00", label: "Wu Hour (11:00-13:00)" },
+      { value: "14:00", label: "Wei Hour (13:00-15:00)" },
+      { value: "16:00", label: "Shen Hour (15:00-17:00)" },
+      { value: "18:00", label: "You Hour (17:00-19:00)" },
+      { value: "20:00", label: "Xu Hour (19:00-21:00)" },
+      { value: "22:00", label: "Hai Hour (21:00-23:00)" }
+    ],
     subtitle: "Clinical evaluation combining Huangdi Neijing (Internal Classic) cycles and innate BaZi elements",
     step1_title: "Step 1: Enter Your Basic Information",
     step1_desc: "Used to calculate your innate Five Elements and life cycle milestone.",
@@ -438,6 +466,20 @@ const dict = {
   },
   ja: {
     title: "東洋医学体質と生命リズムの評価",
+    hours: [
+      { value: "00:00", label: "子の刻 (23:00-01:00)" },
+      { value: "02:00", label: "丑の刻 (01:00-03:00)" },
+      { value: "04:00", label: "寅の刻 (03:00-05:00)" },
+      { value: "06:00", label: "卯の刻 (05:00-07:00)" },
+      { value: "08:00", label: "辰の刻 (07:00-09:00)" },
+      { value: "10:00", label: "巳の刻 (09:00-11:00)" },
+      { value: "12:00", label: "午の刻 (11:00-13:00)" },
+      { value: "14:00", label: "未の刻 (13:00-15:00)" },
+      { value: "16:00", label: "申の刻 (15:00-17:00)" },
+      { value: "18:00", label: "酉の刻 (17:00-19:00)" },
+      { value: "20:00", label: "戌の刻 (19:00-21:00)" },
+      { value: "22:00", label: "亥の刻 (21:00-23:00)" }
+    ],
     subtitle: "『黄帝内経・上古天真論』の成長周期と先天的五運六気のエネルギーを組み合わせた臨床評価",
     step1_title: "ステップ 1：基本情報の入力",
     step1_desc: "先天的五行パターンと生命リズムの成長期を算出するために使用します。",
@@ -1082,10 +1124,17 @@ export default function ConstitutionTestPage() {
       ctx.font = '24px sans-serif';
       ctx.fillText('☯  FIVE ELEMENTS VITALITY CHARTER  ☯', wp.width / 2, 250);
 
-      // 4. Draw active bead ring in center
+      // 4. Draw active bead ring in center (maintaining aspect ratio circle crop)
+      const minDim = Math.min(canvas.width, canvas.height);
+      const sx = (canvas.width - minDim) / 2;
+      const sy = (canvas.height - minDim) / 2;
       const beadSize = 750;
       ctx.drawImage(
         canvas, 
+        sx,
+        sy,
+        minDim,
+        minDim,
         (wp.width - beadSize) / 2, 
         (wp.height - beadSize) / 2 - 50, 
         beadSize, 
@@ -1327,18 +1376,9 @@ export default function ConstitutionTestPage() {
                       onChange={(e) => setTob(e.target.value)}
                       className="bg-slate-50 border border-slate-200 rounded-xl p-3 text-sm text-slate-900 focus:border-blue-500 focus:bg-white outline-none transition-all"
                     >
-                      <option value="00:00">子时 (23:00-01:00)</option>
-                      <option value="02:00">丑时 (01:00-03:00)</option>
-                      <option value="04:00">寅时 (03:00-05:00)</option>
-                      <option value="06:00">卯时 (05:00-07:00)</option>
-                      <option value="08:00">辰时 (07:00-09:00)</option>
-                      <option value="10:00">巳时 (09:00-11:00)</option>
-                      <option value="12:00">午时 (11:00-13:00)</option>
-                      <option value="14:00">未时 (13:00-15:00)</option>
-                      <option value="16:00">申时 (15:00-17:00)</option>
-                      <option value="18:00">酉时 (17:00-19:00)</option>
-                      <option value="20:00">戌时 (19:00-21:00)</option>
-                      <option value="22:00">亥时 (21:00-23:00)</option>
+                      {t.hours.map((h: any) => (
+                        <option key={h.value} value={h.value}>{h.label}</option>
+                      ))}
                     </select>
                   </div>
                 </div>
