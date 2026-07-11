@@ -92,7 +92,7 @@ const constitutionDescriptions = {
     'Water': {
       title: '水型体质 (肾气偏弱/骨软型)',
       desc: '您的先天格局中水元素偏弱。水对应肾脏。肾主骨生髓，是人的先天之本。水气偏弱者容易在疲劳时出现慢性的腰膝酸痛、四肢怕冷，或晚上频繁起夜，性功能或精力感到低下。',
-      advice: '注意腰部 and 足部的保暖，避免熬夜伤阴。可适量食用黑芝麻、黑豆等黑色食物以补肾。常灸或按摩太溪穴 (KI3) 和涌泉穴 (KI1) 以培元固本。'
+      advice: '注意腰部和足部的保暖，避免熬夜伤阴。可适量食用黑芝麻、黑豆等黑色食物以补肾。常灸或按摩太溪穴 (KI3) 和涌泉穴 (KI1) 以培元固本。'
     }
   },
   en: {
@@ -140,7 +140,7 @@ const constitutionDescriptions = {
     },
     'Metal': {
       title: '金型体質（肺気虚弱・バリア機能低下型）',
-      desc: 'あなたの生まれ持った五行パターンでは「金」的エネルギーが弱めです。東洋医学において「金」は肺・大腸に対応します。肺は皮膚を司り、風邪など外邪から体を守る役割（衛気）があります。金が不足すると、寒暖差やアレルギーに弱く、風邪を引きやすくなり、肌が乾燥しやすくなります。',
+      desc: 'あなたの生まれ持った五行パターンでは「金」のエネルギーが弱めです。東洋医学において「金」は肺・大腸に対応します。肺は皮膚を司り、風邪など外邪から体を守る役割（衛気）があります。金が不足すると、寒暖差やアレルギーに弱く、風邪を引きやすくなり、肌が乾燥しやすくなります。',
       advice: '深呼吸の習慣をつけ、肺活量を高めましょう。辛い刺激物の摂りすぎを控え、ユリの根や白キクラゲのスープで肺を潤します。合谷穴（LI4）や列欠穴（LU7）を押すことで免疫力を補います。'
     },
     'Water': {
@@ -205,21 +205,24 @@ const symptomTexts = {
     { code: 'B', text: '睡眠不好，休息不足' },
     { code: 'C', text: '饮食不节，没有规律和控制饭量' },
     { code: 'D', text: '疼痛，没有原因的痛' },
-    { code: 'E', text: '无力，疲惫，精力低下' }
+    { code: 'E', text: '无力，疲惫，精力低下' },
+    { code: 'none', text: '都不是 (以上皆无)' }
   ],
   en: [
     { code: 'A', text: 'Anxiety, stress, and overthinking' },
     { code: 'B', text: 'Poor sleep quality and insomnia' },
     { code: 'C', text: 'Irregular diet and indigestion' },
     { code: 'D', text: 'Unexplained body aches and chronic pain' },
-    { code: 'E', text: 'Fatigue, low energy, and low libido' }
+    { code: 'E', text: 'Fatigue, low energy, and low libido' },
+    { code: 'none', text: 'None of the above' }
   ],
   ja: [
     { code: 'A', text: '緊張や焦り、考えすぎ' },
     { code: 'B', text: '睡眠の質が低い、不眠' },
     { code: 'C', text: '食生活の乱れ、消化不良' },
     { code: 'D', text: '原因不明の痛み、慢性痛' },
-    { code: 'E', text: '全身の倦怠感、無気力、精力減退' }
+    { code: 'E', text: '全身の倦怠感、無気力、精力減退' },
+    { code: 'none', text: '上記のいずれでもない' }
   ]
 };
 
@@ -244,6 +247,10 @@ const clinicalAcupuncturePlans = {
     E: {
       title: "针灸培元固本补虚方案 (Acupuncture for Fatigue & Libido)",
       desc: "针对慢性疲劳、腰膝酸软、精力低下。这代表肾气亏虚、元气不足。针灸通过艾灸气海、关元，针刺太溪等强壮穴位，温补下元、温通经络，激发机体免疫力，重塑生机活力。"
+    },
+    none: {
+      title: "节气防病与未病调理方案 (Preventative Seasonal Wellness)",
+      desc: "针对目前没有明显突出的身体不适。中医最高境界为“治未病”。David Cai 医生建议您进行定期的节气调理。针灸通过调和经络气血、培补元气，能够增强机体免疫防线，保持阴阳平衡，达到预防衰老、延年益寿的目的。"
     }
   },
   en: {
@@ -266,6 +273,10 @@ const clinicalAcupuncturePlans = {
     E: {
       title: "Acupuncture for Fatigue & Vitality",
       desc: "Targeting chronic fatigue, lower back weakness, and low libido. This signals Kidney essence depletion. By applying warm moxibustion to Qihai (CV6) and Guanyuan (CV4), combined with acupuncture at Taixi (KI3), we warm the lower dantian, boost immunity, and restore physical stamina."
+    },
+    none: {
+      title: "Preventative Seasonal Wellness Plan",
+      desc: "For individuals with no acute health concerns. In TCM, the highest form of medicine is 'treating before disease arises' (preventative care). Dr. David Cai suggests periodic seasonal acupuncture. This helps maintain balanced Qi and Blood, optimizes your immune system, and promotes longevity."
     }
   },
   ja: {
@@ -288,6 +299,10 @@ const clinicalAcupuncturePlans = {
     E: {
       title: "生命力充填・疲労回復お灸ケア",
       desc: "慢性的な疲労、精力減退、腰痛を対象とします。これは腎気や生命エネルギー（元気）が枯渇しているサインです。気海や関元へのお灸治療、太渓への鍼治療を通じて下腹部を温め、自己免疫力を高め、全身に活力をみなぎらせます。"
+    },
+    none: {
+      title: "未病防衛・季節の養生鍼灸プラン",
+      desc: "現在、目立った体調不良がない方を対象とします。中医学の最高峰は「未病を治す（病気になる前に防ぐ）」ことです。デビッド医師は、季節の変わり目に定期的な調律鍼治療を受けることをお勧めします。これにより気血を整え、自己免疫力を高め、健康的な長寿を維持できます。"
     }
   }
 };
@@ -316,12 +331,12 @@ const dict = {
     unlock_report_btn: "解锁体质报告 🔓",
     results_title: "您的专属身心能量分析",
     results_badge: "中医五行与生命节律报告",
-    timezone_label: "时区：檀香山 (Honolulu)",
+    timezone_label: "时区：慢生命节律 (UTC-10)",
     book_btn: "预约门诊评估",
     beads_desc: "外圈 8 颗先天珠（出生局）与 8 颗后天珠（当前时空）匀速运转，内核心为 4 颗身心主观能量鱼眼",
     classic_title: "Classic Edition (免费版)",
     classic_desc: "免费基础排印版 & 主导能量",
-    download_wallpaper: "下载您的五行护身符壁纸",
+    download_wallpaper: "下载您的专属能量护身壁纸 📥",
     dna_title: "DNA Edition (解锁版)",
     dna_desc: "深度能量图腾交织 & 临床调理建议",
     price_label: "一次性解锁",
@@ -364,14 +379,14 @@ const dict = {
     step1_desc: "Used to calculate your innate Five Elements and life cycle milestone.",
     name_label: "Your Name",
     name_placeholder: "e.g., David / Mr. Smith",
-    gender_label: "Biological Gender (Life cycle node: Male 8, Female 7 years)",
+    gender_label: "Biological Gender (Male: 8-year cycles, Female: 7-year cycles)",
     gender_male: "Male ♂",
     gender_female: "Female ♀",
     dob_label: "Date of Birth (Solar Calendar)",
     tob_label: "Hour of Birth (Optional)",
     next_btn_step1: "Next: Select Symptoms",
     step2_title: "Step 2: Select Your Main Symptoms",
-    step2_desc: "5 common clinical health concerns (multiple choices allowed)",
+    step2_desc: "Common clinical health concerns (multiple choices allowed)",
     next_btn_step2: "Next: Unlock Report",
     back_btn: "Back",
     step3_title: "Report Ready!",
@@ -385,7 +400,7 @@ const dict = {
     beads_desc: "The outer circle contains 8 innate beads (birth chart) and 8 acquired beads (current Honolulu elements) rotating smoothly. The core has 4 subconscious beads.",
     classic_title: "Classic Edition (Free)",
     classic_desc: "Free sequential design & dominant energy details",
-    download_wallpaper: "Download Energy Talisman Wallpaper",
+    download_wallpaper: "Download Custom Energy Talisman Wallpaper 📥",
     dna_title: "DNA Edition (Premium)",
     dna_desc: "Deep energy intertwining & clinical recommendations",
     price_label: "One-time purchase",
@@ -428,7 +443,7 @@ const dict = {
     step1_desc: "先天的五行パターンと生命リズムの成長期を算出するために使用します。",
     name_label: "お名前",
     name_placeholder: "例：山田さん / David",
-    gender_label: "生理学的性別 (男性8年周期、女性7年周期)",
+    gender_label: "生理学的性別（男性は8年周期、女性は7年周期）",
     gender_male: "男性 ♂",
     gender_female: "女性 ♀",
     dob_label: "生年月日 (新暦)",
@@ -449,7 +464,7 @@ const dict = {
     beads_desc: "外円の先天的エネルギービーズ8個と、ホノルルの現時宇宙エレメント8個がゆっくり回転し、中心の4個は静かに息づいています。",
     classic_title: "Classic エディション (無料版)",
     classic_desc: "無料基本設計図＆主導エネルギー解説",
-    download_wallpaper: "五行お守り壁紙をダウンロード",
+    download_wallpaper: "五行エネルギー壁紙のダウンロード 📥",
     dna_title: "DNA エディション (完全版)",
     dna_desc: "深層エネルギー図騰＆鍼灸臨床アドバイス",
     price_label: "一回のみ購入",
@@ -731,7 +746,7 @@ export default function ConstitutionTestPage() {
           { limit: 16, label: '丈夫一八 (肾气实阶段)', quote: '丈夫八岁，肾气实，发长齿更。', clinical: '处于儿童及少年发育期，肾气开始充实，骨骼牙齿快速发育。' },
           { limit: 24, label: '丈夫二八 (天癸至阶段)', quote: '二八，肾气盛，天癸至，精气溢写，阴阳和，故能有子。', clinical: '男性生殖机能成熟，精力旺盛，骨骼生长进入爆发期。' },
           { limit: 48, label: '丈夫三八至四八 (筋骨肌肉鼎盛期)', quote: '丈夫八岁，肾气平均，筋骨劲强；四八，筋骨隆盛，肌肉满壮。', clinical: '24岁至32岁是男性身体机能的最高峰，筋骨强壮，肌肉发达。应维持良好的作息以稳固阳气。' },
-          { limit: 56, label: '丈夫五八至六八 (肾气与阳气衰退期)', quote: '五八，肾气衰，发堕齿槁；六八，阳气衰竭于上，面焦，发鬓颁白。', clinical: '【临床警示】40岁起肾气渐衰，开始出现脱发、牙齿松动；48岁起头部阳气衰退，额头面部出现疲态，两鬓变白。临床调理重点在于“补益肾气、维护骨骼关节”，预防腰椎间盘突出 and 慢性劳损。' },
+          { limit: 56, label: '丈夫五八至六八 (肾气与阳气衰退期)', quote: '五八，肾气衰，发堕齿槁；六八，阳气衰竭于上，面焦，发鬓颁白。', clinical: '【临床警示】40岁起肾气渐衰，开始出现脱发、牙齿松动；48岁起头部阳气衰退，额头面部出现疲态，两鬓变白。临床调理重点在于“补益肾气、维护骨骼关节”，预防腰椎间盘突出和慢性劳损。' },
           { limit: 64, label: '丈夫七八 (肝肾亏虚阶段)', quote: '七八，肝气衰，筋不能动，天癸竭，精少，肾藏衰，形体皆极。', clinical: '【临床警示】56岁起，肝血渐虚，筋脉失去滋养，导致关节僵硬、运动不灵活；肾脏功能衰退，易感体力不支、精力减退。针灸可以强肝肾、通关节，缓解中老年骨性关节炎和全身酸痛。' },
           { limit: 999, label: '丈夫八八 (衰老养生期)', quote: '八八，则齿发去……形体皆极。', clinical: '【临床关怀】64岁之后，进入深度老龄养生阶段。人体脏腑精气以固守为主，防寒保暖、养阴护阳为要。通过温和的艾灸和温针灸，可有效培元固本，延年益寿。' }
         ]
@@ -759,7 +774,7 @@ export default function ConstitutionTestPage() {
           { limit: 14, label: '女子一七（腎気旺盛期）', quote: '女子七歳、腎気盛んにして、歯更まり髪長ず。', clinical: '幼少期の成長発育期であり、腎気が充実し始め、乳歯が永久歯に生え変わり、髪が急速に伸びます。バランスの取れた栄養と十分な睡眠が大切です。' },
           { limit: 21, label: '女子二七（天癸至る・月経開始）', quote: '二七にして天癸至り、任脈通じ、太衝脈盛んにして、月事時に下る。', clinical: '生殖機能が成熟し、月経が順調に始まり、妊娠が可能になります。情緒が不安定になりやすいため、生理期の保温を心がけ、生冷飲食を控えましょう。' },
           { limit: 35, label: '女子三七〜四七（身体の最盛期）', quote: '三七にして腎気平均し、真牙生じて長極まる。四七にして筋骨堅く、髪長極まり、身体盛壮なり。', clinical: '人生における身体の黄金期であり、筋肉が満ち、筋骨が最も強健になります。元気を養い、過労によるエネルギー枯渇を防ぐ重要な時期です。' },
-          { limit: 42, label: '女子五七（陽明脈衰える・老化の始まり）', quote: '五七にして陽明脈衰え、顔始めて焦れ、髪始めて堕つ。', clinical: '【臨床的警告】35歳から、手足の陽明経（胃経・大腸経）の気血が衰え始めます。顔面を通る胃経の衰えにより、顔のハリが失われ、抜け毛が始まります。脾胃を健やかにし、気血を补う鍼治療が最適です。' },
+          { limit: 42, label: '女子五七（陽明脈衰える・老化の始まり）', quote: '五七にして陽明脈衰え、顔始めて焦れ、髪始めて堕つ。', clinical: '【臨床的警告】35歳から、手足の陽明経（胃経・大腸経）の気血が衰え始めます。顔面を通る胃経の衰えにより、顔のハリが失われ、抜け毛が始まります。脾胃を健やかにし、気血を補う鍼治療が最適です。' },
           { limit: 49, label: '女子六七（三陽脈衰える・加齢進行）', quote: '六七にして三陽脈上において衰え、顔皆焦れ、髪始めて白し。', clinical: '【臨床的警告】42歳から、太陽・陽明・少陽の三陽経が衰え、顔のシワが増え、白髪が目立ち始めます。代謝が低下し、関節痛や気分の落ち込みが現れやすくなります。温熱経絡鍼治療が効果的です。' },
           { limit: 999, label: '女子七七（天癸尽きる・更年期前後）', quote: '七七にして任脈虚し、太衝脈衰少し、天癸竭き、地道通ぜず。', clinical: '【臨床的ケア】49歳前後で任脈と太衝脈が衰え、天癸（ホルモン）が尽きて閉経を迎えます。ほてり、寝汗、不眠、骨粗鬆症などの更年期症状が出やすくなります。鍼治療で経絡の陰陽を整え、穏やかに移行させます。' }
         ],
@@ -845,12 +860,21 @@ export default function ConstitutionTestPage() {
     return counts;
   }
 
-  // Symptom toggles
+  // Symptom toggles with mutually exclusive None selection
   function toggleSymptom(code: string) {
-    if (selectedSymptoms.includes(code)) {
-      setSelectedSymptoms(selectedSymptoms.filter(item => item !== code));
+    if (code === 'none') {
+      if (selectedSymptoms.includes('none')) {
+        setSelectedSymptoms([]);
+      } else {
+        setSelectedSymptoms(['none']);
+      }
     } else {
-      setSelectedSymptoms([...selectedSymptoms, code]);
+      const filtered = selectedSymptoms.filter(item => item !== 'none');
+      if (filtered.includes(code)) {
+        setSelectedSymptoms(filtered.filter(item => item !== code));
+      } else {
+        setSelectedSymptoms([...filtered, code]);
+      }
     }
   }
 
@@ -1026,6 +1050,77 @@ export default function ConstitutionTestPage() {
     }
   };
 
+  // Generate mobile lockscreen wallpaper dynamically from active canvas (Screenshot 6 styled)
+  const handleDownloadCanvas = () => {
+    const canvas = document.querySelector('canvas');
+    if (canvas) {
+      const wp = document.createElement('canvas');
+      wp.width = 1080;
+      wp.height = 1920;
+      const ctx = wp.getContext('2d');
+      if (!ctx) return;
+
+      // 1. Draw solid dark background gradient
+      const grad = ctx.createLinearGradient(0, 0, 0, 1920);
+      grad.addColorStop(0, '#0F172A');
+      grad.addColorStop(1, '#020617');
+      ctx.fillStyle = grad;
+      ctx.fillRect(0, 0, 1080, 1920);
+
+      // 2. Draw gold border framing
+      ctx.strokeStyle = 'rgba(245, 158, 11, 0.15)';
+      ctx.lineWidth = 4;
+      ctx.strokeRect(40, 40, wp.width - 80, wp.height - 80);
+
+      // 3. Draw header logo text
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+      ctx.font = 'bold 36px sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText('ACUTHERAPY CLINICS', wp.width / 2, 200);
+
+      ctx.fillStyle = 'rgba(245, 158, 11, 0.6)';
+      ctx.font = '24px sans-serif';
+      ctx.fillText('☯  FIVE ELEMENTS VITALITY CHARTER  ☯', wp.width / 2, 250);
+
+      // 4. Draw active bead ring in center
+      const beadSize = 750;
+      ctx.drawImage(
+        canvas, 
+        (wp.width - beadSize) / 2, 
+        (wp.height - beadSize) / 2 - 50, 
+        beadSize, 
+        beadSize
+      );
+
+      // 5. Draw Profile footer Bazi details
+      ctx.fillStyle = '#FFFFFF';
+      ctx.font = 'bold 42px serif';
+      ctx.fillText(name.toUpperCase() || 'VITALITY CHARTER', wp.width / 2, wp.height - 350);
+
+      const color = getBeadBaseColor(dominant);
+      ctx.fillStyle = color;
+      ctx.font = '900 64px sans-serif';
+      ctx.fillText(`${dominant.toUpperCase()} ARCHETYPE`, wp.width / 2, wp.height - 250);
+
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.4)';
+      ctx.font = '20px sans-serif';
+      ctx.fillText('Innate Balance Charter • acutherapy.com/constitution-test', wp.width / 2, wp.height - 150);
+
+      // 6. Export and download
+      const dataUrl = wp.toDataURL('image/png');
+      const a = document.createElement('a');
+      a.href = dataUrl;
+      a.download = `${name.replace(/\s+/g, '_') || 'my'}_energy_talisman.png`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    } else {
+      alert(lang === 'zh' ? "未检测到能量图，请稍后。" : 
+            lang === 'ja' ? "エネルギー図が検出されませんでした。" : 
+            "Energy charter not detected.");
+    }
+  };
+
   // Run Calculations for Dominant and Deficient
   const counts = getElementsCount(dob, tob);
   const elementsArray = Object.keys(counts).map(key => ({
@@ -1082,7 +1177,7 @@ export default function ConstitutionTestPage() {
     const baseColor2 = getBeadBaseColor(e2);
 
     return (
-      <div className="flex flex-col items-center gap-0.5 select-none">
+      <div className="flex flex-col items-center gap-0.5 select-none text-center">
         <span className="text-[10px] font-bold tracking-tight opacity-50">{stem_local}</span>
         <span 
           style={{ color: isLight ? baseColor1 : '#ffffff' }}
@@ -1118,12 +1213,13 @@ export default function ConstitutionTestPage() {
 
   return (
     <>
-      <Helmet>
-        <title>{t.title} | AcuTherapy Clinics</title>
-        <meta name="description" content="AcuTherapy Clinics 中医五行体质与生命节律深度临床评估。" />
-      </Helmet>
       <section className="bg-slate-50 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
         
+        <Helmet>
+          <title>{t.title} | AcuTherapy Clinics</title>
+          <meta name="description" content="AcuTherapy Clinics 中医五行体质与生命节律深度临床评估。" />
+        </Helmet>
+
         {/* Floating Multi-Language selector */}
         <div className="max-w-2xl mx-auto flex justify-end mb-4">
           <div className="flex gap-1 bg-white p-1 rounded-xl shadow-sm border border-slate-100 text-[10px] font-bold">
@@ -1397,7 +1493,7 @@ export default function ConstitutionTestPage() {
                   </span>
                 </div>
 
-                {/* 🌟 2. DOUBLE-CARD EDITION SELECTION PANELS (Screenshot 5 Style) */}
+                {/* 🌟 2. DOUBLE-CARD EDITION SELECTION PANELS */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   
                   {/* Free Classic Card */}
@@ -1413,13 +1509,12 @@ export default function ConstitutionTestPage() {
                       >
                         {t.book_btn}
                       </a>
-                      <a 
-                        href={`/assets/${dominant.toLowerCase()}_talisman.png`}
-                        download
+                      <button 
+                        onClick={handleDownloadCanvas}
                         className="text-[10px] text-blue-600 font-bold hover:underline flex items-center justify-center gap-1.5 mt-1"
                       >
                         <Download size={12} /> {t.download_wallpaper}
-                      </a>
+                      </button>
                     </div>
                   </div>
 
@@ -1472,7 +1567,7 @@ export default function ConstitutionTestPage() {
 
                 </div>
 
-                {/* 🌟 3. ASTROLOGICAL ALIGNMENT PILLARS CARDS - STACKED ON MOBILE */}
+                {/* 🌟 3. ASTROLOGICAL ALIGNMENT PILLARS CARDS */}
                 {beads.length > 0 && (
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl mx-auto w-full">
                     
@@ -1515,7 +1610,7 @@ export default function ConstitutionTestPage() {
                   </div>
                 )}
 
-                {/* 🌟 4. CURRENT DOMINANT ENERGY CARDS (Screenshot 4 Style) */}
+                {/* 🌟 4. CURRENT DOMINANT ENERGY CARDS */}
                 <div className="bg-slate-50 border border-slate-100 rounded-3xl p-6 flex flex-col items-center gap-5">
                   <span className="text-[10px] text-slate-400 font-black uppercase tracking-widest">{t.dominant_energy_title}</span>
                   
@@ -1553,7 +1648,7 @@ export default function ConstitutionTestPage() {
                   </div>
                 </div>
 
-                {/* 🌟 5. DOMINANT ELEMENT PHYSICAL ADVICE (FREE VERSION CONTENT) */}
+                {/* 🌟 5. DOMINANT ELEMENT PHYSICAL ADVICE */}
                 <div className="flex flex-col gap-4 border border-slate-200 rounded-3xl p-6 bg-slate-50/20">
                   <h3 className="text-xs font-black text-slate-900 uppercase tracking-wider flex items-center gap-2 border-l-4 border-amber-500 pl-2">
                     {t.dominant_phys_title}
