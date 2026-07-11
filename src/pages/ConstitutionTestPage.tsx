@@ -726,23 +726,6 @@ const BaZiCanvas = ({ beads, mode }: { beads: Bead[], mode: 'ring' | 'dna' }) =>
 
 export default function ConstitutionTestPage() {
   const [lang, setLang] = useState<'zh' | 'en' | 'ja'>('zh');
-
-  // Detect URL parameter or browser language on mount
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const params = new URLSearchParams(window.location.search);
-      const urlLang = params.get('lang');
-      if (urlLang === 'en' || urlLang === 'zh' || urlLang === 'ja') {
-        setLang(urlLang);
-      } else {
-        const browserLang = navigator.language.toLowerCase();
-        if (browserLang.startsWith('ja')) setLang('ja');
-        else if (browserLang.startsWith('en')) setLang('en');
-        else setLang('zh');
-      }
-    }
-  }, []);
-
   const t = dict[lang];
 
   const [step, setStep] = useState<number>(1);
@@ -765,6 +748,139 @@ export default function ConstitutionTestPage() {
   const [cardCvc, setCardCvc] = useState<string>('');
   const [isPaying, setIsPaying] = useState<boolean>(false);
   const [isDownloadingPass, setIsDownloadingPass] = useState<boolean>(false);
+
+  // Detect URL parameter or browser language on mount
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const urlLang = params.get('lang');
+      if (urlLang === 'en' || urlLang === 'zh' || urlLang === 'ja') {
+        setLang(urlLang);
+      } else {
+        const browserLang = navigator.language.toLowerCase();
+        if (browserLang.startsWith('ja')) setLang('ja');
+        else if (browserLang.startsWith('en')) setLang('en');
+        else setLang('zh');
+      }
+
+      // Load prefilled Bazi parameters if they came from an email link
+      const paramName = params.get('name');
+      const paramGender = params.get('gender');
+      const paramDob = params.get('dob');
+      const paramTob = params.get('tob');
+      const paramSymptoms = params.get('symptoms');
+      const paramUnlocked = params.get('unlocked');
+      const paramEmail = params.get('email');
+
+      if (paramName && paramDob) {
+        setName(paramName);
+        if (paramGender === 'male' || paramGender === 'female') {
+          setGender(paramGender);
+        }
+        setDob(paramDob);
+        if (paramTob) setTob(paramTob);
+        if (paramEmail) setEmail(paramEmail);
+        
+        if (paramSymptoms) {
+          try {
+            const decoded = decodeURIComponent(paramSymptoms);
+            setSelectedSymptoms(JSON.parse(decoded));
+          } catch (e) {
+            console.error('Failed to parse symptoms from URL:', e);
+          }
+        }
+        
+        if (paramUnlocked === 'true') {
+          setIsUnlocked(true);
+        }
+        setStep(4);
+      }
+    }
+  }, []);
+
+  // Automatically calculate Bazi beads when step becomes 4
+  useEffect(() => {
+    if (step === 4 && dob) {
+      const dParts = dob.split('-');
+      const y = parseInt(dParts[0]) || 2000;
+      const m = parseInt(dParts[1]) || 1;
+      const d = parseInt(dParts[2]) || 1;
+      
+      let h = 12;
+      if (tob) {
+        const tParts = tob.split(':');
+        h = parseInt(tParts[0]) || 0;
+      }
+
+      const birthDate = new Date(y, m - 1, d, h, 0);
+      const lunar = Lunar.fromDate(birthDate);
+      const bY = lunar.getYearInGanZhi();
+      const bM = lunar.getMonthInGanZhi();
+      const bD = lunar.getDayInGanZhi();
+      const bT = lunar.getTimeInGanZhi() || '未知';
+
+      const nowUtc = new Date().getTime() + new Date().getTimezoneOffset() * 60000;
+      const honoluluTime = new Date(nowUtc - (10 * 3600000));
+      const lunarNow = Lunar.fromDate(honoluluTime);
+      const cY = lunarNow.getYearInGanZhi();
+      const cM = lunarNow.getMonthInGanZhi();
+      const cD = lunarNow.getDayInGanZhi();
+      const cT = lunarNow.getTimeInGanZhi() || '未知';
+
+      const innate = [
+        { element: getGanZhiElement(bY), type: 'innate' as const, char: bY[0] || '年' },
+        { element: getGanZhiElement(bY.length > 1 ? bY[1] : ''), type: 'innate' as const, char: bY[1] || '年' },
+        { element: getGanZhiElement(bM), type: 'innate' as const, char: bM[0] || '月' },
+        { element: getGanZhiElement(bM.length > 1 ? bM[1] : ''), type: 'innate' as const, char: bM[1] || '月' },
+        { element: getGanZhiElement(bD), type: 'innate' as const, char: bD[0] || '日' },
+        { element: getGanZhiElement(bD.length > 1 ? bD[1] : ''), type: 'innate' as const, char: bD[1] || '日' },
+        { element: getGanZhiElement(bT), type: 'innate' as const, char: bT[0] || '时' },
+        { element: getGanZhiElement(bT.length > 1 ? bT[1] : ''), type: 'innate' as const, char: bT[1] || '时' },
+      ];
+
+      const acquired = [
+        { element: getGanZhiElement(cY), type: 'acquired' as const, char: cY[0] || '年' },
+        { element: getGanZhiElement(cY.length > 1 ? cY[1] : ''), type: 'acquired' as const, char: cY[1] || '年' },
+        { element: getGanZhiElement(cM), type: 'acquired' as const, char: cM[0] || '月' },
+        { element: getGanZhiElement(cM.length > 1 ? cM[1] : ''), type: 'acquired' as const, char: cM[1] || '月' },
+        { element: getGanZhiElement(cD), type: 'acquired' as const, char: cD[0] || '日' },
+        { element: getGanZhiElement(cD.length > 1 ? cD[1] : ''), type: 'acquired' as const, char: cD[1] || '日' },
+        { element: getGanZhiElement(cT), type: 'acquired' as const, char: cT[0] || '时' },
+        { element: getGanZhiElement(cT.length > 1 ? cT[1] : ''), type: 'acquired' as const, char: cT[1] || '时' },
+      ];
+
+      // Calculate dominant and counts for subconscious
+      const subCounts = getElementsCount(dob, tob);
+      let subDominant: ElementType = 'Wood';
+      let subMaxScore = -1;
+      Object.keys(subCounts).forEach(key => {
+        if (subCounts[key] > subMaxScore) {
+          subMaxScore = subCounts[key];
+          subDominant = key as ElementType;
+        }
+      });
+
+      const elementList: string[] = [];
+      selectedSymptoms.forEach(code => {
+        if (code === 'A') elementList.push('Fire');
+        if (code === 'B') elementList.push('Fire');
+        if (code === 'C') elementList.push('Earth');
+        if (code === 'D') elementList.push('Wood');
+        if (code === 'E') elementList.push('Water');
+      });
+      while (elementList.length < 4) {
+        elementList.push(subDominant);
+      }
+      const subconscious = [
+        { element: elementList[0], type: 'subconscious' as const, char: '念' },
+        { element: elementList[1], type: 'subconscious' as const, char: '心' },
+        { element: elementList[2], type: 'subconscious' as const, char: '意' },
+        { element: elementList[3], type: 'subconscious' as const, char: '神' },
+      ];
+
+      setBeads([...innate, ...acquired, ...subconscious]);
+    }
+  }, [step, dob, tob, selectedSymptoms]);
 
   // 2. Parse age and determine Huangdi Neijing Cycle
   function getNeijingCycle(birthDateStr: string, isFemale: boolean, language: 'zh' | 'en' | 'ja') {
@@ -960,65 +1076,23 @@ export default function ConstitutionTestPage() {
         return;
       }
 
-      // 🔮 Initialize Bazi beads
-      const birthDate = new Date(year, month - 1, day, hour, 0);
-      const lunar = Lunar.fromDate(birthDate);
-      const bY = lunar.getYearInGanZhi();
-      const bM = lunar.getMonthInGanZhi();
-      const bD = lunar.getDayInGanZhi();
-      const bT = lunar.getTimeInGanZhi() || '未知';
+      // Trigger email subscription API (asynchronous)
+      fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name,
+          email,
+          dob,
+          tob,
+          gender,
+          symptoms: selectedSymptoms,
+          dominant,
+          deficient,
+          lang
+        })
+      }).catch(err => console.error('Subscription email error:', err));
 
-      // Current Honolulu local time
-      const nowUtc = new Date().getTime() + new Date().getTimezoneOffset() * 60000;
-      const honoluluTime = new Date(nowUtc - (10 * 3600000));
-      const lunarNow = Lunar.fromDate(honoluluTime);
-      const cY = lunarNow.getYearInGanZhi();
-      const cM = lunarNow.getMonthInGanZhi();
-      const cD = lunarNow.getDayInGanZhi();
-      const cT = lunarNow.getTimeInGanZhi() || '未知';
-
-      const innate = [
-        { element: getGanZhiElement(bY), type: 'innate' as const, char: bY[0] || '年' },
-        { element: getGanZhiElement(bY.length > 1 ? bY[1] : ''), type: 'innate' as const, char: bY[1] || '年' },
-        { element: getGanZhiElement(bM), type: 'innate' as const, char: bM[0] || '月' },
-        { element: getGanZhiElement(bM.length > 1 ? bM[1] : ''), type: 'innate' as const, char: bM[1] || '月' },
-        { element: getGanZhiElement(bD), type: 'innate' as const, char: bD[0] || '日' },
-        { element: getGanZhiElement(bD.length > 1 ? bD[1] : ''), type: 'innate' as const, char: bD[1] || '日' },
-        { element: getGanZhiElement(bT), type: 'innate' as const, char: bT[0] || '时' },
-        { element: getGanZhiElement(bT.length > 1 ? bT[1] : ''), type: 'innate' as const, char: bT[1] || '时' },
-      ];
-
-      const acquired = [
-        { element: getGanZhiElement(cY), type: 'acquired' as const, char: cY[0] || '年' },
-        { element: getGanZhiElement(cY.length > 1 ? cY[1] : ''), type: 'acquired' as const, char: cY[1] || '年' },
-        { element: getGanZhiElement(cM), type: 'acquired' as const, char: cM[0] || '月' },
-        { element: getGanZhiElement(cM.length > 1 ? cM[1] : ''), type: 'acquired' as const, char: cM[1] || '月' },
-        { element: getGanZhiElement(cD), type: 'acquired' as const, char: cD[0] || '日' },
-        { element: getGanZhiElement(cD.length > 1 ? cD[1] : ''), type: 'acquired' as const, char: cD[1] || '日' },
-        { element: getGanZhiElement(cT), type: 'acquired' as const, char: cT[0] || '时' },
-        { element: getGanZhiElement(cT.length > 1 ? cT[1] : ''), type: 'acquired' as const, char: cT[1] || '时' },
-      ];
-
-      // Match selected symptoms to elements for subconscious cores
-      const elementList: string[] = [];
-      selectedSymptoms.forEach(code => {
-        if (code === 'A') elementList.push('Fire');
-        if (code === 'B') elementList.push('Fire');
-        if (code === 'C') elementList.push('Earth');
-        if (code === 'D') elementList.push('Wood');
-        if (code === 'E') elementList.push('Water');
-      });
-      while (elementList.length < 4) {
-        elementList.push(dominant);
-      }
-      const subconscious = [
-        { element: elementList[0], type: 'subconscious' as const, char: '念' },
-        { element: elementList[1], type: 'subconscious' as const, char: '心' },
-        { element: elementList[2], type: 'subconscious' as const, char: '意' },
-        { element: elementList[3], type: 'subconscious' as const, char: '神' },
-      ];
-
-      setBeads([...innate, ...acquired, ...subconscious]);
       setStep(4);
     }
   }
