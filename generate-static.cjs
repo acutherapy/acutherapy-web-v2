@@ -93,9 +93,15 @@ const ALL_ROUTES = [
   '/oahu-workers-comp-acupuncture-approval',
   '/veterans-acupuncture-honolulu-aiea',
   '/lgzf',
+  '/constitution-test',
 ];
 
 const PAGE_DATA = {
+  '/constitution-test': {
+    title: '中医体质与生命节律评估 | AcuTherapy Clinics',
+    description: 'AcuTherapy Clinics 中医体质与生命节律评估测试。结合先天五行与《上古天真论》年龄节律提供个性化调理对策。',
+    h1: '中医体质与生命节律评估',
+  },
   '/lgzf': {
     title: '灵龟八法开穴助手 | AcuTherapy Clinics Honolulu',
     description: 'AcuTherapy Clinics 灵龟八法开穴推算助手。根据当前时间、天干地支及奇经八脉自动推算针灸按时开穴的主穴与配穴。',

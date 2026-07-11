@@ -1,17 +1,30 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { Download, Lock, Check } from 'lucide-react';
+// @ts-ignore
+import { Lunar } from 'lunar-javascript';
 
-const stems = ['甲', '乙', '丙', '丁', '戊', '己', '庚', '辛', '壬', '癸'];
-const branches = ['子', '丑', '寅', '卯', '辰', '巳', '午', '未', '申', '酉', '戌', '亥'];
+type ElementType = 'Wood' | 'Fire' | 'Earth' | 'Metal' | 'Water';
 
-// Five Elements definitions
-const elementsMap: Record<string, string> = {
-  '甲': 'Wood', '乙': 'Wood', '寅': 'Wood', '卯': 'Wood',
-  '丙': 'Fire', '丁': 'Fire', '巳': 'Fire', '午': 'Fire',
-  '戊': 'Earth', '己': 'Earth', '辰': 'Earth', '戌': 'Earth', '丑': 'Earth', '未': 'Earth',
-  '庚': 'Metal', '辛': 'Metal', '申': 'Metal', '酉': 'Metal',
-  '壬': 'Water', '癸': 'Water', '亥': 'Water', '子': 'Water'
+type Bead = {
+  element: string;
+  type: 'innate' | 'acquired' | 'subconscious';
+  char: string;
 };
+
+const FIVE_ELEMENTS_MAP = {
+  '甲': 'Wood', '乙': 'Wood',
+  '丙': 'Fire', '丁': 'Fire',
+  '戊': 'Earth', '己': 'Earth',
+  '庚': 'Metal', '辛': 'Metal',
+  '壬': 'Water', '癸': 'Water',
+  '子': 'Water', '丑': 'Earth',
+  '寅': 'Wood', '卯': 'Wood',
+  '辰': 'Earth', '巳': 'Fire',
+  '午': 'Fire', '未': 'Earth',
+  '申': 'Metal', '酉': 'Metal',
+  '戌': 'Earth', '亥': 'Water'
+} as const;
 
 const elementNamesZh: Record<string, string> = {
   'Wood': '木 (肝胆)',
@@ -19,6 +32,31 @@ const elementNamesZh: Record<string, string> = {
   'Earth': '土 (脾胃)',
   'Metal': '金 (肺卫)',
   'Water': '水 (肾骨)'
+};
+
+const elementNamesEn: Record<string, string> = {
+  'Wood': 'Wood (Liver)',
+  'Fire': 'Fire (Heart)',
+  'Earth': 'Earth (Spleen)',
+  'Metal': 'Metal (Lung)',
+  'Water': 'Water (Kidney)'
+};
+
+const getBeadBaseColor = (el: string) => {
+  switch(el) {
+    case 'Wood': return '#10B981'; // Emerald Green
+    case 'Fire': return '#EF4444'; // Red
+    case 'Earth': return '#F59E0B'; // Amber Gold
+    case 'Metal': return '#94A3B8'; // Slate/Silver
+    case 'Water': return '#3B82F6'; // Blue
+    default: return '#9CA3AF';
+  }
+};
+
+const getGanZhiElement = (ganzhi: string) => {
+  if (!ganzhi || ganzhi === '未知') return 'Neutral';
+  const stem = ganzhi[0];
+  return FIVE_ELEMENTS_MAP[stem as keyof typeof FIVE_ELEMENTS_MAP] || 'Neutral';
 };
 
 const constitutionDescriptions: Record<string, { title: string; desc: string; advice: string }> = {
@@ -49,6 +87,184 @@ const constitutionDescriptions: Record<string, { title: string; desc: string; ad
   }
 };
 
+const quotes: Record<string, string> = {
+  'Wood': '万物生发，不破不立。您需要扎根大地的勇气，来对抗风雨中的焦虑。',
+  'Fire': '心火炽盛，向阳而生。与其在内耗中燃烧自己，不如将热情化作照亮前路的明灯。',
+  'Earth': '厚德载物，固本培元。放下那些不属于您的重担，给自己一片可以安静降落的土壤。',
+  'Metal': '百炼成钢，断舍离尘。斩断那些混乱的羁绊，在极简与秩序中找回内心的锋芒。',
+  'Water': '上善若水，顺流而下。不必时刻紧绷对抗，允许自己像水一样，在静默中积蓄千钧之力。'
+};
+
+const deficientTeasers: Record<string, string> = {
+  'Wood': '您的不足能量为木元素。这代表您目前缺乏生长、活力与远见，可能感到缺乏动力、方向模糊，或是难以规划未来。',
+  'Fire': '您的不足能量为火元素。这代表您目前缺乏温热、喜悦与情绪的舒展，可能感到情绪平淡、内心寒冷，或失去了灵感的火花。',
+  'Earth': '您的不足能量为土元素。这代表您目前缺乏根基、稳定与滋养，可能感到焦虑、漂浮不定，没有一个能够让您安心落脚的安全土壤。',
+  'Metal': '您的不足能量为金元素。这代表您目前缺乏界限感、清晰度与断舍离的能力，容易被混乱所包围，或抓着旧有的情绪垃圾不放。',
+  'Water': '您的不足能量为水元素。这代表您目前缺乏休息、深层储备与内心的宁静，正处于透支状态，难以链接内心的深层智慧。'
+};
+
+// BaZiCanvas Drawing Component from ManaReset
+const BaZiCanvas = ({ beads, mode }: { beads: Bead[], mode: 'ring' | 'dna' }) => {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    let animationFrameId: number;
+    let angleOffset = 0;
+    
+    const beads1 = beads.filter(b => b.type === 'innate');
+    const beads2 = beads.filter(b => b.type === 'acquired');
+    const totalBeads = beads1.length + beads2.length;
+
+    const drawFrame = () => {
+      const width = canvas.width;
+      const height = canvas.height;
+      const centerX = width / 2;
+      const centerY = height / 2;
+      
+      ctx.clearRect(0, 0, width, height);
+
+      const isDna = mode === 'dna';
+      const heightStep = isDna ? 18 : 0;
+      const radiusBase = isDna ? 60 : 90;
+      const spiralTurns = 1;
+      const stepAngle = (Math.PI * spiralTurns * 2) / totalBeads;
+      const tiltX = isDna ? 0.2 : 0;
+      const tiltY = isDna ? -0.2 : 0;
+
+      const drawSpiral = (strandBeads: Bead[], phaseOffset: number, isAcquired: boolean) => {
+        strandBeads.forEach((bead, i) => {
+          const t = i * stepAngle + angleOffset + phaseOffset;
+          const spiralHeight = isDna ? (i - strandBeads.length / 2) * heightStep : 0;
+          
+          const x = centerX + Math.cos(t) * radiusBase + (isDna ? (i - strandBeads.length / 2) * tiltX : 0);
+          const y = isDna 
+            ? centerY + spiralHeight + (i - strandBeads.length / 2) * tiltY
+            : centerY + Math.sin(t) * radiusBase;
+
+          const baseColor = getBeadBaseColor(bead.element);
+          const count = beads.filter(x => x.element === bead.element).length;
+          const size = isDna ? (5 + count) : (7 + count);
+
+          ctx.beginPath();
+          const grad = ctx.createRadialGradient(x, y, 0, x, y, size);
+          grad.addColorStop(0, '#FFFFFF');
+          grad.addColorStop(1, baseColor);
+          ctx.fillStyle = grad;
+          ctx.shadowBlur = 15;
+          ctx.shadowColor = baseColor;
+          ctx.globalAlpha = 0.85;
+          ctx.arc(x, y, size, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.globalAlpha = 1.0;
+          ctx.shadowBlur = 0;
+
+          if (isAcquired) {
+            ctx.beginPath();
+            ctx.lineWidth = 1.5;
+            ctx.strokeStyle = 'rgba(255,255,255,0.5)';
+            ctx.arc(x, y, size + 2.5, 0, Math.PI * 2);
+            ctx.stroke();
+          }
+        });
+      };
+
+      drawSpiral(beads1, 0, false);
+      drawSpiral(beads2, Math.PI, true);
+
+      // Draw Center Yin-Yang
+      const subBeads = beads.filter(b => b.type === 'subconscious');
+      if (subBeads.length >= 2 && !isDna) {
+        const yyRadius = 24;
+        const color1 = getBeadBaseColor(subBeads[0].element);
+        const color2 = getBeadBaseColor(subBeads[1].element);
+
+        ctx.save();
+        ctx.translate(centerX, centerY);
+        ctx.rotate(-angleOffset);
+
+        // Half 1 (White background)
+        ctx.beginPath();
+        ctx.arc(0, 0, yyRadius, Math.PI/2, Math.PI*1.5);
+        ctx.fillStyle = '#FFFFFF';
+        ctx.fill();
+
+        // Half 2 (Dark background)
+        ctx.beginPath();
+        ctx.arc(0, 0, yyRadius, Math.PI*1.5, Math.PI/2);
+        ctx.fillStyle = '#0F172A';
+        ctx.fill();
+
+        // Top medium circle (Dark)
+        ctx.beginPath();
+        ctx.arc(0, -yyRadius/2, yyRadius/2, 0, Math.PI*2);
+        ctx.fillStyle = '#0F172A';
+        ctx.fill();
+
+        // Bottom medium circle (White)
+        ctx.beginPath();
+        ctx.arc(0, yyRadius/2, yyRadius/2, 0, Math.PI*2);
+        ctx.fillStyle = '#FFFFFF';
+        ctx.fill();
+
+        // Top fish eye
+        ctx.beginPath();
+        ctx.arc(0, -yyRadius/2, 9, 0, Math.PI*2);
+        ctx.fillStyle = color1;
+        ctx.fill();
+        ctx.shadowBlur = 8;
+        ctx.shadowColor = color1;
+        ctx.fill();
+        ctx.shadowBlur = 0;
+
+        // Bottom fish eye
+        ctx.beginPath();
+        ctx.arc(0, yyRadius/2, 9, 0, Math.PI*2);
+        ctx.fillStyle = color2;
+        ctx.fill();
+        ctx.shadowBlur = 8;
+        ctx.shadowColor = color2;
+        ctx.fill();
+        ctx.shadowBlur = 0;
+
+        // Outer border
+        ctx.beginPath();
+        ctx.arc(0, 0, yyRadius, 0, Math.PI*2);
+        ctx.lineWidth = 1;
+        ctx.strokeStyle = 'rgba(255,255,255,0.2)';
+        ctx.stroke();
+
+        ctx.restore();
+      }
+
+      angleOffset += 0.006;
+      animationFrameId = requestAnimationFrame(drawFrame);
+    };
+
+    const resizeCanvas = () => {
+      const parent = canvas.parentElement;
+      if (parent) {
+        canvas.width = parent.clientWidth;
+        canvas.height = parent.clientHeight;
+      }
+    };
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+    drawFrame();
+
+    return () => {
+      window.removeEventListener('resize', resizeCanvas);
+      cancelAnimationFrame(animationFrameId);
+    };
+  }, [beads, mode]);
+
+  return <canvas ref={canvasRef} className="absolute inset-0 w-full h-full pointer-events-none" />;
+};
+
 export default function ConstitutionTestPage() {
   const [step, setStep] = useState<number>(1);
   const [name, setName] = useState<string>('');
@@ -59,6 +275,12 @@ export default function ConstitutionTestPage() {
   const [email, setEmail] = useState<string>('');
   const [isUnlocked, setIsUnlocked] = useState<boolean>(false);
   const [showCheckout, setShowCheckout] = useState<boolean>(false);
+  
+  // Dynamic Canvas states
+  const [visualMode, setVisualMode] = useState<'ring' | 'dna'>('ring');
+  const [beads, setBeads] = useState<Bead[]>([]);
+  
+  // Checkout Form states
   const [cardNumber, setCardNumber] = useState<string>('');
   const [cardExpiry, setCardExpiry] = useState<string>('');
   const [cardCvc, setCardCvc] = useState<string>('');
@@ -109,7 +331,7 @@ export default function ConstitutionTestPage() {
     const elements = [dStem, dBranch, hStem, hBranch];
     const counts: Record<string, number> = { Wood: 0, Fire: 0, Earth: 0, Metal: 0, Water: 0 };
     
-    // Base congenital seed counts (derived from standard seasonal Bazi offsets)
+    // Base congenital seed counts
     counts.Wood = 1;
     counts.Fire = 1;
     counts.Earth = 1;
@@ -126,35 +348,7 @@ export default function ConstitutionTestPage() {
     return counts;
   }
 
-  function getDayGanZhi(year: number, month: number, day: number, hour: number) {
-    let calcYear = year;
-    let calcMonth = month;
-    let calcDay = day;
 
-    if (hour >= 23) {
-      const d = new Date(year, month - 1, day);
-      d.setDate(d.getDate() + 1);
-      calcYear = d.getFullYear();
-      calcMonth = d.getMonth() + 1;
-      calcDay = d.getDate();
-    }
-
-    const refUTC = Date.UTC(2000, 0, 1);
-    const targetUTC = Date.UTC(calcYear, calcMonth - 1, calcDay);
-    const diffDays = Math.round((targetUTC - refUTC) / (1000 * 60 * 60 * 24));
-
-    let stemIndex = (4 + diffDays) % 10;
-    if (stemIndex < 0) stemIndex += 10;
-
-    let branchIndex = (6 + diffDays) % 12;
-    if (branchIndex < 0) branchIndex += 12;
-
-    return {
-      stem: stems[stemIndex],
-      branch: branches[branchIndex],
-      stemIdx: stemIndex
-    };
-  }
 
   // 2. Parse age and determine Huangdi Neijing Cycle
   function getNeijingCycle(birthDateStr: string, isFemale: boolean) {
@@ -244,7 +438,7 @@ export default function ConstitutionTestPage() {
     }
   }
 
-  // Handle symptom toggles
+  // Symptom toggles
   function toggleSymptom(code: string) {
     if (selectedSymptoms.includes(code)) {
       setSelectedSymptoms(selectedSymptoms.filter(item => item !== code));
@@ -252,30 +446,6 @@ export default function ConstitutionTestPage() {
       setSelectedSymptoms([...selectedSymptoms, code]);
     }
   }
-
-  // Run Calculations
-  const counts = getElementsCount(dob, tob);
-  const elementsArray = Object.keys(counts).map(key => ({
-    name: key,
-    score: counts[key]
-  }));
-  
-  // Find Dominant and Deficient
-  let dominant = 'Wood';
-  let maxScore = -1;
-  let deficient = 'Water';
-  let minScore = 999;
-
-  elementsArray.forEach(item => {
-    if (item.score > maxScore) {
-      maxScore = item.score;
-      dominant = item.name;
-    }
-    if (item.score < minScore) {
-      minScore = item.score;
-      deficient = item.name;
-    }
-  });
 
   // Calculate dayGanzhi
   let year = 2000, month = 1, day = 1, hour = 12;
@@ -289,7 +459,6 @@ export default function ConstitutionTestPage() {
     const tParts = tob.split(':');
     hour = parseInt(tParts[0]) || 0;
   }
-  const dayGanzhi = getDayGanZhi(year, month, day, hour);
 
   // Get Neijing Phase
   const neijing = getNeijingCycle(dob, gender === 'female');
@@ -317,6 +486,66 @@ export default function ConstitutionTestPage() {
         alert("请输入有效的电子邮箱地址");
         return;
       }
+
+      // 🔮 Initialize dynamic Bazi beads for BaZiCanvas on email submit
+      const birthDate = new Date(year, month - 1, day, hour, 0);
+      const lunar = Lunar.fromDate(birthDate);
+      const bY = lunar.getYearInGanZhi();
+      const bM = lunar.getMonthInGanZhi();
+      const bD = lunar.getDayInGanZhi();
+      const bT = lunar.getTimeInGanZhi() || '未知';
+
+      // Current Honolulu local time
+      const nowUtc = new Date().getTime() + new Date().getTimezoneOffset() * 60000;
+      const honoluluTime = new Date(nowUtc - (10 * 3600000));
+      const lunarNow = Lunar.fromDate(honoluluTime);
+      const cY = lunarNow.getYearInGanZhi();
+      const cM = lunarNow.getMonthInGanZhi();
+      const cD = lunarNow.getDayInGanZhi();
+      const cT = lunarNow.getTimeInGanZhi() || '未知';
+
+      const innate = [
+        { element: getGanZhiElement(bY), type: 'innate' as const, char: bY[0] || '年' },
+        { element: getGanZhiElement(bY.length > 1 ? bY[1] : ''), type: 'innate' as const, char: bY[1] || '年' },
+        { element: getGanZhiElement(bM), type: 'innate' as const, char: bM[0] || '月' },
+        { element: getGanZhiElement(bM.length > 1 ? bM[1] : ''), type: 'innate' as const, char: bM[1] || '月' },
+        { element: getGanZhiElement(bD), type: 'innate' as const, char: bD[0] || '日' },
+        { element: getGanZhiElement(bD.length > 1 ? bD[1] : ''), type: 'innate' as const, char: bD[1] || '日' },
+        { element: getGanZhiElement(bT), type: 'innate' as const, char: bT[0] || '时' },
+        { element: getGanZhiElement(bT.length > 1 ? bT[1] : ''), type: 'innate' as const, char: bT[1] || '时' },
+      ];
+
+      const acquired = [
+        { element: getGanZhiElement(cY), type: 'acquired' as const, char: cY[0] || '年' },
+        { element: getGanZhiElement(cY.length > 1 ? cY[1] : ''), type: 'acquired' as const, char: cY[1] || '年' },
+        { element: getGanZhiElement(cM), type: 'acquired' as const, char: cM[0] || '月' },
+        { element: getGanZhiElement(cM.length > 1 ? cM[1] : ''), type: 'acquired' as const, char: cM[1] || '月' },
+        { element: getGanZhiElement(cD), type: 'acquired' as const, char: cD[0] || '日' },
+        { element: getGanZhiElement(cD.length > 1 ? cD[1] : ''), type: 'acquired' as const, char: cD[1] || '日' },
+        { element: getGanZhiElement(cT), type: 'acquired' as const, char: cT[0] || '时' },
+        { element: getGanZhiElement(cT.length > 1 ? cT[1] : ''), type: 'acquired' as const, char: cT[1] || '时' },
+      ];
+
+      // Match selected symptoms to elements for subconscious cores
+      const elementList: string[] = [];
+      selectedSymptoms.forEach(code => {
+        if (code === 'A') elementList.push('Fire');
+        if (code === 'B') elementList.push('Fire');
+        if (code === 'C') elementList.push('Earth');
+        if (code === 'D') elementList.push('Wood');
+        if (code === 'E') elementList.push('Water');
+      });
+      while (elementList.length < 4) {
+        elementList.push(dominant);
+      }
+      const subconscious = [
+        { element: elementList[0], type: 'subconscious' as const, char: '念' },
+        { element: elementList[1], type: 'subconscious' as const, char: '心' },
+        { element: elementList[2], type: 'subconscious' as const, char: '意' },
+        { element: elementList[3], type: 'subconscious' as const, char: '神' },
+      ];
+
+      setBeads([...innate, ...acquired, ...subconscious]);
       setStep(4);
     }
   }
@@ -325,7 +554,7 @@ export default function ConstitutionTestPage() {
   function handleMockPay(e: React.FormEvent) {
     e.preventDefault();
     if (!cardNumber.trim() || !cardExpiry.trim() || !cardCvc.trim()) {
-      alert("请填写完整的支付卡片信息");
+      alert("请填写完整的支付信息");
       return;
     }
     setIsPaying(true);
@@ -333,27 +562,73 @@ export default function ConstitutionTestPage() {
       setIsPaying(false);
       setIsUnlocked(true);
       setShowCheckout(false);
-      alert("🎉 支付成功！完整临床体质评估报告已成功解锁！");
+      alert("🎉 恭喜！已成功升级至 DNA 专属完整版报告！");
     }, 1500);
   }
 
-  // Generate Radar Chart coordinates
-  const radius = 90;
-  const center = 120;
-  // Ordered: Wood (Top), Fire (Top-Right), Earth (Bottom-Right), Metal (Bottom-Left), Water (Top-Left)
+  // Run Calculations for Dominant and Deficient
+  const counts = getElementsCount(dob, tob);
+  const elementsArray = Object.keys(counts).map(key => ({
+    name: key as ElementType,
+    score: counts[key]
+  }));
+  
+  let dominant: ElementType = 'Wood';
+  let maxScore = -1;
+  let deficient: ElementType = 'Water';
+  let minScore = 999;
+
+  elementsArray.forEach(item => {
+    if (item.score > maxScore) {
+      maxScore = item.score;
+      dominant = item.name;
+    }
+    if (item.score < minScore) {
+      minScore = item.score;
+      deficient = item.name;
+    }
+  });
+
+  // Calculate coordinates for the SVG Radar Chart
+  const radius = 70;
+  const radarCenter = 100;
   const orderedElements = ['Wood', 'Fire', 'Earth', 'Metal', 'Water'];
   const angles = [-Math.PI / 2, -Math.PI / 10, 3 * Math.PI / 10, 7 * Math.PI / 10, 11 * Math.PI / 10];
 
   const radarPoints = orderedElements.map((el, i) => {
-    // Max Bazi score is 9. Scale it.
     const val = counts[el] || 1;
     const scaledRadius = (val / 9) * radius;
-    const x = center + scaledRadius * Math.cos(angles[i]);
-    const y = center + scaledRadius * Math.sin(angles[i]);
+    const x = radarCenter + scaledRadius * Math.cos(angles[i]);
+    const y = radarCenter + scaledRadius * Math.sin(angles[i]);
     return `${x},${y}`;
   }).join(' ');
 
   const gridCircles = [0.25, 0.5, 0.75, 1];
+
+  // Helper to draw vertical GanZhi columns (Screenshot 3 style)
+  const renderPillarColumn = (pillar: string, isLight: boolean = true) => {
+    if (!pillar || pillar === '未知') return <div className="text-sm">未知</div>;
+    const stem = pillar[0];
+    const branch = pillar[1];
+    const e1 = FIVE_ELEMENTS_MAP[stem as keyof typeof FIVE_ELEMENTS_MAP];
+    const e2 = FIVE_ELEMENTS_MAP[branch as keyof typeof FIVE_ELEMENTS_MAP];
+    
+    return (
+      <div className="flex flex-col items-center gap-0.5">
+        <span className="text-[10px] uppercase font-bold tracking-tight opacity-50">{stem}</span>
+        <span className={`text-xs font-black ${isLight ? 'text-slate-800' : 'text-white'}`}>{e1}</span>
+        <span className="text-[10px] uppercase font-bold tracking-tight opacity-50 mt-1">{branch}</span>
+        <span className={`text-xs font-black ${isLight ? 'text-slate-500' : 'text-white/80'}`}>{e2}</span>
+      </div>
+    );
+  };
+
+  // Helper to format Bazi stems elements string
+  const getBaziElementsString = (y: string, d: string) => {
+    const eY = FIVE_ELEMENTS_MAP[y[0] as keyof typeof FIVE_ELEMENTS_MAP] || '';
+    const eD = FIVE_ELEMENTS_MAP[d[0] as keyof typeof FIVE_ELEMENTS_MAP] || '';
+    return `${eY} / ${eD}`;
+  };
 
   return (
     <>
@@ -362,30 +637,30 @@ export default function ConstitutionTestPage() {
         <meta name="description" content="AcuTherapy Clinics 结合五运六气干支医学与黄帝内经上古天真论生命周期，为您提供深度中医体质分析。" />
       </Helmet>
 
-      <section className="bg-slate-50 min-h-screen py-16 px-4 sm:px-6 lg:px-8">
+      <section className="bg-slate-50 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto">
           {/* Top Logo & Title */}
-          <div className="text-center mb-10">
-            <div className="inline-flex items-center gap-2 text-blue-600 font-extrabold text-lg uppercase tracking-wider mb-2">
-              <span className="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+          <div className="text-center mb-8">
+            <div className="inline-flex items-center gap-2 text-blue-600 font-extrabold text-sm uppercase tracking-wider mb-2">
+              <span className="w-2 h-2 rounded-full bg-blue-600 animate-ping"></span>
               AcuTherapy Clinics
             </div>
-            <h1 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+            <h1 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
               中医体质与生命节律评估
             </h1>
-            <p className="text-sm text-slate-500 mt-2">
+            <p className="text-xs text-slate-500 mt-1">
               结合《黄帝内经·上古天真论》与先天五运六气禀赋的临床测评
             </p>
           </div>
 
-          {/* Quiz Container Card */}
-          <div className="bg-white rounded-3xl shadow-2xl border border-slate-100 p-8 relative overflow-hidden">
+          {/* Container Card */}
+          <div className="bg-white rounded-3xl shadow-2xl border border-slate-100 p-6 sm:p-8 relative overflow-hidden">
             
             {/* Progress bar */}
             {step < 4 && (
-              <div className="w-full bg-slate-100 rounded-full h-1.5 mb-8">
+              <div className="w-full bg-slate-100 rounded-full h-1 mb-6">
                 <div 
-                  className="bg-blue-600 h-1.5 rounded-full transition-all duration-300"
+                  className="bg-blue-600 h-1 rounded-full transition-all duration-300"
                   style={{ width: `${(step / 3) * 100}%` }}
                 ></div>
               </div>
@@ -395,11 +670,11 @@ export default function ConstitutionTestPage() {
             {step === 1 && (
               <div className="flex flex-col gap-6">
                 <div>
-                  <h2 className="text-xl font-bold text-slate-900">第一步：输入您的基本信息</h2>
-                  <p className="text-xs text-slate-400 mt-1">用于计算您的先天五行局与生命节律段</p>
+                  <h2 className="text-lg font-bold text-slate-900">第一步：输入您的基本信息</h2>
+                  <p className="text-xs text-slate-400 mt-0.5">用于计算您的先天五行局与生命节律段</p>
                 </div>
 
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-1.5">
                   <label className="text-xs font-bold text-slate-500">您的尊称</label>
                   <input 
                     type="text" 
@@ -410,18 +685,18 @@ export default function ConstitutionTestPage() {
                   />
                 </div>
 
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-1.5">
                   <label className="text-xs font-bold text-slate-500">生理性别 (生命成长节点男八女七)</label>
                   <div className="grid grid-cols-2 gap-4 bg-slate-100 p-1.5 rounded-xl border border-slate-200">
                     <button 
                       onClick={() => setGender('male')}
-                      className={`py-2 text-sm font-bold rounded-lg transition-all ${gender === 'male' ? 'bg-blue-600 text-white shadow' : 'text-slate-500'}`}
+                      className={`py-2 text-xs font-bold rounded-lg transition-all ${gender === 'male' ? 'bg-blue-600 text-white shadow' : 'text-slate-500'}`}
                     >
                       男 ♂
                     </button>
                     <button 
                       onClick={() => setGender('female')}
-                      className={`py-2 text-sm font-bold rounded-lg transition-all ${gender === 'female' ? 'bg-blue-600 text-white shadow' : 'text-slate-500'}`}
+                      className={`py-2 text-xs font-bold rounded-lg transition-all ${gender === 'female' ? 'bg-blue-600 text-white shadow' : 'text-slate-500'}`}
                     >
                       女 ♀
                     </button>
@@ -429,7 +704,7 @@ export default function ConstitutionTestPage() {
                 </div>
 
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="flex flex-col gap-2">
+                  <div className="flex flex-col gap-1.5">
                     <label className="text-xs font-bold text-slate-500">公历出生日期</label>
                     <input 
                       type="date" 
@@ -438,7 +713,7 @@ export default function ConstitutionTestPage() {
                       className="bg-slate-50 border border-slate-200 rounded-xl p-3 text-sm text-slate-900 focus:border-blue-500 focus:bg-white outline-none transition-all"
                     />
                   </div>
-                  <div className="flex flex-col gap-2">
+                  <div className="flex flex-col gap-1.5">
                     <label className="text-xs font-bold text-slate-500">出生时辰 (可选)</label>
                     <select 
                       value={tob}
@@ -463,7 +738,7 @@ export default function ConstitutionTestPage() {
 
                 <button 
                   onClick={handleNextStep}
-                  className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-blue-500/20 transition-all text-sm mt-4"
+                  className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-xl shadow-lg shadow-blue-500/20 transition-all text-xs mt-3"
                 >
                   下一步：勾选身体状况
                 </button>
@@ -474,8 +749,8 @@ export default function ConstitutionTestPage() {
             {step === 2 && (
               <div className="flex flex-col gap-6">
                 <div>
-                  <h2 className="text-xl font-bold text-slate-900">第二步：勾选您目前最主要的身体状况</h2>
-                  <p className="text-xs text-slate-400 mt-1">临床中常见的5大健康痛点（可多选）</p>
+                  <h2 className="text-lg font-bold text-slate-900">第二步：勾选您目前最主要的身体状况</h2>
+                  <p className="text-xs text-slate-400 mt-0.5">临床中常见的5大健康痛点（可多选）</p>
                 </div>
 
                 <div className="flex flex-col gap-3">
@@ -491,27 +766,27 @@ export default function ConstitutionTestPage() {
                       <div 
                         key={item.code}
                         onClick={() => toggleSymptom(item.code)}
-                        className={`p-4 rounded-xl border text-sm font-semibold cursor-pointer transition-all flex justify-between items-center ${active ? 'bg-blue-50 border-blue-400 text-blue-800' : 'bg-slate-50 border-slate-200 text-slate-700 hover:bg-slate-100'}`}
+                        className={`p-3.5 rounded-xl border text-xs font-semibold cursor-pointer transition-all flex justify-between items-center ${active ? 'bg-blue-50 border-blue-400 text-blue-800' : 'bg-slate-50 border-slate-200 text-slate-700 hover:bg-slate-100'}`}
                       >
                         <span>{item.text}</span>
-                        <div className={`w-5 h-5 rounded-full border flex items-center justify-center ${active ? 'border-blue-600 bg-blue-600 text-white' : 'border-slate-300'}`}>
-                          {active && <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4"><path d="M20 6L9 17l-5-5"/></svg>}
+                        <div className={`w-4.5 h-4.5 rounded-full border flex items-center justify-center ${active ? 'border-blue-600 bg-blue-600 text-white' : 'border-slate-300'}`}>
+                          {active && <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4"><path d="M20 6L9 17l-5-5"/></svg>}
                         </div>
                       </div>
                     );
                   })}
                 </div>
 
-                <div className="grid grid-cols-2 gap-4 mt-4">
+                <div className="grid grid-cols-2 gap-4 mt-3">
                   <button 
                     onClick={() => setStep(1)}
-                    className="border border-slate-200 hover:bg-slate-50 text-slate-600 font-bold py-3.5 rounded-xl text-sm"
+                    className="border border-slate-200 hover:bg-slate-50 text-slate-600 font-bold py-3 rounded-xl text-xs"
                   >
                     返回上一步
                   </button>
                   <button 
                     onClick={handleNextStep}
-                    className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-blue-500/20 text-sm"
+                    className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-xl shadow-lg shadow-blue-500/20 text-xs"
                   >
                     下一步：解锁报告
                   </button>
@@ -523,12 +798,12 @@ export default function ConstitutionTestPage() {
             {step === 3 && (
               <div className="flex flex-col gap-6">
                 <div className="text-center">
-                  <div className="inline-flex w-16 h-16 rounded-full bg-blue-50 items-center justify-center text-blue-600 mb-4">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                  <div className="inline-flex w-14 h-14 rounded-full bg-blue-50 items-center justify-center text-blue-600 mb-3 animate-bounce">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
                   </div>
-                  <h2 className="text-2xl font-black text-slate-900">报告已就绪！</h2>
-                  <p className="text-sm text-slate-500 mt-2 px-6">
-                    请输入您的电子邮箱，报告将立即生成，我们也会为您发送一份长期的节律养生指南。
+                  <h2 className="text-xl font-black text-slate-900">报告已就绪！</h2>
+                  <p className="text-xs text-slate-400 mt-1 px-4 leading-relaxed">
+                    请输入您的电子邮箱，报告将立即生成，同时我们也会为您发送一份长期的节律养生指南。
                   </p>
                 </div>
 
@@ -538,20 +813,20 @@ export default function ConstitutionTestPage() {
                     placeholder="输入您的邮箱（例如：example@gmail.com）" 
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="bg-slate-50 border border-slate-200 rounded-xl p-4 text-sm text-slate-900 focus:border-blue-500 focus:bg-white outline-none transition-all text-center"
+                    className="bg-slate-50 border border-slate-200 rounded-xl p-3.5 text-xs text-slate-900 focus:border-blue-500 focus:bg-white outline-none transition-all text-center"
                   />
                 </div>
 
-                <div className="grid grid-cols-2 gap-4 mt-4">
+                <div className="grid grid-cols-2 gap-4 mt-3">
                   <button 
                     onClick={() => setStep(2)}
-                    className="border border-slate-200 hover:bg-slate-50 text-slate-600 font-bold py-3.5 rounded-xl text-sm"
+                    className="border border-slate-200 hover:bg-slate-50 text-slate-600 font-bold py-3 rounded-xl text-xs"
                   >
                     修改状况
                   </button>
                   <button 
                     onClick={handleNextStep}
-                    className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-blue-500/20 text-sm"
+                    className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-xl shadow-lg shadow-blue-500/20 text-xs"
                   >
                     解锁体质报告 🔓
                   </button>
@@ -561,58 +836,244 @@ export default function ConstitutionTestPage() {
 
             {/* STEP 4: Comprehensive Report Results */}
             {step === 4 && (
-              <div className="flex flex-col gap-8 text-slate-800">
+              <div className="flex flex-col gap-8 text-slate-800 animate-in fade-in duration-500">
                 
                 {/* Header Profile */}
-                <div className="border-b border-slate-100 pb-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                <div className="border-b border-slate-100 pb-5 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
                   <div>
                     <span className="text-[10px] bg-blue-100 text-blue-700 font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-                      中医五行与生命节律报告
+                      中医五行与生命节律评估
                     </span>
-                    <h2 className="text-2xl font-black text-slate-950 mt-3">先天与现时健康评估报告</h2>
-                    <div className="flex flex-wrap gap-x-4 gap-y-1 mt-2 text-xs text-slate-500 font-medium">
+                    <h2 className="text-xl font-black text-slate-950 mt-2">您的专属身心能量分析</h2>
+                    <div className="flex flex-wrap gap-x-4 gap-y-1 mt-1.5 text-xs text-slate-500 font-medium">
                       <span>姓名：<strong className="text-slate-800">{name}</strong></span>
                       <span>性别：<strong className="text-slate-800">{gender === 'female' ? '女' : '男'}</strong></span>
-                      <span>干支：<strong className="text-slate-800">{dayGanzhi.stem + dayGanzhi.branch}日</strong></span>
+                      <span>时区：<strong className="text-slate-800">檀香山 (Honolulu)</strong></span>
                     </div>
                   </div>
                   <a 
                     href="/book-appointment"
-                    className="bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold px-4 py-2.5 rounded-lg shadow transition-all self-stretch sm:self-auto text-center"
+                    className="bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow transition-all self-stretch sm:self-auto text-center"
                   >
-                    预约门诊评估
+                    预约诊所针灸
                   </a>
                 </div>
 
-                {/* 🌟 FIVE ELEMENTS VISUAL RADAR CHART */}
-                <div className="flex flex-col items-center gap-4 bg-slate-50 border border-slate-100 rounded-3xl p-6 shadow-sm">
-                  <h4 className="text-sm font-bold text-slate-900 tracking-tight">先天五行平衡图 (TCM Energy Balance Chart)</h4>
+                {/* 🌟 1. DYNAMIC BEAD RING CARD (ManaReset Style) */}
+                <div className="bg-[#0B1120] rounded-3xl border border-slate-800 p-6 flex flex-col items-center gap-4 relative overflow-hidden shadow-2xl">
                   
-                  <div className="relative w-[240px] h-[240px] flex items-center justify-center">
-                    <svg width="240" height="240" className="overflow-visible">
-                      {/* Grid concentric circles */}
+                  {/* Top Switch Tabs */}
+                  <div className="flex justify-between items-center w-full z-10">
+                    <span className="text-[10px] text-slate-400 font-bold uppercase tracking-widest">TCM Bead Energy Circle</span>
+                    
+                    <div className="flex gap-1.5 bg-[#1E293B]/70 p-1 rounded-lg border border-slate-700">
+                      <button 
+                        onClick={() => setVisualMode('ring')}
+                        className={`px-3 py-1 text-[10px] font-bold rounded transition-all ${visualMode === 'ring' ? 'bg-blue-600 text-white shadow' : 'text-slate-400 hover:text-slate-200'}`}
+                      >
+                        Ring
+                      </button>
+                      <button 
+                        onClick={() => setVisualMode('dna')}
+                        className={`px-3 py-1 text-[10px] font-bold rounded transition-all ${visualMode === 'dna' ? 'bg-blue-600 text-white shadow' : 'text-slate-400 hover:text-slate-200'}`}
+                      >
+                        DNA
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* BaZiCanvas Rendering Area */}
+                  <div className="relative w-full h-[220px] flex items-center justify-center">
+                    <BaZiCanvas beads={beads} mode={visualMode} />
+                  </div>
+
+                  <span className="text-[9px] text-slate-500 text-center leading-relaxed max-w-sm z-10">
+                    外圈 {beads.filter(b => b.type === 'innate').length} 颗先天珠（出生局）与 {beads.filter(b => b.type === 'acquired').length} 颗后天珠（当前时空）匀速运转，内核心为 4 颗身心主观能量鱼眼
+                  </span>
+                </div>
+
+                {/* 🌟 2. DOUBLE-CARD EDITION SELECTION PANELS (Screenshot 5 Style) */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  
+                  {/* Free Classic Card */}
+                  <div className="bg-white rounded-3xl border border-slate-200 p-5 flex flex-col justify-between gap-4 shadow-sm hover:shadow-md transition-all">
+                    <div className="flex flex-col gap-1">
+                      <h4 className="text-sm font-black text-slate-900">Classic Edition (免费版)</h4>
+                      <p className="text-[10px] text-slate-400 font-medium">Free sequential design & dominant energy</p>
+                    </div>
+                    <div className="border-t border-slate-100 pt-3 flex flex-col gap-2">
+                      <a 
+                        href="/book-appointment"
+                        className="bg-[#1E293B] hover:bg-[#0F172A] text-white font-bold py-2.5 rounded-xl text-center text-xs shadow-sm transition-all"
+                      >
+                        在线预约门诊评估
+                      </a>
+                      <a 
+                        href={`/assets/${dominant.toLowerCase()}_talisman.png`}
+                        download
+                        className="text-[10px] text-blue-600 font-bold hover:underline flex items-center justify-center gap-1.5 mt-1"
+                      >
+                        <Download size={12} /> 下载您的五行护身符壁纸
+                      </a>
+                    </div>
+                  </div>
+
+                  {/* Premium DNA Card */}
+                  <div className="bg-white rounded-3xl border-2 border-blue-600 p-5 flex flex-col justify-between gap-4 shadow-md relative overflow-hidden">
+                    <div className="absolute top-2.5 right-2.5 bg-yellow-500 text-white font-black text-[9px] px-2 py-0.5 rounded uppercase tracking-wider">
+                      Premium
+                    </div>
+                    <div className="flex flex-col gap-1">
+                      <h4 className="text-sm font-black text-slate-900">DNA Edition (解锁版)</h4>
+                      <p className="text-[10px] text-slate-400 font-medium">Deep energy intertwining & clinical recommendations</p>
+                    </div>
+                    <div className="border-t border-slate-100 pt-3 flex flex-col gap-2">
+                      {!isUnlocked ? (
+                        <>
+                          <div className="flex justify-between items-baseline">
+                            <span className="text-[10px] text-slate-400 font-semibold">一次性解锁</span>
+                            <span className="text-base font-black text-slate-900">$9.90</span>
+                          </div>
+                          <button 
+                            onClick={() => setShowCheckout(true)}
+                            className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2.5 rounded-xl text-center text-xs shadow transition-all"
+                          >
+                            付费解锁完整报告
+                          </button>
+                        </>
+                      ) : (
+                        <div className="bg-emerald-50 border border-emerald-200 text-emerald-800 rounded-xl py-2 px-3 text-xs font-bold text-center flex items-center justify-center gap-1.5">
+                          <Check size={14} /> DNA 完整报告已解锁
+                        </div>
+                      )}
+                    </div>
+                  </div>
+
+                </div>
+
+                {/* 🌟 3. ASTROLOGICAL ALIGNMENT PILLARS CARDS (Screenshot 3 Style) */}
+                {beads.length > 0 && (
+                  <div className="grid grid-cols-2 gap-4 max-w-xl mx-auto w-full">
+                    
+                    {/* Left: Your Birth Chart */}
+                    <div className="bg-white rounded-2xl border border-slate-200 p-5 text-center shadow-sm flex flex-col items-center gap-2">
+                      <p className="text-[9px] text-slate-400 uppercase tracking-widest font-black">YOUR BIRTH CHART</p>
+                      <div className="text-xl text-slate-700">☯︎</div>
+                      <div className="grid grid-cols-4 gap-3 w-full border-t border-slate-100 pt-3 mt-1">
+                        {renderPillarColumn(Lunar.fromDate(new Date(year, month - 1, day, hour, 0)).getYearInGanZhi())}
+                        {renderPillarColumn(Lunar.fromDate(new Date(year, month - 1, day, hour, 0)).getMonthInGanZhi())}
+                        {renderPillarColumn(Lunar.fromDate(new Date(year, month - 1, day, hour, 0)).getDayInGanZhi())}
+                        {renderPillarColumn(Lunar.fromDate(new Date(year, month - 1, day, hour, 0)).getTimeInGanZhi() || '未知')}
+                      </div>
+                      <p className="text-[9px] text-slate-500 font-bold uppercase tracking-wider mt-2 border-t border-slate-50 pt-2 w-full">
+                        {getBaziElementsString(
+                          Lunar.fromDate(new Date(year, month - 1, day, hour, 0)).getYearInGanZhi(),
+                          Lunar.fromDate(new Date(year, month - 1, day, hour, 0)).getDayInGanZhi()
+                        )} Dominant
+                      </p>
+                    </div>
+
+                    {/* Right: Current Honolulu Chart */}
+                    <div className="bg-[#0B1120] rounded-2xl border border-slate-800 p-5 text-center shadow-md flex flex-col items-center gap-2 text-white">
+                      <p className="text-[9px] text-blue-400/80 uppercase tracking-widest font-black">CURRENT HONOLULU</p>
+                      <div className="text-xl text-blue-400">☲</div>
+                      <div className="grid grid-cols-4 gap-3 w-full border-t border-slate-800 pt-3 mt-1">
+                        {renderPillarColumn(Lunar.fromDate(new Date(new Date().getTime() + new Date().getTimezoneOffset() * 60000 - 10 * 3600000)).getYearInGanZhi(), false)}
+                        {renderPillarColumn(Lunar.fromDate(new Date(new Date().getTime() + new Date().getTimezoneOffset() * 60000 - 10 * 3600000)).getMonthInGanZhi(), false)}
+                        {renderPillarColumn(Lunar.fromDate(new Date(new Date().getTime() + new Date().getTimezoneOffset() * 60000 - 10 * 3600000)).getDayInGanZhi(), false)}
+                        {renderPillarColumn(Lunar.fromDate(new Date(new Date().getTime() + new Date().getTimezoneOffset() * 60000 - 10 * 3600000)).getTimeInGanZhi() || '未知', false)}
+                      </div>
+                      <p className="text-[9px] text-blue-400/60 font-bold uppercase tracking-wider mt-2 border-t border-slate-800 pt-2 w-full">
+                        {getBaziElementsString(
+                          Lunar.fromDate(new Date(new Date().getTime() + new Date().getTimezoneOffset() * 60000 - 10 * 3600000)).getYearInGanZhi(),
+                          Lunar.fromDate(new Date(new Date().getTime() + new Date().getTimezoneOffset() * 60000 - 10 * 3600000)).getDayInGanZhi()
+                        )} Dominant
+                      </p>
+                    </div>
+
+                  </div>
+                )}
+
+                {/* 🌟 4. CURRENT DOMINANT ENERGY CARDS (Screenshot 4 Style) */}
+                <div className="bg-slate-50 border border-slate-100 rounded-3xl p-6 flex flex-col items-center gap-5">
+                  <span className="text-[10px] text-slate-400 font-black uppercase tracking-widest">Your Current Dominant Energy</span>
+                  
+                  <div className="flex justify-center gap-4 w-full max-w-sm">
+                    {/* Dominant Element Badge */}
+                    <div className="flex-1 bg-rose-50 border border-rose-200 rounded-2xl py-3 px-4 text-center">
+                      <span className="text-[9px] text-slate-400 font-bold uppercase tracking-wider block">Dominant Archetype</span>
+                      <span className="text-xl font-black text-rose-700 mt-1 block font-serif">{dominant}</span>
+                    </div>
+
+                    {/* Deficient Element Badge */}
+                    <div className="flex-1 bg-blue-50 border border-blue-200 rounded-2xl py-3 px-4 text-center">
+                      <span className="text-[9px] text-slate-400 font-bold uppercase tracking-wider block">Deficient Energy</span>
+                      <span className="text-xl font-black text-blue-700 mt-1 block font-serif">
+                        {isUnlocked ? deficient : '🔒 Locked'}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Golden Quote Block */}
+                  <div className="relative border border-slate-150 rounded-2xl p-5 bg-white text-center shadow-sm w-full mt-1">
+                    <span className="text-2xl text-slate-300 absolute -top-3 left-4 bg-white px-2">“</span>
+                    <p className="text-xs text-slate-700 leading-relaxed italic px-2 font-medium">
+                      {quotes[dominant]}
+                    </p>
+                  </div>
+
+                  {/* Deficient Archetype Quote */}
+                  <div className="text-center text-xs text-slate-500 leading-relaxed max-w-md px-4 italic mt-1">
+                    {isUnlocked ? (
+                      deficientTeasers[deficient]
+                    ) : (
+                      <span className="text-slate-400">“解锁 DNA 专属报告，查看您的不足能量五脏分析与断舍离指南”</span>
+                    )}
+                  </div>
+                </div>
+
+                {/* 🌟 5. DOMINANT ELEMENT PHYSICAL ADVICE (FREE VERSION CONTENT) */}
+                <div className="flex flex-col gap-4 border border-slate-200 rounded-3xl p-6 bg-slate-50/20">
+                  <h3 className="text-xs font-black text-slate-900 uppercase tracking-wider flex items-center gap-2 border-l-4 border-amber-500 pl-2">
+                    主导先天体质特征与理疗对策
+                  </h3>
+                  <span className="text-base font-black text-amber-700">
+                    {elementNamesZh[dominant]} / {elementNamesEn[dominant]}
+                  </span>
+                  <p className="text-xs text-slate-600 leading-relaxed">
+                    {constitutionDescriptions[dominant]?.desc}
+                  </p>
+                  <div className="bg-amber-50 border border-amber-100 p-4 rounded-2xl text-xs leading-relaxed text-slate-700">
+                    <strong className="text-amber-800 block mb-1">💡 免费版·主导经络穴位理疗指导：</strong>
+                    {constitutionDescriptions[dominant]?.advice}
+                  </div>
+                </div>
+
+                {/* 🌟 6. RADAR BALANCE CHART NESTED IN TEXT DESCRIPTIONS */}
+                <div className="flex flex-col sm:flex-row items-center gap-6 border border-slate-200 rounded-3xl p-6 bg-slate-50/10">
+                  
+                  {/* Outer SVG Radar */}
+                  <div className="relative w-[200px] h-[200px] flex items-center justify-center bg-white border border-slate-100 rounded-2xl p-2 shadow-sm shrink-0">
+                    <svg width="200" height="200" className="overflow-visible">
                       {gridCircles.map((ratio, i) => (
                         <circle 
                           key={i} 
-                          cx={center} 
-                          cy={center} 
+                          cx={radarCenter} 
+                          cy={radarCenter} 
                           r={radius * ratio} 
                           fill="none" 
-                          stroke="#e2e8f0" 
+                          stroke="#f1f5f9" 
                           strokeWidth="1" 
-                          strokeDasharray={i < 3 ? "2 2" : "none"}
                         />
                       ))}
-                      
-                      {/* Spokes */}
                       {angles.map((angle, i) => {
-                        const x = center + radius * Math.cos(angle);
-                        const y = center + radius * Math.sin(angle);
+                        const x = radarCenter + radius * Math.cos(angle);
+                        const y = radarCenter + radius * Math.sin(angle);
                         return (
                           <line 
                             key={i} 
-                            x1={center} 
-                            y1={center} 
+                            x1={radarCenter} 
+                            y1={radarCenter} 
                             x2={x} 
                             y2={y} 
                             stroke="#e2e8f0" 
@@ -620,47 +1081,15 @@ export default function ConstitutionTestPage() {
                           />
                         );
                       })}
-
-                      {/* Shaded radar area representing user's scores */}
                       <polygon 
                         points={radarPoints} 
-                        fill="rgba(37, 99, 235, 0.25)" 
+                        fill="rgba(37, 99, 235, 0.15)" 
                         stroke="#2563eb" 
-                        strokeWidth="2.5"
-                        strokeLinejoin="round"
+                        strokeWidth="2"
                       />
-
-                      {/* Score vertices markers */}
                       {orderedElements.map((el, i) => {
-                        const val = counts[el] || 1;
-                        const scaledRadius = (val / 9) * radius;
-                        const x = center + scaledRadius * Math.cos(angles[i]);
-                        const y = center + scaledRadius * Math.sin(angles[i]);
-                        return (
-                          <circle 
-                            key={i} 
-                            cx={x} 
-                            cy={y} 
-                            r="4.5" 
-                            fill="#cca43b" 
-                            stroke="#ffffff" 
-                            strokeWidth="1.5"
-                            className="shadow"
-                          />
-                        );
-                      })}
-
-                      {/* Element Labels */}
-                      {orderedElements.map((el, i) => {
-                        const labelX = center + (radius + 20) * Math.cos(angles[i]);
-                        const labelY = center + (radius + 15) * Math.sin(angles[i]);
-                        
-                        let labelColor = "#cca43b"; // Gold/Earth
-                        if (el === 'Wood') labelColor = "#059669"; // Emerald
-                        if (el === 'Fire') labelColor = "#dc2626"; // Red
-                        if (el === 'Metal') labelColor = "#475569"; // Slate
-                        if (el === 'Water') labelColor = "#2563eb"; // Blue
-
+                        const labelX = radarCenter + (radius + 15) * Math.cos(angles[i]);
+                        const labelY = radarCenter + (radius + 10) * Math.sin(angles[i]);
                         return (
                           <text 
                             key={i} 
@@ -668,93 +1097,71 @@ export default function ConstitutionTestPage() {
                             y={labelY} 
                             textAnchor="middle" 
                             alignmentBaseline="middle"
-                            fontSize="11" 
-                            fontWeight="bold" 
-                            fill={labelColor}
+                            fontSize="9" 
+                            fontWeight="black" 
+                            fill={getBeadBaseColor(el)}
                           >
-                            {elementNamesZh[el].split(' ')[0]}
+                            {el[0]}
                           </text>
                         );
                       })}
                     </svg>
                   </div>
-                  <p className="text-[10px] text-slate-400 font-medium">中心向外表示能量强弱程度，圆点代表您的先天能值</p>
-                </div>
 
-                {/* Section 1: Dominant Element (FREE VERSION CONTENT) */}
-                <div className="flex flex-col gap-4 border border-slate-200 rounded-3xl p-6 bg-slate-50/30">
-                  <h3 className="text-md font-bold text-slate-950 flex items-center gap-2 border-l-4 border-amber-500 pl-2">
-                    主导先天体质特征
-                  </h3>
-                  <span className="text-lg font-black text-amber-700">
-                    {elementNamesZh[dominant]}
-                  </span>
-                  <p className="text-xs text-slate-600 leading-relaxed">
-                    {constitutionDescriptions[dominant]?.desc}
-                  </p>
-                  <div className="bg-amber-50 border border-amber-100 p-4 rounded-xl text-xs leading-relaxed text-slate-700 mt-2">
-                    <strong className="text-amber-800 block mb-1">💡 免费版特权·主导穴位理疗指导：</strong>
-                    {constitutionDescriptions[dominant]?.advice}
+                  <div className="flex flex-col gap-2">
+                    <h4 className="text-xs font-black text-slate-900 uppercase tracking-wider">先天五脏气血平衡度</h4>
+                    <p className="text-xs text-slate-500 leading-relaxed">
+                      旁侧网状雷达图（Radar Chart）显示了您出生的五行气场。每个顶点对应中医五脏：木主肝，火主心，土主脾，金主肺，水主肾。越向外偏斜的脏器代表气血偏旺，越往中心收敛的代表能量偏弱。
+                    </p>
                   </div>
                 </div>
 
-                {/* 🔒 PAYWALL SCREEN OVERLAY */}
+                {/* 🌟 7. PREMIUM UNLOCKED CONTENT (OR BLURRED PAYWALL) */}
                 {!isUnlocked ? (
                   <div className="relative border border-slate-200 rounded-3xl p-6 bg-slate-50/50 flex flex-col gap-6 overflow-hidden">
-                    {/* Blurred contents representing premium parts */}
+                    {/* Blurred background mockup */}
                     <div className="filter blur-md select-none pointer-events-none opacity-40 flex flex-col gap-6">
                       <div>
-                        <h3 className="text-md font-bold text-slate-900 border-l-4 border-blue-600 pl-2">先天弱项与调养方案</h3>
-                        <p className="text-xs mt-2">偏弱/缺失元素分析及每日太溪穴调理对策...</p>
+                        <h3 className="text-xs font-bold text-slate-900 border-l-4 border-blue-600 pl-2">先天弱项与调养方案</h3>
+                        <p className="text-xs mt-2">偏弱/缺失元素分析及每日理疗对策...</p>
                       </div>
                       <div>
-                        <h3 className="text-md font-bold text-slate-900 border-l-4 border-blue-600 pl-2">黄帝内经生命黄金节点</h3>
+                        <h3 className="text-xs font-bold text-slate-900 border-l-4 border-blue-600 pl-2">黄帝内经生命黄金节点</h3>
                         <p className="text-xs mt-2">女子五七阳明脉衰面始焦发始堕调理重点...</p>
-                      </div>
-                      <div>
-                        <h3 className="text-md font-bold text-slate-900 border-l-4 border-blue-600 pl-2">临床对症针灸调理对策</h3>
-                        <p className="text-xs mt-2">Acupuncture treatment for fatigue and poor sleeping...</p>
                       </div>
                     </div>
 
-                    {/* Paywall Gate Container */}
+                    {/* Paywall Card */}
                     <div className="absolute inset-0 bg-white/70 backdrop-blur-sm flex flex-col items-center justify-center p-6 text-center gap-4">
-                      <div className="w-12 h-12 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center shadow-inner">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                      <div className="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center">
+                        <Lock size={18} />
                       </div>
                       <div>
-                        <h4 className="text-lg font-black text-slate-900">解锁专属的高级临床报告</h4>
-                        <p className="text-xs text-slate-500 max-w-sm mt-1 mx-auto">
-                          包含：先天弱项调养（缺失元素分析）、《黄帝内经》年龄衰老衰退预警，以及 David Cai 医生亲自针对您的症状撰写的英文针灸处方建议。
+                        <h4 className="text-base font-black text-slate-900">升级至高级 DNA 报告解锁完整项目</h4>
+                        <p className="text-[10px] text-slate-500 max-w-sm mt-1 mx-auto leading-relaxed">
+                          升级后即可解锁：先天偏弱体质调理（弱项五行分析）、《黄帝内经》男女衰老退化节点提醒，以及 David Cai 医生亲自针对您的症状撰写的英文针灸处方建议。
                         </p>
                       </div>
 
                       <button 
                         onClick={() => setShowCheckout(true)}
-                        className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-xl shadow-lg shadow-blue-500/25 transition-all text-xs"
+                        className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2.5 px-6 rounded-xl shadow transition-all text-xs"
                       >
                         解锁高级评估报告 (仅需 $9.90)
                       </button>
-
-                      <a 
-                        href="/book-appointment" 
-                        className="text-xs text-blue-600 font-bold hover:underline"
-                      >
-                        不解锁？直接预约免费门诊评估 ➡️
-                      </a>
                     </div>
                   </div>
                 ) : (
-                  /* UNLOCKED FULL PREMIUM REPORT */
+                  /* UNLOCKED FULL SECTIONS */
                   <div className="flex flex-col gap-8 transition-all duration-500">
                     
                     {/* Deficient Element */}
-                    <div className="flex flex-col gap-4">
-                      <h3 className="text-md font-bold text-slate-950 flex items-center gap-2 border-l-4 border-blue-600 pl-2">
-                        先天缺失/偏弱体质调养 (Deficient Element)
+                    <div className="flex flex-col gap-4 border border-slate-200 rounded-3xl p-6 bg-slate-50/20">
+                      <h3 className="text-xs font-black text-slate-900 uppercase tracking-wider flex items-center gap-2 border-l-4 border-blue-600 pl-2">
+                        先天缺失/偏弱体质调养
                       </h3>
-                      <span className="text-lg font-black text-blue-700">
-                        {elementNamesZh[deficient]}
+                      <span className="text-base font-black text-blue-700">
+                        {elementNamesZh[deficient]} / {elementNamesEn[deficient]}
                       </span>
                       <p className="text-xs text-slate-600 leading-relaxed">
                         {constitutionDescriptions[deficient]?.desc}
@@ -767,15 +1174,15 @@ export default function ConstitutionTestPage() {
 
                     {/* Huangdi Neijing Cycle */}
                     <div className="flex flex-col gap-4">
-                      <h3 className="text-md font-bold text-slate-950 flex items-center gap-2 border-l-4 border-blue-600 pl-2">
+                      <h3 className="text-xs font-black text-slate-900 uppercase tracking-wider flex items-center gap-2 border-l-4 border-blue-600 pl-2">
                         《黄帝内经》生命节律年龄段评估
                       </h3>
                       <div className="bg-blue-50/50 border border-blue-100 rounded-2xl p-5">
-                        <div className="flex justify-between items-center border-b border-blue-100 pb-3 mb-3">
-                          <span className="text-sm font-bold text-blue-800">{neijing.label}</span>
-                          <span className="text-xs text-blue-600 font-semibold">自然周期规律</span>
+                        <div className="flex justify-between items-center border-b border-blue-100 pb-2 mb-2">
+                          <span className="text-xs font-bold text-blue-800">{neijing.label}</span>
+                          <span className="text-[10px] text-blue-600 font-bold uppercase tracking-wider">Life Cycle Milestone</span>
                         </div>
-                        <div className="text-base font-extrabold text-blue-950 italic mb-2">
+                        <div className="text-sm font-black text-blue-950 italic mb-2">
                           “{neijing.quote}”
                         </div>
                         <p className="text-xs text-slate-600 leading-relaxed">
@@ -786,7 +1193,7 @@ export default function ConstitutionTestPage() {
 
                     {/* Clinical Recommendations */}
                     <div className="flex flex-col gap-4">
-                      <h3 className="text-md font-bold text-slate-950 flex items-center gap-2 border-l-4 border-blue-600 pl-2">
+                      <h3 className="text-xs font-black text-slate-900 uppercase tracking-wider flex items-center gap-2 border-l-4 border-blue-600 pl-2">
                         临床对症针灸方案建议 (Clinical Consultation)
                       </h3>
                       <p className="text-xs text-slate-500 leading-relaxed">
@@ -855,11 +1262,8 @@ export default function ConstitutionTestPage() {
                     </div>
 
                     {/* Unlocked Booking CTA */}
-                    <div className="border-t border-slate-100 pt-6 mt-4 text-center flex flex-col gap-4">
-                      <div className="inline-flex w-12 h-12 rounded-full bg-emerald-50 text-emerald-600 items-center justify-center mx-auto">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
-                      </div>
-                      <h4 className="text-sm font-extrabold text-slate-950">
+                    <div className="border-t border-slate-100 pt-6 mt-4 text-center flex flex-col gap-3">
+                      <h4 className="text-sm font-black text-slate-950">
                         已为您制定最佳调养建议！立即结合临床针灸进行治疗
                       </h4>
                       <p className="text-xs text-slate-500 max-w-md mx-auto leading-relaxed">
@@ -868,7 +1272,7 @@ export default function ConstitutionTestPage() {
                       
                       <a 
                         href="/book-appointment"
-                        className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 px-8 rounded-xl shadow-lg shadow-blue-500/20 transition-all text-sm max-w-xs mx-auto"
+                        className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-xl shadow-lg shadow-blue-500/20 transition-all text-xs max-w-xs mx-auto"
                       >
                         在线预约门诊治疗
                       </a>
@@ -890,10 +1294,10 @@ export default function ConstitutionTestPage() {
         </div>
       </section>
 
-      {/* MOCK CHECKOUT MODAL */}
+      {/* MOCK CHECKOUT MODAL (Screenshot 1 Style) */}
       {showCheckout && (
-        <div className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
-          <div className="bg-white rounded-3xl shadow-2xl border border-slate-100 p-6 max-w-md w-full relative flex flex-col gap-5 animate-in fade-in zoom-in duration-200">
+        <div className="fixed inset-0 z-50 bg-[#0B1120]/75 backdrop-blur-sm flex items-center justify-center p-4">
+          <div className="bg-white rounded-3xl shadow-2xl border border-slate-100 p-6 sm:p-8 max-w-md w-full relative flex flex-col gap-5 animate-in fade-in zoom-in-95 duration-200">
             
             <button 
               onClick={() => setShowCheckout(false)}
@@ -903,54 +1307,53 @@ export default function ConstitutionTestPage() {
             </button>
 
             <div className="text-center">
-              <span className="text-xs font-bold text-blue-600 uppercase tracking-wider">AcuTherapy Clinics</span>
+              <span className="text-[10px] font-black text-blue-600 uppercase tracking-widest">AcuTherapy Clinics</span>
               <h3 className="text-lg font-black text-slate-900 mt-1">安全解锁高级体质报告</h3>
-              <p className="text-xs text-slate-400 mt-1">一次性买断解锁，永久访问此报告</p>
+              <p className="text-xs text-slate-400 mt-0.5">一次性买断解锁，永久访问此报告</p>
             </div>
 
-            {/* Price section */}
             <div className="bg-slate-50 border border-slate-150 rounded-2xl p-4 flex justify-between items-center">
-              <div className="flex flex-col">
-                <span className="text-xs font-bold text-slate-700">TCM Constitution Advanced Report</span>
-                <span className="text-[10px] text-slate-400 mt-0.5">Includes full cycle, deficient element and symptoms advice</span>
+              <div className="flex flex-col gap-0.5">
+                <span className="text-xs font-bold text-slate-800">TCM Constitution Advanced Report</span>
+                <span className="text-[9px] text-slate-400">Includes full cycle, deficient element and symptoms advice</span>
               </div>
-              <span className="text-xl font-black text-slate-900">$9.90</span>
+              <span className="text-lg font-black text-slate-950">$9.90</span>
             </div>
 
             {/* Checkout Form */}
             <form onSubmit={handleMockPay} className="flex flex-col gap-4">
-              <div className="flex flex-col gap-1.5">
-                <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">信用卡号码</label>
+              <div className="flex flex-col gap-1">
+                <label className="text-[9px] font-bold text-slate-500 uppercase tracking-wider">信用卡号码</label>
                 <input 
                   type="text" 
                   placeholder="4111 2222 3333 4444" 
                   value={cardNumber}
                   onChange={(e) => setCardNumber(e.target.value)}
-                  className="bg-slate-50 border border-slate-200 rounded-xl p-3 text-xs text-slate-900 outline-none focus:border-blue-500 focus:bg-white transition-all"
+                  className="bg-white border border-slate-200 rounded-xl p-3 text-xs text-slate-900 outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all shadow-sm"
                   required
                 />
               </div>
 
               <div className="grid grid-cols-2 gap-4">
-                <div className="flex flex-col gap-1.5">
-                  <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">有效期</label>
+                <div className="flex flex-col gap-1">
+                  <label className="text-[9px] font-bold text-slate-500 uppercase tracking-wider">有效期</label>
                   <input 
                     type="text" 
                     placeholder="MM/YY" 
                     value={cardExpiry}
                     onChange={(e) => setCardExpiry(e.target.value)}
-                    className="bg-slate-50 border border-slate-200 rounded-xl p-3 text-xs text-slate-900 outline-none focus:border-blue-500 focus:bg-white transition-all"
+                    className="bg-white border border-slate-200 rounded-xl p-3 text-xs text-slate-900 outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all shadow-sm"
                     required
                   />
                 </div>
-                <div className="flex flex-col gap-1.5">
-                  <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">CVC 安全码</label>
+                <div className="flex flex-col gap-1">
+                  <label className="text-[9px] font-bold text-slate-500 uppercase tracking-wider">CVC 安全码</label>
                   <input 
                     type="text" 
                     placeholder="123" 
                     value={cardCvc}
                     onChange={(e) => setCardCvc(e.target.value)}
-                    className="bg-slate-50 border border-slate-200 rounded-xl p-3 text-xs text-slate-900 outline-none focus:border-blue-500 focus:bg-white transition-all"
+                    className="bg-white border border-slate-200 rounded-xl p-3 text-xs text-slate-900 outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all shadow-sm"
                     required
                   />
                 </div>
@@ -959,7 +1362,7 @@ export default function ConstitutionTestPage() {
               <button 
                 type="submit"
                 disabled={isPaying}
-                className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-blue-500/25 transition-all text-xs flex items-center justify-center gap-2 mt-2 disabled:bg-blue-400"
+                className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-xl shadow-lg shadow-blue-500/25 transition-all text-xs flex items-center justify-center gap-2 mt-2 disabled:bg-blue-400"
               >
                 {isPaying ? (
                   <>
@@ -972,8 +1375,8 @@ export default function ConstitutionTestPage() {
               </button>
             </form>
 
-            <div className="text-center text-[10px] text-slate-400 flex items-center justify-center gap-1.5">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <div className="text-center text-[9px] text-slate-400 flex items-center justify-center gap-1.5 mt-1 border-t border-slate-50 pt-3">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
               SSL 256位安全加密支付系统，支持所有主流信用卡
             </div>
 
@@ -983,3 +1386,13 @@ export default function ConstitutionTestPage() {
     </>
   );
 }
+
+const stems = ['甲', '乙', '丙', '丁', '戊', '己', '庚', '辛', '壬', '癸'];
+const branches = ['子', '丑', '寅', '卯', '辰', '巳', '午', '未', '申', '酉', '戌', '亥'];
+const elementsMap: Record<string, string> = {
+  '甲': 'Wood', '乙': 'Wood', '寅': 'Wood', '卯': 'Wood',
+  '丙': 'Fire', '丁': 'Fire', '巳': 'Fire', '午': 'Fire',
+  '戊': 'Earth', '己': 'Earth', '辰': 'Earth', '戌': 'Earth', '丑': 'Earth', '未': 'Earth',
+  '庚': 'Metal', '辛': 'Metal', '申': 'Metal', '酉': 'Metal',
+  '壬': 'Water', '癸': 'Water', '亥': 'Water', '子': 'Water'
+};
