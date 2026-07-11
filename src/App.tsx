@@ -492,6 +492,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 import LgzfPage from './pages/LgzfPage';
 
 import ConstitutionTestPage from './pages/ConstitutionTestPage';
+import ConstitutionTeaserPage from './pages/ConstitutionTeaserPage';
 
 export default function App() {
   return (
@@ -595,6 +596,7 @@ export default function App() {
           <Route path="/veterans-care" element={<VeteransCareAcupunctureHonoluluPage />} />
                     <Route path="/lgzf" element={<LgzfPage />} />
                     <Route path="/constitution-test" element={<ConstitutionTestPage />} />
+                    <Route path="/constitution-teaser" element={<ConstitutionTeaserPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
         <AIChatbot />

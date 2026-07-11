@@ -94,6 +94,7 @@ const ALL_ROUTES = [
   '/veterans-acupuncture-honolulu-aiea',
   '/lgzf',
   '/constitution-test',
+  '/constitution-teaser',
 ];
 
 const PAGE_DATA = {
@@ -101,6 +102,11 @@ const PAGE_DATA = {
     title: '中医体质与生命节律评估 | AcuTherapy Clinics',
     description: 'AcuTherapy Clinics 中医体质与生命节律评估测试。结合先天五行与《上古天真论》年龄节律提供个性化调理对策。',
     h1: '中医体质与生命节律评估',
+  },
+  '/constitution-teaser': {
+    title: '探索您的先天五行与生命节律 | AcuTherapy Clinics',
+    description: 'AcuTherapy Clinics 中医五行体质与生命节律评估营销推广页。扫码即可解锁个人身心密码。',
+    h1: '探索您的先天五行与生命节律',
   },
   '/lgzf': {
     title: '灵龟八法开穴助手 | AcuTherapy Clinics Honolulu',
