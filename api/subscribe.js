@@ -23,7 +23,7 @@ const emailTemplates = {
     subject: "✨ Your Personalized Five Elements Energy Profile & Talisman - AcuTherapy Clinics",
     greeting: "Dear",
     intro: "Thank you for completing the TCM Constitution & Life Cycle Assessment with AcuTherapy Clinics! Your body & mind energy charter is ready:",
-    dominant: "Dominant Archetype",
+    dominant: "Dominant Element",
     deficient: "Deficient Element",
     action_report: "View My Full Interactive Report & Life Cycle ➔",
     action_book: "Book a Clinic Appointment with Dr. David Cai ➔",

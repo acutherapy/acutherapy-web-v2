@@ -361,7 +361,7 @@ const dict = {
     birth_chart_title: "YOUR BIRTH CHART (先天出生局)",
     current_chart_title: "CURRENT HONOLULU (当前时空局)",
     dominant_energy_title: "Your Current Dominant Energy (先天与时空能量属性)",
-    dominant_title: "Dominant Archetype",
+    dominant_title: "Dominant Element",
     dominant_badge: "最强主导",
     deficient_badge: "偏弱缺失",
     deficient_title: "Deficient Energy",
@@ -439,7 +439,7 @@ const dict = {
     birth_chart_title: "YOUR BIRTH CHART",
     current_chart_title: "CURRENT HONOLULU",
     dominant_energy_title: "Your Current Dominant Energy",
-    dominant_title: "Dominant Archetype",
+    dominant_title: "Dominant Element",
     dominant_badge: "Dominant",
     deficient_badge: "Deficient",
     deficient_title: "Deficient Energy",
@@ -1212,7 +1212,7 @@ export default function ConstitutionTestPage() {
       const color = getBeadBaseColor(dominant);
       ctx.fillStyle = color;
       ctx.font = '900 64px sans-serif';
-      ctx.fillText(`${dominant.toUpperCase()} ARCHETYPE`, wp.width / 2, wp.height - 250);
+      ctx.fillText(`${dominant.toUpperCase()} ELEMENT`, wp.width / 2, wp.height - 250);
 
       ctx.fillStyle = 'rgba(255, 255, 255, 0.4)';
       ctx.font = '20px sans-serif';
@@ -1741,7 +1741,7 @@ export default function ConstitutionTestPage() {
                     </p>
                   </div>
 
-                  {/* Deficient Archetype Quote */}
+                  {/* Deficient Element Quote */}
                   <div className="text-center text-xs text-slate-500 leading-relaxed max-w-md px-4 italic mt-1">
                     {isUnlocked ? (
                       deficientTeasers[lang][deficient]

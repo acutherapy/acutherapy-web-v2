@@ -35,7 +35,7 @@ const teaserDict = {
     title: "Discover Your Innate Five Elements",
     subtitle: "Ancient TCM Wisdom Combined with Modern Digital Wellness Profiling",
     teaser_title: "Which Five Elements energy rules your body?",
-    teaser_desc: "Combining dry stem/branch calculations and biological age milestones from the Huangdi Neijing, our algorithm determines your dominant elemental archetype and creates your custom 'Energy Talisman Wallpaper' with acupuncture advice.",
+    teaser_desc: "Combining dry stem/branch calculations and biological age milestones from the Huangdi Neijing, our algorithm determines your dominant element and creates your custom 'Energy Talisman Wallpaper' with acupuncture advice.",
     card_title: "Scan QR Code or Click to Start",
     card_desc: "Takes only 2 minutes. Answer 5 health questions to unlock your personal body & mind energy charter.",
     cta_btn: "Start Free Test ➔",
