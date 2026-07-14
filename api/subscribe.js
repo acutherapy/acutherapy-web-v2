@@ -31,15 +31,15 @@ const emailTemplates = {
     signature: "The AcuTherapy Clinics Medical Team"
   },
   ja: {
-    subject: "✨ あなたの五行エネルギー診断書＆お守り壁紙 - AcuTherapy Clinics",
-    greeting: "親愛なる",
-    intro: "AcuTherapy Clinics の東洋医学体質＆生命周期テストを完了していただき、ありがとうございます！診断書が完成しました：",
-    dominant: "優位な属性",
+    subject: "✨ あなたの五行エネルギー诊断书＆お守り壁纸 - AcuTherapy Clinics",
+    greeting: "亲爱なる",
+    intro: "AcuTherapy Clinics の东洋医学体质＆生命周期テストを完了していただき、ありがとうございます！诊断书が完成しました：",
+    dominant: "优位な属性",
     deficient: "不足するエネルギー",
     action_report: "完全版レポート＆生命リズムを表示する ➔",
-    action_book: "デビッド・ツァイ医師の鍼灸面診を予約する ➔",
-    footer: "この診断は伝統中医学の陰陽五行説に基づいています。より詳細な臨床診断とパーソナライズ鍼灸治療を受けるには、直接の対面診療をご予約ください。",
-    signature: "AcuTherapy Clinics 医療チーム"
+    action_book: "デビッド・ツァイ医师の鍼灸面诊を予約する ➔",
+    footer: "この诊断は传统中医学の阴阳五行说に基づいています。より详细な临床诊断とパーソナライズ鍼灸治疗を受けるには、直接の対面诊疗をご予約ください。",
+    signature: "AcuTherapy Clinics 医疗チーム"
   }
 };
 
@@ -72,7 +72,8 @@ export default async function handler(req, res) {
       }
     }
 
-    const apiKey = process.env.RESEND_API_KEY;
+    // 🔮 Load Dedicated Resend API Key for Quiz, or fallback to the website's default Resend Key
+    const apiKey = process.env.QUIZ_RESEND_API_KEY || process.env.RESEND_API_KEY;
     if (!apiKey) {
       return res.status(500).json({ error: 'Resend API key not configured' });
     }
@@ -128,12 +129,15 @@ export default async function handler(req, res) {
     let sendResult = null;
     let fallbackUsed = false;
 
+    // The dedicated clinic contact email for the Bazi constitution quiz is acuherb@yahoo.com
+    const clinicEmail = 'acuherb@yahoo.com';
+
     try {
       // 1. First attempt: Send from custom domain (info@acutherapy.com) to the user's input email
       sendResult = await resend.emails.send({
-        from: 'AcuTherapy Clinics <info@acutherapy.com>',
+        from: 'AcuTherapy Energy Talisman <info@acutherapy.com>',
         to: [email],
-        replyTo: 'leyzax@gmail.com',
+        replyTo: clinicEmail,
         subject: text.subject,
         html: htmlContent
       });
@@ -141,18 +145,18 @@ export default async function handler(req, res) {
       // If it failed because domain is not verified, catch it and fallback
       if (sendResult.error && (sendResult.error.message.includes('not verified') || sendResult.error.message.includes('verify a domain'))) {
         fallbackUsed = true;
-        console.warn('Custom domain acutherapy.com is not verified on Resend. Falling back to onboarding@resend.dev');
+        console.warn('Custom domain acutherapy.com is not verified. Falling back to onboarding@resend.dev');
         
         const warningHeader = `<div style="background-color: #FEF3C7; border: 1px solid #F59E0B; color: #92400E; padding: 12px; border-radius: 8px; margin-bottom: 20px; font-size: 12px;">
           ⚠️ <strong>开发测试提示 / Sandbox Mode:</strong><br/>
-          由于您的 Resend 账户中尚未验证 <strong>acutherapy.com</strong> 域名，系统自动启用了沙盒模式，将原本发往 <strong>${email}</strong> 的邮件投递到了此所有者验证邮箱 <strong>leyzax@gmail.com</strong>。<br/>
+          由于您的 Resend 账户中尚未验证 <strong>acutherapy.com</strong> 域名，系统自动启用了沙盒模式，将原本发往 <strong>${email}</strong> 的邮件投递到了此所有者验证邮箱 <strong>${clinicEmail}</strong>。<br/>
           <em>(要开启全球用户真实投递，请前往 resend.com/domains 验证您的 acutherapy.com 域名并配置 MX 记录。)</em>
         </div>`;
 
         sendResult = await resend.emails.send({
-          from: 'AcuTherapy Clinics <onboarding@resend.dev>',
-          to: ['leyzax@gmail.com'],
-          replyTo: 'leyzax@gmail.com',
+          from: 'AcuTherapy Energy Talisman <onboarding@resend.dev>',
+          to: [clinicEmail],
+          replyTo: clinicEmail,
           subject: `[Test Sandbox] ${text.subject}`,
           html: warningHeader + htmlContent
         });
@@ -162,9 +166,9 @@ export default async function handler(req, res) {
       fallbackUsed = true;
       console.error('Initial send crashed. Triggering last-resort sandbox fallback:', sendErr);
       sendResult = await resend.emails.send({
-        from: 'AcuTherapy Clinics <onboarding@resend.dev>',
-        to: ['leyzax@gmail.com'],
-        replyTo: 'leyzax@gmail.com',
+        from: 'AcuTherapy Energy Talisman <onboarding@resend.dev>',
+        to: [clinicEmail],
+        replyTo: clinicEmail,
         subject: `[Sandbox Fallback] ${text.subject}`,
         html: `<p style="color:red;"><strong>Exception Fallback:</strong> ${sendErr.message}</p>` + htmlContent
       });
@@ -173,6 +177,30 @@ export default async function handler(req, res) {
     if (sendResult.error) {
       console.error('Resend final failure:', sendResult.error);
       return res.status(400).json({ error: sendResult.error.message });
+    }
+
+    // Also send an admin notification email to the clinic owner
+    try {
+      await resend.emails.send({
+        from: 'AcuTherapy Energy Talisman <onboarding@resend.dev>',
+        to: [clinicEmail],
+        subject: `📧 [TCM Quiz] New Lead: ${name} (${dominant}/${deficient})`,
+        html: `
+          <h3>New Lead Registered from Five Elements Quiz</h3>
+          <ul>
+            <li><strong>Name:</strong> ${name}</li>
+            <li><strong>Email:</strong> ${email}</li>
+            <li><strong>Dominant Element:</strong> ${dominant}</li>
+            <li><strong>Deficient Element:</strong> ${deficient}</li>
+            <li><strong>DOB:</strong> ${dob}</li>
+            <li><strong>TOB:</strong> ${tob}</li>
+            <li><strong>Language:</strong> ${lang}</li>
+            <li><strong>Symptoms:</strong> ${Array.isArray(symptoms) ? symptoms.join(', ') : symptoms || 'None'}</li>
+          </ul>
+        `
+      });
+    } catch (e) {
+      console.error('Admin notification email failed:', e);
     }
 
     return res.status(200).json({ success: true, data: sendResult.data, fallbackUsed });
