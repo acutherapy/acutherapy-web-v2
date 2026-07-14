@@ -37,6 +37,7 @@ export default function SitemapPage() {
                             <li><Link to="/" className="text-slate-600 hover:text-blue-700 font-medium hover:underline">Home</Link></li>
                             <li><Link to="/dr-david-cai-honolulu-acupuncturist" className="text-slate-600 hover:text-blue-700 font-medium hover:underline">About Dr. David Cai</Link></li>
                             <li><Link to="/patient-reviews" className="text-slate-600 hover:text-blue-700 font-medium hover:underline">Patient Reviews</Link></li>
+                            <li><Link to="/constitution-teaser" className="text-blue-600 font-bold hover:text-blue-800 hover:underline">TCM Five Elements Energy Test</Link></li>
                             <li><Link to="/book-appointment" className="text-blue-600 font-bold hover:text-blue-800 hover:underline">Book Your Appointment</Link></li>
                         </ul>
                     </div>
