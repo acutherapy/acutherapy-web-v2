@@ -128,14 +128,14 @@ export default async function handler(req, res) {
     // 🔮 Self-healing email sender logic
     let sendResult = null;
     let fallbackUsed = false;
-    const clinicEmail = 'acuherb@yahoo.com';
+    const replyToEmail = 'services@acutherapy.com';
 
     try {
       // 1. First attempt: Send from custom domain (info@acutherapy.com) to the user's input email
       sendResult = await resend.emails.send({
         from: 'AcuTherapy Energy Talisman <info@acutherapy.com>',
         to: [email],
-        replyTo: clinicEmail,
+        replyTo: replyToEmail,
         subject: text.subject,
         html: htmlContent
       });
@@ -147,7 +147,7 @@ export default async function handler(req, res) {
         
         const warningHeader = `<div style="background-color: #FEF3C7; border: 1px solid #F59E0B; color: #92400E; padding: 12px; border-radius: 8px; margin-bottom: 20px; font-size: 12px;">
           ⚠️ <strong>开发测试提示 / Sandbox Mode:</strong><br/>
-          由于您的 Resend 账户中尚未验证 <strong>acutherapy.com</strong> 域名，系统自动启用了沙盒模式，将原本发往 <strong>${email}</strong> 的邮件投递到了您的验证所有者邮箱。<br/>
+          由于您的 Resend 账户中尚未验证 <strong>acutherapy.com</strong> 域名，系统自动启用沙盒模式，将原本发往 <strong>${email}</strong> 的邮件投递到了您的验证所有者邮箱。<br/>
           <em>(要开启全球用户真实投递，请前往 resend.com/domains 验证您的 acutherapy.com 域名并配置 MX 记录。)</em>
         </div>`;
 
@@ -156,7 +156,7 @@ export default async function handler(req, res) {
           const res1 = await resend.emails.send({
             from: 'AcuTherapy Energy Talisman <onboarding@resend.dev>',
             to: ['services@acutherapy.com'],
-            replyTo: clinicEmail,
+            replyTo: replyToEmail,
             subject: `[Test Sandbox] ${text.subject}`,
             html: warningHeader + htmlContent
           });
@@ -173,7 +173,7 @@ export default async function handler(req, res) {
           const res2 = await resend.emails.send({
             from: 'AcuTherapy Energy Talisman <onboarding@resend.dev>',
             to: ['leyzax@gmail.com'],
-            replyTo: clinicEmail,
+            replyTo: replyToEmail,
             subject: `[Test Sandbox] ${text.subject}`,
             html: warningHeader + htmlContent
           });
@@ -193,7 +193,7 @@ export default async function handler(req, res) {
       sendResult = await resend.emails.send({
         from: 'AcuTherapy Energy Talisman <onboarding@resend.dev>',
         to: ['services@acutherapy.com'],
-        replyTo: clinicEmail,
+        replyTo: replyToEmail,
         subject: `[Sandbox Fallback] ${text.subject}`,
         html: `<p style="color:red;"><strong>Exception Fallback:</strong> ${sendErr.message}</p>` + htmlContent
       });
@@ -204,7 +204,7 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: sendResult.error.message });
     }
 
-    // Also send an admin notification email to the clinic owner
+    // Also send an admin notification email to the clinic owner (to: leyzax@gmail.com, replyTo: services@acutherapy.com)
     try {
       const adminHtml = `
         <h3>New Lead Registered from Five Elements Quiz</h3>
@@ -220,12 +220,13 @@ export default async function handler(req, res) {
         </ul>
       `;
 
-      // In sandbox mode, send notification to both potential verified owners
       if (fallbackUsed) {
+        // In sandbox mode, send notification to both potential verified owners
         try {
           await resend.emails.send({
             from: 'AcuTherapy Energy Talisman <onboarding@resend.dev>',
             to: ['services@acutherapy.com'],
+            replyTo: replyToEmail,
             subject: `📧 [TCM Quiz] New Lead: ${name} (${dominant}/${deficient})`,
             html: adminHtml
           });
@@ -235,15 +236,17 @@ export default async function handler(req, res) {
           await resend.emails.send({
             from: 'AcuTherapy Energy Talisman <onboarding@resend.dev>',
             to: ['leyzax@gmail.com'],
+            replyTo: replyToEmail,
             subject: `📧 [TCM Quiz] New Lead: ${name} (${dominant}/${deficient})`,
             html: adminHtml
           });
         } catch (e) {}
       } else {
-        // If domain is verified, send standard notification directly to clinic contact email
+        // If domain is verified, send standard notification directly to leyzax@gmail.com
         await resend.emails.send({
           from: 'AcuTherapy Energy Talisman <info@acutherapy.com>',
-          to: [clinicEmail],
+          to: ['leyzax@gmail.com'],
+          replyTo: replyToEmail,
           subject: `📧 [TCM Quiz] New Lead: ${name} (${dominant}/${deficient})`,
           html: adminHtml
         });

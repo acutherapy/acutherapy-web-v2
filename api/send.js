@@ -46,12 +46,13 @@ export default async function handler(req, res) {
         }
 
         const resend = new Resend(apiKey);
+        const replyToEmail = 'services@acutherapy.com';
 
-        // 1. Send Notification to Clinic
+        // 1. Send Notification to Clinic (to: leyzax@gmail.com, replyTo: services@acutherapy.com)
         const { data: adminData, error: adminError } = await resend.emails.send({
-            from: 'AcuTherapy Website <onboarding@resend.dev>',
+            from: 'AcuTherapy Website <info@acutherapy.com>',
             to: ['leyzax@gmail.com'],
-            replyTo: email || 'leyzax@gmail.com',
+            replyTo: replyToEmail,
             subject: `[Website Appointment] New Patient Request: ${name}`,
             html: `
                 <h2>New Appointment Request</h2>
@@ -81,13 +82,13 @@ export default async function handler(req, res) {
             return res.status(400).json({ error: adminError.message });
         }
 
-        // 2. Send Confirmation to User (with self-healing fallback)
+        // 2. Send Confirmation to User
         if (email) {
             try {
                 let userSendResult = await resend.emails.send({
                     from: 'AcuTherapy Clinics <info@acutherapy.com>',
                     to: [email],
-                    replyTo: 'leyzax@gmail.com',
+                    replyTo: replyToEmail,
                     subject: `We received your appointment request`,
                     html: `
                         <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto;">
@@ -113,12 +114,12 @@ export default async function handler(req, res) {
                     `,
                 });
 
-                // If domain not verified, fallback to onboarding@resend.dev and send to owner
+                // Sandbox fallback if domain fails or is not verified
                 if (userSendResult.error && (userSendResult.error.message.includes('not verified') || userSendResult.error.message.includes('verify a domain'))) {
                     await resend.emails.send({
                         from: 'AcuTherapy Clinics <onboarding@resend.dev>',
                         to: ['leyzax@gmail.com'],
-                        replyTo: 'leyzax@gmail.com',
+                        replyTo: replyToEmail,
                         subject: `[Sandbox Fallback] We received your appointment request`,
                         html: `
                             <div style="background-color: #FEF3C7; border: 1px solid #F59E0B; color: #92400E; padding: 12px; border-radius: 8px; margin-bottom: 20px; font-size: 12px;">
