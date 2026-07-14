@@ -43,6 +43,34 @@ const emailTemplates = {
   }
 };
 
+
+const symptomReflections = {
+  zh: {
+    A: `• <strong>关于心神与压力调理</strong>：您勾选了“脑子转个不停、难以静下来”的身心感受。中医认为这对应“心火亢盛”或“肝郁化火”，易耗伤心血。David Cai 医生建议日常多按压<strong>神门穴</strong>和<strong>内关穴</strong>以安定心神。在临床治疗上，针灸能显著放松紧绷的植物神经，让身体重新找回宁静。`,
+    B: `• <strong>关于睡眠与深度休息</strong>：您勾选了“睡眠很轻、易醒、觉得累”的感受。在五行中，这常由“水火不济”（心肾不交）引起。建议睡前用温水泡脚，并揉按足底<strong>涌泉穴</strong>和足踝<strong>三阴交穴</strong>以引火归元。配合临床针灸，可有效调节夜间褪黑素，助您深度熟睡。`,
+    C: `• <strong>关于消化与脾胃能量</strong>：您勾选了“敏感胀气、吃点东西就肚子胀”的感受。脾胃为“土”，是能量运化的枢纽。建议少食生冷，每日按揉膝盖下方的<strong>足三里穴</strong>和上腹的<strong>中脘穴</strong>。临床上，针灸能显著调和胃气、促进胃肠蠕动，快速消除饱胀感。`,
+    D: `• <strong>关于肩颈与经络酸痛</strong>：您勾选了“身体发紧、肩颈酸痛绷紧”的感受。中医常讲“通则不痛，痛则不通”。这代表局部经络气血受阻。建议平时注意避风保暖，多点按手部<strong>合谷穴</strong>与肩部<strong>肩井穴</strong>。临床针灸结合火罐，能迅速松解深层肌肉粘连，消除阻滞。`,
+    E: `• <strong>关于慢性疲劳与精力</strong>：您勾选了“身体没电、容易疲倦力不从心”的感受。这说明元气与肾精有所透支。日常切忌过度劳累，建议点按或热敷小腹的<strong>气海穴</strong>和腰部的<strong>肾俞穴</strong>。临床针对性灸疗与针刺，能强壮脾肾，帮您重新“充电”恢复精力。`,
+    none: `• <strong>未病防范与气血调和</strong>：您目前没有明显的身体慢性痛点。中医的最高境界在于“治未病”。David Cai 医生建议您结合四季更替进行预防性针灸经络调理，帮助机体保持阴阳平衡，培元固本，延缓自然衰老。`
+  },
+  en: {
+    A: `• <strong>Mind & Stress Relief</strong>: You noted feeling a racing mind or finding it hard to quiet your thoughts. In TCM, this indicates unanchored Heart Spirit or Liver Qi stagnation. We suggest massaging <strong>Shenmen (HT7)</strong> and <strong>Neiguan (PC6)</strong> daily. In the clinic, target acupuncture helps soothe your overactive nervous system.`,
+    B: `• <strong>Sleep & Deep Rest</strong>: You noted being a light sleeper, easily awoken, or waking up tired. This is often caused by a lack of communication between the Heart (Fire) and Kidneys (Water). We recommend soaking your feet in warm water before bed and massaging <strong>Yongquan (KI1)</strong> and <strong>Sanyinjiao (SP6)</strong>. Acupuncture helps regulate sleep cycles.`,
+    C: `• <strong>Digestive & Spleen Care</strong>: You noted sensitive stomach or bloating after eating. Spleen-Earth is the source of post-natal vitality. Avoid cold foods and massage <strong>Zusanli (ST36)</strong> and <strong>Zhongwan (CV12)</strong> daily. Clinical acupuncture regulates gut motility and quickly relieves post-meal bloating.`,
+    D: `• <strong>Stiffness & Pain Relief</strong>: You noted body stiffness or tight neck and shoulders. In TCM, pain is a block in Qi and Blood circulation. Keep warm and massage <strong>Hegu (LI4)</strong> and <strong>Jianjing (GB21)</strong>. Target acupuncture combined with cupping relaxes deep tissue and restores blood circulation.`,
+    E: `• <strong>Energy & Fatigue Recovery</strong>: You noted running on low battery or chronically drained. This points to depleted Qi and Kidney essence. Avoid late nights or exhausting workouts, and massage <strong>Qihai (CV6)</strong> and <strong>Shenshu (BL23)</strong>. Target clinical acupuncture helps rebuild your energy reservoir.`,
+    none: `• <strong>Preventative Wellness</strong>: You have no active chronic symptoms. In TCM, the highest form of medicine is preventative care. Dr. Cai recommends seasonal meridian tuning to maintain balance, boost immunity, and promote longevity.`
+  },
+  ja: {
+    A: `• <strong>脳疲労と心のケア</strong>：「考えすぎて頭が休まらない、焦りを感じる」とお答えいただきました。これは自律神経の過緊張や気滞を意味します。日常ケアとして、手首の「神門」や「内関」のツボを揉んでください。臨床鍼灸治療では、交感神経を落ち着かせ、心を穏やかにします。`,
+    B: `• <strong>睡眠と睡眠リズムの調律</strong>：「眠りが浅い、夜中に目が覚める、または朝起きた時にスッキリしない」とお答えいただきました。心身の陰陽バランスの乱れが原因です。就寝前の足湯と、足裏の「湧泉」や足首の「三陰交」のマッサージが効果的です。鍼治療で深い眠りをサポートします。`,
+    C: `• <strong>脾胃（消化器系）と消化ケア</strong>：「食欲にムラがある、または食べると胃もたれやお腹の張りを感じやすい」とお答えいただきました。冷たいものを避け、膝の下の「足三里」やみぞおちの「中脘」を刺激してください。鍼治療は胃腸の働きを高め、お腹の張りを素早く解消します。`,
+    D: `• <strong>体のこわばりと痛みの緩和</strong>：「肩や首のコリが抜けない、体が強張る、またはすっきりしない鈍痛がある」とお答えいただきました。気血の滞りが痛みを引き起こしています。冷えを防ぎ、「合谷」や肩の「肩井」をほぐしましょう。鍼とカッピングにより、こわばりを素早く緩めます。`,
+    E: `• <strong>慢性疲労とエネルギーの充電</strong>：「常に体が重だるい、やる気が出ない、またはエネルギー不足を感じる」とお答えいただきました。心身の元気が消耗しています。夜更かしを避け、下腹部の「気海」や腰の「腎兪」を温めてください。鍼治療やお灸は、元気の回復に非常に効果的です。`,
+    none: `• <strong>未病の予防と養生ケア</strong>：現在、特に目立った不調はありません。東洋医学の基本は「未病を防ぐ」ことです。季節の変わり目に定期的な鍼灸ケアを行うことで、気血を調和させ、自己免疫力を高め、健康的な長寿を維持できます。`
+  }
+};
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method Not Allowed' });
@@ -85,6 +113,41 @@ export default async function handler(req, res) {
     const encodedName = encodeURIComponent(name || '');
     const reportUrl = `https://acutherapy.com/constitution-test?lang=${lang}&email=${email}&name=${encodedName}&gender=${gender}&dob=${dob}&tob=${tob}&symptoms=${encodeURIComponent(JSON.stringify(symptoms))}&unlocked=true`;
 
+    // Generate personalized symptoms reflection list for the email
+    let symptomBlocksHtml = '';
+    const activeReflections = symptomReflections[lang || 'en'] || symptomReflections.en;
+    
+    // Normalize symptoms
+    let activeSymptoms = [];
+    if (typeof symptoms === 'string') {
+      try {
+        activeSymptoms = JSON.parse(symptoms);
+      } catch (e) {
+        activeSymptoms = symptoms.split(',').map(s => s.trim());
+      }
+    } else if (Array.isArray(symptoms)) {
+      activeSymptoms = symptoms;
+    }
+
+    if (activeSymptoms && activeSymptoms.length > 0 && !activeSymptoms.includes('none')) {
+      symptomBlocksHtml += `<div style="background-color: #F8FAFC; border: 1px dashed #CBD5E1; padding: 16px; border-radius: 12px; margin: 20px 0;">
+        <h4 style="margin: 0 0 10px 0; font-size: 13px; font-weight: 800; color: #1E293B; text-transform: uppercase; border-bottom: 2px solid #E2E8F0; padding-bottom: 6px;">🩺 身心对症分析与建议 / PERSONALIZED WELLNESS INSIGHTS</h4>
+        <div style="font-size: 12px; line-height: 1.7; color: #475569; display: flex; flex-direction: column; gap: 10px;">`;
+      
+      activeSymptoms.forEach(code => {
+        if (activeReflections[code]) {
+          symptomBlocksHtml += `<p style="margin: 0; margin-bottom: 8px;">${activeReflections[code]}</p>`;
+        }
+      });
+      
+      symptomBlocksHtml += `</div></div>`;
+    } else {
+      symptomBlocksHtml += `<div style="background-color: #F8FAFC; border: 1px dashed #CBD5E1; padding: 16px; border-radius: 12px; margin: 20px 0;">
+        <h4 style="margin: 0 0 10px 0; font-size: 13px; font-weight: 800; color: #1E293B; text-transform: uppercase; border-bottom: 2px solid #E2E8F0; padding-bottom: 6px;">🩺 身心对症分析与建议 / WELLNESS INSIGHTS</h4>
+        <p style="margin: 0; font-size: 12px; line-height: 1.7; color: #475569;">${activeReflections.none}</p>
+      </div>`;
+    }
+
     const htmlContent = `
       <div style="font-family: sans-serif; background-color: #F8FAFC; color: #0F172A; max-width: 600px; margin: 0 auto; padding: 40px 24px; border: 1px solid #E2E8F0; border-radius: 16px;">
         <div style="text-align: center; margin-bottom: 30px;">
@@ -100,6 +163,8 @@ export default async function handler(req, res) {
             <p style="margin: 0 0 8px 0;"><strong>📊 ${text.dominant}：</strong> <span style="font-size: 16px; font-weight: bold; color: #1E293B;">${dominant}</span></p>
             <p style="margin: 0;"><strong>📉 ${text.deficient}：</strong> <span style="font-size: 16px; font-weight: bold; color: #2563EB;">${deficient}</span></p>
           </div>
+
+          ${symptomBlocksHtml}
 
           <div style="text-align: center; margin: 30px 0;">
             <a href="${reportUrl}" target="_blank" style="background-color: #2563EB; color: #FFFFFF; text-decoration: none; padding: 12px 24px; font-size: 13px; font-weight: bold; border-radius: 8px; display: inline-block; box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);">

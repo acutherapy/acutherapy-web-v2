@@ -201,28 +201,28 @@ const deficientTeasers = {
 
 const symptomTexts = {
   zh: [
-    { code: 'A', text: '紧张焦虑，思路过度' },
-    { code: 'B', text: '睡眠不好，休息不足' },
-    { code: 'C', text: '饮食不节，没有规律和控制饭量' },
-    { code: 'D', text: '疼痛，没有原因的痛' },
-    { code: 'E', text: '无力，疲惫，精力低下' },
-    { code: 'none', text: '都不是 (以上皆无)' }
+    { code: 'A', text: '常感到心烦或脑子转个不停，难以静下来' },
+    { code: 'B', text: '睡眠很轻、易醒，或者睡醒后还是觉得累' },
+    { code: 'C', text: '胃口时好时坏，吃点东西就容易肚子胀、不舒服' },
+    { code: 'D', text: '身体经常发紧，肩颈绷得很紧或有说不出的酸痛' },
+    { code: 'E', text: '总觉得力不从心，身体没电，容易疲倦和打不起精神' },
+    { code: 'none', text: '以上皆无，感觉身心状态良好' }
   ],
   en: [
-    { code: 'A', text: 'Anxiety, stress, and overthinking' },
-    { code: 'B', text: 'Poor sleep quality and insomnia' },
-    { code: 'C', text: 'Irregular diet and indigestion' },
-    { code: 'D', text: 'Unexplained body aches and chronic pain' },
-    { code: 'E', text: 'Fatigue, low energy, and low libido' },
-    { code: 'none', text: 'None of the above' }
+    { code: 'A', text: 'Mind racing, easily anxious, or finding it hard to quiet your thoughts' },
+    { code: 'B', text: 'Light sleeper, easily awoken, or waking up still feeling tired' },
+    { code: 'C', text: 'Fluctuating appetite, sensitive stomach, or bloating after eating' },
+    { code: 'D', text: 'Body stiffness, tight neck and shoulders, or unexplained muscle aches' },
+    { code: 'E', text: 'Running on low battery, chronically drained, or lacking physical vitality' },
+    { code: 'none', text: 'None of the above, feeling perfectly balanced' }
   ],
   ja: [
-    { code: 'A', text: '緊張や焦り、考えすぎ' },
-    { code: 'B', text: '睡眠の質が低い、不眠' },
-    { code: 'C', text: '食生活の乱れ、消化不良' },
-    { code: 'D', text: '原因不明の痛み、慢性痛' },
-    { code: 'E', text: '全身の倦怠感、無気力、精力減退' },
-    { code: 'none', text: '上記のいずれでもない' }
+    { code: 'A', text: 'イライラしやすい、焦りを感じる、または考えすぎて頭が休まらない' },
+    { code: 'B', text: '眠りが浅い、夜中に目が覚める、または朝起きた時にスッキリしない' },
+    { code: 'C', text: '食欲にムラがある、または食べると胃もたれやお腹の張りを感じやすい' },
+    { code: 'D', text: '首や肩のコリが抜けない、体が強張る、またはすっきりしない鈍痛がある' },
+    { code: 'E', text: '疲れが取れにくい、常に体が重だるい、またはエネルギー不足を感じる' },
+    { code: 'none', text: '上記のいずれでもなく、心身ともに非常に良好' }
   ]
 };
 
@@ -334,9 +334,9 @@ const dict = {
     gender_female: "女 ♀",
     dob_label: "公历出生日期",
     tob_label: "出生时辰 (可选)",
-    next_btn_step1: "下一步：勾选身体状况",
-    step2_title: "第二步：勾选您目前最主要的身体状况",
-    step2_desc: "临床中常见的5大健康痛点（可多选）",
+    next_btn_step1: "下一步：勾选身心感受",
+    step2_title: "第二步：您最近的身心感受如何？",
+    step2_desc: "请勾选您最近比较有共鸣的身心感受（可多选）",
     next_btn_step2: "下一步：解锁报告",
     back_btn: "返回上一步",
     step3_title: "报告已就绪！",
@@ -412,9 +412,9 @@ const dict = {
     gender_female: "Female ♀",
     dob_label: "Date of Birth (Solar Calendar)",
     tob_label: "Hour of Birth (Optional)",
-    next_btn_step1: "Next: Select Symptoms",
-    step2_title: "Step 2: Select Your Main Symptoms",
-    step2_desc: "Common clinical health concerns (multiple choices allowed)",
+    next_btn_step1: "Next: How You're Feeling",
+    step2_title: "Step 2: How has your body and mind been feeling lately?",
+    step2_desc: "Select the feelings that resonate with you lately (multiple choices allowed)",
     next_btn_step2: "Next: Unlock Report",
     back_btn: "Back",
     step3_title: "Report Ready!",
@@ -490,9 +490,9 @@ const dict = {
     gender_female: "女性 ♀",
     dob_label: "生年月日 (新暦)",
     tob_label: "出生時間 (任意)",
-    next_btn_step1: "次へ：身体症状の選択",
-    step2_title: "ステップ 2：現在の主な身体症状",
-    step2_desc: "臨床でよく見られる5大健康課題 (複数選択可)",
+    next_btn_step1: "次へ：心身の調子を選択",
+    step2_title: "ステップ 2：最近の心身の調子はいかがですか？",
+    step2_desc: "最近共感できる心身の状態を選択してください (複数選択可)",
     next_btn_step2: "次へ：レポートを解析",
     back_btn: "戻る",
     step3_title: "レポートの準備ができました！",
