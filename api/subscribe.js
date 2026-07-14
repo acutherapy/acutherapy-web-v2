@@ -34,7 +34,7 @@ const emailTemplates = {
     subject: "✨ あなたの五行エネルギー诊断书＆お守り壁纸 - AcuTherapy Clinics",
     greeting: "亲爱なる",
     intro: "AcuTherapy Clinics の东洋医学体质＆生命周期テストを完了していただき、ありがとうございます！诊断书が完成しました：",
-    dominant: "优位な属性",
+    dominant: "横位な属性",
     deficient: "不足するエネルギー",
     action_report: "完全版レポート＆生命リズムを表示する ➔",
     action_book: "デビッド・ツァイ医师の鍼灸面诊を予約する ➔",
@@ -72,7 +72,7 @@ export default async function handler(req, res) {
       }
     }
 
-    // 🔮 Load Dedicated Resend API Key for Quiz, or fallback to the website's default Resend Key
+    // 🔮 Load Dedicated Resend API Key for Quiz, or fallback to the default Resend Key
     const apiKey = process.env.QUIZ_RESEND_API_KEY || process.env.RESEND_API_KEY;
     if (!apiKey) {
       return res.status(500).json({ error: 'Resend API key not configured' });
@@ -133,7 +133,7 @@ export default async function handler(req, res) {
     try {
       // 1. First attempt: Send from custom domain (info@acutherapy.com) to the user's input email
       sendResult = await resend.emails.send({
-        from: 'AcuTherapy Energy Talisman <info@acutherapy.com>',
+        from: 'AcuTherapy Clinics <info@acutherapy.com>',
         to: [email],
         replyTo: replyToEmail,
         subject: text.subject,
@@ -154,7 +154,7 @@ export default async function handler(req, res) {
         // 🔮 Channel A: Try sending to services@acutherapy.com (owner of the new key)
         try {
           const res1 = await resend.emails.send({
-            from: 'AcuTherapy Energy Talisman <onboarding@resend.dev>',
+            from: 'AcuTherapy Clinics <onboarding@resend.dev>',
             to: ['services@acutherapy.com'],
             replyTo: replyToEmail,
             subject: `[Test Sandbox] ${text.subject}`,
@@ -171,7 +171,7 @@ export default async function handler(req, res) {
         // 🔮 Channel B: Try sending to leyzax@gmail.com (owner of the old key)
         try {
           const res2 = await resend.emails.send({
-            from: 'AcuTherapy Energy Talisman <onboarding@resend.dev>',
+            from: 'AcuTherapy Clinics <onboarding@resend.dev>',
             to: ['leyzax@gmail.com'],
             replyTo: replyToEmail,
             subject: `[Test Sandbox] ${text.subject}`,
@@ -191,7 +191,7 @@ export default async function handler(req, res) {
       
       // Last resort fallback
       sendResult = await resend.emails.send({
-        from: 'AcuTherapy Energy Talisman <onboarding@resend.dev>',
+        from: 'AcuTherapy Clinics <onboarding@resend.dev>',
         to: ['services@acutherapy.com'],
         replyTo: replyToEmail,
         subject: `[Sandbox Fallback] ${text.subject}`,
@@ -224,7 +224,7 @@ export default async function handler(req, res) {
         // In sandbox mode, send notification to both potential verified owners
         try {
           await resend.emails.send({
-            from: 'AcuTherapy Energy Talisman <onboarding@resend.dev>',
+            from: 'AcuTherapy Clinics <onboarding@resend.dev>',
             to: ['services@acutherapy.com'],
             replyTo: replyToEmail,
             subject: `📧 [TCM Quiz] New Lead: ${name} (${dominant}/${deficient})`,
@@ -234,7 +234,7 @@ export default async function handler(req, res) {
 
         try {
           await resend.emails.send({
-            from: 'AcuTherapy Energy Talisman <onboarding@resend.dev>',
+            from: 'AcuTherapy Clinics <onboarding@resend.dev>',
             to: ['leyzax@gmail.com'],
             replyTo: replyToEmail,
             subject: `📧 [TCM Quiz] New Lead: ${name} (${dominant}/${deficient})`,
@@ -244,7 +244,7 @@ export default async function handler(req, res) {
       } else {
         // If domain is verified, send standard notification directly to leyzax@gmail.com
         await resend.emails.send({
-          from: 'AcuTherapy Energy Talisman <info@acutherapy.com>',
+          from: 'AcuTherapy Clinics <info@acutherapy.com>',
           to: ['leyzax@gmail.com'],
           replyTo: replyToEmail,
           subject: `📧 [TCM Quiz] New Lead: ${name} (${dominant}/${deficient})`,

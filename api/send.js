@@ -46,13 +46,12 @@ export default async function handler(req, res) {
         }
 
         const resend = new Resend(apiKey);
-        const replyToEmail = 'services@acutherapy.com';
 
-        // 1. Send Notification to Clinic (to: leyzax@gmail.com, replyTo: services@acutherapy.com)
+        // 1. Send Notification to Clinic
         const { data: adminData, error: adminError } = await resend.emails.send({
-            from: 'AcuTherapy Website <info@acutherapy.com>',
+            from: 'AcuTherapy Website <onboarding@resend.dev>',
             to: ['leyzax@gmail.com'],
-            replyTo: replyToEmail,
+            replyTo: email || 'leyzax@gmail.com',
             subject: `[Website Appointment] New Patient Request: ${name}`,
             html: `
                 <h2>New Appointment Request</h2>
@@ -88,7 +87,7 @@ export default async function handler(req, res) {
                 let userSendResult = await resend.emails.send({
                     from: 'AcuTherapy Clinics <info@acutherapy.com>',
                     to: [email],
-                    replyTo: replyToEmail,
+                    replyTo: 'leyzax@gmail.com',
                     subject: `We received your appointment request`,
                     html: `
                         <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto;">
@@ -119,7 +118,7 @@ export default async function handler(req, res) {
                     await resend.emails.send({
                         from: 'AcuTherapy Clinics <onboarding@resend.dev>',
                         to: ['leyzax@gmail.com'],
-                        replyTo: replyToEmail,
+                        replyTo: 'leyzax@gmail.com',
                         subject: `[Sandbox Fallback] We received your appointment request`,
                         html: `
                             <div style="background-color: #FEF3C7; border: 1px solid #F59E0B; color: #92400E; padding: 12px; border-radius: 8px; margin-bottom: 20px; font-size: 12px;">
