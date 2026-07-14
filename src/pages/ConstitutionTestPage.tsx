@@ -964,41 +964,28 @@ export default function ConstitutionTestPage() {
     const year = parseInt(dParts[0]) || 2000;
     const month = parseInt(dParts[1]) || 1;
     const day = parseInt(dParts[2]) || 1;
-    const hour = parseInt(birthTimeStr.split(':')[0]) || 0;
-
-    // Day Stem-Branch
-    let calcYear = year;
-    let calcMonth = month;
-    let calcDay = day;
-    if (hour >= 23) {
-      const d = new Date(year, month - 1, day);
-      d.setDate(d.getDate() + 1);
-      calcYear = d.getFullYear();
-      calcMonth = d.getMonth() + 1;
-      calcDay = d.getDate();
+    
+    let hour = 12;
+    if (birthTimeStr) {
+      const tParts = birthTimeStr.split(':');
+      hour = parseInt(tParts[0]) || 0;
     }
 
-    const refUTC = Date.UTC(2000, 0, 1);
-    const targetUTC = Date.UTC(calcYear, calcMonth - 1, calcDay);
-    const diffDays = Math.round((targetUTC - refUTC) / (1000 * 60 * 60 * 24));
+    const birthDate = new Date(year, month - 1, day, hour, 0);
+    const lunar = Lunar.fromDate(birthDate);
+    const bY = lunar.getYearInGanZhi();
+    const bM = lunar.getMonthInGanZhi();
+    const bD = lunar.getDayInGanZhi();
+    const bT = lunar.getTimeInGanZhi() || '未知';
 
-    let dayStemIndex = (4 + diffDays) % 10;
-    if (dayStemIndex < 0) dayStemIndex += 10;
-    let dayBranchIndex = (6 + diffDays) % 12;
-    if (dayBranchIndex < 0) dayBranchIndex += 12;
+    // Count all 8 characters (Year, Month, Day, Hour stems & branches)
+    const chars = [
+      bY[0], bY.length > 1 ? bY[1] : '',
+      bM[0], bM.length > 1 ? bM[1] : '',
+      bD[0], bD.length > 1 ? bD[1] : '',
+      bT[0], bT.length > 1 ? bT[1] : ''
+    ];
 
-    const dStem = stems[dayStemIndex];
-    const dBranch = branches[dayBranchIndex];
-
-    // Hour Stem-Branch (Wu Shu Dun)
-    const slotIdx = Math.floor((hour + 1) / 2) % 12;
-    const startStemIndex = (dayStemIndex % 5) * 2 % 10;
-    const hourStemIndex = (startStemIndex + slotIdx) % 10;
-    const hStem = stems[hourStemIndex];
-    const hBranch = branches[slotIdx];
-
-    // Count Elements
-    const elements = [dStem, dBranch, hStem, hBranch];
     const counts: Record<string, number> = { Wood: 0, Fire: 0, Earth: 0, Metal: 0, Water: 0 };
     
     // Base congenital seed counts
@@ -1008,10 +995,12 @@ export default function ConstitutionTestPage() {
     counts.Metal = 1;
     counts.Water = 1;
 
-    elements.forEach(item => {
-      const element = elementsMap[item];
-      if (element) {
-        counts[element] += 2;
+    chars.forEach(char => {
+      if (char) {
+        const element = elementsMap[char];
+        if (element) {
+          counts[element] += 2;
+        }
       }
     });
 
@@ -1261,7 +1250,7 @@ export default function ConstitutionTestPage() {
       maxScore = item.score;
       dominant = item.name;
     }
-    if (item.score < minScore) {
+    if (item.score <= minScore) {
       minScore = item.score;
       deficient = item.name;
     }
@@ -2073,8 +2062,6 @@ export default function ConstitutionTestPage() {
 }
 
 // 2. Parse age and determine Huangdi Neijing Cycle
-const stems = ['甲', '乙', '丙', '丁', '戊', '己', '庚', '辛', '壬', '癸'];
-const branches = ['子', '丑', '寅', '卯', '辰', '巳', '午', '未', '申', '酉', '戌', '亥'];
 const elementsMap: Record<string, string> = {
   '甲': 'Wood', '乙': 'Wood', '寅': 'Wood', '卯': 'Wood',
   '丙': 'Fire', '丁': 'Fire', '巳': 'Fire', '午': 'Fire',
