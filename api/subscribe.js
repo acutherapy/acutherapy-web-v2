@@ -72,8 +72,8 @@ export default async function handler(req, res) {
       }
     }
 
-    // 🔮 Load Dedicated Resend API Key for Quiz, or fallback to the default Resend Key
-    const apiKey = process.env.QUIZ_RESEND_API_KEY || process.env.RESEND_API_KEY;
+    // 🔮 Load the default unified Resend API Key (re_6fqHG5zx... owned by leyzax@gmail.com)
+    const apiKey = process.env.RESEND_API_KEY;
     if (!apiKey) {
       return res.status(500).json({ error: 'Resend API key not configured' });
     }
