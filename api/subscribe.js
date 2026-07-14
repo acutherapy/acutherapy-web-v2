@@ -14,6 +14,7 @@ const emailTemplates = {
     intro: "感谢您完成 AcuTherapy Clinics 的中医体质与生命周期测试！您的身心能量分析报告已就绪：",
     dominant: "主导能量（先天强项）",
     deficient: "偏弱能量（先天弱项）",
+    symptoms_title: "🩺 身心对症分析与建议",
     action_report: "查看我的完整能量报告与生命节律 ➔",
     action_book: "在线预约 David Cai 医生门诊治疗 ➔",
     footer: "本测试结果基于传统天干地支数理与黄帝内经经典，如需更精准的临床诊断与针对性针灸治疗，建议预约蔡医生面诊进行脉诊评估。",
@@ -25,21 +26,23 @@ const emailTemplates = {
     intro: "Thank you for completing the TCM Constitution & Life Cycle Assessment with AcuTherapy Clinics! Your body & mind energy charter is ready:",
     dominant: "Dominant Element",
     deficient: "Deficient Element",
+    symptoms_title: "🩺 PERSONALIZED WELLNESS INSIGHTS",
     action_report: "View My Full Interactive Report & Life Cycle ➔",
     action_book: "Book a Clinic Appointment with Dr. David Cai ➔",
     footer: "This assessment is based on traditional Chinese medicine elements and Huangdi Neijing cycles. For a precise medical diagnosis and custom acupuncture plan, we recommend scheduling an in-person pulse diagnosis.",
     signature: "The AcuTherapy Clinics Medical Team"
   },
   ja: {
-    subject: "✨ あなたの五行エネルギー诊断书＆お守り壁纸 - AcuTherapy Clinics",
-    greeting: "亲爱なる",
+    subject: "✨ あなたの五行エネルギー診断書＆お守り壁紙 - AcuTherapy Clinics",
+    greeting: "親愛なる",
     intro: "AcuTherapy Clinics の东洋医学体质＆生命周期テストを完了していただき、ありがとうございます！诊断书が完成しました：",
-    dominant: "横位な属性",
+    dominant: "優位な属性",
     deficient: "不足するエネルギー",
+    symptoms_title: "🩺 パーソナライズされた養生アドバイス",
     action_report: "完全版レポート＆生命リズムを表示する ➔",
-    action_book: "デビッド・ツァイ医师の鍼灸面诊を予約する ➔",
+    action_book: "デビッド・ツァイ医師の鍼灸面診を予約する ➔",
     footer: "この诊断は传统中医学の阴阳五行说に基づいています。より详细な临床诊断とパーソナライズ鍼灸治疗を受けるには、直接の対面诊疗をご予約ください。",
-    signature: "AcuTherapy Clinics 医疗チーム"
+    signature: "AcuTherapy Clinics 医療チーム"
   }
 };
 
@@ -131,7 +134,7 @@ export default async function handler(req, res) {
 
     if (activeSymptoms && activeSymptoms.length > 0 && !activeSymptoms.includes('none')) {
       symptomBlocksHtml += `<div style="background-color: #F8FAFC; border: 1px dashed #CBD5E1; padding: 16px; border-radius: 12px; margin: 20px 0;">
-        <h4 style="margin: 0 0 10px 0; font-size: 13px; font-weight: 800; color: #1E293B; text-transform: uppercase; border-bottom: 2px solid #E2E8F0; padding-bottom: 6px;">🩺 身心对症分析与建议 / PERSONALIZED WELLNESS INSIGHTS</h4>
+        <h4 style="margin: 0 0 10px 0; font-size: 13px; font-weight: 800; color: #1E293B; text-transform: uppercase; border-bottom: 2px solid #E2E8F0; padding-bottom: 6px;">${templateText.symptoms_title}</h4>
         <div style="font-size: 12px; line-height: 1.7; color: #475569; display: flex; flex-direction: column; gap: 10px;">`;
       
       activeSymptoms.forEach(code => {
@@ -143,7 +146,7 @@ export default async function handler(req, res) {
       symptomBlocksHtml += `</div></div>`;
     } else {
       symptomBlocksHtml += `<div style="background-color: #F8FAFC; border: 1px dashed #CBD5E1; padding: 16px; border-radius: 12px; margin: 20px 0;">
-        <h4 style="margin: 0 0 10px 0; font-size: 13px; font-weight: 800; color: #1E293B; text-transform: uppercase; border-bottom: 2px solid #E2E8F0; padding-bottom: 6px;">🩺 身心对症分析与建议 / WELLNESS INSIGHTS</h4>
+        <h4 style="margin: 0 0 10px 0; font-size: 13px; font-weight: 800; color: #1E293B; text-transform: uppercase; border-bottom: 2px solid #E2E8F0; padding-bottom: 6px;">${templateText.symptoms_title}</h4>
         <p style="margin: 0; font-size: 12px; line-height: 1.7; color: #475569;">${activeReflections.none}</p>
       </div>`;
     }
