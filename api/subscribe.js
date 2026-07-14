@@ -128,9 +128,10 @@ export default async function handler(req, res) {
     // 🔮 Self-healing email sender logic
     let sendResult = null;
     let fallbackUsed = false;
+    let sandboxOwnerEmail = 'leyzax@gmail.com'; // Default sandbox owner fallback
 
-    // The dedicated clinic contact email for the Bazi constitution quiz is acuherb@yahoo.com
-    const clinicEmail = 'acuherb@yahoo.com';
+    // Default clinic email notifications destination
+    let clinicEmail = 'acuherb@yahoo.com';
 
     try {
       // 1. First attempt: Send from custom domain (info@acutherapy.com) to the user's input email
@@ -145,17 +146,26 @@ export default async function handler(req, res) {
       // If it failed because domain is not verified, catch it and fallback
       if (sendResult.error && (sendResult.error.message.includes('not verified') || sendResult.error.message.includes('verify a domain'))) {
         fallbackUsed = true;
-        console.warn('Custom domain acutherapy.com is not verified. Falling back to onboarding@resend.dev');
+        
+        // 🔮 Dynamically extract verified sandbox email from Resend's 403 error message
+        const errStr = sendResult.error.message;
+        const match = errStr.match(/\(([^)]+)\)/);
+        if (match && match[1] && match[1].includes('@')) {
+          sandboxOwnerEmail = match[1];
+          console.log('Successfully parsed Resend sandbox owner email:', sandboxOwnerEmail);
+        }
+
+        console.warn(`Custom domain not verified. Falling back to sandbox delivery to verified owner: ${sandboxOwnerEmail}`);
         
         const warningHeader = `<div style="background-color: #FEF3C7; border: 1px solid #F59E0B; color: #92400E; padding: 12px; border-radius: 8px; margin-bottom: 20px; font-size: 12px;">
           ⚠️ <strong>开发测试提示 / Sandbox Mode:</strong><br/>
-          由于您的 Resend 账户中尚未验证 <strong>acutherapy.com</strong> 域名，系统自动启用了沙盒模式，将原本发往 <strong>${email}</strong> 的邮件投递到了此所有者验证邮箱 <strong>${clinicEmail}</strong>。<br/>
+          由于您的 Resend 账户中尚未验证 <strong>acutherapy.com</strong> 域名，系统自动启用了沙盒模式，将原本发往 <strong>${email}</strong> 的邮件投递到了此所有者验证邮箱 <strong>${sandboxOwnerEmail}</strong>。<br/>
           <em>(要开启全球用户真实投递，请前往 resend.com/domains 验证您的 acutherapy.com 域名并配置 MX 记录。)</em>
         </div>`;
 
         sendResult = await resend.emails.send({
           from: 'AcuTherapy Energy Talisman <onboarding@resend.dev>',
-          to: [clinicEmail],
+          to: [sandboxOwnerEmail],
           replyTo: clinicEmail,
           subject: `[Test Sandbox] ${text.subject}`,
           html: warningHeader + htmlContent
@@ -165,9 +175,11 @@ export default async function handler(req, res) {
       // If code level exception occurred, perform last-resort fallback
       fallbackUsed = true;
       console.error('Initial send crashed. Triggering last-resort sandbox fallback:', sendErr);
+      
+      // Attempt to send to the default fallback email
       sendResult = await resend.emails.send({
         from: 'AcuTherapy Energy Talisman <onboarding@resend.dev>',
-        to: [clinicEmail],
+        to: ['leyzax@gmail.com'],
         replyTo: clinicEmail,
         subject: `[Sandbox Fallback] ${text.subject}`,
         html: `<p style="color:red;"><strong>Exception Fallback:</strong> ${sendErr.message}</p>` + htmlContent
@@ -181,9 +193,12 @@ export default async function handler(req, res) {
 
     // Also send an admin notification email to the clinic owner
     try {
+      // In sandbox mode, the admin notification must also go to the verified sandbox owner
+      let adminNotifyRecipient = fallbackUsed ? sandboxOwnerEmail : clinicEmail;
+
       await resend.emails.send({
         from: 'AcuTherapy Energy Talisman <onboarding@resend.dev>',
-        to: [clinicEmail],
+        to: [adminNotifyRecipient],
         subject: `📧 [TCM Quiz] New Lead: ${name} (${dominant}/${deficient})`,
         html: `
           <h3>New Lead Registered from Five Elements Quiz</h3>
