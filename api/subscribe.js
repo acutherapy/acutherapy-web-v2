@@ -134,7 +134,7 @@ export default async function handler(req, res) {
 
     if (activeSymptoms && activeSymptoms.length > 0 && !activeSymptoms.includes('none')) {
       symptomBlocksHtml += `<div style="background-color: #F8FAFC; border: 1px dashed #CBD5E1; padding: 16px; border-radius: 12px; margin: 20px 0;">
-        <h4 style="margin: 0 0 10px 0; font-size: 13px; font-weight: 800; color: #1E293B; text-transform: uppercase; border-bottom: 2px solid #E2E8F0; padding-bottom: 6px;">${templateText.symptoms_title}</h4>
+        <h4 style="margin: 0 0 10px 0; font-size: 13px; font-weight: 800; color: #1E293B; text-transform: uppercase; border-bottom: 2px solid #E2E8F0; padding-bottom: 6px;">${text.symptoms_title}</h4>
         <div style="font-size: 12px; line-height: 1.7; color: #475569; display: flex; flex-direction: column; gap: 10px;">`;
       
       activeSymptoms.forEach(code => {
@@ -146,7 +146,7 @@ export default async function handler(req, res) {
       symptomBlocksHtml += `</div></div>`;
     } else {
       symptomBlocksHtml += `<div style="background-color: #F8FAFC; border: 1px dashed #CBD5E1; padding: 16px; border-radius: 12px; margin: 20px 0;">
-        <h4 style="margin: 0 0 10px 0; font-size: 13px; font-weight: 800; color: #1E293B; text-transform: uppercase; border-bottom: 2px solid #E2E8F0; padding-bottom: 6px;">${templateText.symptoms_title}</h4>
+        <h4 style="margin: 0 0 10px 0; font-size: 13px; font-weight: 800; color: #1E293B; text-transform: uppercase; border-bottom: 2px solid #E2E8F0; padding-bottom: 6px;">${text.symptoms_title}</h4>
         <p style="margin: 0; font-size: 12px; line-height: 1.7; color: #475569;">${activeReflections.none}</p>
       </div>`;
     }
