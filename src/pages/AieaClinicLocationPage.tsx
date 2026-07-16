@@ -10,64 +10,6 @@ export default function AieaClinicLocationPage() {
             <Helmet>
                 <title>Aiea & Pearl City Clinic | AcuTherapy Clinics</title>
                 <meta name="description" content="Visit our Aiea / Pearl City clinic on Pali Momi St. View our address, hours of operation, and get directions for your acupuncture and pain management care." />
-                <script type="application/ld+json">
-          {`
-          {
-            "@context": "https://schema.org",
-            "@type": "MedicalClinic",
-            "name": "AcuTherapy Clinics - Aiea (Pali Momi)",
-            "logo": "https://acutherapy.com/logo.png",
-            "image": "https://acutherapy.com/images/dr-david-cai-portrait.jpg",
-            "url": "https://acutherapy.com/aiea-pearl-city-clinic",
-            "description": "Premier medical acupuncture and pain management branch clinic in Aiea / Pearl City, led by Dr. David Cai.",
-            "telephone": "+1-808-452-1900",
-            "fax": "+1-808-452-1521",
-            "parentOrganization": {
-              "@type": "MedicalOrganization",
-              "name": "AcuTherapy Clinics",
-              "url": "https://acutherapy.com"
-            },
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "98-211 Pali Momi St, Suite 604",
-              "addressLocality": "Aiea",
-              "addressRegion": "HI",
-              "postalCode": "96701",
-              "addressCountry": "US"
-            },
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": 21.3853,
-              "longitude": -157.9427
-            },
-            "openingHoursSpecification": [
-              {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                "opens": "09:00",
-                "closes": "13:00"
-              },
-              {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": "Saturday",
-                "opens": "08:00",
-                "closes": "12:00"
-              }
-            ],
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.9",
-              "reviewCount": "15",
-              "bestRating": "5",
-              "worstRating": "1"
-            },
-            "medicalSpecialty": [
-              "Acupuncture",
-              "PainManagement"
-            ]
-          }
-          `}
-        </script>
             </Helmet>
 
             <div className="bg-slate-50 py-12 md:py-20 lg:py-24 min-h-[calc(100vh-80px)]">
