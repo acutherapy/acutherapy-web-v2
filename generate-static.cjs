@@ -635,10 +635,10 @@ function buildJsonLd(route, description) {
       ]
     };
     return `<script type="application/ld+json">
-\${JSON.stringify(lilihaSchema, null, 2)}
+${JSON.stringify(lilihaSchema, null, 2)}
 </script>
 <script type="application/ld+json">
-\${JSON.stringify(aieaHomeSchema, null, 2)}
+${JSON.stringify(aieaHomeSchema, null, 2)}
 </script>`;
   }
 
