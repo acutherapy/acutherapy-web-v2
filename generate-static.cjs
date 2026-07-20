@@ -483,14 +483,23 @@ function buildJsonLd(route, description) {
 
   // 1. Home Page
   if (route === '/' || route === '') {
-    const homeSchema = {
+    const lilihaSchema = {
       '@context': 'https://schema.org',
       '@type': 'MedicalClinic',
-      'name': 'AcuTherapy Clinics',
+      'name': 'AcuTherapy Clinics - Liliha',
       'image': 'https://acutherapy.com/acutherapy-clinic-honolulu.png',
-      '@id': 'https://acutherapy.com',
+      '@id': 'https://acutherapy.com/#liliha',
       'url': 'https://acutherapy.com',
       'telephone': '+1-808-528-7177',
+      'address': {
+        '@type': 'PostalAddress',
+        'streetAddress': '1650 Liliha St, Suite 208',
+        'addressLocality': 'Honolulu',
+        'addressRegion': 'HI',
+        'postalCode': '96817',
+        'addressCountry': 'US'
+      },
+      'openingHoursSpecification': hoursHonolulu,
       'priceRange': '$$',
       'medicalSpecialty': 'Acupuncture',
       'knowsAbout': ['Pain Management', 'Sciatica', 'Whiplash', 'Cupping'],
@@ -507,38 +516,38 @@ function buildJsonLd(route, description) {
       'aggregateRating': {
         '@type': 'AggregateRating',
         'ratingValue': '4.9',
-        'reviewCount': '63',
+        'reviewCount': '64',
         'bestRating': '5',
         'worstRating': '1'
       },
       'review': [
         {
           '@type': 'Review',
-          'author': {
-            '@type': 'Person',
-            'name': 'Michael T.'
-          },
-          'datePublished': '2026-03-15',
-          'reviewBody': 'I was in a severe car crash and had terrible whiplash. Dr. David Cai completely relieved my neck pain after just 4 sessions. Highly recommend their Aiea clinic!',
-          'reviewRating': {
-            '@type': 'Rating',
-            'ratingValue': '5',
-            'bestRating': '5'
-          }
+          'author': { '@type': 'Person', 'name': 'Sarah L.' },
+          'datePublished': '2026-05-20',
+          'reviewBody': 'Best acupuncture on Oahu. They helped me run through my HMSA insurance seamlessly with zero hassle. The medical massage is incredible too.',
+          'reviewRating': { '@type': 'Rating', 'ratingValue': '5', 'bestRating': '5' }
         },
         {
           '@type': 'Review',
-          'author': {
-            '@type': 'Person',
-            'name': 'Sarah L.'
-          },
-          'datePublished': '2026-05-20',
-          'reviewBody': 'Best acupuncture on Oahu. They helped me run through my HMSA insurance seamlessly with zero hassle. The medical massage is incredible too.',
-          'reviewRating': {
-            '@type': 'Rating',
-            'ratingValue': '5',
-            'bestRating': '5'
-          }
+          'author': { '@type': 'Person', 'name': 'Froebel Garcia' },
+          'datePublished': '2026-03-16',
+          'reviewBody': "I can't thank Dr. David Cai enough! He is the owner and founder of Acutherapy Clinic, and I have been with him since the very beginning when he first opened his doors. Before I met Dr. Cai, I was in constant pain and struggling every day. Thanks to his care, expertise, and dedication, he was the one who truly healed me. From the moment I walked into his clinic, I felt welcomed, understood, and confident that I was in the best hands. If you are looking for a doctor who genuinely cares about your well-being and can help you live pain-free, I wholeheartedly recommend Dr. Cai and Acutherapy Clinic. He has truly changed my life.",
+          'reviewRating': { '@type': 'Rating', 'ratingValue': '5', 'bestRating': '5' }
+        },
+        {
+          '@type': 'Review',
+          'author': { '@type': 'Person', 'name': 'Mila Ildefonso' },
+          'datePublished': '2025-09-08',
+          'reviewBody': "I came to Acutherapy Clinic at Liliha Office for my back and hips chronic pain that I'd been dealing with for months. After just some sessions, the constant pain I had been experiencing has significantly reduced. What sets Dr David Cai apart is his compassionate approach and willingness to listen. He takes time to understand my pain and explained the treatment plan clearly. I'm now feeling better and would highly recommended his services anyone suffering from pain",
+          'reviewRating': { '@type': 'Rating', 'ratingValue': '5', 'bestRating': '5' }
+        },
+        {
+          '@type': 'Review',
+          'author': { '@type': 'Person', 'name': 'Ryan Ganeku' },
+          'datePublished': '2025-09-15',
+          'reviewBody': 'Clinic is clean and is very welcoming in Liliha. Lots of parking which I believe is always important. Easy to schedule appointments. Been going there for about a month now and recommend this place. I believe I am slowly recovering from my car accident thanx to Acutherapy Clinic!! Go check them out!',
+          'reviewRating': { '@type': 'Rating', 'ratingValue': '5', 'bestRating': '5' }
         }
       ],
       'healthPlanNetworkId': [
@@ -592,12 +601,48 @@ function buildJsonLd(route, description) {
         }
       ]
     };
+    const aieaHomeSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'MedicalClinic',
+      'name': 'AcuTherapy Clinics - Aiea',
+      '@id': 'https://acutherapy.com/#aiea',
+      'url': 'https://acutherapy.com/aiea-pearl-city-clinic',
+      'telephone': '+1-808-452-1900',
+      'address': {
+        '@type': 'PostalAddress',
+        'streetAddress': '98-211 Pali Momi St, Suite 604',
+        'addressLocality': 'Aiea',
+        'addressRegion': 'HI',
+        'postalCode': '96701',
+        'addressCountry': 'US'
+      },
+      'openingHoursSpecification': hoursAiea,
+      'aggregateRating': {
+        '@type': 'AggregateRating',
+        'ratingValue': '4.9',
+        'reviewCount': '15',
+        'bestRating': '5',
+        'worstRating': '1'
+      },
+      'review': [
+        {
+          '@type': 'Review',
+          'author': { '@type': 'Person', 'name': 'Brian Gorberg' },
+          'datePublished': '2025-02-17',
+          'reviewBody': "Incredible experience! I never tried acupuncture before my first visit. I had suffered a disc herniation in September, which resulted in nerve damage in my left leg. Doctor David helped relieve this with acupuncture. I was very scared because I have needles but David made me feel comfortable and confident in his skills. When he put the needles in me, I felt a crazy muscle twitching sensation in my whole left leg. It felt like an electric shock. It wasn't painful at all, but it sure did feel weird. I laid still for 20 minutes with the needles in my leg. It felt like my muscle knot was being released. I honestly didn't feel the true effects until two days later. I finally was able to surf again with no pain! My muscle knot released a lot of tension and my sciatica calmed down. My back felt strong and my whole body feels so much looser. I would recommend this treatment to anyone who has been suffering from mental and physical pain. David is a great doctor!",
+          'reviewRating': { '@type': 'Rating', 'ratingValue': '5', 'bestRating': '5' }
+        }
+      ]
+    };
     return `<script type="application/ld+json">
-${JSON.stringify(homeSchema, null, 2)}
+\${JSON.stringify(lilihaSchema, null, 2)}
+</script>
+<script type="application/ld+json">
+\${JSON.stringify(aieaHomeSchema, null, 2)}
 </script>`;
   }
 
-  // 2. Aiea Clinic / Pearl City pages
+    // 2. Aiea Clinic / Pearl City pages
   if (route === '/aiea-pearl-city-clinic' || route === '/aiea-acupuncture' || route === '/acupuncture-pearl-city') {
     const aieaSchema = {
       '@context': 'https://schema.org',
