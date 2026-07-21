@@ -402,7 +402,8 @@ const PERSON_SCHEMAS = {
     hasCredential: [
       { '@type': 'EducationalOccupationalCredential', credentialCategory: 'license', name: 'Hawaii Licensed Massage Therapist', identifier: '7543' },
       { '@type': 'EducationalOccupationalCredential', credentialCategory: 'license', name: 'Hawaii Licensed Acupuncturist', identifier: 'ACU-1125' },
-      { '@type': 'EducationalOccupationalCredential', credentialCategory: 'certification', name: 'NCCAOM Diplomate of Acupuncture', identifier: '962-1001-522' },
+      { '@type': 'EducationalOccupationalCredential', credentialCategory: 'certification', name: 'NCCAOM Diplomate of Acupuncture (Dipl. Ac.)', identifier: '962-1001-522' },
+      { '@type': 'EducationalOccupationalCredential', credentialCategory: 'certification', name: 'NCCAOM Diplomate of Chinese Herbology (Dipl. C.H.)', identifier: '962-1001-522' },
     ],
     alumniOf: [
       { '@type': 'EducationalOrganization', name: 'Beijing University of Chinese Medicine', address: 'Beijing, China' },
@@ -475,7 +476,8 @@ const DAVID_NOSCRIPT_BODY = `<h1>Dr. David Cai, O.M.D., L.Ac., L.M.T.</h1>
 <ul>
 <li>Hawaii Licensed Acupuncturist (License #ACU-1125)</li>
 <li>Hawaii Licensed Massage Therapist (License #7543)</li>
-<li>NCCAOM Diplomate of Acupuncture (#962-1001-522)</li>
+<li>NCCAOM Diplomate of Acupuncture (Dipl. Ac.) (#962-1001-522)</li>
+<li>NCCAOM Diplomate of Chinese Herbology (Dipl. C.H.) (#962-1001-522)</li>
 <li>O.M.D. &mdash; Doctor of Oriental Medicine, Beijing University of Chinese Medicine, 1991</li>
 <li>Member, American Association of Acupuncture and Oriental Medicine (AAAOM)</li>
 <li>Member, AcuPlan Hawaii</li>
@@ -583,7 +585,7 @@ const FERTILITY_NOSCRIPT_BODY = `<h1>Fertility Acupuncture in Honolulu, Hawaii</
 <h2>Our CenterGy Approach</h2>
 <p>Our signature CenterGy (Synergies) method &mdash; co-developed by Dr. David Cai and Lisa Long &mdash; uses precision constitutional diagnosis to identify reproductive imbalances at their root. CenterGy can be delivered with or without acupuncture needles, making it accessible to patients with needle sensitivity, which is common during the emotionally demanding journey of fertility treatment.</p>
 <h2>Our Practitioners</h2>
-<p>Dr. David Cai, O.M.D., L.Ac., L.M.T. &mdash; Founder, graduate of Beijing University of Chinese Medicine (1991), 30+ years of clinical experience including women&rsquo;s health. Hawaii Licensed Acupuncturist ACU-1125, NCCAOM Dipl. Ac. 962-1001-522.</p>
+<p>Dr. David Cai, O.M.D., L.Ac., L.M.T. &mdash; Founder, graduate of Beijing University of Chinese Medicine (1991), 30+ years of clinical experience including women&rsquo;s health. Hawaii Licensed Acupuncturist ACU-1125, NCCAOM Dipl. Ac. &amp; Dipl. C.H. #962-1001-522.</p>
 <p>Lisa Long, O.M.D., L.M.T. &mdash; Senior licensed massage therapist with 30+ years of experience, co-developer of CenterGy (Synergies), specializing in women&rsquo;s health, holistic wellness, and reproductive support. Hawaii LMT MAT-17832.</p>
 <h2>Our Locations</h2>
 <ul>
@@ -659,7 +661,7 @@ const MOXIBUSTION_NOSCRIPT_BODY = `<h1>Moxibustion Therapy in Honolulu, Hawaii</
 <h2>What to Expect</h2>
 <p>Your moxibustion session begins with a TCM constitutional assessment by Dr. David Cai to identify cold or deficient patterns. Treatment typically lasts 20&ndash;40 minutes and is often combined with acupuncture or medical massage for enhanced effect. Please advise us of any respiratory sensitivities so we can use smokeless moxa alternatives when appropriate.</p>
 <h2>Our Practitioners</h2>
-<p>Dr. David Cai, O.M.D., L.Ac., L.M.T. &mdash; Founder, 30+ years of TCM clinical experience, graduate of Beijing University of Chinese Medicine (1991). Hawaii Licensed Acupuncturist ACU-1125, NCCAOM Dipl. Ac. 962-1001-522.</p>
+<p>Dr. David Cai, O.M.D., L.Ac., L.M.T. &mdash; Founder, 30+ years of TCM clinical experience, graduate of Beijing University of Chinese Medicine (1991). Hawaii Licensed Acupuncturist ACU-1125, NCCAOM Dipl. Ac. &amp; Dipl. C.H. #962-1001-522.</p>
 <h2>Our Locations</h2>
 <ul>
 <li><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</li>
