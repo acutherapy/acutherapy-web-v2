@@ -56,7 +56,7 @@ export default function AcupunctureHonoluluChinesePage() {
                   {
                     "@type": "OpeningHoursSpecification",
                     "dayOfWeek": "Saturday",
-                    "opens": "08:00",
+                    "opens": "09:00",
                     "closes": "12:00"
                   }
                 ]
@@ -83,7 +83,7 @@ export default function AcupunctureHonoluluChinesePage() {
                   {
                     "@type": "OpeningHoursSpecification",
                     "dayOfWeek": "Saturday",
-                    "opens": "08:00",
+                    "opens": "09:00",
                     "closes": "12:00"
                   }
                 ]
