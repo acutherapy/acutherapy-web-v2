@@ -85,6 +85,7 @@ import NotFoundPage from './pages/NotFoundPage';
 import HawaiiAutoAccidentAcupunctureGuidePage from './pages/HawaiiAutoAccidentAcupunctureGuidePage';
 import OahuWorkersCompAcupunctureApprovalPage from './pages/OahuWorkersCompAcupunctureApprovalPage';
 import VeteransAcupunctureHonoluluAieaPage from './pages/VeteransAcupunctureHonoluluAieaPage';
+import FertilityAcupunctureHonoluluPage from './pages/FertilityAcupunctureHonoluluPage';
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -601,6 +602,7 @@ export default function App() {
           <Route path="/en/services/acupuncture" element={<AcupunctureHonoluluPage />} />
           <Route path="/en/services/medical-massage" element={<MedicalMassageHonoluluPage />} />
           <Route path="/cupping-gua-sha-honolulu" element={<FireCuppingTherapyHonoluluPage />} />
+          <Route path="/fertility-acupuncture-honolulu" element={<FertilityAcupunctureHonoluluPage />} />
           <Route path="/en/services/insurance-payment" element={<InsuranceAcceptedPage />} />
           
           <Route path="/back-neck-pain" element={<BackPainAcupunctureHonoluluPage />} />
@@ -618,3 +620,4 @@ export default function App() {
     </HelmetProvider>
   );
 }
+
