@@ -449,6 +449,39 @@ const DAVID_NOSCRIPT_BODY = `<h1>Dr. David Cai, O.M.D., L.Ac., L.M.T.</h1>
 <p>Monday&ndash;Friday 9:00 AM &ndash; 1:00 PM | Saturday 9:00 AM &ndash; 12:00 PM | Sunday closed</p>
 <h2>Insurance Accepted</h2>
 <p>Workers&rsquo; Compensation, Auto Accident PIP (Hawaii No-Fault), Veterans Community Care, UHA, HMAA, Medicare Supplement, AARP, Humana, AshLink, and more.</p>`;
+const HOME_NOSCRIPT_BODY = `<h1>AcuTherapy Clinics &ndash; Honolulu&rsquo;s Trusted Acupuncture Provider</h1>
+<p>AcuTherapy Clinics offers licensed acupuncture, Traditional Chinese Medicine, and medical massage at two convenient Oahu locations &mdash; Honolulu (Liliha) and Aiea (Pearl City). Founded in 2014 by Dr. David Cai, O.M.D., L.Ac., L.M.T., the clinic has helped thousands of Hawaii patients recover from pain, injury, and chronic conditions using evidence-based Eastern medicine techniques.</p>
+<h2>Conditions We Treat</h2>
+<ul>
+<li>Back pain &mdash; acute and chronic, lower back, disc herniation</li>
+<li>Sciatica and nerve pain</li>
+<li>Neck pain and whiplash from auto accidents</li>
+<li>Shoulder, knee, hip, and joint pain</li>
+<li>Sports injuries and workers&rsquo; compensation injuries</li>
+<li>Headaches and migraines</li>
+<li>Stress, anxiety, and sleep disorders</li>
+<li>Women&rsquo;s health and fertility support</li>
+</ul>
+<h2>Our Services</h2>
+<ul>
+<li><strong>Acupuncture</strong> &mdash; precision needle therapy targeting pain and systemic conditions</li>
+<li><strong>CenterGy (Synergies)</strong> &mdash; our signature diagnostic and energy-therapy method, available with or without needles</li>
+<li><strong>Medical Massage</strong> &mdash; therapeutic massage for musculoskeletal pain and recovery</li>
+<li><strong>Fire Cupping</strong> &mdash; traditional negative-pressure therapy for deep muscle tension</li>
+</ul>
+<h2>Insurance Accepted</h2>
+<p>Workers&rsquo; Compensation, Auto Accident PIP (Hawaii No-Fault), Veterans Community Care, UHA, HMAA, Medicare Supplement, AARP, Humana, AshLink, and more. Many patients pay $0 out of pocket under Workers&rsquo; Comp and Auto PIP coverage.</p>
+<h2>Our Locations</h2>
+<ul>
+<li><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</li>
+<li><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</li>
+</ul>
+<p>Hours: Monday&ndash;Friday 9:00 AM &ndash; 1:00 PM | Saturday 9:00 AM &ndash; 12:00 PM | Sunday closed</p>
+<h2>Our Practitioners</h2>
+<p>Dr. David Cai, O.M.D., L.Ac., L.M.T. &mdash; Founder, 30+ years of clinical experience, Beijing University of Chinese Medicine graduate, NIH-funded research consultant at George Washington University Medical Center.</p>
+<p>Lisa Long, O.M.D., L.M.T. &mdash; Senior massage therapist with 30+ years of experience, co-developer of CenterGy (Synergies), serving both Liliha and Aiea locations.</p>
+<h2>Patient Reviews</h2>
+<p>Rated 4.9 stars across 79 Google reviews at both locations. Patients consistently highlight pain relief outcomes, Dr. Cai&rsquo;s holistic approach, and the clinic&rsquo;s welcoming atmosphere.</p>`;
 
 function buildJsonLd(route, description) {
   const hoursAiea = [
@@ -867,6 +900,11 @@ function buildHeadTags(route, meta) {
 
 function buildRootContent(route, meta) {
     const navLinks = buildNavLinks(route);
+    if (route === '/' || route === '') {
+      return `<div id="root"></div><noscript>${HOME_NOSCRIPT_BODY}<nav>
+      ${navLinks}
+  </nav></noscript>`;
+    }
     if (route === '/about') {
       return `<div id="root"></div><noscript>${ABOUT_NOSCRIPT_BODY}<nav>
       ${navLinks}
