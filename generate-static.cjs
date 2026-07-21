@@ -92,6 +92,7 @@ const ALL_ROUTES = [
   '/hawaii-auto-accident-acupuncture-guide',
   '/oahu-workers-comp-acupuncture-approval',
   '/veterans-acupuncture-honolulu-aiea',
+  '/fertility-acupuncture-honolulu',
   '/lgzf',
   '/constitution-test',
   '/constitution-teaser',
@@ -319,6 +320,16 @@ const PAGE_DATA = {
     description: "AcuTherapy Clinics accepts Workers' Comp, Auto Accident PIP, Veterans Care, UHA, HMAA, AARP, Humana, AshLink, and more. Many patients pay $0 out of pocket.",
     h1: 'Insurance Accepted – AcuTherapy Clinics',
   },
+  '/cupping-gua-sha-honolulu': {
+    title: 'Cupping & Gua Sha Therapy in Honolulu | AcuTherapy Clinics',
+    description: 'Cupping and gua sha therapy in Honolulu for muscle tension, circulation, and pain relief. TCM-trained practitioners at AcuTherapy Clinics, Liliha & Aiea.',
+    h1: 'Cupping & Gua Sha Therapy – Honolulu, Hawaii',
+  },
+  '/fertility-acupuncture-honolulu': {
+    title: 'Fertility Acupuncture in Honolulu, Hawaii | AcuTherapy Clinics',
+    description: 'Fertility acupuncture in Honolulu to support IVF, IUI, and natural conception. TCM-based hormonal balance and uterine blood flow at AcuTherapy Clinics, Oahu.',
+    h1: 'Fertility Acupuncture – Honolulu, Hawaii',
+  },
 };
 
 const LOWERCASE_WORDS = new Set(['in', 'of', 'for', 'the', 'and', 'a', 'an']);
@@ -517,6 +528,57 @@ const HOME_NOSCRIPT_BODY = `<h1>AcuTherapy Clinics &ndash; Honolulu&rsquo;s Trus
 <p>Lisa Long, O.M.D., L.M.T. &mdash; Senior massage therapist with 30+ years of experience, co-developer of CenterGy (Synergies), serving both Liliha and Aiea locations.</p>
 <h2>Patient Reviews</h2>
 <p>Rated 4.9 stars across 79 Google reviews at both locations. Patients consistently highlight pain relief outcomes, Dr. Cai&rsquo;s holistic approach, and the clinic&rsquo;s welcoming atmosphere.</p>`;
+
+const CUPPING_NOSCRIPT_BODY = `<h1>Cupping &amp; Gua Sha Therapy in Honolulu</h1>
+<p>AcuTherapy Clinics offers traditional fire cupping and gua sha therapy at our Honolulu (Liliha) and Aiea (Pearl City) locations. These time-honored Traditional Chinese Medicine techniques are used alongside acupuncture and medical massage to relieve deep muscle tension, improve circulation, and accelerate recovery from pain and injury.</p>
+<h2>What Is Cupping Therapy?</h2>
+<p>Cupping is a negative-pressure therapy in which glass cups are applied to the skin to create suction. This lifts connective tissue, draws stagnant blood to the surface, and floods the underlying muscles with fresh, oxygenated blood. Fire cupping — the traditional method using heated glass cups — is particularly effective for chronic muscle tightness, sports injuries, and pain related to auto accidents or workers&rsquo; compensation injuries.</p>
+<h2>What Is Gua Sha?</h2>
+<p>Gua sha involves firm stroking of the skin with a smooth-edged tool to break up fascial adhesions, release heat, and stimulate the body&rsquo;s natural healing response. It is commonly used for neck and shoulder tension, headaches, and upper respiratory conditions.</p>
+<h2>Conditions We Treat</h2>
+<ul>
+<li>Chronic back and neck muscle tension</li>
+<li>Sports injuries and muscle strains</li>
+<li>Auto accident and workplace injury recovery</li>
+<li>Headaches and migraines</li>
+<li>Poor circulation and lymphatic stagnation</li>
+<li>Upper respiratory congestion (cupping on upper back)</li>
+</ul>
+<h2>What to Expect</h2>
+<p>Cupping sessions typically last 20&ndash;30 minutes as part of a combined treatment. Circular marks left by cupping indicate areas of blood stagnation clearing and typically fade within 3&ndash;7 days. Most patients report significant muscle relaxation and reduced pain immediately following treatment.</p>
+<h2>Insurance &amp; Locations</h2>
+<p>Workers&rsquo; Compensation, Auto Accident PIP (Hawaii No-Fault), Veterans Community Care, UHA, HMAA, Medicare Supplement, AARP, Humana, and AshLink accepted.</p>
+<ul>
+<li><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</li>
+<li><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</li>
+</ul>
+<p>Hours: Monday&ndash;Friday 9:00 AM &ndash; 1:00 PM | Saturday 9:00 AM &ndash; 12:00 PM | Sunday closed</p>`;
+
+const FERTILITY_NOSCRIPT_BODY = `<h1>Fertility Acupuncture in Honolulu, Hawaii</h1>
+<p>AcuTherapy Clinics offers fertility acupuncture as part of a comprehensive women&rsquo;s health program at our two Oahu locations &mdash; Honolulu (Liliha) and Aiea (Pearl City). Drawing on Traditional Chinese Medicine principles and more than 30 years of clinical experience, Dr. David Cai and Lisa Long support patients who are trying to conceive naturally, preparing for IVF or IUI, or managing reproductive health conditions such as PCOS and endometriosis.</p>
+<h2>How Acupuncture May Support Fertility</h2>
+<p>In Traditional Chinese Medicine, fertility is closely linked to the smooth flow of Qi and blood through the reproductive organs. Acupuncture targets specific meridian points to regulate the hypothalamic-pituitary-ovarian axis, improve uterine blood flow, reduce cortisol and stress hormones, and support a balanced hormonal environment. Research suggests acupuncture may complement assisted reproductive technologies. Results vary by individual; we recommend coordinating with your reproductive endocrinologist.</p>
+<h2>Conditions We May Help</h2>
+<ul>
+<li>Difficulty conceiving (unexplained infertility)</li>
+<li>Irregular menstrual cycles and hormonal imbalance</li>
+<li>Polycystic ovary syndrome (PCOS)</li>
+<li>Endometriosis-related fertility challenges</li>
+<li>IVF and IUI preparation and recovery support</li>
+<li>Recurrent miscarriage support</li>
+<li>Stress and anxiety related to fertility treatments</li>
+</ul>
+<h2>Our CenterGy Approach</h2>
+<p>Our signature CenterGy (Synergies) method &mdash; co-developed by Dr. David Cai and Lisa Long &mdash; uses precision constitutional diagnosis to identify reproductive imbalances at their root. CenterGy can be delivered with or without acupuncture needles, making it accessible to patients with needle sensitivity, which is common during the emotionally demanding journey of fertility treatment.</p>
+<h2>Our Practitioners</h2>
+<p>Dr. David Cai, O.M.D., L.Ac., L.M.T. &mdash; Founder, graduate of Beijing University of Chinese Medicine (1991), 30+ years of clinical experience including women&rsquo;s health. Hawaii Licensed Acupuncturist ACU-1125, NCCAOM Dipl. Ac. 962-1001-522.</p>
+<p>Lisa Long, O.M.D., L.M.T. &mdash; Senior licensed massage therapist with 30+ years of experience, co-developer of CenterGy (Synergies), specializing in women&rsquo;s health, holistic wellness, and reproductive support. Hawaii LMT MAT-17832.</p>
+<h2>Our Locations</h2>
+<ul>
+<li><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</li>
+<li><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</li>
+</ul>
+<p>Hours: Monday&ndash;Friday 9:00 AM &ndash; 1:00 PM | Saturday 9:00 AM &ndash; 12:00 PM | Sunday closed</p>`;
 
 function buildJsonLd(route, description) {
   const hoursAiea = [
@@ -877,7 +939,39 @@ ${JSON.stringify(doctorSchema, null, 2)}
 </script>`;
   }
 
-  // 6. Default clean WebPage schema for other pages
+  // 6. Fertility page
+  if (route === '/fertility-acupuncture-honolulu') {
+    const fertilitySchema = {
+      '@context': 'https://schema.org',
+      '@type': 'MedicalClinic',
+      '@id': `${BASE_URL}/#liliha`,
+      'name': 'AcuTherapy Clinics',
+      'url': `${BASE_URL}`,
+      'telephone': '+1-808-528-7177',
+      'address': {
+        '@type': 'PostalAddress',
+        'streetAddress': '1650 Liliha St, Suite 208',
+        'addressLocality': 'Honolulu',
+        'addressRegion': 'HI',
+        'postalCode': '96817',
+        'addressCountry': 'US'
+      },
+      'medicalSpecialty': ['Acupuncture', 'WomensHealth'],
+      'knowsAbout': ['Fertility Acupuncture', 'IVF Support', 'PCOS Treatment', 'Women\'s Health TCM', 'CenterGy'],
+      'availableService': {
+        '@type': 'MedicalProcedure',
+        'name': 'Fertility Acupuncture',
+        'procedureType': 'https://schema.org/TherapeuticProcedure',
+        'description': 'Acupuncture and Traditional Chinese Medicine to support fertility, including IVF preparation, PCOS management, and hormonal regulation.',
+        'bodyLocation': 'Reproductive System'
+      }
+    };
+    return `<script type="application/ld+json">
+${JSON.stringify(fertilitySchema, null, 2)}
+</script>`;
+  }
+
+  // 7. Default clean WebPage schema for other pages
   const webPageSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
@@ -947,6 +1041,16 @@ function buildRootContent(route, meta) {
     }
     if (route === '/dr-david-cai-honolulu-acupuncturist') {
       return `<div id="root"></div><noscript>${DAVID_NOSCRIPT_BODY}<nav>
+      ${navLinks}
+  </nav></noscript>`;
+    }
+    if (route === '/cupping-gua-sha-honolulu') {
+      return `<div id="root"></div><noscript>${CUPPING_NOSCRIPT_BODY}<nav>
+      ${navLinks}
+  </nav></noscript>`;
+    }
+    if (route === '/fertility-acupuncture-honolulu') {
+      return `<div id="root"></div><noscript>${FERTILITY_NOSCRIPT_BODY}<nav>
       ${navLinks}
   </nav></noscript>`;
     }
