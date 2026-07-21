@@ -169,10 +169,10 @@ const PAGE_DATA = {
     h1: 'Medical Massage – Honolulu, Hawaii',
   },
   '/fire-cupping-therapy-honolulu': {
-    title: 'Fire Cupping Therapy in Honolulu | AcuTherapy Clinics',
+    title: 'Fire Cupping & Gua Sha Therapy in Honolulu | AcuTherapy Clinics',
     description:
-      'Traditional fire cupping therapy in Honolulu. Relieves muscle tension, improves circulation, and treats back pain and sports injuries.',
-    h1: 'Fire Cupping Therapy – Honolulu, Hawaii',
+      'Fire cupping and gua sha therapy in Honolulu. Relieve deep muscle tension, improve circulation, and accelerate recovery. AcuTherapy Clinics, Liliha & Aiea.',
+    h1: 'Fire Cupping & Gua Sha Therapy – Honolulu, Hawaii',
   },
   '/acupuncture-waikiki': {
     title: 'Acupuncture in Waikiki, Honolulu | AcuTherapy Clinics',
@@ -1044,7 +1044,7 @@ function buildRootContent(route, meta) {
       ${navLinks}
   </nav></noscript>`;
     }
-    if (route === '/cupping-gua-sha-honolulu') {
+    if (route === '/fire-cupping-therapy-honolulu' || route === '/cupping-gua-sha-honolulu') {
       return `<div id="root"></div><noscript>${CUPPING_NOSCRIPT_BODY}<nav>
       ${navLinks}
   </nav></noscript>`;
