@@ -93,6 +93,8 @@ const ALL_ROUTES = [
   '/oahu-workers-comp-acupuncture-approval',
   '/veterans-acupuncture-honolulu-aiea',
   '/fertility-acupuncture-honolulu',
+  '/moxibustion-honolulu',
+  '/acupuncture-makiki',
   '/lgzf',
   '/constitution-test',
   '/constitution-teaser',
@@ -329,6 +331,16 @@ const PAGE_DATA = {
     title: 'Fertility Acupuncture in Honolulu, Hawaii | AcuTherapy Clinics',
     description: 'Fertility acupuncture in Honolulu to support IVF, IUI, and natural conception. TCM-based hormonal balance and uterine blood flow at AcuTherapy Clinics, Oahu.',
     h1: 'Fertility Acupuncture – Honolulu, Hawaii',
+  },
+  '/moxibustion-honolulu': {
+    title: 'Moxibustion Therapy in Honolulu, Hawaii | AcuTherapy Clinics',
+    description: 'Moxibustion therapy in Honolulu — traditional TCM heat therapy for chronic pain, cold conditions, menstrual health, and fatigue. AcuTherapy Clinics, Oahu.',
+    h1: 'Moxibustion Therapy – Honolulu, Hawaii',
+  },
+  '/acupuncture-makiki': {
+    title: 'Acupuncture Near Makiki, Honolulu | AcuTherapy Clinics',
+    description: 'Acupuncture clinic near Makiki and downtown Honolulu. Expert TCM for back pain, stress, auto injuries, and sports recovery. AcuTherapy Clinics, Liliha.',
+    h1: 'Acupuncture Near Makiki – Honolulu',
   },
 };
 
@@ -578,6 +590,109 @@ const FERTILITY_NOSCRIPT_BODY = `<h1>Fertility Acupuncture in Honolulu, Hawaii</
 <li><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</li>
 <li><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</li>
 </ul>
+<p>Hours: Monday&ndash;Friday 9:00 AM &ndash; 1:00 PM | Saturday 9:00 AM &ndash; 12:00 PM | Sunday closed</p>`;
+
+const INSURANCE_NOSCRIPT_BODY = `<h1>Insurance Accepted &ndash; AcuTherapy Clinics Honolulu</h1>
+<p>AcuTherapy Clinics accepts a wide range of insurance plans at our Honolulu (Liliha) and Aiea (Pearl City) locations. Many patients pay $0 out of pocket. Below is a complete list of accepted plans and how each one works for acupuncture and medical massage in Hawaii.</p>
+<h2>Workers&rsquo; Compensation</h2>
+<p>Hawaii Workers&rsquo; Compensation covers acupuncture and medical massage for workplace injuries including back pain, repetitive strain, and soft tissue injuries. We handle all direct billing and authorization paperwork. $0 out of pocket for qualifying patients.</p>
+<h2>Auto Accident PIP (Hawaii No-Fault)</h2>
+<p>Hawaii&rsquo;s mandatory Personal Injury Protection (PIP) insurance covers acupuncture and massage therapy at 100% for injuries sustained in auto accidents &mdash; whiplash, back pain, neck injuries, and more. No deductibles. We bill your auto insurer directly.</p>
+<h2>Veterans Community Care (VA CCN)</h2>
+<p>We are an authorized VA Community Care Network (CCN) provider. Eligible veterans can receive acupuncture and pain management care covered by the VA with a community care referral from their primary VA provider.</p>
+<h2>UHA (University Health Alliance)</h2>
+<p>UHA members with acupuncture benefits can use their coverage at both AcuTherapy locations. Contact our front desk to verify your plan&rsquo;s visit limits and copay amounts.</p>
+<h2>HMAA (Hawaii Mainland Administrators)</h2>
+<p>HMAA members may have acupuncture benefits through their employer-sponsored health plan. We bill HMAA directly &mdash; call us to verify your specific coverage before your first visit.</p>
+<h2>Medicare Supplement, AARP &amp; Humana</h2>
+<p>Medicare now covers acupuncture for chronic low back pain (up to 12 sessions per year, extendable to 20 with demonstrated improvement). AARP and Humana Medicare Supplement plans may provide additional coverage. We verify benefits at no cost to you.</p>
+<h2>AshLink and More</h2>
+<p>We also accept AshLink and additional plans. Call (808) 528-7177 (Honolulu) or (808) 452-1900 (Aiea) to verify your coverage before scheduling.</p>
+<h2>Our Locations</h2>
+<ul>
+<li><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</li>
+<li><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</li>
+</ul>
+<p>Hours: Monday&ndash;Friday 9:00 AM &ndash; 1:00 PM | Saturday 9:00 AM &ndash; 12:00 PM | Sunday closed</p>`;
+
+const KAKAAKO_NOSCRIPT_BODY = `<h1>Acupuncture Near Kakaako &ndash; Honolulu, Hawaii</h1>
+<p>AcuTherapy Clinics provides expert acupuncture, Traditional Chinese Medicine, and medical massage for patients living and working in the Kakaako and Ward Village neighborhoods of Honolulu. Our Liliha clinic is minutes from Kakaako with convenient parking &mdash; a stress-free alternative to navigating downtown congestion.</p>
+<h2>Why Kakaako Residents Choose AcuTherapy</h2>
+<p>Kakaako&rsquo;s active, professional community faces common physical demands: long hours at standing desks, intense gym training, repetitive strain from retail or hospitality work, and the cumulative stress of urban living. Dr. David Cai and Lisa Long bring 30+ years of combined clinical experience to address these patterns with precision TCM diagnosis and personalized treatment.</p>
+<h2>Conditions We Treat</h2>
+<ul>
+<li>Tech neck and cervical strain from computer and desk work</li>
+<li>Lower back pain and lumbar stiffness</li>
+<li>Sports injuries: shoulder impingement, knee pain, tennis elbow</li>
+<li>Stress, anxiety, and sleep disruption</li>
+<li>Headaches and migraines</li>
+<li>Post-workout muscle recovery</li>
+<li>Workplace injuries (Workers&rsquo; Compensation accepted)</li>
+<li>Auto accident injuries (Hawaii No-Fault PIP, 100% covered)</li>
+</ul>
+<h2>Our Services</h2>
+<ul>
+<li><strong>Acupuncture</strong> &mdash; precision needle therapy along meridians to relieve pain and restore function</li>
+<li><strong>CenterGy (Synergies)</strong> &mdash; our proprietary diagnostic and energy-therapy method, available with or without needles</li>
+<li><strong>Medical Massage (Tui-Na)</strong> &mdash; deep-tissue therapeutic massage for musculoskeletal conditions</li>
+<li><strong>Fire Cupping &amp; Gua Sha</strong> &mdash; negative-pressure therapy to release deep muscle tension and improve circulation</li>
+</ul>
+<h2>Insurance &amp; Location</h2>
+<p>Workers&rsquo; Compensation, Auto Accident PIP, Veterans Community Care, UHA, HMAA, Medicare Supplement, AARP, Humana, and AshLink accepted. Many patients pay $0 out of pocket.</p>
+<p><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</p>
+<p>Hours: Monday&ndash;Friday 9:00 AM &ndash; 1:00 PM | Saturday 9:00 AM &ndash; 12:00 PM | Sunday closed</p>`;
+
+const MOXIBUSTION_NOSCRIPT_BODY = `<h1>Moxibustion Therapy in Honolulu, Hawaii</h1>
+<p>AcuTherapy Clinics offers moxibustion therapy at our Honolulu (Liliha) and Aiea (Pearl City) locations. Moxibustion is a Traditional Chinese Medicine technique in which dried mugwort (moxa) is burned near or on acupuncture points to generate therapeutic heat, stimulate circulation, and strengthen the body&rsquo;s Qi. It is one of the foundational modalities of TCM and is often used alongside acupuncture for enhanced therapeutic effect.</p>
+<h2>What Is Moxibustion?</h2>
+<p>Moxibustion uses the sustained heat of burning compressed mugwort (Artemisia argyi) to warm meridian channels and resolve cold or stagnant conditions. Two primary methods are used: <strong>indirect moxibustion</strong> (moxa held above the skin or placed on a medium such as ginger or salt) and <strong>moxa on needle</strong> (warming the needle handle to direct heat precisely into the acupuncture point). The treatment produces a deeply penetrating warmth that patients often describe as profoundly relaxing.</p>
+<h2>Conditions Commonly Treated</h2>
+<ul>
+<li>Chronic cold-type back pain and joint stiffness</li>
+<li>Menstrual irregularities, dysmenorrhea, and cold uterus patterns</li>
+<li>Fatigue and low energy (Yang deficiency)</li>
+<li>Digestive weakness, bloating, and chronic loose stools</li>
+<li>Immune deficiency and frequent illness (recurrent colds)</li>
+<li>Arthritis aggravated by cold and damp weather</li>
+<li>Breech presentation support in late pregnancy (under licensed practitioner supervision)</li>
+</ul>
+<h2>What to Expect</h2>
+<p>Your moxibustion session begins with a TCM constitutional assessment by Dr. David Cai to identify cold or deficient patterns. Treatment typically lasts 20&ndash;40 minutes and is often combined with acupuncture or medical massage for enhanced effect. Please advise us of any respiratory sensitivities so we can use smokeless moxa alternatives when appropriate.</p>
+<h2>Our Practitioners</h2>
+<p>Dr. David Cai, O.M.D., L.Ac., L.M.T. &mdash; Founder, 30+ years of TCM clinical experience, graduate of Beijing University of Chinese Medicine (1991). Hawaii Licensed Acupuncturist ACU-1125, NCCAOM Dipl. Ac. 962-1001-522.</p>
+<h2>Our Locations</h2>
+<ul>
+<li><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</li>
+<li><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</li>
+</ul>
+<p>Hours: Monday&ndash;Friday 9:00 AM &ndash; 1:00 PM | Saturday 9:00 AM &ndash; 12:00 PM | Sunday closed</p>`;
+
+const MAKIKI_NOSCRIPT_BODY = `<h1>Acupuncture Near Makiki &ndash; Honolulu, Hawaii</h1>
+<p>AcuTherapy Clinics serves patients from the Makiki neighborhood and surrounding areas including Punchbowl, Nuuanu, and downtown Honolulu. Our Liliha clinic is just minutes from Makiki with convenient parking, offering expert acupuncture, Traditional Chinese Medicine, and medical massage for the full range of pain, injury, and wellness needs.</p>
+<h2>Why Makiki Residents Choose AcuTherapy</h2>
+<p>Makiki&rsquo;s mix of families, students, and working professionals deals with chronic pain, auto accident injuries, workplace stress, and the everyday physical toll of Oahu life. Dr. David Cai and Lisa Long have helped hundreds of patients from this community recover from pain and restore balance through personalized TCM care. With 30+ years of combined experience and multilingual staff (English and Mandarin Chinese), we make every patient feel at home.</p>
+<h2>Conditions We Treat</h2>
+<ul>
+<li>Neck and back pain from commuting and desk work</li>
+<li>Auto accident injuries (100% covered under Hawaii No-Fault PIP)</li>
+<li>Sports and recreational injuries</li>
+<li>Stress, anxiety, and insomnia</li>
+<li>Headaches and migraines</li>
+<li>Workplace injuries (Workers&rsquo; Compensation accepted)</li>
+<li>Women&rsquo;s health and fertility support</li>
+<li>General wellness and immune support</li>
+</ul>
+<h2>Our Services</h2>
+<ul>
+<li><strong>Acupuncture</strong> &mdash; precision needle therapy for pain and systemic conditions</li>
+<li><strong>CenterGy (Synergies)</strong> &mdash; signature diagnostic and energy-therapy method, available without needles</li>
+<li><strong>Medical Massage (Tui-Na)</strong> &mdash; therapeutic massage for musculoskeletal pain and recovery</li>
+<li><strong>Fire Cupping &amp; Gua Sha</strong> &mdash; traditional suction and scraping therapy for deep tension</li>
+<li><strong>Moxibustion</strong> &mdash; heat therapy for cold-pattern pain and fatigue</li>
+</ul>
+<h2>Insurance &amp; Location</h2>
+<p>Workers&rsquo; Compensation, Auto Accident PIP, Veterans Community Care, UHA, HMAA, Medicare Supplement, AARP, Humana, and AshLink accepted. Many patients pay $0 out of pocket.</p>
+<p><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</p>
 <p>Hours: Monday&ndash;Friday 9:00 AM &ndash; 1:00 PM | Saturday 9:00 AM &ndash; 12:00 PM | Sunday closed</p>`;
 
 function buildJsonLd(route, description) {
@@ -971,7 +1086,37 @@ ${JSON.stringify(fertilitySchema, null, 2)}
 </script>`;
   }
 
-  // 7. Default clean WebPage schema for other pages
+  // 7. Moxibustion page
+  if (route === '/moxibustion-honolulu') {
+    const moxSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'MedicalClinic',
+      '@id': `${BASE_URL}/#liliha`,
+      'name': 'AcuTherapy Clinics',
+      'url': `${BASE_URL}`,
+      'telephone': '+1-808-528-7177',
+      'address': {
+        '@type': 'PostalAddress',
+        'streetAddress': '1650 Liliha St, Suite 208',
+        'addressLocality': 'Honolulu',
+        'addressRegion': 'HI',
+        'postalCode': '96817',
+        'addressCountry': 'US'
+      },
+      'medicalSpecialty': 'Acupuncture',
+      'availableService': {
+        '@type': 'MedicalProcedure',
+        'name': 'Moxibustion',
+        'procedureType': 'https://schema.org/TherapeuticProcedure',
+        'description': 'Traditional Chinese Medicine heat therapy using burning mugwort to warm meridian channels, relieve cold-pattern pain, and strengthen Qi.'
+      }
+    };
+    return `<script type="application/ld+json">
+${JSON.stringify(moxSchema, null, 2)}
+</script>`;
+  }
+
+  // 8. Default clean WebPage schema for other pages
   const webPageSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
@@ -1051,6 +1196,26 @@ function buildRootContent(route, meta) {
     }
     if (route === '/fertility-acupuncture-honolulu') {
       return `<div id="root"></div><noscript>${FERTILITY_NOSCRIPT_BODY}<nav>
+      ${navLinks}
+  </nav></noscript>`;
+    }
+    if (route === '/insurance-accepted') {
+      return `<div id="root"></div><noscript>${INSURANCE_NOSCRIPT_BODY}<nav>
+      ${navLinks}
+  </nav></noscript>`;
+    }
+    if (route === '/acupuncture-kakaako') {
+      return `<div id="root"></div><noscript>${KAKAAKO_NOSCRIPT_BODY}<nav>
+      ${navLinks}
+  </nav></noscript>`;
+    }
+    if (route === '/moxibustion-honolulu') {
+      return `<div id="root"></div><noscript>${MOXIBUSTION_NOSCRIPT_BODY}<nav>
+      ${navLinks}
+  </nav></noscript>`;
+    }
+    if (route === '/acupuncture-makiki') {
+      return `<div id="root"></div><noscript>${MAKIKI_NOSCRIPT_BODY}<nav>
       ${navLinks}
   </nav></noscript>`;
     }
