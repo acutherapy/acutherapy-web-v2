@@ -169,7 +169,7 @@ export default function HomePage() {
             <Link to="/pain-management-honolulu" className="bg-white hover:bg-blue-600 hover:text-white text-slate-800 font-bold py-4 px-6 rounded-full border-2 border-slate-200 hover:border-blue-600 transition-all shadow-sm">
               😖 Chronic Pain
             </Link>
-            <Link to="/workers-comp-acupuncture-honolulu" className="bg-white hover:bg-blue-600 hover:text-white text-slate-800 font-bold py-4 px-6 rounded-full border-2 border-slate-200 hover:border-blue-600 transition-all shadow-sm">
+            <Link to="/workers-comp-injury-honolulu" className="bg-white hover:bg-blue-600 hover:text-white text-slate-800 font-bold py-4 px-6 rounded-full border-2 border-slate-200 hover:border-blue-600 transition-all shadow-sm">
               👷 Workers' Comp
             </Link>
             <Link to="/veterans-pain-relief-honolulu" className="bg-white hover:bg-blue-600 hover:text-white text-slate-800 font-bold py-4 px-6 rounded-full border-2 border-slate-200 hover:border-blue-600 transition-all shadow-sm">
@@ -488,3 +488,4 @@ export default function HomePage() {
     </div>
   );
 }
+
