@@ -697,6 +697,114 @@ const MAKIKI_NOSCRIPT_BODY = `<h1>Acupuncture Near Makiki &ndash; Honolulu, Hawa
 <p><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</p>
 <p>Hours: Monday&ndash;Friday 9:00 AM &ndash; 1:00 PM | Saturday 9:00 AM &ndash; 12:00 PM | Sunday closed</p>`;
 
+const BACK_PAIN_NOSCRIPT_BODY = `<h1>Acupuncture for Back Pain in Honolulu, Hawaii</h1>
+<p>Back pain is one of the most common reasons patients seek acupuncture at AcuTherapy Clinics in Honolulu. Whether you are dealing with an acute flare-up, a chronic condition, or a workplace or auto accident injury, our licensed practitioners provide targeted Traditional Chinese Medicine (TCM) care at our Liliha and Aiea locations.</p>
+<h2>How Acupuncture Addresses Back Pain</h2>
+<p>In TCM, back pain most commonly arises from Qi and blood stagnation in the lumbar meridians, Kidney deficiency (especially in chronic or age-related cases), or cold-damp invasion causing stiffness and heavy, aching pain. Acupuncture needles placed along the Bladder, Governing Vessel, and Kidney meridians work to move stagnant Qi, warm cold patterns, and support the body&rsquo;s own healing response.</p>
+<p>Clinically, acupuncture may help reduce muscle spasm, decrease local inflammation, and improve circulation to injured or compressed tissue. When combined with Dr. Cai&rsquo;s CenterGy (Synergies) constitutional diagnostic approach, treatment is tailored to the specific root pattern driving each patient&rsquo;s pain.</p>
+<h2>Conditions We Treat</h2>
+<ul>
+<li>Acute lower back pain (sudden onset, muscle strain)</li>
+<li>Chronic low back pain (lasting 3+ months)</li>
+<li>Lumbar disc herniation and nerve root compression</li>
+<li>Piriformis syndrome and sciatica-related back pain</li>
+<li>Postural strain from desk work or long commutes</li>
+<li>Back pain from auto accidents (covered under Hawaii No-Fault PIP)</li>
+<li>Workplace back injuries (Workers&rsquo; Compensation accepted)</li>
+</ul>
+<h2>Frequently Asked Questions</h2>
+<p><strong>Does acupuncture help back pain?</strong> Research suggests acupuncture may help reduce pain intensity and improve function in patients with low back pain. Individual results vary based on the type and duration of the condition.</p>
+<p><strong>How many sessions are needed?</strong> Many patients notice improvement within the first 4&ndash;6 sessions. Chronic conditions typically require a longer course of care. Dr. Cai will outline a treatment plan at your first visit.</p>
+<p><strong>Is back pain treatment covered by insurance?</strong> Yes — Workers&rsquo; Compensation and Auto Accident PIP (Hawaii No-Fault) fully cover acupuncture for back injuries with $0 out of pocket. We also accept UHA, HMAA, Veterans Community Care, AARP, Humana, AshLink, and more.</p>
+<h2>Our Practitioners</h2>
+<p>Dr. David Cai, O.M.D., L.Ac., L.M.T. &mdash; Founder. Graduate of Beijing University of Chinese Medicine (1991), 30+ years of clinical experience specializing in pain management and injury recovery. Hawaii Licensed Acupuncturist ACU-1125, NCCAOM Dipl. Ac. &amp; Dipl. C.H. #962-1001-522.</p>
+<p>Lisa Long, O.M.D., L.M.T. &mdash; Senior practitioner, 30+ years experience, co-developer of CenterGy (Synergies). Hawaii LMT MAT-17832.</p>
+<h2>Locations &amp; Hours</h2>
+<p><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</p>
+<p><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</p>
+<p>Hours: Monday&ndash;Friday 9:00 AM &ndash; 1:00 PM | Saturday 9:00 AM &ndash; 12:00 PM | Sunday closed</p>`;
+
+const SCIATICA_NOSCRIPT_BODY = `<h1>Sciatica Treatment in Honolulu | Acupuncture for Sciatic Nerve Pain</h1>
+<p>Sciatica — the sharp, shooting pain that radiates from the lower back down through the buttock and leg — is one of the most debilitating pain conditions we treat at AcuTherapy Clinics. Our Honolulu and Aiea clinics offer targeted acupuncture and TCM care for patients dealing with sciatic nerve compression, piriformis syndrome, and lumbar disc-related nerve pain.</p>
+<h2>TCM Approach to Sciatica</h2>
+<p>In Traditional Chinese Medicine, sciatica is most commonly classified as a Bi (obstruction) syndrome affecting the Bladder and Gallbladder meridians that run through the lower back, hip, and leg. Cold, damp, and wind pathogens invade these meridians, causing the characteristic burning, shooting, or aching pain that worsens with cold or prolonged sitting.</p>
+<p>Acupuncture points along the lumbar spine, sacrum, Gallbladder 30 (huantiao), and the posterior leg are selected to open obstruction, release piriformis tension, and reduce pressure on the sciatic nerve root. For disc-related sciatica (L4-L5, L5-S1 compression), treatment focuses on reducing local inflammation and muscle guarding around the compressed segment.</p>
+<h2>Conditions We Address</h2>
+<ul>
+<li>Lumbar disc herniation with nerve root compression (L4&ndash;S1)</li>
+<li>Piriformis syndrome causing sciatic nerve entrapment</li>
+<li>Spinal stenosis with radiating leg pain</li>
+<li>Sciatica from auto accidents or workplace injuries</li>
+<li>Chronic sciatica that has not responded to rest or medication</li>
+<li>Post-surgical sciatica and residual nerve pain</li>
+</ul>
+<h2>Frequently Asked Questions</h2>
+<p><strong>Can acupuncture help sciatica?</strong> Clinical research suggests acupuncture may reduce sciatic pain and improve function. It is commonly used alongside physical therapy and may help reduce reliance on pain medications.</p>
+<p><strong>How many sessions does sciatica require?</strong> Acute flare-ups may resolve in 4&ndash;8 sessions. Long-standing or disc-related sciatica typically requires a longer course. Dr. Cai will assess your case at the first visit and provide a realistic timeline.</p>
+<p><strong>Is acupuncture for sciatica covered by insurance?</strong> Workers&rsquo; Compensation and Hawaii No-Fault Auto PIP cover sciatica treatment at $0 out of pocket when caused by a workplace or auto accident. We also accept UHA, HMAA, Veterans Community Care, AARP, Humana, and AshLink.</p>
+<h2>Our Practitioners</h2>
+<p>Dr. David Cai, O.M.D., L.Ac., L.M.T. &mdash; Founder, specialist in pain management and nerve-related conditions. Graduate of Beijing University of Chinese Medicine (1991). Hawaii Licensed Acupuncturist ACU-1125, NCCAOM Dipl. Ac. &amp; Dipl. C.H. #962-1001-522.</p>
+<p>Lisa Long, O.M.D., L.M.T. &mdash; Senior practitioner, 30+ years experience, co-developer of CenterGy (Synergies). Hawaii LMT MAT-17832.</p>
+<h2>Locations &amp; Hours</h2>
+<p><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</p>
+<p><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</p>
+<p>Hours: Monday&ndash;Friday 9:00 AM &ndash; 1:00 PM | Saturday 9:00 AM &ndash; 12:00 PM | Sunday closed</p>`;
+
+const WORKERS_COMP_NOSCRIPT_BODY = `<h1>Workers&rsquo; Compensation Acupuncture in Honolulu &amp; Aiea, Hawaii</h1>
+<p>AcuTherapy Clinics accepts Workers&rsquo; Compensation insurance at both our Honolulu (Liliha) and Aiea locations. If you have been injured on the job, Hawaii&rsquo;s Workers&rsquo; Comp system covers acupuncture and medical massage — with $0 out of pocket for the patient. We handle all insurance paperwork and billing directly with your employer&rsquo;s carrier.</p>
+<h2>What Hawaii Workers&rsquo; Comp Covers</h2>
+<p>Under Hawaii Revised Statutes Chapter 386, Workers&rsquo; Compensation provides medical benefits for work-related injuries, including acupuncture by a licensed acupuncturist. You do not need a referral from a medical doctor to begin acupuncture treatment. Once your claim is open with your employer, contact us directly and we will coordinate with the adjuster to start your care as quickly as possible.</p>
+<h2>Common Workplace Injuries We Treat</h2>
+<ul>
+<li>Lower back strain and lumbar disc injury from lifting or repeated bending</li>
+<li>Neck pain and whiplash from falls or equipment accidents</li>
+<li>Shoulder injuries (rotator cuff strain, impingement) from overhead work</li>
+<li>Repetitive strain injuries (carpal tunnel, tendinitis) from keyboard, tool use, or assembly work</li>
+<li>Knee pain from prolonged standing, kneeling, or impact</li>
+<li>Post-surgical pain and rehabilitation support</li>
+</ul>
+<h2>How to Get Started</h2>
+<p>Report your injury to your employer and file a WC-1 form (Workers&rsquo; Compensation claim) with the Hawaii Department of Labor. Once your claim number is confirmed, call us at (808) 528-7177 (Liliha) or (808) 452-1900 (Aiea). We handle all authorization and billing — you pay nothing out of pocket.</p>
+<h2>Frequently Asked Questions</h2>
+<p><strong>Is acupuncture covered by Workers&rsquo; Comp in Hawaii?</strong> Yes. Licensed acupuncturists are recognized providers under Hawaii&rsquo;s Workers&rsquo; Compensation system. Treatment must be related to the workplace injury and authorized by the claim.</p>
+<p><strong>Do I need a doctor&rsquo;s referral?</strong> No. In Hawaii, you can see a licensed acupuncturist directly under Workers&rsquo; Comp without a referral. We will coordinate with your adjuster to confirm coverage before your first visit.</p>
+<p><strong>How soon can I start treatment?</strong> In most cases, we can schedule your first appointment within the same week your claim is confirmed. Early treatment typically leads to faster recovery and reduced total claim costs.</p>
+<h2>Our Practitioners</h2>
+<p>Dr. David Cai, O.M.D., L.Ac., L.M.T. &mdash; Founder, 30+ years of clinical experience, extensive background in injury recovery and pain management. Hawaii Licensed Acupuncturist ACU-1125, NCCAOM Dipl. Ac. &amp; Dipl. C.H. #962-1001-522.</p>
+<p>Lisa Long, O.M.D., L.M.T. &mdash; Senior practitioner, 30+ years experience, co-developer of CenterGy (Synergies), specializing in musculoskeletal recovery. Hawaii LMT MAT-17832.</p>
+<h2>Locations &amp; Hours</h2>
+<p><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</p>
+<p><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</p>
+<p>Hours: Monday&ndash;Friday 9:00 AM &ndash; 1:00 PM | Saturday 9:00 AM &ndash; 12:00 PM | Sunday closed</p>`;
+
+const AUTO_ACCIDENT_NOSCRIPT_BODY = `<h1>Auto Accident Injury Treatment in Honolulu | Hawaii No-Fault PIP</h1>
+<p>Hawaii&rsquo;s No-Fault law (HRS &sect;431:10C) requires every auto insurance policy to include Personal Injury Protection (PIP) benefits of at least $10,000. This means that if you were injured in a car accident in Hawaii — regardless of who was at fault — your auto insurance covers acupuncture and medical massage at $0 out of pocket. AcuTherapy Clinics is a participating PIP provider at our Honolulu and Aiea locations.</p>
+<h2>Injuries Commonly Caused by Auto Accidents</h2>
+<p>Even a low-speed collision creates significant biomechanical force on the spine and soft tissue. Common injuries we treat include:</p>
+<ul>
+<li>Whiplash (cervical acceleration-deceleration injury) — neck pain, stiffness, headaches</li>
+<li>Lower back sprain and lumbar disc aggravation</li>
+<li>Shoulder pain and rotator cuff strain from seatbelt or airbag impact</li>
+<li>Hip and sacroiliac joint dysfunction</li>
+<li>Soft tissue injuries to the mid-back and thoracic spine</li>
+<li>Tension headaches and post-concussion symptoms</li>
+</ul>
+<h2>Why Early Treatment Matters</h2>
+<p>Scar tissue begins forming within days of a soft tissue injury. Untreated whiplash and spinal injuries can progress into chronic pain conditions. Early acupuncture treatment helps reduce acute inflammation, break the muscle-spasm cycle, and prevent long-term structural changes. We recommend beginning treatment within the first 1&ndash;2 weeks after your accident.</p>
+<h2>How PIP Billing Works</h2>
+<p>You do not need a referral. Contact your auto insurance carrier to confirm your PIP coverage, then call us. We handle all billing and paperwork directly with your insurer. In most cases you pay $0 at the time of service.</p>
+<h2>Frequently Asked Questions</h2>
+<p><strong>Does Hawaii PIP cover acupuncture?</strong> Yes. Hawaii No-Fault PIP covers acupuncture by a licensed acupuncturist for injuries sustained in a covered auto accident.</p>
+<p><strong>Do I need a police report to use PIP?</strong> Not necessarily. A police report strengthens your claim but is not always required to open a PIP claim. Contact your insurer as soon as possible after the accident.</p>
+<p><strong>What if my PIP runs out?</strong> If your PIP benefit ($10,000 minimum) is exhausted, we can transition billing to other insurance such as UHA, HMAA, Medicare Supplement, or continue care on a private-pay basis.</p>
+<h2>Our Practitioners</h2>
+<p>Dr. David Cai, O.M.D., L.Ac., L.M.T. &mdash; Founder, 30+ years clinical experience with extensive injury and trauma recovery expertise. Hawaii Licensed Acupuncturist ACU-1125, NCCAOM Dipl. Ac. &amp; Dipl. C.H. #962-1001-522.</p>
+<p>Lisa Long, O.M.D., L.M.T. &mdash; Senior practitioner, 30+ years experience, co-developer of CenterGy (Synergies). Hawaii LMT MAT-17832.</p>
+<h2>Locations &amp; Hours</h2>
+<p><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</p>
+<p><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</p>
+<p>Hours: Monday&ndash;Friday 9:00 AM &ndash; 1:00 PM | Saturday 9:00 AM &ndash; 12:00 PM | Sunday closed</p>`;
+
 function buildJsonLd(route, description) {
   const hoursAiea = [
     {
@@ -1218,6 +1326,26 @@ function buildRootContent(route, meta) {
     }
     if (route === '/acupuncture-makiki') {
       return `<div id="root"></div><noscript>${MAKIKI_NOSCRIPT_BODY}<nav>
+      ${navLinks}
+  </nav></noscript>`;
+    }
+    if (route === '/back-pain-acupuncture-honolulu') {
+      return `<div id="root"></div><noscript>${BACK_PAIN_NOSCRIPT_BODY}<nav>
+      ${navLinks}
+  </nav></noscript>`;
+    }
+    if (route === '/sciatica-treatment-honolulu') {
+      return `<div id="root"></div><noscript>${SCIATICA_NOSCRIPT_BODY}<nav>
+      ${navLinks}
+  </nav></noscript>`;
+    }
+    if (route === '/workers-comp-injury-honolulu') {
+      return `<div id="root"></div><noscript>${WORKERS_COMP_NOSCRIPT_BODY}<nav>
+      ${navLinks}
+  </nav></noscript>`;
+    }
+    if (route === '/auto-accident-injury-honolulu') {
+      return `<div id="root"></div><noscript>${AUTO_ACCIDENT_NOSCRIPT_BODY}<nav>
       ${navLinks}
   </nav></noscript>`;
     }
