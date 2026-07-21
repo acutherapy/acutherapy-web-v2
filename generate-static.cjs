@@ -116,7 +116,7 @@ const PAGE_DATA = {
   '/': {
     title: 'AcuTherapy Clinics – Acupuncture & TCM in Honolulu, Hawaii',
     description:
-      'Licensed acupuncture and Traditional Chinese Medicine clinics in Honolulu. Expert treatment for back pain, sciatica, neck pain, sports injuries. Multiple Oahu locations. New patient specials.',
+      'Licensed acupuncture & TCM clinics in Honolulu and Aiea. Expert treatment for back pain, sciatica, and injuries. Two Oahu locations. New patient specials available.',
     h1: "AcuTherapy Clinics – Honolulu’s Trusted Acupuncture Provider",
   },
   '/about': {
@@ -283,6 +283,41 @@ const PAGE_DATA = {
     title: 'VA Community Care Acupuncture for Oahu Veterans | AcuTherapy Clinics',
     description: 'Oahu veterans can receive 100% covered acupuncture and pain management care. We are an authorized VA Community Care Network (CCN) provider. Learn how to get a referral.',
     h1: 'VA Community Care Acupuncture for Oahu Veterans',
+  },
+  '/sciatica-treatment-honolulu': {
+    title: 'Sciatica Treatment in Honolulu | AcuTherapy Clinics',
+    description: 'Sciatica acupuncture in Honolulu — relieve radiating leg pain, nerve compression, and disc-related sciatica with TCM at AcuTherapy Clinics. Two Oahu locations.',
+    h1: 'Sciatica Treatment – Honolulu, Hawaii',
+  },
+  '/herniated-disc-acupuncture-honolulu': {
+    title: 'Herniated Disc Acupuncture in Honolulu | AcuTherapy Clinics',
+    description: 'Acupuncture for herniated disc in Honolulu. Reduce nerve pain, inflammation, and muscle spasm without surgery. AcuTherapy Clinics, Liliha & Aiea.',
+    h1: 'Herniated Disc Acupuncture – Honolulu, Hawaii',
+  },
+  '/arthritis-acupuncture-honolulu': {
+    title: 'Arthritis Acupuncture in Honolulu | AcuTherapy Clinics',
+    description: 'Acupuncture for arthritis pain in Honolulu. Reduce joint inflammation, improve mobility, and manage osteoarthritis or rheumatoid arthritis with TCM.',
+    h1: 'Arthritis Acupuncture – Honolulu, Hawaii',
+  },
+  '/does-acupuncture-help-sciatica': {
+    title: 'Does Acupuncture Help Sciatica? | AcuTherapy Clinics Honolulu',
+    description: 'Does acupuncture help sciatica? Yes — clinical evidence supports acupuncture for sciatic nerve pain relief. Learn how AcuTherapy Clinics treats sciatica on Oahu.',
+    h1: 'Does Acupuncture Help Sciatica?',
+  },
+  '/honolulu-clinic': {
+    title: 'AcuTherapy Clinics Honolulu – Liliha Location',
+    description: 'AcuTherapy Clinics Honolulu — 1650 Liliha St, Suite 208. Licensed acupuncture, TCM, and medical massage. Call (808) 528-7177. Mon–Fri 9–1, Sat 9–12.',
+    h1: 'AcuTherapy Clinics – Honolulu (Liliha)',
+  },
+  '/aiea-pearl-city-clinic': {
+    title: 'AcuTherapy Clinics Aiea – Pearl City Location',
+    description: 'AcuTherapy Clinics Aiea — 98-211 Pali Momi St, Suite 604. Licensed acupuncture and TCM near Pearl City. Call (808) 452-1900. Mon–Fri 9–1, Sat 9–12.',
+    h1: 'AcuTherapy Clinics – Aiea (Pearl City)',
+  },
+  '/insurance-accepted': {
+    title: 'Insurance Accepted | AcuTherapy Clinics Honolulu',
+    description: "AcuTherapy Clinics accepts Workers' Comp, Auto Accident PIP, Veterans Care, UHA, HMAA, AARP, Humana, AshLink, and more. Many patients pay $0 out of pocket.",
+    h1: 'Insurance Accepted – AcuTherapy Clinics',
   },
 };
 
