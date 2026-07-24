@@ -1,4 +1,5 @@
 {
+  "trailingSlash": false,
   "redirects": [
     {
       "source": "/honolulu-1-pain-acupuncture-clinic",
@@ -97,7 +98,7 @@
     },
     {
       "source": "/what-does-acupuncture-feel-like(/?|/)",
-      "destination": "/how-acupuncture-treats-back-pain",
+      "destination": "/how-fast-does-acupuncture-work",
       "permanent": true
     },
     {
