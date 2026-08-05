@@ -88,6 +88,8 @@ import VeteransAcupunctureHonoluluAieaPage from './pages/VeteransAcupunctureHono
 import FertilityAcupunctureHonoluluPage from './pages/FertilityAcupunctureHonoluluPage';
 import MoxibustionHonoluluPage from './pages/MoxibustionHonoluluPage';
 import AcupunctureMakikiPage from './pages/AcupunctureMakikiPage';
+import BrainResetThroughYourEarPage from './pages/BrainResetThroughYourEarPage';
+import BrainResetForWeightLossPage from './pages/BrainResetForWeightLossPage';
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -607,6 +609,8 @@ export default function App() {
           <Route path="/fertility-acupuncture-honolulu" element={<FertilityAcupunctureHonoluluPage />} />
           <Route path="/moxibustion-honolulu" element={<MoxibustionHonoluluPage />} />
           <Route path="/acupuncture-makiki" element={<AcupunctureMakikiPage />} />
+          <Route path="/brain-reset-through-your-ear" element={<BrainResetThroughYourEarPage />} />
+          <Route path="/brain-reset-for-weight-loss" element={<BrainResetForWeightLossPage />} />
           <Route path="/en/services/insurance-payment" element={<InsuranceAcceptedPage />} />
           
           <Route path="/back-neck-pain" element={<BackPainAcupunctureHonoluluPage />} />
@@ -624,4 +628,5 @@ export default function App() {
     </HelmetProvider>
   );
 }
+
 
