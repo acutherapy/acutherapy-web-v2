@@ -138,13 +138,13 @@ export default function BrainResetForWeightLossPage() {
   return (
     <>
       <Helmet>
-        <link rel="canonical" href="https://acutherapy.com/brain-reset-for-weight-loss" />
+        <link rel="canonical" href="https://acutherapy.com/weight-loss" />
         <title>Brain Reset for Weight Loss™ | Ear Seed Therapy for Cravings & Appetite | Honolulu HI | AcuTherapy</title>
         <meta name="description" content="Ear seed therapy for craving reduction & weight loss support in Honolulu, HI. Calm stress eating naturally — drug-free, no needles. Ozempic-compatible. AcuTherapy Clinics · (808) 528-7177." />
         <meta property="og:title" content="Brain Reset for Weight Loss™ | Ear Seed Therapy Honolulu HI" />
         <meta property="og:description" content="Ear seed therapy for craving reduction & weight loss support in Honolulu, HI. Calm stress eating naturally — drug-free, no needles. Ozempic-compatible." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://acutherapy.com/brain-reset-for-weight-loss" />
+        <meta property="og:url" content="https://acutherapy.com/weight-loss" />
         <meta property="og:image" content="https://acutherapy.com/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
@@ -348,7 +348,7 @@ export default function BrainResetForWeightLossPage() {
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Related Services</h2>
                 <div className="flex flex-wrap gap-3">
                   {[
-                    { label: "Brain Reset Through Your Ear™", href: "/brain-reset-through-your-ear" },
+                    { label: "Brain Reset Through Your Ear™", href: "/brainreset" },
                     { label: "CenterGy Therapy", href: "/centerGy-honolulu" },
                     { label: "Acupuncture for Stress & Anxiety", href: "/stress-anxiety-acupuncture-honolulu" },
                     { label: "Fertility Acupuncture", href: "/fertility-acupuncture-honolulu" },
