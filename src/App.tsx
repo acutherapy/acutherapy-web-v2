@@ -609,8 +609,8 @@ export default function App() {
           <Route path="/fertility-acupuncture-honolulu" element={<FertilityAcupunctureHonoluluPage />} />
           <Route path="/moxibustion-honolulu" element={<MoxibustionHonoluluPage />} />
           <Route path="/acupuncture-makiki" element={<AcupunctureMakikiPage />} />
-          <Route path="/brain-reset-through-your-ear" element={<BrainResetThroughYourEarPage />} />
-          <Route path="/brain-reset-for-weight-loss" element={<BrainResetForWeightLossPage />} />
+          <Route path="/brainreset" element={<BrainResetThroughYourEarPage />} />
+          <Route path="/weight-loss" element={<BrainResetForWeightLossPage />} />
           <Route path="/en/services/insurance-payment" element={<InsuranceAcceptedPage />} />
           
           <Route path="/back-neck-pain" element={<BackPainAcupunctureHonoluluPage />} />
