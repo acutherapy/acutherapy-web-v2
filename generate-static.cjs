@@ -95,20 +95,20 @@ const ALL_ROUTES = [
   '/fertility-acupuncture-honolulu',
   '/moxibustion-honolulu',
   '/acupuncture-makiki',
-  '/brain-reset-through-your-ear',
-  '/brain-reset-for-weight-loss',
+  '/brainreset',
+  '/weight-loss',
   '/lgzf',
   '/constitution-test',
   '/constitution-teaser',
 ];
 
 const PAGE_DATA = {
-  '/brain-reset-through-your-ear': {
+  '/brainreset': {
     title: 'Brain Reset Through Your Ear™ | Needle-Free Ear Seed Therapy Honolulu HI | AcuTherapy',
     description: 'Needle-free ear seed therapy in Honolulu & Aiea, HI. Auricular acupressure for stress, anxiety, sleep & pain — no needles, no downtime. AcuTherapy Clinics · (808) 528-7177.',
     h1: 'Brain Reset Through Your Ear™ — Needle-Free Ear Seed Therapy',
   },
-  '/brain-reset-for-weight-loss': {
+  '/weight-loss': {
     title: 'Brain Reset for Weight Loss™ | Ear Seed Therapy for Cravings & Appetite | Honolulu HI | AcuTherapy',
     description: 'Ear seed therapy for craving reduction & weight loss support in Honolulu, HI. Calm stress eating naturally — drug-free, no needles. Ozempic-compatible. AcuTherapy Clinics · (808) 528-7177.',
     h1: 'Brain Reset for Weight Loss™ — Ear Seed Therapy for Cravings',
@@ -1283,7 +1283,7 @@ ${JSON.stringify(moxSchema, null, 2)}
   }
 
   // 8. Brain Reset Through Your Ear page
-  if (route === '/brain-reset-through-your-ear') {
+  if (route === '/brainreset') {
     const earFaqSchema = {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
@@ -1305,7 +1305,7 @@ ${JSON.stringify(earFaqSchema, null, 2)}
   }
 
   // 9. Brain Reset for Weight Loss page
-  if (route === '/brain-reset-for-weight-loss') {
+  if (route === '/weight-loss') {
     const weightLossFaqSchema = {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
@@ -1447,12 +1447,12 @@ function buildRootContent(route, meta) {
       ${navLinks}
   </nav></noscript>`;
     }
-    if (route === '/brain-reset-through-your-ear') {
+    if (route === '/brainreset') {
       return `<div id="root"></div><noscript>${EAR_SEED_NOSCRIPT_BODY}<nav>
       ${navLinks}
   </nav></noscript>`;
     }
-    if (route === '/brain-reset-for-weight-loss') {
+    if (route === '/weight-loss') {
       return `<div id="root"></div><noscript>${WEIGHT_LOSS_NOSCRIPT_BODY}<nav>
       ${navLinks}
   </nav></noscript>`;
