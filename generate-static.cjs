@@ -95,12 +95,24 @@ const ALL_ROUTES = [
   '/fertility-acupuncture-honolulu',
   '/moxibustion-honolulu',
   '/acupuncture-makiki',
+  '/brain-reset-through-your-ear',
+  '/brain-reset-for-weight-loss',
   '/lgzf',
   '/constitution-test',
   '/constitution-teaser',
 ];
 
 const PAGE_DATA = {
+  '/brain-reset-through-your-ear': {
+    title: 'Brain Reset Through Your Ear™ | Needle-Free Ear Seed Therapy Honolulu HI | AcuTherapy',
+    description: 'Needle-free ear seed therapy in Honolulu & Aiea, HI. Auricular acupressure for stress, anxiety, sleep & pain — no needles, no downtime. AcuTherapy Clinics · (808) 528-7177.',
+    h1: 'Brain Reset Through Your Ear™ — Needle-Free Ear Seed Therapy',
+  },
+  '/brain-reset-for-weight-loss': {
+    title: 'Brain Reset for Weight Loss™ | Ear Seed Therapy for Cravings & Appetite | Honolulu HI | AcuTherapy',
+    description: 'Ear seed therapy for craving reduction & weight loss support in Honolulu, HI. Calm stress eating naturally — drug-free, no needles. Ozempic-compatible. AcuTherapy Clinics · (808) 528-7177.',
+    h1: 'Brain Reset for Weight Loss™ — Ear Seed Therapy for Cravings',
+  },
   '/constitution-test': {
     title: '中医体质与生命节律评估 | AcuTherapy Clinics',
     description: 'AcuTherapy Clinics 中医体质与生命节律评估测试。结合先天五行与《上古天真论》年龄节律提供个性化调理对策。',
@@ -805,6 +817,62 @@ const AUTO_ACCIDENT_NOSCRIPT_BODY = `<h1>Auto Accident Injury Treatment in Honol
 <p><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</p>
 <p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Tuesday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
 
+const EAR_SEED_NOSCRIPT_BODY = `
+<h1>Brain Reset Through Your Ear™ — Needle-Free Ear Seed Therapy in Honolulu &amp; Aiea, HI</h1>
+<p>AcuTherapy Clinics offers <strong>Brain Reset Through Your Ear™</strong>, a needle-free auricular acupressure treatment using tiny vaccaria seeds or gold beads placed on specific points of the outer ear. No needles penetrate the skin. No downtime. Appointments available at our Liliha (Honolulu) and Aiea locations.</p>
+<h2>What Are Ear Seeds?</h2>
+<p>Ear seeds are small seeds or gold beads taped to precise acupuncture points on your ear. They stay in place 3–7 days while you go about normal life. You press each seed gently 3–5 times daily to activate the point and send a calming signal through the vagus nerve to your brain and body. The World Health Organization recognized auricular acupuncture as a valid therapeutic system in 1990. The U.S. Department of Defense uses the Battlefield Acupuncture ear protocol to treat pain and stress in military personnel.</p>
+<h2>Conditions Addressed</h2>
+<p>Stress &amp; Anxiety | Insomnia &amp; Sleep Issues | Chronic Pain | Headaches &amp; Migraines | PTSD &amp; Trauma Stress | Fertility Support | Digestive Issues | Smoking Cessation | Neck &amp; Shoulder Tension | Low Energy &amp; Fatigue | Emotional Eating | Seasonal Allergies</p>
+<h2>Why Your Ear? The Vagus Nerve Connection</h2>
+<p>Your ear is the only place on the body's surface where you can directly access the vagus nerve — the main highway of the parasympathetic nervous system. The vagus nerve runs from your brainstem through your heart, lungs, and digestive tract, regulating stress response, inflammation, sleep, mood, and more. Stimulating auricular points produces measurable changes in heart rate variability, cortisol levels, and neural activity.</p>
+<h2>How It Works</h2>
+<p><strong>Step 1 — Precise Placement:</strong> Dr. Cai maps your ear and places seeds on the points corresponding to your specific symptoms — stress, pain, sleep, digestion, or others.</p>
+<p><strong>Step 2 — Continuous Stimulation:</strong> You gently press each seed 3–5 times daily, activating the point and sending a signal through the vagus nerve to your brain and body.</p>
+<p><strong>Step 3 — Cumulative Benefit:</strong> Each session builds on the last. Most patients notice a meaningful shift within 2–3 visits; lasting change typically takes 6–8 sessions.</p>
+<h2>Frequently Asked Questions</h2>
+<p><strong>Is this treatment truly needle-free?</strong> Yes. Brain Reset Through Your Ear™ uses tiny vaccaria seeds or gold beads taped to specific points on the outer ear — no needles penetrate the skin at any point.</p>
+<p><strong>I'm afraid of needles. Can I still get acupuncture benefits?</strong> Absolutely. Auricular acupressure activates many of the same meridian points as needle acupuncture, delivered through gentle pressure. Many needle-phobic patients find this an ideal entry point.</p>
+<p><strong>How long do the ear seeds stay on?</strong> Ear seeds typically stay in place 3–7 days. You press them gently 3–5 times per day to stimulate the points.</p>
+<p><strong>Can ear seeds help with anxiety and stress?</strong> Yes — the Shen Men (Spirit Gate) and autonomic nervous system points on the ear have well-documented calming effects. Stimulating these points activates the vagus nerve, helping shift the body out of fight-or-flight.</p>
+<p><strong>How many sessions will I need?</strong> Most patients notice a difference within 2–3 sessions. For chronic stress, anxiety, or pain, a course of 6–8 weekly sessions is typical, followed by maintenance visits every 2–4 weeks.</p>
+<p><strong>Can I drive home after the treatment?</strong> Yes. Ear seed therapy produces no sedation or impairment. Most patients return to normal activities immediately after their appointment.</p>
+<h2>Our Practitioners</h2>
+<p>Dr. David Cai, O.M.D., L.Ac., L.M.T. &mdash; Founder, Doctor of Oriental Medicine trained at Beijing University of Chinese Medicine, 30+ years clinical experience. Hawaii Licensed Acupuncturist ACU-1125, LMT 7543, NCCAOM Dipl. Ac. &amp; Dipl. C.H. #962-1001-522.</p>
+<p>Lisa Long, O.M.D., L.M.T. &mdash; Senior practitioner, 30+ years experience, co-developer of CenterGy (Synergies). Hawaii LMT MAT-17832.</p>
+<h2>Locations &amp; Hours</h2>
+<p><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</p>
+<p><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</p>
+<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Tuesday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
+
+const WEIGHT_LOSS_NOSCRIPT_BODY = `
+<h1>Brain Reset for Weight Loss™ — Ear Seed Therapy for Cravings &amp; Appetite in Honolulu, HI</h1>
+<p>AcuTherapy Clinics offers <strong>Brain Reset for Weight Loss™</strong>, a needle-free auricular acupressure treatment targeting the Hunger Point, Shen Men, and Endocrine ear points to reduce food cravings, stress eating, and emotional hunger. Drug-free, no needles, no downtime. Ozempic-compatible. Available at our Liliha (Honolulu) and Aiea locations.</p>
+<h2>Why Your Brain Keeps Sabotaging Your Diet</h2>
+<p>Most weight loss approaches treat hunger as a stomach problem. But cravings, stress eating, and emotional hunger are driven by your brain — specifically the hypothalamus, cortisol stress cycle, and reward pathways. Until those are addressed, willpower alone rarely wins. Ear seeds work by calming the nervous system and reducing the cortisol spike that drives stress eating, rather than directly suppressing metabolic appetite.</p>
+<h2>What Patients Typically Notice</h2>
+<p>Fewer intense cravings between meals | Less urge to stress-eat in the evening | Reduced emotional eating episodes | Smaller appetite for sweets and processed foods | Lower overall anxiety and tension | Improved sleep quality | More consistent energy levels | Feeling more in control of food choices</p>
+<h2>For Patients on Ozempic or GLP-1 Medications</h2>
+<p>GLP-1 medications like semaglutide (Ozempic, Wegovy) are highly effective at reducing physical appetite — but many users still struggle with emotional eating, stress-driven cravings, and food habits that the medication does not directly address. Ear seed therapy targets exactly these patterns through the nervous system, complementing your medication without any interaction. No prescription changes needed.</p>
+<h2>How Brain Reset for Weight Loss™ Works</h2>
+<p><strong>Step 1 — Target the Right Points:</strong> Dr. Cai identifies the Hunger Point, Shen Men (calming), and Endocrine points on your ear — the specific locations linked to appetite regulation and stress response.</p>
+<p><strong>Step 2 — Seeds Go On. You Leave.</strong> Tiny vaccaria seeds are taped in place. No injections, no needles. You press them 3–5× daily between sessions, reinforcing the signal throughout the week.</p>
+<p><strong>Step 3 — Cravings Quiet Down.</strong> Over 6–8 sessions, most patients find stress-driven cravings become less intense, emotional eating episodes decrease, and food choices become less effortful.</p>
+<h2>Frequently Asked Questions</h2>
+<p><strong>Can ear seeds actually reduce cravings?</strong> Clinical studies show that stimulating specific ear points — particularly the Hunger Point, Shen Men, and Endocrine point — can reduce appetite signals and the intensity of food cravings.</p>
+<p><strong>Is this for emotional eating or physical hunger?</strong> Both, but it's especially effective for stress-driven and emotional eating — the kind where you're not physically hungry but find yourself reaching for food anyway.</p>
+<p><strong>Will ear seed therapy make me lose weight?</strong> Ear seed therapy is a supportive tool, not a weight-loss medication. It does not directly burn fat or alter metabolism. What it does is help reduce the cravings, stress eating, and sleep disruption that make it harder to stick to healthier habits.</p>
+<p><strong>I'm on Ozempic. Can I combine ear seed therapy?</strong> Yes. Ear seed therapy and GLP-1 medications work through entirely different mechanisms and do not interact. It is a complementary approach, not a replacement.</p>
+<p><strong>How many sessions does it take?</strong> Many patients notice reduced craving intensity within 2–3 sessions. For sustained behavior change, a course of 6–8 weekly sessions followed by monthly maintenance is typical.</p>
+<p><strong>Medical disclaimer:</strong> Ear seed therapy supports weight management by addressing stress eating and cravings. It is not a substitute for medical weight loss treatment, prescription medication, or dietary counseling. Individual results vary. Consult your primary care provider about your weight loss plan.</p>
+<h2>Our Practitioners</h2>
+<p>Dr. David Cai, O.M.D., L.Ac., L.M.T. &mdash; Founder, Doctor of Oriental Medicine trained at Beijing University of Chinese Medicine, 30+ years clinical experience. Hawaii Licensed Acupuncturist ACU-1125, LMT 7543, NCCAOM Dipl. Ac. &amp; Dipl. C.H. #962-1001-522.</p>
+<p>Lisa Long, O.M.D., L.M.T. &mdash; Senior practitioner, 30+ years experience, co-developer of CenterGy (Synergies). Hawaii LMT MAT-17832.</p>
+<h2>Locations &amp; Hours</h2>
+<p><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</p>
+<p><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</p>
+<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Tuesday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
+
 function buildJsonLd(route, description) {
   const hoursAiea = [
     {
@@ -1214,7 +1282,49 @@ ${JSON.stringify(moxSchema, null, 2)}
 </script>`;
   }
 
-  // 8. Default clean WebPage schema for other pages
+  // 8. Brain Reset Through Your Ear page
+  if (route === '/brain-reset-through-your-ear') {
+    const earFaqSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      'mainEntity': [
+        { '@type': 'Question', 'name': 'Is this treatment truly needle-free?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Yes. Brain Reset Through Your Ear™ uses tiny vaccaria seeds or gold beads taped to specific points on the outer ear — no needles penetrate the skin at any point. It is a form of auricular acupressure, not acupuncture with needles.' } },
+        { '@type': 'Question', 'name': "I'm afraid of needles. Can I still get acupuncture benefits?", 'acceptedAnswer': { '@type': 'Answer', 'text': 'Absolutely. Auricular acupressure activates many of the same meridian points as needle acupuncture, delivered through gentle pressure. Many patients who come to us specifically because of needle phobia find this an ideal entry point.' } },
+        { '@type': 'Question', 'name': 'How long do the ear seeds stay on?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Ear seeds typically stay in place 3–7 days. You press them gently 3–5 times per day to stimulate the points.' } },
+        { '@type': 'Question', 'name': 'Can ear seeds help with anxiety and stress?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Yes — the Shen Men (Spirit Gate) and autonomic nervous system points on the ear have well-documented calming effects. Stimulating these points activates the vagus nerve, helping shift the body out of fight-or-flight and into a more restful state.' } },
+        { '@type': 'Question', 'name': 'Can ear seeds help with PTSD or trauma responses?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'The U.S. Department of Defense and VA have used the Battlefield Acupuncture protocol — an ear seed variant — with veterans experiencing PTSD and combat stress.' } },
+        { '@type': 'Question', 'name': 'Can ear seeds improve sleep?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Many patients report improved sleep quality within the first week of treatment. Points targeting the Shen Men, Heart, and Kidney zones on the ear help quiet the mind and support deeper, more restorative rest.' } },
+        { '@type': 'Question', 'name': 'How many sessions will I need?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Most patients notice a difference within 2–3 sessions. For chronic stress, anxiety, or pain, a course of 6–8 weekly sessions is typical, followed by maintenance visits every 2–4 weeks.' } },
+        { '@type': 'Question', 'name': 'Is ear seed therapy covered by insurance?', 'acceptedAnswer': { '@type': 'Answer', 'text': "Sessions are often covered under Workers' Compensation, Auto Accident PIP (Hawaii No-Fault), and Veterans Community Care. UHA, HMAA, and select Medicare Supplement plans may also apply. Call us at (808) 528-7177 to verify your specific coverage before your first visit." } },
+        { '@type': 'Question', 'name': 'Can I drive home after the treatment?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Yes. Unlike some procedures that require recovery time, ear seed therapy produces no sedation or impairment. Most patients return to normal activities immediately after their appointment.' } },
+      ]
+    };
+    return `<script type="application/ld+json">
+${JSON.stringify(earFaqSchema, null, 2)}
+</script>`;
+  }
+
+  // 9. Brain Reset for Weight Loss page
+  if (route === '/brain-reset-for-weight-loss') {
+    const weightLossFaqSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      'mainEntity': [
+        { '@type': 'Question', 'name': 'Can ear seeds actually reduce cravings?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Clinical studies show that stimulating specific ear points — particularly the Hunger Point, Shen Men, and Endocrine point — can reduce appetite signals and the intensity of food cravings.' } },
+        { '@type': 'Question', 'name': 'Is this for emotional eating or physical hunger?', 'acceptedAnswer': { '@type': 'Answer', 'text': "Both, but it's especially effective for stress-driven and emotional eating — the kind where you're not physically hungry but find yourself reaching for food anyway." } },
+        { '@type': 'Question', 'name': 'Will ear seed therapy actually make me lose weight?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Ear seed therapy is a supportive tool, not a weight-loss medication. It does not directly burn fat or alter metabolism. What it does is help reduce the cravings, stress eating, and sleep disruption that make it harder to stick to healthier habits.' } },
+        { '@type': 'Question', 'name': "I'm on Ozempic (semaglutide). Can I combine ear seed therapy?", 'acceptedAnswer': { '@type': 'Answer', 'text': 'Yes. Ear seed therapy and GLP-1 medications work through entirely different mechanisms and do not interact. Many patients on Ozempic still struggle with stress eating and emotional triggers — ear seeds specifically address these patterns.' } },
+        { '@type': 'Question', 'name': 'How many sessions does it take to notice a difference?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Many patients notice reduced craving intensity within 2–3 sessions. For sustained behavior change, a course of 6–8 weekly sessions followed by monthly maintenance is typical.' } },
+        { '@type': 'Question', 'name': 'What is the Auricular Hunger Point?', 'acceptedAnswer': { '@type': 'Answer', 'text': "The Hunger Point (also called the Appetite Control point) is a specific location on the inner edge of the ear's tragus. Stimulating it is thought to influence hypothalamic hunger signals and reduce the urge to eat between meals." } },
+        { '@type': 'Question', 'name': 'Is this covered by insurance?', 'acceptedAnswer': { '@type': 'Answer', 'text': "Craving and appetite support visits are typically not covered as standalone weight-loss treatments. However, if stress, anxiety, or pain are documented contributing factors, Workers' Compensation, Auto Accident PIP, Veterans Community Care, and certain UHA / HMAA plans may apply. Call (808) 528-7177 to discuss your coverage before booking." } },
+      ]
+    };
+    return `<script type="application/ld+json">
+${JSON.stringify(weightLossFaqSchema, null, 2)}
+</script>`;
+  }
+
+  // 10. Default clean WebPage schema for other pages
   const webPageSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
@@ -1334,6 +1444,16 @@ function buildRootContent(route, meta) {
     }
     if (route === '/auto-accident-injury-honolulu') {
       return `<div id="root"></div><noscript>${AUTO_ACCIDENT_NOSCRIPT_BODY}<nav>
+      ${navLinks}
+  </nav></noscript>`;
+    }
+    if (route === '/brain-reset-through-your-ear') {
+      return `<div id="root"></div><noscript>${EAR_SEED_NOSCRIPT_BODY}<nav>
+      ${navLinks}
+  </nav></noscript>`;
+    }
+    if (route === '/brain-reset-for-weight-loss') {
+      return `<div id="root"></div><noscript>${WEIGHT_LOSS_NOSCRIPT_BODY}<nav>
       ${navLinks}
   </nav></noscript>`;
     }
