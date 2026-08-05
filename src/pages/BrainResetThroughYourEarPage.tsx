@@ -127,23 +127,16 @@ export default function BrainResetThroughYourEarPage() {
     "Neck & Shoulder Tension", "Low Energy & Fatigue", "Emotional Eating", "Seasonal Allergies"
   ];
 
-  const navLinks = `
-    <a href="/">Home</a> | <a href="/about">About</a> | <a href="/book-appointment">Book Appointment</a> |
-    <a href="/back-pain-acupuncture-honolulu">Back Pain</a> | <a href="/fertility-acupuncture-honolulu">Fertility</a> |
-    <a href="/workers-comp-injury-honolulu">Workers' Comp</a> | <a href="/auto-accident-injury-honolulu">Auto Injury</a> |
-    <a href="/insurance-accepted">Insurance</a> | <a href="/contact">Contact</a>
-  `;
-
   return (
     <>
       <Helmet>
-        <link rel="canonical" href="https://acutherapy.com/brain-reset-through-your-ear" />
+        <link rel="canonical" href="https://acutherapy.com/brainreset" />
         <title>Brain Reset Through Your Ear™ | Needle-Free Ear Seed Therapy Honolulu HI | AcuTherapy</title>
         <meta name="description" content="Needle-free ear seed therapy in Honolulu & Aiea, HI. Auricular acupressure for stress, anxiety, sleep & pain — no needles, no downtime. AcuTherapy Clinics · (808) 528-7177." />
         <meta property="og:title" content="Brain Reset Through Your Ear™ | Needle-Free Ear Seed Therapy Honolulu" />
         <meta property="og:description" content="Needle-free ear seed therapy in Honolulu & Aiea, HI. Auricular acupressure for stress, anxiety, sleep & pain — no needles, no downtime." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://acutherapy.com/brain-reset-through-your-ear" />
+        <meta property="og:url" content="https://acutherapy.com/brainreset" />
         <meta property="og:image" content="https://acutherapy.com/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
@@ -334,7 +327,7 @@ export default function BrainResetThroughYourEarPage() {
                   {[
                     { label: "CenterGy Therapy", href: "/centerGy-honolulu" },
                     { label: "Acupuncture for Anxiety", href: "/stress-anxiety-acupuncture-honolulu" },
-                    { label: "Brain Reset for Weight Loss™", href: "/brain-reset-for-weight-loss" },
+                    { label: "Brain Reset for Weight Loss™", href: "/weight-loss" },
                     { label: "Acupuncture for Sleep", href: "/insomnia-acupuncture-honolulu" },
                     { label: "Fertility Acupuncture", href: "/fertility-acupuncture-honolulu" },
                   ].map(({ label, href }) => (
