@@ -290,7 +290,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           </a>
           <div className="hidden lg:flex items-center gap-6 xl:gap-8 text-[14.5px] font-medium text-slate-600 tracking-wide">
             <a href="/" className="hover:text-blue-600 transition-colors py-4">{navHome}</a>
-            <a href="/dr-david-cai-honolulu-acupuncturist" className="hover:text-blue-600 transition-colors py-4">{navAbout}</a>
 
             {/* Core Services Dropdown */}
             <div className="relative group">
