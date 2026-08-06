@@ -171,12 +171,10 @@ export default function SleepAcupuncturePage() {
                   Book a Consultation
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                <a href="tel:+18085287177">
-                  <PhoneCall className="mr-2 h-5 w-5" />
-                  (808) 528-7177
-                </a>
-              </Button>
+              <a href="tel:+18085287177" className="inline-flex items-center justify-center gap-2 h-12 px-6 rounded-lg border-2 border-white text-white font-semibold text-base hover:bg-white/10 transition-colors">
+                <PhoneCall className="h-5 w-5" />
+                (808) 528-7177
+              </a>
             </div>
           </div>
         </div>
@@ -464,9 +462,9 @@ export default function SleepAcupuncturePage() {
             <Button asChild size="lg" className="bg-white text-blue-900 hover:bg-blue-50 font-semibold">
               <Link to="/book-appointment">Book Your Consultation</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-              <a href="tel:+18085287177">(808) 528-7177</a>
-            </Button>
+            <a href="tel:+18085287177" className="inline-flex items-center justify-center h-12 px-6 rounded-lg border-2 border-white text-white font-semibold text-base hover:bg-white/10 transition-colors">
+              (808) 528-7177
+            </a>
           </div>
         </div>
       </section>
