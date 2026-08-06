@@ -112,11 +112,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   let navHome = 'Home';
   let navTreatments = 'Services';
   let navConditions = 'Conditions';
-  let navReviews = 'Reviews';
   let navTopics = 'Q&A';
   let navAbout = 'About Us';
   let navBook = 'Get My Recovery Plan';
-  let navQuiz = 'Energy Test';
 
   let footerDesc = "Honolulu's premier clinic for natural pain relief, acupuncture, and traditional Chinese medicine, led by Dr. David Cai.";
   let footerTreatments = 'Services';
@@ -142,10 +140,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     navHome = '首页';
     navTreatments = '特色疗法';
     navConditions = '对应病症';
-    navReviews = '患者评价';
     navAbout = '关于我们';
     navBook = '预约就诊';
-    navQuiz = '五行测评';
     footerDesc = '夏威夷檀香山最权威的自然疼痛缓解与正统中医针灸中心，由拥有30年临床经验的蔡大卫医生主理。';
     footerTreatments = '特色疗法';
     footerConditions = '常见病症';
@@ -169,10 +165,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     navHome = 'ホーム';
     navTreatments = '治療内容';
     navConditions = '対象症状';
-    navReviews = '患者様の声';
     navAbout = '当院について';
     navBook = 'ご予約';
-    navQuiz = '五行診断';
     footerDesc = 'Dr. David Caiが率いる、ホノルル最高峰の自然な痛みの緩和、鍼灸、そして伝統中国医学のクリニックです。';
     footerTreatments = '治療内容';
     footerConditions = '対象症状';
@@ -196,10 +190,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     navHome = '홈';
     navTreatments = '치료법';
     navConditions = '치료 질환';
-    navReviews = '환자 리뷰';
     navAbout = '소개';
     navBook = '예약하기';
-    navQuiz = '오행 에너지 진단';
     footerDesc = 'Dr. David Cai가 이끄는 호놀룰루 최고의 자연 통증 완화, 침술 및 전통 한의학 클리닉입니다.';
     footerTreatments = '치료법';
     footerConditions = '치료 질환';
