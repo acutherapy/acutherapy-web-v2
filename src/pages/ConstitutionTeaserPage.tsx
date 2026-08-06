@@ -172,13 +172,13 @@ const TeaserCanvas = ({ beads }: { beads: Bead[] }) => {
         // Half 2
         ctx.beginPath();
         ctx.arc(0, 0, yyRadius, Math.PI*1.5, Math.PI/2);
-        ctx.fillStyle = '#0F172A';
+        ctx.fillStyle = '#02066f';
         ctx.fill();
 
         // Top medium circle
         ctx.beginPath();
         ctx.arc(0, -yyRadius/2, yyRadius/2, 0, Math.PI*2);
-        ctx.fillStyle = '#0F172A';
+        ctx.fillStyle = '#02066f';
         ctx.fill();
 
         // Bottom medium circle
@@ -274,7 +274,7 @@ export default function ConstitutionTeaserPage() {
 
   return (
     <>
-      <section className="bg-slate-950 min-h-screen py-16 px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center relative overflow-hidden">
+      <section className="bg-[#02066f] min-h-screen py-16 px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center relative overflow-hidden">
         
         <Helmet>
           <title>{t.title} | AcuTherapy Clinics</title>
@@ -282,68 +282,68 @@ export default function ConstitutionTeaserPage() {
         </Helmet>
 
         {/* Outer space background glows */}
-        <div className="absolute top-1/4 left-1/4 w-[350px] h-[350px] bg-blue-600/10 rounded-full blur-[100px] pointer-events-none"></div>
+        <div className="absolute top-1/4 left-1/4 w-[350px] h-[350px] bg-[#ae7723]/10 rounded-full blur-[100px] pointer-events-none"></div>
         <div className="absolute bottom-1/4 right-1/4 w-[350px] h-[350px] bg-[#10B981]/5 rounded-full blur-[100px] pointer-events-none"></div>
 
         {/* Floating Multi-Language selector */}
         <div className="max-w-4xl w-full flex justify-end mb-6 z-10">
-          <div className="flex gap-1 bg-[#1E293B] p-1 rounded-xl shadow-lg border border-slate-800 text-[10px] font-bold">
+          <div className="flex gap-1 bg-white/10 p-1 rounded-xl shadow-lg border border-white/15 text-[10px] font-bold">
             <button 
               onClick={() => setLang('zh')} 
-              className={`px-3 py-1.5 rounded-lg transition-all ${lang === 'zh' ? 'bg-blue-600 text-white' : 'text-slate-400 hover:bg-slate-800'}`}
+              className={`px-3 py-1.5 rounded-lg transition-all ${lang === 'zh' ? 'bg-[#ae7723] text-white' : 'text-white/60 hover:bg-white/15'}`}
             >
               中文
             </button>
             <button 
               onClick={() => setLang('en')} 
-              className={`px-3 py-1.5 rounded-lg transition-all ${lang === 'en' ? 'bg-blue-600 text-white' : 'text-slate-400 hover:bg-slate-800'}`}
+              className={`px-3 py-1.5 rounded-lg transition-all ${lang === 'en' ? 'bg-[#ae7723] text-white' : 'text-white/60 hover:bg-white/15'}`}
             >
               English
             </button>
             <button 
               onClick={() => setLang('ja')} 
-              className={`px-3 py-1.5 rounded-lg transition-all ${lang === 'ja' ? 'bg-blue-600 text-white' : 'text-slate-400 hover:bg-slate-800'}`}
+              className={`px-3 py-1.5 rounded-lg transition-all ${lang === 'ja' ? 'bg-[#ae7723] text-white' : 'text-white/60 hover:bg-white/15'}`}
             >
               日本語
             </button>
           </div>
         </div>
 
-        <div className="max-w-4xl w-full bg-slate-900 rounded-[36px] shadow-2xl border border-slate-800 p-8 sm:p-12 relative overflow-hidden z-10 flex flex-col lg:flex-row items-center gap-12">
+        <div className="max-w-4xl w-full bg-white/10 rounded-[36px] shadow-2xl border border-white/10 p-8 sm:p-12 relative overflow-hidden z-10 flex flex-col lg:flex-row items-center gap-12">
           
           {/* Left Side: Dynamic preview canvas */}
           <div className="w-full lg:w-1/2 flex flex-col items-center gap-4 text-center">
             
-            <div className="inline-flex items-center gap-2 text-blue-400 font-extrabold text-[10px] uppercase tracking-widest mb-1">
-              <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-ping"></span>
+            <div className="inline-flex items-center gap-2 text-[#f9eb92] font-extrabold text-[10px] uppercase tracking-widest mb-1">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#ae7723] animate-ping"></span>
               AcuTherapy Charter Preview
             </div>
 
-            <div className="bg-[#0B1120] rounded-3xl border border-slate-800 p-6 w-full h-[300px] flex items-center justify-center relative overflow-hidden shadow-2xl">
+            <div className="bg-[#010340] rounded-3xl border border-white/10 p-6 w-full h-[300px] flex items-center justify-center relative overflow-hidden shadow-2xl">
               {randomBeads.length > 0 && <TeaserCanvas beads={randomBeads} />}
             </div>
 
-            <span className="text-[10px] text-slate-500 tracking-wider uppercase font-bold mt-2">
+            <span className="text-[10px] text-white/40 tracking-wider uppercase font-bold mt-2">
               ☯ Interactive Vitality Map
             </span>
           </div>
 
           {/* Right Side: Marketing text & CTA with QR Code */}
-          <div className="w-full lg:w-1/2 flex flex-col gap-6 text-left text-slate-200">
+          <div className="w-full lg:w-1/2 flex flex-col gap-6 text-left text-white">
             <div>
               <h1 className="text-2xl sm:text-3xl font-black text-white tracking-tight leading-tight">
                 {t.teaser_title}
               </h1>
-              <p className="text-xs text-blue-400 font-bold tracking-wider mt-1.5 uppercase">
+              <p className="text-xs text-[#f9eb92] font-bold tracking-wider mt-1.5 uppercase">
                 {t.subtitle}
               </p>
-              <p className="text-xs text-slate-400 leading-relaxed mt-4">
+              <p className="text-xs text-white/70 leading-relaxed mt-4">
                 {t.teaser_desc}
               </p>
             </div>
 
             {/* QR Card Container */}
-            <div className="bg-slate-950/80 border border-slate-800 rounded-2xl p-5 flex flex-col sm:flex-row items-center gap-5 mt-2">
+            <div className="bg-black/20 border border-white/10 rounded-2xl p-5 flex flex-col sm:flex-row items-center gap-5 mt-2">
               {/* QR Code fetched dynamically from official API */}
               <div className="relative w-[130px] h-[130px] bg-white rounded-xl p-2 shrink-0 flex items-center justify-center shadow-md">
                 <img 
@@ -354,11 +354,11 @@ export default function ConstitutionTeaserPage() {
               </div>
 
               <div className="flex flex-col gap-2 text-center sm:text-left">
-                <span className="inline-flex self-center sm:self-start items-center gap-1.5 text-[9px] bg-blue-900/60 text-blue-300 font-black px-2 py-0.5 rounded uppercase tracking-wider">
+                <span className="inline-flex self-center sm:self-start items-center gap-1.5 text-[9px] bg-[#ae7723]/25 text-[#f9eb92] font-black px-2 py-0.5 rounded uppercase tracking-wider">
                   <QrCode size={10} /> {t.scan_badge}
                 </span>
                 <h4 className="text-xs font-black text-white">{t.card_title}</h4>
-                <p className="text-[10px] text-slate-500 leading-relaxed">
+                <p className="text-[10px] text-white/50 leading-relaxed">
                   {t.card_desc}
                 </p>
               </div>
@@ -367,7 +367,7 @@ export default function ConstitutionTeaserPage() {
             {/* Direct Link CTA Button */}
             <a 
               href="/constitution-test"
-              className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 px-6 rounded-xl shadow-lg shadow-blue-500/20 text-xs flex items-center justify-center gap-2 transition-all group mt-2"
+              className="bg-[#ae7723] hover:bg-[#9a6b1a] text-white font-bold py-3.5 px-6 rounded-xl shadow-lg shadow-[#ae7723]/30 text-xs flex items-center justify-center gap-2 transition-all group mt-2"
             >
               {t.cta_btn}
               <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
@@ -377,7 +377,7 @@ export default function ConstitutionTeaserPage() {
         </div>
 
         {/* Footer info */}
-        <div className="text-[10px] text-slate-500 mt-8 text-center max-w-sm px-4">
+        <div className="text-[10px] text-white/40 mt-8 text-center max-w-sm px-4">
           AcuTherapy Clinics • Holistic Chinese Medicine & Acupuncture Service Honolulu
         </div>
 
