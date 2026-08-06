@@ -1203,11 +1203,45 @@ function buildJsonLd(route, description) {
         }
       ]
     };
+    lilihaSchema.sameAs = [
+      'https://maps.app.goo.gl/j2tVyh4dqUh2Ly1h6',
+      'https://www.yelp.com/biz/acutherapy-clinics-honolulu-2'
+    ];
+    aieaHomeSchema.sameAs = [
+      'https://maps.app.goo.gl/1XQ73VZBLDMwyEBW9',
+      'https://www.yelp.com/biz/acutherapy-clinics-aiea'
+    ];
+    const orgSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'MedicalOrganization',
+      '@id': 'https://acutherapy.com/#organization',
+      'name': 'AcuTherapy Clinics',
+      'url': 'https://acutherapy.com',
+      'logo': 'https://acutherapy.com/logo.png',
+      'medicalSpecialty': 'Acupuncture',
+      'areaServed': {
+        '@type': 'AdministrativeArea',
+        'name': 'Oahu, Hawaii'
+      },
+      'sameAs': [
+        'https://maps.app.goo.gl/j2tVyh4dqUh2Ly1h6',
+        'https://maps.app.goo.gl/1XQ73VZBLDMwyEBW9',
+        'https://www.yelp.com/biz/acutherapy-clinics-honolulu-2',
+        'https://www.yelp.com/biz/acutherapy-clinics-aiea'
+      ],
+      'location': [
+        { '@id': 'https://acutherapy.com/#liliha' },
+        { '@id': 'https://acutherapy.com/#aiea' }
+      ]
+    };
     return `<script type="application/ld+json">
 ${JSON.stringify(lilihaSchema, null, 2)}
 </script>
 <script type="application/ld+json">
 ${JSON.stringify(aieaHomeSchema, null, 2)}
+</script>
+<script type="application/ld+json">
+${JSON.stringify(orgSchema, null, 2)}
 </script>`;
   }
 
@@ -1254,6 +1288,10 @@ ${JSON.stringify(aieaHomeSchema, null, 2)}
         'PainManagement'
       ]
     };
+    aieaSchema.sameAs = [
+      'https://maps.app.goo.gl/1XQ73VZBLDMwyEBW9',
+      'https://www.yelp.com/biz/acutherapy-clinics-aiea'
+    ];
     return `<script type="application/ld+json">
 ${JSON.stringify(aieaSchema, null, 2)}
 </script>`;
@@ -1302,6 +1340,10 @@ ${JSON.stringify(aieaSchema, null, 2)}
         'PainManagement'
       ]
     };
+    honoluluSchema.sameAs = [
+      'https://maps.app.goo.gl/j2tVyh4dqUh2Ly1h6',
+      'https://www.yelp.com/biz/acutherapy-clinics-honolulu-2'
+    ];
     return `<script type="application/ld+json">
 ${JSON.stringify(honoluluSchema, null, 2)}
 </script>`;
