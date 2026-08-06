@@ -214,13 +214,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   }
 
 
-  if (pathname.includes('/constitution-')) {
-    return (
-      <div className="min-h-screen font-sans bg-slate-950 flex flex-col">
-        {children}
-      </div>
-    );
-  }
+
 
   return (
     <div className="min-h-screen font-sans bg-slate-50 flex flex-col">
@@ -358,6 +352,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               </button>
               <div className="absolute top-12 left-0 w-56 bg-white border border-slate-200 shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
                 <a href="/constitution-teaser" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700 border-b border-slate-100">Energy Test</a>
+                <a href="/lgzf" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700 border-b border-slate-100">Acupoint Guide</a>
                 <a href="/brainreset" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700 border-b border-slate-100">Brain Reset — Ear Seeds</a>
                 <a href="/weight-loss" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700 border-b border-slate-100">Weight Loss Support</a>
                 <a href="/facial-acupuncture-honolulu" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700">Facial Acupuncture</a>
@@ -414,6 +409,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               {openMobileDropdown === 'specialty' && (
                 <div className="pl-4 py-3 space-y-4 bg-slate-50 border-b border-slate-100 rounded-b-lg">
                   <a href="/constitution-teaser" className="block text-slate-600 font-medium">Energy Test</a>
+                  <a href="/lgzf" className="block text-slate-600 font-medium">Acupoint Guide</a>
                   <a href="/brainreset" className="block text-slate-600 font-medium">Brain Reset — Ear Seeds</a>
                   <a href="/weight-loss" className="block text-slate-600 font-medium">Weight Loss Support</a>
                   <a href="/facial-acupuncture-honolulu" className="block text-slate-600 font-medium">Facial Acupuncture</a>
