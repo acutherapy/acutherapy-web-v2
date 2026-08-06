@@ -1554,7 +1554,82 @@ ${JSON.stringify({
 </script>`;
   }
 
-  // 14. Default clean WebPage schema for other pages
+  // 14. Neighborhood / locality pages → MedicalClinic with areaServed
+  const NEIGHBORHOOD_MAP = {
+    '/acupuncture-waikiki':    { area: 'Waikiki',    clinic: 'liliha' },
+    '/waikiki-acupuncture':    { area: 'Waikiki',    clinic: 'liliha' },
+    '/acupuncture-kahala':     { area: 'Kahala',     clinic: 'liliha' },
+    '/kahala-acupuncture':     { area: 'Kahala',     clinic: 'liliha' },
+    '/acupuncture-manoa':      { area: 'Manoa',      clinic: 'liliha' },
+    '/acupuncture-hawaii-kai': { area: 'Hawaii Kai', clinic: 'liliha' },
+    '/acupuncture-kaimuki':    { area: 'Kaimuki',    clinic: 'liliha' },
+    '/acupuncture-ala-moana':  { area: 'Ala Moana',  clinic: 'liliha' },
+    '/acupuncture-kapahulu':   { area: 'Kapahulu',   clinic: 'liliha' },
+    '/acupuncture-moiliili':   { area: 'Moiliili',   clinic: 'liliha' },
+    '/acupuncture-kakaako':    { area: 'Kakaako',    clinic: 'liliha' },
+    '/acupuncture-makiki':     { area: 'Makiki',     clinic: 'liliha' },
+    '/honolulu-acupuncture':   { area: 'Honolulu',   clinic: 'liliha' },
+    '/acupuncture-waipahu':    { area: 'Waipahu',    clinic: 'aiea'   },
+    '/acupuncture-kapolei':    { area: 'Kapolei',    clinic: 'aiea'   },
+  };
+  const neighborhoodInfo = NEIGHBORHOOD_MAP[route];
+  if (neighborhoodInfo) {
+    const isLiliha = neighborhoodInfo.clinic === 'liliha';
+    const neighborhoodSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'MedicalClinic',
+      'name': isLiliha ? 'AcuTherapy Clinics - Liliha (Honolulu)' : 'AcuTherapy Clinics - Aiea',
+      '@id': isLiliha ? 'https://acutherapy.com/#liliha' : 'https://acutherapy.com/#aiea',
+      'url': isLiliha ? 'https://acutherapy.com/honolulu-clinic' : 'https://acutherapy.com/aiea-pearl-city-clinic',
+      'telephone': isLiliha ? '+1-808-528-7177' : '+1-808-452-1900',
+      'address': isLiliha ? {
+        '@type': 'PostalAddress',
+        'streetAddress': '1650 Liliha St, Suite 208',
+        'addressLocality': 'Honolulu',
+        'addressRegion': 'HI',
+        'postalCode': '96817',
+        'addressCountry': 'US'
+      } : {
+        '@type': 'PostalAddress',
+        'streetAddress': '98-211 Pali Momi St, Suite 604',
+        'addressLocality': 'Aiea',
+        'addressRegion': 'HI',
+        'postalCode': '96701',
+        'addressCountry': 'US'
+      },
+      'geo': isLiliha ? {
+        '@type': 'GeoCoordinates',
+        'latitude': 21.321289,
+        'longitude': -157.860155
+      } : {
+        '@type': 'GeoCoordinates',
+        'latitude': 21.3853,
+        'longitude': -157.9427
+      },
+      'areaServed': {
+        '@type': 'Place',
+        'name': neighborhoodInfo.area + ', Oahu, Hawaii'
+      },
+      'openingHoursSpecification': isLiliha ? hoursHonolulu : hoursAiea,
+      'medicalSpecialty': 'Acupuncture',
+      'priceRange': '$$',
+      'aggregateRating': {
+        '@type': 'AggregateRating',
+        'ratingValue': '4.9',
+        'reviewCount': isLiliha ? '64' : '15',
+        'bestRating': '5',
+        'worstRating': '1'
+      },
+      'parentOrganization': {
+        '@type': 'MedicalOrganization',
+        'name': 'AcuTherapy Clinics',
+        'url': 'https://acutherapy.com'
+      }
+    };
+    return `<script type="application/ld+json">\n${JSON.stringify(neighborhoodSchema, null, 2)}\n</script>`;
+  }
+
+  // 15. Default clean WebPage schema for other pages
   const webPageSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
