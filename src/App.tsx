@@ -90,6 +90,7 @@ import MoxibustionHonoluluPage from './pages/MoxibustionHonoluluPage';
 import AcupunctureMakikiPage from './pages/AcupunctureMakikiPage';
 import BrainResetThroughYourEarPage from './pages/BrainResetThroughYourEarPage';
 import BrainResetForWeightLossPage from './pages/BrainResetForWeightLossPage';
+import FacialAcupunctureHonoluluPage from './pages/FacialAcupunctureHonoluluPage';
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -356,21 +357,21 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               </div>
             </div>
 
-            {/* Locations & Contact Dropdown */}
+            {/* About Us */}
+            <a href="/dr-david-cai-honolulu-acupuncturist" className="hover:text-blue-600 transition-colors py-4">{navAbout}</a>
+
+            {/* Specialty Dropdown */}
             <div className="relative group">
               <button className="flex items-center gap-1 hover:text-blue-600 transition-colors py-4">
-                Locations & Contact <ChevronDown className="h-4 w-4" />
+                Specialty <ChevronDown className="h-4 w-4" />
               </button>
-              <div className="absolute top-12 left-0 w-52 bg-white border border-slate-200 shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
-                <a href="/honolulu-clinic" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700">Honolulu Clinic (Liliha)</a>
-                <a href="/aiea-pearl-city-clinic" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700 border-b border-slate-100">Aiea / Pearl City Clinic</a>
-                <a href="/contact-honolulu-acupuncture" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700 border-b border-slate-100">Contact Us</a>
-                <a href="tel:+18085287177" className="block px-4 py-2 text-sm font-bold text-blue-600 hover:bg-blue-50">(808) 528-7177</a>
+              <div className="absolute top-12 left-0 w-56 bg-white border border-slate-200 shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
+                <a href="/constitution-teaser" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700 border-b border-slate-100">Energy Test</a>
+                <a href="/brainreset" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700 border-b border-slate-100">Brain Reset — Ear Seeds</a>
+                <a href="/weight-loss" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700 border-b border-slate-100">Weight Loss Support</a>
+                <a href="/facial-acupuncture-honolulu" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700">Facial Acupuncture</a>
               </div>
             </div>
-
-            <a href="/patient-reviews" className="hover:text-blue-600 transition-colors py-4">{navReviews}</a>
-            <a href="/constitution-teaser" className="hover:text-blue-600 transition-colors py-4 font-bold text-blue-600 bg-blue-50/50 px-3 rounded-xl border border-blue-100/50">{navQuiz}</a>
             <a href="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 shadow-md">
               <Calendar className="mr-2 h-4 w-4" /> {navBook}
             </Button></a>
@@ -416,8 +417,17 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 </div>
               )}
 
-              <a href="/patient-reviews" className="text-lg font-semibold text-slate-800 border-b border-slate-100 py-3">{navReviews}</a>
-              <a href="/constitution-teaser" className="text-lg font-bold text-blue-600 border-b border-slate-100 py-3">{navQuiz}</a>
+              <button onClick={() => toggleMobileDropdown('specialty')} className="flex items-center justify-between text-lg font-bold text-blue-600 border-b border-slate-100 py-3 w-full">
+                特色疗法 <ChevronDown className={`h-5 w-5 transition-transform ${openMobileDropdown === 'specialty' ? 'rotate-180' : ''}`} />
+              </button>
+              {openMobileDropdown === 'specialty' && (
+                <div className="pl-4 py-3 space-y-4 bg-slate-50 border-b border-slate-100 rounded-b-lg">
+                  <a href="/constitution-teaser" className="block text-slate-600 font-medium">Energy Test</a>
+                  <a href="/brainreset" className="block text-slate-600 font-medium">Brain Reset — Ear Seeds</a>
+                  <a href="/weight-loss" className="block text-slate-600 font-medium">Weight Loss Support</a>
+                  <a href="/facial-acupuncture-honolulu" className="block text-slate-600 font-medium">Facial Acupuncture</a>
+                </div>
+              )}
               <a href="/frequently-asked-questions" className="text-lg font-semibold text-slate-800 border-b border-slate-100 py-3">{navTopics}</a>
               <a href="/dr-david-cai-honolulu-acupuncturist" className="text-lg font-semibold text-slate-800 border-b border-slate-100 py-3">{navAbout}</a>
               
@@ -611,6 +621,7 @@ export default function App() {
           <Route path="/acupuncture-makiki" element={<AcupunctureMakikiPage />} />
           <Route path="/brainreset" element={<BrainResetThroughYourEarPage />} />
           <Route path="/weight-loss" element={<BrainResetForWeightLossPage />} />
+          <Route path="/facial-acupuncture-honolulu" element={<FacialAcupunctureHonoluluPage />} />
           <Route path="/en/services/insurance-payment" element={<InsuranceAcceptedPage />} />
           
           <Route path="/back-neck-pain" element={<BackPainAcupunctureHonoluluPage />} />
