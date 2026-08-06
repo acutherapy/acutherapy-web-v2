@@ -351,10 +351,10 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             {/* About Us */}
             <a href="/dr-david-cai-honolulu-acupuncturist" className="hover:text-blue-600 transition-colors py-4">{navAbout}</a>
 
-            {/* Specialty Dropdown */}
+            {/* Wellness Dropdown */}
             <div className="relative group">
               <button className="flex items-center gap-1 hover:text-blue-600 transition-colors py-4">
-                Specialty <ChevronDown className="h-4 w-4" />
+                Wellness <ChevronDown className="h-4 w-4" />
               </button>
               <div className="absolute top-12 left-0 w-56 bg-white border border-slate-200 shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
                 <a href="/constitution-teaser" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700 border-b border-slate-100">Energy Test</a>
@@ -409,7 +409,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               )}
 
               <button onClick={() => toggleMobileDropdown('specialty')} className="flex items-center justify-between text-lg font-bold text-blue-600 border-b border-slate-100 py-3 w-full">
-                特色疗法 <ChevronDown className={`h-5 w-5 transition-transform ${openMobileDropdown === 'specialty' ? 'rotate-180' : ''}`} />
+                Wellness <ChevronDown className={`h-5 w-5 transition-transform ${openMobileDropdown === 'specialty' ? 'rotate-180' : ''}`} />
               </button>
               {openMobileDropdown === 'specialty' && (
                 <div className="pl-4 py-3 space-y-4 bg-slate-50 border-b border-slate-100 rounded-b-lg">
