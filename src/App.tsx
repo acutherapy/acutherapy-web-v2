@@ -354,7 +354,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 <a href="/brainreset" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700 border-b border-slate-100">Brain Reset — Ear Seeds</a>
                 <a href="/weight-loss" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700 border-b border-slate-100">Weight Loss Support</a>
                 <a href="/facial-acupuncture-honolulu" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700 border-b border-slate-100">Facial Acupuncture</a>
-                <a href="/constitution-teaser" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700 border-b border-slate-100">Energy Test <span className="text-slate-400">(For Practitioners Only)</span></a>
+                <a href="/constitution-teaser" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700 border-b border-slate-100">Energy Test</a>
                 <a href="/lgzf" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700">Acupoint Guide <span className="text-slate-400">(For Practitioners Only)</span></a>
               </div>
             </div>
@@ -411,7 +411,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                   <a href="/brainreset" className="block text-slate-600 font-medium">Brain Reset — Ear Seeds</a>
                   <a href="/weight-loss" className="block text-slate-600 font-medium">Weight Loss Support</a>
                   <a href="/facial-acupuncture-honolulu" className="block text-slate-600 font-medium">Facial Acupuncture</a>
-                  <a href="/constitution-teaser" className="block text-slate-600 font-medium">Energy Test <span className="text-slate-400 text-xs">(For Practitioners Only)</span></a>
+                  <a href="/constitution-teaser" className="block text-slate-600 font-medium">Energy Test</a>
                   <a href="/lgzf" className="block text-slate-600 font-medium">Acupoint Guide <span className="text-slate-400 text-xs">(For Practitioners Only)</span></a>
                 </div>
               )}
