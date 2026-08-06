@@ -1031,6 +1031,253 @@ const FACIAL_NOSCRIPT_BODY = `
 <p><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</p>
 <p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Tuesday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
 
+const WAIKIKI_NOSCRIPT_BODY = `<h1>Acupuncture Near Waikiki &ndash; Honolulu, Hawaii</h1>
+<p>AcuTherapy Clinics provides acupuncture, Traditional Chinese Medicine, and medical massage for patients living and working in and around Waikiki. Our Liliha clinic is approximately 10 minutes from Waikiki by car&mdash;a straightforward drive via McCully Street or along Kapiolani Boulevard. Convenient on-site parking is available at our Liliha location.</p>
+<h2>Who We Treat in the Waikiki Area</h2>
+<p>Waikiki&rsquo;s economy runs on hospitality and tourism, which means a large share of our patients from this area are hotel workers, restaurant staff, and retail employees who spend long hours on their feet. Prolonged standing and repetitive motion in service roles are among the leading causes of lower back pain, plantar fasciitis, knee strain, and neck and shoulder tension. We also see Waikiki residents and visitors active in water sports&mdash;surfers, paddleboarders, and outrigger canoe paddlers&mdash;with shoulder impingement, rotator cuff strain, and low back pain. Stress and sleep disruption from shift work and irregular schedules are equally common presenting concerns.</p>
+<h2>Conditions We Commonly Treat</h2>
+<ul>
+<li>Lower back pain from prolonged standing in hotel and service roles</li>
+<li>Plantar fasciitis and foot pain</li>
+<li>Shoulder and rotator cuff strain from water sports</li>
+<li>Neck and shoulder tension from device use</li>
+<li>Stress, anxiety, and insomnia from shift work</li>
+<li>Auto accident injuries covered under Hawaii No-Fault PIP</li>
+</ul>
+<h2>Our Approach</h2>
+<p>Every patient begins with a full constitutional assessment using Dr. Cai&rsquo;s CenterGy (Synergies) diagnostic method&mdash;a precision system that identifies the root pattern driving each condition. Treatment may include acupuncture, medical massage, and needle-free CenterGy energy therapy for needle-sensitive patients.</p>
+<p>Dr. David Cai, O.M.D., L.Ac., L.M.T. &mdash; 30+ years clinical experience. Hawaii L.Ac. ACU-1125, NCCAOM #962-1001-522. Lisa Long, O.M.D., L.M.T. &mdash; Senior practitioner and CenterGy co-developer. Hawaii LMT MAT-17832.</p>
+<h2>Insurance Accepted</h2>
+<p>Workers&rsquo; Compensation, Auto Accident PIP (Hawaii No-Fault), Veterans Community Care, UHA, HMAA, AARP, Humana, AshLink, and more.</p>
+<h2>Location &amp; Hours</h2>
+<p><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</p>
+<p>Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Sunday closed</p>`;
+
+const KAHALA_NOSCRIPT_BODY = `<h1>Acupuncture in Kahala &ndash; Honolulu, Hawaii</h1>
+<p>AcuTherapy Clinics serves patients from the Kahala and Diamond Head neighborhoods of Honolulu from our Liliha clinic, approximately 20 minutes away via Kalanianaole Highway and the H-1 westbound. Our clinic offers convenient on-site parking and same-week appointments for new patients.</p>
+<h2>Who We Treat in the Kahala Area</h2>
+<p>Kahala and Diamond Head attract a health-conscious, wellness-oriented patient base. Many of our Kahala-area patients are professionals, retirees, and active adults who come to us for ongoing wellness maintenance, chronic pain management, and preventive care. Women&rsquo;s health concerns&mdash;hormonal balance, fertility support, and perimenopausal symptoms&mdash;are also common. We regularly treat age-related joint conditions, arthritis, and the kind of deep postural imbalances that accumulate over years of desk work or athletic activity.</p>
+<h2>Conditions We Commonly Treat</h2>
+<ul>
+<li>Chronic back and joint pain management</li>
+<li>Arthritis and osteoarthritis pain relief</li>
+<li>Women&rsquo;s health: hormonal balance, fertility, perimenopausal support</li>
+<li>Stress, anxiety, and burnout recovery</li>
+<li>Preventive wellness and seasonal tune-ups</li>
+<li>Sports injuries from golf, tennis, hiking, and swimming</li>
+</ul>
+<h2>Our Approach</h2>
+<p>AcuTherapy Clinics uses the CenterGy (Synergies) constitutional diagnostic method co-developed by Dr. David Cai and Lisa Long. This precision system maps Qi distribution across organ systems and meridians to identify imbalances before they produce serious symptoms&mdash;making it especially effective for wellness-focused patients who want to maintain peak health, not just manage acute pain.</p>
+<p>Dr. David Cai, O.M.D., L.Ac., L.M.T. &mdash; Founder, 30+ years experience. Hawaii L.Ac. ACU-1125, NCCAOM #962-1001-522. Lisa Long, O.M.D., L.M.T. &mdash; Senior practitioner. Hawaii LMT MAT-17832.</p>
+<h2>Insurance Accepted</h2>
+<p>Workers&rsquo; Compensation, Auto Accident PIP (Hawaii No-Fault), Veterans Community Care, UHA, HMAA, AARP, Humana, AshLink, and more.</p>
+<h2>Location &amp; Hours</h2>
+<p><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</p>
+<p>Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Sunday closed</p>`;
+
+const MANOA_NOSCRIPT_BODY = `<h1>Acupuncture in Manoa &ndash; Honolulu, Hawaii</h1>
+<p>AcuTherapy Clinics provides expert acupuncture, Traditional Chinese Medicine, and medical massage for patients from the Manoa Valley area of Honolulu. Our Liliha clinic is approximately 15 minutes from Manoa via University Avenue and Beretania Street, with on-site parking available.</p>
+<h2>Who We Treat in the Manoa Area</h2>
+<p>Manoa is home to the University of Hawaii at Manoa campus, which means a significant share of our patients from this area are students, faculty, and research staff dealing with academic stress, postural strain from long hours at a desk or computer, tension headaches, and burnout. University athletes and recreational sports participants come to us with ankle sprains, knee injuries, shoulder strain, and recovery needs after competition. We also serve Manoa Valley families and long-term residents dealing with chronic pain and age-related conditions.</p>
+<h2>Conditions We Commonly Treat</h2>
+<ul>
+<li>Academic and work-related stress, anxiety, and insomnia</li>
+<li>Tension headaches and migraines</li>
+<li>Tech neck and postural strain from computer use</li>
+<li>Sports injuries for student and recreational athletes</li>
+<li>Lower back pain from prolonged sitting</li>
+<li>Digestive issues and immune support</li>
+</ul>
+<h2>Our Approach</h2>
+<p>Dr. Cai&rsquo;s CenterGy (Synergies) constitutional method tailors each treatment to the patient&rsquo;s individual root pattern rather than addressing symptoms in isolation. For stress and headache patients, treatment focuses on regulating the Liver and Heart meridians and calming the nervous system. For athletes, we focus on Qi and blood movement through the affected channels to reduce inflammation and accelerate tissue recovery.</p>
+<p>Dr. David Cai, O.M.D., L.Ac., L.M.T. &mdash; Founder, 30+ years experience. Hawaii L.Ac. ACU-1125, NCCAOM #962-1001-522. Lisa Long, O.M.D., L.M.T. &mdash; Senior practitioner. Hawaii LMT MAT-17832.</p>
+<h2>Insurance Accepted</h2>
+<p>Workers&rsquo; Compensation, Auto Accident PIP (Hawaii No-Fault), Veterans Community Care, UHA, HMAA, AARP, Humana, AshLink, and more.</p>
+<h2>Location &amp; Hours</h2>
+<p><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</p>
+<p>Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Sunday closed</p>`;
+
+const HAWAII_KAI_NOSCRIPT_BODY = `<h1>Acupuncture in Hawaii Kai &ndash; East Honolulu, Hawaii</h1>
+<p>AcuTherapy Clinics serves patients from Hawaii Kai and East Honolulu at our Liliha clinic, approximately 25&ndash;30 minutes away via Kalanianaole Highway. On-site parking is available, making the drive from East Oahu straightforward for patients scheduling morning appointments during our regular hours.</p>
+<h2>Who We Treat in the Hawaii Kai Area</h2>
+<p>Hawaii Kai attracts active outdoor enthusiasts&mdash;hikers tackling Koko Head and Makapuu, surfers at Sandy Beach and Portlock, scuba divers, and paddlers. This active lifestyle produces a predictable set of musculoskeletal injuries: knee pain from steep trail descents, shoulder strain from surfing and paddling, ankle sprains, and hip flexor tightness from repetitive athletic activity. We also treat auto accident injuries that occur frequently on Kalanianaole Highway, and see patients managing age-related joint conditions and chronic pain from years of active use.</p>
+<h2>Conditions We Commonly Treat</h2>
+<ul>
+<li>Knee pain from hiking, trail running, and impact sports</li>
+<li>Shoulder and rotator cuff injuries from surfing and paddling</li>
+<li>Ankle sprains and ligament recovery</li>
+<li>Hip pain and iliotibial band syndrome</li>
+<li>Auto accident injuries (whiplash, back pain) covered under Hawaii No-Fault PIP</li>
+<li>Chronic joint pain and arthritis management</li>
+</ul>
+<h2>Our Approach</h2>
+<p>Our practitioners use the CenterGy (Synergies) diagnostic system to assess both the acute injury and the underlying constitutional factors that affect recovery speed. Athletes often respond well to a combination of acupuncture for inflammation and nerve signaling alongside medical massage to address soft tissue restriction and adhesion.</p>
+<p>Dr. David Cai, O.M.D., L.Ac., L.M.T. &mdash; Founder, 30+ years experience. Hawaii L.Ac. ACU-1125, NCCAOM #962-1001-522. Lisa Long, O.M.D., L.M.T. &mdash; Senior practitioner. Hawaii LMT MAT-17832.</p>
+<h2>Insurance Accepted</h2>
+<p>Workers&rsquo; Compensation, Auto Accident PIP (Hawaii No-Fault), Veterans Community Care, UHA, HMAA, AARP, Humana, AshLink, and more.</p>
+<h2>Location &amp; Hours</h2>
+<p><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</p>
+<p>Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Sunday closed</p>`;
+
+const KAIMUKI_NOSCRIPT_BODY = `<h1>Acupuncture in Kaimuki &ndash; Honolulu, Hawaii</h1>
+<p>AcuTherapy Clinics provides acupuncture, Traditional Chinese Medicine, and medical massage for patients from the Kaimuki neighborhood of Honolulu. Our Liliha clinic is approximately 15 minutes from Kaimuki via Waialae Avenue and the H-1, with on-site parking at our Liliha location.</p>
+<h2>Who We Treat in the Kaimuki Area</h2>
+<p>Kaimuki is one of Honolulu&rsquo;s most eclectic and livable neighborhoods&mdash;a mix of long-time local families, young professionals, and a thriving restaurant and retail scene. Many of our Kaimuki-area patients are restaurant workers, baristas, and small business owners dealing with the physical demands of service work: lower back strain from long shifts, neck and shoulder tension from kitchen and counter work, and wrist and hand issues from repetitive tasks. We also see Kaimuki residents who work downtown or in corporate settings with postural and stress-related complaints, as well as athletes from the nearby Waialae Golf Course and recreational sports community.</p>
+<h2>Conditions We Commonly Treat</h2>
+<ul>
+<li>Lower back and neck pain from service industry work</li>
+<li>Wrist and forearm repetitive strain</li>
+<li>Stress, anxiety, and fatigue from demanding schedules</li>
+<li>Sports injuries and recovery</li>
+<li>Headaches and migraines</li>
+<li>General wellness maintenance</li>
+</ul>
+<h2>Our Approach</h2>
+<p>We use the CenterGy (Synergies) constitutional diagnostic system to identify the specific root pattern behind each patient&rsquo;s condition. For Kaimuki&rsquo;s working population, we frequently address patterns of Qi stagnation and Liver imbalance driving stress and tension, combined with local acupuncture and massage for structural relief.</p>
+<p>Dr. David Cai, O.M.D., L.Ac., L.M.T. &mdash; Founder, 30+ years experience. Hawaii L.Ac. ACU-1125, NCCAOM #962-1001-522. Lisa Long, O.M.D., L.M.T. &mdash; Senior practitioner. Hawaii LMT MAT-17832.</p>
+<h2>Insurance Accepted</h2>
+<p>Workers&rsquo; Compensation, Auto Accident PIP (Hawaii No-Fault), Veterans Community Care, UHA, HMAA, AARP, Humana, AshLink, and more.</p>
+<h2>Location &amp; Hours</h2>
+<p><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</p>
+<p>Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Sunday closed</p>`;
+
+const ALA_MOANA_NOSCRIPT_BODY = `<h1>Acupuncture Near Ala Moana &ndash; Honolulu, Hawaii</h1>
+<p>AcuTherapy Clinics is located just minutes from the Ala Moana district on Liliha Street in Honolulu. For patients working or living near Ala Moana Center, our clinic is approximately 5&ndash;10 minutes by car via Beretania Street or the H-1, with on-site parking available.</p>
+<h2>Who We Treat in the Ala Moana Area</h2>
+<p>Ala Moana is one of Honolulu&rsquo;s most active commercial hubs, home to one of the world&rsquo;s largest open-air shopping centers, hotels, and a dense concentration of restaurant and retail businesses. The working population in this corridor includes retail associates, hotel staff, restaurant workers, and office employees&mdash;all of whom face significant physical demands. Common issues include foot and lower leg pain from standing on hard floors, lower back strain from long shifts, carpal tunnel and wrist pain from retail scanning and checkout work, and chronic stress and fatigue from high-volume service environments.</p>
+<h2>Conditions We Commonly Treat</h2>
+<ul>
+<li>Plantar fasciitis and foot pain from standing on hard surfaces</li>
+<li>Lower back pain from retail and hospitality work</li>
+<li>Carpal tunnel syndrome and wrist repetitive strain</li>
+<li>Neck and shoulder tension</li>
+<li>Stress, adrenal fatigue, and insomnia</li>
+<li>Workers&rsquo; Compensation claims for workplace injuries</li>
+</ul>
+<h2>Our Approach</h2>
+<p>Dr. Cai&rsquo;s CenterGy (Synergies) method provides a root-cause diagnosis at every visit, ensuring that symptom relief is paired with correction of the underlying constitutional imbalance. For retail and service workers, we often address Kidney and Spleen deficiency patterns that drive fatigue and structural weakness, alongside targeted local treatment for the presenting injury.</p>
+<p>Dr. David Cai, O.M.D., L.Ac., L.M.T. &mdash; Founder, 30+ years experience. Hawaii L.Ac. ACU-1125, NCCAOM #962-1001-522. Lisa Long, O.M.D., L.M.T. &mdash; Senior practitioner. Hawaii LMT MAT-17832.</p>
+<h2>Insurance Accepted</h2>
+<p>Workers&rsquo; Compensation, Auto Accident PIP (Hawaii No-Fault), Veterans Community Care, UHA, HMAA, AARP, Humana, AshLink, and more.</p>
+<h2>Location &amp; Hours</h2>
+<p><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</p>
+<p>Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Sunday closed</p>`;
+
+const KAPAHULU_NOSCRIPT_BODY = `<h1>Acupuncture in Kapahulu &ndash; Honolulu, Hawaii</h1>
+<p>AcuTherapy Clinics serves patients from the Kapahulu neighborhood and surrounding areas including Moiliili, St. Louis Heights, and Palolo from our Liliha Street clinic in Honolulu. Kapahulu is approximately 10 minutes from our clinic via Kapahulu Avenue and the H-1 westbound, with convenient on-site parking at our location.</p>
+<h2>Who We Treat in the Kapahulu Area</h2>
+<p>Kapahulu is a busy mixed residential and commercial corridor connecting Waikiki to the broader Honolulu neighborhoods. Patients from this area include restaurant and food service workers dealing with the physical demands of kitchen and counter work, active residents who use the nearby Diamond Head State Monument trails and Kapiolani Park for fitness, and families seeking care for injury recovery and chronic pain. We also see a number of patients from the Kapahulu area who have been in auto accidents on the H-1 on-ramps and surface streets and need Hawaii No-Fault PIP treatment.</p>
+<h2>Conditions We Commonly Treat</h2>
+<ul>
+<li>Lower back and shoulder pain from food service work</li>
+<li>Sports and trail injuries from Diamond Head and Kapiolani Park activities</li>
+<li>Knee and hip pain from recreational running</li>
+<li>Auto accident injuries (whiplash, cervical strain) under Hawaii PIP</li>
+<li>Stress, fatigue, and disrupted sleep</li>
+<li>General wellness and preventive care</li>
+</ul>
+<h2>Our Approach</h2>
+<p>Each patient receives a full constitutional assessment using the CenterGy (Synergies) method before treatment begins. This allows Dr. Cai and Lisa Long to address both the structural complaint and the deeper energy pattern behind it&mdash;producing more lasting results than symptom-only treatment.</p>
+<p>Dr. David Cai, O.M.D., L.Ac., L.M.T. &mdash; Founder, 30+ years experience. Hawaii L.Ac. ACU-1125, NCCAOM #962-1001-522. Lisa Long, O.M.D., L.M.T. &mdash; Senior practitioner. Hawaii LMT MAT-17832.</p>
+<h2>Insurance Accepted</h2>
+<p>Workers&rsquo; Compensation, Auto Accident PIP (Hawaii No-Fault), Veterans Community Care, UHA, HMAA, AARP, Humana, AshLink, and more.</p>
+<h2>Location &amp; Hours</h2>
+<p><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</p>
+<p>Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Sunday closed</p>`;
+
+const MOILIILI_NOSCRIPT_BODY = `<h1>Acupuncture in Moiliili &ndash; Honolulu, Hawaii</h1>
+<p>AcuTherapy Clinics provides acupuncture, Traditional Chinese Medicine, and medical massage for patients from the Moiliili neighborhood of Honolulu. Our Liliha clinic is approximately 10 minutes from Moiliili via King Street or University Avenue, with on-site parking available at our location.</p>
+<h2>Who We Treat in the Moiliili Area</h2>
+<p>Moiliili is a diverse, urban neighborhood adjacent to the University of Hawaii and McCully-Moiliili district. The patient base from this area reflects the neighborhood&rsquo;s character: university students and young professionals managing academic and work stress, residents of Japanese, Korean, and Filipino heritage with a cultural appreciation for holistic medicine, small business owners dealing with physical demands and burnout, and active adults who use the nearby Ala Wai Golf Course and Ala Wai Canal paths for daily exercise. We also regularly treat women from the Moiliili area seeking acupuncture for hormonal balance, fertility support, and cycle regulation.</p>
+<h2>Conditions We Commonly Treat</h2>
+<ul>
+<li>Stress, anxiety, and academic or work burnout</li>
+<li>Women&rsquo;s health: cycle regulation, fertility, perimenopause</li>
+<li>Lower back and neck pain from desk work and commuting</li>
+<li>Digestive issues and immune support</li>
+<li>Sleep disorders and fatigue</li>
+<li>General wellness and preventive seasonal care</li>
+</ul>
+<h2>Our Approach</h2>
+<p>The CenterGy (Synergies) diagnostic method used at AcuTherapy Clinics is particularly effective for complex or multi-symptom presentations common in stressed, overextended patients. It identifies the constitutional root pattern&mdash;whether Kidney deficiency, Liver Qi stagnation, Heart-Spleen weakness, or another pattern&mdash;and builds treatment around correcting that root cause.</p>
+<p>Dr. David Cai, O.M.D., L.Ac., L.M.T. &mdash; Founder, 30+ years experience. Hawaii L.Ac. ACU-1125, NCCAOM #962-1001-522. Lisa Long, O.M.D., L.M.T. &mdash; Senior practitioner. Hawaii LMT MAT-17832.</p>
+<h2>Insurance Accepted</h2>
+<p>Workers&rsquo; Compensation, Auto Accident PIP (Hawaii No-Fault), Veterans Community Care, UHA, HMAA, AARP, Humana, AshLink, and more.</p>
+<h2>Location &amp; Hours</h2>
+<p><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</p>
+<p>Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Sunday closed</p>`;
+
+const HONOLULU_GENERIC_NOSCRIPT_BODY = `<h1>Acupuncture in Honolulu, Hawaii &ndash; AcuTherapy Clinics</h1>
+<p>AcuTherapy Clinics is Honolulu&rsquo;s trusted acupuncture and Traditional Chinese Medicine provider, with two convenient Oahu locations: our main clinic on Liliha Street in Honolulu and a branch clinic in Aiea serving Pearl City and West Oahu. Founded by Dr. David Cai, O.M.D., L.Ac., L.M.T., the practice brings over 30 years of clinical expertise in pain management, injury recovery, and whole-body wellness to patients across the island.</p>
+<h2>Services We Offer</h2>
+<p>AcuTherapy Clinics provides a full range of Traditional Chinese Medicine services, including acupuncture, medical massage, fire cupping therapy, moxibustion, and the proprietary CenterGy (Synergies) diagnostic and energy therapy method co-developed by Dr. Cai and senior practitioner Lisa Long. CenterGy can be applied with or without needles, making it accessible to patients with needle sensitivity.</p>
+<h2>Conditions We Treat</h2>
+<ul>
+<li>Back pain, sciatica, and herniated disc</li>
+<li>Neck pain, whiplash, and cervical strain</li>
+<li>Shoulder, knee, hip, and joint pain</li>
+<li>Auto accident injuries (Hawaii No-Fault PIP covered)</li>
+<li>Workers&rsquo; Compensation workplace injuries</li>
+<li>Veterans pain management (VA Community Care)</li>
+<li>Stress, anxiety, insomnia, and burnout</li>
+<li>Women&rsquo;s health, fertility, and hormonal balance</li>
+<li>Facial acupuncture and cosmetic wellness</li>
+</ul>
+<h2>Insurance Accepted</h2>
+<p>Workers&rsquo; Compensation, Auto Accident PIP (Hawaii No-Fault), Veterans Community Care, UHA, HMAA, AARP, Humana, AshLink, and more. New patient self-pay specials are also available.</p>
+<h2>Our Practitioners</h2>
+<p>Dr. David Cai, O.M.D., L.Ac., L.M.T. &mdash; Founder, graduate of Beijing University of Chinese Medicine (1991), 30+ years experience. Hawaii L.Ac. ACU-1125, NCCAOM Dipl. Ac. #962-1001-522, LMT 7543. Lisa Long, O.M.D., L.M.T. &mdash; Senior practitioner, 30+ years experience, CenterGy co-developer. Hawaii LMT MAT-17832.</p>
+<h2>Locations &amp; Hours</h2>
+<p><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177 &mdash; Mon&ndash;Sat 9:00 AM &ndash; 1:00 PM</p>
+<p><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900 &mdash; Tue&ndash;Sat 9:00 AM &ndash; 5:00 PM</p>
+<p>Sunday closed at both locations.</p>`;
+
+const WAIPAHU_NOSCRIPT_BODY = `<h1>Acupuncture in Waipahu &ndash; West Oahu, Hawaii</h1>
+<p>AcuTherapy Clinics serves patients from Waipahu and surrounding West Oahu communities at our Aiea clinic on Pali Momi Street, approximately 15 minutes from Waipahu via H-1 eastbound. Our Aiea location offers convenient on-site parking and extended afternoon hours Tuesday through Saturday.</p>
+<h2>Who We Treat in the Waipahu Area</h2>
+<p>Waipahu is a working community with a strong manufacturing, construction, and service industry base. Many of our Waipahu-area patients come to us with workplace injuries sustained in physically demanding jobs: lower back strain from lifting, neck and shoulder injuries from overhead work, repetitive strain from assembly or construction tasks, and knee pain from prolonged kneeling or standing on hard surfaces. Workers&rsquo; Compensation is accepted at our Aiea clinic, and we handle all billing and authorization paperwork directly with your employer&rsquo;s carrier.</p>
+<p>We also see a significant number of Waipahu patients who have been injured in auto accidents on the H-1 and surrounding roads. Hawaii&rsquo;s No-Fault PIP insurance covers acupuncture with $0 out of pocket, and we manage all billing with your insurer directly.</p>
+<h2>Conditions We Commonly Treat</h2>
+<ul>
+<li>Workplace lower back injuries (Workers&rsquo; Compensation accepted)</li>
+<li>Shoulder and rotator cuff strain from labor and overhead work</li>
+<li>Repetitive strain injuries: carpal tunnel, tendinitis</li>
+<li>Neck pain and whiplash from auto accidents (Hawaii PIP covered)</li>
+<li>Knee pain from standing and kneeling work</li>
+<li>Stress, fatigue, and recovery support</li>
+</ul>
+<h2>Our Approach</h2>
+<p>Dr. David Cai&rsquo;s CenterGy (Synergies) method provides a full constitutional assessment at the first visit, ensuring that treatment addresses both the acute injury and the underlying patterns that affect recovery. Lisa Long, our senior practitioner, specializes in musculoskeletal recovery and deep tissue medical massage.</p>
+<p>Dr. David Cai, O.M.D., L.Ac., L.M.T. &mdash; Founder, 30+ years experience. Hawaii L.Ac. ACU-1125, NCCAOM #962-1001-522. Lisa Long, O.M.D., L.M.T. &mdash; Senior practitioner. Hawaii LMT MAT-17832.</p>
+<h2>Insurance Accepted</h2>
+<p>Workers&rsquo; Compensation, Auto Accident PIP (Hawaii No-Fault), Veterans Community Care, UHA, HMAA, AARP, Humana, AshLink, and more.</p>
+<h2>Location &amp; Hours</h2>
+<p><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</p>
+<p>Tuesday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday&ndash;Monday closed</p>`;
+
+const KAPOLEI_NOSCRIPT_BODY = `<h1>Acupuncture in Kapolei &ndash; West Oahu, Hawaii</h1>
+<p>AcuTherapy Clinics provides acupuncture, Traditional Chinese Medicine, and medical massage for patients from Kapolei and Ewa Beach at our Aiea clinic on Pali Momi Street, approximately 20&ndash;25 minutes from Kapolei via the H-1 eastbound. Our Aiea location offers on-site parking and afternoon appointment availability Tuesday through Saturday.</p>
+<h2>Who We Treat in the Kapolei Area</h2>
+<p>Kapolei is West Oahu&rsquo;s fastest-growing community&mdash;a mix of young families, government and military personnel, commuters, and active residents who use the region&rsquo;s expanding parks, golf courses, and beach facilities. Long daily commutes on the H-1 are a significant driver of lower back pain, hip tightness, and neck strain for Kapolei residents. We also see Kapolei patients dealing with auto accident injuries from the H-1 corridor, workers&rsquo; compensation claims from construction and trade industries, and sports injuries from the area&rsquo;s recreational facilities.</p>
+<p>Kapolei&rsquo;s growing military and veterans population is also well served by our Aiea clinic, which accepts VA Community Care referrals for acupuncture and pain management at no cost to the veteran.</p>
+<h2>Conditions We Commonly Treat</h2>
+<ul>
+<li>Lower back and hip pain from long commutes</li>
+<li>Auto accident injuries (H-1 corridor) under Hawaii No-Fault PIP</li>
+<li>Workers&rsquo; Compensation workplace injuries</li>
+<li>Veterans pain management (VA Community Care accepted)</li>
+<li>Sports injuries from golf, tennis, and recreational activities</li>
+<li>Stress and fatigue from demanding work-life schedules</li>
+</ul>
+<h2>Our Approach</h2>
+<p>The CenterGy (Synergies) diagnostic system used at AcuTherapy Clinics identifies the constitutional root pattern behind each condition&mdash;not just the presenting symptom. For commuter-related musculoskeletal issues, we typically address patterns of Kidney and Bladder meridian imbalance alongside local structural treatment.</p>
+<p>Dr. David Cai, O.M.D., L.Ac., L.M.T. &mdash; Founder, 30+ years experience. Hawaii L.Ac. ACU-1125, NCCAOM #962-1001-522. Lisa Long, O.M.D., L.M.T. &mdash; Senior practitioner. Hawaii LMT MAT-17832.</p>
+<h2>Insurance Accepted</h2>
+<p>Workers&rsquo; Compensation, Auto Accident PIP (Hawaii No-Fault), Veterans Community Care, UHA, HMAA, AARP, Humana, AshLink, and more.</p>
+<h2>Location &amp; Hours</h2>
+<p><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</p>
+<p>Tuesday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday&ndash;Monday closed</p>`;
+
 function buildJsonLd(route, description) {
   const hoursAiea = [
     {
@@ -1878,6 +2125,61 @@ function buildRootContent(route, meta) {
     }
     if (route === '/facial-acupuncture-honolulu') {
       return `<div id="root"></div><noscript>${FACIAL_NOSCRIPT_BODY}<nav>
+      ${navLinks}
+  </nav></noscript>`;
+    }
+    if (route === '/acupuncture-waikiki' || route === '/waikiki-acupuncture') {
+      return `<div id="root"></div><noscript>${WAIKIKI_NOSCRIPT_BODY}<nav>
+      ${navLinks}
+  </nav></noscript>`;
+    }
+    if (route === '/acupuncture-kahala' || route === '/kahala-acupuncture') {
+      return `<div id="root"></div><noscript>${KAHALA_NOSCRIPT_BODY}<nav>
+      ${navLinks}
+  </nav></noscript>`;
+    }
+    if (route === '/acupuncture-manoa') {
+      return `<div id="root"></div><noscript>${MANOA_NOSCRIPT_BODY}<nav>
+      ${navLinks}
+  </nav></noscript>`;
+    }
+    if (route === '/acupuncture-hawaii-kai') {
+      return `<div id="root"></div><noscript>${HAWAII_KAI_NOSCRIPT_BODY}<nav>
+      ${navLinks}
+  </nav></noscript>`;
+    }
+    if (route === '/acupuncture-kaimuki') {
+      return `<div id="root"></div><noscript>${KAIMUKI_NOSCRIPT_BODY}<nav>
+      ${navLinks}
+  </nav></noscript>`;
+    }
+    if (route === '/acupuncture-ala-moana') {
+      return `<div id="root"></div><noscript>${ALA_MOANA_NOSCRIPT_BODY}<nav>
+      ${navLinks}
+  </nav></noscript>`;
+    }
+    if (route === '/acupuncture-kapahulu') {
+      return `<div id="root"></div><noscript>${KAPAHULU_NOSCRIPT_BODY}<nav>
+      ${navLinks}
+  </nav></noscript>`;
+    }
+    if (route === '/acupuncture-moiliili') {
+      return `<div id="root"></div><noscript>${MOILIILI_NOSCRIPT_BODY}<nav>
+      ${navLinks}
+  </nav></noscript>`;
+    }
+    if (route === '/honolulu-acupuncture') {
+      return `<div id="root"></div><noscript>${HONOLULU_GENERIC_NOSCRIPT_BODY}<nav>
+      ${navLinks}
+  </nav></noscript>`;
+    }
+    if (route === '/acupuncture-waipahu') {
+      return `<div id="root"></div><noscript>${WAIPAHU_NOSCRIPT_BODY}<nav>
+      ${navLinks}
+  </nav></noscript>`;
+    }
+    if (route === '/acupuncture-kapolei') {
+      return `<div id="root"></div><noscript>${KAPOLEI_NOSCRIPT_BODY}<nav>
       ${navLinks}
   </nav></noscript>`;
     }
