@@ -351,11 +351,11 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 Wellness <ChevronDown className="h-4 w-4" />
               </button>
               <div className="absolute top-12 left-0 w-56 bg-white border border-slate-200 shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
-                <a href="/constitution-teaser" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700 border-b border-slate-100">Energy Test</a>
-                <a href="/lgzf" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700 border-b border-slate-100">Acupoint Guide</a>
                 <a href="/brainreset" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700 border-b border-slate-100">Brain Reset — Ear Seeds</a>
                 <a href="/weight-loss" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700 border-b border-slate-100">Weight Loss Support</a>
-                <a href="/facial-acupuncture-honolulu" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700">Facial Acupuncture</a>
+                <a href="/facial-acupuncture-honolulu" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700 border-b border-slate-100">Facial Acupuncture</a>
+                <a href="/constitution-teaser" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700 border-b border-slate-100">Energy Test <span className="text-slate-400">(For Practitioners Only)</span></a>
+                <a href="/lgzf" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700">Acupoint Guide <span className="text-slate-400">(For Practitioners Only)</span></a>
               </div>
             </div>
             <a href="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 shadow-md">
@@ -408,11 +408,11 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               </button>
               {openMobileDropdown === 'specialty' && (
                 <div className="pl-4 py-3 space-y-4 bg-slate-50 border-b border-slate-100 rounded-b-lg">
-                  <a href="/constitution-teaser" className="block text-slate-600 font-medium">Energy Test</a>
-                  <a href="/lgzf" className="block text-slate-600 font-medium">Acupoint Guide</a>
                   <a href="/brainreset" className="block text-slate-600 font-medium">Brain Reset — Ear Seeds</a>
                   <a href="/weight-loss" className="block text-slate-600 font-medium">Weight Loss Support</a>
                   <a href="/facial-acupuncture-honolulu" className="block text-slate-600 font-medium">Facial Acupuncture</a>
+                  <a href="/constitution-teaser" className="block text-slate-600 font-medium">Energy Test <span className="text-slate-400 text-xs">(For Practitioners Only)</span></a>
+                  <a href="/lgzf" className="block text-slate-600 font-medium">Acupoint Guide <span className="text-slate-400 text-xs">(For Practitioners Only)</span></a>
                 </div>
               )}
               <a href="/frequently-asked-questions" className="text-lg font-semibold text-slate-800 border-b border-slate-100 py-3">{navTopics}</a>
