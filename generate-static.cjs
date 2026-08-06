@@ -97,6 +97,7 @@ const ALL_ROUTES = [
   '/acupuncture-makiki',
   '/brainreset',
   '/weight-loss',
+  '/facial-acupuncture-honolulu',
   '/lgzf',
   '/constitution-test',
   '/constitution-teaser',
@@ -112,6 +113,11 @@ const PAGE_DATA = {
     title: 'Brain Reset for Weight Loss™ | Ear Seed Therapy for Cravings & Appetite | Honolulu HI | AcuTherapy',
     description: 'Ear seed therapy for craving reduction & weight loss support in Honolulu, HI. Calm stress eating naturally — drug-free, no needles. Ozempic-compatible. AcuTherapy Clinics · (808) 528-7177.',
     h1: 'Brain Reset for Weight Loss™ — Ear Seed Therapy for Cravings',
+  },
+  '/facial-acupuncture-honolulu': {
+    title: 'Facial Acupuncture Honolulu | Anti-Aging · Skin Lifting · Collagen | AcuTherapy Clinics',
+    description: 'Facial acupuncture in Honolulu, HI — traditional Chinese technique + AcuTherapy\'s signature method. Lift, brighten & renew skin naturally. Anti-aging, acne, radiance. Dr. David Cai O.M.D. · (808) 528-7177.',
+    h1: 'Facial Acupuncture in Honolulu, HI',
   },
   '/constitution-test': {
     title: '中医体质与生命节律评估 | AcuTherapy Clinics',
@@ -873,6 +879,35 @@ const WEIGHT_LOSS_NOSCRIPT_BODY = `
 <p><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</p>
 <p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Tuesday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
 
+const FACIAL_NOSCRIPT_BODY = `
+<h1>Facial Acupuncture in Honolulu, HI — Traditional Chinese Technique + AcuTherapy Signature Method</h1>
+<p>AcuTherapy Clinics offers <strong>facial acupuncture</strong> combining classical Chinese cosmetic acupuncture with Dr. David Cai's proprietary CenterGy diagnostic method. Ultra-fine needles are placed at precise facial, scalp, and body points to stimulate collagen production, increase local circulation, and rebalance the internal meridian patterns that drive skin aging, dullness, and acne. Available at our Liliha (Honolulu) and Aiea locations. Self-pay — not covered by insurance.</p>
+<h2>What Facial Acupuncture Treats</h2>
+<p><strong>Anti-Aging &amp; Fine Lines:</strong> Fibroblast activation stimulates new collagen and elastin synthesis, reducing the appearance of fine lines, crow's feet, and forehead creases — without toxins or paralysis.</p>
+<p><strong>Skin Lifting &amp; Firming:</strong> Micro-trauma from needling tightens facial fascia and retrains muscle tone, producing visible lifting at the jawline, cheeks, and brow over a treatment course.</p>
+<p><strong>Brightening &amp; Radiance:</strong> Increased micro-circulation delivers more oxygen and nutrients to skin cells, fading dark spots, reducing dullness, and restoring healthy glow.</p>
+<p><strong>Acne &amp; Breakout Control:</strong> Addresses the TCM root patterns driving acne — Liver Heat, Stomach Fire, Dampness — while reducing local inflammation and promoting faster healing of active blemishes.</p>
+<h2>The AcuTherapy Difference</h2>
+<p>Dr. Cai integrates the <strong>CenterGy</strong> precision diagnostic system to map your individual energy patterns before any needles are placed. Classical Chinese facial and scalp point selection is combined with body points chosen specifically for your constitution — producing deeper and longer-lasting results than standard facial acupuncture protocols.</p>
+<h2>Treatment Timeline</h2>
+<p><strong>Sessions 1–3:</strong> Immediate brightening and glow. Skin texture begins to smooth. Puffiness and dullness visibly reduce.</p>
+<p><strong>Sessions 4–6:</strong> Fine lines soften. Skin tone evens. Active acne decreases. Lifting effect becomes noticeable at jawline and cheeks.</p>
+<p><strong>Sessions 7–12:</strong> Cumulative collagen remodeling produces significant lifting, firming, and wrinkle reduction. Acne scarring improves.</p>
+<p><strong>Monthly Maintenance:</strong> Results are preserved and enhanced. Collagen built through acupuncture is your own — it improves over successive courses rather than wearing off.</p>
+<h2>Frequently Asked Questions</h2>
+<p><strong>How many sessions do I need to see results?</strong> Most patients notice improved brightness after 3–4 sessions. Visible lifting and fine line reduction emerge over a course of 8–12 weekly sessions.</p>
+<p><strong>Does facial acupuncture hurt?</strong> Facial needles are among the finest used in practice. Most patients describe brief pressure at insertion, followed by deep relaxation. Many fall asleep on the table.</p>
+<p><strong>Can facial acupuncture replace Botox?</strong> It works through a different mechanism — stimulating your body's own collagen synthesis rather than temporarily paralyzing muscles. Results look natural and improve over time. Many patients use it as a natural alternative or to extend the interval between injectables.</p>
+<p><strong>Is it effective for acne?</strong> Yes. Acne in TCM corresponds to internal Heat, Dampness, or Liver Qi stagnation. Targeting these root causes can significantly reduce breakouts and calm inflamed, acne-scarred skin.</p>
+<p><strong>Is this covered by insurance?</strong> No. Facial acupuncture is a self-pay cosmetic treatment. It is not covered by health insurance, Workers' Compensation, or Auto PIP. Call (808) 528-7177 for current pricing.</p>
+<h2>Our Practitioners</h2>
+<p>Dr. David Cai, O.M.D., L.Ac., L.M.T. &mdash; Doctor of Oriental Medicine, trained at Beijing University of Chinese Medicine, 30+ years clinical experience. Hawaii Licensed Acupuncturist ACU-1125, LMT 7543, NCCAOM Dipl. Ac. &amp; Dipl. C.H. #962-1001-522.</p>
+<p>Lisa Long, O.M.D., L.M.T. &mdash; Senior practitioner, 30+ years experience, co-developer of CenterGy (Synergies). Hawaii LMT MAT-17832.</p>
+<h2>Locations &amp; Hours</h2>
+<p><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</p>
+<p><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</p>
+<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Tuesday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
+
 function buildJsonLd(route, description) {
   const hoursAiea = [
     {
@@ -1324,7 +1359,28 @@ ${JSON.stringify(weightLossFaqSchema, null, 2)}
 </script>`;
   }
 
-  // 10. Default clean WebPage schema for other pages
+  // 10. Facial Acupuncture page
+  if (route === '/facial-acupuncture-honolulu') {
+    const facialFaqSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      'mainEntity': [
+        { '@type': 'Question', 'name': 'What is facial acupuncture and how does it work?', 'acceptedAnswer': { '@type': 'Answer', 'text': "Facial acupuncture uses ultra-fine needles placed at precise points on the face, scalp, and body to stimulate collagen production, increase local circulation, and activate the skin's natural repair cycle. In Traditional Chinese Medicine, the face is a map of internal organ health — by addressing both the surface and the underlying Qi flow, facial acupuncture produces results that topical skincare alone cannot achieve." } },
+        { '@type': 'Question', 'name': "How is AcuTherapy's approach different from standard facial acupuncture?", 'acceptedAnswer': { '@type': 'Answer', 'text': "Dr. Cai combines classical Chinese facial acupuncture technique with AcuTherapy's signature CenterGy diagnostic method — a precision energy-mapping system he co-developed with Lisa Long. Before any needles are placed, Dr. Cai identifies the specific meridian imbalances contributing to your skin concerns, allowing point selection to be individualized to your constitution." } },
+        { '@type': 'Question', 'name': 'How many sessions do I need to see results?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Most patients notice improved brightness, reduced puffiness, and a more even skin tone after 3–4 sessions. Visible lifting and fine line reduction typically emerge over a course of 8–12 weekly sessions. Results are cumulative — each session builds on the last.' } },
+        { '@type': 'Question', 'name': 'Does facial acupuncture hurt?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Facial needles are among the finest used in acupuncture practice — most patients describe a brief pressure sensation at insertion, followed by a deep relaxation during the session. Many patients fall asleep on the table.' } },
+        { '@type': 'Question', 'name': 'Can facial acupuncture replace Botox or dermal fillers?', 'acceptedAnswer': { '@type': 'Answer', 'text': "Facial acupuncture works by stimulating the body's own collagen synthesis and retraining facial muscle tone — the result looks more natural and improves over time. Many patients choose it as a natural alternative or to extend the interval between injectable appointments." } },
+        { '@type': 'Question', 'name': 'Is facial acupuncture effective for acne?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Yes. Acne in TCM is often linked to excess Heat, Dampness, or Liver Qi stagnation. Facial acupuncture combined with body points targeting these root causes can significantly reduce active breakouts, calm inflammation, and improve acne-scarred skin over a treatment course.' } },
+        { '@type': 'Question', 'name': 'How long do results last?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'After a full course (8–12 sessions), results typically persist 6–12 months with monthly maintenance. Collagen built through acupuncture is your own — the quality of results tends to improve over successive treatment courses.' } },
+        { '@type': 'Question', 'name': 'Is facial acupuncture covered by insurance?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Facial acupuncture is a cosmetic / elective treatment and is not covered by health insurance, Workers\' Compensation, or Auto PIP. Sessions are self-pay. Please call (808) 528-7177 for current pricing and package options.' } },
+      ]
+    };
+    return `<script type="application/ld+json">
+${JSON.stringify(facialFaqSchema, null, 2)}
+</script>`;
+  }
+
+  // 11. Default clean WebPage schema for other pages
   const webPageSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
@@ -1454,6 +1510,11 @@ function buildRootContent(route, meta) {
     }
     if (route === '/weight-loss') {
       return `<div id="root"></div><noscript>${WEIGHT_LOSS_NOSCRIPT_BODY}<nav>
+      ${navLinks}
+  </nav></noscript>`;
+    }
+    if (route === '/facial-acupuncture-honolulu') {
+      return `<div id="root"></div><noscript>${FACIAL_NOSCRIPT_BODY}<nav>
       ${navLinks}
   </nav></noscript>`;
     }
