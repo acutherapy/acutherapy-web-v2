@@ -1554,7 +1554,64 @@ ${JSON.stringify({
 </script>`;
   }
 
-  // 14. Neighborhood / locality pages → MedicalClinic with areaServed
+  // 14. Condition pages → FAQPage schema (Q&As sourced from noscript bodies)
+  if (route === '/back-pain-acupuncture-honolulu') {
+    return `<script type="application/ld+json">
+${JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  'mainEntity': [
+    { '@type': 'Question', 'name': 'Does acupuncture help back pain?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Research suggests acupuncture may help reduce pain intensity and improve function in patients with low back pain. Individual results vary based on the type and duration of the condition.' } },
+    { '@type': 'Question', 'name': 'How many sessions are needed for back pain?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Many patients notice improvement within the first 4–6 sessions. Chronic conditions typically require a longer course of care. Dr. Cai will outline a treatment plan at your first visit.' } },
+    { '@type': 'Question', 'name': 'Is back pain acupuncture covered by insurance in Hawaii?', 'acceptedAnswer': { '@type': 'Answer', 'text': "Yes — Workers' Compensation and Auto Accident PIP (Hawaii No-Fault) fully cover acupuncture for back injuries with $0 out of pocket. We also accept UHA, HMAA, Veterans Community Care, AARP, Humana, AshLink, and more." } },
+  ]
+}, null, 2)}
+</script>`;
+  }
+
+  if (route === '/sciatica-treatment-honolulu' || route === '/sciatica-acupuncture-honolulu') {
+    return `<script type="application/ld+json">
+${JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  'mainEntity': [
+    { '@type': 'Question', 'name': 'Can acupuncture help sciatica?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Clinical research suggests acupuncture may reduce sciatic pain and improve function. It is commonly used alongside physical therapy and may help reduce reliance on pain medications.' } },
+    { '@type': 'Question', 'name': 'How many sessions does sciatica treatment require?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Acute flare-ups may resolve in 4–8 sessions. Long-standing or disc-related sciatica typically requires a longer course. Dr. Cai will assess your case at the first visit and provide a realistic timeline.' } },
+    { '@type': 'Question', 'name': 'Is acupuncture for sciatica covered by insurance in Hawaii?', 'acceptedAnswer': { '@type': 'Answer', 'text': "Workers' Compensation and Hawaii No-Fault Auto PIP cover sciatica treatment at $0 out of pocket when caused by a workplace or auto accident. We also accept UHA, HMAA, Veterans Community Care, AARP, Humana, and AshLink." } },
+  ]
+}, null, 2)}
+</script>`;
+  }
+
+  if (route === '/workers-comp-injury-honolulu') {
+    return `<script type="application/ld+json">
+${JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  'mainEntity': [
+    { '@type': 'Question', 'name': "Is acupuncture covered by Workers' Comp in Hawaii?", 'acceptedAnswer': { '@type': 'Answer', 'text': "Yes. Licensed acupuncturists are recognized providers under Hawaii's Workers' Compensation system. Treatment must be related to the workplace injury and authorized by the claim." } },
+    { '@type': 'Question', 'name': "Do I need a doctor's referral for Workers' Comp acupuncture?", 'acceptedAnswer': { '@type': 'Answer', 'text': "No. In Hawaii, you can see a licensed acupuncturist directly under Workers' Comp without a referral. We will coordinate with your adjuster to confirm coverage before your first visit." } },
+    { '@type': 'Question', 'name': 'How soon can I start acupuncture after a workplace injury?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'In most cases, we can schedule your first appointment within the same week your claim is confirmed. Early treatment typically leads to faster recovery and reduced total claim costs.' } },
+  ]
+}, null, 2)}
+</script>`;
+  }
+
+  if (route === '/auto-accident-injury-honolulu') {
+    return `<script type="application/ld+json">
+${JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  'mainEntity': [
+    { '@type': 'Question', 'name': 'Does Hawaii PIP insurance cover acupuncture after a car accident?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Yes. Hawaii No-Fault PIP covers acupuncture by a licensed acupuncturist for injuries sustained in a covered auto accident.' } },
+    { '@type': 'Question', 'name': 'Do I need a police report to use Hawaii PIP for acupuncture?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Not necessarily. A police report strengthens your claim but is not always required to open a PIP claim. Contact your insurer as soon as possible after the accident.' } },
+    { '@type': 'Question', 'name': 'What happens if my PIP benefit runs out?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'If your PIP benefit ($10,000 minimum) is exhausted, we can transition billing to other insurance such as UHA, HMAA, Medicare Supplement, or continue care on a private-pay basis.' } },
+  ]
+}, null, 2)}
+</script>`;
+  }
+
+  // 15. Neighborhood / locality pages → MedicalClinic with areaServed
   const NEIGHBORHOOD_MAP = {
     '/acupuncture-waikiki':    { area: 'Waikiki',    clinic: 'liliha' },
     '/waikiki-acupuncture':    { area: 'Waikiki',    clinic: 'liliha' },
