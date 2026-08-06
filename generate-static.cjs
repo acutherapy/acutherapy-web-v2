@@ -98,6 +98,9 @@ const ALL_ROUTES = [
   '/brainreset',
   '/weight-loss',
   '/facial-acupuncture-honolulu',
+  '/stress-relief-acupuncture-honolulu',
+  '/sleep-acupuncture-honolulu',
+  '/wellness-acupuncture-honolulu',
   '/lgzf',
   '/constitution-test',
   '/constitution-teaser',
@@ -113,6 +116,21 @@ const PAGE_DATA = {
     title: 'Brain Reset for Weight Loss™ | Ear Seed Therapy for Cravings & Appetite | Honolulu HI | AcuTherapy',
     description: 'Ear seed therapy for craving reduction & weight loss support in Honolulu, HI. Calm stress eating naturally — drug-free, no needles. Ozempic-compatible. AcuTherapy Clinics · (808) 528-7177.',
     h1: 'Brain Reset for Weight Loss™ — Ear Seed Therapy for Cravings',
+  },
+  '/stress-relief-acupuncture-honolulu': {
+    title: 'Stress Relief Acupuncture Honolulu | Anxiety · Tension · Burnout | AcuTherapy Clinics',
+    description: 'Acupuncture for stress relief in Honolulu, HI. Reduce anxiety, release tension, and restore calm with Traditional Chinese Medicine + CenterGy method. Dr. David Cai O.M.D. · (808) 528-7177.',
+    h1: 'Stress Relief Acupuncture in Honolulu, HI',
+  },
+  '/sleep-acupuncture-honolulu': {
+    title: 'Acupuncture for Sleep Honolulu | Insomnia · Restless Nights · Poor Sleep | AcuTherapy Clinics',
+    description: 'Acupuncture for insomnia and sleep improvement in Honolulu, HI. Whether you can\'t fall asleep or wake exhausted, TCM + CenterGy method addresses the root. Dr. David Cai O.M.D. · (808) 528-7177.',
+    h1: 'Acupuncture for Sleep in Honolulu, HI',
+  },
+  '/wellness-acupuncture-honolulu': {
+    title: 'Wellness Acupuncture Honolulu | Preventive Care · Energy · Immunity | AcuTherapy Clinics',
+    description: 'Preventive wellness acupuncture in Honolulu, HI. Energy optimization, immune support, and whole-body balance through Traditional Chinese Medicine + CenterGy method. Dr. David Cai O.M.D. · (808) 528-7177.',
+    h1: 'Wellness Acupuncture in Honolulu, HI',
   },
   '/facial-acupuncture-honolulu': {
     title: 'Facial Acupuncture Honolulu | Anti-Aging · Skin Lifting · Collagen | AcuTherapy Clinics',
@@ -879,6 +897,111 @@ const WEIGHT_LOSS_NOSCRIPT_BODY = `
 <p><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</p>
 <p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Tuesday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
 
+const STRESS_NOSCRIPT_BODY = `
+<h1>Stress Relief Acupuncture in Honolulu, HI</h1>
+<p>Persistent stress rewires your nervous system, tightens muscles, disrupts sleep, and depletes energy. Acupuncture at AcuTherapy addresses the root — not just the symptoms — using Traditional Chinese Medicine and Dr. Cai's CenterGy diagnostic method.</p>
+
+<h2>What Stress Does to the Body</h2>
+<p>When stress is chronic, the body operates as though the threat is permanent. Cortisol stays elevated. Muscles hold tension that never fully releases. Sleep becomes shallow. Acupuncture interrupts this cycle by directly engaging the autonomic nervous system — shifting the body from 'fight or flight' into a restorative state. In Traditional Chinese Medicine, stress maps to Liver Qi stagnation (tension, frustration, tightness) or Heart-Spleen deficiency (anxiety, fatigue, worry).</p>
+
+<h2>The AcuTherapy Difference — CenterGy Method</h2>
+<p>Dr. Cai uses the CenterGy diagnostic system to identify your specific stress pattern before treatment. Rather than a standard protocol, he distinguishes Liver stagnation from Heart deficiency from Kidney depletion — each requiring a different point strategy. Needle-free CenterGy therapy is also available for patients who prefer it.</p>
+
+<h2>What Brings People In</h2>
+<p><strong>Persistent Tension:</strong> Tight neck and shoulders, headaches, jaw clenching — the body carrying stress as physical load day after day.</p>
+<p><strong>Anxiety and Worry:</strong> Racing mind, difficulty unwinding, irritability — mental patterns that don't switch off when circumstances improve.</p>
+<p><strong>Burnout and Depletion:</strong> Exhausted despite sleep, no motivation, pushing through on empty — when reserves have been withdrawn faster than replenished.</p>
+<p><strong>Emotional Overload:</strong> Mood swings, feeling overwhelmed by ordinary demands, short fuse — when the nervous system's bandwidth is saturated.</p>
+
+<h2>What Happens in a Session</h2>
+<p><strong>Step 1 — Pattern Assessment:</strong> Dr. Cai identifies your stress pattern using the CenterGy diagnostic method.</p>
+<p><strong>Step 2 — Targeted Needling:</strong> Points are placed to calm the nervous system and restore Qi flow. Most patients feel the shift within minutes.</p>
+<p><strong>Step 3 — Deep Rest Phase:</strong> 25–30 minutes of quiet. Most patients describe this as the deepest rest they've felt in months.</p>
+
+<h2>Frequently Asked Questions</h2>
+<p><strong>How does acupuncture help with stress?</strong> Acupuncture activates the parasympathetic nervous system, reducing cortisol, relaxing muscle tension, and slowing heart rate. It also addresses the TCM pattern — Liver Qi stagnation or Heart-Spleen deficiency — driving the stress response.</p>
+<p><strong>How quickly will I notice a difference?</strong> Many patients feel a measurable shift during the first session. By sessions 3–5, most report sleeping better and reacting less intensely to stressors.</p>
+<p><strong>How many sessions do I need?</strong> For acute stress: 4–6 sessions. For chronic stress or burnout: 8–12 sessions, with monthly maintenance to sustain results.</p>
+<p><strong>Can acupuncture help with anxiety too?</strong> Yes — physical tension and mental anxiety arise from the same dysregulation. Acupuncture addresses both simultaneously.</p>
+
+<h2>Our Locations</h2>
+<p>Honolulu (Liliha): 1650 Liliha St, Suite 208, Honolulu, HI 96817. Phone: (808) 528-7177.</p>
+<p>Aiea / Pearl City: 98-211 Pali Momi St, Suite 604, Aiea, HI 96701. Phone: (808) 452-1900.</p>
+<p>Hours: Monday–Friday 9am–1pm, Saturday 9am–12pm.</p>
+
+<h2>About Dr. David Cai</h2>
+<p>Dr. David Cai, O.M.D., L.Ac., L.M.T. — Doctor of Oriental Medicine, trained at Beijing University of Chinese Medicine. Hawaii L.Ac. ACU-1125, NCCAOM Dipl. Ac. #962-1001-522. 30+ years of clinical practice in Honolulu. Co-developer of the CenterGy diagnostic and therapeutic method.</p>
+`;
+
+const SLEEP_NOSCRIPT_BODY = `
+<h1>Acupuncture for Sleep in Honolulu, HI</h1>
+<p>Whether you can't fall asleep, wake through the night, or rise exhausted after hours in bed — acupuncture works on the root cause of sleep disruption, not just the surface symptoms. Traditional Chinese Medicine combined with Dr. Cai's CenterGy diagnostic method.</p>
+
+<h2>Why Sleep Problems Resist Simple Solutions</h2>
+<p>Poor sleep rarely comes down to bedtime habits alone. The body has a sophisticated biological architecture for sleep — one that depends on hormonal balance, nervous system regulation, and the proper flow of energy through internal organ systems. In TCM, every sleep pattern has a specific signature: inability to fall asleep despite exhaustion typically indicates Heart Yin deficiency; waking between 2 and 4am is the classic presentation of Liver Qi stagnation; sleeping long but rising depleted points to Kidney or Spleen deficiency.</p>
+
+<h2>The AcuTherapy Difference — CenterGy Method</h2>
+<p>Dr. Cai uses the CenterGy diagnostic system to distinguish between the patterns causing your sleep disruption — Heart, Kidney, Liver, or Spleen — before any needles are placed. This precision is what makes the treatment effective where generic approaches have failed. Needle-free CenterGy therapy is also available.</p>
+
+<h2>What Brings People In</h2>
+<p><strong>Can't Fall Asleep:</strong> Lying awake with a mind that won't stop — unable to cross the threshold into sleep despite physical fatigue.</p>
+<p><strong>Waking in the Night:</strong> Falling asleep without difficulty but waking at 2, 3, or 4am — and struggling to return to sleep.</p>
+<p><strong>Unrefreshing Sleep:</strong> Hours in bed, but waking as tired as when you lay down.</p>
+<p><strong>Stress-Driven Sleep Disruption:</strong> Sleep that tracks with anxiety levels — good during calm periods, poor when life gets demanding.</p>
+
+<h2>What Happens in a Session</h2>
+<p><strong>Step 1 — Sleep Pattern Assessment:</strong> Dr. Cai evaluates your type of sleep disruption and maps it to a TCM pattern.</p>
+<p><strong>Step 2 — Targeted Needling:</strong> Points are selected to calm the Heart, anchor Kidney energy, smooth Liver Qi, or nourish the Spleen depending on your pattern.</p>
+<p><strong>Step 3 — Deep Rest Phase:</strong> Most patients enter a deeply relaxed state within minutes — many fall asleep on the table. This rest is part of the treatment.</p>
+
+<h2>Frequently Asked Questions</h2>
+<p><strong>Can acupuncture really help me sleep better?</strong> Yes. Acupuncture stimulates melatonin secretion, reduces night-time cortisol through HPA axis modulation, and activates parasympathetic tone that allows the body to transition into sleep.</p>
+<p><strong>How long before I notice improvement?</strong> Many patients sleep better the night of their first session. Consistent improvement typically emerges after sessions 2–4.</p>
+<p><strong>Is it safe with sleep medication?</strong> Yes. Acupuncture does not interact with sleep medications. Always consult your prescribing physician before changing medication.</p>
+<p><strong>How many sessions will I need?</strong> For recent-onset insomnia: 4–6 sessions. For chronic insomnia: 8–12 sessions, with monthly maintenance to prevent regression.</p>
+
+<h2>Our Locations</h2>
+<p>Honolulu (Liliha): 1650 Liliha St, Suite 208, Honolulu, HI 96817. Phone: (808) 528-7177.</p>
+<p>Aiea / Pearl City: 98-211 Pali Momi St, Suite 604, Aiea, HI 96701. Phone: (808) 452-1900.</p>
+<p>Hours: Monday–Friday 9am–1pm, Saturday 9am–12pm.</p>
+
+<h2>About Dr. David Cai</h2>
+<p>Dr. David Cai, O.M.D., L.Ac., L.M.T. — Doctor of Oriental Medicine, trained at Beijing University of Chinese Medicine. Hawaii L.Ac. ACU-1125, NCCAOM Dipl. Ac. #962-1001-522. 30+ years of clinical practice in Honolulu. Co-developer of the CenterGy diagnostic and therapeutic method.</p>
+`;
+
+const WELLNESS_NOSCRIPT_BODY = `
+<h1>Wellness Acupuncture in Honolulu, HI</h1>
+<p>You don't have to be in pain to benefit from acupuncture. Many patients at AcuTherapy come to maintain their health, build resilience, and keep their body functioning at its best — before problems arise. Traditional Chinese Medicine has always understood that the highest form of care is prevention.</p>
+
+<h2>Acupuncture Is Not Just for When Something Goes Wrong</h2>
+<p>The body gives signals long before it gives symptoms — a slow accumulation of fatigue, energy that doesn't quite recover, sleep that's lighter than it used to be, immunity that feels less robust. Wellness acupuncture uses Dr. Cai's CenterGy diagnostic system to read these early signals — mapping energy distribution across organ systems and identifying where reserves are being depleted. Treatment at this stage is gentle, efficient, and highly effective.</p>
+
+<h2>The AcuTherapy Difference — CenterGy Method</h2>
+<p>At AcuTherapy, every wellness session begins with a CenterGy precision assessment — evaluating your energy distribution across meridians and organ systems. This makes treatment specific to where your body actually is right now, not a standard tonic protocol. Seasonal attunement, individualized point selection, and needle-free options are all available.</p>
+
+<h2>What Brings People In</h2>
+<p><strong>Low Energy and Fatigue:</strong> Functional but not thriving — getting through the day but never feeling energized.</p>
+<p><strong>Immune Support:</strong> Getting sick more than usual, slow to recover, defenses that feel less robust than they once were.</p>
+<p><strong>Preventive Maintenance:</strong> Proactively investing in long-term health — detecting and correcting subtle imbalances before they become symptoms.</p>
+<p><strong>Mental Clarity and Focus:</strong> Brain fog, difficulty concentrating, mental fatigue that doesn't clear with rest.</p>
+
+<h2>The Seasonal Framework</h2>
+<p>TCM aligns wellness care with seasonal energy shifts. Spring treats the Liver — movement, renewal, detoxification. Summer nourishes the Heart — joy, vitality, sustained energy. Autumn strengthens the Lung and Wei Qi — immune defense, respiratory support. Winter restores the Kidney — deep rest, essence replenishment, reserves for the year ahead.</p>
+
+<h2>Frequently Asked Questions</h2>
+<p><strong>Do I need to have a health problem to benefit?</strong> No. Some of our most consistent long-term patients come specifically because they are healthy and want to stay that way. Acupuncture builds resilience before imbalances become symptoms.</p>
+<p><strong>How often should a healthy person receive acupuncture?</strong> Most wellness patients come monthly or seasonally — at the transition of each season. Dr. Cai will recommend a frequency based on your assessment.</p>
+<p><strong>Can acupuncture support immune function?</strong> Yes. Regular acupuncture is associated with increased natural killer cell activity, improved T-lymphocyte function, and regulated inflammatory cytokine production.</p>
+
+<h2>Our Locations</h2>
+<p>Honolulu (Liliha): 1650 Liliha St, Suite 208, Honolulu, HI 96817. Phone: (808) 528-7177.</p>
+<p>Aiea / Pearl City: 98-211 Pali Momi St, Suite 604, Aiea, HI 96701. Phone: (808) 452-1900.</p>
+<p>Hours: Monday–Friday 9am–1pm, Saturday 9am–12pm.</p>
+
+<h2>About Dr. David Cai</h2>
+<p>Dr. David Cai, O.M.D., L.Ac., L.M.T. — Doctor of Oriental Medicine, trained at Beijing University of Chinese Medicine. Hawaii L.Ac. ACU-1125, NCCAOM Dipl. Ac. #962-1001-522. 30+ years of clinical practice in Honolulu. Co-developer of the CenterGy diagnostic and therapeutic method.</p>
+`;
+
 const FACIAL_NOSCRIPT_BODY = `
 <h1>Facial Acupuncture in Honolulu, HI — Traditional Chinese Technique + AcuTherapy Signature Method</h1>
 <p>AcuTherapy Clinics offers <strong>facial acupuncture</strong> combining classical Chinese cosmetic acupuncture with Dr. David Cai's proprietary CenterGy diagnostic method. Ultra-fine needles are placed at precise facial, scalp, and body points to stimulate collagen production, increase local circulation, and rebalance the internal meridian patterns that drive skin aging, dullness, and acne. Available at our Liliha (Honolulu) and Aiea locations. Self-pay — not covered by insurance.</p>
@@ -1380,7 +1503,58 @@ ${JSON.stringify(facialFaqSchema, null, 2)}
 </script>`;
   }
 
-  // 11. Default clean WebPage schema for other pages
+  // 11. Stress Relief page
+  if (route === '/stress-relief-acupuncture-honolulu') {
+    return `<script type="application/ld+json">
+${JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  'mainEntity': [
+    { '@type': 'Question', 'name': 'How does acupuncture help with stress?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Acupuncture activates the parasympathetic nervous system — reducing cortisol, relaxing muscle tension, and slowing heart rate. It also addresses the TCM root pattern: Liver Qi stagnation or Heart-Spleen deficiency.' } },
+    { '@type': 'Question', 'name': 'How quickly will I notice a difference?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Many patients feel a measurable shift during the first session. By sessions 3–5, most report sleeping better and reacting less intensely to stressors.' } },
+    { '@type': 'Question', 'name': 'How many sessions do I need?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'For acute stress: 4–6 sessions. For chronic stress or burnout: 8–12 sessions, with monthly maintenance to sustain results.' } },
+    { '@type': 'Question', 'name': 'Can acupuncture help with anxiety as well as physical tension?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Yes — physical tension and mental anxiety arise from the same underlying dysregulation. Acupuncture addresses both simultaneously.' } },
+    { '@type': 'Question', 'name': 'What makes AcuTherapy different for stress relief?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Dr. Cai uses the CenterGy diagnostic method to identify your specific stress pattern — Liver, Heart, or Kidney — and builds a personalized session rather than applying a standard protocol. Needle-free CenterGy therapy is also available.' } },
+  ]
+}, null, 2)}
+</script>`;
+  }
+
+  // 12. Sleep Improvement page
+  if (route === '/sleep-acupuncture-honolulu') {
+    return `<script type="application/ld+json">
+${JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  'mainEntity': [
+    { '@type': 'Question', 'name': 'Can acupuncture really help me sleep better?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Yes. Acupuncture stimulates melatonin secretion, reduces night-time cortisol through HPA axis modulation, and activates parasympathetic tone. In TCM, sleep disruption traces to Heart Yin deficiency, Liver stagnation, or Kidney deficiency — each treated differently.' } },
+    { '@type': 'Question', 'name': 'How long before I notice improvement?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Many patients sleep better the night of their first session. Consistent improvement across the week typically emerges after sessions 2–4.' } },
+    { '@type': 'Question', 'name': 'What types of sleep problems does acupuncture address?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Difficulty falling asleep, waking in the night (especially 2–4am), non-restorative sleep, and sleep disrupted by anxiety or stress. Treatment is individualized to the pattern causing your specific type of disruption.' } },
+    { '@type': 'Question', 'name': 'Is it safe to receive acupuncture while taking sleep medication?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Yes. Acupuncture does not interact with sleep medications. Many patients use it to gradually reduce reliance on sleep aids. Always consult your prescribing physician before changing medication.' } },
+    { '@type': 'Question', 'name': 'How many sessions will I need?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'For recent-onset insomnia: 4–6 sessions. For chronic insomnia: 8–12 sessions, with monthly maintenance to prevent regression.' } },
+  ]
+}, null, 2)}
+</script>`;
+  }
+
+  // 13. General Wellness page
+  if (route === '/wellness-acupuncture-honolulu') {
+    return `<script type="application/ld+json">
+${JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  'mainEntity': [
+    { '@type': 'Question', 'name': 'Do I need to have a health problem to benefit from acupuncture?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'No. Many of our most consistent patients come specifically because they are healthy and want to stay that way. Acupuncture builds resilience — strengthening organ function, regulating immune response, and optimizing energy distribution before imbalances become symptoms.' } },
+    { '@type': 'Question', 'name': 'How often should a healthy person receive acupuncture?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Most wellness patients come monthly or seasonally — at the transition of each season. TCM traditionally recommends a tune-up as the body\'s dominant energy shifts with the natural cycle. Dr. Cai will make a specific recommendation based on your assessment.' } },
+    { '@type': 'Question', 'name': 'Can acupuncture support immune function?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'Yes. Regular acupuncture increases natural killer cell activity, T-lymphocyte function, and regulates inflammatory cytokine production — building the body\'s defensive capacity over time.' } },
+    { '@type': 'Question', 'name': 'What is the CenterGy method and how does it apply to wellness?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'CenterGy is a precision diagnostic and therapeutic system co-developed by Dr. Cai and Lisa Long. It maps energy distribution across meridians and organ systems, identifying patterns of imbalance that aren\'t yet producing symptoms — allowing correction at the earliest stage. It can be applied with or without needles.' } },
+    { '@type': 'Question', 'name': 'What is the difference between wellness acupuncture and treatment for a condition?', 'acceptedAnswer': { '@type': 'Answer', 'text': 'The goal differs, not the quality of care. Wellness acupuncture is maintenance-oriented — less intensive, more preventive. The diagnostic rigor is the same: Dr. Cai conducts a full CenterGy assessment at every visit.' } },
+  ]
+}, null, 2)}
+</script>`;
+  }
+
+  // 14. Default clean WebPage schema for other pages
   const webPageSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
@@ -1510,6 +1684,21 @@ function buildRootContent(route, meta) {
     }
     if (route === '/weight-loss') {
       return `<div id="root"></div><noscript>${WEIGHT_LOSS_NOSCRIPT_BODY}<nav>
+      ${navLinks}
+  </nav></noscript>`;
+    }
+    if (route === '/stress-relief-acupuncture-honolulu') {
+      return `<div id="root"></div><noscript>${STRESS_NOSCRIPT_BODY}<nav>
+      ${navLinks}
+  </nav></noscript>`;
+    }
+    if (route === '/sleep-acupuncture-honolulu') {
+      return `<div id="root"></div><noscript>${SLEEP_NOSCRIPT_BODY}<nav>
+      ${navLinks}
+  </nav></noscript>`;
+    }
+    if (route === '/wellness-acupuncture-honolulu') {
+      return `<div id="root"></div><noscript>${WELLNESS_NOSCRIPT_BODY}<nav>
       ${navLinks}
   </nav></noscript>`;
     }
