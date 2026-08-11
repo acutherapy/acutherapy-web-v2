@@ -786,6 +786,33 @@ const SCIATICA_NOSCRIPT_BODY = `<h1>Sciatica Treatment in Honolulu | Acupuncture
 <p><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</p>
 <p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Tuesday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
 
+const NECK_PAIN_NOSCRIPT_BODY = `<h1>Neck Pain Acupuncture in Honolulu &amp; Aiea, Hawaii</h1>
+<p>AcuTherapy Clinics provides acupuncture for neck pain at our Honolulu (Liliha) and Aiea locations. Neck pain is one of the most common complaints we treat &mdash; from stiff mornings and desk-related tension to cervical disc issues, whiplash, and chronic pain that hasn&rsquo;t responded to physical therapy. Our licensed acupuncturists address both the immediate pain and the underlying root cause through individualized treatment.</p>
+<h2>How Acupuncture Addresses Neck Pain</h2>
+<p>In Traditional Chinese Medicine, neck pain is often related to stagnation of Qi and Blood in the cervical meridians, combined with Wind, Cold, or Dampness invasion. Acupuncture points along the Gallbladder, Bladder, and Triple Warmer meridians are selected to release muscle tension, reduce inflammation, and restore circulation to compressed or irritated tissues. Specific points at the base of the skull, along the trapezius, and in the cervical paraspinal muscles provide direct local relief.</p>
+<p>For chronic or structural neck problems &mdash; including disc herniations, cervical spondylosis, and nerve impingement &mdash; we combine acupuncture with Dr. David Cai&rsquo;s CenterGy (Synergies) method, which uses precision energy work to address deeper musculoskeletal patterns. This integrative approach reduces dependence on pain medication and supports long-term recovery without surgery or injections.</p>
+<h2>Conditions We Treat</h2>
+<ul>
+<li>Acute and chronic neck pain</li>
+<li>Cervical disc herniation and spondylosis</li>
+<li>Whiplash and post-accident neck strain</li>
+<li>Tech neck and postural tension from desk or phone use</li>
+<li>Cervicogenic headaches and migraines</li>
+<li>Shoulder and upper back pain related to cervical dysfunction</li>
+<li>Neck injuries covered by Workers&rsquo; Compensation or Auto Accident PIP insurance</li>
+</ul>
+<h2>Frequently Asked Questions</h2>
+<p><strong>Is acupuncture effective for neck pain?</strong> Clinical research supports acupuncture for both acute and chronic neck pain. A 2017 Cochrane review found acupuncture more effective than sham or no treatment for reducing neck pain intensity and improving function. Most patients report noticeable relief within 3&ndash;6 sessions.</p>
+<p><strong>How many sessions will I need?</strong> A typical acute neck strain responds in 4&ndash;8 sessions. Chronic neck pain, disc issues, or post-surgical cases may require 10&ndash;16 sessions. We reassess after the first 4 visits and adjust the plan based on your progress.</p>
+<p><strong>Does insurance cover acupuncture for neck pain?</strong> AcuTherapy Clinics accepts Workers&rsquo; Compensation, Auto Accident PIP (Hawaii No-Fault), Veterans Community Care, UHA, HMAA, Medicare Supplement, AARP, Humana, AshLink, and more. Please call our office to verify coverage before your first visit.</p>
+<h2>Our Practitioners</h2>
+<p>Dr. David Cai, O.M.D., L.Ac., L.M.T. &mdash; Founder and primary practitioner with over 30 years of experience. Beijing University of Chinese Medicine, 1991. Hawaii L.Ac. ACU-1125, Hawaii LMT 7543, NCCAOM Dipl. Ac. 962-1001-522.</p>
+<p>Lisa Long, O.M.D., L.M.T. &mdash; Senior practitioner, 30+ years experience, co-developer of CenterGy (Synergies). Hawaii LMT MAT-17832.</p>
+<h2>Locations &amp; Hours</h2>
+<p><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</p>
+<p><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</p>
+<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Tuesday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
+
 const WORKERS_COMP_NOSCRIPT_BODY = `<h1>Workers&rsquo; Compensation Acupuncture in Honolulu &amp; Aiea, Hawaii</h1>
 <p>AcuTherapy Clinics accepts Workers&rsquo; Compensation insurance at both our Honolulu (Liliha) and Aiea locations. If you have been injured on the job, Hawaii&rsquo;s Workers&rsquo; Comp system covers acupuncture and medical massage — with $0 out of pocket for the patient. We handle all insurance paperwork and billing directly with your employer&rsquo;s carrier.</p>
 <h2>What Hawaii Workers&rsquo; Comp Covers</h2>
@@ -2085,6 +2112,16 @@ function buildRootContent(route, meta) {
     }
     if (route === '/sciatica-treatment-honolulu') {
       return `<div id="root"></div><noscript>${SCIATICA_NOSCRIPT_BODY}<nav>
+      ${navLinks}
+  </nav></noscript>`;
+    }
+    if (route === '/sciatica-acupuncture-honolulu') {
+      return `<div id="root"></div><noscript>${SCIATICA_NOSCRIPT_BODY}<nav>
+      ${navLinks}
+  </nav></noscript>`;
+    }
+    if (route === '/neck-pain-treatment-honolulu') {
+      return `<div id="root"></div><noscript>${NECK_PAIN_NOSCRIPT_BODY}<nav>
       ${navLinks}
   </nav></noscript>`;
     }
