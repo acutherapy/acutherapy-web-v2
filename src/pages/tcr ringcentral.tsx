@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { Calendar, User, Check, Building2, MessageSquare, Phone, Mail, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import Turnstile from '@/components/Turnstile';
 
 export default function BookAppointmentPage() {
     // 【修改点 1】：这里的默认初始值设为 3，让页面一加载就直接进入留下审核所需信息的步骤。
@@ -35,15 +36,20 @@ export default function BookAppointmentPage() {
 
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [smsChecked, setSmsChecked] = useState(false);
+    const [turnstileToken, setTurnstileToken] = useState('');
 
     const submitForm = async (e: React.FormEvent) => {
         e.preventDefault();
+        if (!turnstileToken) {
+            alert('Please complete the security check before submitting.');
+            return;
+        }
         setIsSubmitting(true);
         try {
             const res = await fetch('/api/send', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(formData)
+                body: JSON.stringify({ ...formData, turnstileToken })
             });
             if (res.ok) {
                 setStep(4);
@@ -253,6 +259,7 @@ export default function BookAppointmentPage() {
                             </div>
 
                             <div className="pt-6 grid grid-cols-2 gap-4">
+                                <div className="col-span-2"><Turnstile onVerify={setTurnstileToken} /></div>
                                 <div />
                                 <Button type="submit" disabled={isSubmitting} className="h-14 text-lg bg-teal-600 hover:bg-teal-700 text-white">
                                     {isSubmitting ? "Sending..." : "Request Appointment"}

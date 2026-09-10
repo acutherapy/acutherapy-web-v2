@@ -3,20 +3,23 @@ import { Helmet } from 'react-helmet-async';
 import { CheckCircle2, ArrowRight, Shield } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import LandingPageShareBubble from '@/components/LandingPageShareBubble';
+import Turnstile from '@/components/Turnstile';
 
 export default function NewPatientSpecialEnPage() {
     const [formData, setFormData] = useState({ name: '', phone: '', email: '' });
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
+    const [turnstileToken, setTurnstileToken] = useState('');
 
     const submitForm = async (e: React.FormEvent) => {
         e.preventDefault();
+        if (!turnstileToken) { alert('Please complete the security check before submitting.'); return; }
         setIsSubmitting(true);
         try {
             const res = await fetch('/api/send', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ ...formData, reason: 'New Patient Special Evaluation' })
+                body: JSON.stringify({ ...formData, reason: 'New Patient Special Evaluation', turnstileToken })
             });
             if (res.ok) setIsSuccess(true);
             else alert('Failed to send request. Please call us directly.');
@@ -81,6 +84,7 @@ export default function NewPatientSpecialEnPage() {
                                 <label className="block text-sm font-bold text-slate-300 mb-2 text-xs uppercase tracking-wider">Email Address</label>
                                 <input required type="email" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-indigo-500 outline-none transition-all" placeholder="name@example.com" value={formData.email} onChange={e => setFormData({...formData, email: e.target.value})} />
                             </div>
+                            <Turnstile onVerify={setTurnstileToken} />
                             <Button type="submit" disabled={isSubmitting} className="w-full h-14 mt-4 text-lg bg-indigo-600 hover:bg-indigo-700 transition-colors">
                                 {isSubmitting ? 'Requesting...' : <span className="flex items-center gap-2">Get Started <ArrowRight className="w-5 h-5" /></span>}
                             </Button>

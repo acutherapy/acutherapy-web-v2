@@ -3,20 +3,23 @@ import { Helmet } from 'react-helmet-async';
 import { CheckCircle2, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import LandingPageShareBubble from '@/components/LandingPageShareBubble';
+import Turnstile from '@/components/Turnstile';
 
 export default function SpringPromoEnPage() {
     const [formData, setFormData] = useState({ name: '', phone: '', email: '' });
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
+    const [turnstileToken, setTurnstileToken] = useState('');
 
     const submitForm = async (e: React.FormEvent) => {
         e.preventDefault();
+        if (!turnstileToken) { alert('Please complete the security check before submitting.'); return; }
         setIsSubmitting(true);
         try {
             const res = await fetch('/api/send', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ ...formData, reason: 'Spring Promo 2026 Claim' })
+                body: JSON.stringify({ ...formData, reason: 'Spring Promo 2026 Claim', turnstileToken })
             });
             if (res.ok) setIsSuccess(true);
             else alert('Failed to send request. Please call us directly.');
@@ -88,6 +91,7 @@ export default function SpringPromoEnPage() {
                                 <label className="block text-sm font-bold text-slate-300 mb-2 text-xs uppercase tracking-wider">Email Address</label>
                                 <input required type="email" className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-teal-500 outline-none bg-white text-slate-900 border-none placeholder-slate-400 transition-all" placeholder="name@example.com" value={formData.email} onChange={e => setFormData({...formData, email: e.target.value})} />
                             </div>
+                            <Turnstile onVerify={setTurnstileToken} />
                             <Button type="submit" disabled={isSubmitting} className="w-full h-14 mt-4 text-lg bg-emerald-600 hover:bg-emerald-700 transition-colors">
                                 {isSubmitting ? 'Securing...' : <span className="flex items-center gap-2">Secure My Spot <ArrowRight className="w-5 h-5" /></span>}
                             </Button>

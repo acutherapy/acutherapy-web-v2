@@ -4,14 +4,20 @@ import { Link } from 'react-router-dom';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Calendar, PhoneCall, MapPin, ShieldCheck, CheckCircle2 } from "lucide-react";
+import Turnstile from '@/components/Turnstile';
 
 export default function ContactHonoluluAcupuncturePage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [smsChecked, setSmsChecked] = useState(false);
+  const [turnstileToken, setTurnstileToken] = useState('');
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (!turnstileToken) {
+      alert('Please complete the security check before submitting.');
+      return;
+    }
     setIsSubmitting(true);
     const formData = new FormData(e.currentTarget);
     const data = {
@@ -20,7 +26,8 @@ export default function ContactHonoluluAcupuncturePage() {
       phone: formData.get('phone'),
       reason: formData.get('service') + ' - ' + formData.get('message'),
       smsConsent: formData.get('smsConsent') === 'on',
-      location: 'Honolulu Contact Page Form'
+      location: 'Honolulu Contact Page Form',
+      turnstileToken
     };
 
     try {
@@ -283,6 +290,7 @@ export default function ContactHonoluluAcupuncturePage() {
                       </a>
                     </label>
                   </div>
+                  <Turnstile onVerify={setTurnstileToken} />
                   <Button disabled={isSubmitting} type="submit" className="w-full bg-blue-600 hover:bg-blue-700 h-14 text-lg font-bold shadow-lg shadow-blue-900/20 flex items-center justify-center">
                     {isSubmitting ? (
                       <span className="flex items-center gap-2">
@@ -414,4 +422,3 @@ export default function ContactHonoluluAcupuncturePage() {
     </>
   );
 }
-

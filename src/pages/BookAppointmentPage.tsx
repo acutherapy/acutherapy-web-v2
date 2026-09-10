@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { Calendar, User, Check, Building2, MessageSquare, Phone, Mail, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import Turnstile from '@/components/Turnstile';
 
 export default function BookAppointmentPage() {
     const [step, setStep] = useState(1);
@@ -32,15 +33,22 @@ export default function BookAppointmentPage() {
 
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [smsChecked, setSmsChecked] = useState(false);
+    const [turnstileToken, setTurnstileToken] = useState('');
+    const [website, setWebsite] = useState('');
+    const formStartedAt = useRef(Date.now());
 
     const submitForm = async (e: React.FormEvent) => {
         e.preventDefault();
+        if (!turnstileToken) {
+            alert('Please complete the security check before submitting.');
+            return;
+        }
         setIsSubmitting(true);
         try {
             const res = await fetch('/api/send', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(formData)
+                body: JSON.stringify({ ...formData, turnstileToken, website, formStartedAt: formStartedAt.current })
             });
             if (res.ok) {
                 setStep(4);
@@ -198,6 +206,7 @@ export default function BookAppointmentPage() {
                     <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 animate-in fade-in slide-in-from-bottom-4 duration-500">
                         <h2 className="text-2xl font-bold text-slate-900 mb-8">Personal Details</h2>
                         <form onSubmit={submitForm} className="space-y-6">
+                            <input tabIndex={-1} autoComplete="off" aria-hidden="true" value={website} onChange={(e) => setWebsite(e.target.value)} className="absolute -left-[10000px] h-px w-px opacity-0" />
                             <div className="space-y-2">
                                 <label htmlFor="name" className="text-sm font-semibold text-slate-900">Full Name</label>
                                 <input
@@ -268,6 +277,7 @@ export default function BookAppointmentPage() {
                             </div>
 
                             <div className="pt-6 grid grid-cols-2 gap-4">
+                                <div className="col-span-2"><Turnstile onVerify={setTurnstileToken} /></div>
                                 <Button type="button" variant="outline" onClick={prevStep} className="h-14 text-lg border-2 border-slate-200">
                                     Back
                                 </Button>

@@ -8,13 +8,65 @@ const supabase = (supabaseUrl && supabaseAnonKey)
     ? createClient(supabaseUrl, supabaseAnonKey) 
     : null;
 
+const requestAttempts = new Map();
+const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
+const RATE_LIMIT_MAX_REQUESTS = 5;
+
+function isPlausibleName(value) {
+    if (typeof value !== 'string') return false;
+    const name = value.trim();
+    return name.length >= 2 && name.length <= 80 && /[A-Za-z\u4e00-\u9fff]/.test(name) && !/[A-Za-z]{14,}/.test(name.replace(/\s/g, ''));
+}
+
+function isValidUsPhone(value) {
+    if (typeof value !== 'string') return false;
+    const digits = value.replace(/\D/g, '');
+    const normalized = digits.length === 11 && digits.startsWith('1') ? digits.slice(1) : digits;
+    return /^\d{10}$/.test(normalized) && !/^[01]/.test(normalized);
+}
+
+function isRateLimited(ip) {
+    const now = Date.now();
+    const previous = (requestAttempts.get(ip) || []).filter((time) => now - time < RATE_LIMIT_WINDOW_MS);
+    if (previous.length >= RATE_LIMIT_MAX_REQUESTS) return true;
+    previous.push(now);
+    requestAttempts.set(ip, previous);
+    return false;
+}
+
+async function verifyTurnstile(token, ip) {
+    const secret = process.env.TURNSTILE_SECRET_KEY;
+    if (!secret || !token) return false;
+    const form = new URLSearchParams({ secret, response: token });
+    if (ip) form.set('remoteip', ip);
+    const response = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: form.toString(),
+    });
+    const result = await response.json();
+    return result.success === true;
+}
+
 export default async function handler(req, res) {
     if (req.method !== 'POST') {
         return res.status(405).json({ error: 'Method Not Allowed' });
     }
 
     try {
-        const { name, email, phone, reason, location, contactMethod = 'Phone' } = req.body;
+        const { name, email, phone, reason, location, contactMethod = 'Phone', turnstileToken, website } = req.body || {};
+        const ip = req.headers['x-forwarded-for']?.split(',')[0]?.trim() || req.socket?.remoteAddress || 'unknown';
+
+        // Stop bad requests here, before they can write a lead or send any Resend email.
+        if (website || !isPlausibleName(name) || !isValidUsPhone(phone) || (email && !/^\S+@\S+\.\S+$/.test(email))) {
+            return res.status(400).json({ error: 'We could not verify this appointment request. Please try again.' });
+        }
+        if (isRateLimited(ip)) {
+            return res.status(429).json({ error: 'Too many requests. Please try again shortly.' });
+        }
+        if (!(await verifyTurnstile(turnstileToken, ip))) {
+            return res.status(400).json({ error: 'Please complete the security check and try again.' });
+        }
 
         // Insert lead into Supabase if client is initialized
         if (supabase) {
