@@ -4,12 +4,14 @@ import { CheckCircle2, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import LandingPageShareBubble from '@/components/LandingPageShareBubble';
 import Turnstile from '@/components/Turnstile';
+import { useSubmissionGuard } from '@/hooks/useSubmissionGuard';
 
 export default function SpringPromoZhPage() {
     const [formData, setFormData] = useState({ name: '', phone: '', email: '' });
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
     const [turnstileToken, setTurnstileToken] = useState('');
+    const { website, setWebsite, formStartedAt } = useSubmissionGuard();
 
     const submitForm = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -19,7 +21,7 @@ export default function SpringPromoZhPage() {
             const res = await fetch('/api/send', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ ...formData, reason: 'Chinese Spring Promo Claim', turnstileToken })
+                body: JSON.stringify({ ...formData, reason: 'Chinese Spring Promo Claim', turnstileToken, website, formStartedAt })
             });
             if (res.ok) setIsSuccess(true);
             else alert('发送请求失败，请直接致电我们。');
@@ -76,6 +78,7 @@ export default function SpringPromoZhPage() {
                         </div>
                     ) : (
                         <form onSubmit={submitForm} className="space-y-5 relative z-10">
+                            <input tabIndex={-1} autoComplete="off" aria-hidden="true" value={website} onChange={e => setWebsite(e.target.value)} className="absolute -left-[10000px] h-px w-px opacity-0" />
                             <h2 className="text-3xl font-extrabold text-white mb-2">领取您的专属福利</h2>
                             <p className="text-slate-500 mb-8 text-sm">只需填写以下简单表格即可锁定名额，我们支持全中文沟通。</p>
                             

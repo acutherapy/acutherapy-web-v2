@@ -5,12 +5,14 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Calendar, PhoneCall, MapPin, ShieldCheck, CheckCircle2 } from "lucide-react";
 import Turnstile from '@/components/Turnstile';
+import { useSubmissionGuard } from '@/hooks/useSubmissionGuard';
 
 export default function ContactHonoluluAcupuncturePage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [smsChecked, setSmsChecked] = useState(false);
   const [turnstileToken, setTurnstileToken] = useState('');
+  const { website, setWebsite, formStartedAt } = useSubmissionGuard();
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -27,7 +29,9 @@ export default function ContactHonoluluAcupuncturePage() {
       reason: formData.get('service') + ' - ' + formData.get('message'),
       smsConsent: formData.get('smsConsent') === 'on',
       location: 'Honolulu Contact Page Form',
-      turnstileToken
+      turnstileToken,
+      website,
+      formStartedAt
     };
 
     try {
@@ -232,6 +236,7 @@ export default function ContactHonoluluAcupuncturePage() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6 mt-2">
+                  <input tabIndex={-1} autoComplete="off" aria-hidden="true" value={website} onChange={(e) => setWebsite(e.target.value)} className="absolute -left-[10000px] h-px w-px opacity-0" />
 
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="space-y-2">

@@ -1,9 +1,10 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { Calendar, User, Check, Building2, MessageSquare, Phone, Mail, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Turnstile from '@/components/Turnstile';
+import { useSubmissionGuard } from '@/hooks/useSubmissionGuard';
 
 export default function BookAppointmentPage() {
     const [step, setStep] = useState(1);
@@ -34,8 +35,7 @@ export default function BookAppointmentPage() {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [smsChecked, setSmsChecked] = useState(false);
     const [turnstileToken, setTurnstileToken] = useState('');
-    const [website, setWebsite] = useState('');
-    const formStartedAt = useRef(Date.now());
+    const { website, setWebsite, formStartedAt } = useSubmissionGuard();
 
     const submitForm = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -48,7 +48,7 @@ export default function BookAppointmentPage() {
             const res = await fetch('/api/send', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ ...formData, turnstileToken, website, formStartedAt: formStartedAt.current })
+                body: JSON.stringify({ ...formData, turnstileToken, website, formStartedAt })
             });
             if (res.ok) {
                 setStep(4);

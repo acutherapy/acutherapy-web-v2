@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { Calendar, User, Check, Building2, MessageSquare, Phone, Mail, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Turnstile from '@/components/Turnstile';
+import { useSubmissionGuard } from '@/hooks/useSubmissionGuard';
 
 export default function BookAppointmentPage() {
     // 【修改点 1】：这里的默认初始值设为 3，让页面一加载就直接进入留下审核所需信息的步骤。
@@ -37,6 +38,7 @@ export default function BookAppointmentPage() {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [smsChecked, setSmsChecked] = useState(false);
     const [turnstileToken, setTurnstileToken] = useState('');
+    const { website, setWebsite, formStartedAt } = useSubmissionGuard();
 
     const submitForm = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -49,7 +51,7 @@ export default function BookAppointmentPage() {
             const res = await fetch('/api/send', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ ...formData, turnstileToken })
+                body: JSON.stringify({ ...formData, turnstileToken, website, formStartedAt })
             });
             if (res.ok) {
                 setStep(4);
@@ -189,6 +191,7 @@ export default function BookAppointmentPage() {
                     <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 animate-in fade-in slide-in-from-bottom-4 duration-500">
                         <h2 className="text-2xl font-bold text-slate-900 mb-8">Personal Details</h2>
                         <form onSubmit={submitForm} className="space-y-6">
+                            <input tabIndex={-1} autoComplete="off" aria-hidden="true" value={website} onChange={(e) => setWebsite(e.target.value)} className="absolute -left-[10000px] h-px w-px opacity-0" />
                             <div className="space-y-2">
                                 <label htmlFor="name" className="text-sm font-semibold text-slate-900">Full Name</label>
                                 <input

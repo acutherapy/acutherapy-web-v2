@@ -10,7 +10,9 @@ const supabase = (supabaseUrl && supabaseAnonKey)
 
 const requestAttempts = new Map();
 const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
-const RATE_LIMIT_MAX_REQUESTS = 5;
+const RATE_LIMIT_MAX_REQUESTS = 3;
+const DAILY_RATE_LIMIT_WINDOW_MS = 24 * 60 * 60 * 1000;
+const DAILY_RATE_LIMIT_MAX_REQUESTS = 10;
 
 function isPlausibleName(value) {
     if (typeof value !== 'string') return false;
@@ -18,19 +20,21 @@ function isPlausibleName(value) {
     return name.length >= 2 && name.length <= 80 && /[A-Za-z\u4e00-\u9fff]/.test(name) && !/[A-Za-z]{14,}/.test(name.replace(/\s/g, ''));
 }
 
-function isValidUsPhone(value) {
+function normalizeUsPhone(value) {
     if (typeof value !== 'string') return false;
     const digits = value.replace(/\D/g, '');
     const normalized = digits.length === 11 && digits.startsWith('1') ? digits.slice(1) : digits;
-    return /^\d{10}$/.test(normalized) && !/^[01]/.test(normalized);
+    if (!/^\d{10}$/.test(normalized) || /^[01]/.test(normalized)) return null;
+    return `+1${normalized}`;
 }
 
 function isRateLimited(ip) {
     const now = Date.now();
-    const previous = (requestAttempts.get(ip) || []).filter((time) => now - time < RATE_LIMIT_WINDOW_MS);
-    if (previous.length >= RATE_LIMIT_MAX_REQUESTS) return true;
-    previous.push(now);
-    requestAttempts.set(ip, previous);
+    const recent = (requestAttempts.get(ip) || []).filter((time) => now - time < DAILY_RATE_LIMIT_WINDOW_MS);
+    const attemptsInTenMinutes = recent.filter((time) => now - time < RATE_LIMIT_WINDOW_MS);
+    if (attemptsInTenMinutes.length >= RATE_LIMIT_MAX_REQUESTS || recent.length >= DAILY_RATE_LIMIT_MAX_REQUESTS) return true;
+    recent.push(now);
+    requestAttempts.set(ip, recent);
     return false;
 }
 
@@ -54,11 +58,13 @@ export default async function handler(req, res) {
     }
 
     try {
-        const { name, email, phone, reason, location, contactMethod = 'Phone', turnstileToken, website } = req.body || {};
+        const { name, email, phone, reason, location, contactMethod = 'Phone', turnstileToken, website, formStartedAt } = req.body || {};
         const ip = req.headers['x-forwarded-for']?.split(',')[0]?.trim() || req.socket?.remoteAddress || 'unknown';
+        const normalizedPhone = normalizeUsPhone(phone);
+        const elapsed = Date.now() - Number(formStartedAt);
 
         // Stop bad requests here, before they can write a lead or send any Resend email.
-        if (website || !isPlausibleName(name) || !isValidUsPhone(phone) || (email && !/^\S+@\S+\.\S+$/.test(email))) {
+        if (website || !Number.isFinite(elapsed) || elapsed < 2500 || !isPlausibleName(name) || !normalizedPhone || (email && !/^\S+@\S+\.\S+$/.test(email))) {
             return res.status(400).json({ error: 'We could not verify this appointment request. Please try again.' });
         }
         if (isRateLimited(ip)) {
@@ -68,6 +74,21 @@ export default async function handler(req, res) {
             return res.status(400).json({ error: 'Please complete the security check and try again.' });
         }
 
+        // Treat a second request for the same phone within 24 hours as already received.
+        // It returns success so a patient who double-clicks does not see an alarming error.
+        if (supabase) {
+            const yesterday = new Date(Date.now() - DAILY_RATE_LIMIT_WINDOW_MS).toISOString();
+            const { data: existingLead, error: duplicateError } = await supabase
+                .from('leads')
+                .select('id')
+                .eq('phone', normalizedPhone)
+                .gte('created_at', yesterday)
+                .limit(1)
+                .maybeSingle();
+            if (duplicateError) console.error('Duplicate lead check error:', duplicateError);
+            if (existingLead) return res.status(200).json({ success: true, duplicate: true });
+        }
+
         // Insert lead into Supabase if client is initialized
         if (supabase) {
             try {
@@ -75,7 +96,7 @@ export default async function handler(req, res) {
                     .from('leads')
                     .insert({
                         name,
-                        phone,
+                        phone: normalizedPhone,
                         email,
                         condition: reason,
                         location,
