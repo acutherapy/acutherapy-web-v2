@@ -17,7 +17,11 @@ const DAILY_RATE_LIMIT_MAX_REQUESTS = 10;
 function isPlausibleName(value) {
     if (typeof value !== 'string') return false;
     const name = value.trim();
-    return name.length >= 2 && name.length <= 80 && /[A-Za-z\u4e00-\u9fff]/.test(name) && !/[A-Za-z]{14,}/.test(name.replace(/\s/g, ''));
+    if (name.length < 2 || name.length > 80 || /\d/.test(name)) return false;
+    // Chinese names do not normally contain a space; English names require at least
+    // a given name and surname. Both reject random alphanumeric bot strings.
+    if (/^[\u4e00-\u9fff·\s]+$/.test(name)) return /[\u4e00-\u9fff]{2,}/.test(name.replace(/[·\s]/g, ''));
+    return /^[A-Za-zÀ-ÖØ-öø-ÿ]+(?:[ '\-][A-Za-zÀ-ÖØ-öø-ÿ]+)+$/.test(name);
 }
 
 function normalizeUsPhone(value) {
