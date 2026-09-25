@@ -132,7 +132,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   let linkBack = 'Back Pain';
   let linkSciatica = 'Sciatica Treatment';
   let linkNeck = 'Neck Pain';
-  let linkAuto = 'Auto Accident';
+  let linkAuto = 'Auto Accident (PIP) Treatment';
 
   let linkWaikiki = 'Waikiki';
   let linkKahala = 'Kahala';
@@ -636,5 +636,3 @@ export default function App() {
     </HelmetProvider>
   );
 }
-
-
