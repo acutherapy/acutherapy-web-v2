@@ -67,6 +67,12 @@ export default function HomePage() {
                 </Button>
               </div>
 
+              <div className="mt-4">
+                <Link to="/auto-accident-injury-honolulu" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/40 text-sm font-semibold hover:bg-amber-500/30 transition-colors">
+                  <ShieldCheck className="h-4 w-4" /> Auto Accident? PIP Covers 100% — Zero Out-of-Pocket
+                </Link>
+              </div>
+
               <div className="mt-12 flex items-center gap-6 text-sm text-slate-400">
                 <div className="flex items-center gap-2">
                   <ShieldCheck className="text-blue-400 h-5 w-5" />
@@ -488,4 +494,3 @@ export default function HomePage() {
     </div>
   );
 }
-
