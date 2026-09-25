@@ -59,7 +59,7 @@ export default function NeckPainTreatmentHonoluluPage() {
       "name": "Can acupuncture help neck pain?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Acupuncture may help reduce neck muscle tension, improve mobility, and support the body\u2019s natural pain response."
+        "text": "Acupuncture may help reduce neck muscle tension, improve mobility, and support the body’s natural pain response."
       }
     },
     {
@@ -67,7 +67,7 @@ export default function NeckPainTreatmentHonoluluPage() {
       "name": "Can acupuncture help tension headaches related to neck pain?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Acupuncture may help relieve muscle tightness and support the body\u2019s response to headache-related discomfort."
+        "text": "Acupuncture may help relieve muscle tightness and support the body’s response to headache-related discomfort."
       }
     },
     {
@@ -169,7 +169,7 @@ export default function NeckPainTreatmentHonoluluPage() {
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Who Is This For?</h2>
             <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
               <li><strong>Office Professionals:</strong> Releasing the "Tech Neck" posture and upper shoulder burning sensations.</li>
-              <li><strong>Auto Accident Survivors:</strong> Reversing extreme whiplash injuries (100% PIP Auto Insurance covered).</li>
+              <li><strong><Link to="/auto-accident-injury-honolulu">Auto Accident Survivors</Link>:</strong> Reversing extreme whiplash injuries (100% PIP Auto Insurance covered).</li>
               <li><strong>Chronic Migraine Sufferers:</strong> Dissolving the tension headaches stemming from the base of the skull.</li>
               <li><strong>Athletes:</strong> Speeds up recovery from sports-related neck impacts or awkward sleeping cricks.</li>
             </ul>
