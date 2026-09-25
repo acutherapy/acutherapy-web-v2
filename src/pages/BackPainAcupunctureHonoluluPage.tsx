@@ -67,7 +67,7 @@ export default function BackPainAcupunctureHonoluluPage() {
       "name": "Does acupuncture help back pain?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Acupuncture may help reduce muscle tension, improve circulation, and support the body\u2019s natural response to back pain."
+        "text": "Acupuncture may help reduce muscle tension, improve circulation, and support the body’s natural response to back pain."
       }
     },
     {
@@ -168,7 +168,7 @@ If you are enduring daily lower back pain, it can severely limit your life. Back
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Who Is This For?</h2>
             <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
               <li><strong>Lumbar Strain / Sprain:</strong> Acute back pain from recent heavy lifting or sports.</li>
-              <li><strong>Car Accident Survivors:</strong> Reversing extreme whiplash and lower back contusions.</li>
+              <li><strong><Link to="/auto-accident-injury-honolulu">Car Accident Survivors</Link>:</strong> Reversing extreme whiplash and lower back contusions (100% PIP covered).</li>
               <li><strong>Office Professionals:</strong> Releasing deep muscular knots caused by prolonged sitting.</li>
               <li><strong>Post-Surgical Patients:</strong> Seeking natural adjunct pain relief during physical therapy recovery.</li>
             </ul>
