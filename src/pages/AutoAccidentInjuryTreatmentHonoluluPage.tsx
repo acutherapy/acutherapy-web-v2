@@ -9,8 +9,8 @@ export default function AutoAccidentInjuryTreatmentHonoluluPage() {
     <>
       <Helmet>
         <link rel="canonical" href="https://acutherapy.com/auto-accident-injury-honolulu" />
-        <title>Auto Accident Injury Treatment Honolulu | 100% PIP Coverage | AcuTherapy Clinics</title>
-        <meta name="description" content="Been in a car crash? Get expert auto accident injury treatment in Honolulu. 100% covered by Hawaii No-Fault PIP insurance. We treat whiplash, back pain, and concussions." />
+        <title>Auto Accident Acupuncture Honolulu | 100% PIP Covered | AcuTherapy Clinics</title>
+        <meta name="description" content="Injured in a car accident on Oahu? Hawaii PIP auto insurance covers acupuncture 100% — zero out-of-pocket. We handle the paperwork so you can focus on healing. Same-week appointments available." />
       </Helmet>
 
       {/* Page Header */}
