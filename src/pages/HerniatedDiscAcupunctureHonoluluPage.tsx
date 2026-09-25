@@ -62,7 +62,7 @@ export default function HerniatedDiscAcupunctureHonoluluPage() {
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Causes a Bulging or Herniated Disc?</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
-              Between the vertebrae of your spine are rubbery cushions (discs) that act as shock absorbers. Due to sudden trauma (like an auto accident), heavy and improper lifting, or natural age-related spinal degeneration, the tougher exterior of this disc can tear.
+              Between the vertebrae of your spine are rubbery cushions (discs) that act as shock absorbers. Due to sudden trauma (like an <Link to="/auto-accident-injury-honolulu">auto accident</Link>), heavy and improper lifting, or natural age-related spinal degeneration, the tougher exterior of this disc can tear.
             </p>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
               When this happens, the highly acidic inner jelly leaks out directly onto the sensitive spinal nerve root. This chemical burn, combined with the physical mechanical compression of the bulge, causes the intense, radiating pain and severe muscular spasms that lock you to the bed.
