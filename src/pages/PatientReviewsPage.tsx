@@ -65,7 +65,7 @@ export default function PatientReviewsPage() {
                 "openingHoursSpecification": [
                     {
                       "@type": "OpeningHoursSpecification",
-                      "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
                       "opens": "09:00",
                       "closes": "17:00"
                     }
@@ -153,6 +153,30 @@ export default function PatientReviewsPage() {
                 </div>
                 <p className="text-slate-700 italic mb-6 leading-relaxed">"I had horrible back and knee pain. A combination of massage and acupuncture has greatly reduced my issues, so I am able to go about my life! All practitioners are very good and caring. They truly listen and tailor the treatment to your specific needs. The office is clean, comfortable, and the atmosphere is very healing."</p>
                 <div className="font-bold text-slate-900">— Leina'ala M.</div>
+              </div>
+
+              <div className="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 relative hover:shadow-xl transition-shadow">
+                <div className="flex gap-1 text-amber-400 mb-4">
+                  <span className="text-xl">★</span><span className="text-xl">★</span><span className="text-xl">★</span><span className="text-xl">★</span><span className="text-xl">★</span>
+                </div>
+                <p className="text-slate-700 italic mb-6 leading-relaxed">"After just one session I slept better, can lift my arm up and have less pain."</p>
+                <div className="font-bold text-slate-900">— Angie Y.</div>
+              </div>
+
+              <div className="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 relative hover:shadow-xl transition-shadow">
+                <div className="flex gap-1 text-amber-400 mb-4">
+                  <span className="text-xl">★</span><span className="text-xl">★</span><span className="text-xl">★</span><span className="text-xl">★</span><span className="text-xl">★</span>
+                </div>
+                <p className="text-slate-700 italic mb-6 leading-relaxed">"Clinic is clean and very welcoming in Liliha. Lots of parking. I've been going for about a month and recommend this place. Slowly recovering from my car accident thanks to Acutherapy Clinic!"</p>
+                <div className="font-bold text-slate-900">— Ryan G.</div>
+              </div>
+
+              <div className="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 relative hover:shadow-xl transition-shadow">
+                <div className="flex gap-1 text-amber-400 mb-4">
+                  <span className="text-xl">★</span><span className="text-xl">★</span><span className="text-xl">★</span><span className="text-xl">★</span><span className="text-xl">★</span>
+                </div>
+                <p className="text-slate-700 italic mb-6 leading-relaxed">"Dr. Cai is very good at taking care of the patient. I'm very happy under his treatment."</p>
+                <div className="font-bold text-slate-900">— Shih Chang M.</div>
               </div>
             </div>
 
@@ -273,7 +297,7 @@ export default function PatientReviewsPage() {
                   </div>
                   <div className="mt-6 bg-slate-50 p-4 rounded-lg">
                     <p className="font-bold text-slate-900 mb-1 text-sm">Hours of Operation</p>
-                    <p className="text-slate-600 text-sm">Mon-Fri: 9am - 1pm, Sat: 8am - 12pm</p>
+                    <p className="text-slate-600 text-sm">Liliha: Mon–Sat 9am–1pm | Aiea: Mon–Sat 9am–5pm</p>
                   </div>
                 </div>
 
@@ -306,3 +330,4 @@ export default function PatientReviewsPage() {
     </>
   );
 }
+
