@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { PhoneCall, ArrowRightCircle, MapPin, ShieldCheck, HeartPulse, Stethoscope, Award, Star, Activity, CheckCircle2, ArrowRight } from "lucide-react";
+import PatientReviewsSection from "@/components/PatientReviewsSection";
 
 export default function HomePage() {
   return (
@@ -491,6 +492,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <PatientReviewsSection />
     </div>
   );
 }
+
