@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { Award, GraduationCap, Building2, HeartPulse, CheckCircle2, Newspaper, ShieldCheck, Stethoscope, Calendar, PhoneCall, MapPin } from 'lucide-react';
+import PatientReviewsSection from "@/components/PatientReviewsSection";
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from "@/components/ui/card";
@@ -291,6 +292,8 @@ export default function AboutDrDavidCaiPage() {
                             </div>
                         </div>
 
+                        <PatientReviewsSection />
+
                         {/* Additional Links Block */}
                         <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100 p-8 rounded-3xl text-center">
                             <Building2 className="mx-auto h-10 w-10 text-blue-600 mb-4" />
@@ -386,3 +389,4 @@ export default function AboutDrDavidCaiPage() {
         </div>
     );
 }
+
