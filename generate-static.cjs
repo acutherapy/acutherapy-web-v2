@@ -577,7 +577,7 @@ const HOME_NOSCRIPT_BODY = `<h1>AcuTherapy Clinics &ndash; Honolulu&rsquo;s Trus
 <p>Dr. David Cai, O.M.D., L.Ac., L.M.T. &mdash; Founder, 30+ years of clinical experience, Beijing University of Chinese Medicine graduate, NIH-funded research consultant at George Washington University Medical Center.</p>
 <p>Lisa Long, O.M.D., L.M.T. &mdash; Senior massage therapist with 30+ years of experience, co-developer of CenterGy (Synergies), serving both Liliha and Aiea locations.</p>
 <h2>Patient Reviews</h2>
-<p>Rated 4.9 stars across 79 Google reviews at both locations. Patients consistently highlight pain relief outcomes, Dr. Cai&rsquo;s holistic approach, and the clinic&rsquo;s welcoming atmosphere.</p>`;
+<p>Rated 4.9 stars across 115 Google reviews at both locations. Patients consistently highlight pain relief outcomes, Dr. Cai&rsquo;s holistic approach, and the clinic&rsquo;s welcoming atmosphere.</p>`;
 
 const CUPPING_NOSCRIPT_BODY = `<h1>Cupping &amp; Gua Sha Therapy in Honolulu</h1>
 <p>AcuTherapy Clinics offers traditional fire cupping and gua sha therapy at our Honolulu (Liliha) and Aiea (Pearl City) locations. These time-honored Traditional Chinese Medicine techniques are used alongside acupuncture and medical massage to relieve deep muscle tension, improve circulation, and accelerate recovery from pain and injury.</p>
@@ -1359,7 +1359,7 @@ function buildJsonLd(route, description) {
       'aggregateRating': {
         '@type': 'AggregateRating',
         'ratingValue': '4.9',
-        'reviewCount': '64',
+        'reviewCount': '100',
         'bestRating': '5',
         'worstRating': '1'
       },
@@ -1605,7 +1605,7 @@ ${JSON.stringify(aieaSchema, null, 2)}
       'aggregateRating': {
         '@type': 'AggregateRating',
         'ratingValue': '4.9',
-        'reviewCount': '59',
+        'reviewCount': '100',
         'bestRating': '5',
         'worstRating': '1'
       },
@@ -1989,7 +1989,7 @@ ${JSON.stringify({
       'aggregateRating': {
         '@type': 'AggregateRating',
         'ratingValue': '4.9',
-        'reviewCount': isLiliha ? '64' : '15',
+        'reviewCount': isLiliha ? '100' : '15',
         'bestRating': '5',
         'worstRating': '1'
       },
