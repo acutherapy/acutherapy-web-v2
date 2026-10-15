@@ -98,12 +98,8 @@ export default function HonoluluClinicLocationPage() {
                                     </div>
                                     <ul className="space-y-3 text-slate-700 font-medium">
                                         <li className="flex justify-between items-center border-b border-slate-200 pb-2">
-                                            <span>Monday - Friday</span>
-                                            <span className="text-slate-900 font-bold">9:00 AM - 1:00 PM</span>
-                                        </li>
-                                        <li className="flex justify-between items-center pt-1 border-b border-slate-200 pb-2">
-                                            <span>Saturday</span>
-                                            <span className="text-slate-900 font-bold">8:00 AM - 12:00 PM</span>
+                                            <span>Monday – Saturday</span>
+                                            <span className="text-slate-900 font-bold">9:00 AM – 1:00 PM</span>
                                         </li>
                                         <li className="flex justify-between items-center pt-3 text-slate-400">
                                             <span>Sunday</span>
