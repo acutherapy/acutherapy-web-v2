@@ -145,7 +145,7 @@ export default function HomePage() {
 
                   <div className="mt-6 bg-slate-50 rounded-xl p-4 text-left">
                     <h4 className="font-bold text-slate-900 text-sm mb-1">Hours of Operation</h4>
-                    <p className="text-slate-600 text-sm">Mon-Fri: 9am - 1pm, Sat: 8am - 12pm</p>
+                    <p className="text-slate-600 text-sm">Liliha: Mon–Sat 9am–1pm | Aiea: Mon–Sat 9am–5pm</p>
                   </div>
 
                   <div className="mt-6 pt-6 border-t border-slate-100 text-left">
