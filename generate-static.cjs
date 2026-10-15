@@ -350,7 +350,7 @@ const PAGE_DATA = {
   },
   '/aiea-pearl-city-clinic': {
     title: 'AcuTherapy Clinics Aiea – Pearl City Location',
-    description: 'AcuTherapy Clinics Aiea — 98-211 Pali Momi St, Suite 604. Licensed acupuncture and TCM near Pearl City. Call (808) 452-1900. Tue–Sat 9–5.',
+    description: 'AcuTherapy Clinics Aiea — 98-211 Pali Momi St, Suite 604. Licensed acupuncture and TCM near Pearl City. Call (808) 452-1900. Mon–Sat 9–5.',
     h1: 'AcuTherapy Clinics – Aiea (Pearl City)',
   },
   '/insurance-accepted': {
@@ -501,7 +501,7 @@ const ABOUT_NOSCRIPT_BODY = `<h1>About AcuTherapy Clinics</h1>
 <li><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</li>
 </ul>
 <h2>Hours</h2>
-<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Tuesday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
+<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Monday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
 
 const DAVID_NOSCRIPT_BODY = `<h1>Dr. David Cai, O.M.D., L.Ac., L.M.T.</h1>
 <p>Founder of AcuTherapy Clinics in Honolulu and Aiea, Hawaii. Licensed acupuncturist with over 30 years of clinical experience.</p>
@@ -542,7 +542,7 @@ const DAVID_NOSCRIPT_BODY = `<h1>Dr. David Cai, O.M.D., L.Ac., L.M.T.</h1>
 <li><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</li>
 </ul>
 <h2>Hours</h2>
-<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Tuesday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>
+<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Monday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>
 <h2>Insurance Accepted</h2>
 <p>Workers&rsquo; Compensation, Auto Accident PIP (Hawaii No-Fault), Veterans Community Care, UHA, HMAA, Medicare Supplement, AARP, Humana, AshLink, and more.</p>`;
 const HOME_NOSCRIPT_BODY = `<h1>AcuTherapy Clinics &ndash; Honolulu&rsquo;s Trusted Acupuncture Provider</h1>
@@ -572,7 +572,7 @@ const HOME_NOSCRIPT_BODY = `<h1>AcuTherapy Clinics &ndash; Honolulu&rsquo;s Trus
 <li><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</li>
 <li><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</li>
 </ul>
-<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Tuesday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>
+<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Monday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>
 <h2>Our Practitioners</h2>
 <p>Dr. David Cai, O.M.D., L.Ac., L.M.T. &mdash; Founder, 30+ years of clinical experience, Beijing University of Chinese Medicine graduate, NIH-funded research consultant at George Washington University Medical Center.</p>
 <p>Lisa Long, O.M.D., L.M.T. &mdash; Senior massage therapist with 30+ years of experience, co-developer of CenterGy (Synergies), serving both Liliha and Aiea locations.</p>
@@ -602,7 +602,7 @@ const CUPPING_NOSCRIPT_BODY = `<h1>Cupping &amp; Gua Sha Therapy in Honolulu</h1
 <li><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</li>
 <li><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</li>
 </ul>
-<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Tuesday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
+<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Monday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
 
 const FERTILITY_NOSCRIPT_BODY = `<h1>Fertility Acupuncture in Honolulu, Hawaii</h1>
 <p>AcuTherapy Clinics offers fertility acupuncture as part of a comprehensive women&rsquo;s health program at our two Oahu locations &mdash; Honolulu (Liliha) and Aiea (Pearl City). Drawing on Traditional Chinese Medicine principles and more than 30 years of clinical experience, Dr. David Cai and Lisa Long support patients who are trying to conceive naturally, preparing for IVF or IUI, or managing reproductive health conditions such as PCOS and endometriosis.</p>
@@ -628,7 +628,7 @@ const FERTILITY_NOSCRIPT_BODY = `<h1>Fertility Acupuncture in Honolulu, Hawaii</
 <li><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</li>
 <li><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</li>
 </ul>
-<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Tuesday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
+<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Monday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
 
 const INSURANCE_NOSCRIPT_BODY = `<h1>Insurance Accepted &ndash; AcuTherapy Clinics Honolulu</h1>
 <p>AcuTherapy Clinics accepts a wide range of insurance plans at our Honolulu (Liliha) and Aiea (Pearl City) locations. Many patients pay $0 out of pocket. Below is a complete list of accepted plans and how each one works for acupuncture and medical massage in Hawaii.</p>
@@ -651,7 +651,7 @@ const INSURANCE_NOSCRIPT_BODY = `<h1>Insurance Accepted &ndash; AcuTherapy Clini
 <li><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</li>
 <li><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</li>
 </ul>
-<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Tuesday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
+<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Monday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
 
 const KAKAAKO_NOSCRIPT_BODY = `<h1>Acupuncture Near Kakaako &ndash; Honolulu, Hawaii</h1>
 <p>AcuTherapy Clinics provides expert acupuncture, Traditional Chinese Medicine, and medical massage for patients living and working in the Kakaako and Ward Village neighborhoods of Honolulu. Our Liliha clinic is minutes from Kakaako with convenient parking &mdash; a stress-free alternative to navigating downtown congestion.</p>
@@ -678,7 +678,7 @@ const KAKAAKO_NOSCRIPT_BODY = `<h1>Acupuncture Near Kakaako &ndash; Honolulu, Ha
 <h2>Insurance &amp; Location</h2>
 <p>Workers&rsquo; Compensation, Auto Accident PIP, Veterans Community Care, UHA, HMAA, Medicare Supplement, AARP, Humana, and AshLink accepted. Many patients pay $0 out of pocket.</p>
 <p><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</p>
-<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Tuesday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
+<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Monday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
 
 const MOXIBUSTION_NOSCRIPT_BODY = `<h1>Moxibustion Therapy in Honolulu, Hawaii</h1>
 <p>AcuTherapy Clinics offers moxibustion therapy at our Honolulu (Liliha) and Aiea (Pearl City) locations. Moxibustion is a Traditional Chinese Medicine technique in which dried mugwort (moxa) is burned near or on acupuncture points to generate therapeutic heat, stimulate circulation, and strengthen the body&rsquo;s Qi. It is one of the foundational modalities of TCM and is often used alongside acupuncture for enhanced therapeutic effect.</p>
@@ -703,7 +703,7 @@ const MOXIBUSTION_NOSCRIPT_BODY = `<h1>Moxibustion Therapy in Honolulu, Hawaii</
 <li><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</li>
 <li><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</li>
 </ul>
-<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Tuesday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
+<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Monday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
 
 const MAKIKI_NOSCRIPT_BODY = `<h1>Acupuncture Near Makiki &ndash; Honolulu, Hawaii</h1>
 <p>AcuTherapy Clinics serves patients from the Makiki neighborhood and surrounding areas including Punchbowl, Nuuanu, and downtown Honolulu. Our Liliha clinic is just minutes from Makiki with convenient parking, offering expert acupuncture, Traditional Chinese Medicine, and medical massage for the full range of pain, injury, and wellness needs.</p>
@@ -731,7 +731,7 @@ const MAKIKI_NOSCRIPT_BODY = `<h1>Acupuncture Near Makiki &ndash; Honolulu, Hawa
 <h2>Insurance &amp; Location</h2>
 <p>Workers&rsquo; Compensation, Auto Accident PIP, Veterans Community Care, UHA, HMAA, Medicare Supplement, AARP, Humana, and AshLink accepted. Many patients pay $0 out of pocket.</p>
 <p><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</p>
-<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Tuesday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
+<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Monday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
 
 const BACK_PAIN_NOSCRIPT_BODY = `<h1>Acupuncture for Back Pain in Honolulu, Hawaii</h1>
 <p>Back pain is one of the most common reasons patients seek acupuncture at AcuTherapy Clinics in Honolulu. Whether you are dealing with an acute flare-up, a chronic condition, or a workplace or auto accident injury, our licensed practitioners provide targeted Traditional Chinese Medicine (TCM) care at our Liliha and Aiea locations.</p>
@@ -758,7 +758,7 @@ const BACK_PAIN_NOSCRIPT_BODY = `<h1>Acupuncture for Back Pain in Honolulu, Hawa
 <h2>Locations &amp; Hours</h2>
 <p><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</p>
 <p><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</p>
-<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Tuesday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
+<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Monday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
 
 const SCIATICA_NOSCRIPT_BODY = `<h1>Sciatica Treatment in Honolulu | Acupuncture for Sciatic Nerve Pain</h1>
 <p>Sciatica — the sharp, shooting pain that radiates from the lower back down through the buttock and leg — is one of the most debilitating pain conditions we treat at AcuTherapy Clinics. Our Honolulu and Aiea clinics offer targeted acupuncture and TCM care for patients dealing with sciatic nerve compression, piriformis syndrome, and lumbar disc-related nerve pain.</p>
@@ -784,7 +784,7 @@ const SCIATICA_NOSCRIPT_BODY = `<h1>Sciatica Treatment in Honolulu | Acupuncture
 <h2>Locations &amp; Hours</h2>
 <p><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</p>
 <p><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</p>
-<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Tuesday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
+<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Monday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
 
 const NECK_PAIN_NOSCRIPT_BODY = `<h1>Neck Pain Acupuncture in Honolulu &amp; Aiea, Hawaii</h1>
 <p>AcuTherapy Clinics provides acupuncture for neck pain at our Honolulu (Liliha) and Aiea locations. Neck pain is one of the most common complaints we treat &mdash; from stiff mornings and desk-related tension to cervical disc issues, whiplash, and chronic pain that hasn&rsquo;t responded to physical therapy. Our licensed acupuncturists address both the immediate pain and the underlying root cause through individualized treatment.</p>
@@ -811,7 +811,7 @@ const NECK_PAIN_NOSCRIPT_BODY = `<h1>Neck Pain Acupuncture in Honolulu &amp; Aie
 <h2>Locations &amp; Hours</h2>
 <p><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</p>
 <p><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</p>
-<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Tuesday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
+<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Monday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
 
 const WORKERS_COMP_NOSCRIPT_BODY = `<h1>Workers&rsquo; Compensation Acupuncture in Honolulu &amp; Aiea, Hawaii</h1>
 <p>AcuTherapy Clinics accepts Workers&rsquo; Compensation insurance at both our Honolulu (Liliha) and Aiea locations. If you have been injured on the job, Hawaii&rsquo;s Workers&rsquo; Comp system covers acupuncture and medical massage — with $0 out of pocket for the patient. We handle all insurance paperwork and billing directly with your employer&rsquo;s carrier.</p>
@@ -838,7 +838,7 @@ const WORKERS_COMP_NOSCRIPT_BODY = `<h1>Workers&rsquo; Compensation Acupuncture 
 <h2>Locations &amp; Hours</h2>
 <p><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</p>
 <p><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</p>
-<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Tuesday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
+<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Monday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
 
 const AUTO_ACCIDENT_NOSCRIPT_BODY = `<h1>Auto Accident Injury Treatment in Honolulu | Hawaii No-Fault PIP</h1>
 <p>Hawaii&rsquo;s No-Fault law (HRS &sect;431:10C) requires every auto insurance policy to include Personal Injury Protection (PIP) benefits of at least $10,000. This means that if you were injured in a car accident in Hawaii — regardless of who was at fault — your auto insurance covers acupuncture and medical massage at $0 out of pocket. AcuTherapy Clinics is a participating PIP provider at our Honolulu and Aiea locations.</p>
@@ -866,7 +866,7 @@ const AUTO_ACCIDENT_NOSCRIPT_BODY = `<h1>Auto Accident Injury Treatment in Honol
 <h2>Locations &amp; Hours</h2>
 <p><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</p>
 <p><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</p>
-<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Tuesday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
+<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Monday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
 
 const EAR_SEED_NOSCRIPT_BODY = `
 <h1>Brain Reset Through Your Ear™ — Needle-Free Ear Seed Therapy in Honolulu &amp; Aiea, HI</h1>
@@ -894,7 +894,7 @@ const EAR_SEED_NOSCRIPT_BODY = `
 <h2>Locations &amp; Hours</h2>
 <p><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</p>
 <p><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</p>
-<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Tuesday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
+<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Monday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
 
 const WEIGHT_LOSS_NOSCRIPT_BODY = `
 <h1>Brain Reset for Weight Loss™ — Ear Seed Therapy for Cravings &amp; Appetite in Honolulu, HI</h1>
@@ -922,7 +922,7 @@ const WEIGHT_LOSS_NOSCRIPT_BODY = `
 <h2>Locations &amp; Hours</h2>
 <p><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</p>
 <p><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</p>
-<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Tuesday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
+<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Monday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
 
 const STRESS_NOSCRIPT_BODY = `
 <h1>Stress Relief Acupuncture in Honolulu, HI</h1>
@@ -1056,7 +1056,7 @@ const FACIAL_NOSCRIPT_BODY = `
 <h2>Locations &amp; Hours</h2>
 <p><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177</p>
 <p><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</p>
-<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Tuesday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
+<p>Liliha hours: Monday&ndash;Saturday 9:00 AM &ndash; 1:00 PM | Aiea hours: Monday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
 
 const WAIKIKI_NOSCRIPT_BODY = `<h1>Acupuncture Near Waikiki &ndash; Honolulu, Hawaii</h1>
 <p>AcuTherapy Clinics provides acupuncture, Traditional Chinese Medicine, and medical massage for patients living and working in and around Waikiki. Our Liliha clinic is approximately 10 minutes from Waikiki by car&mdash;a straightforward drive via McCully Street or along Kapiolani Boulevard. Convenient on-site parking is available at our Liliha location.</p>
@@ -1256,11 +1256,11 @@ const HONOLULU_GENERIC_NOSCRIPT_BODY = `<h1>Acupuncture in Honolulu, Hawaii &nda
 <p>Dr. David Cai, O.M.D., L.Ac., L.M.T. &mdash; Founder, graduate of Beijing University of Chinese Medicine (1991), 30+ years experience. Hawaii L.Ac. ACU-1125, NCCAOM Dipl. Ac. #962-1001-522, LMT 7543. Lisa Long, O.M.D., L.M.T. &mdash; Senior practitioner, 30+ years experience, CenterGy co-developer. Hawaii LMT MAT-17832.</p>
 <h2>Locations &amp; Hours</h2>
 <p><strong>Honolulu (Liliha):</strong> 1650 Liliha St, Suite 208, Honolulu, HI 96817 &mdash; (808) 528-7177 &mdash; Mon&ndash;Sat 9:00 AM &ndash; 1:00 PM</p>
-<p><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900 &mdash; Tue&ndash;Sat 9:00 AM &ndash; 5:00 PM</p>
+<p><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900 &mdash; Mon&ndash;Sat 9:00 AM &ndash; 5:00 PM</p>
 <p>Sunday closed at both locations.</p>`;
 
 const WAIPAHU_NOSCRIPT_BODY = `<h1>Acupuncture in Waipahu &ndash; West Oahu, Hawaii</h1>
-<p>AcuTherapy Clinics serves patients from Waipahu and surrounding West Oahu communities at our Aiea clinic on Pali Momi Street, approximately 15 minutes from Waipahu via H-1 eastbound. Our Aiea location offers convenient on-site parking and extended afternoon hours Tuesday through Saturday.</p>
+<p>AcuTherapy Clinics serves patients from Waipahu and surrounding West Oahu communities at our Aiea clinic on Pali Momi Street, approximately 15 minutes from Waipahu via H-1 eastbound. Our Aiea location offers convenient on-site parking and extended afternoon hours Monday through Saturday.</p>
 <h2>Who We Treat in the Waipahu Area</h2>
 <p>Waipahu is a working community with a strong manufacturing, construction, and service industry base. Many of our Waipahu-area patients come to us with workplace injuries sustained in physically demanding jobs: lower back strain from lifting, neck and shoulder injuries from overhead work, repetitive strain from assembly or construction tasks, and knee pain from prolonged kneeling or standing on hard surfaces. Workers&rsquo; Compensation is accepted at our Aiea clinic, and we handle all billing and authorization paperwork directly with your employer&rsquo;s carrier.</p>
 <p>We also see a significant number of Waipahu patients who have been injured in auto accidents on the H-1 and surrounding roads. Hawaii&rsquo;s No-Fault PIP insurance covers acupuncture with $0 out of pocket, and we manage all billing with your insurer directly.</p>
@@ -1280,10 +1280,10 @@ const WAIPAHU_NOSCRIPT_BODY = `<h1>Acupuncture in Waipahu &ndash; West Oahu, Haw
 <p>Workers&rsquo; Compensation, Auto Accident PIP (Hawaii No-Fault), Veterans Community Care, UHA, HMAA, AARP, Humana, AshLink, and more.</p>
 <h2>Location &amp; Hours</h2>
 <p><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</p>
-<p>Tuesday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday&ndash;Monday closed</p>`;
+<p>Monday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
 
 const KAPOLEI_NOSCRIPT_BODY = `<h1>Acupuncture in Kapolei &ndash; West Oahu, Hawaii</h1>
-<p>AcuTherapy Clinics provides acupuncture, Traditional Chinese Medicine, and medical massage for patients from Kapolei and Ewa Beach at our Aiea clinic on Pali Momi Street, approximately 20&ndash;25 minutes from Kapolei via the H-1 eastbound. Our Aiea location offers on-site parking and afternoon appointment availability Tuesday through Saturday.</p>
+<p>AcuTherapy Clinics provides acupuncture, Traditional Chinese Medicine, and medical massage for patients from Kapolei and Ewa Beach at our Aiea clinic on Pali Momi Street, approximately 20&ndash;25 minutes from Kapolei via the H-1 eastbound. Our Aiea location offers on-site parking and afternoon appointment availability Monday through Saturday.</p>
 <h2>Who We Treat in the Kapolei Area</h2>
 <p>Kapolei is West Oahu&rsquo;s fastest-growing community&mdash;a mix of young families, government and military personnel, commuters, and active residents who use the region&rsquo;s expanding parks, golf courses, and beach facilities. Long daily commutes on the H-1 are a significant driver of lower back pain, hip tightness, and neck strain for Kapolei residents. We also see Kapolei patients dealing with auto accident injuries from the H-1 corridor, workers&rsquo; compensation claims from construction and trade industries, and sports injuries from the area&rsquo;s recreational facilities.</p>
 <p>Kapolei&rsquo;s growing military and veterans population is also well served by our Aiea clinic, which accepts VA Community Care referrals for acupuncture and pain management at no cost to the veteran.</p>
@@ -1303,13 +1303,13 @@ const KAPOLEI_NOSCRIPT_BODY = `<h1>Acupuncture in Kapolei &ndash; West Oahu, Haw
 <p>Workers&rsquo; Compensation, Auto Accident PIP (Hawaii No-Fault), Veterans Community Care, UHA, HMAA, AARP, Humana, AshLink, and more.</p>
 <h2>Location &amp; Hours</h2>
 <p><strong>Aiea (Pearl City):</strong> 98-211 Pali Momi St, Suite 604, Aiea, HI 96701 &mdash; (808) 452-1900</p>
-<p>Tuesday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday&ndash;Monday closed</p>`;
+<p>Monday&ndash;Saturday 9:00 AM &ndash; 5:00 PM | Sunday closed</p>`;
 
 function buildJsonLd(route, description) {
   const hoursAiea = [
     {
       '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
       opens: '09:00',
       closes: '17:00',
     },
@@ -2281,3 +2281,4 @@ for (const route of ALL_ROUTES) {
 }
 
 console.log(`✅ Generated static HTML for ${count} pages.`);
+
