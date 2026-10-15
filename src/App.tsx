@@ -243,7 +243,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center gap-4">
             <span className="flex items-center gap-1.5"><MapPin size={14} /> Honolulu, HI</span>
-            <span className="hidden sm:flex items-center gap-1.5"><Clock size={14} /> Mon-Fri: 9am-1pm | Sat: 8am-12pm</span>
+            <span className="hidden sm:flex items-center gap-1.5"><Clock size={14} /> Liliha: Mon–Sat 9am–1pm | Aiea: Mon–Sat 9am–5pm</span>
           </div>
           <div className="flex items-center gap-4">
             <a href="tel:+18085287177" className="flex items-center gap-1.5 hover:text-blue-200 transition-colors">
