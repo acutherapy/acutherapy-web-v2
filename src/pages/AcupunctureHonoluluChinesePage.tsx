@@ -331,7 +331,7 @@ export default function AcupunctureHonoluluChinesePage() {
                   </div>
                   <div className="mt-6 bg-slate-50 p-4 rounded-lg">
                     <p className="font-bold text-slate-900 mb-1 text-sm">营业时间</p>
-                    <p className="text-slate-600 text-sm">周一至周五: 8am - 5pm, 周六: 8am - 12pm (预约制)</p>
+                    <p className="text-slate-600 text-sm">Liliha：周一至周六 9:00 AM – 1:00 PM | Aiea：周一至周六 9:00 AM – 5:00 PM</p>
                   </div>
                 </div>
 
