@@ -10,10 +10,10 @@ export default function HomePage() {
   return (
     <div className="bg-slate-50 min-h-screen">
       <Helmet>
-        <title>Honolulu Pain & Injury Acupuncture Clinic | Dr. David Cai | AcuTherapy</title>
-        <meta name="description" content="Top-rated Honolulu Pain & Injury Acupuncture Clinic. Dr. David Cai specializes in pain management, auto accident recovery, and traditional Chinese medicine with over 30 years of clinical experience." />
-        <meta property="og:title" content="Honolulu Pain & Injury Acupuncture Clinic | Dr. David Cai | AcuTherapy" />
-        <meta property="og:description" content="Top-rated Honolulu Pain & Injury Acupuncture Clinic. Dr. David Cai specializes in pain management, auto accident recovery, and traditional Chinese medicine with over 30 years of clinical experience." />
+        <title>Acupuncture Clinic Honolulu & Aiea | Dr. David Cai | AcuTherapy Clinics</title>
+        <meta name="description" content="AcuTherapy Clinics — acupuncture in Honolulu and Aiea, Hawaii. Dr. David Cai, 30+ years treating pain, auto injuries, and workplace injuries. Insurance accepted including PIP and Workers' Comp." />
+        <meta property="og:title" content="Acupuncture Clinic Honolulu & Aiea | Dr. David Cai | AcuTherapy Clinics" />
+        <meta property="og:description" content="AcuTherapy Clinics — acupuncture in Honolulu and Aiea, Hawaii. Dr. David Cai, 30+ years treating pain, auto injuries, and workplace injuries. Insurance accepted including PIP and Workers' Comp." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://acutherapy.com/" />
         <meta property="og:image" content="https://acutherapy.com/og-image.jpg" />
