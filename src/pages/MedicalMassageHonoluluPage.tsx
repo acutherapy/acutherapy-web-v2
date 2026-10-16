@@ -10,7 +10,7 @@ export default function MedicalMassageHonoluluPage() {
       <Helmet>
         <link rel="canonical" href="https://acutherapy.com/medical-massage-honolulu" />
         <title>Medical Massage Honolulu | Tui-Na Therapy | AcuTherapy Clinics</title>
-        <meta name="description" content="Experience clinical medical massage (Tui-Na) in Honolulu. We specialize in deep structural tissue release for auto accidents, sports injuries, and severe back pain." />
+        <meta name="description" content="Licensed medical massage (Tui-Na) in Honolulu. Treating auto whiplash, neck pain & chronic back pain. Lisa Long, L.M.T., 30+ years. PIP & Workers' Comp accepted." />
       </Helmet>
 
       {/* Page Header */}
@@ -121,7 +121,7 @@ export default function MedicalMassageHonoluluPage() {
             <div className="space-y-6 mb-12">
               <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
                 <h3 className="text-xl font-bold text-slate-900 mb-2 flex items-center gap-2"><HelpCircle className="text-blue-500" size={20}/> Does No-Fault PIP Auto insurance cover medical massage?</h3>
-                <p className="text-slate-600">Yes! If you have an active Hawaii No-Fault PIP auto insurance claim, medical massage is an approved and 100% covered therapy for structural rehabilitation when prescribed alongside your acupuncture treatments.</p>
+                <p className="text-slate-600">Yes. If you have an active Hawaii No-Fault PIP auto insurance claim, medical massage is a covered therapy under most active PIP claims for structural rehabilitation when prescribed alongside your acupuncture treatments.</p>
               </div>
               <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
                 <h3 className="text-xl font-bold text-slate-900 mb-2 flex items-center gap-2"><HelpCircle className="text-blue-500" size={20}/> Is this the same as deep tissue massage?</h3>
@@ -145,7 +145,10 @@ export default function MedicalMassageHonoluluPage() {
                 <Activity className="text-blue-500 mr-3 h-5 w-5" /> Back Spasm Structural Relief
               </Link>
               <Link to="/auto-accident-injury-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all font-semibold text-slate-700">
-                <Activity className="text-blue-500 mr-3 h-5 w-5" /> 100% Covered Auto Accident PIP
+                <Activity className="text-blue-500 mr-3 h-5 w-5" /> Auto Accident PIP Recovery
+              </Link>
+              <Link to="/fire-cupping-therapy-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all font-semibold text-slate-700">
+                <Activity className="text-blue-500 mr-3 h-5 w-5" /> Fire Cupping Therapy
               </Link>
             </div>
 
