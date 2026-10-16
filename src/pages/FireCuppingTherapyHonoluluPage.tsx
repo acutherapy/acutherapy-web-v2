@@ -9,8 +9,8 @@ export default function FireCuppingTherapyHonoluluPage() {
     <>
       <Helmet>
         <link rel="canonical" href="https://acutherapy.com/fire-cupping-therapy-honolulu" />
-        <title>Fire Cupping Therapy Honolulu | Immediate Relief from Tight | AcuTherapy</title>
-        <meta name="description" content="Experience traditional Fire Cupping Therapy in Honolulu. Detoxify muscles, improve massive blood flow, and relieve profound muscular tension." />
+        <title>Fire Cupping Honolulu | Back Pain & Muscle Tension Relief | AcuTherapy Clinics</title>
+        <meta name="description" content="Fire cupping therapy in Honolulu at AcuTherapy Clinics. Traditional glass cupping for tight muscles, back pain & post-injury recovery. Often combined with acupuncture." />
       </Helmet>
 
       {/* Page Header */}
@@ -24,8 +24,13 @@ export default function FireCuppingTherapyHonoluluPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-blue-900/80" />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm mb-6 backdrop-blur-sm">
-            <ShieldCheck size={16} /> <span>Deep Tissue Detoxification</span>
+          <div className="flex flex-wrap justify-center gap-3 mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm backdrop-blur-sm">
+              <ShieldCheck size={16} /> <span>Deep Tissue Release</span>
+            </div>
+            <div className="inline-flex items-center px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-200 border border-emerald-500/30 font-medium text-sm backdrop-blur-sm">
+              Auto PIP · Workers' Comp · VA · UHA · HMAA · Medicare — HMSA & Kaiser accepted when plan includes acupuncture benefits
+            </div>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Cupping Near Me in Honolulu – Instant Relief for Pain, Tight Muscles & Stress</h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Feel immediate relief from tight, sore muscles and deep tension — often after just one session of fire cupping therapy.</p>
@@ -46,7 +51,7 @@ export default function FireCuppingTherapyHonoluluPage() {
                 <p className="font-bold text-slate-900 mb-2">What to Expect:</p>
                 <ul className="space-y-1 text-slate-700 font-medium">
                   <li><span className="text-blue-600 mr-2">→</span> <strong>Visit 1:</strong> Evaluation + Immediate treatment</li>
-                  <li><span className="text-blue-600 mr-2">→</span> <strong>Week 1–2:</strong> Massive pain reduction</li>
+                  <li><span className="text-blue-600 mr-2">→</span> <strong>Week 1–2:</strong> Many patients notice significant improvement</li>
                   <li><span className="text-blue-600 mr-2">→</span> <strong>Week 3+:</strong> Structural repair & function recovery</li>
                 </ul>
               </div>
@@ -69,7 +74,7 @@ export default function FireCuppingTherapyHonoluluPage() {
               AcuTherapy Clinics specializes in traditional glass fire cupping. By briefly introducing a flame to glass cups to consume the oxygen, Dr. Cai creates a powerful vacuum seal when placed upon the skin. 
             </p>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
-              This negative pressure violently draws the skin, fascia, and top muscle layers upwards into the cup. This instantly achieves three critical physiological goals: it literally rips apart stuck fascial adhesions, it acts as a massive localized vasodilation pump (opening up crushed blood vessels), and it physically draws the deep stagnant toxins up to the superficial skin layer where the lymphatic system can finally flush them away.
+              This negative pressure draws the skin, fascia, and top muscle layers upwards into the cup. This achieves three key physiological goals: it separates stuck fascial adhesions, it acts as a localized vasodilation pump (opening up compressed blood vessels), and it draws stagnant inflammatory fluid up to the superficial skin layer where the lymphatic system can flush it away.
             </p>
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect & Real Patient Results</h2>
@@ -115,7 +120,7 @@ export default function FireCuppingTherapyHonoluluPage() {
                 </div>
                 <div className="grid grid-cols-2">
                   <div className="p-6 text-center border-r border-slate-100 text-slate-600">Temporary masking</div>
-                  <div className="p-6 text-center font-semibold text-blue-900 bg-blue-50/50">Permanent tissue repair</div>
+                  <div className="p-6 text-center font-semibold text-blue-900 bg-blue-50/50">Lasting functional recovery</div>
                 </div>
               </div>
             </div>
@@ -164,21 +169,12 @@ export default function FireCuppingTherapyHonoluluPage() {
             </div>
 
           
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Causes Fire Cupping Therapy Honolulu?</h2>
-<p className="text-lg text-slate-700 leading-relaxed mb-6">Fire Cupping Therapy Honolulu can be triggered by a variety of factors including chronic stress, poor posture, repetitive strain, or acute injuries. Over time, these factors create blockages in blood circulation and nerve function, leading to persistent discomfort.</p>
-
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Acupuncture Helps</h2>
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Who Benefits from Cupping Therapy?</h2>
 <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li><strong>Pain Relief:</strong> Triggers the release of endorphins to block pain signals effectively.</li>
-<li><strong>Nervous System Regulation:</strong> Calms the central nervous system, reducing tension without relying on pharmaceuticals.</li>
-<li><strong>Improved Circulation:</strong> Enhances blood flow to the affected areas, accelerating the natural healing process.</li>
-</ul>
-
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Who Is This For?</h2>
-<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li>Individuals suffering from chronic pain who have not found relief through conventional methods.</li>
-<li>High-stress professionals seeking natural nervous system regulation.</li>
-<li>Athletes or individuals recovering from an injury needing accelerated healing.</li>
+  <li><strong>Athletes & Active Individuals:</strong> Release chronic muscle tightness in the back, shoulders, and hips that limits performance and recovery.</li>
+  <li><strong>Auto Accident Patients:</strong> Reduce post-injury muscle guarding and inflammation — often combined with acupuncture under PIP coverage.</li>
+  <li><strong>Desk Workers:</strong> Address upper back and neck tension from prolonged forward posture.</li>
+  <li><strong>Post-Injury Recovery:</strong> Support healing by improving local circulation and reducing fascial restrictions around the injury site.</li>
 </ul>
 
 <div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
@@ -186,7 +182,7 @@ export default function FireCuppingTherapyHonoluluPage() {
 <p className="text-lg text-blue-700 mb-8">Stop living in discomfort. Located right here in Honolulu, we are here to help you restore your well-being.</p>
 <Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Book Your Cupping Session Now</Button></Link>
 <p className="text-blue-600 text-sm mt-3 opacity-80 font-medium tracking-wide">Takes less than 60 seconds</p>
-<p className="text-red-500 font-bold mt-4">The longer you wait, the harder it is to fix.</p>
+<p className="text-slate-600 text-sm mt-4">Early treatment supports better recovery.</p>
 </div>
 
 </article>
