@@ -63,7 +63,7 @@ export default function WorkersCompAcupunctureHonoluluPage() {
                 "openingHoursSpecification": [
                     {
                       "@type": "OpeningHoursSpecification",
-                      "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
                       "opens": "09:00",
                       "closes": "17:00"
                     }
