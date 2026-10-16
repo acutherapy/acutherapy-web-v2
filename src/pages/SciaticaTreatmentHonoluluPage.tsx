@@ -10,12 +10,12 @@ export default function SciaticaTreatmentHonoluluPage() {
     <>
       <Helmet>
         <link rel="canonical" href="https://acutherapy.com/sciatica-treatment-honolulu" />
-        <title>Sciatica Treatment Honolulu | Fast Nerve Pain Relief | AcuTherapy Clinics</title>
-        <meta name="description" content="Suffering from shooting leg pain and sciatica in Honolulu? Get fast, non-surgical relief using targeted medical acupuncture to decompress the sciatic nerve." />
-      
-        
-        <meta property="og:title" content="Sciatica Treatment Honolulu | Fast Nerve Pain Relief | AcuTherapy" />
-        <meta property="og:description" content="Suffering from shooting leg pain and sciatica in Honolulu? Get fast, non-surgical relief using targeted medical acupuncture to decompress the sciatic nerve." />
+        <title>Sciatica Acupuncture Honolulu | Dr. Cai, L.Ac. | AcuTherapy Clinics</title>
+        <meta name="description" content="Sciatica shooting down your leg? Dr. David Cai, L.Ac. has treated sciatica with acupuncture for 30+ years in Honolulu. PIP, Workers' Comp & major insurance accepted." />
+
+
+        <meta property="og:title" content="Sciatica Acupuncture Honolulu | Dr. Cai, L.Ac. | AcuTherapy Clinics" />
+        <meta property="og:description" content="Sciatica shooting down your leg? Dr. David Cai, L.Ac. has treated sciatica with acupuncture for 30+ years in Honolulu. PIP, Workers' Comp & major insurance accepted." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://acutherapy.com/sciatica-treatment-honolulu" />
         <meta property="og:image" content="https://acutherapy.com/og-image.jpg" />
@@ -107,7 +107,7 @@ export default function SciaticaTreatmentHonoluluPage() {
               <ShieldCheck size={16} /> <span>Specialized Nerve Pain Relief</span>
             </div>
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-200 border border-emerald-500/30 font-medium text-sm backdrop-blur-sm">
-              Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
+              Auto PIP · Workers' Comp · VA · UHA · HMAA · Medicare — HMSA & Kaiser accepted when plan includes acupuncture benefits
             </div>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Sciatica Treatment in Honolulu – Fast Relief for Leg Pain, Numbness & Nerve Pain</h1>
@@ -136,7 +136,7 @@ export default function SciaticaTreatmentHonoluluPage() {
                 <p className="font-bold text-slate-900 mb-2">What to Expect:</p>
                 <ul className="space-y-1 text-slate-700 font-medium">
                   <li><span className="text-blue-600 mr-2">→</span> <strong>Visit 1:</strong> Evaluation + Immediate treatment</li>
-                  <li><span className="text-blue-600 mr-2">→</span> <strong>Week 1–2:</strong> Massive pain reduction</li>
+                  <li><span className="text-blue-600 mr-2">→</span> <strong>Week 1–2:</strong> Many patients notice significant improvement</li>
                   <li><span className="text-blue-600 mr-2">→</span> <strong>Week 3+:</strong> Structural repair & function recovery</li>
                 </ul>
               </div>
@@ -215,7 +215,7 @@ export default function SciaticaTreatmentHonoluluPage() {
                 </div>
                 <div className="grid grid-cols-2">
                   <div className="p-6 text-center border-r border-slate-100 text-slate-600">Temporary masking</div>
-                  <div className="p-6 text-center font-semibold text-blue-900 bg-blue-50/50">Permanent tissue repair</div>
+                  <div className="p-6 text-center font-semibold text-blue-900 bg-blue-50/50">Lasting functional recovery</div>
                 </div>
               </div>
             </div>
@@ -247,8 +247,8 @@ export default function SciaticaTreatmentHonoluluPage() {
               <Link to="/auto-accident-injury-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all font-semibold text-slate-700">
                 <Activity className="text-blue-500 mr-3 h-5 w-5" /> Auto Accident Back Injuries
               </Link>
-              <Link to="/cupping-therapy-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all font-semibold text-slate-700">
-                <Activity className="text-blue-500 mr-3 h-5 w-5" /> Cupping Decompression
+              <Link to="/fire-cupping-therapy-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all font-semibold text-slate-700">
+                <Activity className="text-blue-500 mr-3 h-5 w-5" /> Fire Cupping Therapy
               </Link>
             </div>
 
@@ -278,9 +278,7 @@ export default function SciaticaTreatmentHonoluluPage() {
 <p className="text-lg text-blue-700 mb-8">Stop living in discomfort. Located right here in Honolulu, we are here to help you restore your well-being.</p>
 <Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Get Relief from Sciatica – Book Now</Button></Link>
 <p className="text-blue-600 text-sm mt-3 opacity-80 font-medium tracking-wide">Takes less than 60 seconds</p>
-<p className="text-red-500 font-bold mt-4"><div>
-Sciatica pain often worsens over time if left untreated — early treatment leads to faster recovery.
-</div></p>
+<p className="text-slate-600 text-sm mt-4">Sciatica pain often worsens over time if left untreated — early treatment supports better recovery.</p>
 </div>
 
 
