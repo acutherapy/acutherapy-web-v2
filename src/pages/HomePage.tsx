@@ -35,7 +35,7 @@ export default function HomePage() {
             <div className="max-w-3xl">
               <div className="inline-flex flex-wrap gap-2 mb-6">
                 <span className="px-3 py-1 bg-blue-500/20 text-blue-300 text-sm font-semibold rounded-full border border-blue-500/30">
-                  Voted Best Acupuncturist in Honolulu
+                  Honolulu Acupuncture — 30+ Years Serving Hawaii
                 </span>
                 <span className="px-3 py-1 bg-emerald-500/20 text-emerald-300 text-sm font-semibold rounded-full border border-emerald-500/30">
                   Auto PIP · Workers' Comp · VA · UHA · HMAA · Medicare — HMSA & Kaiser accepted when plan includes acupuncture benefits
@@ -70,7 +70,7 @@ export default function HomePage() {
 
               <div className="mt-4">
                 <Link to="/auto-accident-injury-honolulu" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/40 text-sm font-semibold hover:bg-amber-500/30 transition-colors">
-                  <ShieldCheck className="h-4 w-4" /> Auto Accident? PIP Covers 100% — Zero Out-of-Pocket
+                  <ShieldCheck className="h-4 w-4" /> Auto Accident? PIP May Cover Your Treatment — Call to Verify
                 </Link>
               </div>
 
