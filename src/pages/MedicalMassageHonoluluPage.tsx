@@ -51,7 +51,7 @@ export default function MedicalMassageHonoluluPage() {
                 <p className="font-bold text-slate-900 mb-2">What to Expect:</p>
                 <ul className="space-y-1 text-slate-700 font-medium">
                   <li><span className="text-blue-600 mr-2">→</span> <strong>Visit 1:</strong> Evaluation + Immediate treatment</li>
-                  <li><span className="text-blue-600 mr-2">→</span> <strong>Week 1–2:</strong> Massive pain reduction</li>
+                  <li><span className="text-blue-600 mr-2">→</span> <strong>Week 1–2:</strong> Many patients notice significant improvement</li>
                   <li><span className="text-blue-600 mr-2">→</span> <strong>Week 3+:</strong> Structural repair & function recovery</li>
                 </ul>
               </div>
@@ -66,12 +66,12 @@ export default function MedicalMassageHonoluluPage() {
               "Tui-Na" translates to "push and grasp." It is an ancient, highly vigorous form of orthopedic Chinese massage that heavily integrates with our clinical acupuncture protocols. Unlike Swedish massage which focuses merely on skin circulation and light relaxation, Tui-Na aggressively targets the deeper layers of muscle fascia, tendons, and joint capsules.
             </p>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
-              When trauma hits the body (such as a severe whiplash impact), your muscles defensively seize up. If not forcefully broken apart, these seized fibers lock into dense, painful scar tissue (myofascial adhesions) that permanently alter your skeleton's posture. Tui-Na utilizes dynamic friction, deep pressing, and joint mobilization techniques to physically break apart this stubborn, knotted scar tissue.
+              When trauma hits the body (such as a severe whiplash impact), your muscles defensively seize up. Without treatment, these seized fibers can form myofascial adhesions that restrict posture and movement. Tui-Na utilizes dynamic friction, deep pressing, and joint mobilization techniques to release these restrictions and restore normal function.
             </p>
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Our Three Core Treatment Pillars</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
-              AcuTherapy Clinics utilizes medical massage as part of a powerful 3-pillar clinical protocol. While standard spas only use massage, we force recovery via:
+              AcuTherapy Clinics utilizes medical massage as part of a powerful 3-pillar clinical protocol. While standard spas only use massage, our approach combines three modalities:
             </p>
             <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
               <li><strong>Traditional Acupuncture:</strong> Naturally rebalancing the body's pathways and rapidly downregulating muscular inflammation before hands-on work begins.</li>
@@ -112,7 +112,7 @@ export default function MedicalMassageHonoluluPage() {
                 </div>
                 <div className="grid grid-cols-2">
                   <div className="p-6 text-center border-r border-slate-100 text-slate-600">Temporary masking</div>
-                  <div className="p-6 text-center font-semibold text-blue-900 bg-blue-50/50">Permanent tissue repair</div>
+                  <div className="p-6 text-center font-semibold text-blue-900 bg-blue-50/50">Lasting functional recovery</div>
                 </div>
               </div>
             </div>
@@ -163,7 +163,7 @@ export default function MedicalMassageHonoluluPage() {
 <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Medical Massage vs. Standard PT & Spa Massage</h2>
 <p className="text-lg text-slate-700 leading-relaxed mb-6">Traditional Physical Therapy (PT) often relies heavily on standardized stretching exercises and elastic bands. While helpful for rehabilitation, these exercises cannot physically break down mature scar tissue. Conversely, standard spa massage is too superficial to effect change in the deep joint capsule.</p>
 
-<p className="text-lg text-slate-700 leading-relaxed mb-6">Our <strong>Medical Tui-Na Massage</strong> bridging this gap. We provide the aggressive, hands-on structural intervention necessary to forcefully unlock frozen joints (like Adhesive Capsulitis) and shatter deep fascial armor, paving the way for true rehabilitation.</p>
+<p className="text-lg text-slate-700 leading-relaxed mb-6">Our <strong>Medical Tui-Na Massage</strong> bridges this gap. We provide focused, hands-on structural intervention to release restricted joints (like Adhesive Capsulitis) and address deep fascial tension, paving the way for true rehabilitation.</p>
 
 <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Ideal Candidates for Medical Massage</h2>
 <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
@@ -177,7 +177,7 @@ export default function MedicalMassageHonoluluPage() {
 <p className="text-lg text-blue-700 mb-8">Stop living in discomfort. Located right here in Honolulu, we are here to help you restore your well-being.</p>
 <Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Get Your Personalized Recovery Plan</Button></Link>
 <p className="text-blue-600 text-sm mt-3 opacity-80 font-medium tracking-wide">Takes less than 60 seconds</p>
-<p className="text-red-500 font-bold mt-4">The longer you wait, the harder it is to fix.</p>
+<p className="text-slate-500 text-sm mt-4">Early treatment supports better outcomes.</p>
 </div>
 
 </article>
