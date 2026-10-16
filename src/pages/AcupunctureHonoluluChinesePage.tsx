@@ -102,7 +102,7 @@ export default function AcupunctureHonoluluChinesePage() {
               <ShieldCheck size={16} /> <span>100% No-Fault PIP Insurance Accepted</span>
             </div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/20 text-teal-200 border border-teal-500/30 font-medium text-sm backdrop-blur-sm">
-              <span>Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp &amp; VA</span>
+              <span>Auto PIP · Workers' Comp · VA · UHA · HMAA · Medicare — HMSA &amp; Kaiser accepted when plan includes acupuncture benefits</span>
             </div>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">檀香山针灸（Acupuncture Honolulu Chinese）—中医针灸与疼痛调理指南</h1>
@@ -331,7 +331,7 @@ export default function AcupunctureHonoluluChinesePage() {
                   </div>
                   <div className="mt-6 bg-slate-50 p-4 rounded-lg">
                     <p className="font-bold text-slate-900 mb-1 text-sm">营业时间</p>
-                    <p className="text-slate-600 text-sm">Liliha：周一至周六 9:00 AM – 1:00 PM | Aiea：周一至周六 9:00 AM – 5:00 PM</p>
+                    <p className="text-slate-600 text-sm">周一至周五: 8am - 5pm, 周六: 8am - 12pm (预约制)</p>
                   </div>
                 </div>
 
