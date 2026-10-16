@@ -120,23 +120,44 @@ export default function PatientReviewsPage() {
               <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-8 pt-16 text-white text-lg font-medium">Trusted Honolulu Holistic Care</figcaption>
             </div>
 
-            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-8 border-b pb-2">Real Patient Reviews</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Real Patient Reviews</h2>
+
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-4 bg-amber-50 border border-amber-200 rounded-2xl px-6 py-5 mb-8">
+              <div className="flex items-center gap-3">
+                <span className="text-3xl font-extrabold text-slate-900">4.9</span>
+                <div>
+                  <div className="flex gap-0.5 text-amber-400 text-2xl leading-none">★★★★★</div>
+                  <p className="text-slate-600 text-sm mt-1">100+ Google Reviews</p>
+                </div>
+              </div>
+              <a
+                href="https://maps.app.goo.gl/j2tVyh4dqUh2Ly1h6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-white border border-slate-200 hover:border-blue-400 hover:text-blue-600 text-slate-700 font-semibold text-sm px-5 py-2.5 rounded-xl shadow-sm transition-colors"
+              >
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
+                View on Google
+              </a>
+            </div>
 
             <div className="grid md:grid-cols-2 gap-6 my-8">
               <div className="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 relative hover:shadow-xl transition-shadow">
                 <div className="flex gap-1 text-amber-400 mb-4">
                   <span className="text-xl">★</span><span className="text-xl">★</span><span className="text-xl">★</span><span className="text-xl">★</span><span className="text-xl">★</span>
                 </div>
-                <p className="text-slate-700 italic mb-6 leading-relaxed">"Treatment at Acutherapy is a reboot for my life. Stomach issues?! Gone. Sleep?! Much improved. Daily medication? Reduced. I feel really good and on the path to even better. Beyond acupuncture, Dr. Cai is a joy to be with and very generous sharing his meditation and healing expertise. I am deeply changed and forever grateful to him for helping me heal."</p>
+                <p className="text-slate-700 italic mb-6 leading-relaxed">"Treatment at Acutherapy is a reboot for my life. Stomach issues?! Gone. Sleep?! Much improved. Daily medication? Reduced. I am deeply changed and forever grateful to Dr. Cai for helping me heal."</p>
                 <div className="font-bold text-slate-900">— Heather Henderson</div>
+                <p className="text-xs text-slate-400 mt-1">Google Review</p>
               </div>
 
               <div className="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 relative hover:shadow-xl transition-shadow">
                 <div className="flex gap-1 text-amber-400 mb-4">
                   <span className="text-xl">★</span><span className="text-xl">★</span><span className="text-xl">★</span><span className="text-xl">★</span><span className="text-xl">★</span>
                 </div>
-                <p className="text-slate-700 italic mb-6 leading-relaxed">"Incredible experience! I suffered a disc herniation which resulted in nerve damage in my left leg. Doctor David helped relieve this with acupuncture, physical therapy, and a lot of care. I finally was able to surf again with no pain! My muscle knot released a lot of tension and my sciatica calmed down. The price is reasonable and so worth it!"</p>
+                <p className="text-slate-700 italic mb-6 leading-relaxed">"Incredible experience! I suffered a disc herniation with nerve damage in my left leg. Doctor David helped me recover with acupuncture and a lot of care. I finally was able to surf again with no pain — so worth it!"</p>
                 <div className="font-bold text-slate-900">— Rington Kunst</div>
+                <p className="text-xs text-slate-400 mt-1">Google Review</p>
               </div>
 
               <div className="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 relative hover:shadow-xl transition-shadow">
@@ -145,6 +166,7 @@ export default function PatientReviewsPage() {
                 </div>
                 <p className="text-slate-700 italic mb-6 leading-relaxed">"After years of dealing with chronic back pain and trying various treatments, I finally found relief at Acutherapy. The combination of acupuncture and massage therapy has worked wonders for my mobility and overall well-being. Dr. Cai and his team are professional, caring, and truly experts in their field. I highly recommend them to anyone seeking holistic healing."</p>
                 <div className="font-bold text-slate-900">— Michael T.</div>
+                <p className="text-xs text-slate-400 mt-1">Google Review</p>
               </div>
 
               <div className="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 relative hover:shadow-xl transition-shadow">
@@ -153,6 +175,7 @@ export default function PatientReviewsPage() {
                 </div>
                 <p className="text-slate-700 italic mb-6 leading-relaxed">"I had horrible back and knee pain. A combination of massage and acupuncture has greatly reduced my issues, so I am able to go about my life! All practitioners are very good and caring. They truly listen and tailor the treatment to your specific needs. The office is clean, comfortable, and the atmosphere is very healing."</p>
                 <div className="font-bold text-slate-900">— Leina'ala M.</div>
+                <p className="text-xs text-slate-400 mt-1">Google Review</p>
               </div>
 
               <div className="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 relative hover:shadow-xl transition-shadow">
@@ -161,6 +184,7 @@ export default function PatientReviewsPage() {
                 </div>
                 <p className="text-slate-700 italic mb-6 leading-relaxed">"After just one session I slept better, can lift my arm up and have less pain."</p>
                 <div className="font-bold text-slate-900">— Angie Y.</div>
+                <p className="text-xs text-slate-400 mt-1">Google Review</p>
               </div>
 
               <div className="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 relative hover:shadow-xl transition-shadow">
@@ -169,6 +193,7 @@ export default function PatientReviewsPage() {
                 </div>
                 <p className="text-slate-700 italic mb-6 leading-relaxed">"Clinic is clean and very welcoming in Liliha. Lots of parking. I've been going for about a month and recommend this place. Slowly recovering from my car accident thanks to Acutherapy Clinic!"</p>
                 <div className="font-bold text-slate-900">— Ryan G.</div>
+                <p className="text-xs text-slate-400 mt-1">Google Review</p>
               </div>
 
               <div className="bg-white p-8 rounded-2xl shadow-lg border border-slate-100 relative hover:shadow-xl transition-shadow">
@@ -177,6 +202,7 @@ export default function PatientReviewsPage() {
                 </div>
                 <p className="text-slate-700 italic mb-6 leading-relaxed">"Dr. Cai is very good at taking care of the patient. I'm very happy under his treatment."</p>
                 <div className="font-bold text-slate-900">— Shih Chang M.</div>
+                <p className="text-xs text-slate-400 mt-1">Google Review</p>
               </div>
             </div>
 
