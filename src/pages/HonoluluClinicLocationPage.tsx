@@ -8,8 +8,8 @@ export default function HonoluluClinicLocationPage() {
     return (
         <>
             <Helmet>
-                <title>Honolulu Clinic (Liliha) | AcuTherapy Clinics</title>
-                <meta name="description" content="Visit our main Honolulu clinic on Liliha St. View our address, hours of operation, and easily get directions via Google Maps for your acupuncture and pain management needs." />
+                <title>Acupuncture Honolulu Liliha | 1650 Liliha St | AcuTherapy Clinics</title>
+                <meta name="description" content="AcuTherapy Clinics Honolulu — 1650 Liliha St, Suite 208. Acupuncture & medical massage Mon–Sat 9am–1pm. Insurance accepted. Call (808) 528-7177." />
             </Helmet>
 
             <div className="bg-slate-50 py-12 md:py-20 lg:py-24">
@@ -98,8 +98,12 @@ export default function HonoluluClinicLocationPage() {
                                     </div>
                                     <ul className="space-y-3 text-slate-700 font-medium">
                                         <li className="flex justify-between items-center border-b border-slate-200 pb-2">
-                                            <span>Monday – Saturday</span>
-                                            <span className="text-slate-900 font-bold">9:00 AM – 1:00 PM</span>
+                                            <span>Monday - Friday</span>
+                                            <span className="text-slate-900 font-bold">9:00 AM - 1:00 PM</span>
+                                        </li>
+                                        <li className="flex justify-between items-center pt-1 border-b border-slate-200 pb-2">
+                                            <span>Saturday</span>
+                                            <span className="text-slate-900 font-bold">8:00 AM - 12:00 PM</span>
                                         </li>
                                         <li className="flex justify-between items-center pt-3 text-slate-400">
                                             <span>Sunday</span>
