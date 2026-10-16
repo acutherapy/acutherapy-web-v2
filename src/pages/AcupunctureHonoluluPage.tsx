@@ -52,7 +52,7 @@ export default function AcupunctureHonoluluPage() {
                 <p className="font-bold text-slate-900 mb-2">What to Expect:</p>
                 <ul className="space-y-1 text-slate-700 font-medium">
                   <li><span className="text-blue-600 mr-2">→</span> <strong>Visit 1:</strong> Evaluation + Immediate treatment</li>
-                  <li><span className="text-blue-600 mr-2">→</span> <strong>Week 1–2:</strong> Massive pain reduction</li>
+                  <li><span className="text-blue-600 mr-2">→</span> <strong>Week 1–2:</strong> Many patients notice significant improvement</li>
                   <li><span className="text-blue-600 mr-2">→</span> <strong>Week 3+:</strong> Structural repair & function recovery</li>
                 </ul>
               </div>
@@ -135,7 +135,7 @@ export default function AcupunctureHonoluluPage() {
                 </div>
                 <div className="grid grid-cols-2">
                   <div className="p-6 text-center border-r border-slate-100 text-slate-600">Temporary masking</div>
-                  <div className="p-6 text-center font-semibold text-blue-900 bg-blue-50/50">Permanent tissue repair</div>
+                  <div className="p-6 text-center font-semibold text-blue-900 bg-blue-50/50">Lasting functional recovery</div>
                 </div>
               </div>
             </div>
@@ -144,7 +144,7 @@ export default function AcupunctureHonoluluPage() {
             <div className="space-y-6 mb-12">
               <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
                 <h3 className="text-xl font-bold text-slate-900 mb-2 flex items-center gap-2"><HelpCircle className="text-blue-500" size={20}/> How many sessions are needed?</h3>
-                <p className="text-slate-600">While many patients feel a noticeable decrease in pain after just 1-2 sessions, chronic or severe conditions generally require a comprehensive treatment plan of 6-12 sessions to permanently retrain the nervous system and heal the underlying tissue.</p>
+                <p className="text-slate-600">While many patients feel a noticeable decrease in pain after just 1-2 sessions, chronic or severe conditions generally require a comprehensive treatment plan of 6-12 sessions to support lasting nervous system regulation and heal the underlying tissue.</p>
               </div>
               <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
                 <h3 className="text-xl font-bold text-slate-900 mb-2 flex items-center gap-2"><HelpCircle className="text-blue-500" size={20}/> Does acupuncture hurt?</h3>
