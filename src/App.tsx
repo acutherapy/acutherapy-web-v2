@@ -301,7 +301,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 <a href="/acupuncture-honolulu" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700">Acupuncture Honolulu</a>
                 <a href="/medical-massage-honolulu" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700">Medical Massage</a>
                 <a href="/fire-cupping-therapy-honolulu" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700">Fire Cupping Therapy</a>
-                <a href="/sports-injury-acupuncture-honolulu" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700">Sports Injury Treatment</a>
+                <a href="/sports-injury-acupuncture-honolulu" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700 border-b border-slate-100">Sports Injury Treatment</a>
+                <a href="/constitution-teaser" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700">Energy Test</a>
               </div>
             </div>
 
@@ -348,21 +349,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             {/* About Us */}
             <a href="/dr-david-cai-honolulu-acupuncturist" className="hover:text-blue-600 transition-colors py-4">{navAbout}</a>
 
-            {/* Wellness Dropdown */}
-            <div className="relative group">
-              <button className="flex items-center gap-1 hover:text-blue-600 transition-colors py-4">
-                Wellness <ChevronDown className="h-4 w-4" />
-              </button>
-              <div className="absolute top-12 left-0 w-64 bg-white border border-slate-200 shadow-xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 py-2">
-                <a href="/brainreset" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700 border-b border-slate-100">Brain Reset — Ear Seeds</a>
-                <a href="/stress-relief-acupuncture-honolulu" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700 border-b border-slate-100">Stress Relief</a>
-                <a href="/sleep-acupuncture-honolulu" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700 border-b border-slate-100">Sleep Improvement</a>
-                <a href="/weight-loss" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700 border-b border-slate-100">Weight Loss Support</a>
-                <a href="/facial-acupuncture-honolulu" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700 border-b border-slate-100">Facial Acupuncture</a>
-                <a href="/wellness-acupuncture-honolulu" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700 border-b border-slate-100">General Wellness</a>
-                <a href="/constitution-teaser" className="block px-4 py-2 text-sm hover:bg-blue-50 hover:text-blue-700">Energy Test</a>
-              </div>
-            </div>
+            {/* Reviews Link */}
+            <a href="/patient-reviews" className="hover:text-blue-600 transition-colors py-4">Reviews</a>
             <a href="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 shadow-md">
               <Calendar className="mr-2 h-4 w-4" /> {navBook}
             </Button></a>
@@ -391,6 +379,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                   <a href="/acupuncture-honolulu" className="block text-slate-600 font-medium">Acupuncture Honolulu</a>
                   <a href="/medical-massage-honolulu" className="block text-slate-600 font-medium">Medical Massage</a>
                   <a href="/fire-cupping-therapy-honolulu" className="block text-slate-600 font-medium">Fire Cupping</a>
+                  <a href="/constitution-teaser" className="block text-slate-600 font-medium">Energy Test</a>
                 </div>
               )}
 
@@ -408,20 +397,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
                 </div>
               )}
 
-              <button onClick={() => toggleMobileDropdown('specialty')} className="flex items-center justify-between text-lg font-bold text-blue-600 border-b border-slate-100 py-3 w-full">
-                Wellness <ChevronDown className={`h-5 w-5 transition-transform ${openMobileDropdown === 'specialty' ? 'rotate-180' : ''}`} />
-              </button>
-              {openMobileDropdown === 'specialty' && (
-                <div className="pl-4 py-3 space-y-4 bg-slate-50 border-b border-slate-100 rounded-b-lg">
-                  <a href="/brainreset" className="block text-slate-600 font-medium">Brain Reset — Ear Seeds</a>
-                  <a href="/stress-relief-acupuncture-honolulu" className="block text-slate-600 font-medium">Stress Relief</a>
-                  <a href="/sleep-acupuncture-honolulu" className="block text-slate-600 font-medium">Sleep Improvement</a>
-                  <a href="/weight-loss" className="block text-slate-600 font-medium">Weight Loss Support</a>
-                  <a href="/facial-acupuncture-honolulu" className="block text-slate-600 font-medium">Facial Acupuncture</a>
-                  <a href="/wellness-acupuncture-honolulu" className="block text-slate-600 font-medium">General Wellness</a>
-                  <a href="/constitution-teaser" className="block text-slate-600 font-medium">Energy Test</a>
-                </div>
-              )}
+              <a href="/patient-reviews" className="text-lg font-semibold text-slate-800 border-b border-slate-100 py-3">Reviews</a>
               <a href="/frequently-asked-questions" className="text-lg font-semibold text-slate-800 border-b border-slate-100 py-3">{navTopics}</a>
               <a href="/dr-david-cai-honolulu-acupuncturist" className="text-lg font-semibold text-slate-800 border-b border-slate-100 py-3">{navAbout}</a>
               
@@ -636,3 +612,4 @@ export default function App() {
     </HelmetProvider>
   );
 }
+
