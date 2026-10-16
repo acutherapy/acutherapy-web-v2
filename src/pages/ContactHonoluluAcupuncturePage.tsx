@@ -153,7 +153,7 @@ export default function ContactHonoluluAcupuncturePage() {
               <ShieldCheck size={16} /> <span>100% No-Fault PIP Insurance Accepted</span>
             </div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/20 text-teal-200 border border-teal-500/30 font-medium text-sm backdrop-blur-sm">
-              <span>Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp &amp; VA</span>
+              <span>Auto PIP · Workers' Comp · VA · UHA · HMAA · Medicare — HMSA &amp; Kaiser accepted when plan includes acupuncture benefits</span>
             </div>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Contact Honolulu Acupuncture</h1>
@@ -394,7 +394,7 @@ export default function ContactHonoluluAcupuncturePage() {
                   </div>
                   <div className="mt-6 bg-slate-50 p-4 rounded-lg">
                     <p className="font-bold text-slate-900 mb-1 text-sm">Hours of Operation</p>
-                    <p className="text-slate-600 text-sm">Liliha: Mon–Sat 9am–1pm | Aiea: Mon–Sat 9am–5pm</p>
+                    <p className="text-slate-600 text-sm">Mon-Fri: 9am - 1pm, Sat: 9am - 12pm</p>
                   </div>
                 </div>
 
