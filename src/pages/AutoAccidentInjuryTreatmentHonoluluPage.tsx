@@ -9,7 +9,7 @@ export default function AutoAccidentInjuryTreatmentHonoluluPage() {
     <>
       <Helmet>
         <link rel="canonical" href="https://acutherapy.com/auto-accident-injury-honolulu" />
-        <title>Auto Accident Acupuncture Honolulu | 100% PIP Covered | AcuTherapy Clinics</title>
+        <title>Auto Accident Acupuncture Honolulu | Hawaii PIP Insurance Accepted | AcuTherapy Clinics</title>
         <meta name="description" content="Injured in a car accident on Oahu? Hawaii PIP auto insurance covers acupuncture 100% — zero out-of-pocket. We handle the paperwork so you can focus on healing. Same-week appointments available." />
       </Helmet>
 
@@ -54,7 +54,7 @@ In Hawaii, your auto accident treatment is typically covered 100% under PIP insu
                 <p className="font-bold text-slate-900 mb-2">What to Expect:</p>
                 <ul className="space-y-1 text-slate-700 font-medium">
                   <li><span className="text-blue-600 mr-2">→</span> <strong>Visit 1:</strong> Evaluation + Immediate treatment</li>
-                  <li><span className="text-blue-600 mr-2">→</span> <strong>Week 1–2:</strong> Massive pain reduction</li>
+                  <li><span className="text-blue-600 mr-2">→</span> <strong>Week 1–2:</strong> Many patients notice significant improvement</li>
                   <li><span className="text-blue-600 mr-2">→</span> <strong>Week 3+:</strong> Structural repair & function recovery</li>
                 </ul>
               </div>
@@ -89,7 +89,7 @@ In Hawaii, your auto accident treatment is typically covered 100% under PIP insu
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect & Zero Out-Of-Pocket Costs</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
-              Because Hawaii operates under a "No-Fault" auto insurance law (PIP), your medical acupuncture and massage treatments are typically covered 100% by your car insurance—regardless of who caused the accident. Our front desk staff will handle all the tedious billing and paperwork with your adjuster, so you literally do not pay a dime out of pocket and can focus purely on your physical recovery.
+              Because Hawaii operates under a "No-Fault" auto insurance law (PIP), your medical acupuncture and massage treatments are typically covered 100% by your car insurance—regardless of who caused the accident. Our front desk staff will handle all the tedious billing and paperwork with your adjuster, so in most cases you pay nothing out of pocket and can focus purely on your physical recovery.
             </p>
             <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg my-8">
               <p className="text-lg text-slate-800 italic font-medium">
@@ -155,7 +155,7 @@ In Hawaii, your auto accident treatment is typically covered 100% under PIP insu
 <p className="text-lg text-blue-700 mb-8">Stop living in discomfort. Located right here in Honolulu, we are here to help you restore your well-being.</p>
 <Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Start Your Injury Recovery</Button></Link>
 <p className="text-blue-600 text-sm mt-3 opacity-80 font-medium tracking-wide">Takes less than 60 seconds, (Covered by Insurance)</p>
-<p className="text-red-500 font-bold mt-4">The longer you wait, the harder it is to fix.</p>
+<p className="text-slate-500 text-sm mt-4">Early treatment supports better outcomes.</p>
 </div>
 
 </article>
@@ -166,7 +166,7 @@ In Hawaii, your auto accident treatment is typically covered 100% under PIP insu
               <div className="bg-blue-600 h-2 w-full"></div>
               <CardContent className="p-8 text-center">
                 <h3 className="text-2xl font-bold text-slate-900 mb-2">Book Your Visit</h3>
-                <p className="text-slate-600 mb-8 text-sm">The longer you wait after an accident, the harder your injury is to fully recover.</p>
+                <p className="text-slate-600 mb-8 text-sm">Starting treatment early after an accident supports better recovery outcomes.</p>
                 <div className="flex flex-col gap-4">
                   <div className="flex flex-col gap-1 items-center">
                     <Link to="/book-appointment" className="w-full">
