@@ -10,8 +10,8 @@ export default function InsuranceAcceptedPage() {
   return (
     <>
       <Helmet>
-        <title>Insurance Accepted | Honolulu Acupuncture Guide</title>
-        <meta name="description" content="Learn more about Insurance Accepted. Dr. David Cai from AcuTherapy Clinics answers your questions about acupuncture efficacy and treatment processes." />
+        <title>Insurance Accepted for Acupuncture | Honolulu & Aiea | AcuTherapy Clinics</title>
+        <meta name="description" content="AcuTherapy Clinics accepts Hawaii PIP, Workers' Comp, VA, UHA, HMAA, Medicare, and HMSA/Kaiser plans with acupuncture benefits. Call to verify your coverage — Honolulu & Aiea." />
         <script type="application/ld+json">
           {`
           {
@@ -111,22 +111,24 @@ export default function InsuranceAcceptedPage() {
           <article className="md:col-span-8">
             
               <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
-                At AcuTherapy Clinics, we believe that informed patients heal faster. If you are exploring options and wondering about <strong>insurance accepted</strong>, Dr. David Cai and our clinical team have compiled the following medical insights based on decades of practice in Honolulu.
+                AcuTherapy Clinics accepts most major Hawaii insurance plans for acupuncture and medical massage. Our front desk team will verify your coverage before your first visit — so you can focus on healing, not paperwork.
               </p>
               
       <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/50 group mb-12 w-full max-w-3xl mx-auto">
         <img loading="lazy" src="/images/traditional-chinese-herbs.jpg" alt="Traditional Chinese Herbs" className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=800'; }} />
         <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-8 pt-16 text-white text-lg font-medium">Holistic Healing Methods inside AcuTherapy</figcaption>
       </div>
-              <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Understanding Insurance Accepted</h2>
-              <p className="text-lg text-slate-700 leading-relaxed mb-6">
-                When discussing insurance accepted, it's important to differentiate between western symptom-masking and the holistic root-cause methodology we practice here. Traditional Chinese Medicine (TCM) views the body as a systemic interconnected network. Any symptom you experience is a localized manifestation of a deeper structural or energetic imbalance.
-              </p>
-              <div className="bg-slate-50 p-8 rounded-xl border border-slate-200 my-8 shadow-sm">
-                 <h3 className="text-xl font-bold text-slate-900 mb-4">Patient FAQ: The Core Answer</h3>
-                 <p className="text-lg text-slate-700">
-                    Acupuncture results can vary. Some patients notice changes after the first session, while others experience gradual improvement over multiple visits depending on the condition.
-                 </p>
+              <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Insurance Plans We Accept</h2>
+              <ul className="space-y-4 text-lg text-slate-700 mb-8">
+                <li className="flex items-start gap-3"><ShieldCheck className="text-emerald-500 mt-1 flex-shrink-0 h-5 w-5" /><div><strong>Hawaii No-Fault Auto PIP</strong> — acupuncture and medical massage typically covered after a car accident</div></li>
+                <li className="flex items-start gap-3"><ShieldCheck className="text-emerald-500 mt-1 flex-shrink-0 h-5 w-5" /><div><strong>Workers' Compensation</strong> — covered when prescribed by a physician for a workplace injury</div></li>
+                <li className="flex items-start gap-3"><ShieldCheck className="text-emerald-500 mt-1 flex-shrink-0 h-5 w-5" /><div><strong>Veterans Community Care (VA)</strong> — authorized VA Community Care Network provider</div></li>
+                <li className="flex items-start gap-3"><ShieldCheck className="text-emerald-500 mt-1 flex-shrink-0 h-5 w-5" /><div><strong>UHA · HMAA · Medicare Supplement · AARP · Humana · AshLink</strong></div></li>
+                <li className="flex items-start gap-3"><ShieldCheck className="text-emerald-500 mt-1 flex-shrink-0 h-5 w-5" /><div><strong>HMSA &amp; Kaiser</strong> — accepted when your plan includes acupuncture benefits</div></li>
+              </ul>
+              <div className="bg-blue-50 p-6 rounded-xl border border-blue-100 my-8">
+                <p className="font-bold text-slate-900 mb-2">Not sure if your plan covers acupuncture?</p>
+                <p className="text-slate-700">Call us at <a href="tel:+18085287177" className="text-blue-600 font-semibold">(808) 528-7177</a> — our front desk will verify your benefits at no charge before your first visit.</p>
               </div>
         
             
@@ -174,25 +176,16 @@ export default function InsuranceAcceptedPage() {
       </div>
     
           
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What Causes Insurance Accepted?</h2>
-<p className="text-lg text-slate-700 leading-relaxed mb-6">Insurance Accepted can be triggered by a variety of factors including chronic stress, poor posture, repetitive strain, or acute injuries. Over time, these factors create blockages in blood circulation and nerve function, leading to persistent discomfort.</p>
-
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How Acupuncture Helps</h2>
-<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li><strong>Pain Relief:</strong> Triggers the release of endorphins to block pain signals effectively.</li>
-<li><strong>Nervous System Regulation:</strong> Calms the central nervous system, reducing tension without relying on pharmaceuticals.</li>
-<li><strong>Improved Circulation:</strong> Enhances blood flow to the affected areas, accelerating the natural healing process.</li>
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">How the Billing Process Works</h2>
+<p className="text-lg text-slate-700 leading-relaxed mb-6">Once you call to schedule, our front desk will contact your insurance carrier to confirm your acupuncture and massage benefits, deductible status, and any required authorizations. For Auto PIP and Workers' Comp claims, we handle all paperwork with your adjuster directly — you do not need to manage the billing yourself.</p>
+<ul className="list-disc pl-6 space-y-3 text-lg text-slate-700 mb-8">
+  <li>Free benefits verification before your first visit</li>
+  <li>Direct billing to your carrier — no upfront payment required for covered claims</li>
+  <li>PIP and Workers' Comp referral guidance available if needed</li>
 </ul>
 
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect During Your Session</h2>
-<p className="text-lg text-slate-700 leading-relaxed mb-6">During your first experience, Dr. David Cai will conduct a thorough assessment to understand your unique condition. The treatment itself is deeply relaxing. Many patients notice a distinct change in symptoms, experiencing immediate lightness and reduced tension right after the needles are gently placed.</p>
-
-<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Who Is This For?</h2>
-<ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-6">
-<li>Individuals suffering from chronic pain who have not found relief through conventional methods.</li>
-<li>High-stress professionals seeking natural nervous system regulation.</li>
-<li>Athletes or individuals recovering from an injury needing accelerated healing.</li>
-</ul>
+<h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect at Your First Visit</h2>
+<p className="text-lg text-slate-700 leading-relaxed mb-6">Dr. David Cai will conduct a thorough intake assessment to understand your condition and history. Treatment begins at the first visit. Most sessions run 45–60 minutes and include acupuncture, and optionally medical massage or fire cupping, depending on your condition and plan coverage.</p>
 
 <div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
 <h2 className="text-3xl font-bold text-blue-900 mb-4">Ready to find relief?</h2>
