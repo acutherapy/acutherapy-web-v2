@@ -38,7 +38,7 @@ export default function HomePage() {
                   Voted Best Acupuncturist in Honolulu
                 </span>
                 <span className="px-3 py-1 bg-emerald-500/20 text-emerald-300 text-sm font-semibold rounded-full border border-emerald-500/30">
-                  Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
+                  Auto PIP · Workers' Comp · VA · UHA · HMAA · Medicare — HMSA & Kaiser accepted when plan includes acupuncture benefits
                 </span>
               </div>
 
