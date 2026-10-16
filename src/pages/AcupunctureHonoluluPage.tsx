@@ -10,8 +10,8 @@ export default function AcupunctureHonoluluPage() {
     <>
       <Helmet>
         <link rel="canonical" href="https://acutherapy.com/acupuncture-honolulu" />
-        <title>Acupuncture Honolulu | Best Pain & Injury Treatment | AcuTherapy Clinics</title>
-        <meta name="description" content="Looking for acupuncture in Honolulu? Dr. David Cai specializes in pain management, auto accident recovery, and holistic treatments. Book your session today." />
+        <title>Acupuncture Honolulu | Pain Relief & Injury Recovery | AcuTherapy Clinics</title>
+        <meta name="description" content="Licensed acupuncture in Honolulu by Dr. David Cai. Treating back pain, sciatica, whiplash, and auto injuries. PIP, Workers' Comp, UHA, HMAA & more accepted." />
       </Helmet>
 
       {/* Page Header */}
