@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { PhoneCall, ArrowRightCircle, MapPin, ShieldCheck, HeartPulse, Stethoscope, Award, Star, Activity, CheckCircle2, ArrowRight } from "lucide-react";
+import { PhoneCall, ArrowRightCircle, MapPin, ShieldCheck, HeartPulse, Stethoscope, Award, Star, Activity, CheckCircle2, ArrowRight, Calendar } from "lucide-react";
 import PatientReviewsSection from "@/components/PatientReviewsSection";
 
 export default function HomePage() {
@@ -307,6 +307,83 @@ export default function HomePage() {
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CenterGy Module */}
+      <section className="py-20 bg-white border-t border-slate-100">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="inline-block px-3 py-1 bg-indigo-50 text-indigo-700 text-xs font-bold tracking-widest uppercase rounded-full mb-4">Signature Method</span>
+            <h2 className="text-3xl lg:text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">What is CenterGy <span className="text-indigo-600">(Synergies)</span>?</h2>
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+              Our signature precision-diagnostic and energy-therapy method, co-developed by Dr. David Cai and Lisa Long. It can be performed <strong>with or without needles</strong> — making it accessible to everyone.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            {/* How it works */}
+            <div className="bg-indigo-50 rounded-2xl p-8 border border-indigo-100">
+              <h3 className="text-xl font-bold text-slate-900 mb-4">How It Works</h3>
+              <div className="space-y-3">
+                {[
+                  "Precision diagnostic assessment at your first visit",
+                  "Identifies the root structural, energetic, or inflammatory cause",
+                  "Applies targeted energy-therapy — with or without needles",
+                  "Addresses the root cause, not just the surface symptom",
+                ].map((item, i) => (
+                  <div key={i} className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-indigo-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-slate-700 text-sm leading-relaxed">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Who it's for */}
+            <div className="bg-slate-50 rounded-2xl p-8 border border-slate-200">
+              <h3 className="text-xl font-bold text-slate-900 mb-4">Especially Suited For</h3>
+              <div className="space-y-3">
+                {[
+                  "Patients who are needle-sensitive or needle-phobic",
+                  "Sensitive constitution or prefer gentler treatment",
+                  "Those who want a more comfortable experience",
+                  "Anyone seeking precise, root-cause care",
+                ].map((item, i) => (
+                  <div key={i} className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-emerald-500 flex-shrink-0 mt-0.5" />
+                    <span className="text-slate-700 text-sm leading-relaxed">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Comparison */}
+          <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden mb-8">
+            <div className="grid grid-cols-2 border-b border-slate-200">
+              <div className="px-6 py-4 bg-slate-50 text-slate-600 font-bold text-sm text-center border-r border-slate-200">Traditional Acupuncture</div>
+              <div className="px-6 py-4 bg-indigo-600 text-white font-bold text-sm text-center">CenterGy (Synergies)</div>
+            </div>
+            {[
+              ["Needle-based only", "With or without needles"],
+              ["Symptom-focused relief", "Root-cause diagnosis + treatment"],
+              ["Standardized protocols", "Individualized energy assessment"],
+            ].map(([left, right], i) => (
+              <div key={i} className="grid grid-cols-2 border-b border-slate-100 last:border-0">
+                <div className="px-6 py-4 text-slate-500 text-sm text-center border-r border-slate-100">{left}</div>
+                <div className="px-6 py-4 text-slate-800 text-sm font-medium text-center">{right}</div>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Link to="/book-appointment">
+              <Button className="bg-indigo-600 hover:bg-indigo-700 h-12 px-8 font-bold">
+                <Calendar className="mr-2 h-4 w-4" /> Book a CenterGy Assessment
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
