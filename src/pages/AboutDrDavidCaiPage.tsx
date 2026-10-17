@@ -51,7 +51,7 @@ export default function AboutDrDavidCaiPage() {
                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm mb-6 backdrop-blur-sm">
                         <ShieldCheck size={16} /> <span>Trusted Honolulu Pain Clinic</span>
                     </div>
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight"><h1>Dr. David Cai – Licensed Acupuncturist in Honolulu with 30+ Years Experience</h1></h1>
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Dr. David Cai – Licensed Acupuncturist in Honolulu with 30+ Years Experience</h1>
                     <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">We work closely with physicians, insurance providers, and case managers to deliver coordinated care for injury recovery and long-term pain relief.</p>
                 </div>
             </section>
@@ -130,8 +130,8 @@ export default function AboutDrDavidCaiPage() {
                                         In addition to his clinical work, Dr. Cai has participated in research programs related to acupuncture and Chinese medicine with the <strong>US National Institutes of Health (NIH) and George Washington University Medical Center</strong>.
                                     </p>
                                     <div className="p-4 bg-slate-50 border-l-4 border-blue-500 rounded-r-xl">
-                                        <p className="font-bold text-slate-800 text-sm mb-1">Dr. Cai also serves as:</p>
-                                        <p className="font-bold text-blue-800 text-sm">Adjunct Associate Professor</p>
+                                        <p className="font-bold text-slate-800 text-sm mb-1">Dr. Cai served as:</p>
+                                        <p className="font-bold text-blue-800 text-sm">Adjunct Associate Professor (2015–2017)</p>
                                         <p className="text-slate-600 text-xs mt-1">John A. Burns School of Medicine<br/>University of Hawaii</p>
                                     </div>
                                 </div>
@@ -318,6 +318,41 @@ export default function AboutDrDavidCaiPage() {
                                 </Link>
                             </div>
                         </div>
+
+                        {/* Rich noscript for AI crawlers and non-JS environments */}
+                        <noscript>
+                          <div style={{padding: '2rem', background: '#fff', borderRadius: '1rem', border: '1px solid #e2e8f0'}}>
+                            <h2>Dr. David Cai — Licensed Acupuncturist &amp; Doctor of Chinese Medicine, Honolulu</h2>
+                            <p>Dr. David Cai, O.M.D., L.Ac., L.M.T. is the founder of AcuTherapy Clinics and one of Hawaii's most experienced licensed acupuncturists, with more than 30 years of clinical practice in pain management and injury recovery.</p>
+
+                            <h3>Credentials &amp; Licenses</h3>
+                            <ul>
+                              <li>Hawaii Licensed Acupuncturist: ACU-1125</li>
+                              <li>Hawaii Licensed Massage Therapist: LMT 7543</li>
+                              <li>NCCAOM Diplomate in Acupuncture: 962-1001-522</li>
+                              <li>Doctor of Oriental Medicine (O.M.D.)</li>
+                            </ul>
+
+                            <h3>Education</h3>
+                            <p>Dr. Cai earned his medical degree from Beijing University of Chinese Medicine in 1991, one of China's premier institutions for Traditional Chinese Medicine. His training encompassed acupuncture, herbal medicine, internal medicine, surgical fundamentals, and advanced clinical diagnostics. He received NCCAOM national certification in the United States in 1997. He served as Adjunct Associate Professor at the John A. Burns School of Medicine, University of Hawaii (JABSOM), 2015–2017.</p>
+
+                            <h3>Research Background</h3>
+                            <p>Dr. Cai participated in research programs related to acupuncture and Traditional Chinese Medicine with the U.S. National Institutes of Health (NIH) and George Washington University Medical Center, contributing as a research consultant on NIH-funded acupuncture trials.</p>
+
+                            <h3>CenterGy (Synergies)</h3>
+                            <p>Dr. Cai co-developed CenterGy (Synergies) together with senior therapist Lisa Long, O.M.D., L.M.T. — a precision diagnostic and energy-therapy method that identifies and releases structural imbalances. It can be applied without needles, making it suitable for patients who are needle-sensitive.</p>
+
+                            <h3>Clinical Specialties</h3>
+                            <p>Over three decades Dr. Cai has treated thousands of patients for: chronic back pain, sciatica, neck pain and whiplash, herniated discs, sports injuries, auto accident injuries (Hawaii No-Fault PIP), workers' compensation injuries, and veterans care (VA Community Care). Languages spoken: English and Mandarin Chinese.</p>
+
+                            <h3>AcuTherapy Clinics — Locations</h3>
+                            <p>Honolulu Clinic (Liliha): 1650 Liliha St, Suite 208, Honolulu, HI 96817. Phone: (808) 528-7177. Hours: Monday–Saturday 9 am–1 pm.</p>
+                            <p>Aiea / Pearl City Clinic: 98-211 Pali Momi St, Suite 604, Aiea, HI 96701. Phone: (808) 452-1900. Hours: Monday–Saturday 9 am–5 pm.</p>
+
+                            <h3>Insurance Accepted</h3>
+                            <p>AcuTherapy Clinics accepts Hawaii No-Fault Auto PIP, Workers' Compensation, VA Community Care, UHA, HMAA, Medicare, AARP, Humana, and AshLink. HMSA and Kaiser plans accepted when the plan includes acupuncture benefits. Call (808) 528-7177 to verify your coverage.</p>
+                          </div>
+                        </noscript>
 
                     </article>
 
