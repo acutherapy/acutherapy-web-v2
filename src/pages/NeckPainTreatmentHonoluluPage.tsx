@@ -9,8 +9,8 @@ export default function NeckPainTreatmentHonoluluPage() {
     <>
       <Helmet>
         <link rel="canonical" href="https://acutherapy.com/neck-pain-treatment-honolulu" />
-        <title>Neck Pain Treatment Honolulu | Whiplash & Stiffness | AcuTherapy Clinics</title>
-        <meta name="description" content="Suffering from severe neck pain, whiplash, or tension headaches in Honolulu? Break the cycle of stiffness with our expert medical acupuncture treatments." />
+        <title>Neck Pain Acupuncture Honolulu | Whiplash & Tension Relief | AcuTherapy Clinics</title>
+        <meta name="description" content="Neck pain, whiplash, or tension headaches in Honolulu? Dr. David Cai, L.Ac. treats neck injuries with acupuncture. PIP & Workers' Comp accepted." />
       
         <script type="application/ld+json">
           {`{
@@ -99,7 +99,7 @@ export default function NeckPainTreatmentHonoluluPage() {
               <ShieldCheck size={16} /> <span>Restoring Cervical Mobility Fast</span>
             </div>
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-200 border border-emerald-500/30 font-medium text-sm backdrop-blur-sm">
-              Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
+              Auto PIP · Workers' Comp · VA · UHA · HMAA · Medicare — HMSA & Kaiser accepted when plan includes acupuncture benefits
             </div>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Neck Pain Treatment in Honolulu – Relief for Stiff Neck, Shoulder Tension & Pinched Nerves</h1>
@@ -128,7 +128,7 @@ export default function NeckPainTreatmentHonoluluPage() {
                 <p className="font-bold text-slate-900 mb-2">What to Expect:</p>
                 <ul className="space-y-1 text-slate-700 font-medium">
                   <li><span className="text-blue-600 mr-2">→</span> <strong>Visit 1:</strong> Evaluation + Immediate treatment</li>
-                  <li><span className="text-blue-600 mr-2">→</span> <strong>Week 1–2:</strong> Massive pain reduction</li>
+                  <li><span className="text-blue-600 mr-2">→</span> <strong>Week 1–2:</strong> Many patients notice significant improvement</li>
                   <li><span className="text-blue-600 mr-2">→</span> <strong>Week 3+:</strong> Structural repair & function recovery</li>
                 </ul>
               </div>
@@ -158,7 +158,7 @@ export default function NeckPainTreatmentHonoluluPage() {
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">What to Expect & Real Patient Results</h2>
             <p className="text-lg text-slate-700 leading-relaxed mb-6">
-              Dr. David Cai utilizes over 30 years of clWe focus on key points at the base of the skull and upper back. Within 20 minutes, patients typically report a significant increase in their range of motion and a feeling of lightness in the head. Expect a quiet, deeply relaxing 30-minute session. Please note: Massage may help temporarily — but neck pain often returns. Acupuncture works deeper by releasing muscle tension and improving nerve function.
+              We focus on key points at the base of the skull and upper back. Many patients report an increase in range of motion and a feeling of lightness in the head within a session. Acupuncture works by releasing muscle tension and supporting nerve function — often going deeper than massage alone.
             </p>
             <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg my-8">
               <p className="text-lg text-slate-800 italic font-medium">
@@ -169,7 +169,7 @@ export default function NeckPainTreatmentHonoluluPage() {
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Who Is This For?</h2>
             <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
               <li><strong>Office Professionals:</strong> Releasing the "Tech Neck" posture and upper shoulder burning sensations.</li>
-              <li><strong><Link to="/auto-accident-injury-honolulu">Auto Accident Survivors</Link>:</strong> Reversing extreme whiplash injuries (100% PIP Auto Insurance covered).</li>
+              <li><strong><Link to="/auto-accident-injury-honolulu">Auto Accident Survivors</Link>:</strong> Treating whiplash and cervical injuries from auto accidents (covered under active PIP claims).</li>
               <li><strong>Chronic Migraine Sufferers:</strong> Dissolving the tension headaches stemming from the base of the skull.</li>
               <li><strong>Athletes:</strong> Speeds up recovery from sports-related neck impacts or awkward sleeping cricks.</li>
             </ul>
@@ -197,7 +197,7 @@ export default function NeckPainTreatmentHonoluluPage() {
                 </div>
                 <div className="grid grid-cols-2">
                   <div className="p-6 text-center border-r border-slate-100 text-slate-600">Temporary masking</div>
-                  <div className="p-6 text-center font-semibold text-blue-900 bg-blue-50/50">Permanent tissue repair</div>
+                  <div className="p-6 text-center font-semibold text-blue-900 bg-blue-50/50">Lasting functional recovery</div>
                 </div>
               </div>
             </div>
@@ -257,7 +257,7 @@ export default function NeckPainTreatmentHonoluluPage() {
 <p className="text-lg text-blue-700 mb-8">Neck pain can worsen over time if left untreated — early care helps prevent chronic issues. Stop living in discomfort. Located right here in Honolulu, we are here to help you restore your well-being.</p>
 <Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Fix Your Neck Pain – Book Now</Button></Link>
 <p className="text-blue-600 text-sm mt-3 opacity-80 font-medium tracking-wide">Takes less than 60 seconds</p>
-<p className="text-red-500 font-bold mt-4">The longer you wait, the harder it is to fix.</p>
+<p className="text-slate-600 text-sm mt-4">Early treatment supports better recovery outcomes.</p>
 </div>
 
 </article>
@@ -307,7 +307,8 @@ export default function NeckPainTreatmentHonoluluPage() {
                   </div>
                   <div className="mt-6 bg-slate-50 p-4 rounded-lg border border-slate-100">
                       <p className="font-bold text-slate-900 mb-1 text-sm">Insurance Information</p>
-                      <p className="text-slate-600 text-sm"><strong>Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA.</strong></p>
+                      <p className="text-slate-600 text-sm">Auto PIP · Workers' Comp · VA · UHA · HMAA · Medicare — HMSA & Kaiser accepted when plan includes acupuncture benefits.</p>
+                      <p className="text-xs text-slate-400 mt-1">*Acupuncture benefits vary by plan. Call us to verify your coverage.</p>
                   </div>
                 </div>
               </CardContent>

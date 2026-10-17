@@ -10,12 +10,12 @@ export default function BackPainAcupunctureHonoluluPage() {
     <>
       <Helmet>
         <link rel="canonical" href="https://acutherapy.com/back-pain-acupuncture-honolulu" />
-        <title>acupuncture for back pain honolulu | lower back pain treatment hawaii | AcuTherapy Clinics</title>
-        <meta name="description" content="Suffering from lower back pain in Honolulu? Discover how targeted medical acupuncture and traditional Chinese medicine can relieve your severe back pain today." />
-      
-        
-        <meta property="og:title" content="Acupuncture for Back Pain Honolulu | Lower Back Relief | AcuTherapy" />
-        <meta property="og:description" content="Suffering from lower back pain in Honolulu? Discover how targeted medical acupuncture and traditional Chinese medicine can relieve your severe back pain today." />
+        <title>Back Pain Acupuncture Honolulu | Lower Back & Injury Relief | AcuTherapy Clinics</title>
+        <meta name="description" content="Lower back pain in Honolulu? Dr. David Cai, L.Ac. treats herniated discs, muscle spasms & auto injuries. PIP & Workers' Comp accepted." />
+
+
+        <meta property="og:title" content="Back Pain Acupuncture Honolulu | Lower Back & Injury Relief | AcuTherapy Clinics" />
+        <meta property="og:description" content="Lower back pain in Honolulu? Dr. David Cai, L.Ac. treats herniated discs, muscle spasms & auto injuries. PIP & Workers' Comp accepted." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://acutherapy.com/back-pain-acupuncture-honolulu" />
         <meta property="og:image" content="https://acutherapy.com/og-image.jpg" />
@@ -104,10 +104,10 @@ export default function BackPainAcupunctureHonoluluPage() {
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
           <div className="flex flex-wrap justify-center gap-3 mb-6">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm backdrop-blur-sm">
-              <ShieldCheck size={16} /> <span>#1 Back Pain Relief Clinic</span>
+              <ShieldCheck size={16} /> <span>Specialized Back Pain Relief</span>
             </div>
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-200 border border-emerald-500/30 font-medium text-sm backdrop-blur-sm">
-              Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
+              Auto PIP · Workers' Comp · VA · UHA · HMAA · Medicare — HMSA & Kaiser accepted when plan includes acupuncture benefits
             </div>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Back Pain Acupuncture in Honolulu – Fast Relief for Sciatica, Disc & Chronic Pain</h1>
@@ -128,7 +128,7 @@ export default function BackPainAcupunctureHonoluluPage() {
                 <p className="font-bold text-slate-900 mb-2">What to Expect:</p>
                 <ul className="space-y-1 text-slate-700 font-medium">
                   <li><span className="text-blue-600 mr-2">→</span> <strong>Visit 1:</strong> Evaluation + Immediate treatment</li>
-                  <li><span className="text-blue-600 mr-2">→</span> <strong>Week 1–2:</strong> Massive pain reduction</li>
+                  <li><span className="text-blue-600 mr-2">→</span> <strong>Week 1–2:</strong> Many patients notice significant improvement</li>
                   <li><span className="text-blue-600 mr-2">→</span> <strong>Week 3+:</strong> Structural repair & function recovery</li>
                 </ul>
               </div>
@@ -168,7 +168,7 @@ If you are enduring daily lower back pain, it can severely limit your life. Back
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Who Is This For?</h2>
             <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
               <li><strong>Lumbar Strain / Sprain:</strong> Acute back pain from recent heavy lifting or sports.</li>
-              <li><strong><Link to="/auto-accident-injury-honolulu">Car Accident Survivors</Link>:</strong> Reversing extreme whiplash and lower back contusions (100% PIP covered).</li>
+              <li><strong><Link to="/auto-accident-injury-honolulu">Car Accident Survivors</Link>:</strong> Treating whiplash and lower back injuries from auto accidents (covered under active PIP claims).</li>
               <li><strong>Office Professionals:</strong> Releasing deep muscular knots caused by prolonged sitting.</li>
               <li><strong>Post-Surgical Patients:</strong> Seeking natural adjunct pain relief during physical therapy recovery.</li>
             </ul>
@@ -196,7 +196,7 @@ If you are enduring daily lower back pain, it can severely limit your life. Back
                 </div>
                 <div className="grid grid-cols-2">
                   <div className="p-6 text-center border-r border-slate-100 text-slate-600">Temporary masking</div>
-                  <div className="p-6 text-center font-semibold text-blue-900 bg-blue-50/50">Permanent tissue repair</div>
+                  <div className="p-6 text-center font-semibold text-blue-900 bg-blue-50/50">Lasting functional recovery</div>
                 </div>
               </div>
             </div>
@@ -219,7 +219,7 @@ If you are enduring daily lower back pain, it can severely limit your life. Back
               </div>
               <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
                 <h3 className="text-xl font-bold text-slate-900 mb-2 flex items-center gap-2"><HelpCircle className="text-blue-500" size={20}/> Do you accept No-Fault auto insurance?</h3>
-                <p className="text-slate-600">Yes, Hawaii PIP Auto insurance covers acupuncture 100% for collision-related back injuries. We will gladly handle all the exhausting paperwork for you so you can focus entirely on getting better.</p>
+                <p className="text-slate-600">Yes. Hawaii No-Fault PIP auto insurance covers acupuncture for collision-related back injuries in most active claims. We assist with paperwork so you can focus on recovery.</p>
               </div>
             </div>
 
@@ -234,8 +234,8 @@ If you are enduring daily lower back pain, it can severely limit your life. Back
               <Link to="/neck-pain-treatment-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all font-semibold text-slate-700">
                 <Activity className="text-blue-500 mr-3 h-5 w-5" /> Neck Pain Treatment
               </Link>
-              <Link to="/cupping-therapy-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all font-semibold text-slate-700">
-                <Activity className="text-blue-500 mr-3 h-5 w-5" /> Cupping Therapy
+              <Link to="/fire-cupping-therapy-honolulu" className="flex items-center p-4 bg-white rounded-xl shadow-sm border border-slate-100 hover:shadow-md hover:border-blue-200 transition-all font-semibold text-slate-700">
+                <Activity className="text-blue-500 mr-3 h-5 w-5" /> Fire Cupping Therapy
               </Link>
             </div>
 
@@ -275,7 +275,7 @@ If you are enduring daily lower back pain, it can severely limit your life. Back
 <p className="text-lg text-blue-700 mb-8">Stop living in discomfort. Located right here in Honolulu, we are here to help you restore your well-being.</p>
 <Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Get Relief from Back Pain – Book Now</Button></Link>
 <p className="text-blue-600 text-sm mt-3 opacity-80 font-medium tracking-wide">Takes less than 60 seconds</p>
-<p className="text-red-500 font-bold mt-4">Delaying treatment can make back pain worse and harder to treat over time.</p>
+<p className="text-slate-600 text-sm mt-4">Early treatment supports better recovery outcomes.</p>
 </div>
 
 
@@ -327,7 +327,8 @@ If you are enduring daily lower back pain, it can severely limit your life. Back
                   </div>
                   <div className="mt-6 bg-slate-50 p-4 rounded-lg border border-slate-100">
                       <p className="font-bold text-slate-900 mb-1 text-sm">Insurance Information</p>
-                      <p className="text-slate-600 text-sm"><strong>Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA.</strong></p>
+                      <p className="text-slate-600 text-sm">Auto PIP · Workers' Comp · VA · UHA · HMAA · Medicare — HMSA & Kaiser accepted when plan includes acupuncture benefits.</p>
+                      <p className="text-xs text-slate-400 mt-1">*Acupuncture benefits vary by plan. Call us to verify your coverage.</p>
                   </div>
                 </div>
               </CardContent>

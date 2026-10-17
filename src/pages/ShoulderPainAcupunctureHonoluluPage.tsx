@@ -30,7 +30,7 @@ export default function ShoulderPainAcupunctureHonoluluPage() {
               <ShieldCheck size={16} /> <span>Restoring Proper Joint Mobility</span>
             </div>
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-200 border border-emerald-500/30 font-medium text-sm backdrop-blur-sm">
-              Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA
+              Auto PIP · Workers' Comp · VA · UHA · HMAA · Medicare — HMSA & Kaiser accepted when plan includes acupuncture benefits
             </div>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Shoulder Pain Treatment in Honolulu</h1>
@@ -230,7 +230,7 @@ export default function ShoulderPainAcupunctureHonoluluPage() {
                   </div>
                   <div className="mt-6 bg-slate-50 p-4 rounded-lg border border-slate-100">
                       <p className="font-bold text-slate-900 mb-1 text-sm">Insurance Information</p>
-                      <p className="text-slate-600 text-sm"><strong>Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp & VA.</strong></p>
+                      <p className="text-slate-600 text-sm"><strong>Auto PIP · Workers' Comp · VA · UHA · HMAA · Medicare — HMSA & Kaiser accepted when plan includes acupuncture benefits.</strong></p>
                   </div>
                 </div>
               </CardContent>
