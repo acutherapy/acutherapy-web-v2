@@ -11,9 +11,9 @@ export default function AcupunctureMakikiPage() {
       <Helmet>
         <link rel="canonical" href="https://acutherapy.com/acupuncture-makiki" />
         <title>Acupuncture Near Makiki, Honolulu | AcuTherapy Clinics</title>
-        <meta name="description" content="Acupuncture clinic near Makiki and downtown Honolulu. Expert TCM for back pain, stress, auto injuries, and sports recovery. AcuTherapy Clinics, Liliha." />
+        <meta name="description" content="Acupuncture clinic near Makiki and downtown Honolulu. Experienced TCM for back pain, stress, auto injuries, and sports recovery. AcuTherapy Clinics, Liliha." />
         <meta property="og:title" content="Acupuncture Near Makiki Honolulu | AcuTherapy Clinics" />
-        <meta property="og:description" content="Acupuncture clinic near Makiki and downtown Honolulu. Expert TCM for back pain, stress, auto injuries, and sports recovery. AcuTherapy Clinics, Liliha." />
+        <meta property="og:description" content="Acupuncture clinic near Makiki and downtown Honolulu. Experienced TCM for back pain, stress, auto injuries, and sports recovery. AcuTherapy Clinics, Liliha." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://acutherapy.com/acupuncture-makiki" />
         <meta property="og:image" content="https://acutherapy.com/og-image.jpg" />
@@ -58,7 +58,7 @@ export default function AcupunctureMakikiPage() {
             Acupuncture Near Makiki – Honolulu, Hawaii
           </h1>
           <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">
-            Expert acupuncture and TCM for Makiki residents. Just minutes from your neighborhood in our Liliha clinic.
+            Acupuncture and TCM for Makiki residents. Just minutes from your neighborhood in our Liliha clinic.
           </p>
         </div>
       </section>
@@ -69,7 +69,7 @@ export default function AcupunctureMakikiPage() {
 
           <article className="md:col-span-8">
             <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8 mt-8">
-              For residents of <strong>Makiki</strong>, Punchbowl, Nuuanu, and downtown Honolulu, AcuTherapy Clinics offers convenient, expert acupuncture and Traditional Chinese Medicine care at our Liliha location — just minutes away with free parking. Whether you are dealing with chronic pain, a recent injury, stress, or a long-standing health concern, Dr. David Cai and Lisa Long provide personalized TCM care built around your specific needs.
+              For residents of <strong>Makiki</strong>, Punchbowl, Nuuanu, and downtown Honolulu, AcuTherapy Clinics offers convenient acupuncture and Traditional Chinese Medicine care at our Liliha location — just minutes away with free parking. Whether you are dealing with chronic pain, a recent injury, stress, or a long-standing health concern, Dr. David Cai and Lisa Long provide personalized TCM care built around your specific needs.
             </p>
 
             <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Conditions We Treat for Makiki Patients</h2>

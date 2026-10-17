@@ -12,7 +12,7 @@ export default function AcupunctureManoaPage() {
       <Helmet>
         <link rel="canonical" href="https://acutherapy.com/acupuncture-manoa" />
         <title>Acupuncture Near Manoa, Honolulu | Top Pain Relief Clinic</title>
-        <meta name="description" content="Looking for the best acupuncture near Manoa? AcuTherapy Clinics offers expert natural pain relief for back pain, sciatica, and auto injury just minutes away." />
+        <meta name="description" content="Looking for acupuncture near Manoa? AcuTherapy Clinics provides natural pain relief for back pain, sciatica, and auto injury just minutes away." />
         <script type="application/ld+json">
           {`
           {
@@ -94,10 +94,10 @@ export default function AcupunctureManoaPage() {
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
           <div className="flex flex-wrap items-center justify-center gap-3 mb-6">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm backdrop-blur-sm">
-              <ShieldCheck size={16} /> <span>100% No-Fault PIP Insurance Accepted</span>
+              <ShieldCheck size={16} /> <span>Auto PIP & Workers' Comp Accepted</span>
             </div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/20 text-teal-200 border border-teal-500/30 font-medium text-sm backdrop-blur-sm">
-              <span>Accepts HMSA, Kaiser, UHA, HMAA, Medicare UHC, Auto PIP, Workers' Comp &amp; VA</span>
+              <span>Auto PIP · Workers' Comp · VA · UHA · HMAA · Medicare — HMSA &amp; Kaiser accepted when plan includes acupuncture benefits</span>
             </div>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Acupuncture Manoa</h1>
@@ -119,7 +119,7 @@ export default function AcupunctureManoaPage() {
         <img loading="lazy" src="/images/abdominal-acupuncture.jpg" alt="Acupuncture Manoa" className="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105" onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800'; }} />
         <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-8 pt-16 text-white text-lg font-medium">Advanced Acupuncture Treatments</figcaption>
       </div>
-              <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Convenient Top-Rated Care for Manoa Residents</h2>
+              <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Convenient Acupuncture Care for Manoa Residents</h2>
               <p className="text-lg text-slate-700 leading-relaxed mb-6">
                 Our clinics in Honolulu and Aiea are perfectly positioned to serve the <strong>Manoa</strong> community. Instead of dealing with the frustration of temporary pain relievers, our methodology stimulates your body's intrinsic healing nervous system. We target the neuro-muscular root of the issue—whether that's sciatica, severe back pain, migraines, or joint degradation.
               </p>

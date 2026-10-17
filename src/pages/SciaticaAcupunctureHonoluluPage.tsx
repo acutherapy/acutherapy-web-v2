@@ -100,7 +100,7 @@ export default function SciaticaAcupunctureHonoluluPage() {
             </div>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Sciatica & Lumbar Nerve Treatment in Honolulu</h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Stop the shooting electric pain down your leg. Expert care for Lumbar Radiculopathy, Spinal Stenosis, and Piriformis Syndrome.</p>
+          <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Stop the shooting electric pain down your leg. Experienced care for Lumbar Radiculopathy, Spinal Stenosis, and Piriformis Syndrome.</p>
         </div>
       </section>
 
@@ -119,7 +119,7 @@ export default function SciaticaAcupunctureHonoluluPage() {
                 <p className="font-bold text-slate-900 mb-2">What to Expect:</p>
                 <ul className="space-y-1 text-slate-700 font-medium">
                   <li><span className="text-blue-600 mr-2">→</span> <strong>Visit 1:</strong> Evaluation + Immediate treatment</li>
-                  <li><span className="text-blue-600 mr-2">→</span> <strong>Week 1–2:</strong> Massive pain reduction</li>
+                  <li><span className="text-blue-600 mr-2">→</span> <strong>Week 1–2:</strong> Many patients notice significant improvement</li>
                   <li><span className="text-blue-600 mr-2">→</span> <strong>Week 3+:</strong> Structural repair & function recovery</li>
                 </ul>
               </div>
@@ -200,7 +200,7 @@ export default function SciaticaAcupunctureHonoluluPage() {
 <p className="text-lg text-blue-700 mb-8">Stop living in discomfort. Located right here in Honolulu, we are here to help you restore your well-being.</p>
 <Link to="/book-appointment"><Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">Get Your Personalized Recovery Plan</Button></Link>
 <p className="text-blue-600 text-sm mt-3 opacity-80 font-medium tracking-wide">Takes less than 60 seconds</p>
-<p className="text-red-500 font-bold mt-4">The longer you wait, the harder it is to fix.</p>
+<p className="text-slate-600 text-sm mt-4">Early treatment supports better recovery.</p>
 </div>
 
 </article>

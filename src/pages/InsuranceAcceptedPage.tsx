@@ -93,7 +93,7 @@ export default function InsuranceAcceptedPage() {
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
           <div className="flex flex-wrap items-center justify-center gap-3 mb-6">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-200 border border-blue-500/30 font-medium text-sm backdrop-blur-sm">
-              <ShieldCheck size={16} /> <span>100% No-Fault PIP Insurance Accepted</span>
+              <ShieldCheck size={16} /> <span>Auto PIP & Workers' Comp Accepted</span>
             </div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/20 text-teal-200 border border-teal-500/30 font-medium text-sm backdrop-blur-sm">
               <span>Auto PIP · Workers' Comp · VA · UHA · HMAA · Medicare — HMSA &amp; Kaiser accepted when plan includes acupuncture benefits</span>

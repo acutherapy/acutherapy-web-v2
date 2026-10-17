@@ -284,7 +284,7 @@ export default function HomePage() {
                 <Stethoscope className="h-4 w-4" /> Who We Are
               </div>
               <h2 className="text-3xl lg:text-4xl font-extrabold text-slate-900 mb-6">
-                Hawaii's Most Trusted Expert in Pain & Injury Rehabilitation.
+                Honolulu Acupuncture for Pain & Injury Rehabilitation.
               </h2>
               <p className="text-lg text-slate-600 leading-relaxed mb-6">
                 With over <strong>30 years of clinical experience</strong> across integrated medical systems, Dr. David Cai is a master practitioner of Traditional Chinese Medicine (TCM). He utilizes a comprehensive range of modalities—including Traditional Acupuncture, moxibustion therapy, dry needling techniques, and custom Chinese herbal medicine—to deliver profound results.
@@ -297,7 +297,7 @@ export default function HomePage() {
                 {[
                   "Pioneer in advanced neurological and Traditional Acupuncture.",
                   "Has successfully treated tens of thousands of complex pain patients.",
-                  "Comprehensive expert in chronic anxiety, fertility, and insomnia.",
+                  "Specialist in chronic anxiety, fertility, and insomnia.",
                   "Specialized protocol for traumatic Auto Accident/Whiplash recovery."
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3">

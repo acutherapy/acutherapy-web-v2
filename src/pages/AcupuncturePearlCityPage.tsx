@@ -52,7 +52,7 @@ export default function AcupuncturePearlCityPage() {
                         </p>
                         <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
                             <li><strong>Convenient Location:</strong> Located on Pali Momi St, making it an easy drive for Pearl City locals without the headache of downtown traffic.</li>
-                            <li><strong>Expert Clinical Director:</strong> Under the direction of Dr. David Cai, bringing over 30 years of medical acupuncture experience to your neighborhood.</li>
+                            <li><strong>Clinical Director:</strong> Under the direction of Dr. David Cai, bringing over 30 years of medical acupuncture experience to your neighborhood.</li>
                             <li><strong>Insurance Accepted:</strong> We proudly accept HMSA, Kaiser, UHA, HMAA, and offer zero out-of-pocket treatments for approved Auto Injury cases.</li>
                         </ul>
 

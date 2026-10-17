@@ -176,7 +176,7 @@ export default function MoxibustionHonoluluPage() {
 
             <div className="mt-12 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center mb-8">
               <h2 className="text-3xl font-bold text-blue-900 mb-4">Book a Moxibustion Session in Honolulu</h2>
-              <p className="text-lg text-blue-700 mb-8">Two Oahu locations. Expert TCM practitioners. Personalized treatment.</p>
+              <p className="text-lg text-blue-700 mb-8">Two Oahu locations. Licensed TCM practitioners. Personalized treatment.</p>
               <Link to="/book-appointment">
                 <Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all">
                   Book Your Session

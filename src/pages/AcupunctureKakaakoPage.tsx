@@ -119,7 +119,7 @@ export default function AcupunctureKakaakoPage() {
                         <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
                             <li><strong>Tech Neck & Posture Repair:</strong> We specialize in severe neck and upper-back pain associated with computer use, combining acupuncture with Medical Massage (Tui-Na) and Fire Cupping.</li>
                             <li><strong>Sports Injuries:</strong> From tennis elbow to meniscus tears, we use precise neurological needling to trigger massive blood flow to isolated joint injuries for faster natural recovery.</li>
-                            <li><strong>Expert Practice:</strong> Dr. David Cai brings 30+ years of high-end clinical experience in pain management, ensuring you get back to your active life sooner.</li>
+                            <li><strong>Clinical Practice:</strong> Dr. David Cai brings 30+ years of high-end clinical experience in pain management, ensuring you get back to your active life sooner.</li>
                         </ul>
 
                         <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Fast Links For Care</h3>

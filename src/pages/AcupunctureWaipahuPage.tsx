@@ -10,7 +10,7 @@ export default function AcupunctureWaipahuPage() {
             <Helmet>
         <link rel="canonical" href="https://acutherapy.com/acupuncture-waipahu" />
                 <title>Acupuncture Waipahu | Back Pain & Auto Injury Specialists</title>
-                <meta name="description" content="AcuTherapy Clinics serves the Waipahu community with top-rated medical acupuncture, focusing on work injuries, auto accidents, and chronic pain relief." />
+                <meta name="description" content="AcuTherapy Clinics serves the Waipahu community with trusted medical acupuncture, focusing on work injuries, auto accidents, and chronic pain relief." />
                 <script type="application/ld+json">
           {`
           {
@@ -112,14 +112,14 @@ export default function AcupunctureWaipahuPage() {
                             <figcaption className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-blue-900/90 to-transparent p-8 pt-16 text-white text-lg font-medium">Advanced Treatments For Our Waipahu Patients</figcaption>
                         </div>
 
-                        <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Top-Rated Auto Injury & Workers' Comp Specialists</h2>
+                        <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Auto Injury & Workers' Comp Specialists</h2>
                         <p className="text-lg text-slate-700 leading-relaxed mb-6">
                             Many Waipahu locals work in physically demanding jobs or commute heavily on the H-1. If you suffer from a <strong>Workers' Compensation</strong> injury like a rotator cuff tear, or have sustained <strong>whiplash from a recent auto accident</strong>, Dr. David Cai specializes in these exact complex cases.
                         </p>
                         <ul className="list-disc pl-6 space-y-4 text-lg text-slate-700 mb-8">
                             <li><strong>Fast Recovery Start:</strong> Our Aiea location is extremely close to Waipahu, ensuring you can get treated quickly after an injury.</li>
                             <li><strong>Billing Made Easy:</strong> We handle the complex PIP and workers' comp medical billing so you can focus 100% on recovery. For approved cases, your treatment costs you absolutely ZERO out-of-pocket.</li>
-                            <li><strong>Clinical Efficacy:</strong> Under the direction of Dr. Cai, an expert with over 30 years in the field and an Adjunct Associate Professor at the University of Hawaii.</li>
+                            <li><strong>Clinical Efficacy:</strong> Under the direction of Dr. Cai, an specialist with over 30 years in the field and an Adjunct Associate Professor at the University of Hawaii.</li>
                         </ul>
 
                         <h3 className="text-2xl font-bold text-slate-900 mt-12 mb-6 border-b pb-2">Fast Links For Care</h3>

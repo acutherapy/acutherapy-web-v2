@@ -94,7 +94,7 @@ export default function AcupunctureKapoleiPage() {
                         <ShieldCheck size={16} /> <span>Trusted By West Oahu Communities</span>
                     </div>
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight">Acupuncture Near Kapolei</h1>
-                    <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Top-rated pain management for Kapolei residents, veterans, and auto accident recovery.</p>
+                    <p className="text-xl text-blue-100 max-w-2xl mx-auto font-light leading-relaxed">Acupuncture and pain management for Kapolei residents, veterans, and auto accident recovery.</p>
                 </div>
             </section>
 
@@ -104,7 +104,7 @@ export default function AcupunctureKapoleiPage() {
 
                     <article className="md:col-span-8">
                         <p className="text-xl text-slate-800 leading-relaxed font-medium mb-8">
-                            As West Oahu continues to expand, residents of <strong>Kapolei</strong> deserve access to world-class medical specialists without having to travel deep into downtown Honolulu. Just a quick drive down the H-1 to our Aiea clinic, AcuTherapy Clinics provides expert care for chronic pain, long-haul commutes, and traumatic injuries.
+                            As West Oahu continues to expand, residents of <strong>Kapolei</strong> deserve access to world-class medical specialists without having to travel deep into downtown Honolulu. Just a quick drive down the H-1 to our Aiea clinic, AcuTherapy Clinics provides specialized care for chronic pain, long-haul commutes, and traumatic injuries.
                         </p>
 
                         <div className="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white/50 group mb-12 w-full max-w-3xl mx-auto">

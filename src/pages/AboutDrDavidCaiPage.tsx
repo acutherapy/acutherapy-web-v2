@@ -301,7 +301,7 @@ export default function AboutDrDavidCaiPage() {
                                 AcuTherapy Clinics Services
                             </h2>
                             <p className="text-sm text-slate-600 mb-6 max-w-lg mx-auto">
-                                Dr. Cai and our team provide expert care in Honolulu and Aiea for a wide array of conditions:
+                                Dr. Cai and our team provide experienced care in Honolulu and Aiea for a wide array of conditions:
                             </p>
                             <div className="flex flex-wrap gap-3 justify-center">
                                 <Link to="/acupuncture-honolulu" className="bg-white px-4 py-2 rounded-lg shadow-sm text-sm border border-slate-200 hover:border-blue-400 font-bold text-slate-700 hover:text-blue-700 transition">
