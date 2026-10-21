@@ -16,7 +16,7 @@
 ### Aiea (Pearl City) — Branch Office
 - Address: 98-211 Pali Momi St, Suite 604, Aiea, HI 96701
 - Phone: (808) 452-1900
-- Hours: Tuesday–Saturday 9:00 AM – 5:00 PM; Sunday closed
+- Hours: Monday–Saturday 9:00 AM – 5:00 PM; Sunday closed
 - Page: https://acutherapy.com/aiea-clinic
 
 ## Services
@@ -69,4 +69,3 @@ Practitioner
 
 ## Sitemap
 https://acutherapy.com/sitemap.xml
-
