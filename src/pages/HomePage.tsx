@@ -14,7 +14,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-white text-base sm:text-lg font-medium leading-relaxed">
             ⚠️ Our Liliha Office will be closed{" "}
-            <strong>November 16 – December 6, 2026</strong>, reopening December 7.{" "}
+            <strong>November 16 – December 6th, 2026</strong>, reopening December 7th.{" "}
             Our <strong>Aiea Office remains OPEN</strong> during this time.
             <br />
             <a href="tel:8085287177" className="underline font-bold hover:text-orange-100">
