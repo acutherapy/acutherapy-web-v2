@@ -15,7 +15,8 @@ export default function HomePage() {
           <p className="text-white text-base sm:text-lg font-medium leading-relaxed">
             ⚠️ Our Liliha Office will be closed{" "}
             <strong>November 16 – December 6, 2026</strong>, reopening December 7.{" "}
-            Our <strong>Aiea Office remains OPEN</strong> during this time.{" "}
+            Our <strong>Aiea Office remains OPEN</strong> during this time.
+            <br />
             <a href="tel:8085287177" className="underline font-bold hover:text-orange-100">
               Call or text (808) 528-7177
             </a>{" "}to schedule your appointment.
