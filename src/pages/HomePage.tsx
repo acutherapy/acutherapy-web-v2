@@ -9,6 +9,21 @@ import PatientReviewsSection from "@/components/PatientReviewsSection";
 export default function HomePage() {
   return (
     <div className="bg-slate-50 min-h-screen">
+      {/* Liliha Closure Notice */}
+      <div className="bg-amber-50 border-b-2 border-amber-500 py-3 px-4">
+        <div className="max-w-7xl mx-auto text-center">
+          <p className="text-amber-900 text-sm sm:text-base leading-relaxed">
+            <span className="font-bold">NOTICE: Liliha Office Temporary Closure</span>
+            {" — "}Our Liliha Office will be closed{" "}
+            <strong>November 16 – December 6, 2026</strong>, reopening December 7.{" "}
+            Our <strong>Aiea Office remains OPEN</strong> during this time.{" "}
+            <a href="tel:8085287177" className="underline font-bold hover:text-amber-700">
+              Call or text (808) 528-7177
+            </a>{" "}to schedule your appointment.
+          </p>
+        </div>
+      </div>
+
       <Helmet>
         <title>Acupuncture Clinic Honolulu & Aiea | Dr. David Cai | AcuTherapy Clinics</title>
         <meta name="description" content="AcuTherapy Clinics — acupuncture in Honolulu and Aiea, Hawaii. Dr. David Cai, 30+ years treating pain, auto injuries, and workplace injuries. Insurance accepted including PIP and Workers' Comp." />
