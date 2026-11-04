@@ -13,8 +13,7 @@ export default function HomePage() {
       <div className="bg-orange-500 py-4 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-white text-base sm:text-lg font-medium leading-relaxed">
-            ⚠️ <span className="font-bold">NOTICE: Liliha Office Temporary Closure</span>
-            {" — "}Our Liliha Office will be closed{" "}
+            ⚠️ Our Liliha Office will be closed{" "}
             <strong>November 16 – December 6, 2026</strong>, reopening December 7.{" "}
             Our <strong>Aiea Office remains OPEN</strong> during this time.{" "}
             <a href="tel:8085287177" className="underline font-bold hover:text-orange-100">
