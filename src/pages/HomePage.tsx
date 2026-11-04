@@ -10,14 +10,14 @@ export default function HomePage() {
   return (
     <div className="bg-slate-50 min-h-screen">
       {/* Liliha Closure Notice */}
-      <div className="bg-amber-50 border-b-2 border-amber-500 py-3 px-4">
+      <div className="bg-orange-500 py-4 px-4">
         <div className="max-w-7xl mx-auto text-center">
-          <p className="text-amber-900 text-sm sm:text-base leading-relaxed">
-            <span className="font-bold">NOTICE: Liliha Office Temporary Closure</span>
+          <p className="text-white text-base sm:text-lg font-medium leading-relaxed">
+            ⚠️ <span className="font-bold">NOTICE: Liliha Office Temporary Closure</span>
             {" — "}Our Liliha Office will be closed{" "}
             <strong>November 16 – December 6, 2026</strong>, reopening December 7.{" "}
             Our <strong>Aiea Office remains OPEN</strong> during this time.{" "}
-            <a href="tel:8085287177" className="underline font-bold hover:text-amber-700">
+            <a href="tel:8085287177" className="underline font-bold hover:text-orange-100">
               Call or text (808) 528-7177
             </a>{" "}to schedule your appointment.
           </p>
