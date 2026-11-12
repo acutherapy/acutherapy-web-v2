@@ -51,6 +51,22 @@ export default function BookAppointmentPage() {
                 body: JSON.stringify({ ...formData, turnstileToken, website, formStartedAt })
             });
             if (res.ok) {
+                const result = await res.json();
+                if (result.success !== true) {
+                    throw new Error('Appointment request was not confirmed');
+                }
+
+                // Emit a conversion event only for a confirmed request.
+                // Never send names, contact details, or medical information to analytics.
+                const trackingWindow = window as typeof window & {
+                    dataLayer?: Array<Record<string, string>>;
+                };
+                trackingWindow.dataLayer = trackingWindow.dataLayer || [];
+                trackingWindow.dataLayer.push({
+                    event: 'appointment_request_success',
+                    form_name: 'book_appointment',
+                });
+
                 setStep(4);
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             } else {
