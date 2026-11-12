@@ -61,11 +61,13 @@ export default function BookAppointmentPage() {
                 const trackingWindow = window as typeof window & {
                     dataLayer?: Array<Record<string, string>>;
                 };
-                trackingWindow.dataLayer = trackingWindow.dataLayer || [];
-                trackingWindow.dataLayer.push({
-                    event: 'appointment_request_success',
-                    form_name: 'book_appointment',
-                });
+                if (result.duplicate !== true) {
+                    trackingWindow.dataLayer = trackingWindow.dataLayer || [];
+                    trackingWindow.dataLayer.push({
+                        event: 'appointment_request_success',
+                        form_name: 'book_appointment',
+                    });
+                }
 
                 setStep(4);
                 window.scrollTo({ top: 0, behavior: 'smooth' });
